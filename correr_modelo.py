@@ -205,7 +205,7 @@ Ejemplos:
     periodo = resultados['config']['periodo_2']
     site = resultados['config']['site']
     
-    filepath = guardar_html(html, player, periodo)
+    filepath = guardar_html(html, player, periodo, site=site)
     
     # Abrir en navegador
     if not args.no_browser:

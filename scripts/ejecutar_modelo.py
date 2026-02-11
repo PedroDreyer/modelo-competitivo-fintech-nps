@@ -93,6 +93,11 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     if not verbose:
         warnings.filterwarnings('ignore')
     
+    # Validación de site antes de cualquier procesamiento
+    SITES_VALIDOS = ['MLA', 'MLB', 'MLM', 'MLC']
+    if site and site not in SITES_VALIDOS:
+        raise ValueError(f"Site '{site}' no es valido. Sites permitidos: {', '.join(SITES_VALIDOS)}")
+    
     resultados = {}
     
     _print("\n" + "â•" * 80)
@@ -323,7 +328,7 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     
     _print("\n\U0001f9e0 CHECKPOINT: Verificando causas raiz semanticas...")
     
-    causas_semanticas = cargar_causas_raiz_semanticas(player, q_act)
+    causas_semanticas = cargar_causas_raiz_semanticas(player, q_act, site=site)
     if causas_semanticas:
         _print(f"   \u2705 Causas raiz semanticas OK: {len(causas_semanticas)} motivos")
         resultados['causas_semanticas'] = causas_semanticas
@@ -333,10 +338,10 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
         _print(f"   \u26a0\ufe0f  PAUSA: Se necesita analisis semantico de causas raiz")
         if prompt_path:
             _print(f"   Prompt: {prompt_path}")
-        _print(f"   JSON destino: data/causas_raiz_semantico_{player}_{q_act}.json")
+        _print(f"   JSON destino: data/causas_raiz_semantico_{player}_{site}_{q_act}.json")
         resultados['necesita_causas_raiz'] = True
         resultados['prompt_causas_raiz'] = prompt_path
-        resultados['json_destino_causas_raiz'] = f'data/causas_raiz_semantico_{player}_{q_act}.json'
+        resultados['json_destino_causas_raiz'] = f'data/causas_raiz_semantico_{player}_{site}_{q_act}.json'
         _print(f"   Modelo detenido. Re-ejecutar despues de generar causas raiz.")
         return resultados
     

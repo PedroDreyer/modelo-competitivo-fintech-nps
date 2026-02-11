@@ -244,6 +244,198 @@
                     "tipo_noticia": "positiva"
                 }
             ]
+        },
+        "Naranja X": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Naranja X lanza Frascos Fijos: nueva opción de inversión a plazo con tasas preferenciales",
+                    "fuente": "Infobae",
+                    "fecha": "2025-11",
+                    "url": "https://www.infobae.com/economia/networking/2025/11/26/frascos-fijos-naranja-x-lanzo-una-nueva-opcion-para-alcanzar-objetivos-financieros/",
+                    "resumen": "En noviembre 2025 Naranja X lanzó Frascos Fijos, un producto tipo plazo fijo digital con plazos de 30 a 180 días y montos desde $1.000 hasta $30 millones, con tasa preferencial. Más de 400.000 frascos creados tras el piloto.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X ofrece la TNA más alta del mercado entre billeteras virtuales (39-43%)",
+                    "fuente": "Xataka Argentina",
+                    "fecha": "2025-09",
+                    "url": "https://www.xataka.com.ar/empresas-y-economia/cual-rendimiento-tna-billeteras-virtuales-argentina-durante-septiembre-2025-naranja-x-altas",
+                    "resumen": "Naranja X lideró el ranking de tasas de rendimiento entre billeteras virtuales en Argentina durante septiembre 2025, ofreciendo TNA de hasta 43% en cuenta remunerada, superando a competidores como Ualá y Personal Pay.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Caída masiva de la app Naranja X por fallas en proveedores de nube",
+                    "fuente": "Lobos News",
+                    "fecha": "2025-10",
+                    "url": "https://lobosnews.com.ar/2025/10/20/auxilio-que-pasa-con-naranja-x-la-app-no-funciona-causas-y-soluciones-actualizadas/",
+                    "resumen": "A fines de octubre 2025 usuarios reportaron fallas generalizadas en la app Naranja X. La empresa atribuyó las interrupciones a caídas en servidores externos (proveedores de nube tipo Amazon), afectando también a otras billeteras del mercado.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "negativa"
+                },
+                {
+                    "titulo": "Fallas recurrentes en la app Naranja X generan quejas de usuarios",
+                    "fuente": "Infozona",
+                    "fecha": "2025-10",
+                    "url": "https://www.infozona.com.ar/falla-naranja-x-que-pasa-con-la-app-y-como-podes-solucionarlo-hoy/",
+                    "resumen": "A lo largo de 2025 se reportaron múltiples fallas de la app de Naranja X: errores de inicio de sesión, caídas del servicio, y demoras en transferencias. Las causas incluyen mantenimiento, saturación por alta demanda y bloqueos por sistemas de seguridad.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "negativa"
+                },
+                {
+                    "titulo": "Naranja X se suma a programas Ahora Misiones con reintegros de hasta 25% y cuotas sin interés",
+                    "fuente": "Economis",
+                    "fecha": "2025-08",
+                    "url": "https://economis.com.ar/tarjeta-naranja-x-se-incorpora-a-los-programas-ahora-misiones-construccion-y-bienes-durables/",
+                    "resumen": "Naranja X se incorporó a los programas provinciales Ahora Misiones, Ahora Bienes Durables, Ahora Construcción y Ahora Neumáticos, ofreciendo hasta 25% de reintegro y financiación en hasta 18 cuotas sin interés para más de 170 mil usuarios.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X ofrece 25% OFF todos los martes con Plan Turbo y descuentos semanales",
+                    "fuente": "Naranja X",
+                    "fecha": "2025-10",
+                    "url": "https://www.naranjax.com/promociones-amba",
+                    "resumen": "Naranja X mantiene promociones semanales con Plan Turbo: 25% de descuento todos los martes (tope $12.000 de reintegro), y 15% sin Plan Turbo (tope $6.000). También ofreció promociones para Hot Sale 2025 con cuotas sin interés.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Alertas por estafas telefónicas y por WhatsApp que se hacen pasar por Naranja X",
+                    "fuente": "Defensoría del Pueblo Formosa",
+                    "fecha": "2025-10",
+                    "url": "https://defensoriaformosa.gob.ar/?p=14134",
+                    "resumen": "Se intensificaron los llamados ilegales y mensajes de WhatsApp haciéndose pasar por Naranja X para estafar usuarios. Los delincuentes solicitan datos bancarios, códigos de seguridad y acceso a la app, generando pérdidas de hasta $1.000.000 por víctima.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X advierte sobre promociones falsas en redes sociales y publica guía antifraude",
+                    "fuente": "Naranja X Blog",
+                    "fecha": "2025-10",
+                    "url": "https://www.naranjax.com/blog/como-detectar-publicidad-falsa",
+                    "resumen": "Naranja X publicó una guía para detectar publicidad falsa y promociones fraudulentas que circulan en redes sociales (como supuestos cambios de tarjeta), alertando a los usuarios sobre técnicas de phishing y ingeniería social.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X incorpora función 'Donar' en la app y duplica donaciones para Bancos de Alimentos",
+                    "fuente": "Mercado",
+                    "fecha": "2025-11",
+                    "url": "https://mercado.com.ar/ruta-digital/naranja-x-incorpora-donar-en-su-app-y-duplicara-las-donaciones-para-bancos-de-alimentos/",
+                    "resumen": "En noviembre 2025 Naranja X lanzó el botón 'Donar' en su app para contribuir a organizaciones sociales sin comisiones. La fintech se comprometió a igualar lo recaudado (objetivo $25M) con el 100% destinado a Bancos de Alimentos Argentina.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X consolida su rol en el consumo cotidiano y refuerza el acceso al ahorro digital",
+                    "fuente": "El Tribuno de Jujuy",
+                    "fecha": "2025-12",
+                    "url": "https://eltribunodejujuy.com/sociedad/2025-12-24-12-29-0-naranja-x-consolida-su-rol-en-el-consumo-cotidiano-y-refuerza-el-acceso-al-ahorro-digital",
+                    "resumen": "A cierre de 2025 Naranja X reportó fuerte crecimiento en usuarios e inversiones, consolidándose como opción principal de consumo cotidiano y ahorro digital en Argentina con productos como Frascos, cuenta remunerada y tarjeta de crédito.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X solicita licencia bancaria en México para expandirse como neobanco",
+                    "fuente": "Latam Fintech",
+                    "fecha": "2025-10",
+                    "url": "https://www.latamfintech.co/articles/neobanco-argentino-naranja-x-solicita-licencia-bancaria-en-mexico",
+                    "resumen": "Naranja X avanzó en su estrategia de expansión regional solicitando licencia bancaria en México, buscando posicionarse como neobanco en el mercado mexicano.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Préstamos Express de Naranja X: hasta $9 millones en minutos y hasta 48 cuotas fijas",
+                    "fuente": "Naranja X",
+                    "fecha": "2025-10",
+                    "url": "https://www.naranjax.com/prestamos/express",
+                    "resumen": "Naranja X ofrece préstamos 100% online de hasta $9.000.000 con aprobación en minutos y devolución en hasta 48 cuotas fijas, con cancelación anticipada disponible. También lanzó productos específicos para monotributistas.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nuevas tasas de billeteras virtuales: Naranja X ajusta rendimientos junto al mercado",
+                    "fuente": "El Cronista",
+                    "fecha": "2025-06",
+                    "url": "https://www.cronista.com/infotechnology/finanzas-digitales/nuevas-tasas-de-mercado-pago-naranja-x-y-mas-billeteras-virtuales-cuanto-pagan-ahora/",
+                    "resumen": "El Cronista relevó los ajustes de tasas de rendimiento de las principales billeteras virtuales en Argentina durante 2025, incluyendo Naranja X, en un contexto de baja de tasas de referencia del BCRA.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X cobra comisiones de mantenimiento mensual de $785 y renovación de tarjeta cada 2 años",
+                    "fuente": "Mi Tarjeta Naranja (blog)",
+                    "fecha": "2025-10",
+                    "url": "https://mi-tarjeta-naranja.online/comisiones/que-comisiones-cobra-tarjeta-naranja-x/",
+                    "resumen": "Naranja X cobra emisión ($713 con IVA), mantenimiento mensual ($785 con IVA) y renovación bianual ($2.298 con IVA) en su tarjeta de crédito, además de comisiones por transacción de hasta 5,50%. Usuarios comparan desfavorablemente con bancos que ofrecen tarjetas sin costo.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Caída masiva de Naranja X con picos en Downdetector afectó a millones de usuarios",
+                    "fuente": "Diario Uno",
+                    "fecha": "2025-10",
+                    "url": "https://www.diariouno.com.ar/sociedad/reportan-la-caida-naranja-x-que-paso-y-cuando-vuelve-la-app-n1504436",
+                    "resumen": "Se registraron incidentes masivos de la app Naranja X con picos reportados en Downdetector. Los problemas incluyeron imposibilidad de iniciar sesión, transferencias no acreditadas y rechazos de pagos, afectando a millones de usuarios en Argentina.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "negativa"
+                },
+                {
+                    "titulo": "Naranja X celebra su 40 aniversario con expansión de productos y récord de usuarios activos",
+                    "fuente": "Noticias Argentinas",
+                    "fecha": "2025-12",
+                    "url": "https://noticiasargentinas.com/naranja-x_t65f6806f8b85b91e89dd8cc7",
+                    "resumen": "A fines de 2025 Naranja X celebró su 40 aniversario con un crecimiento sostenido de usuarios activos, consolidando su posición como una de las fintech líderes en Argentina con una oferta diversificada de productos financieros digitales.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Naranja X extiende programas Ahora Misiones hasta fin de año e incorpora Ahora Neumáticos",
+                    "fuente": "Economis",
+                    "fecha": "2025-10",
+                    "url": "https://economis.com.ar/naranja-x-continuara-con-los-programas-ahora-hasta-fin-de-ano-e-incorpora-a-ahora-neumaticos/",
+                    "resumen": "Naranja X confirmó la continuidad en los programas provinciales Ahora (Misiones, Bienes Durables, Construcción) hasta fin de 2025 y sumó el programa Ahora Neumáticos, beneficiando a más de 200 mil usuarios con reintegros y cuotas sin interés.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                }
+            ]
         }
     }
 }

@@ -8,7 +8,7 @@ alwaysApply: true
 
 ## REGLA CRÍTICA
 
-Las causas raíz semánticas (`data/causas_raiz_semantico_{player}_{quarter}.json`) **SIEMPRE** deben existir al generar el HTML final. Si no existen, el agente debe generarlas.
+Las causas raíz semánticas (`data/causas_raiz_semantico_{player}_{site}_{quarter}.json`) **SIEMPRE** deben existir al generar el HTML final. Si no existen, el agente debe generarlas.
 
 ## NUNCA usar generar_subcausas_automatico()
 
@@ -18,7 +18,7 @@ La función `generar_subcausas_automatico()` en `parte7_causas_raiz.py` es keywo
 
 ### 1. Verificar si existe el JSON
 ```
-data/causas_raiz_semantico_{player}_{quarter}.json
+data/causas_raiz_semantico_{player}_{site}_{quarter}.json
 ```
 
 ### 2. Si NO existe:
@@ -52,7 +52,7 @@ data/causas_raiz_semantico_{player}_{quarter}.json
 }
 ```
 
-4. **Guardar en** `data/causas_raiz_semantico_{player}_{quarter}.json`
+4. **Guardar en** `data/causas_raiz_semantico_{player}_{site}_{quarter}.json`
 5. **Re-ejecutar el modelo** para que el HTML lo incluya
 
 ### 3. Criterios de calidad del análisis semántico

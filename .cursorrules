@@ -131,11 +131,11 @@ El modelo se detuvo ANTES de buscar noticias (diseño intencional).
 
 **El agente DEBE (todo en silencio, sin mostrar al usuario):**
 
-1. **Leer el prompt** indicado en la salida: `prompts/prompt_causas_raiz_{PLAYER}_{Q2}.txt`
+1. **Leer el prompt** indicado en la salida: `prompts/prompt_causas_raiz_{PLAYER}_{SITE}_{Q2}.txt`
 2. **Leer TODOS los comentarios** de cada motivo en el prompt
 3. **Analizar semánticamente** los comentarios identificando patrones reales
 4. **Generar un JSON** con el formato exacto descrito abajo
-5. **Guardar el JSON** en `data/causas_raiz_semantico_{PLAYER}_{Q2}.json`
+5. **Guardar el JSON** en `data/causas_raiz_semantico_{PLAYER}_{SITE}_{Q2}.json`
 6. **BUSCAR NOTICIAS** (ver PASO 2B abajo)
 7. **Re-ejecutar el modelo** con `python correr_modelo.py` (lee noticias del cache que ya llenaste)
 
@@ -232,7 +232,7 @@ Si el modelo termina con exit code 0:
 
 ### 1. CAUSAS RAÍZ SIEMPRE SE GENERAN
 
-El JSON `data/causas_raiz_semantico_{PLAYER}_{QUARTER}.json` **DEBE existir** para que el HTML tenga contenido de calidad.
+El JSON `data/causas_raiz_semantico_{PLAYER}_{SITE}_{QUARTER}.json` **DEBE existir** para que el HTML tenga contenido de calidad.
 
 **Si no existe:**
 - El modelo sale con exit code 42 (ANTES de buscar noticias)
@@ -240,7 +240,7 @@ El JSON `data/causas_raiz_semantico_{PLAYER}_{QUARTER}.json` **DEBE existir** pa
 - NUNCA generar HTML sin causas raíz
 
 **Si existe pero está corrupto o es de baja calidad:**
-- Borrar: `data/causas_raiz_semantico_{PLAYER}_{QUARTER}.json`
+- Borrar: `data/causas_raiz_semantico_{PLAYER}_{SITE}_{QUARTER}.json`
 - Re-ejecutar el modelo (volverá a pedir generación)
 
 ### 2. NOTICIAS SIEMPRE LAS BUSCA CURSOR (NO el script Python)

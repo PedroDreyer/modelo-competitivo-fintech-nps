@@ -60,7 +60,7 @@ _STOPWORDS_PT = {
 }
 
 
-def cargar_causas_raiz_semanticas(player: str, q_act: str, data_dir: str = None) -> Dict:
+def cargar_causas_raiz_semanticas(player: str, q_act: str, data_dir: str = None, site: str = None) -> Dict:
     """
     Carga el JSON de causas raíz semánticas generado por el LLM.
     
@@ -68,6 +68,7 @@ def cargar_causas_raiz_semanticas(player: str, q_act: str, data_dir: str = None)
         player: Nombre del player (ej: 'Nubank')
         q_act: Quarter actual (ej: '25Q2')
         data_dir: Directorio de datos (si None, usa data/ relativo al proyecto)
+        site: Site/país (ej: 'MLA', 'MLB') - incluirlo evita colisiones entre países
     
     Returns:
         Dict con estructura {motivo: [causas_raiz]} o {} si no existe
@@ -77,18 +78,31 @@ def cargar_causas_raiz_semanticas(player: str, q_act: str, data_dir: str = None)
     else:
         data_dir = Path(data_dir)
     
-    # Buscar archivo: causas_raiz_semantico_{player}_{quarter}.json
-    patron = f"causas_raiz_semantico_{player}_{q_act}.json"
-    archivo = data_dir / patron
+    # Buscar archivo: primero con site (nuevo formato), luego sin site (legacy)
+    archivo = None
     
-    if not archivo.exists():
-        # Intentar sin acentos / variantes
-        import glob
-        candidatos = list(data_dir.glob(f"causas_raiz_semantico_{player}*{q_act}*.json"))
-        if candidatos:
-            archivo = candidatos[0]
-        else:
-            return {}
+    if site:
+        archivo_con_site = data_dir / f"causas_raiz_semantico_{player}_{site}_{q_act}.json"
+        if archivo_con_site.exists():
+            archivo = archivo_con_site
+    
+    if archivo is None:
+        archivo_legacy = data_dir / f"causas_raiz_semantico_{player}_{q_act}.json"
+        if archivo_legacy.exists():
+            archivo = archivo_legacy
+    
+    if archivo is None:
+        # Intentar variantes con glob (priorizando con site)
+        if site:
+            candidatos = list(data_dir.glob(f"causas_raiz_semantico_{player}*{site}*{q_act}*.json"))
+            if candidatos:
+                archivo = candidatos[0]
+        if archivo is None:
+            candidatos = list(data_dir.glob(f"causas_raiz_semantico_{player}*{q_act}*.json"))
+            if candidatos:
+                archivo = candidatos[0]
+            else:
+                return {}
     
     try:
         with open(archivo, 'r', encoding='utf-8') as f:

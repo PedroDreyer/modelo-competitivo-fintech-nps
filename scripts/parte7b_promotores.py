@@ -652,7 +652,7 @@ def preparar_analisis_semantico_promotores(resultado_7b, df_player, config,
     script_dir = Path(__file__).resolve().parent
     prompts_dir = script_dir.parent / 'prompts'
     prompts_dir.mkdir(exist_ok=True)
-    prompt_filename = f'prompt_promotores_{player}_{q_act}.txt'
+    prompt_filename = f'prompt_promotores_{player}_{site}_{q_act}.txt'
     prompt_path = prompts_dir / prompt_filename
 
     with open(prompt_path, 'w', encoding='utf-8') as f:
@@ -755,7 +755,7 @@ Responde ÚNICAMENTE con un JSON válido:
 
         prompt += "\n" + "=" * 80 + "\n"
 
-    output_filename = f'promotores_semantico_{player}_{q_act}.json'
+    output_filename = f'promotores_semantico_{player}_{site}_{q_act}.json'
 
     prompt += f"""
 ## 📝 INSTRUCCIONES FINALES

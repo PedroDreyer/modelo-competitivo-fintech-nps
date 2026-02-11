@@ -458,7 +458,12 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
     import json as _json
     _causas_semanticas = {}
     _data_dir = Path(__file__).parent.parent / 'data'
-    _json_cr = _data_dir / f'causas_raiz_semantico_{player}_{q_act}.json'
+    _json_cr = _data_dir / f'causas_raiz_semantico_{player}_{site}_{q_act}.json'
+    # Fallback: intentar sin site (compatibilidad con archivos viejos)
+    if not _json_cr.exists():
+        _json_cr_legacy = _data_dir / f'causas_raiz_semantico_{player}_{q_act}.json'
+        if _json_cr_legacy.exists():
+            _json_cr = _json_cr_legacy
     if _json_cr.exists():
         try:
             with open(_json_cr, 'r', encoding='utf-8') as _f:
@@ -4116,7 +4121,7 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
     
     # Anexo 1: Waterfall + Deep Dive Quejas (unificado con Causas Raíz)
     # Generar el contenido de causas raíz para incluirlo en este tab
-    causas_raiz_content = _generar_causas_raiz_content(resultados, q_ant, q_act, player)
+    causas_raiz_content = _generar_causas_raiz_content(resultados, q_ant, q_act, player, site)
     
     html_anexo1 = f"""
     <div id="anexo1" class="tab-content" style="display: none;">
@@ -4291,7 +4296,7 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
         html_anexo5 += '</div>'
 
     # Deep Dive Semántico: Causas de Satisfacción (si existe)
-    promotores_causas_content = _generar_promotores_causas_content(resultados, q_ant, q_act, player)
+    promotores_causas_content = _generar_promotores_causas_content(resultados, q_ant, q_act, player, site)
     html_anexo5 += promotores_causas_content
 
     html_anexo5 += """
@@ -4328,7 +4333,7 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
 # TAB CAUSAS RAÍZ SEMÁNTICAS
 # ==============================================================================
 
-def _generar_causas_raiz_content(resultados, q_ant, q_act, player):
+def _generar_causas_raiz_content(resultados, q_ant, q_act, player, site=None):
     """Genera el CONTENIDO de Causas Raíz (sin wrapper de tab) para incluirlo dentro de Waterfall."""
     import json
     from pathlib import Path
@@ -4336,18 +4341,29 @@ def _generar_causas_raiz_content(resultados, q_ant, q_act, player):
     data_dir = Path(__file__).parent.parent / 'data'
     causas_data = None
     
-    json_filename = f'causas_raiz_semantico_{player}_{q_act}.json'
-    json_path = data_dir / json_filename
+    # Intentar primero con site (nuevo formato)
+    if site:
+        json_path = data_dir / f'causas_raiz_semantico_{player}_{site}_{q_act}.json'
+        if json_path.exists():
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    causas_data = json.load(f)
+            except Exception:
+                pass
     
-    if json_path.exists():
-        try:
-            with open(json_path, 'r', encoding='utf-8') as f:
-                causas_data = json.load(f)
-        except Exception:
-            pass
+    # Fallback: formato legacy sin site
+    if not causas_data:
+        json_path_legacy = data_dir / f'causas_raiz_semantico_{player}_{q_act}.json'
+        if json_path_legacy.exists():
+            try:
+                with open(json_path_legacy, 'r', encoding='utf-8') as f:
+                    causas_data = json.load(f)
+            except Exception:
+                pass
     
     if not causas_data:
-        for f in sorted(data_dir.glob(f'causas_raiz_semantico_{player}_*.json'), reverse=True):
+        pattern = f'causas_raiz_semantico_{player}_{site}_*.json' if site else f'causas_raiz_semantico_{player}_*.json'
+        for f in sorted(data_dir.glob(pattern), reverse=True):
             try:
                 with open(f, 'r', encoding='utf-8') as fh:
                     causas_data = json.load(fh)
@@ -4461,7 +4477,7 @@ def _generar_causas_raiz_content(resultados, q_ant, q_act, player):
 # TAB PROMOTORES - CAUSAS DE SATISFACCIÓN SEMÁNTICAS
 # ==============================================================================
 
-def _generar_promotores_causas_content(resultados, q_ant, q_act, player):
+def _generar_promotores_causas_content(resultados, q_ant, q_act, player, site=None):
     """Genera el CONTENIDO de Causas de Satisfacción (promotores) para incluirlo en el tab de Promotores."""
     import json
     from pathlib import Path
@@ -4469,18 +4485,29 @@ def _generar_promotores_causas_content(resultados, q_ant, q_act, player):
     data_dir = Path(__file__).parent.parent / 'data'
     promotores_data = None
 
-    json_filename = f'promotores_semantico_{player}_{q_act}.json'
-    json_path = data_dir / json_filename
+    # Intentar primero con site (nuevo formato)
+    if site:
+        json_path = data_dir / f'promotores_semantico_{player}_{site}_{q_act}.json'
+        if json_path.exists():
+            try:
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    promotores_data = json.load(f)
+            except Exception:
+                pass
 
-    if json_path.exists():
-        try:
-            with open(json_path, 'r', encoding='utf-8') as f:
-                promotores_data = json.load(f)
-        except Exception:
-            pass
+    # Fallback: formato legacy sin site
+    if not promotores_data:
+        json_path_legacy = data_dir / f'promotores_semantico_{player}_{q_act}.json'
+        if json_path_legacy.exists():
+            try:
+                with open(json_path_legacy, 'r', encoding='utf-8') as f:
+                    promotores_data = json.load(f)
+            except Exception:
+                pass
 
     if not promotores_data:
-        for f in sorted(data_dir.glob(f'promotores_semantico_{player}_*.json'), reverse=True):
+        pattern = f'promotores_semantico_{player}_{site}_*.json' if site else f'promotores_semantico_{player}_*.json'
+        for f in sorted(data_dir.glob(pattern), reverse=True):
             try:
                 with open(f, 'r', encoding='utf-8') as fh:
                     promotores_data = json.load(fh)
@@ -4594,7 +4621,7 @@ def _generar_promotores_causas_content(resultados, q_ant, q_act, player):
 # EXPORTACIÓN
 # ==============================================================================
 
-def guardar_html(html, player, periodo, output_dir=None):
+def guardar_html(html, player, periodo, site=None, output_dir=None):
     """Guarda el HTML en un archivo."""
     if output_dir is None:
         output_dir = Path(__file__).parent.parent / 'outputs'
@@ -4603,7 +4630,10 @@ def guardar_html(html, player, periodo, output_dir=None):
     
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    filename = f"Resumen_NPS_{player.replace(' ', '_')}_{periodo}.html"
+    if site:
+        filename = f"Resumen_NPS_{player.replace(' ', '_')}_{site}_{periodo}.html"
+    else:
+        filename = f"Resumen_NPS_{player.replace(' ', '_')}_{periodo}.html"
     filepath = output_dir / filename
     
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -4630,5 +4660,5 @@ if __name__ == "__main__":
     print("\nGenerando HTML...")
     html = generar_html_completo(resultados)
     
-    filepath = guardar_html(html, resultados['config']['player'], resultados['config']['periodo_2'])
+    filepath = guardar_html(html, resultados['config']['player'], resultados['config']['periodo_2'], site=resultados['config']['site'])
     print(f"📄 HTML: {len(html):,} caracteres")
