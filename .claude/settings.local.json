@@ -10,7 +10,11 @@
       "Bash(git push:*)",
       "Bash(git reset:*)",
       "Bash(git rm:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git branch:*)",
+      "Bash(python correr_modelo.py:*)",
+      "Bash(python:*)",
+      "Bash(start \"\" \"outputs\\\\Resumen_NPS_Ualá_25Q3.html\")"
     ]
   }
 }

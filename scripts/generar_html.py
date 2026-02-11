@@ -589,7 +589,10 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
                 break
         if col_ola_nps is None:
             col_ola_nps = nps_grafico_df.columns[0]
-        
+
+        # Tomar solo los últimos 5 quarters para el gráfico (dinámico)
+        nps_grafico_df = nps_grafico_df.tail(5)
+
         nps_labels = nps_grafico_df[col_ola_nps].tolist()
         nps_values = [round(v, 1) for v in nps_grafico_df['NPS_score'].tolist()]
         
@@ -751,8 +754,11 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
     import json as _json
     
     evolucion_quejas_df = wf_data.get('evolucion_quejas_data')
-    
+
     if evolucion_quejas_df is not None and len(evolucion_quejas_df) > 0:
+        # Tomar solo los últimos 5 quarters para el gráfico (dinámico)
+        evolucion_quejas_df = evolucion_quejas_df.tail(5)
+
         # df_evolucion: index = quarter labels, columns = motive categories, values = impact
         quejas_labels = evolucion_quejas_df.index.tolist()
         quejas_motivos = evolucion_quejas_df.columns.tolist()
@@ -1121,8 +1127,8 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
             
             fuente = noticia.get('fuente', 'web')
             url = noticia.get('url', '')
-            # Usar resumen completo; fallback a título si no hay resumen
-            texto_noticia = noticia.get('resumen', '') or noticia.get('titulo', '')
+            # Usar solo título para mantener el diagnóstico sintético
+            texto_noticia = noticia.get('titulo', '')
             # Link clickeable separado
             if url:
                 link = f' (<a href="{url}" target="_blank" style="color: #0369a1; text-decoration: underline;">ver noticia</a>)'

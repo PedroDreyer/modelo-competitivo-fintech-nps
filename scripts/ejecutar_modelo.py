@@ -461,8 +461,7 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
         gaps_count = len(sugerencias['gaps_sin_noticia'])
         _print(mostrar_sugerencias_busqueda(sugerencias))
 
-        _print("
-" + "═" * 80)
+        _print("\n" + "═" * 80)
         _print("⚠️  CHECKPOINT: BÚSQUEDA DE NOTICIAS REQUERIDA")
         _print("═" * 80)
         _print(f"")
@@ -471,7 +470,7 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
         _print(f"")
         _print(f"   DRIVERS SIN NOTICIAS:")
         for gap in sugerencias['gaps_sin_noticia']:
-            _print(f"   • {gap['driver']} ({gap['delta']:+.1f}pp)")
+            _print(f"   • {gap['motivo']} ({gap['delta']:+.1f}pp)")
         _print(f"")
         _print(f"   INSTRUCCIONES PARA EL AGENTE:")
         _print(f"   1. Ejecutar búsquedas con WebSearch para cada driver")
@@ -484,7 +483,7 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
 
         # Guardar sugerencias para que el agente las use
         resultados['necesita_noticias'] = True
-        resultados['queries_busqueda'] = sugerencias['queries']
+        resultados['queries_busqueda'] = sugerencias.get('busquedas_sugeridas', [])
         resultados['gaps_sin_noticia'] = sugerencias['gaps_sin_noticia']
 
         # Salir con código 43 = "necesita noticias"
