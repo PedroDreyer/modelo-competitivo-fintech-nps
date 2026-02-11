@@ -594,7 +594,7 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
         nps_grafico_df = nps_grafico_df.tail(5)
 
         nps_labels = nps_grafico_df[col_ola_nps].tolist()
-        nps_values = [round(v, 1) for v in nps_grafico_df['NPS_score'].tolist()]
+        nps_values = [round(v) for v in nps_grafico_df['NPS_score'].tolist()]
         
         import json
         grafico_evolucion_html = f'''
@@ -648,7 +648,7 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
                                 padding: 12,
                                 cornerRadius: 8,
                                 callbacks: {{
-                                    label: function(ctx) {{ return 'NPS: ' + ctx.parsed.y.toFixed(1); }}
+                                    label: function(ctx) {{ return 'NPS: ' + ctx.parsed.y.toFixed(0); }}
                                 }}
                             }},
                             datalabels: undefined
@@ -2422,12 +2422,14 @@ def _generar_waterfall_html(causas_waterfall, TXT, q_ant='Q1', q_act='Q2', causa
     
     if mejoras:
         html += f'<div style="margin-bottom: 20px;"><strong style="color: #00c853;">✅ {TXT["mejoras"]}</strong></div>'
-        for c in sorted(mejoras, key=lambda x: x.get('delta', 0))[:5]:
+        # Mostrar TODAS las mejoras (no limitar a top 5)
+        for c in sorted(mejoras, key=lambda x: x.get('delta', 0)):
             html += _generar_acordeon_waterfall(c, es_mejora=True, q_ant=q_ant, q_act=q_act, causas_semanticas=causas_semanticas)
-    
+
     if deterioros:
         html += f'<div style="margin: 25px 0 20px 0;"><strong style="color: #ff5252;">⚠️ {TXT["deterioros"]}</strong></div>'
-        for c in sorted(deterioros, key=lambda x: x.get('delta', 0), reverse=True)[:5]:
+        # Mostrar TODOS los deterioros (no limitar a top 5)
+        for c in sorted(deterioros, key=lambda x: x.get('delta', 0), reverse=True):
             html += _generar_acordeon_waterfall(c, es_mejora=False, q_ant=q_ant, q_act=q_act, causas_semanticas=causas_semanticas)
     
     total_wf = sum(c.get('delta', 0) for c in causas_waterfall)
@@ -4263,7 +4265,8 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
                 <p style="color: #888; font-size: 12px; margin-bottom: 15px;">👆 Click en cada motivo para ver comentarios de promotores</p>
         '''
         
-        for m in motivos_ordenados[:6]:
+        # Mostrar TODOS los motivos en el deep dive (no limitar a top 6)
+        for m in motivos_ordenados:
             html_anexo5 += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores)
         
         html_anexo5 += '</div>'
