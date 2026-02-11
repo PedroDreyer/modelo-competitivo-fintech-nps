@@ -557,12 +557,11 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
 
     <div class="tabs-nav">
         <button class="tab-btn active" onclick="showTab('resumen')">📊 {TXT['resumen']}</button>
-        <button class="tab-btn" onclick="showTab('anexo1')">📈 {TXT['evolucion_quejas']}</button>
+        <button class="tab-btn" onclick="showTab('anexo1')">📉 Waterfall + Deep Dive Quejas</button>
         <button class="tab-btn" onclick="showTab('anexo2')">🔒 {TXT['seguridad']}</button>
         <button class="tab-btn" onclick="showTab('anexo3')">🏠 {TXT['principalidad']}</button>
         <button class="tab-btn" onclick="showTab('anexo4')">📦 {TXT['productos']}</button>
         <button class="tab-btn" onclick="showTab('anexo5')">🌟 {TXT['promotores']}</button>
-        <button class="tab-btn" onclick="showTab('anexo6')">🔍 Causas Raíz</button>
         <button class="tab-btn" onclick="showTab('anexo7')">📰 Noticias & Triangulación</button>
     </div>
 
@@ -4096,13 +4095,16 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
     pct_prom = prom_data.get('pct_promotores_q2', 0)
     delta_prom = prom_data.get('delta_promotores', 0)
     
-    # Anexo 1: Quejas
+    # Anexo 1: Waterfall + Deep Dive Quejas (unificado con Causas Raíz)
+    # Generar el contenido de causas raíz para incluirlo en este tab
+    causas_raiz_content = _generar_causas_raiz_content(resultados, q_ant, q_act, player)
+    
     html_anexo1 = f"""
     <div id="anexo1" class="tab-content" style="display: none;">
         <div class="content-main">
             <div class="titulo-principal">
                 <span class="bandera">{bandera}</span>
-                <h1>{TXT['evolucion_quejas']} - {player}</h1>
+                <h1>Waterfall + Deep Dive Quejas - {player}</h1>
             </div>
             <div class="grafico-box">
                 <div class="grafico-box-titulo">📉 Waterfall NPS</div>
@@ -4111,6 +4113,11 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
             <div class="grafico-box">
                 <div class="grafico-box-titulo">📈 Evolución de Quejas</div>
                 {f'<img src="data:image/png;base64,{g_quejas}" style="max-width:100%;">' if g_quejas else '<p style="color:#999;">Gráfico no disponible</p>'}
+            </div>
+            
+            <!-- Deep Dive: Causas Raíz Semánticas -->
+            <div style="margin-top: 30px;">
+                {causas_raiz_content}
             </div>
         </div>
     </div>
@@ -4274,10 +4281,9 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
     """
     
     # ==========================================================================
-    # ANEXO 6: CAUSAS RAÍZ SEMÁNTICAS
+    # ANEXO 6: (Eliminado - Causas Raíz ahora está dentro de Anexo 1)
     # ==========================================================================
-
-    html_anexo6 = _generar_tab_causas_raiz(resultados, q_ant, q_act, player)
+    html_anexo6 = ''
 
     # ==========================================================================
     # ANEXO 7: NOTICIAS & TRIANGULACIÓN
@@ -4302,6 +4308,135 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
 # ==============================================================================
 # TAB CAUSAS RAÍZ SEMÁNTICAS
 # ==============================================================================
+
+def _generar_causas_raiz_content(resultados, q_ant, q_act, player):
+    """Genera el CONTENIDO de Causas Raíz (sin wrapper de tab) para incluirlo dentro de Waterfall."""
+    import json
+    from pathlib import Path
+    
+    data_dir = Path(__file__).parent.parent / 'data'
+    causas_data = None
+    
+    json_filename = f'causas_raiz_semantico_{player}_{q_act}.json'
+    json_path = data_dir / json_filename
+    
+    if json_path.exists():
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                causas_data = json.load(f)
+        except Exception:
+            pass
+    
+    if not causas_data:
+        for f in sorted(data_dir.glob(f'causas_raiz_semantico_{player}_*.json'), reverse=True):
+            try:
+                with open(f, 'r', encoding='utf-8') as fh:
+                    causas_data = json.load(fh)
+                break
+            except Exception:
+                continue
+    
+    if not causas_data or not causas_data.get('causas_por_motivo'):
+        return '<p style="color:#999;">Análisis de Causas Raíz no disponible</p>'
+    
+    causas_por_motivo = causas_data['causas_por_motivo']
+    
+    motivos_ordenados = sorted(
+        causas_por_motivo.items(),
+        key=lambda x: x[1].get('delta_pp', 0),
+        reverse=True
+    )
+    
+    html = f"""
+        <div style="background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); padding: 25px; border-radius: 12px; color: white; margin-bottom: 25px;">
+            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 8px;">🔍 Deep Dive: Causas Raíz Semánticas</div>
+            <div style="font-size: 24px; font-weight: 700; margin-bottom: 5px;">{player} - {q_ant} → {q_act}</div>
+            <div style="opacity: 0.85; font-size: 13px;">{len(causas_por_motivo)} motivos analizados · Basado en comentarios reales de detractores y neutros</div>
+        </div>
+    """
+    
+    for motivo, datos in motivos_ordenados:
+        delta = datos.get('delta_pp', 0)
+        total_comms = datos.get('total_comentarios_analizados', 0)
+        causas = datos.get('causas_raiz', [])
+        
+        if not causas:
+            continue
+        
+        if delta > 1:
+            header_bg = 'linear-gradient(135deg, #dc2626 0%, #ef4444 100%)'
+            delta_label = f'🔥 +{delta:.1f}pp (empeoró)'
+        elif delta > 0:
+            header_bg = 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)'
+            delta_label = f'⚠️ +{delta:.1f}pp'
+        elif delta > -1:
+            header_bg = 'linear-gradient(135deg, #6b7280 0%, #9ca3af 100%)'
+            delta_label = f'➡️ {delta:.1f}pp (estable)'
+        else:
+            header_bg = 'linear-gradient(135deg, #059669 0%, #10b981 100%)'
+            delta_label = f'✅ {delta:.1f}pp (mejoró)'
+        
+        motivo_id = 'dd_' + motivo.lower().replace(' ', '_').replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u')
+        
+        html += f"""
+            <div style="background: white; border-radius: 12px; margin-bottom: 20px; border: 1px solid #e5e7eb; overflow: hidden;">
+                <div onclick="document.getElementById('{motivo_id}').style.display = document.getElementById('{motivo_id}').style.display === 'none' ? 'block' : 'none'; this.querySelector('.chevron').textContent = document.getElementById('{motivo_id}').style.display === 'none' ? '▶' : '▼';"
+                     style="background: {header_bg}; padding: 18px 22px; cursor: pointer; color: white; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-size: 17px; font-weight: 700;">{motivo}</div>
+                        <div style="font-size: 12px; opacity: 0.9; margin-top: 4px;">{delta_label} · {total_comms} comentarios · {len(causas)} causas identificadas</div>
+                    </div>
+                    <span class="chevron" style="font-size: 16px; opacity: 0.8;">▶</span>
+                </div>
+                
+                <div id="{motivo_id}" style="display: none; padding: 20px;">
+        """
+        
+        colors = ['#2563eb', '#7c3aed', '#0891b2', '#c2410c']
+        for i, causa in enumerate(causas):
+            titulo = html_module.escape(causa.get('titulo', ''))
+            desc = html_module.escape(causa.get('descripcion', ''))
+            freq_pct = causa.get('frecuencia_pct', 0)
+            freq_abs = causa.get('frecuencia_abs', 0)
+            ejemplos = causa.get('ejemplos', [])
+            bar_color = colors[i % len(colors)]
+            
+            html += f"""
+                    <div style="margin-bottom: 20px; padding: 16px; background: #f9fafb; border-radius: 10px; border-left: 4px solid {bar_color};">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                            <div style="font-weight: 700; font-size: 14px; color: #1f2937; flex: 1;">{titulo}</div>
+                            <div style="background: {bar_color}; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; white-space: nowrap; margin-left: 12px;">
+                                {freq_pct}% ({freq_abs})
+                            </div>
+                        </div>
+                        <div style="background: #e5e7eb; border-radius: 4px; height: 6px; margin-bottom: 10px; overflow: hidden;">
+                            <div style="background: {bar_color}; width: {min(freq_pct, 100)}%; height: 100%; border-radius: 4px;"></div>
+                        </div>
+                        <div style="color: #4b5563; font-size: 13px; line-height: 1.5; margin-bottom: 10px;">{desc}</div>
+                        <div style="margin-top: 8px;">
+                            <div style="font-size: 11px; color: #9ca3af; font-weight: 600; margin-bottom: 6px; text-transform: uppercase;">Comentarios representativos</div>
+            """
+            
+            for ej in ejemplos[:3]:
+                ej_escaped = html_module.escape(str(ej))
+                html += f"""
+                            <div style="background: white; border: 1px solid #e5e7eb; padding: 10px 14px; border-radius: 8px; margin-bottom: 6px; font-style: italic; color: #374151; font-size: 12px; line-height: 1.4;">
+                                "{ej_escaped}"
+                            </div>
+                """
+            
+            html += """
+                        </div>
+                    </div>
+            """
+        
+        html += """
+                </div>
+            </div>
+        """
+    
+    return html
+
 
 def _generar_tab_causas_raiz(resultados, q_ant, q_act, player):
     """Genera el tab de Causas Raíz semánticas a partir del JSON generado por LLM."""

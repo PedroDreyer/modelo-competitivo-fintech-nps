@@ -443,8 +443,8 @@ def analizar_seguridad(df_completo, config, verbose=True):
     grafico_seguridad_base64 = None
     grafico_motivos_inseg_base64 = None
     
-    # Datos de evolución del player
-    datos_evol = result[result['MARCA'] == player].sort_values(col_periodo)
+    # Datos de evolución del player (últimos 5 quarters)
+    datos_evol = result[result['MARCA'] == player].sort_values(col_periodo).tail(5)
     
     # GRÁFICO 1: EVOLUCIÓN DE SEGURIDAD
     if len(datos_evol) > 0:
