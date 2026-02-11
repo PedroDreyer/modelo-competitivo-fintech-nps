@@ -563,6 +563,7 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
         <button class="tab-btn" onclick="showTab('anexo4')">📦 {TXT['productos']}</button>
         <button class="tab-btn" onclick="showTab('anexo5')">🌟 {TXT['promotores']}</button>
         <button class="tab-btn" onclick="showTab('anexo6')">🔍 Causas Raíz</button>
+        <button class="tab-btn" onclick="showTab('anexo7')">📰 Noticias & Triangulación</button>
     </div>
 
     <script>
@@ -980,26 +981,19 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
     # ==========================================================================
     # 1. DIAGNÓSTICO PRINCIPAL (narrativa arriba + gráfico NPS debajo)
     # 2. QUEJAS (gráfico evolución + cajas por motivo con causas raíz)
-    # 3. PRODUCTOS (tabla + top 3 deep dive)
-    # 4. TRIANGULACIÓN (unificada: Producto↔Queja↔Noticia + Motivo↔Noticia + Métricas)
-    # 5. NOTICIAS (todas, agrupadas por tema)
+    # 3. PRODUCTOS (tabla + productos clave)
+    # NOTA: Triangulación y Noticias movidas a tab separada (anexo7)
     # ==========================================================================
     html_tab_resumen = f"""
     <div id="resumen" class="tab-content" style="display: block;">
         <!-- 1. DIAGNÓSTICO PRINCIPAL + GRÁFICO NPS -->
         {html_conclusion}
-        
+
         <!-- 2. QUEJAS + CAUSAS RAÍZ por motivo -->
         {seccion_quejas}
-        
+
         <!-- 3. PRODUCTOS (tabla + productos clave) -->
         {seccion_productos}
-        
-        <!-- 4. TRIANGULACIÓN (unificada) -->
-        {seccion_triangulacion}
-        
-        <!-- 5. NOTICIAS DEL MERCADO (todas, por tema) -->
-        {seccion_noticias_grid}
     </div>
     """
     
@@ -1009,7 +1003,8 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
     html_anexos = _generar_anexos(resultados, TXT, BANDERA, player, q_ant, q_act,
                                    grafico_wf_b64, grafico_quejas_b64,
                                    grafico_seg_b64, grafico_mot_inseg_b64,
-                                   grafico_princ_b64, grafico_mot_princ_b64)
+                                   grafico_princ_b64, grafico_mot_princ_b64,
+                                   seccion_triangulacion, seccion_noticias_grid)
     
     # ==========================================================================
     # FOOTER
@@ -1349,7 +1344,9 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
                         causa = _obtener_causa_raiz_top(q.get('motivo', ''))
                         signo = "+" if delta > 0 else ""
                         texto = f"quejas de {q.get('motivo', '')} {signo}{delta:.0f}p.p."
-                        if causa:
+                        # Solo mostrar causa raíz cuando las quejas AUMENTAN (delta > 0)
+                        # Si las quejas disminuyen (delta < 0), no mostrar causa raíz negativa
+                        if causa and delta > 0:
                             texto += f" por {causa}"
                         return texto, q.get('motivo', '')
         return '', ''
@@ -4089,7 +4086,7 @@ def _generar_alertas(resultados):
     return alertas
 
 
-def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quejas, g_seg, g_mot_inseg, g_princ, g_mot_princ):
+def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quejas, g_seg, g_mot_inseg, g_princ, g_mot_princ, seccion_triangulacion='', seccion_noticias_grid=''):
     """Genera los tabs de anexos."""
     
     prod_data = resultados.get('productos', {})
@@ -4279,10 +4276,27 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
     # ==========================================================================
     # ANEXO 6: CAUSAS RAÍZ SEMÁNTICAS
     # ==========================================================================
-    
+
     html_anexo6 = _generar_tab_causas_raiz(resultados, q_ant, q_act, player)
-    
-    return html_anexo1 + html_anexo2 + html_anexo3 + html_anexo4 + html_anexo5 + html_anexo6
+
+    # ==========================================================================
+    # ANEXO 7: NOTICIAS & TRIANGULACIÓN
+    # ==========================================================================
+    html_anexo7 = f"""
+    <div id="anexo7" class="tab-content">
+        <div class="content-main">
+            <h2 style="color: #1a1a2e; font-size: 22px; font-weight: 700; margin-bottom: 25px;">📰 Noticias & Triangulación</h2>
+
+            <!-- TRIANGULACIÓN -->
+            {seccion_triangulacion}
+
+            <!-- NOTICIAS DEL MERCADO -->
+            {seccion_noticias_grid}
+        </div>
+    </div>
+    """
+
+    return html_anexo1 + html_anexo2 + html_anexo3 + html_anexo4 + html_anexo5 + html_anexo6 + html_anexo7
 
 
 # ==============================================================================
