@@ -518,6 +518,264 @@ def exportar_comentarios_promotores(resultado_7b, config, max_comentarios=20, ve
 
 
 # ==============================================================================
+# ANÁLISIS SEMÁNTICO DE PROMOTORES (Deep Dive con LLM)
+# ==============================================================================
+
+def preparar_analisis_semantico_promotores(resultado_7b, df_player, config,
+                                            max_comentarios_por_motivo=100, verbose=True):
+    """
+    Prepara comentarios de promotores por motivo para análisis semántico con LLM.
+
+    Similar a preparar_analisis_semantico() de causas_raiz, pero para feedback positivo.
+    Identifica las causas de satisfacción emergentes de forma semántica.
+
+    Args:
+        resultado_7b: Dict con resultado de analizar_promotores()
+        df_player: DataFrame del player
+        config: Dict de configuración
+        max_comentarios_por_motivo: Máximo de comentarios a incluir por motivo
+        verbose: Si True, imprime info
+
+    Returns:
+        dict con:
+            - prompt_path: path al archivo de prompt generado
+            - datos_por_motivo: dict con comentarios preparados por motivo
+    """
+    site = config['site']
+    player = config['player']
+    q_ant = config['periodo_1']
+    q_act = config['periodo_2']
+    col_ola = 'OLA'
+    col_nps = 'NPS'
+
+    if verbose:
+        print(f"\n🌟 ANÁLISIS SEMÁNTICO DE PROMOTORES")
+        print("=" * 70)
+
+    # Obtener datos de promotores y comentarios
+    promotores_data = resultado_7b.get('promotores_data', [])
+    comentarios_dict = resultado_7b.get('comentarios_promotores', {})
+
+    # Detectar columna de comentarios
+    col_comentario = None
+    for col_name in ['COMENTARIO', 'Comentarios', 'comentario']:
+        if col_name in df_player.columns:
+            valores = df_player[col_name].dropna()
+            if len(valores[valores.astype(str).str.len() > 3]) > 10:
+                col_comentario = col_name
+                break
+
+    if not col_comentario:
+        if verbose:
+            print("   ⚠️ No se encontró columna de comentarios")
+        return {'prompt_path': None, 'datos_por_motivo': {}}
+
+    # Filtrar SOLO PROMOTORES (NPS = 1)
+    df_promotores = df_player[df_player[col_nps] == 1].copy()
+
+    # Obtener columna de motivo clasificado (si existe)
+    col_motivo = None
+    for col in df_promotores.columns:
+        if 'MOTIVO_CLASIFICADO' in col.upper():
+            col_motivo = col
+            break
+
+    if not col_motivo:
+        if verbose:
+            print("   ⚠️ No se encontró columna MOTIVO_CLASIFICADO")
+        return {'prompt_path': None, 'datos_por_motivo': {}}
+
+    # Filtrar motivos relevantes - excluir genéricos
+    motivos_excluir = ['Otro', 'Otros', 'Outros', 'General positivo', 'Geral positivo']
+
+    # Preparar comentarios por motivo
+    datos_por_motivo = {}
+
+    # Ordenar por delta descendente (mejores mejoras primero)
+    promotores_ordenados = sorted(promotores_data, key=lambda x: x.get('delta', 0), reverse=True)
+
+    for motivo_data in promotores_ordenados:
+        motivo = motivo_data.get('motivo', '')
+
+        # Saltar motivos genéricos
+        if motivo in motivos_excluir:
+            continue
+
+        delta = motivo_data.get('delta', 0)
+        pct_q2 = motivo_data.get('pct_q2', 0)
+        pct_q1 = motivo_data.get('pct_q1', 0)
+
+        # Filtrar por motivo
+        df_motivo = df_promotores[df_promotores[col_motivo] == motivo]
+
+        # Q2 (actual) - priorizamos el quarter actual
+        df_q2 = df_motivo[df_motivo[col_ola] == q_act]
+        comms_q2 = df_q2[col_comentario].dropna().astype(str).tolist()
+        comms_q2 = [normalizar_encoding(c) for c in comms_q2 if len(c.strip()) > 15]
+
+        # Q1 (anterior)
+        df_q1 = df_motivo[df_motivo[col_ola] == q_ant]
+        comms_q1 = df_q1[col_comentario].dropna().astype(str).tolist()
+        comms_q1 = [normalizar_encoding(c) for c in comms_q1 if len(c.strip()) > 15]
+
+        if len(comms_q2) < 5:
+            if verbose:
+                print(f"   ⏭️  {motivo}: muy pocos comentarios en {q_act}, skip")
+            continue
+
+        # Limitar comentarios (solo Q2)
+        if len(comms_q2) > max_comentarios_por_motivo:
+            comms_q2 = random.sample(comms_q2, max_comentarios_por_motivo)
+
+        datos_por_motivo[motivo] = {
+            'delta': delta,
+            'pct_actual': pct_q2,
+            'pct_anterior': pct_q1,
+            'comentarios_q2': comms_q2,
+            'comentarios_q1_count': len(comms_q1),
+            'comentarios_q2_count': len(comms_q2),
+        }
+
+        if verbose:
+            emoji = "🔥" if delta > 1 else "✅" if delta > 0 else "➡️"
+            print(f"   {emoji} {motivo}: {delta:+.1f}pp, {len(comms_q2)} comentarios")
+
+    if not datos_por_motivo:
+        if verbose:
+            print("   ⚠️ No hay motivos con suficientes comentarios para analizar")
+        return {'prompt_path': None, 'datos_por_motivo': {}}
+
+    # Generar prompt
+    prompt = _generar_prompt_semantico_promotores(datos_por_motivo, player, site, q_ant, q_act)
+
+    # Guardar prompt - carpeta prompts/ en la raíz del proyecto
+    script_dir = Path(__file__).resolve().parent
+    prompts_dir = script_dir.parent / 'prompts'
+    prompts_dir.mkdir(exist_ok=True)
+    prompt_filename = f'prompt_promotores_{player}_{q_act}.txt'
+    prompt_path = prompts_dir / prompt_filename
+
+    with open(prompt_path, 'w', encoding='utf-8') as f:
+        f.write(prompt)
+
+    if verbose:
+        print(f"\n   ✅ Prompt generado: {prompt_path}")
+        print(f"   📋 {len(datos_por_motivo)} motivos con comentarios para analizar")
+
+    return {
+        'prompt_path': str(prompt_path),
+        'datos_por_motivo': datos_por_motivo,
+    }
+
+
+def _generar_prompt_semantico_promotores(datos_por_motivo, player, site, q_ant, q_act):
+    """Genera el prompt estructurado para análisis semántico de causas de satisfacción."""
+
+    prompt = f"""
+# 🌟 ANÁLISIS SEMÁNTICO DE PROMOTORES - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios promotores de **{player}** en **{site}** para identificar
+las **causas de satisfacción** específicas de cada motivo de recomendación.
+
+**Quarters comparados:** {q_ant} → {q_act}
+**Motivos a analizar:** {len(datos_por_motivo)}
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual ({q_act})
+2. **Identificar patrones semánticos** (no solo palabras, sino fortalezas subyacentes)
+3. **Agrupar por causa de satisfacción** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{{
+  "metadata": {{
+    "player": "{player}",
+    "site": "{site}",
+    "quarter": "{q_act}",
+    "metodo": "analisis_semantico_promotores"
+  }},
+  "causas_por_motivo": {{
+    "NombreMotivo": {{
+      "total_comentarios_analizados": 50,
+      "delta_pp": 1.5,
+      "causas_satisfaccion": [
+        {{
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve de la fortaleza identificada",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }}
+      ]
+    }}
+  }}
+}}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+"""
+
+    for motivo, datos in datos_por_motivo.items():
+        delta = datos['delta']
+        n_q2 = datos['comentarios_q2_count']
+        n_q1 = datos['comentarios_q1_count']
+        pct_ant = datos['pct_anterior']
+        pct_act = datos['pct_actual']
+        comentarios = datos['comentarios_q2']
+
+        emoji = "🔥" if delta > 1 else "✅" if delta > 0 else "➡️"
+        direccion = "SUBIÓ" if delta > 0 else "BAJÓ" if delta < 0 else "ESTABLE"
+
+        prompt += f"""
+### {emoji} MOTIVO: {motivo} ({delta:+.1f}pp - {direccion})
+
+**Proporción:** {pct_ant:.1f}% → {pct_act:.1f}% | **Comentarios:** {n_q1} ({q_ant}) → {n_q2} ({q_act})
+
+**Comentarios {q_act}:**
+
+"""
+        for i, c in enumerate(comentarios, 1):
+            c_limpio = c[:250] + '...' if len(c) > 250 else c
+            prompt += f'{i}. "{c_limpio}"\n\n'
+
+        prompt += "\n" + "=" * 80 + "\n"
+
+    output_filename = f'promotores_semantico_{player}_{q_act}.json'
+
+    prompt += f"""
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/{output_filename}`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Buen servicio" sino "Resolución rápida de problemas en menos de 2 horas")
+- Cada causa de satisfacción debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba
+- Enfócate en las FORTALEZAS que podemos mantener y potenciar
+- Usa lenguaje POSITIVO (no "no tiene problemas" sino "funciona sin fricciones")
+"""
+
+    return prompt
+
+
+# ==============================================================================
 # EJECUCIÓN DIRECTA (para pruebas)
 # ==============================================================================
 

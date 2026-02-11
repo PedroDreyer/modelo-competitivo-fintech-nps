@@ -43,7 +43,7 @@ from parte4_categorizacion import categorizar_comentarios
 from parte5_correccion_sin_opinion import corregir_sin_opinion
 from parte6_waterfall import generar_waterfall
 from parte7_causas_raiz import analizar_causas_raiz, exportar_comentarios_para_cursor, preparar_analisis_semantico
-from parte7b_promotores import analizar_promotores, exportar_comentarios_promotores
+from parte7b_promotores import analizar_promotores, exportar_comentarios_promotores, preparar_analisis_semantico_promotores
 from parte8_productos import analizar_productos
 from parte9_principalidad import analizar_principalidad
 from parte10_seguridad import analizar_seguridad
@@ -245,7 +245,17 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     _print("\nðŸŒŸ PARTE 7B: Analizando promotores...")
     resultado_prom = analizar_promotores(df_player, config, verbose=verbose)
     resultados['promotores'] = resultado_prom
-    
+
+    # Analisis semantico de promotores (genera prompt para LLM)
+    _print("   \U0001f9e0 Preparando analisis semantico de promotores...")
+    resultado_semantico_prom = preparar_analisis_semantico_promotores(
+        resultado_prom, df_player, config,
+        max_comentarios_por_motivo=100, verbose=False
+    )
+    resultados['analisis_semantico_promotores'] = resultado_semantico_prom
+    if resultado_semantico_prom.get('prompt_path'):
+        _print(f"   \u2705 Prompt semantico promotores guardado en: {resultado_semantico_prom['prompt_path']}")
+
     # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     # PARTE 8: PRODUCTOS
     # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
