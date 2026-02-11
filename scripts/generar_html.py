@@ -1224,10 +1224,22 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
         return False
     
     # Helper: obtener texto descriptivo de causa (semántica > tema > nada)
-    def _texto_causa(motivo, tema=''):
-        """Devuelve texto descriptivo: prioriza causa semántica, luego tema, luego vacío."""
+    def _texto_causa(motivo, tema='', solo_para_aumento=False):
+        """
+        Devuelve texto descriptivo: prioriza causa semántica, luego tema, luego vacío.
+
+        Args:
+            motivo: Motivo de queja
+            tema: Tema descriptivo alternativo
+            solo_para_aumento: Si True, solo devuelve causa si es coherente con aumento de quejas.
+                              Para reducciones, no usar causas semánticas que describen problemas.
+        """
         cr = _obtener_causa_raiz_top(motivo)
         if cr:
+            # Si es reducción de quejas, no usar causa semántica que describe problemas
+            # (las causas raíz describen QUÉ se queja, no POR QUÉ bajaron las quejas)
+            if solo_para_aumento:
+                return ''
             return f" por {cr}"
         if es_tema_valido(tema) and 'diversas' not in tema.lower():
             return f" por {tema.lower()}"
@@ -1252,7 +1264,10 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
             motivo = q.get('motivo', 'N/A')
             if delta >= UMBRAL_COMPENSACION and not es_motivo_generico(motivo):
                 texto = f"reducción de quejas de {motivo} (-{delta:.0f}p.p.)"
-                texto += buscar_noticia_triangulada(motivo, delta_raw)
+                # Para reducciones, solo usar noticias (no causas semánticas que describen problemas)
+                noticia = buscar_noticia_triangulada(motivo, delta_raw)
+                if noticia:
+                    texto += noticia
                 causas_compensan.append(texto)
     
     elif nps_sube:
@@ -1262,8 +1277,10 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
             motivo = q.get('motivo', 'N/A')
             if delta >= UMBRAL_PRINCIPAL and not es_motivo_generico(motivo):
                 texto = f"reducción de quejas de <strong>{motivo}</strong> (-{delta:.0f}p.p.)"
-                texto += _texto_causa(motivo)
-                texto += buscar_noticia_triangulada(motivo, delta_raw)
+                # Para reducciones, solo usar noticias (no causas semánticas que describen problemas)
+                noticia = buscar_noticia_triangulada(motivo, delta_raw)
+                if noticia:
+                    texto += noticia
                 causas_principales.append(texto)
         
         for q in quejas_deterioro:
@@ -1293,8 +1310,10 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
             motivo = q.get('motivo', 'N/A')
             if delta >= UMBRAL_COMPENSACION and not es_motivo_generico(motivo):
                 texto = f"reducción de quejas de {motivo} (-{delta:.0f}p.p.)"
-                texto += _texto_causa(motivo)
-                texto += buscar_noticia_triangulada(motivo, delta_raw)
+                # Para reducciones, solo usar noticias (no causas semánticas que describen problemas)
+                noticia = buscar_noticia_triangulada(motivo, delta_raw)
+                if noticia:
+                    texto += noticia
                 causas_compensan.append(texto)
     
     # 4. ARMAR TEXTO CON FORMATO (I), (II)
