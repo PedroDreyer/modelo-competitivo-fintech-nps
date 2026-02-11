@@ -18,6 +18,10 @@ import os
 import warnings
 from pathlib import Path
 
+# Suprimir todos los warnings (pandas, matplotlib, etc.)
+warnings.filterwarnings('ignore')
+os.environ['PYTHONWARNINGS'] = 'ignore'
+
 # Agregar el directorio scripts al path
 script_dir = Path(__file__).resolve().parent
 sys.path.insert(0, str(script_dir))

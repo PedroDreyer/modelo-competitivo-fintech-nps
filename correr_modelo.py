@@ -33,6 +33,12 @@ import io
 import argparse
 from pathlib import Path
 import yaml
+import warnings
+import os
+
+# Suprimir TODOS los warnings por defecto (pandas, matplotlib, etc.)
+warnings.filterwarnings('ignore')
+os.environ['PYTHONWARNINGS'] = 'ignore'
 
 # Windows: evitar UnicodeEncodeError en consola (cp1252)
 if sys.platform == "win32":
