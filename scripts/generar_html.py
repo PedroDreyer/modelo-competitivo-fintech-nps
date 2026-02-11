@@ -590,8 +590,8 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
         if col_ola_nps is None:
             col_ola_nps = nps_grafico_df.columns[0]
 
-        # Tomar solo los últimos 5 quarters para el gráfico (dinámico)
-        nps_grafico_df = nps_grafico_df.tail(5)
+        # Filtrar quarters <= q_act y tomar los últimos 5
+        nps_grafico_df = nps_grafico_df[nps_grafico_df[col_ola_nps].astype(str) <= q_act].tail(5)
 
         nps_labels = nps_grafico_df[col_ola_nps].tolist()
         nps_values = [round(v) for v in nps_grafico_df['NPS_score'].tolist()]
@@ -756,8 +756,8 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
     evolucion_quejas_df = wf_data.get('evolucion_quejas_data')
 
     if evolucion_quejas_df is not None and len(evolucion_quejas_df) > 0:
-        # Tomar solo los últimos 5 quarters para el gráfico (dinámico)
-        evolucion_quejas_df = evolucion_quejas_df.tail(5)
+        # Filtrar quarters <= q_act y tomar los últimos 5
+        evolucion_quejas_df = evolucion_quejas_df[evolucion_quejas_df.index.astype(str) <= q_act].tail(5)
 
         # df_evolucion: index = quarter labels, columns = motive categories, values = impact
         quejas_labels = evolucion_quejas_df.index.tolist()

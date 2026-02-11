@@ -443,8 +443,9 @@ def analizar_seguridad(df_completo, config, verbose=True):
     grafico_seguridad_base64 = None
     grafico_motivos_inseg_base64 = None
     
-    # Datos de evolución del player (últimos 5 quarters)
-    datos_evol = result[result['MARCA'] == player].sort_values(col_periodo).tail(5)
+    # Datos de evolución del player (últimos 5 quarters desde q_act hacia atrás)
+    _qs_hasta_qact = [q for q in sorted(result[col_periodo].astype(str).unique()) if q <= q_act][-5:]
+    datos_evol = result[(result['MARCA'] == player) & (result[col_periodo].astype(str).isin(_qs_hasta_qact))].sort_values(col_periodo)
     
     # GRÁFICO 1: EVOLUCIÓN DE SEGURIDAD
     if len(datos_evol) > 0:
@@ -484,8 +485,8 @@ def analizar_seguridad(df_completo, config, verbose=True):
     # Usa % Ponderado Base = % Motivo × % Inseguridad Marca / 100
     # Así la barra total = % Inseguridad del player (no 100%)
     if not motivos_inseguridad.empty and '% Ponderado Base' in motivos_inseguridad.columns:
-        # Obtener últimos 5 quarters
-        olas_disp = sorted(df_completo[col_periodo].unique())
+        # Obtener últimos 5 quarters desde q_act hacia atrás
+        olas_disp = sorted([q for q in df_completo[col_periodo].astype(str).unique() if q <= q_act])
         ultimos_5q = olas_disp[-5:] if len(olas_disp) >= 5 else olas_disp
         
         mot_player = motivos_inseguridad[
