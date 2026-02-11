@@ -1,0 +1,174 @@
+categorias_motivos:
+  ES:
+  - Tarifas
+  - Atención
+  - Rendimientos
+  - Funcionalidades
+  - Seguridad
+  - Dificultad
+  - Promociones
+  - Financiamiento
+  - Otros
+  PT:
+  - Tarifas
+  - Atendimento
+  - Rendimentos
+  - Funcionalidades
+  - Segurança
+  - Dificuldade
+  - Promoções
+  - Financiamento
+  - Outros
+dominios_confiables:
+  MLA:
+  - ambito.com
+  - infobae.com
+  - cronista.com
+  - iprofesional.com
+  - lanacion.com.ar
+  - clarin.com
+  - infotechnology.com
+  MLB:
+  - infomoney.com.br
+  - valor.globo.com
+  - exame.com
+  - moneytimes.com.br
+  - seudinheiro.com
+  - tecmundo.com.br
+  - canaltech.com.br
+  - blog.nubank.com.br
+  - conteudo.mercadopago.com.br
+  MLC:
+  - df.cl
+  - emol.com
+  - latercera.com
+  - pulso.cl
+  - biobiochile.cl
+  MLM:
+  - elfinanciero.com.mx
+  - expansion.mx
+  - eleconomista.com.mx
+  - forbes.com.mx
+  - xataka.com.mx
+mapeo_producto_queja:
+  Atención: Atención
+  Crédito: Financiamiento
+  Cuenta Remunerada: Rendimientos
+  Facilidad de uso: Dificultad
+  Inversiones: Rendimientos
+  Préstamos: Financiamiento
+  Rendimientos: Rendimientos
+  Seguridad: Seguridad
+  Tarjeta de Crédito: Financiamiento
+parametros:
+  año_minimo_noticias: 2024
+  max_noticias_categoria: 5
+  min_comentarios_motivo: 10
+  num_subcausas: 5
+  threshold_cambio_significativo: 0.5
+periodo_1: 25Q2
+periodo_2: 25Q3
+player_analizar: Mercado Pago
+rutas:
+  data: data/
+  outputs: outputs/
+  prompts: prompts/
+  scripts: scripts/
+  templates: templates/
+site: MLM
+sites:
+  MLA:
+    archivo_datos: BASE_CRUDA_MLA.csv
+    bandera: 🇦🇷
+    columnas:
+      comentario: Comentarios
+      marca: PAGO
+      motivo_detractor: P6
+      motivo_neutro: P7
+      motivo_promotor: P8
+      nps: P5
+      nps_clasificacion: NPS
+      ola: OLA
+    encoding: utf-8
+    idioma: ES
+    nombre: Argentina
+    players:
+    - Mercado Pago
+    - Ualá
+    - Naranja X
+    - Brubank
+    - Personal Pay
+    - MODO
+    separador: ;
+    skiprows: 1
+  MLB:
+    archivo_datos: BASE_CRUDA_MLB.csv
+    bandera: 🇧🇷
+    columnas:
+      comentario: Comentarios
+      marca: PAGO
+      motivo_detractor: P6
+      motivo_neutro: P7
+      motivo_promotor: P8
+      nps: P5
+      nps_clasificacion: NPS
+      ola: OLA
+    encoding: latin-1  # NOTA: encoding real usado por SITE_CONFIG en parte1_carga_datos.py
+    idioma: PT
+    nombre: Brasil
+    players:
+    - Mercado Pago
+    - Nubank
+    - PicPay
+    - Banco Inter
+    - C6 Bank
+    - Itaú
+    - Bradesco
+    - PagBank / PagSeguro
+    separador: ;
+    skiprows: 1
+  MLC:
+    archivo_datos: BASE_CRUDA_MLC.csv
+    bandera: 🇨🇱
+    columnas:
+      comentario: Comentario_P4
+      marca: MARCA REGISTRO
+      nps: NPS
+      ola: OLA
+    encoding: utf-8
+    idioma: ES
+    nombre: Chile
+    players:
+    - Mercado Pago
+    - Tenpo
+    - MACH
+    - Banco Estado
+    separador: ;
+    skiprows: 0
+  MLM:
+    archivo_datos: BASE_CRUDA_MLM.csv
+    bandera: 🇲🇽
+    columnas:
+      comentario: Comentarios
+      marca: PAGO
+      motivo_detractor: P6
+      motivo_neutro: P7
+      motivo_promotor: P8
+      nps: P5
+      nps_clasificacion: NPS
+      ola: OLA
+    encoding: utf-8
+    idioma: ES
+    nombre: México
+    players:
+    - Mercado Pago
+    - Nubank
+    - BBVA
+    - Banamex
+    - Santander
+    - Hey Banco
+    - Stori
+    - Klar
+    - Didi
+    separador: ;
+    skiprows: 1

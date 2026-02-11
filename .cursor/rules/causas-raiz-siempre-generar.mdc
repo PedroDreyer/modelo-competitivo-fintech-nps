@@ -1,0 +1,75 @@
+---
+description: Regla obligatoria para generación de causas raíz semánticas en el modelo NPS Competitivo
+globs: 
+alwaysApply: true
+---
+
+# Causas Raíz Semánticas - SIEMPRE DEBEN GENERARSE
+
+## REGLA CRÍTICA
+
+Las causas raíz semánticas (`data/causas_raiz_semantico_{player}_{quarter}.json`) **SIEMPRE** deben existir al generar el HTML final. Si no existen, el agente debe generarlas.
+
+## NUNCA usar generar_subcausas_automatico()
+
+La función `generar_subcausas_automatico()` en `parte7_causas_raiz.py` es keyword-based y produce resultados de muy baja calidad. **NUNCA** usarla como sustituto del análisis semántico real.
+
+## Flujo correcto (como el modelo de Cami - NPS Tx Buyer)
+
+### 1. Verificar si existe el JSON
+```
+data/causas_raiz_semantico_{player}_{quarter}.json
+```
+
+### 2. Si NO existe:
+1. **Leer el prompt** generado por el modelo: `prompts/prompt_causas_raiz_{player}_{quarter}.txt`
+2. **Analizar TODOS los comentarios** de cada motivo semánticamente
+3. **Generar el JSON** con este formato exacto:
+
+```json
+{
+  "metadata": {
+    "player": "...",
+    "site": "...",
+    "quarter": "...",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 100,
+      "delta_pp": 3.1,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y ESPECÍFICO (no genérico)",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 45,
+          "ejemplos": ["comentario real 1", "comentario real 2", "comentario real 3"]
+        }
+      ]
+    }
+  }
+}
+```
+
+4. **Guardar en** `data/causas_raiz_semantico_{player}_{quarter}.json`
+5. **Re-ejecutar el modelo** para que el HTML lo incluya
+
+### 3. Criterios de calidad del análisis semántico
+
+- **Mínimo 2, máximo 4 causas raíz por motivo**
+- **Títulos ESPECÍFICOS** (no "Problemas con crédito" sino "Rechazo de aumento de límite pese a uso frecuente y pagos puntuales")
+- **Causas NO solapadas** entre sí
+- **Frecuencias que sumen ~100%** por motivo
+- **Ejemplos TEXTUALES** copiados del prompt (2-3 por causa)
+- **Priorizar detractores** sobre neutros en el análisis
+
+### 4. Muestra de comentarios
+- El prompt incluye hasta **100 comentarios por motivo**, priorizando detractores
+- Se deben analizar TODOS, no solo los primeros
+- La frecuencia debe reflejar cuántos comentarios pertenecen a cada causa raíz
+
+## IMPORTANTE
+- Si el modelo termina y el HTML muestra "Causas raíz: No disponible", significa que faltó este paso
+- SIEMPRE verificar que el JSON exista ANTES de generar el HTML final
+- Si hay que borrar el JSON para regenerar (ej: cambió el mapeo de categorías), siempre volver a correr este flujo completo

@@ -1,0 +1,152 @@
+{
+  "source_pdf": "MLM/25Q4 _ NPS Competitivo MLM [Presented].pdf",
+  "parsed_at": "2026-02-08",
+  "site": "MLM",
+  "quarter": "25Q4",
+  "md5": "8e62e616ae50f01bfc73a409db9a1868",
+  "resumen_general": "Evolución de MAUs y Principalidad",
+  "players": {
+    "Mercado Pago": {
+      "nps_delta": 3.0,
+      "drivers": [],
+      "waterfall_quejas": {
+        "Financiamiento": 6.0,
+        "Rendimientos": 22.0,
+        "Seguridad": 3.0,
+        "Inversiones": 22.0
+      },
+      "principalidad": {
+        "valor": 42.0,
+        "delta": 7.0
+      },
+      "seguridad": {
+        "valor": 60.0,
+        "delta": 11.0
+      },
+      "conclusiones": []
+    },
+    "Nubank": {
+      "nps_delta": -4.0,
+      "drivers": [
+        {
+          "efecto": "~4pp",
+          "detalle": "caída en usuarios que declaran usar tarjeta de"
+        },
+        {
+          "efecto": "~1pp",
+          "detalle": "recuperación parcial de valoración"
+        },
+        {
+          "efecto": "~11pp",
+          "detalle": "NPS vs Bancos Tradicionales"
+        },
+        {
+          "efecto": "~3pp",
+          "detalle": "quien usan financiamiento +4p"
+        },
+        {
+          "efecto": "~8pp",
+          "detalle": "penetración declarada en"
+        }
+      ],
+      "waterfall_quejas": {
+        "Complejidad": 9.0,
+        "Problemas Funcionales": 9.0,
+        "Financiamiento": 1.0,
+        "Rendimientos": 9.0,
+        "Seguridad": 4.0,
+        "Atención": 23.0,
+        "Atención al Cliente": 23.0,
+        "Tarifas": 3.0,
+        "Promociones": 9.0,
+        "Inversiones": 11.0
+      },
+      "principalidad": {
+        "valor": 15.0,
+        "delta": -8.0
+      },
+      "seguridad": {
+        "valor": 55.0,
+        "delta": -4.0
+      },
+      "conclusiones": []
+    },
+    "BBVA": {
+      "nps_delta": -1.0,
+      "drivers": [
+        {
+          "efecto": "~5pp",
+          "detalle": "experiencia luego del 28% usuarios considera no simple la Perciben que la nueva actualización"
+        }
+      ],
+      "waterfall_quejas": {
+        "Complejidad": 5.0,
+        "Financiamiento": 1.0
+      },
+      "principalidad": {
+        "valor": 20.0,
+        "delta": -1.0
+      },
+      "seguridad": {
+        "valor": null,
+        "delta": 1.0
+      },
+      "conclusiones": []
+    },
+    "Klar": {
+      "nps_delta": null,
+      "drivers": [],
+      "waterfall_quejas": {},
+      "principalidad": {
+        "valor": 5.0,
+        "delta": 4.0
+      },
+      "seguridad": {
+        "valor": null,
+        "delta": 4.0
+      },
+      "conclusiones": []
+    },
+    "Didi": {
+      "nps_delta": null,
+      "drivers": [
+        {
+          "efecto": "~11pp",
+          "detalle": "quejas por Financiamiento Usuarios perciben tasas de interés"
+        },
+        {
+          "efecto": "~9pp",
+          "detalle": "tasa de pagar, pagas el 110% del monto"
+        },
+        {
+          "efecto": "~4pp",
+          "detalle": "principalidad en usuarios Aumenta principalidad de Mercado Aumenta principalidad de Nubank"
+        },
+        {
+          "efecto": "~4pp",
+          "detalle": "principalidad declarada vs 25Q3 por"
+        },
+        {
+          "efecto": "~2pp",
+          "detalle": "24Q4 a +11p"
+        }
+      ],
+      "waterfall_quejas": {
+        "Financiamiento": 11.0,
+        "Rendimientos": 1.0,
+        "Seguridad": 1.0,
+        "Tarifas": 11.0,
+        "Funcionalidades": 1.0
+      },
+      "principalidad": {
+        "valor": 6.0,
+        "delta": 4.0
+      },
+      "seguridad": {
+        "valor": null,
+        "delta": 4.0
+      },
+      "conclusiones": []
+    }
+  }
+}

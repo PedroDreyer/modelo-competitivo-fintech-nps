@@ -1,0 +1,151 @@
+{
+  "source_pdf": "MLM/25Q3 _ NPS Competitivo MLM (presented).pdf",
+  "parsed_at": "2026-02-08",
+  "site": "MLM",
+  "quarter": "25Q3",
+  "md5": "8c0138e286243ab01dbe2d5c17903c23",
+  "resumen_general": "Mercado Pago cae 3p.p. NPS e iguala a Nu en 64p.p.; ambos siguen liderando en",
+  "players": {
+    "Mercado Pago": {
+      "nps_delta": -3.0,
+      "drivers": [
+        {
+          "efecto": "~1pp",
+          "detalle": "baja de tasa"
+        },
+        {
+          "efecto": "~2pp",
+          "detalle": "baja de"
+        },
+        {
+          "efecto": "~5pp",
+          "detalle": "NPS en"
+        },
+        {
+          "efecto": "~2pp",
+          "detalle": "penetración (43% a 41%)"
+        },
+        {
+          "efecto": "~3pp",
+          "detalle": "uso (22% a 25%) tras"
+        }
+      ],
+      "waterfall_quejas": {
+        "Financiamiento": 1.0,
+        "Rendimientos": 3.0,
+        "Inversiones": 7.0
+      },
+      "principalidad": {
+        "valor": 11.0,
+        "delta": -3.0
+      },
+      "seguridad": {
+        "valor": 50.0,
+        "delta": 10.0
+      },
+      "conclusiones": [
+        "Mercado Pago: NPS -3p.",
+        "Mercado Pago y Nubank líderes en fintech, BBVA en tradicionales\nDidi integra en su app transporte\n[NPS Competitivo – Individuos1 con saldo 25’Q3] y servicios financieros con >30M\nMAUs3\n[Δ NPS\n-3p."
+      ]
+    },
+    "Nubank": {
+      "nps_delta": -1.0,
+      "drivers": [],
+      "waterfall_quejas": {},
+      "principalidad": {
+        "valor": 43.0,
+        "delta": -1.0
+      },
+      "seguridad": {
+        "valor": 75.0,
+        "delta": 10.0
+      },
+      "conclusiones": []
+    },
+    "BBVA": {
+      "nps_delta": 2.0,
+      "drivers": [],
+      "waterfall_quejas": {},
+      "principalidad": {
+        "valor": 11.0,
+        "delta": -3.0
+      },
+      "seguridad": {
+        "valor": 50.0,
+        "delta": -8.0
+      },
+      "conclusiones": []
+    },
+    "Santander": {
+      "nps_delta": null,
+      "drivers": [],
+      "waterfall_quejas": {},
+      "principalidad": {
+        "valor": 15.0,
+        "delta": 7.0
+      },
+      "seguridad": {
+        "valor": 50.0,
+        "delta": 10.0
+      },
+      "conclusiones": []
+    },
+    "Klar": {
+      "nps_delta": null,
+      "drivers": [],
+      "waterfall_quejas": {},
+      "principalidad": {
+        "valor": 15.0,
+        "delta": 7.0
+      },
+      "seguridad": {
+        "valor": 50.0,
+        "delta": 10.0
+      },
+      "conclusiones": []
+    },
+    "Didi": {
+      "nps_delta": null,
+      "drivers": [
+        {
+          "efecto": "~10pp",
+          "detalle": "NPS en usuarios que"
+        },
+        {
+          "efecto": "~2pp",
+          "detalle": "principalidad declarada por Rendimientos en Q3"
+        },
+        {
+          "efecto": "~2pp",
+          "detalle": "confianza en Q3"
+        },
+        {
+          "efecto": "~7pp",
+          "detalle": "24Q3 a +1p"
+        },
+        {
+          "efecto": "~10pp",
+          "detalle": "NPS vs quienes no"
+        }
+      ],
+      "waterfall_quejas": {
+        "Complejidad": 7.0,
+        "Problemas Funcionales": 7.0,
+        "Financiamiento": 17.0,
+        "Rendimientos": 10.0,
+        "Seguridad": 7.0,
+        "Promociones": 11.0,
+        "Inversiones": 23.0
+      },
+      "principalidad": {
+        "valor": 1.0,
+        "delta": 7.0
+      },
+      "seguridad": {
+        "valor": 50.0,
+        "delta": 7.0
+      },
+      "conclusiones": []
+    }
+  }
+}

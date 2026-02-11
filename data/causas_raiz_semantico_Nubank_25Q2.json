@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "player": "Nubank",
+    "site": "MLM",
+    "quarter": "25Q2",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Financiamiento": {
+      "total_comentarios_analizados": 100,
+      "delta_pp": 3.1,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés y CAT excesivamente altos comparados con la competencia",
+          "descripcion": "Usuarios perciben que el CAT y las tasas de interés de la tarjeta de crédito Nubank son desproporcionadamente altos (superiores al 100%), incluso más caros que bancos tradicionales. Mencionan que los intereses han subido recientemente.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 38,
+          "ejemplos": [
+            "La tasa de rédito es el 99% mucho rédito",
+            "El CAT es altísimo aunque no cobren anualidad",
+            "En los ultimos dias han estado incrementando muchísimo el cat para su tarjeta de crédito mayor al 100"
+          ]
+        },
+        {
+          "titulo": "Límite de crédito insuficiente que no aumenta pese al uso responsable",
+          "descripcion": "Usuarios reclaman que Nubank otorga líneas de crédito muy bajas y no las aumenta a pesar de uso frecuente y pagos puntuales durante meses o años. Esto genera frustración especialmente en usuarios leales.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 35,
+          "ejemplos": [
+            "No me han subido mi límite de crédito en más de un año",
+            "La interfase de la aplicación es muy buena, pero tardan mucho en subirte el límite de crédito a pesar de usarla con frecuencia y pagar de manera puntual",
+            "Porque me gusta Nu, sin embargo el monto de línea de crédito que ha ofrecido tanto a mi como a mi pareja son bajos (y no tiene que ver con el historial crediticio)"
+          ]
+        },
+        {
+          "titulo": "Cobros excesivos por diferir pagos y falta de opciones MSI",
+          "descripcion": "Usuarios se quejan de los costos por diferir pagos a meses y la ausencia o limitación de opciones de meses sin intereses (MSI), lo cual los pone en desventaja frente a otros bancos.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Porque cobra por diferir los pagos.",
+            "Tiene un discurso atractivo para engancharte y cuando tienes la tarjeta resulta otra cosa. Tiene intereses demasiado caros, pocas opciones de compra a msi.",
+            "las lineas de credito son muy bajas y en ningun lado la aceptan a meses sin intereses"
+          ]
+        },
+        {
+          "titulo": "Falta de productos crediticios más allá de la tarjeta",
+          "descripcion": "Usuarios demandan más opciones de financiamiento como préstamos personales, pero Nubank no los ofrece o los rechaza pese a buen historial. Algunos recibieron tarjeta prepagada en vez de crédito real.",
+          "frecuencia_pct": 12,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "A pesar de que ya he hecho historial siguen sin autorizarme prestamos",
+            "Siento que le falta más oportunidades para prestamos",
+            "Por qué no me ha dado lo que quiero que es una tarjeta de crédito real no prepagada"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 85,
+      "delta_pp": 2.5,
+      "causas_raiz": [
+        {
+          "titulo": "Caída drástica de tasas de rendimiento (de 15% a 9%) como reflejo de recortes de Banxico",
+          "descripcion": "La queja dominante es la reducción significativa de las tasas de rendimiento en las cajitas, que pasaron de ~15% a ~9%. Usuarios sienten que fue un 'gancho' inicial y que ahora Nu perdió su principal atractivo.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 47,
+          "ejemplos": [
+            "Recientemente también han bajaron los porcentajes de interés para las inversiones de 15 a 9% y solo aplica el 15 para una cantidad limitada",
+            "Lo atractivo de Nu, eran sus cajitas y su rendimiento, ahora que ya bajo demasiado, dejo de ser atractiva y funcional",
+            "Todo es bueno pero abrí mi cuenta por el rendimiento que estaban dando del 15 y ya no lo dan mas"
+          ]
+        },
+        {
+          "titulo": "Transición a banco reduce atractivo fiscal y competitividad vs CETES",
+          "descripcion": "Usuarios entienden que la conversión de SOFIPO a banco eliminará el beneficio fiscal y hará que los rendimientos sean menos competitivos frente a CETES y otros instrumentos.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Ahora que se convertirá en banco, las cajitas ya no tendrán el mismo beneficio de una sofipo",
+            "Amo Nubank pero el hecho de que ya bajó drásticamente sus tasas y está próximamente a volverse banco, ya no es atractivo porque no tendrá beneficio fiscal ni tasas atractivas comparado con cetes",
+            "Al bajar las tasas de la cajita se expone el dinero tomando en cuenta que es una sofipos"
+          ]
+        },
+        {
+          "titulo": "Rendimientos percibidos como inferiores a la competencia (Mercado Pago, otros)",
+          "descripcion": "Usuarios comparan directamente los rendimientos de Nu con Mercado Pago y otros competidores, encontrando que Nu ya no ofrece una ventaja clara.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Porque Nu Bank no da tanto rendimiento diario como Mercado pago a menos que lo pongas en inversión de 3 meses",
+            "El dinero crece menos en mi cuenta que en algunas de la competencia",
+            "Era un instrumento con mejores rendimiento pero al convertirse en banco bajaron sus rendimientos"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 33,
+      "delta_pp": -1.8,
+      "causas_raiz": [
+        {
+          "titulo": "App con interfaz poco intuitiva y difícil de navegar",
+          "descripcion": "Usuarios encuentran la aplicación complicada de usar, con navegación confusa especialmente para funciones como liquidación de tarjeta y gestión de cajitas.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Es difícil usar la tarjeta ya sea débito o crédito para encontrar la inf",
+            "La aplicación es buena pero la parte de liquidar es demaciado tedioso",
+            "A pesar de lo poco que la utilizo, su sistema de navegación no es tan fácil que digamos"
+          ]
+        },
+        {
+          "titulo": "Fallas técnicas y errores intermitentes en la app",
+          "descripcion": "La aplicación presenta fallas periódicas que impiden realizar operaciones normales como transferencias, generando desconfianza.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Suele fallar en ocasiones",
+            "La app llega a presentar fallas cuando quieres utilizar alguna de sus funcionas lo que es molesto.",
+            "Es algo que no funciona correcto"
+          ]
+        },
+        {
+          "titulo": "Ausencia de cajeros propios dificulta retiros y depósitos",
+          "descripcion": "Al ser 100% digital, la falta de cajeros propios obliga a depender de terceros con costos adicionales, complicando operaciones básicas.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "No hay cajero disponibles para disponer del dinero",
+            "Aunque tiene mejores rendimientos de inversión, este si es un banco 100% digital, así que no tenemos ningún cajero en donde poder hacer retiros",
+            "No es tan fácil y barato retirar"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 18,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de puntos de depósito y retiro accesibles",
+          "descripcion": "Usuarios reclaman la ausencia de sucursales físicas y cajeros propios, lo que dificulta depósitos en efectivo y retiros en zonas sin establecimientos afiliados.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Tengo problemas para el depósito en efectivo, no hay establecimientos cercanos.",
+            "Es buena aplicación pero de igual manera no cuenta con cajeros automáticos para hacer retiros",
+            "Aún le faltan puntos donde pueda retirar dinero"
+          ]
+        },
+        {
+          "titulo": "Oferta de productos limitada comparada con bancos tradicionales",
+          "descripcion": "Usuarios perciben que Nu carece de funcionalidades que bancos más establecidos ofrecen, como opciones de transferencia, recargas y servicios bancarios completos.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Al ser sofipo aún me parece algo limitada. Ya que sea banco me parece que mejorará.",
+            "No hay opciones para transferir",
+            "No tiene sucursal fisica y baja su tasas no es constante"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 41,
+      "delta_pp": 1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia total de cashback frente a competidores que sí lo ofrecen",
+          "descripcion": "La queja más frecuente es que Nubank no ofrece ningún programa de cashback, algo que usuarios consideran básico y que competidores como Mercado Pago, Stori y BBVA sí tienen.",
+          "frecuencia_pct": 44,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "No tiene cashback",
+            "No ofrece incentivo atractivos como cash back",
+            "Si, me gustaría que tuvieran cash bank, opción de puntos o algo así por usarla y la usaría más que mis otras 2 cuentas"
+          ]
+        },
+        {
+          "titulo": "Sin programa de puntos ni recompensas por uso frecuente",
+          "descripcion": "Usuarios esperan un sistema de puntos o recompensas por compras que incentive el uso de la tarjeta, especialmente al comparar con la propuesta de bancos tradicionales.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Tengo poco siendo cliente pero lo unico que me gustaria es que la tarjeta de credito tuviera un programa de puntos",
+            "Porque sería bueno que de puntos por pagar y que de promociónes",
+            "No te ofrece nada por referenciar ni cashback"
+          ]
+        },
+        {
+          "titulo": "Pocas promociones y descuentos en establecimientos comparado con la competencia",
+          "descripcion": "Usuarios perciben que Nubank se queda corto en promociones con comercios, descuentos y opciones de MSI que otros bancos y fintechs ofrecen activamente.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Es una buena aplicación, cumple con su propósito, pero se queda corta en promociones con la competencia",
+            "esta muy bien pero podrian ligarla con estableciminetos para desuentos o promociones",
+            "Ni tienen cash back y ninguna promoción con descuento solo a meses"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 24,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Desconfianza por ser banco digital sin sucursales físicas",
+          "descripcion": "La ausencia de sucursales físicas genera desconfianza en usuarios que asocian presencia física con seguridad y solidez bancaria. Prefieren bancos donde puedan acudir presencialmente.",
+          "frecuencia_pct": 54,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Es buena opción para ahorrar y crecer el dinero pero me gustaría que tuviera banco físico, eso da más confianza",
+            "Se necesita una sucursal establecida donde poder acudir a realizar depósitos o pagos o aclarar dudas",
+            "Prefiero tener tarjetas con bancos que si tengan sucursal en mi ciudad"
+          ]
+        },
+        {
+          "titulo": "Percepción de vulnerabilidad ante fraudes y accesos no autorizados",
+          "descripcion": "Algunos usuarios reportan incidentes de accesos no autorizados a sus cuentas y perciben que las medidas de seguridad de la app son insuficientes.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Porque ha dejado que otras cuantas entren a mi saldo sin autorización",
+            "No tiene mucha seguridad y la pag esta confusa",
+            "Porque no siento que sea seguro el banco.. cuando tenga mas seguridad lo recomiendo"
+          ]
+        },
+        {
+          "titulo": "Incertidumbre por cambios regulatorios y transición SOFIPO a banco",
+          "descripcion": "La transición regulatoria genera inseguridad sobre la estabilidad y políticas futuras de Nubank, afectando la confianza de usuarios para recomendar.",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Porque es cambiante en sus políticas creando inseguridad e incertidumbre respecto a su estabilidad",
+            "Pues de que aun no es un banco, para cuando tengan ese seguro extra sería mejor",
+            "Que se estabilicen bien como un banco en México"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 19,
+      "delta_pp": -0.6,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de contactar soporte por teléfono o presencialmente",
+          "descripcion": "Usuarios reclaman la falta de línea telefónica directa y atención presencial. El soporte solo por chat resulta insuficiente para resolver problemas complejos.",
+          "frecuencia_pct": 47,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "le falta ser un banco que puedas ir o poder hablar con alguien cuando tinees una duda",
+            "No es fqcil poder contactar la atenciona clientes",
+            "Me gustaría una asistencia personalizada por teléfono"
+          ]
+        },
+        {
+          "titulo": "Resolución lenta e ineficiente de problemas y cobros no reconocidos",
+          "descripcion": "Cuando surgen problemas como cobros no reconocidos o fraudes, la resolución es tardada y no satisfactoria, generando frustración en usuarios afectados.",
+          "frecuencia_pct": 37,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Es fácil de usar, pero cuando hay algún cobro no reconocido, no resuelven el problema",
+            "Más atención al cliente, en temas de resolución de problemas",
+            "No ofrecen buena atención al cliente y muchas veces es difícil reclamar o hacer quejas porque nadie te atiende"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 9,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Cobros por reemplazo de plástico y disposición de efectivo percibidos como excesivos",
+          "descripcion": "Usuarios se quejan de comisiones específicas como el cobro por reemplazo de tarjeta física y las comisiones por disposición de efectivo, que comparan desfavorablemente con otros bancos.",
+          "frecuencia_pct": 44,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "No me agrada que por un reemplazo de plastico cobren tanto, Bancomer no cobra ni mercado libre",
+            "Reducir la comisión por disposición de efectivo",
+            "No tiene depositadores gratuitos y si pagas una cuenta a msi antes te penaliza"
+          ]
+        },
+        {
+          "titulo": "Tarifas generales percibidas como altas para una fintech digital",
+          "descripcion": "Usuarios esperan menores costos de una fintech sin sucursales, pero sienten que las tarifas son comparables o superiores a bancos tradicionales.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "es una muy buena opción pero es muy cara en sus tarifas",
+            "La tasas son más altas que una entidad financiera tradicional",
+            "me gustaria que tuviera mas opciones para hacer dentro de la app como recargas o uso de cajeros con tarifa preferencial"
+          ]
+        }
+      ]
+    }
+  }
+}

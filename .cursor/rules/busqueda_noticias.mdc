@@ -1,0 +1,142 @@
+---
+description: Búsqueda de noticias con Cursor WebSearch ANTES de ejecutar el modelo NPS
+alwaysApply: true
+---
+
+# Búsqueda de Noticias con Cursor (Pre-Modelo)
+
+Cuando el usuario pida ejecutar el modelo NPS para cualquier player/site/quarter, **SIEMPRE** realizar búsqueda de noticias con WebSearch ANTES de correr el modelo Python.
+
+## Flujo Obligatorio
+
+### PASO 1: Identificar parámetros
+
+Extraer del pedido del usuario:
+- **Site**: MLB, MLA, MLM, MLC
+- **Player**: Nombre exacto
+- **Q1** (anterior) y **Q2** (actual): formato 25Q1, 25Q2, etc.
+- **País**: Argentina, Brasil, México, Chile (según site)
+- **Meses del Q2**: mapear el quarter actual a meses
+
+| Quarter | Meses (español) | Meses (portugués) |
+|---------|-----------------|-------------------|
+| Q1 | enero, febrero, marzo | janeiro, fevereiro, março |
+| Q2 | abril, mayo, junio | abril, maio, junho |
+| Q3 | julio, agosto, septiembre | julho, agosto, setembro |
+| Q4 | octubre, noviembre, diciembre | outubro, novembro, dezembro |
+
+### PASO 2: Ejecutar búsquedas con WebSearch
+
+Realizar **al menos 6 búsquedas** (en paralelo cuando sea posible) cubriendo estas categorías:
+
+| # | Categoría | Query template |
+|---|-----------|---------------|
+| 1 | **General** | `"{Player}" {País} noticias {meses} {año}` |
+| 2 | **Financiamiento** | `"{Player}" {País} crédito préstamo tarjeta {meses} {año}` |
+| 3 | **Rendimientos** | `"{Player}" {País} rendimiento tasa ahorro {meses} {año}` |
+| 4 | **Complejidad/App** | `"{Player}" {País} app problemas actualización {meses} {año}` |
+| 5 | **Seguridad** | `"{Player}" {País} seguridad fraude {meses} {año}` |
+| 6 | **Promociones** | `"{Player}" {País} promoción cashback descuento {meses} {año}` |
+
+**Para Brasil (MLB)**, usar términos en portugués:
+| # | Categoría | Query template |
+|---|-----------|---------------|
+| 1 | General | `"{Player}" Brasil notícias {meses_pt} {año}` |
+| 2 | Financiamiento | `"{Player}" Brasil crédito empréstimo cartão {meses_pt} {año}` |
+| 3 | Rendimientos | `"{Player}" Brasil rendimento CDI poupança {meses_pt} {año}` |
+| 4 | Complejidad | `"{Player}" Brasil app problema falha {meses_pt} {año}` |
+| 5 | Seguridad | `"{Player}" Brasil segurança fraude golpe {meses_pt} {año}` |
+| 6 | Promociones | `"{Player}" Brasil promoção cashback desconto {meses_pt} {año}` |
+
+**Búsquedas adicionales opcionales** (si hay drivers relevantes del quarter anterior):
+- Funcionalidades: `"{Player}" {País} nueva función lanzamiento {año}`
+- Atención: `"{Player}" {País} atención cliente servicio reclamo {año}`
+
+### PASO 3: Procesar resultados y escribir batch JSON
+
+De cada búsqueda, extraer las noticias relevantes (titulo, fuente, URL, resumen) y escribirlas en un archivo batch JSON en `data/noticias_cursor_batch.json`:
+
+```json
+{
+    "site": "MLM",
+    "player": "Nubank",
+    "noticias": [
+        {
+            "titulo": "Nubank lanza nueva tarjeta de crédito en México",
+            "fuente": "El Economista",
+            "url": "https://eleconomista.com.mx/...",
+            "resumen": "Nubank anunció el lanzamiento de su nueva tarjeta...",
+            "categoria_relacionada": "Financiamiento",
+            "impacto_esperado": "positivo",
+            "fecha": "2025-04"
+        }
+    ]
+}
+```
+
+**Reglas para procesar resultados:**
+- Solo incluir noticias RELEVANTES al player (que mencionen al player directamente)
+- `fecha`: formato `YYYY-MM`, inferir del contenido o del período analizado
+- `categoria_relacionada`: una de: Financiamiento, Rendimientos, Complejidad, Seguridad, Promociones, Funcionalidades, Atención, General
+- `impacto_esperado`: "positivo" (bueno para el player), "negativo" (malo), "neutro"
+- `resumen`: 1-2 oraciones con el contenido clave de la noticia
+- Evitar noticias duplicadas (mismo evento, diferente fuente)
+- Objetivo: 8-15 noticias de calidad
+
+### PASO 4: Inyectar noticias al cache
+
+```bash
+python scripts/agregar_noticias_cursor.py --file data/noticias_cursor_batch.json
+```
+
+### PASO 5: Ejecutar el modelo SIN búsqueda web Python
+
+```bash
+python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --no-news
+```
+
+El flag `--no-news` le dice al modelo que NO intente buscar en DuckDuckGo (ya que Cursor ya buscó noticias mejores).
+
+### PASO 6: Revisar gaps y completar
+
+Después de ejecutar el modelo, revisar el output. Si el modelo reporta **gaps** (drivers sin noticias), hacer búsquedas adicionales específicas:
+
+1. Leer las sugerencias de búsqueda del output del modelo
+2. Usar WebSearch con esas queries específicas
+3. Agregar las nuevas noticias al cache (repetir pasos 3-4)
+4. Re-ejecutar el modelo: `python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --no-news`
+
+---
+
+## Ejemplo Completo
+
+**Usuario dice**: "Corre Nubank México 25Q1 vs 25Q2"
+
+**Cursor hace**:
+
+1. Identifica: Site=MLM, Player=Nubank, Q1=25Q1, Q2=25Q2, País=México, Meses=abril mayo junio 2025
+
+2. Busca con WebSearch (en paralelo):
+   - `"Nubank" México noticias abril mayo junio 2025`
+   - `"Nubank" México crédito préstamo tarjeta 2025`
+   - `"Nubank" México rendimiento tasa ahorro 2025`
+   - `"Nubank" México app problemas actualización 2025`
+   - `"Nubank" México seguridad fraude 2025`
+   - `"Nubank" México promoción cashback descuento 2025`
+
+3. Escribe `data/noticias_cursor_batch.json` con ~10 noticias encontradas
+
+4. Ejecuta: `python scripts/agregar_noticias_cursor.py --file data/noticias_cursor_batch.json`
+
+5. Ejecuta: `python correr_modelo.py --site MLM --player "Nubank" --q1 25Q1 --q2 25Q2 --no-news`
+
+6. Revisa output, busca gaps si los hay, y re-ejecuta si fue necesario
+
+---
+
+## Notas Importantes
+
+- **¿Por qué Cursor busca y no Python?** Cursor tiene acceso a WebSearch que funciona de forma confiable. La búsqueda Python directa a DuckDuckGo está bloqueada por anti-bot.
+- **Las noticias se acumulan**: Cada corrida agrega noticias al cache sin borrar las anteriores.
+- **Calidad > Cantidad**: Es mejor 8 noticias relevantes con buenos resúmenes que 20 genéricas sin contenido.
+- **El modelo ya tiene `--no-news`**: Este flag existe específicamente para este flujo.

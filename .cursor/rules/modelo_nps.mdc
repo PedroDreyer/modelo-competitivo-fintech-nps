@@ -1,0 +1,247 @@
+---
+description: Modelo NPS Competitivo Individuos Fintech - Ejecutar análisis de variación NPS por site/player/quarter
+alwaysApply: true
+---
+
+# Modelo NPS Competitivo Individuos Fintech
+
+Modelo de análisis de NPS Competitivo de Individuos en LATAM. Genera un HTML con diagnóstico automático, triangulación de noticias y estructura Pyramid Principle.
+
+---
+
+## 🚀 INICIO DE CONVERSACIÓN (OBLIGATORIO)
+
+Cuando el usuario inicie una conversación (saludo, "hola", "buenas", o cualquier mensaje inicial que no especifique directamente qué analizar), **SIEMPRE** responder con:
+
+---
+
+**¡Hola! Soy el Modelo de NPS Competitivo de Individuos Fintech** 📊
+
+Puedo ayudarte a analizar variaciones de NPS Competitivo de Individuos en LATAM.
+
+**¿Qué análisis quieres ejecutar hoy?**
+
+Necesito que me indiques:
+- **País/Site**: Argentina (MLA), Brasil (MLB), México (MLM) o Chile (MLC)
+- **Player**: La marca que quieres analizar
+- **Quarters**: El período a comparar (ej: 25Q3 vs 25Q4)
+
+*Ejemplo: "Mercado Pago Argentina 25Q3 vs 25Q4"*
+
+---
+
+**IMPORTANTE**: Solo mostrar este saludo cuando el mensaje del usuario NO contenga información suficiente para ejecutar el modelo. Si el usuario ya especifica site/player/quarters, ejecutar directamente.
+
+---
+
+## Flujo Rápido
+
+Cuando el usuario pida analizar variaciones de NPS, seguir el flujo de **búsqueda de noticias con Cursor** (ver regla `busqueda_noticias.mdc`):
+
+1. **Buscar noticias** con WebSearch (~6 búsquedas por categoría)
+2. **Escribir** `data/noticias_cursor_batch.json` con las noticias encontradas
+3. **Inyectar** al cache: `python scripts/agregar_noticias_cursor.py --file data/noticias_cursor_batch.json`
+4. **Ejecutar** modelo:
+
+```bash
+cd MODELO_NPS_COMPETITIVO_INDIVIDUOS_FINTECH
+python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --no-news
+```
+
+5. **Revisar gaps** y buscar noticias adicionales si es necesario
+
+El HTML se genera automáticamente en `outputs/Resumen_NPS_{Player}_{Quarter}.html`
+
+---
+
+## Identificar Parámetros
+
+El usuario puede decir cosas como:
+- "Quiero ver variaciones de Mercado Pago Argentina 25Q3 vs 25Q4"
+- "Analiza Nubank Brasil Q3 vs Q4 2025"
+- "Corre el modelo para BBVA México"
+
+Extraer:
+- **Site**: MLB (Brasil), MLA (Argentina), MLM (México), MLC (Chile)
+- **Player**: La marca/billetera a analizar
+- **Períodos**: Q1 (anterior) y Q2 (actual) en formato 25Q3, 25Q4, etc.
+
+### Players disponibles por site:
+
+| Site | País | Players |
+|------|------|---------|
+| **MLB** | Brasil | Mercado Pago, Nubank, PicPay, Banco Inter, C6 Bank, Itaú, Bradesco, PagBank |
+| **MLA** | Argentina | Mercado Pago, Ualá, Naranja X, Brubank, Personal Pay, MODO |
+| **MLM** | México | Mercado Pago, Nubank, BBVA, Banamex, Santander, Hey Banco, Stori, Klar |
+| **MLC** | Chile | Mercado Pago, Tenpo, MACH, Banco Estado |
+
+---
+
+## Qué genera el modelo
+
+### Estructura del HTML (Pyramid Principle)
+
+1. **DIAGNÓSTICO PRINCIPAL**
+   - Headline con delta NPS
+   - Gráfico evolución NPS
+   - Resumen narrativo automático (copiable para presentaciones)
+   - Métricas: NPS, Principalidad, Seguridad
+   - Quejas clave: Deterioros vs Mejoras (dos columnas)
+   - Productos clave por impacto
+
+2. **TRIANGULACIÓN**
+   - Contexto del mercado y noticias
+   - Triangulación motivo ↔ noticia
+   - Triangulación métricas ↔ quejas ↔ noticias
+
+3. **DEEP DIVE**
+   - Causas detalladas de variación
+   - Subcausas con comentarios de usuarios
+
+4. **WATERFALL + QUEJAS**
+   - Gráfico waterfall NPS por motivo
+   - Evolución de quejas
+   - Análisis de promotores
+
+5. **PRODUCTOS**
+   - Tabla detallada de uso de productos
+   - Mix effect y NPS effect
+
+---
+
+## Sistema de Noticias
+
+### Flujo principal: Cursor busca noticias ANTES de ejecutar el modelo
+
+**Cursor usa WebSearch** para buscar noticias relevantes antes de correr el modelo Python. Esto reemplaza la búsqueda Python directa a DuckDuckGo (que está bloqueada por anti-bot).
+
+**Flujo automático (ver regla `busqueda_noticias.mdc`):**
+1. Cursor hace ~6 WebSearch por categoría (Financiamiento, Rendimientos, Complejidad, etc.)
+2. Cursor escribe las noticias en `data/noticias_cursor_batch.json`
+3. Cursor ejecuta: `python scripts/agregar_noticias_cursor.py --file data/noticias_cursor_batch.json`
+4. Cursor ejecuta el modelo con `--no-news`: `python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --no-news`
+5. Si hay gaps, Cursor busca más noticias y re-ejecuta
+
+### Cache de noticias
+
+Las noticias se acumulan en `data/noticias_cache.json` (nunca se borran, solo se agregan nuevas sin duplicar por título/URL).
+
+### Agregar noticias manualmente
+
+Si necesitas agregar una sola noticia:
+
+```python
+from scripts.analisis_automatico import agregar_noticia_a_cache
+
+agregar_noticia_a_cache(
+    site="MLM",
+    player="BBVA",
+    titulo="BBVA lanza nueva app móvil en México",
+    fuente="El Economista",
+    fecha="2025-10",
+    url="https://...",
+    resumen="BBVA renovó su aplicación móvil...",
+    categoria_relacionada="Complejidad",
+    impacto_esperado="positivo"
+)
+```
+
+### Categorías de noticias
+
+| Categoría | Términos de búsqueda (ES) | Términos (PT - Brasil) |
+|-----------|--------------------------|----------------------|
+| **Financiamiento** | crédito, préstamo, tarjeta, límite | crédito, empréstimo, cartão, limite |
+| **Rendimientos** | rendimiento, tasa, ahorro, cuenta | rendimento, CDI, poupança, caixinha |
+| **Complejidad** | app, falla, actualización, problema | app, falha, atualização, problema |
+| **Seguridad** | seguridad, fraude, protección | segurança, fraude, golpe |
+| **Promociones** | promoción, cashback, descuento, MSI | promoção, cashback, desconto |
+| **Funcionalidades** | función, lanzamiento, novedad | funcionalidade, lançamento |
+| **Atención** | atención cliente, reclamo, soporte | atendimento, SAC, reclamação |
+
+---
+
+## Estructura del Proyecto
+
+```
+MODELO_FINAL_CURSOR/
+├── correr_modelo.py          # Punto de entrada principal
+├── requirements.txt          # Dependencias Python
+├── README.md                 # Guía para analistas
+├── config/
+│   └── config.yaml           # Configuración por defecto
+├── scripts/
+│   ├── ejecutar_modelo.py    # Orquestador del modelo
+│   ├── parte1_carga_datos.py # Carga de datos
+│   ├── parte3_calculo_nps.py # Cálculo de NPS
+│   ├── parte6_waterfall.py   # Waterfall NPS
+│   ├── parte7_causas_raiz.py # Deep dive causas
+│   ├── parte8_productos.py   # Impacto por productos
+│   ├── parte9_principalidad.py
+│   ├── parte10_seguridad.py
+│   ├── analisis_automatico.py      # Noticias y triangulación
+│   ├── agregar_noticias_cursor.py  # Helper: inyectar noticias de Cursor al cache
+│   ├── parsear_presentacion.py     # Parser de PDFs de presentaciones anteriores
+│   └── generar_html.py             # Generador HTML (Pyramid Principle)
+├── data/
+│   ├── BASE_CRUDA_MLB.csv    # Datos Brasil
+│   ├── BASE_CRUDA_MLA.csv    # Datos Argentina
+│   ├── BASE_CRUDA_MLM.csv    # Datos México
+│   └── noticias_cache.json   # Cache de noticias
+└── outputs/                  # HTMLs y gráficos generados
+```
+
+---
+
+## Ejemplos de uso
+
+**Flujo completo (Cursor busca noticias + ejecuta modelo):**
+
+El usuario solo dice: *"Corre Nubank Brasil 25Q3 vs 25Q4"*
+
+Cursor automáticamente:
+1. Busca noticias con WebSearch
+2. Las inyecta al cache
+3. Ejecuta el modelo:
+
+```bash
+python correr_modelo.py --site MLB --player "Nubank" --q1 25Q3 --q2 25Q4 --no-news
+```
+
+**Ejecución directa (si ya hay noticias en cache):**
+
+```bash
+# Sin búsqueda de noticias (usa solo cache existente)
+python correr_modelo.py --site MLA --player "Ualá" --q1 25Q3 --q2 25Q4 --no-news
+
+# Con búsqueda Python (fallback, puede fallar por anti-bot)
+python correr_modelo.py --site MLM --player "BBVA" --q1 25Q3 --q2 25Q4
+```
+
+---
+
+## Costo
+
+El modelo es **100% código Python local**. No consume tokens de AI al ejecutarse.
+
+| Acción | Costo |
+|--------|-------|
+| Ejecutar modelo (terminal) | $0 |
+| Ejecutar modelo (chat Cursor) | ~2,000 tokens |
+| Buscar noticias adicionales | ~5,000 tokens |
+
+---
+
+## Troubleshooting
+
+### "No se encontraron datos para el player"
+- Verificar nombre exacto del player (case-sensitive para algunos)
+- Ver lista de players disponibles arriba
+
+### El HTML no tiene noticias
+- Verificar `data/noticias_cache.json` tiene noticias para ese player/site
+- Usar las sugerencias de búsqueda que muestra el modelo
+- Agregar noticias con `agregar_noticia_a_cache()`
+
+### Métricas muestran 0%
+- Verificar que los datos CSV tengan las columnas de Principalidad/Seguridad
+- Revisar el output del modelo por errores en PARTE 9 o PARTE 10
