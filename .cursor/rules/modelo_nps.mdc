@@ -34,23 +34,75 @@ Necesito que me indiques:
 
 ---
 
-## Flujo Rápido
+## Flujo Rápido - CHECKPOINT AUTOMÁTICO (NUEVO)
 
-Cuando el usuario pida analizar variaciones de NPS, seguir el flujo de **búsqueda de noticias con Cursor** (ver regla `busqueda_noticias.mdc`):
+Cuando el usuario pida analizar variaciones de NPS, **el modelo ahora se detiene automáticamente** si faltan noticias:
 
-1. **Buscar noticias** con WebSearch (~6 búsquedas por categoría)
-2. **Escribir** `data/noticias_cursor_batch.json` con las noticias encontradas
-3. **Inyectar** al cache: `python scripts/agregar_noticias_cursor.py --file data/noticias_cursor_batch.json`
-4. **Ejecutar** modelo:
+### Primera Ejecución (sin noticias previas)
+
+1. **Ejecutar** modelo directamente:
 
 ```bash
-cd MODELO_NPS_COMPETITIVO_INDIVIDUOS_FINTECH
-python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --no-news
+python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --verbose
 ```
 
-5. **Revisar gaps** y buscar noticias adicionales si es necesario
+2. **El modelo se pausará** (Exit Code 43) si faltan noticias, mostrando:
+   ```
+   CHECKPOINT: BÚSQUEDA DE NOTICIAS REQUERIDA
 
-El HTML se genera automáticamente en `outputs/Resumen_NPS_{Player}_{Quarter}.html`
+   DRIVERS SIN NOTICIAS:
+   - Seguridad (+1.9pp)
+   - Financiamiento (+0.9pp)
+   ...
+
+   QUERIES DE BÚSQUEDA:
+   - "BBVA" "México" "Seguridad" 2025
+   - "BBVA" "México" "Financiamiento" 2025
+   ```
+
+3. **Ejecutar búsquedas automáticamente** con WebSearch (una por cada query mostrada)
+
+4. **Guardar noticias** en `data/noticias_cursor_batch.json`:
+   ```json
+   {
+     "noticias": [
+       {
+         "titulo": "BBVA refuerza medidas de seguridad ante fraudes",
+         "url": "https://...",
+         "fecha": "2025-10-15",
+         "resumen": "BBVA implementa nuevas medidas...",
+         "categorias": ["Seguridad"],
+         "site": "MLM",
+         "player": "BBVA"
+       }
+     ]
+   }
+   ```
+
+5. **Inyectar al cache**:
+   ```bash
+   python scripts/agregar_noticias_cursor.py --file data/noticias_cursor_batch.json
+   ```
+
+6. **Re-ejecutar automáticamente** (mismos parámetros):
+   ```bash
+   python correr_modelo.py --site {SITE} --player "{PLAYER}" --q1 {Q1} --q2 {Q2} --verbose
+   ```
+
+7. **HTML generado** en `outputs/Resumen_NPS_{Player}_{Quarter}.html`
+
+### IMPORTANTE: Dominios Confiables por País
+
+**SOLO buscar en estos dominios** (mejora relevancia):
+
+- **México (MLM)**: elfinanciero.com.mx, expansion.mx, eleconomista.com.mx, forbes.com.mx
+- **Brasil (MLB)**: infomoney.com.br, valor.globo.com, exame.com, moneytimes.com.br
+- **Argentina (MLA)**: ambito.com, infobae.com, cronista.com, iprofesional.com
+
+**Formato de búsqueda**:
+```
+site:elfinanciero.com.mx "BBVA" "México" "seguridad" 2025
+```
 
 ---
 

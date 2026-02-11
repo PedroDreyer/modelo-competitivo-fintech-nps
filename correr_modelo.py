@@ -164,6 +164,31 @@ Ejemplos:
     if not waterfall_ok:
         print("\n⛔ ERROR: No se encontró el waterfall de quejas.")
         sys.exit(1)
+
+    # CHECKPOINT: BUSQUEDA DE NOTICIAS REQUERIDA
+    if resultados.get('necesita_noticias'):
+        print("\n" + "=" * 80)
+        print("PAUSA: BUSQUEDA DE NOTICIAS REQUERIDA")
+        print("=" * 80)
+        print("")
+        print("   El modelo necesita noticias para drivers significativos.")
+        print("")
+
+        if resultados.get('queries_busqueda'):
+            print("   QUERIES DE BUSQUEDA:")
+            for query in resultados['queries_busqueda'][:5]:
+                print(f"   - {query.get('query_principal', 'N/A')}")
+            print("")
+
+        print("   INSTRUCCIONES:")
+        print("   1. Usar WebSearch para buscar noticias")
+        print("   2. Guardar en: data/noticias_cursor_batch.json")
+        print("   3. Ejecutar: python scripts/agregar_noticias_cursor.py")
+        print("   4. Re-ejecutar: python correr_modelo.py")
+        print("")
+        print("=" * 80)
+
+        sys.exit(43)
     
     # Generar HTML
     if args.verbose:

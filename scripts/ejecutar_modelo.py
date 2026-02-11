@@ -449,21 +449,49 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     
     resultados['sugerencias_busqueda'] = sugerencias
     
-    # Mostrar sugerencias si hay gaps
+
+    # ══════════════════════════════════════════════════════════════════════
+    # CHECKPOINT CRÍTICO: BÚSQUEDA DE NOTICIAS (igual que causas raíz)
+    # ══════════════════════════════════════════════════════════════════════
+    # Si hay drivers significativos SIN noticias, el modelo se DETIENE
+    # para que el agente ejecute búsquedas con WebSearch automáticamente.
+    # Esto garantiza triangulación completa antes de generar el HTML.
+
     if sugerencias['gaps_sin_noticia']:
+        gaps_count = len(sugerencias['gaps_sin_noticia'])
         _print(mostrar_sugerencias_busqueda(sugerencias))
+
+        _print("
+" + "═" * 80)
+        _print("⚠️  CHECKPOINT: BÚSQUEDA DE NOTICIAS REQUERIDA")
+        _print("═" * 80)
+        _print(f"")
+        _print(f"   El modelo necesita noticias para {gaps_count} drivers significativos.")
+        _print(f"   Esto asegura triangulación completa en el reporte.")
+        _print(f"")
+        _print(f"   DRIVERS SIN NOTICIAS:")
+        for gap in sugerencias['gaps_sin_noticia']:
+            _print(f"   • {gap['driver']} ({gap['delta']:+.1f}pp)")
+        _print(f"")
+        _print(f"   INSTRUCCIONES PARA EL AGENTE:")
+        _print(f"   1. Ejecutar búsquedas con WebSearch para cada driver")
+        _print(f"   2. Las queries están en resultados['sugerencias_busqueda']")
+        _print(f"   3. Guardar noticias en: data/noticias_cursor_batch.json")
+        _print(f"   4. Inyectar al cache: python scripts/agregar_noticias_cursor.py")
+        _print(f"   5. Re-ejecutar: python correr_modelo.py (mismos args)")
+        _print(f"")
+        _print("═" * 80)
+
+        # Guardar sugerencias para que el agente las use
+        resultados['necesita_noticias'] = True
+        resultados['queries_busqueda'] = sugerencias['queries']
+        resultados['gaps_sin_noticia'] = sugerencias['gaps_sin_noticia']
+
+        # Salir con código 43 = "necesita noticias"
+        return resultados
     else:
         _print("   ✅ Todos los drivers principales tienen noticias asociadas")
-    
-    _print("\n" + "â•" * 80)
-    _print("âš ï¸  PRÃ“XIMOS PASOS:")
-    _print("   1. Revisar las SUGERENCIAS DE BÃšSQUEDA arriba (si las hay)")
-    _print("   2. Usar Cursor WebSearch para buscar noticias de los gaps")
-    _print("   3. Agregar noticias con: agregar_noticia_a_cache(site, player, ...)")
-    _print("   4. Re-ejecutar modelo para incluir nuevas noticias")
-    _print("   5. Generar HTML final con generar_html()")
-    _print("â•" * 80)
-    
+
     return resultados
 
 
