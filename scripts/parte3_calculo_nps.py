@@ -21,6 +21,7 @@ import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
 from pathlib import Path
+from validators import validate_nps_values, validate_dataframe_not_empty
 
 # ==============================================================================
 # FUNCIÓN: ORDENAR QUARTERS
@@ -37,7 +38,7 @@ def quarter_order(q):
             parts = s.split('Q')
             year = int('20' + parts[0]) if len(parts[0]) == 2 else int(parts[0])
             return year * 4 + int(parts[1][0])
-    except:
+    except (ValueError, IndexError, AttributeError):
         pass
     return 0
 
@@ -85,14 +86,20 @@ def calcular_nps(df_completo, config, generar_grafico=True, guardar_grafico=True
     # ══════════════════════════════════════════════════════════════════════════
     
     df_player = df_completo[df_completo[col_marca] == PLAYER_ANALIZAR].copy()
-    
+
+    # Validar que hay datos del player
+    validate_dataframe_not_empty(df_player, f"Player {PLAYER_ANALIZAR}")
+
     if verbose:
         print(f"\n📊 Registros {PLAYER_ANALIZAR}: {len(df_player):,}")
     
     # Convertir NPS a numérico si es necesario
     if df_player[col_nps].dtype == 'object':
         df_player[col_nps] = pd.to_numeric(df_player[col_nps], errors='coerce')
-    
+
+    # Validar valores de NPS
+    validate_nps_values(df_player, col_nps, max_invalid_pct=0.1)
+
     # Calcular NPS por quarter
     # El NPS en el CSV tiene valores -1 (Detractor), 0 (Neutro), 1 (Promotor)
     # NPS Score = mean * 100 = ((Promotores - Detractores) / Total) * 100

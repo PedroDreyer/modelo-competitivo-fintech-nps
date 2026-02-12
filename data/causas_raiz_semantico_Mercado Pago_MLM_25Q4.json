@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLM",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Seguridad": {
+      "total_comentarios_analizados": 32,
+      "delta_pp": -2.8,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de respaldo bancario genera desconfianza estructural",
+          "descripcion": "Los usuarios expresan temor porque Mercado Pago no está respaldado por una institución bancaria tradicional, lo que genera inseguridad sobre la protección de sus fondos",
+          "frecuencia_pct": 34,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "PORQUE NO TIENE EL REPALDO DE NINGUNA INSTITURCION BANCARIA",
+            "Es buena pero no tienen nigun respaldo",
+            "a veces aun se siente un poco insegura ya que no la respalda algun banco"
+          ]
+        },
+        {
+          "titulo": "Reputación negativa por fraudes y desaparición de dinero reportados",
+          "descripcion": "Los usuarios mencionan haber escuchado múltiples historias de otras personas que perdieron dinero o fueron víctimas de fraude, generando desconfianza por contagio social",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "He escuchado que a mucha gente se le desapareció dinero",
+            "Hasta el momento no me ha ocurrido nada, pero he escuchado varias experiencias en dónde el dinero en la cuenta de la persona desaparece.",
+            "Me he enterado que personas varias han tenido problemas con su dinero en Mercado pago y eso me genera inquietud"
+          ]
+        },
+        {
+          "titulo": "Experiencias directas de robo y mala respuesta ante fraudes",
+          "descripcion": "Usuarios que han sufrido hackeos, cargos no autorizados o fraudes directos en sus cuentas, y recibieron mala atención o no recuperaron su dinero completamente",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Me han robado mi cuenta e hicieron una compra y me cancelaron la cuenta",
+            "Tuve un inconveniente con su falta de seguridad, me robaron dinero y su justificación fue que no podían hacer nada por supuestamente siempre usar la tarjeta en ese lugar",
+            "Me han robado 1 vez la cuenta y tardaron en devolverme mi cuenta aunque sin una parte del dinero."
+          ]
+        },
+        {
+          "titulo": "Percepción de controles de seguridad débiles en la app",
+          "descripcion": "Los usuarios sienten que los mecanismos de autenticación y validación son insuficientes, especialmente en pagos contactless que no piden PIN",
+          "frecuencia_pct": 13,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Pk lit namas te pide una huella para entrar y la otra esque no importa la cantidad de efectivo que pagues con el contactes no te pide nip o verificación o algo por el estilo",
+            "Algunas veces, se han echo pagos de esa cuenta, sin que yo lo allá autorizado. Ha estado expuesta a robo.",
+            "Tuve un intento de fraude con esta tarjeta y fue difícil aclarar las cosas"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 72,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz confusa y poco intuitiva dificulta la navegación",
+          "descripcion": "Los usuarios encuentran la aplicación revuelta, difícil de entender, con funciones dispersas y no saben dónde encontrar información clave como pagos pendientes",
+          "frecuencia_pct": 31,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "Es muy revuelta la app",
+            "No puedes retirar de manera fácil, no te da todas sus funciones juntas están dispersas",
+            "porque en ocasiones no entiendo donde puedo ver mis pagos pendientes",
+            "Es una cuenta a mi parecer difícil, creo que a veces nos podemos confundir en cómo poder usarla y pagar o checar la cuenta mejor."
+          ]
+        },
+        {
+          "titulo": "Demoras en la disponibilidad de fondos tras transferencias o pagos",
+          "descripcion": "Las transferencias tardan días en reflejarse, el dinero no está disponible de inmediato, generando frustración en operaciones urgentes",
+          "frecuencia_pct": 26,
+          "frecuencia_abs": 19,
+          "ejemplos": [
+            "Es muy raro que pase pero cuando las transferencias llegan a tardar, puede ser por dias",
+            "Aveces tarda el tiempo en caer  la transferencia a la cuenta",
+            "por que en ocasiones tarda en reflejarse el pago o la disposición de ellos",
+            "Hay veces que el dinero no está disponible en el instante o bien hasta en transferencias"
+          ]
+        },
+        {
+          "titulo": "Fallas técnicas frecuentes: app lenta, caídas y mantenimiento inoportuno",
+          "descripcion": "La aplicación sufre problemas de rendimiento, se traba, no permite entrar, o entra en mantenimiento durante horarios críticos",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Por qué a veces la aplicación es muy lenta o se traba",
+            "La aplicación tiende a fallar mucho, no te deja entrar a tu cuenta, o se pone en mantenimiento en horas pico, y es muy molesto",
+            "Porque es buena pero inestable a veces suele estar fuera de servicio cuando más la necesito usar",
+            "a fallado en alguna ocasión la aplicación"
+          ]
+        },
+        {
+          "titulo": "Curva de aprendizaje alta para usuarios nuevos o inexpertos",
+          "descripcion": "Usuarios nuevos o con poca experiencia digital encuentran la app complicada de usar y necesitan tiempo o tutoriales para entenderla",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Es un poco complicado utilizar la aplicación si no tienes experiencia",
+            "ME GUSTARÍA TENER MÁS CLARIDAD EN LOS PROCESOS CON LOS QUE CUENTA, QUIZAS UN TUTORIAL PARA PODER UTILIZAR TODAS SUS HERRAMIENTAS Y PODER APROVECHARLAS AL 100",
+            "Tengo poco tiempo y todavía no le entiendo mucho",
+            "Aún me estoy enseñando a usarla"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 35,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de promociones y ofertas competitivas",
+          "descripcion": "Los usuarios sienten que no hay suficientes promociones, descuentos o beneficios atractivos comparado con la competencia",
+          "frecuencia_pct": 43,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "no la he utilizado mucho pero deberia haber mas  ofrecimiento de promociones y ofertas",
+            "Hace falta más promociones para que sean una app más atractiva",
+            "Nunca hay promoción",
+            "Necesita mas ofertas"
+          ]
+        },
+        {
+          "titulo": "Meses sin intereses limitados o no aplicables a las compras reales",
+          "descripcion": "Los usuarios reportan que los MSI anunciados no aplican a sus compras, están muy limitados o directamente no son verdaderos",
+          "frecuencia_pct": 26,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Porque anuncian meses sin intereses y nunca aplican a los compras que realizo",
+            "Porque los meses sin intereses no son ciertos",
+            "Es buena, pero últimamente está muy limitado los MSI"
+          ]
+        },
+        {
+          "titulo": "Desconocimiento de beneficios y productos existentes",
+          "descripcion": "Los usuarios no conocen bien las promociones, beneficios o características de la app por falta de información clara o comunicación",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "No tengo claras las promociones",
+            "Necesito conocer más el banco y sus promociones",
+            "es una buena opción pero creo que falta mas información de sus productos y beneficios",
+            "Desconocimiento de la interfaz y beneficios de la app"
+          ]
+        },
+        {
+          "titulo": "Falta de beneficios competitivos que generen valor agregado",
+          "descripcion": "Los usuarios sienten que no hay un plus diferenciador, que los beneficios son iguales o inferiores a otras opciones del mercado",
+          "frecuencia_pct": 11,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Siento que es igual a las demás sin ningún plus agregado solo que tú dinero crece pero es muy lento y bajo  Considero agrega do promociones sería mucho mejor",
+            "Tiene bastantes beneficios pero de los que hay, no todos me llaman la atención",
+            "Por que no tiene promociones ni descuentos, no tiene buenos beneficios ni tampoco rendimientos competitivos para mi dinero"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 77,
+      "delta_pp": -0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Límite de $25,000 en monto que genera rendimientos",
+          "descripcion": "Los usuarios rechazan que solo hasta $25,000 pesos generen intereses, considerándolo un tope bajo e injusto para quienes tienen más dinero",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 27,
+          "ejemplos": [
+            "el limite que le ponen al dinero que puede generar rendimientos",
+            "Por los rendimientos en la cuenta de ahorro desearía que quiten lo de los $3000 mensuales o que lo redujeran",
+            "Cuenta con un limite para crecimiento del dinero, aun que podemos seguir agregando mas este no generara y aun asi te pide el seguir agregando para mantener le porcentaje de cremimiento",
+            "Me gustaría que no tuvieran límite de dinero para ganar intereses, en mercado pago te pagan intereses por hasta 25000 más ya no y aparte he notado que cada mes baja la taza de interés que pagan."
+          ]
+        },
+        {
+          "titulo": "Reducción progresiva de tasas de interés sin previo aviso",
+          "descripcion": "Los usuarios reportan que las tasas han bajado significativamente desde que abrieron cuenta (de 15% a 13% o menos), sin comunicación previa",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "Cuando abrí mi cuenta daba 15% de rendimiento, sin previo aviso ahora ya sólo da el 13%",
+            "Bajaron mucho el rendimiento",
+            "Cuando empezó generaba más ganancia y ahora es poca",
+            "Por qué lebajaron al rendimiento anual de mi dinero que tenga en la cuenta",
+            "En sus publicidades decían que el dinero crecía tal cantidad y cuando empeze a guardar dinero ahí crecía mucho menos de lo que ofertaban"
+          ]
+        },
+        {
+          "titulo": "Rendimientos poco competitivos frente a otras opciones del mercado",
+          "descripcion": "Los usuarios comparan con otros bancos y fintechs, y encuentran que Mercado Pago ofrece tasas bajas o poco atractivas",
+          "frecuencia_pct": 26,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "Por la poca ganancia que da en inversión en comparación los bancos",
+            "No tengo mucho tiempo usándola, pero las ganancias que genera son pocas comparándolas con el de las otras apps",
+            "Me gusta la app sin embargo me gustaría mayores beneficios por mi dinero allí he escuchado de otras instituciones con mejores rendimientos que me están llamado la atención",
+            "Considero que no es muy buena la taza de interes"
+          ]
+        },
+        {
+          "titulo": "Requisitos mensuales complejos para mantener la tasa de rendimiento",
+          "descripcion": "Los usuarios rechazan los nuevos requisitos de depósito mensual o mantener cierto saldo para conservar el porcentaje de rendimiento",
+          "frecuencia_pct": 12,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "los nuevos requisitos para crecer tu dinero no me parecen atractivos",
+            "Me gusta pero luego empezó a pedir un mínimo para dar rendimiento",
+            "Hay distintas variaciones en el ingreso mensual para mantener el beneficio de inversión"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": 0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de cajeros propios para retiro sin comisión",
+          "descripcion": "Los usuarios se quejan de no tener cajeros propios para retirar efectivo, y que en Oxxo les cobran comisión",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Me gustaría que tuviera banco o cajero",
+            "Si necesito efectivo no hay cajeros, solo Oxxo y te cobran por retirar",
+            "No hay cajeros disponibles para realizar retiros",
+            "Hace falta que tenga cajeros"
+          ]
+        },
+        {
+          "titulo": "Funcionalidades incompletas comparadas con bancos tradicionales",
+          "descripcion": "Los usuarios sienten que le faltan herramientas y opciones que tienen otros bancos, como préstamos de nómina, más socios comerciales, o transferencias ilimitadas",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Le falta hacer más cosas como otras como nu",
+            "Porque es una herramienta versátil para pagos pero le faltan herramientas",
+            "Tiene un buen rendimiento de mi dinero pero le hace falta más opciones que otros bancos tienen como préstamos de nómina etc",
+            "Por qué siento que todavía podrían darle más funciones a la app"
+          ]
+        },
+        {
+          "titulo": "Incompatibilidad con Apple Pay y ecosistema iOS",
+          "descripcion": "Los usuarios de dispositivos Apple reportan que no pueden usar Apple Pay con Mercado Pago, limitando la experiencia de pago móvil",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Por que yo uso un dispositivo Apple, y en este aún no esta disponible la opción de pago por Apple Pay para este banco"
+          ]
+        },
+        {
+          "titulo": "Uso limitado como cuenta secundaria sin funciones bancarias completas",
+          "descripcion": "Los usuarios solo la usan para funciones específicas (cobros con tarjeta, compras en Mercado Libre) y prefieren otros bancos para operaciones completas",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "La uso excluisvamente para realizar cobros con tarjeta y gestionar mis compras en Mercado Libre, fuera de eso prefiero usar otras tarjetas",
+            "Porque se me hace mas cómodo usar otras cuentas de otros bancos, porque están mas completos",
+            "Sólo la utilizo para pagar cuentas",
+            "Porque no es la cuenta en que recibo mi nómina y eso limita el uso que hago de esa tarjeta."
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 71,
+      "delta_pp": 0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés excesivamente altas en crédito y tarjeta",
+          "descripcion": "Los usuarios rechazan categóricamente las tasas de interés por considerarlas muy elevadas, haciendo el crédito poco atractivo o inaccesible",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "Tiene intereses muy altos en su crédito",
+            "Creo que cobran muy alto interes",
+            "Porque sus comisiones son muy altas",
+            "Maneja tasas muy altas de interés",
+            "El crédito de mercado pago es excesivamente caro",
+            "LOS INTERESES SON MUY ALTOS"
+          ]
+        },
+        {
+          "titulo": "Confusión sobre cargos en meses sin intereses y desgloses poco claros",
+          "descripcion": "Los usuarios no entienden cómo funcionan los MSI, reportan cargos ocultos, comisiones inesperadas y desgloses confusos en los pagos a plazos",
+          "frecuencia_pct": 23,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Porque su tarjeta de crédito es terrible, muy confusos sus pagos a meses 'sin intereses' según ellos, simplemente no conviene porque el costo final es altísimo. Desde el principio te hacen cobros muy altos, no se entiende cómo desglosan los pagos.",
+            "Ya que te cobra comisión en cada compra y te memciona que es sin intereses y ameses",
+            "Por qué cobra altos intereses y a veces no es claro",
+            "No me queda muy claro el tema del uso del credito y las tarjetas de credito, creo q falta alfo de informacion explicita"
+          ]
+        },
+        {
+          "titulo": "Comisiones altas por retiros, servicios y préstamos",
+          "descripcion": "Los usuarios critican las comisiones por retirar efectivo en cajeros, por usar ciertos servicios, y por solicitar préstamos en línea",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "retiros de efectivo en cajeros que no sean tan costosos",
+            "Porque cobran comisión cuando saco efectivo",
+            "Faltan lugares para hacer retiros sin comisión",
+            "Cobran mucho en comision por pedir préstamo en la cuenta en línea aparte no todo entra a meses sin intereses",
+            "Cobran mucha comisión"
+          ]
+        },
+        {
+          "titulo": "Líneas de crédito bajas y criterios poco claros para aumentos",
+          "descripcion": "Los usuarios reciben límites de crédito muy bajos inicialmente, y no entienden cómo aumentarlos a pesar de usar frecuentemente la tarjeta",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Tengo muy poco limite de crédito",
+            "No avanzan mi crédito muy rápido, y la uso mucho la TDC y aún así no me aumentan la línea de crédito",
+            "Sus líneas de crédito dependen mucho de las compras que realices",
+            "Porque no son claros con cómo disminuye o aumenta el crédito, no sabes tu límite total"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 27,
+      "delta_pp": -0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de atención humana directa: solo bots y chat automatizado",
+          "descripcion": "Los usuarios se frustran porque no pueden hablar con una persona real, solo reciben atención de bots que no resuelven dudas específicas",
+          "frecuencia_pct": 44,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "NO HAY MUCHA COMUNICACION",
+            "La atención al cliente es importante y de parte de mercado solamente atienden bots, por lo que dudas muy específicas no las puedes resolver",
+            "No tiene atención al cliente directo.  Cómo comunicarte con un asesor que no sea virtual",
+            "Es muy buena tarjeta pero haría falta que hubiera personas atendiendo y no chat bot",
+            "falta algun numero para comunicarse a atencion a clientes"
+          ]
+        },
+        {
+          "titulo": "Ausencia de sucursales físicas para resolver problemas presencialmente",
+          "descripcion": "Los usuarios quieren sucursales físicas para poder resolver problemas, meter reclamaciones o realizar trámites de manera presencial",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Por qué me gustaría q tuviera un banco físico",
+            "Siento que es buena pero al no ser un banco físico pues eso baja la calificación",
+            "Porque es difícil meter reclamos o arreglar algún asunto ya que no cuentan con oficinas fiscas",
+            "Me gustaría que tuvieran sucursales"
+          ]
+        },
+        {
+          "titulo": "Respuestas lentas y dificultad para resolver problemas específicos",
+          "descripcion": "Los usuarios reportan que las respuestas tardan mucho, no resuelven sus asuntos, o no encuentran ayuda visible cuando tienen dudas",
+          "frecuencia_pct": 26,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Porque cuando quiera que me as tienda tarda un poco en contestar para poder hacer la transferencia que necesito hacer",
+            "Tardan mucho en dar respuesta",
+            "Le hacen falta mas respuesta a cuando uno tiene problemas",
+            "No me resuelven un asunto",
+            "Porque a veces no se como realizar algo y no me dan la atención necesaria"
+          ]
+        }
+      ]
+    }
+  }
+}

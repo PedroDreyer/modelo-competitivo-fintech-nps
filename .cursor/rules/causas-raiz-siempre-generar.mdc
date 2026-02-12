@@ -63,6 +63,7 @@ data/causas_raiz_semantico_{player}_{site}_{quarter}.json
 - **Frecuencias que sumen ~100%** por motivo
 - **Ejemplos TEXTUALES** copiados del prompt (2-3 por causa)
 - **Priorizar detractores** sobre neutros en el análisis
+- **IDIOMA: SIEMPRE en español** - Títulos, descripciones y nombres de motivos SIEMPRE en español, sin importar el site/país. Solo los ejemplos textuales (comentarios reales de usuarios) se mantienen en el idioma original (portugués para MLB/Brasil). Esto aplica incluso para Brasil: títulos como "Límite de crédito bajo que no aumenta" y NO "Limite de crédito baixo que não aumenta".
 
 ### 4. Muestra de comentarios
 - El prompt incluye hasta **100 comentarios por motivo**, priorizando detractores

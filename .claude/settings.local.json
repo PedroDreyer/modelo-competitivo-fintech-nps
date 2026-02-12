@@ -14,7 +14,11 @@
       "Bash(git branch:*)",
       "Bash(python correr_modelo.py:*)",
       "Bash(python:*)",
-      "Bash(start \"\" \"outputs\\\\Resumen_NPS_Ualá_25Q3.html\")"
+      "Bash(start \"\" \"outputs\\\\Resumen_NPS_Ualá_25Q3.html\")",
+      "Bash(grep:*)",
+      "Bash(findstr:*)",
+      "Bash(dir:*)",
+      "Bash(ls:*)"
     ]
   }
 }

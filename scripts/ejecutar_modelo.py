@@ -29,6 +29,17 @@ sys.path.insert(0, str(script_dir))
 import pandas as pd
 from datetime import datetime
 
+# Fix Windows console encoding for UTF-8 characters
+if sys.platform == 'win32':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        # Python < 3.7
+        import codecs
+        sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
+        sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
+
 # Variable global para controlar verbose
 _VERBOSE = True
 
@@ -53,6 +64,7 @@ from parte9_principalidad import analizar_principalidad
 from parte10_seguridad import analizar_seguridad
 from parte11_deep_research import preparar_deep_research
 from parte12_senior_analyst import generar_resumen_ejecutivo, consolidar_para_html
+from validators import validate_site_code, validate_quarter_format
 from analisis_automatico import (
     generar_subcausas_automatico,
     ejecutar_triangulacion,
@@ -60,6 +72,7 @@ from analisis_automatico import (
     extraer_keywords_avanzado,
     obtener_noticias_para_reporte,
     triangular_motivos_con_noticias,
+    mapear_noticias_a_quejas,
     buscar_noticias_por_drivers,
     cargar_noticias_cache,
     filtrar_noticias_por_periodo,
@@ -68,7 +81,8 @@ from analisis_automatico import (
     generar_sugerencias_busqueda,
     mostrar_sugerencias_busqueda,
     agregar_noticia_a_cache,
-    cargar_causas_raiz_semanticas
+    cargar_causas_raiz_semanticas,
+    cargar_causas_raiz_semanticas_promotores
 )
 
 
@@ -93,10 +107,15 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     if not verbose:
         warnings.filterwarnings('ignore')
     
-    # Validación de site antes de cualquier procesamiento
-    SITES_VALIDOS = ['MLA', 'MLB', 'MLM', 'MLC']
-    if site and site not in SITES_VALIDOS:
-        raise ValueError(f"Site '{site}' no es valido. Sites permitidos: {', '.join(SITES_VALIDOS)}")
+    # Validación de site y quarters antes de cualquier procesamiento
+    if site:
+        validate_site_code(site)
+
+    if q1:
+        validate_quarter_format(q1)
+
+    if q2:
+        validate_quarter_format(q2)
     
     resultados = {}
     
@@ -265,6 +284,29 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     if resultado_semantico_prom.get('prompt_path'):
         _print(f"   \u2705 Prompt semantico promotores guardado en: {resultado_semantico_prom['prompt_path']}")
 
+    # =========================================================================
+    # CHECKPOINT: CAUSAS RAIZ SEMANTICAS PROMOTORES (opcional pero recomendado)
+    # =========================================================================
+    _print("\n🧠 CHECKPOINT: Verificando causas raiz semanticas promotores...")
+
+    causas_semanticas_promotores = cargar_causas_raiz_semanticas_promotores(player, q_act, site=site)
+    if causas_semanticas_promotores:
+        _print(f"   ✅ Causas raiz semanticas promotores OK: {len(causas_semanticas_promotores)} motivos")
+        _print(f"       Archivo: causas_raiz_semantico_promotores_{player}_{site}_{q_act}.json")
+        resultados['causas_semanticas_promotores'] = causas_semanticas_promotores
+    else:
+        # NO existe JSON semantico - DETENER (igual que detractores)
+        prompt_path = resultado_semantico_prom.get('prompt_path', '')
+        _print(f"   ⚠️  PAUSA: Se necesita analisis semantico de promotores")
+        if prompt_path:
+            _print(f"   Prompt: {prompt_path}")
+        _print(f"   JSON destino: data/causas_raiz_semantico_promotores_{player}_{site}_{q_act}.json")
+        resultados['necesita_causas_raiz_promotores'] = True
+        resultados['prompt_causas_raiz_promotores'] = prompt_path
+        resultados['json_destino_causas_raiz_promotores'] = f'data/causas_raiz_semantico_promotores_{player}_{site}_{q_act}.json'
+        _print(f"   Modelo detenido. Re-ejecutar despues de generar causas raiz promotores.")
+        return resultados
+
     # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     # PARTE 8: PRODUCTOS
     # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -330,7 +372,7 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     
     causas_semanticas = cargar_causas_raiz_semanticas(player, q_act, site=site)
     if causas_semanticas:
-        _print(f"   \u2705 Causas raiz semanticas OK: {len(causas_semanticas)} motivos")
+        _print(f"   \u2705 Causas raiz semanticas OK: {len(causas_semanticas)} motivos (archivo: causas_raiz_semantico_{player}_{site}_{q_act}.json)")
         resultados['causas_semanticas'] = causas_semanticas
     else:
         # NO existe JSON semantico - DETENER ANTES de buscar noticias
@@ -370,7 +412,9 @@ def ejecutar_modelo_completo(verbose=True, site=None, player=None, q1=None, q2=N
     # Ejecutar triangulación Producto â†” Queja â†” Noticia
     triangulaciones = ejecutar_triangulacion(productos_clave, causas_wf, noticias_para_triangular)
     resultados['triangulaciones'] = triangulaciones
-    resultados['noticias'] = noticias_para_triangular
+    # Mapear noticias a quejas ANTES de almacenar (para que el HTML muestre el contador correcto)
+    noticias_mapeadas = mapear_noticias_a_quejas(noticias_para_triangular, causas_wf)
+    resultados['noticias'] = noticias_mapeadas
     
     # Triangular MOTIVOS del waterfall directamente con NOTICIAS
     triangulacion_motivos = triangular_motivos_con_noticias(causas_wf, noticias_para_triangular)

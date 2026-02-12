@@ -1,0 +1,40 @@
+name: Auto-carga Comentarios a BigQuery
+
+on:
+  push:
+    paths:
+      - 'data/BASE_CRUDA_*.csv'
+
+jobs:
+  upload-to-bigquery:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: |
+          pip install pandas google-cloud-bigquery
+
+      - name: Autenticar BigQuery
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Ejecutar auto-carga
+        run: |
+          python scripts/auto_cargar_comentarios_bq.py
+
+      - name: Commit tracker actualizado
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/.ultimo_quarter_cargado.json
+          git commit -m "chore: Actualizar tracker quarters cargados" || true
+          git push || true

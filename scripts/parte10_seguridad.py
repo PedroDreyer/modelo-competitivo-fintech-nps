@@ -444,7 +444,10 @@ def analizar_seguridad(df_completo, config, verbose=True):
     grafico_motivos_inseg_base64 = None
     
     # Datos de evolución del player (últimos 5 quarters desde q_act hacia atrás)
-    _qs_hasta_qact = [q for q in sorted(result[col_periodo].astype(str).unique()) if q <= q_act][-5:]
+    # FIX: Usar utils_quarters para filtrado correcto (no comparar strings alfabéticamente)
+    from utils_quarters import get_last_n_quarters
+    available_qs = result[col_periodo].astype(str).unique().tolist()
+    _qs_hasta_qact = get_last_n_quarters(available_qs, q_act, n=5)
     datos_evol = result[(result['MARCA'] == player) & (result[col_periodo].astype(str).isin(_qs_hasta_qact))].sort_values(col_periodo)
     
     # GRÁFICO 1: EVOLUCIÓN DE SEGURIDAD

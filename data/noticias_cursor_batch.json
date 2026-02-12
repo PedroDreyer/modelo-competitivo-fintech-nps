@@ -1,0 +1,220 @@
+{
+  "noticias": [
+    {
+      "titulo": "BBVA transforma su app con IA para banca personalizada: 27 millones de versiones",
+      "url": "https://expansion.mx/economia/2025/10/30/app-de-bbva-tiene-27-millones-de-versiones-personalizadas",
+      "fecha": "2025-10",
+      "resumen": "BBVA lanzó en octubre una renovación de su app impulsada por IA con 27 millones de versiones personalizadas, asistente virtual Blue y atajos inteligentes. La describe como el Netflix de la banca.",
+      "categorias": ["Complejidad"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "Ola de quejas por la nueva app de BBVA: usuarios reportan fallas y confusión tras actualización",
+      "url": "https://www.monitorexpresso.com/ola-de-quejas-por-la-nueva-app-de-bbva-mexico-usuarios-reportan-fallas-y-confusion-tras-actualizacion/",
+      "fecha": "2025-10",
+      "resumen": "Miles de usuarios expresaron descontento en redes sociales por demoras al abrir la app, fallas en transferencias, interfaz confusa y diseño saturado tras la actualización de octubre 2025.",
+      "categorias": ["Complejidad"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "BBVA ve resistencia en quejas de usuarios por nueva app móvil",
+      "url": "https://www.bloomberglinea.com/latinoamerica/mexico/bbva-mexico-ve-resistencia-en-quejas-de-usuarios-por-nueva-app-movil/",
+      "fecha": "2025-10",
+      "resumen": "BBVA caracterizó las críticas masivas a su nueva app como resistencia al cambio, asegurando que los usuarios se acostumbrarán en un par de semanas. No ofreció opción de volver a la versión anterior.",
+      "categorias": ["Complejidad", "Atención"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "BBVA México participa en el Buen Fin 2025 eliminando comisión en crédito automotriz",
+      "url": "https://www.bbva.com/es/mx/economia-y-finanzas/bbva-mexico-participa-en-el-buen-fin-2025-con-la-eliminacion-de-la-comision-por-apertura-en-el-credito-automotriz/",
+      "fecha": "2025-11",
+      "resumen": "BBVA eliminó la comisión por apertura en créditos automotriz durante el Buen Fin 2025 y ofreció hasta 10% de bonificación en compras a MSI desde $5,000.",
+      "categorias": ["Financiamiento", "Promociones"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "BBVA México habilita el teléfono como terminal de cobro para 25 mil pymes",
+      "url": "https://www.bbva.com/es/mx/innovacion/bbva-mexico-habilita-el-telefono-movil-como-terminal-de-cobro-y-cerrara-2025-con-25-mil-pymes-con-este-servicio/",
+      "fecha": "2025-10",
+      "resumen": "BBVA habilitó el teléfono móvil como terminal de cobro para Pymes, proyectando cerrar 2025 con 25,000 comercios usando este servicio.",
+      "categorias": ["Funcionalidades"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "Tasas de inversión en México caen al 7%: BBVA recomienda diversificar",
+      "url": "https://www.bbva.mx/personas/noticias-inversiones/2025/para-invertir-ante-la-inflacion-y-tasas-bajas.html",
+      "fecha": "2025-10",
+      "resumen": "Las tasas de rendimiento en México cayeron significativamente: instrumentos de corto plazo que ofrecían rendimientos de dos dígitos ahora rondan el 7%. BBVA recomienda diversificar hacia UDIBONOS, FIBRAs y acciones.",
+      "categorias": ["Rendimientos"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "BBVA ofrece MSI y hasta 10% de bonificación en Buen Fin y Hot Sale 2025",
+      "url": "https://www.telediario.mx/comunidad/buen-fin-2025-bbva-cuales-son-las-promociones",
+      "fecha": "2025-11",
+      "resumen": "BBVA participó en el Buen Fin 2025 con hasta 10% de bonificación en MSI de 12-24 meses y 3 MSI automáticos en compras desde $3,500 en comercios nacionales.",
+      "categorias": ["Promociones"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "Compras seguras por internet en el Buen Fin 2025: BBVA recomienda tarjetas digitales con CVV dinámico",
+      "url": "https://www.bbva.mx/educacion-financiera/banca-digital/compras-seguras-buen-fin-2025.html",
+      "fecha": "2025-11",
+      "resumen": "BBVA promueve el uso de tarjetas digitales con CVV dinámico para compras seguras en línea, junto con configuración de alertas y límites de gasto en la app.",
+      "categorias": ["Seguridad"],
+      "site": "MLM",
+      "player": "BBVA"
+    },
+    {
+      "titulo": "CNBV aprueba licencia bancaria de Nubank en México: pasará de Sofipo a banco",
+      "url": "https://www.reuters.com/latam/negocio/B3H6N5ZFZNJNFMDBLY3LFHF4RQ-2025-04-15/",
+      "fecha": "2025-04",
+      "resumen": "La CNBV aprobó en abril 2025 la licencia bancaria de Nubank en México, permitiéndole pasar de Sofipo a banca múltiple con capital de 14,205 millones de pesos. Planea lanzar cuentas de nómina.",
+      "categorias": ["General"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Nubank alcanza 11 millones de usuarios en México y planea cuentas de nómina",
+      "url": "https://international.nubank.com.br/es/compania/nu-mexico-recibe-aprobacion-de-licencia-bancaria-allanando-el-camino-para-la-expansion-de-su-cartera-de-productos-y-una-mayor-inclusion-financiera/",
+      "fecha": "2025-05",
+      "resumen": "Nu México reportó 11 millones de usuarios al cierre de Q1 2025, posicionándose entre las 5 instituciones financieras con más clientes en México. Ha invertido más de $1,400 millones de dólares.",
+      "categorias": ["General"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Nubank lanza Cajita Turbo con rendimiento del 15% y liquidez inmediata en México",
+      "url": "https://international.nubank.com.br/es/cuenta-nu/nu-mexico-lanza-cajita-turbo-con-un-rendimiento-del-15-y-liquidez-inmediata/",
+      "fecha": "2025-04",
+      "resumen": "Nubank lanzó Cajita Turbo en abril 2025 con 15% de rendimiento anual y retiros al instante, hasta $25,000 pesos. Requiere una transacción mensual con tarjeta Nu.",
+      "categorias": ["Rendimientos"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Nubank ofrece préstamos personales de hasta $70,000 100% digitales en México",
+      "url": "https://finanzago.com/prestamo-nubank-mexico/",
+      "fecha": "2025-05",
+      "resumen": "Nubank ofrece préstamos de $500 a $70,000 a plazos de 1 a 48 meses, con proceso completamente digital, sin comisiones ocultas y tasa fija según perfil crediticio.",
+      "categorias": ["Financiamiento"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Nu México lanza Alerta de Estafa para proteger clientes contra fraudes",
+      "url": "https://www.dineroenimagen.com/hacker/nu-mexico-lanza-alerta-de-estafa-para-sus-clientes-asi-funciona",
+      "fecha": "2025-06",
+      "resumen": "Nubank implementó Alerta de Estafa que notifica preventivamente antes de enviar dinero si detecta indicios de riesgo, analizando monto, concepto y cuenta receptora.",
+      "categorias": ["Seguridad"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Nubank traerá Modo Rua a México para combatir fraudes digitales",
+      "url": "https://www.fintechexpert.mx/p/nubank-modo-rua-mexico-antifraude-2025",
+      "fecha": "2025-06",
+      "resumen": "Nubank anunció el lanzamiento de Modo Rua en México, que limita transferencias a redes wifi autorizadas. Ya tiene 1.5 millones de usuarios en Brasil.",
+      "categorias": ["Seguridad"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Cajitas Nu ofrecen hasta 12% anual en ahorro congelado a 90 días",
+      "url": "https://nu.com.mx/cuenta/rendimientos/",
+      "fecha": "2025-05",
+      "resumen": "Cajitas Nu Estándar ofrecen 9% anual con liquidez inmediata. Ahorro Congelado llega a 12% a 90 días. Todo sin anualidad ni penalizaciones, con interés compuesto diario.",
+      "categorias": ["Rendimientos"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Nuviembre 2025: Nubank ofrece MSI y sorteos de hasta $100,000 en el Buen Fin",
+      "url": "https://blog.nu.com.mx/productos-nu/tarjeta-de-credito/nuviembre-2025-promociones-tarjeta-nu/",
+      "fecha": "2025-05",
+      "resumen": "En compras de $2,000 o más a 6+ MSI, clientes participan en sorteo de baúles sorpresa con premios de hasta $100,000 en más de 70 comercios como Amazon, Liverpool y Walmart.",
+      "categorias": ["Promociones"],
+      "site": "MLM",
+      "player": "Nubank"
+    },
+    {
+      "titulo": "Ualá sufre falla de seguridad: aparecen USD 8,000 fantasma en cuentas de usuarios",
+      "url": "https://www.elliberal.com.ar/nota/48317/2025/05/sorpresa-en-uala--usuarios-reportan-la-aparicion-de-usd-8000-en-sus-cuentas",
+      "fecha": "2025-05",
+      "resumen": "En mayo 2025, miles de usuarios reportaron la aparición inexplicable de USD 8,277 en sus cuentas que luego desaparecieron. Ualá lo atribuyó a inestabilidades momentáneas.",
+      "categorias": ["Seguridad"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Golpe a billeteras digitales: medidas del BCRA reducen tasas de rendimiento",
+      "url": "https://www.cadena3.com/noticia/politica-y-economia/golpe-a-billeteras-digitales-como-impactan-las-medidas-del-bcra-en-las-tasas_431760",
+      "fecha": "2025-06",
+      "resumen": "El BCRA aumentó encajes para billeteras digitales desde junio 2025, reduciendo la capacidad de Ualá y otras de ofrecer tasas competitivas. Las tasas que llegaban a 29.30% cayeron significativamente.",
+      "categorias": ["Rendimientos"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Ualá relanza cuenta remunerada con tasas escalonadas de hasta 43% TNA",
+      "url": "https://mercado.com.ar/finanzas/uala-relanza-su-cuenta-remunerada-con-tasas-escalonadas-de-hasta-43-tna-en-argentina/",
+      "fecha": "2025-05",
+      "resumen": "Ualá relanzó su cuenta remunerada con tasas escalonadas que llegan hasta 43% TNA, buscando competir con bancos tradicionales y otras billeteras digitales.",
+      "categorias": ["Rendimientos"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Ualá bajo fuerte crítica: denuncias de usuarios por respuestas insuficientes y temor a estafas",
+      "url": "https://www.lanuevacomuna.com/uala-bajo-fuerte-critica-denuncias-de-usuarios-respuestas-insuficientes-y-temor-a-posibles-estafas/",
+      "fecha": "2025-05",
+      "resumen": "Usuarios denuncian transferencias pendientes que no se acreditan, saldos que desaparecen, bloqueos de cuentas sin motivo y atención al cliente basada en respuestas automáticas sin seguimiento real.",
+      "categorias": ["Atención", "Seguridad"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Ualá ofrece préstamos personales online con depósito inmediato",
+      "url": "https://www.elmejortrato.com.ar/creditos/prestamo-uala/",
+      "fecha": "2025-04",
+      "resumen": "Ualá ofrece préstamos 100% digitales con acreditación inmediata. Usuarios valoran la rapidez pero critican tasas de interés altas y poca flexibilidad en plazos de pago.",
+      "categorias": ["Financiamiento"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Ualá ofrece plazo fijo con tasas de hasta 34% TNA a 365 días",
+      "url": "https://www.elmejortrato.com.ar/inversiones/plazo-fijo-uala-opiniones/",
+      "fecha": "2025-04",
+      "resumen": "Ualá ofrece plazos fijos desde $1,000 sin límite máximo, con tasas de 24% TNA a 30 días hasta 34% TNA a 365 días, disponible todos los días sin costos de apertura.",
+      "categorias": ["Rendimientos"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Ualá ofrece 35% de reintegro en comercios Ualá Bis los jueves",
+      "url": "https://www.uala.com.ar/promociones/ualabis",
+      "fecha": "2025-06",
+      "resumen": "Promoción de 35% de cashback en compras en comercios Ualá Bis los jueves, con tope de $20,000 mensuales. Reintegro acreditado en hasta 15 días hábiles.",
+      "categorias": ["Promociones"],
+      "site": "MLA",
+      "player": "Ualá"
+    },
+    {
+      "titulo": "Ualá ofrece hasta 35% de descuento en marcas como Patagonia y Luccianos",
+      "url": "https://www.uala.com.ar/promociones",
+      "fecha": "2025-05",
+      "resumen": "Ualá ofrece hasta 35% de descuento en compras sin contacto con marcas reconocidas pagando con tarjeta prepaga o de crédito Ualá.",
+      "categorias": ["Promociones"],
+      "site": "MLA",
+      "player": "Ualá"
+    }
+  ]
+}

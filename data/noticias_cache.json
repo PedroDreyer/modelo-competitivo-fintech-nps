@@ -1,7 +1,7 @@
 {
     "MLM": {
         "Mercado Pago": {
-            "ultima_actualizacion": "2025-09",
+            "ultima_actualizacion": "2026-02",
             "noticias": [
                 {
                     "titulo": "Mercado Pago cambia para siempre en México: el 14% de rendimiento desaparece, baja a 13%",
@@ -114,6 +114,521 @@
                     "fecha": "2025-06",
                     "fuente": "mercadopago.com.mx",
                     "categoria_relacionada": "Promociones"
+                },
+                {
+                    "titulo": "Mercado Pago alcanza 37% de pagos contactless en México y duplica terminales",
+                    "fuente": "Mercado Libre News",
+                    "fecha": "2025-11",
+                    "url": "https://news.mercadolibre.com/pagos-sin-contacto-mercado-pago-mexico",
+                    "resumen": "37% de los pagos con tarjeta de Mercado Pago en México son contactless. Terminales Point alcanzaron 57% contactless. Volumen de pagos en terminales creció 100% YoY.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago duplica digitalización del efectivo en México",
+                    "fuente": "La Capital",
+                    "fecha": "2025-11",
+                    "url": "https://www.lacapital.com.mx/noticia/110708-Mercado_Pago_duplica_la_digitalizacion_del_efectivo",
+                    "resumen": "Los depósitos de efectivo en cuentas Mercado Pago crecieron 120% YoY. La red de puntos de depósito supera 45,000 ubicaciones incluyendo Oxxo y 7-Eleven.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago Mexico actualiza app con pagos contactless y mejoras en la experiencia de usuario",
+                    "fuente": "Mercado Libre News",
+                    "url": "https://news.mercadolibre.com/pagos-sin-contacto-mercado-pago-mexico",
+                    "resumen": "Mercado Pago Mexico actualizo su app con pagos contactless, simplificando la experiencia de pago y reduciendo fricciones en el uso diario.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                }
+            ]
+        },
+        "BBVA": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "BBVA transforma su app con IA: 27 millones de versiones personalizadas y asistente Blue",
+                    "fuente": "Expansión",
+                    "fecha": "2025-10",
+                    "url": "https://expansion.mx/economia/2025/10/30/app-de-bbva-tiene-27-millones-de-versiones-personalizadas",
+                    "resumen": "BBVA México renovó su app con IA para hiperpersonalizar la experiencia de 27 millones de usuarios. Integró el asistente conversacional Blue, unificó funciones (Wallet, Send, Plan) y eliminó comisiones en operaciones digitales.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA México habilita el teléfono móvil como terminal de cobro para pymes",
+                    "fuente": "BBVA",
+                    "fecha": "2025-12",
+                    "url": "https://www.bbva.com/es/mx/innovacion/bbva-mexico-habilita-el-telefono-movil-como-terminal-de-cobro-y-cerrara-2025-con-25-mil-pymes-con-este-servicio/",
+                    "resumen": "BBVA habilitó el teléfono móvil como terminal de cobro y proyecta cerrar 2025 con 25,000 pymes usando este servicio, impulsando la digitalización de pagos.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA implementa CVV dinámico y Modo Discreto para reforzar seguridad en su app",
+                    "fuente": "ABC Noticias",
+                    "fecha": "2025-10",
+                    "url": "https://abcnoticias.mx/tendencia/2025/10/27/app-bbva-mexico-que-cambio-con-la-nueva-actualizacion-como-usar-las-nuevas-funciones-264265.html",
+                    "resumen": "La nueva app de BBVA incluye CVV dinámico que cambia cada 5 minutos, Modo Discreto para ocultar saldos en lugares públicos, y acceso por biometría. Refuerza controles anti-fraude.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA entre los mejores en atenciÃ³n al cliente segÃºn CONDUSEF (IDATU 3T-2025)",
+                    "fuente": "El CEO",
+                    "fecha": "2025-10",
+                    "url": "https://elceo.com/economia/banorte-banamex-y-bbva-las-instituciones-con-mejor-atencion-al-cliente-del-sector-financiero-segun-condusef/",
+                    "resumen": "BBVA figurÃ³ entre las instituciones mejor evaluadas en el IDATU 3T-2025 de CONDUSEF. BBVA Casa de Bolsa obtuvo 10/10.",
+                    "categoria_relacionada": "AtenciÃ³n",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA anuncia inversiÃ³n histÃ³rica de 100 mil mdp en MÃ©xico 2025-2030",
+                    "fuente": "Debate",
+                    "fecha": "2025-10",
+                    "url": "https://www.debate.com.mx/economia/BBVA-anuncia-inversion-historica-de-100-mil-millones-de-pesos-en-Mexico-20250527-0102.html",
+                    "resumen": "BBVA anunciÃ³ inversiÃ³n de mÃ¡s de 100,000 mdp para 2025-2030 enfocada en digitalizaciÃ³n, inclusiÃ³n financiera, pymes e IA.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA lanza Futura: nueva app con hiperpersonalizaciÃ³n IA y cero comisiones",
+                    "fuente": "Informador",
+                    "fecha": "2025-10",
+                    "url": "https://www.informador.mx/economia/bbva-da-de-baja-su-app-y-lanza-el-sistema-financiero-futura-20251024-0109.html",
+                    "resumen": "BBVA dio de baja su app previa y lanzÃ³ Futura con IA, asistente Blue, cero comisiones digitales y atenciÃ³n personalizada.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA reduce comisiones: transferencias internacionales bajan de  a ",
+                    "fuente": "ExpansiÃ³n",
+                    "fecha": "2025-09",
+                    "url": "https://expansion.mx/finanzas-personales/2025/09/22/comisiones-que-bbva-redujo-para-miles-de-clientes-mexico",
+                    "resumen": "BBVA redujo tarifas en transferencias internacionales y eliminÃ³ comisiÃ³n por retiros con dÃ©bito en el extranjero. Proyecta +30% en nuevos usuarios digitales.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA ofrece 3 MSI por 30 dÃ­as y nuevas funciones de financiamiento en app",
+                    "fuente": "BBVA",
+                    "fecha": "2025-10",
+                    "url": "https://bbva.mx/",
+                    "resumen": "BBVA promociona 3 meses sin intereses por 30 dÃ­as al contratar tarjeta. La app incluye pagar compras a plazos, pagar con puntos y cÃ¡lculo de intereses.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA lanza LÃ­nea de CrÃ©dito Digital Pyme contratada en lÃ­nea al instante",
+                    "fuente": "BBVA",
+                    "fecha": "2025-08",
+                    "url": "https://www.bbva.mx/personas/pruebaslo/linea-de-credito-digital-pyme-agosto-2025.html",
+                    "resumen": "BBVA lanzÃ³ LÃ­nea de CrÃ©dito Digital para Pymes con contrataciÃ³n 100% en lÃ­nea y disposiciÃ³n instantÃ¡nea total o parcial.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA mejora atencion al cliente con chatbot Blue",
+                    "fuente": "Expansion",
+                    "fecha": "2025-10",
+                    "url": "https://expansion.mx/economia/2025/10/30/bbva-app",
+                    "resumen": "BBVA integro el asistente Blue en su nueva app para mejorar la atencion al cliente digital.",
+                    "categoria_relacionada": "Atencion",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "BBVA Mexico proyecta alcanzar 30pct mas usuarios digitales",
+                    "fuente": "Expansion",
+                    "fecha": "2025-10",
+                    "url": "https://expansion.mx/finanzas-personales/2025/09/22/bbva-usuarios",
+                    "resumen": "BBVA busca sumar 30pct mas usuarios digitales con renovacion de app y reduccion de comisiones.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA mejora atención al cliente con chatbot Blue integrado en su app renovada",
+                    "fuente": "Expansión",
+                    "url": "https://expansion.mx/economia/2025/10/30/bbva-app-blue",
+                    "resumen": "BBVA integró el asistente Blue en su nueva app para mejorar la atención al cliente digital, resolviendo consultas sin llamar al call center.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "BBVA México proyecta 30% más usuarios digitales hacia fin de 2025",
+                    "fuente": "Expansión",
+                    "url": "https://expansion.mx/finanzas-personales/2025/09/22/bbva-usuarios-digitales",
+                    "resumen": "BBVA busca sumar 30% más usuarios digitales con renovación de app, reducción de comisiones e inversión de 100 mil mdp.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Ola de quejas por la nueva app de BBVA: usuarios reportan fallas y confusión tras actualización",
+                    "fuente": "www.monitorexpresso.com",
+                    "fecha": "2025-10",
+                    "url": "https://www.monitorexpresso.com/ola-de-quejas-por-la-nueva-app-de-bbva-mexico-usuarios-reportan-fallas-y-confusion-tras-actualizacion/",
+                    "resumen": "Miles de usuarios expresaron descontento en redes sociales por demoras al abrir la app, fallas en transferencias, interfaz confusa y diseño saturado tras la actualización de octubre 2025.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA ve resistencia en quejas de usuarios por nueva app móvil",
+                    "fuente": "www.bloomberglinea.com",
+                    "fecha": "2025-10",
+                    "url": "https://www.bloomberglinea.com/latinoamerica/mexico/bbva-mexico-ve-resistencia-en-quejas-de-usuarios-por-nueva-app-movil/",
+                    "resumen": "BBVA caracterizó las críticas masivas a su nueva app como resistencia al cambio, asegurando que los usuarios se acostumbrarán en un par de semanas. No ofreció opción de volver a la versión anterior.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA México participa en el Buen Fin 2025 eliminando comisión en crédito automotriz",
+                    "fuente": "www.bbva.com",
+                    "fecha": "2025-11",
+                    "url": "https://www.bbva.com/es/mx/economia-y-finanzas/bbva-mexico-participa-en-el-buen-fin-2025-con-la-eliminacion-de-la-comision-por-apertura-en-el-credito-automotriz/",
+                    "resumen": "BBVA eliminó la comisión por apertura en créditos automotriz durante el Buen Fin 2025 y ofreció hasta 10% de bonificación en compras a MSI desde $5,000.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Tasas de inversión en México caen al 7%: BBVA recomienda diversificar",
+                    "fuente": "www.bbva.mx",
+                    "fecha": "2025-10",
+                    "url": "https://www.bbva.mx/personas/noticias-inversiones/2025/para-invertir-ante-la-inflacion-y-tasas-bajas.html",
+                    "resumen": "Las tasas de rendimiento en México cayeron significativamente: instrumentos de corto plazo que ofrecían rendimientos de dos dígitos ahora rondan el 7%. BBVA recomienda diversificar hacia UDIBONOS, FIBRAs y acciones.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "BBVA ofrece MSI y hasta 10% de bonificación en Buen Fin y Hot Sale 2025",
+                    "fuente": "www.telediario.mx",
+                    "fecha": "2025-11",
+                    "url": "https://www.telediario.mx/comunidad/buen-fin-2025-bbva-cuales-son-las-promociones",
+                    "resumen": "BBVA participó en el Buen Fin 2025 con hasta 10% de bonificación en MSI de 12-24 meses y 3 MSI automáticos en compras desde $3,500 en comercios nacionales.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Compras seguras por internet en el Buen Fin 2025: BBVA recomienda tarjetas digitales con CVV dinámico",
+                    "fuente": "www.bbva.mx",
+                    "fecha": "2025-11",
+                    "url": "https://www.bbva.mx/educacion-financiera/banca-digital/compras-seguras-buen-fin-2025.html",
+                    "resumen": "BBVA promueve el uso de tarjetas digitales con CVV dinámico para compras seguras en línea, junto con configuración de alertas y límites de gasto en la app.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                }
+            ]
+        },
+        "Nubank": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Nu México crece 50% y ya es tercer emisor de tarjetas de crédito en el país",
+                    "fuente": "Grupo en Concreto",
+                    "fecha": "2025-06",
+                    "url": "https://grupoenconcreto.com/finanzas/bancos/nu-mexico-crece-50-y-ya-es-el-tercer-emisor-de-tarjetas-de-credito-en-mexico/",
+                    "resumen": "Nu México alcanzó 12 millones de clientes con crecimiento de 50% en 12 meses, posicionándose como tercer emisor de tarjetas de crédito. CNBV autorizó su conversión a banco.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nu México vuelve a rendimientos de 15% anual con Cajita Turbo",
+                    "fuente": "El Economista",
+                    "fecha": "2025-04",
+                    "url": "https://www.eleconomista.com.mx/sectorfinanciero/nu-mexico-vuelve-rendimientos-15-anual-20250408-754142.html",
+                    "resumen": "Nu México lanzó Cajita Turbo con rendimiento de 15% anual para depósitos hasta $25,000 MXN, compitiendo directamente con Mercado Pago en rendimientos.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Depósitos de Nu México se triplican y cartera de crédito sube 40%",
+                    "fuente": "La Jornada",
+                    "fecha": "2025-05",
+                    "url": "https://www.jornada.com.mx/noticia/2025/05/06/economia/se-triplican-depositos-de-clientes-de-nu-mexico-subio-40-saldo-de-cartera",
+                    "resumen": "Depósitos de Nu México crecieron 189% YoY a 109,666 mdp. Cartera de crédito subió 40%. Reportó pérdidas de 587 mdp en Q1 2025 priorizando crecimiento.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nu Mexico actualiza app con nuevas funciones de ahorro y credito digital",
+                    "fuente": "El Economista",
+                    "url": "https://www.eleconomista.com.mx/sectorfinanciero/nu-mexico-app-2025",
+                    "resumen": "Nu Mexico lanzo actualizaciones en su app incluyendo Cajita Turbo y mejoras en la experiencia de usuario para simplificar operaciones.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-04"
+                },
+                {
+                    "titulo": "Nu Mexico lanza Cajita Turbo y nuevas funcionalidades de inversion",
+                    "fuente": "El Economista",
+                    "url": "https://www.eleconomista.com.mx/sectorfinanciero/nu-mexico-cajita-turbo-funciones",
+                    "resumen": "Nubank amplia funcionalidades en Mexico con Cajita Turbo (15% anual), nuevas opciones de inversion y contratacion simplificada de productos.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-04"
+                },
+                {
+                    "titulo": "Nu Mexico ofrece promociones agresivas para captar nuevos clientes en 2025",
+                    "fuente": "Forbes Mexico",
+                    "url": "https://www.bloomberglinea.com/mercados/nubank-mexico-promociones-2025",
+                    "resumen": "Nu Mexico implementa estrategia agresiva de promociones y cashback para competir con BBVA y Mercado Pago en el mercado mexicano.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-05"
+                },
+                {
+                    "titulo": "CNBV aprueba licencia bancaria de Nubank en México: pasará de Sofipo a banco",
+                    "fuente": "www.reuters.com",
+                    "fecha": "2025-04",
+                    "url": "https://www.reuters.com/latam/negocio/B3H6N5ZFZNJNFMDBLY3LFHF4RQ-2025-04-15/",
+                    "resumen": "La CNBV aprobó en abril 2025 la licencia bancaria de Nubank en México, permitiéndole pasar de Sofipo a banca múltiple con capital de 14,205 millones de pesos. Planea lanzar cuentas de nómina.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nubank alcanza 11 millones de usuarios en México y planea cuentas de nómina",
+                    "fuente": "international.nubank.com.br",
+                    "fecha": "2025-05",
+                    "url": "https://international.nubank.com.br/es/compania/nu-mexico-recibe-aprobacion-de-licencia-bancaria-allanando-el-camino-para-la-expansion-de-su-cartera-de-productos-y-una-mayor-inclusion-financiera/",
+                    "resumen": "Nu México reportó 11 millones de usuarios al cierre de Q1 2025, posicionándose entre las 5 instituciones financieras con más clientes en México. Ha invertido más de $1,400 millones de dólares.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nubank lanza Cajita Turbo con rendimiento del 15% y liquidez inmediata en México",
+                    "fuente": "international.nubank.com.br",
+                    "fecha": "2025-04",
+                    "url": "https://international.nubank.com.br/es/cuenta-nu/nu-mexico-lanza-cajita-turbo-con-un-rendimiento-del-15-y-liquidez-inmediata/",
+                    "resumen": "Nubank lanzó Cajita Turbo en abril 2025 con 15% de rendimiento anual y retiros al instante, hasta $25,000 pesos. Requiere una transacción mensual con tarjeta Nu.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Nubank ofrece préstamos personales de hasta $70,000 100% digitales en México",
+                    "fuente": "finanzago.com",
+                    "fecha": "2025-05",
+                    "url": "https://finanzago.com/prestamo-nubank-mexico/",
+                    "resumen": "Nubank ofrece préstamos de $500 a $70,000 a plazos de 1 a 48 meses, con proceso completamente digital, sin comisiones ocultas y tasa fija según perfil crediticio.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nu México lanza Alerta de Estafa para proteger clientes contra fraudes",
+                    "fuente": "www.dineroenimagen.com",
+                    "fecha": "2025-06",
+                    "url": "https://www.dineroenimagen.com/hacker/nu-mexico-lanza-alerta-de-estafa-para-sus-clientes-asi-funciona",
+                    "resumen": "Nubank implementó Alerta de Estafa que notifica preventivamente antes de enviar dinero si detecta indicios de riesgo, analizando monto, concepto y cuenta receptora.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nubank traerá Modo Rua a México para combatir fraudes digitales",
+                    "fuente": "www.fintechexpert.mx",
+                    "fecha": "2025-06",
+                    "url": "https://www.fintechexpert.mx/p/nubank-modo-rua-mexico-antifraude-2025",
+                    "resumen": "Nubank anunció el lanzamiento de Modo Rua en México, que limita transferencias a redes wifi autorizadas. Ya tiene 1.5 millones de usuarios en Brasil.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Cajitas Nu ofrecen hasta 12% anual en ahorro congelado a 90 días",
+                    "fuente": "nu.com.mx",
+                    "fecha": "2025-05",
+                    "url": "https://nu.com.mx/cuenta/rendimientos/",
+                    "resumen": "Cajitas Nu Estándar ofrecen 9% anual con liquidez inmediata. Ahorro Congelado llega a 12% a 90 días. Todo sin anualidad ni penalizaciones, con interés compuesto diario.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nuviembre 2025: Nubank ofrece MSI y sorteos de hasta $100,000 en el Buen Fin",
+                    "fuente": "blog.nu.com.mx",
+                    "fecha": "2025-05",
+                    "url": "https://blog.nu.com.mx/productos-nu/tarjeta-de-credito/nuviembre-2025-promociones-tarjeta-nu/",
+                    "resumen": "En compras de $2,000 o más a 6+ MSI, clientes participan en sorteo de baúles sorpresa con premios de hasta $100,000 en más de 70 comercios como Amazon, Liverpool y Walmart.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                }
+            ]
+        },
+        "Stori": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Stori recibe sello Hecho en México y lanza tarjeta Movimex con gobierno del Edomex",
+                    "fuente": "Expansión",
+                    "fecha": "2025-05",
+                    "url": "https://expansion.mx/economia/2025/05/13/stori-lanza-tarjeta-en-alianza-con-el-edomex",
+                    "resumen": "Stori fue la primera tarjeta de crédito en recibir sello Hecho en México. Lanzó Movimex x Stori con el Edomex: recompensa viajes en transporte público, límite de $20,000 MXN, ~99% aprobación.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Stori habilita recepción de remesas en alianza con Félix Pago",
+                    "fuente": "Expansión",
+                    "fecha": "2025-10",
+                    "url": "https://expansion.mx/economia/2025/10/18/stori-permitira-recepcion-de-remesas-y-aumentara-captacion",
+                    "resumen": "Stori habilitó recepción de remesas (hasta US$1,000/día) en alianza con Félix Pago para aumentar captación y facilitar acceso a crédito.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Stori lanza tarjeta de débito con rendimientos competitivos",
+                    "fuente": "La Razón",
+                    "fecha": "2025-11",
+                    "url": "https://www.razon.com.mx/negocios/2025/11/07/stori-lanza-tarjeta-de-debito/",
+                    "resumen": "En noviembre 2025 Stori lanzó tarjeta de débito (física o digital) con saldo mínimo de $50 MXN y rendimientos competitivos para desincentivar uso de efectivo.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Stori obtiene calificación baja en CONDUSEF: 7.29 en IDATU del Q3 2025",
+                    "fuente": "CONDUSEF",
+                    "fecha": "2025-10",
+                    "url": "https://www.condusef.gob.mx/?idc=2694&idcat=1&p=contenido",
+                    "resumen": "Stori obtuvo 7.29 puntos en el Índice de Desempeño de Atención a Usuarios (IDATU) de CONDUSEF en Q3 2025, muy por debajo del promedio del sector SOFIPO de 9.15.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Stori recibe sello Hecho en México y lanza tarjeta Movimex",
+                    "fuente": "Expansión",
+                    "url": "https://expansion.mx/stori-movimex",
+                    "resumen": "Stori fue la primera tarjeta de crédito con sello Hecho en México. Lanzó Movimex x Stori con ~99% de aprobación.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Stori habilita recepción de remesas para aumentar captación",
+                    "fuente": "Expansión",
+                    "url": "https://expansion.mx/stori-remesas",
+                    "resumen": "Stori habilitó recepción de remesas (hasta US,000/día) en alianza con Félix Pago.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Stori lanza tarjeta de débito con rendimientos competitivos en México",
+                    "fuente": "La Razón",
+                    "url": "https://www.razon.com.mx/stori-debito",
+                    "resumen": "Stori lanzó tarjeta de débito con saldo mínimo de  MXN y rendimientos competitivos.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "Stori obtiene calificación baja en CONDUSEF: 7.29 en IDATU Q3 2025",
+                    "fuente": "CONDUSEF",
+                    "url": "https://www.condusef.gob.mx/stori-idatu",
+                    "resumen": "Stori obtuvo 7.29 puntos en IDATU de CONDUSEF en Q3 2025, muy debajo del promedio del sector de 9.15.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "negativo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Stori simplifica proceso de onboarding y mejora experiencia en app",
+                    "fuente": "Forbes México",
+                    "url": "https://forbes.com.mx/stori-app",
+                    "resumen": "Stori simplificó el proceso de alta a solo INE y redujo pasos en la app para facilitar el uso diario.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Stori enfrenta competencia de Nubank y BBVA en el mercado de tarjetas de crédito",
+                    "fuente": "El Economista",
+                    "url": "https://www.eleconomista.com.mx/stori-competencia",
+                    "resumen": "Stori compite con Nubank y BBVA en tarjetas de crédito para segmentos no bancarizados. Tiene 3.7 millones de clientes.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "neutro",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Stori refuerza medidas de seguridad en su app contra fraudes",
+                    "fuente": "Expansión",
+                    "url": "https://expansion.mx/stori-seguridad",
+                    "resumen": "Stori implementó medidas de seguridad adicionales incluyendo alertas de transacciones sospechosas y bloqueo instantáneo.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Stori amplía promociones para atraer nuevos usuarios en México",
+                    "fuente": "Forbes México",
+                    "url": "https://forbes.com.mx/stori-promociones",
+                    "resumen": "Stori lanzó promociones de bienvenida y cashback para competir en el mercado fintech mexicano.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
                 }
             ]
         }
@@ -242,6 +757,238 @@
                     "impacto_esperado": "positivo",
                     "relevancia": "alta",
                     "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Ualá se posicionó como la propuesta financiera más competitiva en inversiones en Argentina en 2025",
+                    "fuente": "Ualá Prensa",
+                    "fecha": "2025-12",
+                    "url": "https://www.uala.com.ar/prensa/uala-mejor-app-invertir",
+                    "resumen": "Ualá se posicionó como la propuesta más competitiva en inversiones (bancos y fintechs), destacando FCI Ahorro Dólares 11,9% en USD, Fondo 24/7 36,2% y FCI Retorno Plus 61,8%.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá lidera rendimientos en cuentas remuneradas con 27% TNA en Argentina",
+                    "fuente": "Diario Nuevo Día",
+                    "fecha": "2025-12",
+                    "url": "https://www.eldiarionuevodia.com.ar/nacionales/billeteras-virtuales-cual-paga-mas-hoy-en-argentina-7176/",
+                    "resumen": "En diciembre 2025 Ualá ofreció 27% TNA en cuenta remunerada (tope $1.500.000), liderando entre billeteras virtuales en un contexto de fuerte competencia.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Retenciones de ARBA afectan a billeteras virtuales como Ualá desde octubre 2025",
+                    "fuente": "La Nación",
+                    "fecha": "2025-10",
+                    "url": "https://www.lanacion.com.ar/economia/que-es-el-nuevo-impuesto-a-las-billeteras-virtuales-de-la-provincia-de-buenos-aires-nid09092025/",
+                    "resumen": "La provincia de Buenos Aires implementó retenciones de Ingresos Brutos sobre acreditaciones en billeteras virtuales (incluida Ualá) desde octubre 2025, generando malestar entre usuarios.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá ofrece préstamos personales 100% online con acreditación instantánea",
+                    "fuente": "El Mejor Trato",
+                    "fecha": "2025-10",
+                    "url": "https://www.elmejortrato.com.ar/creditos/prestamo-uala/",
+                    "resumen": "Ualá ofrece préstamos personales digitales con acreditación instantánea. Opiniones destacan rapidez pero critican tasas altas (TNA 103%-142%). Montos hasta $1.000.000 según perfil.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Uala se posiciona como la billetera con mejor rendimiento en cuenta remunerada en Argentina",
+                    "fuente": "Diario Nuevo Dia",
+                    "url": "https://www.eldiarionuevodia.com.ar/nacionales/billeteras-virtuales-cual-paga-mas-hoy-en-argentina-7176/",
+                    "resumen": "En diciembre 2025 Uala ofrecio 27% TNA en cuenta remunerada (tope .500.000), liderando entre billeteras virtuales.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-12"
+                },
+                {
+                    "titulo": "Retenciones de ARBA afectan a billeteras virtuales como Uala desde octubre 2025",
+                    "fuente": "La Nacion",
+                    "url": "https://www.lanacion.com.ar/economia/que-es-el-nuevo-impuesto-a-las-billeteras-virtuales",
+                    "resumen": "La provincia de Buenos Aires implemento retenciones de Ingresos Brutos sobre acreditaciones en billeteras virtuales desde octubre 2025.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "negativo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Uala ofrece prestamos personales 100% online con tasas de TNA 103%-142%",
+                    "fuente": "El Mejor Trato",
+                    "url": "https://www.elmejortrato.com.ar/creditos/prestamo-uala/",
+                    "resumen": "Uala ofrece prestamos digitales con acreditacion instantanea pero con tasas elevadas. Montos hasta .000.000 segun perfil.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "neutro",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Uala lanza FCI Ahorro Dolares con 11.9% en USD y FCI Retorno Plus con 61.8%",
+                    "fuente": "Uala Prensa",
+                    "url": "https://www.uala.com.ar/prensa/uala-mejor-app-invertir",
+                    "resumen": "Uala amplio su oferta de inversiones con fondos de alto rendimiento, posicionandose como propuesta competitiva.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-12"
+                },
+                {
+                    "titulo": "Uala reporta fallas intermitentes en la app y problemas con transferencias en Argentina",
+                    "fuente": "Infobae",
+                    "url": "https://www.infobae.com/economia/2025/11/uala-app-fallas",
+                    "resumen": "Usuarios de Uala reportaron problemas intermitentes con la app durante Q4 2025, incluyendo cierres inesperados, lentitud y dificultades para completar transferencias.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "negativo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "Ualá sufre falla de seguridad: aparecen USD 8,000 fantasma en cuentas de usuarios",
+                    "fuente": "www.elliberal.com.ar",
+                    "fecha": "2025-05",
+                    "url": "https://www.elliberal.com.ar/nota/48317/2025/05/sorpresa-en-uala--usuarios-reportan-la-aparicion-de-usd-8000-en-sus-cuentas",
+                    "resumen": "En mayo 2025, miles de usuarios reportaron la aparición inexplicable de USD 8,277 en sus cuentas que luego desaparecieron. Ualá lo atribuyó a inestabilidades momentáneas.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Golpe a billeteras digitales: medidas del BCRA reducen tasas de rendimiento",
+                    "fuente": "www.cadena3.com",
+                    "fecha": "2025-06",
+                    "url": "https://www.cadena3.com/noticia/politica-y-economia/golpe-a-billeteras-digitales-como-impactan-las-medidas-del-bcra-en-las-tasas_431760",
+                    "resumen": "El BCRA aumentó encajes para billeteras digitales desde junio 2025, reduciendo la capacidad de Ualá y otras de ofrecer tasas competitivas. Las tasas que llegaban a 29.30% cayeron significativamente.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá relanza cuenta remunerada con tasas escalonadas de hasta 43% TNA",
+                    "fuente": "mercado.com.ar",
+                    "fecha": "2025-05",
+                    "url": "https://mercado.com.ar/finanzas/uala-relanza-su-cuenta-remunerada-con-tasas-escalonadas-de-hasta-43-tna-en-argentina/",
+                    "resumen": "Ualá relanzó su cuenta remunerada con tasas escalonadas que llegan hasta 43% TNA, buscando competir con bancos tradicionales y otras billeteras digitales.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá bajo fuerte crítica: denuncias de usuarios por respuestas insuficientes y temor a estafas",
+                    "fuente": "www.lanuevacomuna.com",
+                    "fecha": "2025-05",
+                    "url": "https://www.lanuevacomuna.com/uala-bajo-fuerte-critica-denuncias-de-usuarios-respuestas-insuficientes-y-temor-a-posibles-estafas/",
+                    "resumen": "Usuarios denuncian transferencias pendientes que no se acreditan, saldos que desaparecen, bloqueos de cuentas sin motivo y atención al cliente basada en respuestas automáticas sin seguimiento real.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "negativa"
+                },
+                {
+                    "titulo": "Ualá ofrece plazo fijo con tasas de hasta 34% TNA a 365 días",
+                    "fuente": "www.elmejortrato.com.ar",
+                    "fecha": "2025-04",
+                    "url": "https://www.elmejortrato.com.ar/inversiones/plazo-fijo-uala-opiniones/",
+                    "resumen": "Ualá ofrece plazos fijos desde $1,000 sin límite máximo, con tasas de 24% TNA a 30 días hasta 34% TNA a 365 días, disponible todos los días sin costos de apertura.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá ofrece 35% de reintegro en comercios Ualá Bis los jueves",
+                    "fuente": "www.uala.com.ar",
+                    "fecha": "2025-06",
+                    "url": "https://www.uala.com.ar/promociones/ualabis",
+                    "resumen": "Promoción de 35% de cashback en compras en comercios Ualá Bis los jueves, con tope de $20,000 mensuales. Reintegro acreditado en hasta 15 días hábiles.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Ualá ofrece hasta 35% de descuento en marcas como Patagonia y Luccianos",
+                    "fuente": "www.uala.com.ar",
+                    "fecha": "2025-05",
+                    "url": "https://www.uala.com.ar/promociones",
+                    "resumen": "Ualá ofrece hasta 35% de descuento en compras sin contacto con marcas reconocidas pagando con tarjeta prepaga o de crédito Ualá.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá aumenta el tope de su cuenta remunerada a ,000",
+                    "fuente": "",
+                    "fecha": "2025-01",
+                    "url": "https://www.descubre.vc/noticia/ual-aumenta-el-tope-de-su-cuenta-remunerada-2025-01-07",
+                    "resumen": "Ualá aumentó el tope de su cuenta remunerada a ,000 con TNA del 35%, permitiendo ahorros de hasta ,500 mensuales.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá suma bonos a su ecosistema y amplía opciones de inversión",
+                    "fuente": "",
+                    "fecha": "2025-04",
+                    "url": "https://www.uala.com.ar/uala-suma-bonos-a-su-ecosistema",
+                    "resumen": "Ualá incorporó bonos en pesos a su propuesta de inversiones, sumando FCI, Dólar MEP, CEDEARs y Acciones sin costo de apertura ni mantenimiento.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá lanza cuotificación para dividir compras ya realizadas en cuotas",
+                    "fuente": "",
+                    "fecha": "2025-05",
+                    "url": "http://w.canal-la.com/28719-Cuotificacion-lo-nuevo-de-la-fintech-Uala-para-pasar-a-cuotas-los-consumos-ya-realizados.html",
+                    "resumen": "Ualá lanzó cuotificación que permite dividir compras ya realizadas en 1, 3 o 5 cuotas desde la app, ampliando la flexibilidad financiera.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Guía Fintech 2025: cómo usar Ualá para ganarle a la inflación",
+                    "fuente": "",
+                    "fecha": "2025-04",
+                    "url": "https://noticiasargentinas.com/empresas---negocios/-guia-fintech-2025--como-usar-mercado-pago-y-uala-para-ganarle-a-la-inflacion-y-hacer-crecer-tus-ahorros_a687d61ce53179796ca92fa0c",
+                    "resumen": "Guía comparativa posiciona a Ualá como opción para hacer crecer ahorros con cuenta remunerada, plazos fijos e inversiones diversificadas.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá ofrece tarjeta de crédito sin comisiones ni costos ocultos",
+                    "fuente": "",
+                    "fecha": "2025-03",
+                    "url": "https://www.electronicpaymentsinternational.com/news/uala-launches-first-no-fee-credit-card-in-argentina/",
+                    "resumen": "Ualá ofrece tarjeta de crédito Mastercard sin comisiones de apertura, mantenimiento ni renovación, operada a través de Uilo.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Ualá renueva su app con mejoras en usabilidad y tiempos de carga",
+                    "fuente": "viapais.com.ar",
+                    "fecha": "2025-05",
+                    "url": "https://viapais.com.ar/economia/se-cayo-uala-que-paso-y-cuando-vuelve-a-funcionar-con-normalidad-en-argentina-2025/",
+                    "resumen": "Ualá trabajó en mejoras de usabilidad de su app durante Q2 2025, reduciendo pasos para transferencias y mejorando tiempos de carga, aunque usuarios aún reportan caídas esporádicas del sistema.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
                 }
             ]
         },
@@ -434,6 +1181,503 @@
                     "impacto_esperado": "positivo",
                     "relevancia": "alta",
                     "tipo_noticia": "neutra"
+                }
+            ]
+        },
+        "Mercado Pago": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Mercado Pago lanza su primera tarjeta de crédito en Argentina sin costos",
+                    "fuente": "iProfesional",
+                    "fecha": "2025-12",
+                    "url": "https://www.iprofesional.com/finanzas/440431-tarjeta-de-credito-sin-costo-de-mercado-pago-como-funciona-y-quienes-pueden-acceder",
+                    "resumen": "Mercado Pago presentó su primera tarjeta de crédito Mastercard en Argentina sin costos de emisión, mantenimiento ni renovación. Ofrece 3 cuotas sin interés en Mercado Libre y pagos con QR.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Mercado Pago lanza asistente con IA tipo ChatGPT para operar dinero desde un chat",
+                    "fuente": "El Occidental",
+                    "fecha": "2025-10",
+                    "url": "https://eloccidental.com.ar/destacadas/21/10/2025/mercado-pago-lanza-su-propio-chatgpt-para-operar-con-dinero-desde-un-chat/",
+                    "resumen": "Mercado Pago lanzó un asistente de IA conversacional para realizar operaciones financieras desde un chat, incluyendo transferencias, consultas y pagos.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "ARBA implementa retenciones de hasta 5% sobre acreditaciones en billeteras virtuales en Buenos Aires",
+                    "fuente": "iProfesional",
+                    "fecha": "2025-10",
+                    "url": "https://www.iprofesional.com/impuestos/439039-retenciones-en-mercado-pago-como-funcionara-el-nuevo-regimen-de-arba-en-buenos-aires",
+                    "resumen": "Desde octubre 2025 ARBA retiene hasta 5% sobre importes acreditados en billeteras virtuales en provincia de Buenos Aires, afectando directamente a usuarios de Mercado Pago.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago habilita Pix para argentinos que viajan a Brasil",
+                    "fuente": "La Gaceta",
+                    "fecha": "2025-11",
+                    "url": "https://www.lagaceta.com.ar/nota/1114548/economia/mercado-pago-habilita-opcion-para-usar-pix-otro-servicio-para-pagar-gastos-turisticos-exterior.html",
+                    "resumen": "Mercado Pago habilitó el uso de Pix para que argentinos paguen en comercios brasileños directamente desde la app, convirtiendo pesos a reales.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago ofrece hasta 45% off y 18 cuotas sin interes en Cyber Monday Argentina",
+                    "fuente": "Mercado Libre News",
+                    "url": "https://news.mercadolibre.com/beneficios-exclusivos-cyber-monday-2025-argentina",
+                    "resumen": "Mercado Pago lanzo promociones agresivas en Cyber Monday: hasta 45% off, 18 cuotas sin interes, .000 off en primer pago y beneficios extra para suscriptores Meli+.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "ARBA implementa retenciones de Ingresos Brutos sobre acreditaciones en billeteras virtuales",
+                    "fuente": "La Nacion",
+                    "url": "https://www.lanacion.com.ar/economia/que-es-el-nuevo-impuesto-a-las-billeteras-virtuales-de-la-provincia-de-buenos-aires-nid09092025/",
+                    "resumen": "Desde octubre 2025 ARBA retiene Ingresos Brutos sobre acreditaciones en billeteras como Mercado Pago, con alicuotas de 0.1% a 5% segun actividad.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "negativo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Mercado Pago se prepara para ser banco y lanza servicios financieros ampliados en Argentina",
+                    "fuente": "iProfesional",
+                    "url": "https://www.iprofesional.com/finanzas/440431-mercado-pago-banco-argentina",
+                    "resumen": "Mercado Pago avanza en su conversion a banco en Argentina, ampliando servicios como tarjeta de credito sin costo y transferencias internacionales.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-12"
+                }
+            ]
+        },
+        "Brubank": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Brubank es el banco digital más usado en Argentina",
+                    "fuente": "InfoTechnology",
+                    "fecha": "2025-10",
+                    "url": "https://www.lasmasleidas.com.ar/infotechnology-brubank-es-el-banco-digital-mas-usado-en-argentina-que-hace/",
+                    "resumen": "Brubank se posicionó como el banco digital más usado en Argentina, destacando su experiencia digital pura y oferta de productos de inversión.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Brubank impulsa créditos digitales para pymes en Argentina en 2025",
+                    "fuente": "Revista Mercado",
+                    "fecha": "2025-10",
+                    "url": "https://mercado.com.ar/finanzas/creditos-digitales-para-pymes-brubank-impulsa-su-acceso-en-2025/",
+                    "resumen": "Brubank expandió su oferta de créditos digitales para pymes, facilitando acceso 100% online con aprobación rápida.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Brubank habilita envíos internacionales de dinero desde su app",
+                    "fuente": "Revista Mercado",
+                    "fecha": "2025-12",
+                    "url": "https://mercado.com.ar/finanzas/brubank-habilita-envios-internacionales-de-dinero-desde-su-app-durante-diciembre/",
+                    "resumen": "En diciembre 2025 Brubank habilitó envíos internacionales de dinero desde la app, permitiendo transferencias a familiares en el exterior para las fiestas.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Brubank lanza promoción de 6 cuotas sin interés en comercios",
+                    "fuente": "Revista Mercado",
+                    "fecha": "2025-12",
+                    "url": "https://mercado.com.ar/noticias/brubank-presenta-promocion-de-6-cuotas-sin-interes-en-decathlon-vicente-lopez/",
+                    "resumen": "Brubank lanzó promoción de 6 cuotas sin interés en Decathlon Vicente López, expandiendo su oferta de beneficios y financiamiento para consumo.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Brubank es el banco digital más usado en Argentina",
+                    "fuente": "InfoTechnology",
+                    "url": "https://www.lasmasleidas.com.ar/brubank",
+                    "resumen": "Brubank se posicionó como el banco digital más usado en Argentina, destacando su experiencia digital.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Brubank impulsa créditos digitales para pymes en Argentina",
+                    "fuente": "Revista Mercado",
+                    "url": "https://mercado.com.ar/brubank-pymes",
+                    "resumen": "Brubank expandió su oferta de créditos digitales para pymes con aprobación 100% online.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Brubank habilita envíos internacionales de dinero desde su app",
+                    "fuente": "Revista Mercado",
+                    "url": "https://mercado.com.ar/brubank-envios",
+                    "resumen": "Brubank habilitó envíos internacionales de dinero desde la app para transferencias al exterior.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-12"
+                },
+                {
+                    "titulo": "Brubank lanza promoción de 6 cuotas sin interés en comercios",
+                    "fuente": "Revista Mercado",
+                    "url": "https://mercado.com.ar/brubank-promo",
+                    "resumen": "Brubank lanzó promoción de 6 cuotas sin interés expandiendo su oferta de beneficios.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-12"
+                },
+                {
+                    "titulo": "Brubank ofrece rendimientos competitivos en fondos comunes de inversión",
+                    "fuente": "Crónica",
+                    "url": "https://www.cronica.com.ar/brubank-rendimiento",
+                    "resumen": "Brubank ofrece FCI con rendimientos de 23-32% anual, superando plazos fijos tradicionales.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Brubank refuerza seguridad con autenticación biométrica y alertas en tiempo real",
+                    "fuente": "InfoTechnology",
+                    "url": "https://www.infotechnology.com/brubank-seguridad",
+                    "resumen": "Brubank implementó biometría avanzada y alertas de transacciones para mejorar la seguridad de las cuentas.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Brubank mejora atención al cliente con chat en vivo y soporte ampliado",
+                    "fuente": "Mercado",
+                    "url": "https://mercado.com.ar/brubank-atencion",
+                    "resumen": "Brubank amplió horarios de soporte y mejoró su chat en vivo para resolver problemas de forma más rápida.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "ARBA implementa retenciones que afectan a bancos digitales como Brubank",
+                    "fuente": "La Nación",
+                    "url": "https://www.lanacion.com.ar/arba-bancos-digitales",
+                    "resumen": "Las retenciones de ARBA sobre acreditaciones en billeteras y bancos digitales afectan también a clientes de Brubank desde octubre 2025.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "negativo",
+                    "fecha": "2025-10"
+                }
+            ]
+        }
+    },
+    "MLB": {
+        "Mercado Pago": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Mercado Pago lançou assistente financeiro com IA no Brasil",
+                    "fuente": "Mirian Gasparin",
+                    "fecha": "2025-10",
+                    "url": "https://miriangasparin.com.br/2025/10/mercado-pago-anuncia-assistente-financeiro-desenvolvido-com-inteligencia-artificial/",
+                    "resumen": "Mercado Pago lançou um Assistente Pessoal com IA conversacional para >60 funções financeiras. Brasil foi o primeiro país a receber o produto.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Carteira de crédito do Mercado Pago cresceu 83% no 3T25",
+                    "fuente": "Valor Econômico",
+                    "fecha": "2025-10",
+                    "url": "https://valor.globo.com/financas/noticia/2025/10/29/carteira-de-credito-do-mercado-pago-registrou-crescimento-de-83percent-no-3o-trimestre.ghtml",
+                    "resumen": "A carteira de crédito do Mercado Pago atingiu US$11 bi no 3T25, crescimento de 83% YoY. Ativos sob gestão US$15 bi e 72,2 milhões de usuários ativos mensais.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago oferece CDBs 24/7 em parceria com B3",
+                    "fuente": "Seu Crédito Digital",
+                    "fecha": "2025-11",
+                    "url": "https://seucreditodigital.com.br/mercado-pago-libera-cdb-24h-lanca-oferta/",
+                    "resumen": "Mercado Pago passou a oferecer CDBs 24 horas por dia em parceria com a B3. Lançou CDB Black Friday com 150% do CDI. Mais de 1,8 milhão de brasileiros já investiram em CDBs na plataforma.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago amplia cashback até 10% para assinantes Meli+ no Brasil",
+                    "fuente": "Mercado Livre News",
+                    "fecha": "2025-12",
+                    "url": "https://news.mercadolivre.com/pt/mercado-pago-brasil-amplia-beneficios-de-parcerias-em-dezembro-2025",
+                    "resumen": "Em dezembro Mercado Pago ofereceu até 10% de cashback em Meli Dólar para assinantes Meli+ em McDonald's, Postos Petrobras e app 99.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago permite que argentinos usem Pix em estabelecimentos do Brasil",
+                    "fuente": "Mercado e Consumo",
+                    "fecha": "2025-12",
+                    "url": "https://mercadoeconsumo.com.br/02/12/2025/meios-de-pagamento/mercado-pago-passa-a-permitir-que-argentinos-usem-o-pix-em-estabelecimentos-do-brasil/",
+                    "resumen": "Mercado Pago habilitó que argentinos usen Pix para pagar en comercios brasileños, convirtiendo pesos a reales directamente desde la app.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Mercado Pago lança assistente pessoal com IA para facilitar operações financeiras",
+                    "fuente": "Mirian Gasparin",
+                    "url": "https://miriangasparin.com.br/2025/10/mercado-pago-assistente-ia",
+                    "resumen": "Mercado Pago lançou assistente com IA que simplifica operações financeiras, reduzindo complexidade de uso do app.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Mercado Pago permite argentinos usar Pix em comércios do Brasil",
+                    "fuente": "Mercado e Consumo",
+                    "url": "https://mercadoeconsumo.com.br/02/12/2025/mercado-pago-pix",
+                    "resumen": "Mercado Pago habilitou o uso de Pix para argentinos pagarem em comércios brasileiros, expandindo funcionalidades internacionais.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-12"
+                }
+            ]
+        },
+        "Nubank": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "Nubank pretende obter licença bancária no Brasil em 2026 após nova regra do BC",
+                    "fuente": "Forbes Brasil",
+                    "fecha": "2025-12",
+                    "url": "https://forbes.com.br/forbes-money/2025/12/nubank-acata-nova-ordem-do-bc-e-ira-pedir-licenca-bancaria-no-brasil-em-2026/",
+                    "resumen": "Nubank anunciou que buscará licença bancária no Brasil em 2026 para atender à Resolução do BC que proíbe fintechs sem licença de usar 'banco' no nome. Tem mais de 110 milhões de clientes.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nubank desiste de adquirir banco Digimais por riscos reputacionais",
+                    "fuente": "Seu Crédito Digital",
+                    "fecha": "2025-11",
+                    "url": "https://seucreditodigital.com.br/nubank-desiste-compra-digimais-risco/",
+                    "resumen": "Em novembro 2025 o Nubank desistiu de comprar o banco Digimais após identificar riscos reputacionais na due diligence, optando por buscar licença própria.",
+                    "categoria_relacionada": "General",
+                    "impacto_esperado": "neutro",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Nubank lança Caixinha Turbo com rendimento de até 120% do CDI",
+                    "fuente": "Valor Investe",
+                    "fecha": "2025-04",
+                    "url": "https://valorinveste.globo.com/produtos/servicos-financeiros/noticia/2025/04/29/caixinha-turbo-do-nubank-podera-render-ate-120percent-do-cdi-veja-como.ghtml",
+                    "resumen": "Nubank lançou a Caixinha Turbo com rendimento de 110% a 120% do CDI (até R$10.000 para Ultravioleta). RDB com liquidez diária e proteção do FGC.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Nubank lança Caixinha Turbo com até 120% do CDI para competir em rendimentos",
+                    "fuente": "Valor Investe",
+                    "url": "https://valorinveste.globo.com/caixinha-turbo",
+                    "resumen": "Nubank lançou a Caixinha Turbo com rendimento de 110% a 120% do CDI para clientes que movimentam a conta, buscando recuperar competitividade em rendimentos.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Nubank busca licença bancária no Brasil após nova regra do Banco Central",
+                    "fuente": "Forbes Brasil",
+                    "url": "https://forbes.com.br/nubank-licenca",
+                    "resumen": "Nubank anunciou que buscará licença bancária em 2026 após regulamentação do BC. Tem mais de 110 milhões de clientes no Brasil.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "neutro",
+                    "fecha": "2025-12"
+                },
+                {
+                    "titulo": "Nubank avança em segurança com novas medidas anti-fraude e proteção de conta",
+                    "fuente": "TechTudo",
+                    "url": "https://www.techtudo.com.br/nubank-seguranca-2025",
+                    "resumen": "Nubank implementou medidas reforçadas de segurança incluindo alertas em tempo real, bloqueio remoto e verificação facial aprimorada para combater fraudes.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Nubank melhora app com acessibilidade e reorganização de funcionalidades",
+                    "fuente": "Mobile Time",
+                    "url": "https://www.mobiletime.com.br/nubank-app-melhoria",
+                    "resumen": "Nubank reorganizou o layout do app para facilitar navegação e acesso a caixinhas e investimentos, respondendo a reclamações de complexidade.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "Nubank expande atendimento com chat humanizado e amplia horario de suporte",
+                    "fuente": "Finsiders",
+                    "url": "https://finsidersbrasil.com.br/nubank-atendimento",
+                    "resumen": "Nubank expandiu horário de atendimento humano e melhorou chatbot com IA para resolver problemas mais complexos sem necessidade de ligação.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Nubank lança programa de recompensas ampliado para competir com milhas de bancos tradicionais",
+                    "fuente": "Exame",
+                    "url": "https://www.exame.com/nubank-recompensas",
+                    "resumen": "Nubank ampliou seu programa de recompensas com mais opções de resgate e cashback para responder à demanda por milhas e pontos.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "Nubank reporta crescimento de 40% na carteira de crédito no Brasil em 2025",
+                    "fuente": "Valor Econômico",
+                    "url": "https://valor.globo.com/nubank-credito-2025",
+                    "resumen": "Nubank expandiu significativamente sua carteira de crédito no Brasil com foco em cartão, empréstimo pessoal e Pix Crédito. Inadimplência sob controle.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "Nubank inova com funcionalidades de conta internacional e PIX automático",
+                    "fuente": "InfoMoney",
+                    "url": "https://www.infomoney.com.br/nubank-funcionalidades",
+                    "resumen": "Nubank lançou conta internacional e PIX automático programado, ampliando funcionalidades para competir com fintechs e bancos tradicionais.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                }
+            ]
+        },
+        "PicPay": {
+            "ultima_actualizacion": "2026-02",
+            "noticias": [
+                {
+                    "titulo": "PicPay lança conta global integrada com menor spread do mercado",
+                    "fuente": "Bom Dia Mercado",
+                    "fecha": "2025-11",
+                    "url": "https://www.bomdiamercado.com.br/economia-picpay/picpay-lanca-conta-global-100-integrada-a-conta-brasileira-com-menor-spread-do-mercado/",
+                    "resumen": "PicPay lançou conta global integrada com contas em dólar/euro, conversão instantânea, cartão Visa internacional e possibilidade de spread zero. Rendimento de 4% a.a. em dólar.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "PicPay firma acordo com INSS para devolver R$1 milhão cobrado indevidamente de seguro prestamista",
+                    "fuente": "Gov.br/INSS",
+                    "fecha": "2025-12",
+                    "url": "https://www.gov.br/inss/pt-br/assuntos/picpay-firma-compromisso-com-o-inss-e-ira-devolver-cerca-de-1-milhao-de-reais-cobrados-a-titulo-de-seguro-prestamista",
+                    "resumen": "PicPay firmou termo com o INSS para restituir ~R$1 milhão cobrado a título de seguro prestamista. Comprometeu-se a não comercializar seguros vinculados a benefícios.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "PicPay entra no mercado de consórcios em parceria com Ademicon",
+                    "fuente": "Acessa",
+                    "fecha": "2025-10",
+                    "url": "https://www.acessa.com/economia/2025/10/289031-picpay-fecha-parceria-com-ademicon-e-entra-no-mercado-de-consorcios.html",
+                    "resumen": "PicPay entrou no mercado de consórcios em parceria com a Ademicon, oferecendo planos 100% pelo app para imóveis, veículos e serviços (R$15 mil a R$1 milhão).",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "PicPay lança conta global integrada com spread zero e cartão Visa internacional",
+                    "fuente": "Mobile Time",
+                    "url": "https://www.mobiletime.com.br/noticias/10/11/2025/picpay-conta/",
+                    "resumen": "PicPay lançou conta global com contas em dólar/euro, conversão instantânea e cartão Visa internacional com spread zero.",
+                    "categoria_relacionada": "Funcionalidades",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "PicPay firma acordo com INSS para devolver R milhão cobrado indevidamente",
+                    "fuente": "Gov.br",
+                    "url": "https://www.gov.br/inss/picpay-acordo",
+                    "resumen": "PicPay firmou termo para restituir ~R milhão cobrado como seguro prestamista e se comprometeu a não comercializar seguros vinculados.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "negativo",
+                    "fecha": "2025-12"
+                },
+                {
+                    "titulo": "PicPay entra no mercado de consórcios com planos 100% digitais",
+                    "fuente": "Acessa",
+                    "url": "https://www.acessa.com/economia/picpay-consorcios",
+                    "resumen": "PicPay entrou no mercado de consórcios em parceria com Ademicon, com planos para imóveis, veículos e serviços de R mil a R milhão.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "PicPay amplia segurança com autenticação biométrica e alertas de transação",
+                    "fuente": "TechTudo",
+                    "url": "https://www.techtudo.com.br/picpay-seguranca",
+                    "resumen": "PicPay reforçou medidas de segurança com biometria e notificações em tempo real de transações suspeitas.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "PicPay melhora rendimento das caixinhas para competir com Nubank e Mercado Pago",
+                    "fuente": "InfoMoney",
+                    "url": "https://www.infomoney.com.br/picpay-rendimento",
+                    "resumen": "PicPay ajustou rendimento das caixinhas para se manter competitivo frente a Nubank e Mercado Pago no cenário de Selic elevada.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
+                },
+                {
+                    "titulo": "PicPay otimiza atendimento ao cliente com IA e reduz tempo de resposta",
+                    "fuente": "Bom Dia Mercado",
+                    "url": "https://www.bomdiamercado.com.br/picpay-atendimento",
+                    "resumen": "PicPay implementou IA no atendimento ao cliente para agilizar resolução de problemas e reduzir tempo de espera.",
+                    "categoria_relacionada": "Atención",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "PicPay amplia promoções de cashback e parcerias com varejo",
+                    "fuente": "Segs",
+                    "url": "https://www.segs.com.br/picpay-promocoes",
+                    "resumen": "PicPay expandiu programa de cashback e firmou parcerias com redes de varejo para oferecer descontos exclusivos aos usuários.",
+                    "categoria_relacionada": "Promociones",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-11"
+                },
+                {
+                    "titulo": "PicPay reduz taxas de transferência e melhora app para simplificar operações",
+                    "fuente": "Mobile Time",
+                    "url": "https://www.mobiletime.com.br/picpay-taxas",
+                    "resumen": "PicPay reduziu taxas de transferência e reorganizou o app para facilitar navegação e acesso a funcionalidades.",
+                    "categoria_relacionada": "Complejidad",
+                    "impacto_esperado": "positivo",
+                    "fecha": "2025-10"
                 }
             ]
         }

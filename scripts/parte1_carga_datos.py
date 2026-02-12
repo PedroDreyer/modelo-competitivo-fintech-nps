@@ -20,6 +20,12 @@ import numpy as np
 import yaml
 import gc
 from pathlib import Path
+from validators import (
+    validate_required_columns,
+    validate_dataframe_not_empty,
+    validate_csv_encoding,
+    validate_site_code
+)
 
 # ==============================================================================
 # CONFIGURACIÓN DE RUTAS
@@ -240,10 +246,13 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
     periodo_1 = periodo_1 or config_yaml['periodo_1']
     periodo_2 = periodo_2 or config_yaml['periodo_2']
     
+    # Validar site
+    validate_site_code(site)
+
     # Obtener configuración del site
     if site not in SITE_CONFIG:
         raise ValueError(f"Site '{site}' no soportado. Disponibles: {list(SITE_CONFIG.keys())}")
-    
+
     cfg = SITE_CONFIG[site]
     BANDERA = cfg['bandera']
     NOMBRE_PAIS = cfg['nombre_pais']
@@ -261,14 +270,46 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
     
     if not archivo.exists():
         raise FileNotFoundError(f"Archivo no encontrado: {archivo}")
-    
+
+    # Validar y detectar encoding del CSV
+    if verbose:
+        print(f"\n🔍 Detectando encoding del CSV...")
+
+    # Auto-detectar encoding para mayor robustez (especialmente MLB)
+    try:
+        import chardet
+        with open(archivo, 'rb') as f:
+            raw_sample = f.read(100000)  # Leer primeros 100KB
+            detection = chardet.detect(raw_sample)
+            detected_encoding = detection['encoding']
+            confidence = detection['confidence']
+
+        # Si el encoding detectado difiere del configurado, usar el detectado
+        if detected_encoding and detected_encoding.lower() != cfg['encoding'].lower():
+            if verbose:
+                print(f"   ℹ️ Encoding detectado: {detected_encoding} (confianza: {confidence*100:.0f}%)")
+                print(f"   ℹ️ Encoding configurado: {cfg['encoding']}")
+                print(f"   ℹ️ Usando encoding detectado: {detected_encoding}")
+            encoding_to_use = detected_encoding
+        else:
+            encoding_to_use = cfg['encoding']
+    except ImportError:
+        if verbose:
+            print(f"   ⚠️ chardet no disponible, usando encoding configurado: {cfg['encoding']}")
+        encoding_to_use = cfg['encoding']
+    except Exception as e:
+        if verbose:
+            print(f"   ⚠️ Error en detección automática: {e}")
+            print(f"   ℹ️ Usando encoding configurado: {cfg['encoding']}")
+        encoding_to_use = cfg['encoding']
+
     if verbose:
         print(f"\n📂 PASO 1: Cargando BASE COMPLETA...")
     
-    # Parámetros de lectura
+    # Parámetros de lectura (usar encoding detectado)
     read_params = {
         'sep': cfg['sep'],
-        'encoding': cfg['encoding'],
+        'encoding': encoding_to_use,
         'on_bad_lines': 'skip',
         'dtype': str,
         'engine': 'python'
@@ -291,11 +332,29 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
     
     try:
         df_raw = pd.read_csv(archivo, **read_params)
-    except UnicodeDecodeError:
-        if verbose:
-            print(f"   ⚠️ Error de encoding, probando latin-1...")
-        read_params['encoding'] = 'latin-1'
-        df_raw = pd.read_csv(archivo, **read_params)
+    except UnicodeDecodeError as e:
+        # Fallback inteligente: probar encodings alternativos
+        alternative_encodings = ['latin-1', 'utf-8', 'iso-8859-1', 'cp1252']
+        if encoding_to_use in alternative_encodings:
+            alternative_encodings.remove(encoding_to_use)
+
+        for alt_encoding in alternative_encodings:
+            try:
+                if verbose:
+                    print(f"   ⚠️ Error de encoding con {encoding_to_use}, probando {alt_encoding}...")
+                read_params['encoding'] = alt_encoding
+                df_raw = pd.read_csv(archivo, **read_params)
+                if verbose:
+                    print(f"   ✅ CSV leído exitosamente con encoding: {alt_encoding}")
+                break
+            except (UnicodeDecodeError, Exception):
+                continue
+        else:
+            # Si ningún encoding funcionó, re-lanzar el error original
+            raise UnicodeDecodeError(
+                encoding_to_use, b'', 0, 0,
+                f"No se pudo leer el CSV con ningún encoding. Intentados: {encoding_to_use}, {', '.join(alternative_encodings)}"
+            )
     
     # Renombrar columnas según mapeo
     if cols_necesarias is not None and nombres_columnas is not None:
@@ -325,7 +384,14 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
     
     del df_raw
     gc.collect()
-    
+
+    # Validar que el DataFrame no esté vacío
+    validate_dataframe_not_empty(df_completo, f"BASE COMPLETA {site}")
+
+    # Validar columnas requeridas básicas
+    required_cols = [cfg['col_marca'], cfg['col_nps'], cfg['col_ola']]
+    validate_required_columns(df_completo, required_cols, f"BASE_{site}")
+
     n_productos = len([c for c in df_completo.columns if c.startswith('USO_')])
     
     if verbose:
@@ -464,7 +530,7 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
         if col in df_con_saldo.columns:
             try:
                 df_con_saldo[col] = df_con_saldo[col].astype('category')
-            except:
+            except (ValueError, TypeError):
                 pass
     
     gc.collect()

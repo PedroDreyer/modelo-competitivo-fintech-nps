@@ -218,6 +218,7 @@ python correr_modelo.py
 - Frecuencias que sumen ~100% por motivo
 - Ejemplos TEXTUALES copiados de los comentarios (2-3 por causa)
 - NUNCA usar generar_subcausas_automatico() - es keyword-based y da basura
+- **IDIOMA: SIEMPRE en español** - Títulos, descripciones y nombres de motivos SIEMPRE en español, sin importar el site. Solo los ejemplos (comentarios reales) se mantienen en idioma original (portugués para MLB).
 
 ### PASO 3: Verificar HTML generado
 

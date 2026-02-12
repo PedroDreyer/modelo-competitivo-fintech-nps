@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "player": "Nubank",
+    "site": "MLB",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Complejidad": {
+      "total_comentarios_analizados": 22,
+      "delta_pp": -1.8,
+      "causas_raiz": [
+        {
+          "titulo": "Excesso de funções no app torna difícil encontrar o que o usuário precisa",
+          "descripcion": "O app acumula muitas funcionalidades sem organização clara. Buscar informações específicas como saldos de caixinhas e investimentos virou tarefa confusa.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Há muitas funções no app, e às vezes me sinto um pouco perdida.",
+            "No app as funcionalidades são varias e a busca ficam mais complicadas",
+            "Tem informações que não consigo encontrar."
+          ]
+        },
+        {
+          "titulo": "Alterações frequentes de layout dificultam o acesso e confundem usuários habituais",
+          "descripcion": "O app muda constantemente de aparência e organização, fazendo com que funcionalidades antes acessíveis fiquem escondidas.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "o aplicativo do banco passa por muitas alterações dificultando o acesso com os novos layouts. Os saldos que ficam guardados em caixinha ou outro tipo de investimento fica quase invisivel para acesso",
+            "Como utilizo pouco o aplicativo não acho ele intuitivo e fácil de usar.",
+            "Não acho o app muito funcional."
+          ]
+        },
+        {
+          "titulo": "Falta de acessibilidade para usuários mais velhos ou com pouca experiência digital",
+          "descripcion": "Usuários com menos familiaridade digital sentem-se perdidos e precisam de ajuda para operar funções básicas.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "As vezes fico confusa na hora ver as caixinhas, e sempre preciso de ajuda da minha filha",
+            "como banco digital como tenho pouco conhecimento de funções digital",
+            "Pois eu n tenho muita facilidade para mexer nesse aplicativo"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 100,
+      "delta_pp": -1.2,
+      "causas_raiz": [
+        {
+          "titulo": "Taxas de juros abusivas em crédito, empréstimo e parcelamento que geram bola de neve",
+          "descripcion": "A queixa dominante: juros altíssimos em empréstimos, cartão e Pix Crédito. Usuários percebem as taxas como muito superiores ao mercado e inflexíveis em negociação.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 48,
+          "ejemplos": [
+            "As taxas de juros do nubank são altíssimas, virando uma bola de neve que é extremamente complicada de sair",
+            "é uma boa instituição mas suas taxas, juros e etc são muito altos.",
+            "Nubank apresenta praticidade, porém não existe banco físico e apresenta valores altos de juros para crédito."
+          ]
+        },
+        {
+          "titulo": "Limite de cartão que não aumenta e é reduzido sem aviso prévio apesar de bom histórico",
+          "descripcion": "Clientes antigos com uso constante e pagamentos em dia não recebem aumento de limite. Pior: alguns reportam redução unilateral do limite sem explicação.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 25,
+          "ejemplos": [
+            "Tenho o cartão há tempos e eles não aumentam meus limites de cartão e empréstimos.",
+            "Cancelaram o limite do meu cartão de crédito sem motivo nenhum",
+            "Embora seja cliente há muito tempo do banco, o banco não oferece um aumento do limite do cartão."
+          ]
+        },
+        {
+          "titulo": "Crédito e cartão não liberados apesar de boa movimentação na conta",
+          "descripcion": "Usuários com contas ativas e saldo significativo não conseguem obter aprovação de crédito ou cartão. Sentem que o banco se beneficia sem retribuir.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Minha conta é super movimentada mas não me liberam um crédito",
+            "Precisaria oferecer crédito para quem movimenta a conta",
+            "Pra dar crédito e um sacrifício e quase não há promoções"
+          ]
+        },
+        {
+          "titulo": "Taxas de saque elevadas e poucos caixas eletrônicos disponíveis",
+          "descripcion": "Cobrar para sacar dinheiro incomoda especialmente quem não tem acesso a outros meios. A falta de caixas próprios agrava a situação.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Cobra pra sacar dinheiro",
+            "taxa muito altas",
+            "Falta de caixa eletrônico sem taxas."
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 58,
+      "delta_pp": -1.1,
+      "causas_raiz": [
+        {
+          "titulo": "Saldo em conta não rende mais automaticamente, exigindo transferência manual para caixinhas",
+          "descripcion": "O Nubank eliminou o rendimento automático do saldo em conta. Agora o dinheiro só rende se o usuário transferir para caixinhas, o que muitos consideram trabalhoso.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 23,
+          "ejemplos": [
+            "Acredito que antes o dinheiro parado na conta já rendia e agora temos q transferi-lo pra um cofrinho, é bem chato",
+            "Poderia voltar o rendimento automático na conta a partir do primeiro dia.",
+            "O dinheiro so rende em caixinha e eh ruim"
+          ]
+        },
+        {
+          "titulo": "Rendimento das caixinhas inferior ao oferecido por outros bancos e fintechs",
+          "descripcion": "Mesmo usando caixinhas, o rendimento é percebido como abaixo de concorrentes como PagBank, Itaú e Inter. Falta competitividade no CDI oferecido.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "Os rendimentos são baixos, comparado com outros bancos",
+            "Poderia ter um CDB mais atrativo igual o do PagBank por exemplo",
+            "Não utilizo muito, pois a outras opções com rendimentos mais interessantes"
+          ]
+        },
+        {
+          "titulo": "Falta de produtos de investimento variados e competitivos além das caixinhas",
+          "descripcion": "Usuários mais sofisticados sentem falta de homebroker, CDBs atrativos e opções de investimento que competem com corretoras e outros bancos.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "prefiro operar com corretoras que dao melhores ferramentas de homebroker",
+            "O banco não tem uma cultura de tratar com cliente soluções de investimentos",
+            "Pouca oferta de investimentos"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 49,
+      "delta_pp": -0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Insegurança generalizada por ser banco digital sem agência física para recorrer",
+          "descripcion": "A ausência de uma agência onde resolver problemas presencialmente gera desconfiança, especialmente entre quem teve problemas ou ouviu relatos negativos.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Por ser um banco digital não tenho muita confiança",
+            "Acredito ser um aplicativo prático, mas por ser um banco digital, sinto que é menos seguro que um tradicional",
+            "Por conta de não ter agência física e a segurança da conta online ser comprometida."
+          ]
+        },
+        {
+          "titulo": "Clonagem de cartão físico e virtual recorrente com vazamento de dados",
+          "descripcion": "Cartões são clonados mesmo sem uso externo, sugerindo vazamento de dados. Fraudes em compras não autorizadas ocorrem sem proteção adequada.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "meu cartão foi clonado diversas vezes, mesmo sendo um cartão fisico que ficava em casa... ou seja há vazamentos constantes de dados",
+            "Fizeram compras no meu cartão sem meu consentimento e não tive nenhuma assistência do banco",
+            "Recentemente tive tentativas de fraude no meu cartão."
+          ]
+        },
+        {
+          "titulo": "Invasão de conta após roubo de celular permitindo empréstimos e saques fraudulentos",
+          "descripcion": "Quando o celular é roubado, criminosos conseguem acessar a conta, fazer empréstimos e sacar todo o dinheiro, mesmo com reconhecimento facial ativado.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Muitas pessoas conseguem acessar o app quando roubam o celular",
+            "minha esposa teve o celular roubado e os bandidos além de conseguirem sacar todo dinheiro da conta, mesmo fazendo reconhecimento facil 'errado' ainda conseguiram contratar um emprestimo",
+            "Minha conta foi invadida, o ladrão fez empréstimos, tirou meu dinheiro"
+          ]
+        },
+        {
+          "titulo": "Relatos negativos de terceiros e matérias na mídia amplificam sensação de insegurança",
+          "descripcion": "Muitos usuários não tiveram problemas próprios mas ouviram relatos de amigos ou viram matérias que questionam a segurança do Nubank.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "já ouvi muitos relatos das pessoas reclamando da segurança da conta",
+            "diversas vezes vemos matérias que dizem o quão frágil é a segurança do aplicativo",
+            "Já vi pessoas perderem o saldo da conta nubank."
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 30,
+      "delta_pp": 0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Instabilidades e falhas do app em momentos críticos de pagamento e transferência",
+          "descripcion": "O app apresenta travamentos, erros em Pix e falhas em pagamentos com débito, especialmente quando o usuário mais precisa.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "por conta de instabilidades no app. Isso sempre acontece quando mais precisamos usar.",
+            "Tem dias que o aplicativo está péssimo para funcionar",
+            "O pix do nubank não funciona bem"
+          ]
+        },
+        {
+          "titulo": "Funcionalidades insuficientes comparadas a bancos tradicionais e fintechs concorrentes",
+          "descripcion": "Usuários que comparam com Itaú, Mercado Pago e outros bancos sentem que faltam recursos como programas de pontos, renegociação flexível e depósito de cheques.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Talvez eu ainda não tenha explorado todas as funcionalidades da conta Nubank, coisas que eu encontro com facilidade no Itaú.",
+            "o mercado pago me oferece mais, além de ser integrado às minhas compras",
+            "serviços ofertados não suprem minhas necessidades"
+          ]
+        },
+        {
+          "titulo": "Bloqueios de conta inesperados e sem aviso que impedem uso do dinheiro",
+          "descripcion": "Contas são bloqueadas sem comunicação prévia, impedindo pagamentos e acesso ao saldo em momentos de necessidade.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Bloqueia conta sempre",
+            "Porque o app muitas vezes trava e por diversas vezes bloqueiam contas de pessoas.",
+            "Já tive um problema um vez com meu saldo bloqueado e eu precisava pagar uma conta"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 56,
+      "delta_pp": 0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Ausência de agência física gera insegurança e dificuldade para resolver problemas pessoalmente",
+          "descripcion": "Para muitos usuários, a falta de atendimento presencial é um problema fundamental. Sentem que não têm a quem recorrer caso algo dê errado.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "não há muito o que falar da Nubank. Na verdade, por não ser um banco físico, há uma necessidade de um acesso humano.",
+            "POR NÃO TER BANCO FÍSICO FICO MAIS PREOCUPADA, POIS COM QUEM VAMOS RECLAMAR SE ALGO ACONTECER",
+            "Poderia tem agências físicas para facilitar o atendimento"
+          ]
+        },
+        {
+          "titulo": "Atendimento automatizado por chatbot que não resolve e impede acesso a humano",
+          "descripcion": "O chatbot é percebido como barreira: não entende os problemas e torna extremamente difícil chegar a um atendente humano.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "A gente liga lá, e só tem robô, muito difícil de resolver algum problema",
+            "não quero falar com robôs!!!!",
+            "Difícil comunicação com os pessoas, normalmente apenas falamos apenas com robôs"
+          ]
+        },
+        {
+          "titulo": "Demora excessiva no telefone e falta de canais de comunicação ágeis",
+          "descripcion": "Quando conseguem ligar, a espera é longa. Faltam canais alternativos eficientes para resolver problemas com rapidez.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "O tempo de espera é muito longo no telefone",
+            "Precisa de um canal de comunicação mais ativo",
+            "Complicado acessar o sac."
+          ]
+        },
+        {
+          "titulo": "Problemas financeiros e golpes sem resolução adequada pelo atendimento",
+          "descripcion": "Em casos graves como fraudes e cobranças duplicadas, o atendimento falha em resolver e o banco é percebido como inflexível.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Uma pessoa da família não teve o atendimento correto sobre um golpe",
+            "Tive problema de pagamento depois duplicado e nunca me reembolsaram.",
+            "Eu tive problemas com cartão Nubank. ao contestar uma compra... não consegui mais estornar a compra indevida no meu cartão."
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 66,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Ausência total de programa de milhas ou pontos que bancos tradicionais oferecem",
+          "descripcion": "O Nubank não tem programa de milhas, pontos ou fidelidade comparável ao de bancos como BB/Livelo, Itaú etc. Isso é decisivo para muitos escolherem outro banco principal.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "O cartão nao possui benefícios, como milhas",
+            "Não tem um programa de fidelidade robusto e que valha a pena, como a Livelo",
+            "Eu uso cartão de crédito com milhas na símile com o Banco do Brasil. O NUBANK não me disponibiliza isso"
+          ]
+        },
+        {
+          "titulo": "Falta generalizada de promoções e incentivos ao uso regular do banco",
+          "descripcion": "Usuários sentem que o banco não oferece nenhum estímulo para continuar usando: sem promoções, sem cashback regular, sem descontos.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 23,
+          "ejemplos": [
+            "Falta de promoção",
+            "PRECISA OFERECER MAIS BENEFICIOS AOS CLIENTES. PRA MIM NÃO HÁ NADA QUE AGREGE VALOR",
+            "Uso essa conta só para receber e fazer compras, mas se tivesse promoções interessantes talvez usaria mais"
+          ]
+        },
+        {
+          "titulo": "Conta básica sem cashback nem vantagens que agreguem valor ao dia a dia",
+          "descripcion": "Quem não é Ultravioleta ou Nubank+ sente que tem uma conta vazia de benefícios. Benefícios concentrados em planos premium alienam a base.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Tem poucos benefícios para clientes com conta básica",
+            "Não tem nenhum benefício a mais, como programas de cashback",
+            "Só é boa se vc for vip"
+          ]
+        }
+      ]
+    }
+  }
+}

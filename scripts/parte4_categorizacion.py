@@ -59,36 +59,13 @@ SITE_CAT_CONFIG = {
 BQ_TABLE = "meli-bi-data.SBOX_NPS_ANALYTICS.comentarios_reclasificados_fintech"
 
 # ==============================================================================
-# CATEGORÍAS POR IDIOMA
+# CATEGORÍAS POR IDIOMA (Centralizadas)
 # ==============================================================================
+# FIX: Importar desde módulo centralizado en vez de hardcodear
+from config_categorias import get_categorias_detalladas
 
-CATEGORIAS_PT = [
-    "Taxa de juros de crédito ou cartão",
-    "Limites baixos de crédito ou cartão",
-    "Acesso a crédito ou cartão de crédito",
-    "Rendimentos",
-    "Segurança",
-    "Promoções e descontos",
-    "Atendimento ao cliente",
-    "Oferta de funcionalidades",
-    "Dificuldade de uso",
-    "Tarifas da conta",
-    "Não uso ou sem opinião"
-]
-
-CATEGORIAS_ES = [
-    "Tasa de interés de crédito o tarjeta",
-    "Límites bajos de crédito o tarjeta",
-    "Acceso a crédito o tarjeta de crédito",
-    "Rendimientos",
-    "Seguridad",
-    "Promociones y descuentos",
-    "Atención al cliente",
-    "Oferta de funcionalidades",
-    "Dificultad de uso",
-    "Tarifas de la cuenta",
-    "No uso o sin opinión"
-]
+# Las categorías se obtienen dinámicamente según el site
+# CATEGORIAS_PT / CATEGORIAS_ES ahora se obtienen con get_categorias_detalladas(site)
 
 # Players que requieren IA (Mercado Pago, Nubank)
 PLAYERS_CON_IA = ['mercado pago', 'pago', 'mp', 'nubank', 'nu bank', 'nu']
@@ -252,8 +229,8 @@ def categorizar_comentarios(df_player, config, resultados_parte3=None, verbose=T
     IDIOMA = CFG_CAT['idioma']
     SITE_CODE = CFG_CAT['site_code']
     
-    # Categorías según idioma
-    CATEGORIAS_CANON = CATEGORIAS_PT if IDIOMA == 'PT' else CATEGORIAS_ES
+    # Categorías según idioma (usando módulo centralizado)
+    CATEGORIAS_CANON = get_categorias_detalladas(site)
     
     # Columnas
     col_nps = 'NPS'

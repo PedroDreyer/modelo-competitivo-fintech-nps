@@ -480,12 +480,14 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
     _nps_q2_raw = nps_data.get('nps_q2')
     # Detectar datos faltantes: None o dict vacío → mostrar alerta
     nps_datos_faltantes = (_nps_q1_raw is None or _nps_q2_raw is None)
-    nps_q1 = round(_nps_q1_raw, 1) if _nps_q1_raw is not None else 0
-    nps_q2 = round(_nps_q2_raw, 1) if _nps_q2_raw is not None else 0
-    nps_delta = round(nps_q2 - nps_q1, 1)
+    # FIX REDONDEO: Redondear a entero PRIMERO y calcular delta sobre enteros
+    # Esto garantiza que headline, gráfico y delta sean siempre consistentes
+    nps_q1 = round(_nps_q1_raw) if _nps_q1_raw is not None else 0
+    nps_q2 = round(_nps_q2_raw) if _nps_q2_raw is not None else 0
+    nps_delta = nps_q2 - nps_q1  # delta de enteros → siempre consistente con los valores mostrados
     
-    # Alinear tendencia con formateo :.0f (threshold 0.5 para que no diga "estable" y muestre ±1pp)
-    tendencia = "manteniéndose estable" if abs(nps_delta) < 0.5 else ("mejorando" if nps_delta > 0 else "cayendo")
+    # Tendencia basada en delta entero
+    tendencia = "manteniéndose estable" if nps_delta == 0 else ("mejorando" if nps_delta > 0 else "cayendo")
     delta_clase = "highlight-positivo" if nps_delta > 0 else "highlight-negativo" if nps_delta < 0 else "highlight-neutro"
     
     # ==========================================================================
@@ -596,7 +598,9 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
             col_ola_nps = nps_grafico_df.columns[0]
 
         # Filtrar quarters <= q_act y tomar los últimos 5
-        nps_grafico_df = nps_grafico_df[nps_grafico_df[col_ola_nps].astype(str) <= q_act].tail(5)
+        # FIX: Usar utils_quarters para filtrado correcto (no comparar strings alfabéticamente)
+        from utils_quarters import filter_dataframe_by_quarters
+        nps_grafico_df = filter_dataframe_by_quarters(nps_grafico_df, col_ola_nps, q_act, n_quarters=5)
 
         nps_labels = nps_grafico_df[col_ola_nps].tolist()
         nps_values = [round(v) for v in nps_grafico_df['NPS_score'].tolist()]
@@ -762,7 +766,11 @@ def generar_html_completo(resultados, diagnostico_gpt=None):
 
     if evolucion_quejas_df is not None and len(evolucion_quejas_df) > 0:
         # Filtrar quarters <= q_act y tomar los últimos 5
-        evolucion_quejas_df = evolucion_quejas_df[evolucion_quejas_df.index.astype(str) <= q_act].tail(5)
+        # FIX: Usar utils_quarters para filtrado correcto (quarters en index)
+        from utils_quarters import get_last_n_quarters
+        available_qs = evolucion_quejas_df.index.astype(str).tolist()
+        last_5_qs = get_last_n_quarters(available_qs, q_act, n=5)
+        evolucion_quejas_df = evolucion_quejas_df.loc[last_5_qs]
 
         # df_evolucion: index = quarter labels, columns = motive categories, values = impact
         quejas_labels = evolucion_quejas_df.index.tolist()
@@ -1081,6 +1089,26 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
         if causas:
             return causas[0].get('titulo', '').lower()
         return ''
+
+    def _obtener_causa_raiz_top_promotor(motivo, causas_semanticas_prom):
+        """
+        Devuelve el título de la causa raíz top para un motivo de PROMOTOR.
+        Similar a _obtener_causa_raiz_top pero para satisfacción positiva.
+        """
+        if not causas_semanticas_prom:
+            return ''
+
+        # Buscar el motivo en las causas semánticas
+        for motivo_key, causas_list in causas_semanticas_prom.items():
+            motivo_key_norm = motivo_key.lower().strip()
+            motivo_norm = motivo.lower().strip()
+
+            if motivo_norm in motivo_key_norm or motivo_key_norm in motivo_norm:
+                if causas_list and len(causas_list) > 0:
+                    return causas_list[0].get('titulo', '').lower()
+
+        return ''
+
     # UMBRALES CONFIGURABLES
     UMBRAL_PRINCIPAL = 0.5
     UMBRAL_COMPENSACION = 0.9
@@ -1114,16 +1142,27 @@ def _generar_resumen_narrativo(player, nps_delta, quejas_deterioro, quejas_mejor
         """
         Busca noticia que triangule bien con un motivo de queja.
         Solo incluye si la triangulación es coherente (no incoherente).
+
+        LÓGICA DE COHERENCIA:
+        - Noticia POSITIVA + quejas BAJARON (delta < 0) = COHERENTE ✓
+        - Noticia NEGATIVA + quejas SUBIERON (delta > 0) = COHERENTE ✓
+        - Noticia POSITIVA + quejas SUBIERON (delta > 0) = INCOHERENTE ✗
+        - Noticia NEGATIVA + quejas BAJARON (delta < 0) = INCOHERENTE ✗
+
         Muestra resumen completo de la noticia con link clickeable.
         """
         noticia = _buscar_noticia_para_motivo(motivo, triangulacion_motivos, noticias)
         if noticia and noticia.get('titulo'):
-            # Verificar coherencia: si es incoherente, no mencionar
+            # Verificar coherencia: si es incoherente, NO mencionar la noticia
             impacto = noticia.get('impacto_esperado', 'neutro')
             coherencia = _evaluar_coherencia_noticia(delta_queja, impacto)
+
+            # CRÍTICO: Filtrar noticias incoherentes
             if 'Incoherente' in coherencia:
+                # Ejemplo de incoherencia: noticia positiva con aumento de quejas
+                # o noticia negativa con reducción de quejas
                 return ''
-            
+
             fuente = noticia.get('fuente', 'web')
             url = noticia.get('url', '')
             # Usar solo título para mantener el diagnóstico sintético
@@ -1596,14 +1635,19 @@ def _buscar_noticia_para_motivo(motivo: str, triangulacion_motivos: list, notici
     """
     Busca una noticia relacionada con un motivo del waterfall.
     Primero busca en triangulaciones ya hechas, luego en noticias directamente.
+    SOLO retorna noticias de triangulaciones COHERENTES.
     """
     motivo_lower = motivo.lower()
-    
-    # 1. Buscar en triangulaciones ya calculadas
+
+    # 1. Buscar en triangulaciones ya calculadas (SOLO coherentes)
     for tri in triangulacion_motivos:
         tri_motivo = tri.get('motivo', '').lower()
         if tri_motivo in motivo_lower or motivo_lower in tri_motivo:
-            return tri.get('noticia', {})
+            # CRÍTICO: Solo retornar si la triangulación es coherente
+            coherencia = tri.get('coherencia', 'neutro')
+            if coherencia == 'coherente':
+                return tri.get('noticia', {})
+            # Si es incoherente, seguir buscando (no retornar esta noticia)
     
     # 2. Búsqueda directa en noticias por categoría
     MAPEO_MOTIVO_CATEGORIA = {
@@ -2466,10 +2510,17 @@ def _generar_waterfall_html(causas_waterfall, TXT, q_ant='Q1', q_act='Q2', causa
     return html
 
 
-def _generar_acordeon_promotor(motivo_data, q_ant, q_act, comentarios_promotores=None):
+def _generar_acordeon_promotor(motivo_data, q_ant, q_act, comentarios_promotores=None, causas_semanticas=None):
     """
     Genera un acordeón para un motivo de promotor.
     EXACTAMENTE como en el notebook original.
+
+    Args:
+        motivo_data: Datos del motivo (motivo, pct_q1, pct_q2, delta, etc.)
+        q_ant: Quarter anterior
+        q_act: Quarter actual
+        comentarios_promotores: Comentarios de promotores por motivo
+        causas_semanticas: Dict con causas raíz semánticas {motivo: [causas]} - NUEVO
     """
     motivo = motivo_data.get('motivo', 'Sin motivo')
     pct_q1 = motivo_data.get('pct_q1', 0)
@@ -2533,7 +2584,60 @@ def _generar_acordeon_promotor(motivo_data, q_ant, q_act, comentarios_promotores
                     "{ej_texto}{ellipsis}"
                 </div>'''
         comentarios_html += '</div></div>'
-    
+
+    # Causas Raíz Semánticas (si existen)
+    causas_raiz_html = ""
+    if causas_semanticas:
+        motivo_norm = motivo.lower().strip()
+        causas = None
+
+        # Buscar causas para este motivo (match exacto o parcial)
+        for motivo_key, causas_data in causas_semanticas.items():
+            motivo_key_norm = motivo_key.lower().strip()
+            if motivo_norm in motivo_key_norm or motivo_key_norm in motivo_norm:
+                # Extract causas_raiz list from the data structure
+                if isinstance(causas_data, dict):
+                    causas = causas_data.get('causas_raiz', [])
+                elif isinstance(causas_data, list):
+                    causas = causas_data
+                break
+
+        if causas and len(causas) > 0:
+            causas_raiz_html = f'''
+            <div style="margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-radius: 8px; border-left: 4px solid #10b981;">
+                <div style="font-weight: 600; font-size: 13px; color: #065f46; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+                    <span>🔍</span>
+                    <span>¿Por qué nos recomiendan en "{motivo}"?</span>
+                </div>
+            '''
+
+            # Mostrar top 3 causas raíz
+            for i, causa in enumerate(causas[:3], 1):
+                titulo = causa.get('titulo', '')
+                descripcion = causa.get('descripcion', '')
+                ejemplos = causa.get('ejemplos', [])
+
+                causas_raiz_html += f'''
+                <div style="margin-bottom: 12px; padding: 10px; background: white; border-radius: 6px;">
+                    <div style="font-weight: 600; font-size: 12px; color: #047857; margin-bottom: 4px;">
+                        {i}. {titulo}
+                    </div>
+                '''
+
+                if descripcion:
+                    causas_raiz_html += f'<div style="font-size: 11px; color: #064e3b; margin-bottom: 6px;">{html_module.escape(descripcion)}</div>'
+
+                if ejemplos and len(ejemplos) > 0:
+                    causas_raiz_html += '<div style="font-size: 10px; color: #065f46; font-style: italic; margin-top: 4px;">'
+                    for ej in ejemplos[:2]:  # Max 2 ejemplos
+                        ej_escaped = html_module.escape(str(ej)[:120])
+                        causas_raiz_html += f'<div style="margin-bottom: 2px;">💬 "{ej_escaped}"</div>'
+                    causas_raiz_html += '</div>'
+
+                causas_raiz_html += '</div>'
+
+            causas_raiz_html += '</div>'
+
     # Keywords
     keywords = motivo_data.get('keywords', [])
     keywords_html = ""
@@ -2566,6 +2670,7 @@ def _generar_acordeon_promotor(motivo_data, q_ant, q_act, comentarios_promotores
             </div>
             {subcausas_html}
             {comentarios_html}
+            {causas_raiz_html}
             {keywords_html}
         </div>
     </details>
@@ -2586,9 +2691,12 @@ def _generar_promotores_resumen(resultados, TXT, q_ant, q_act):
     
     # Lista de motivos de satisfacción
     motivos_lista = prom_data.get('promotores_data', [])
-    
+
     # Comentarios de promotores
     comentarios_promotores = prom_data.get('comentarios_promotores', {})
+
+    # Causas semánticas de promotores (NUEVO)
+    causas_semanticas_promotores = resultados.get('causas_semanticas_promotores', {})
     
     delta_color = '#10b981' if delta_prom > 0 else '#ef4444' if delta_prom < 0 else '#6b7280'
     delta_bg = '#d1fae5' if delta_prom > 0 else '#fee2e2' if delta_prom < 0 else '#f3f4f6'
@@ -2623,19 +2731,19 @@ def _generar_promotores_resumen(resultados, TXT, q_ant, q_act):
         if mejoras_prom:
             html += '<div style="margin-bottom: 15px;"><strong style="color: #10b981;">📈 Creciendo</strong></div>'
             for m in sorted(mejoras_prom, key=lambda x: x.get('delta', 0), reverse=True)[:3]:
-                html += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores)
-        
+                html += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores, causas_semanticas_promotores)
+
         # Mostrar deterioros
         if deterioros_prom:
             html += '<div style="margin: 20px 0 15px 0;"><strong style="color: #f59e0b;">📉 Perdiendo peso</strong></div>'
             for m in sorted(deterioros_prom, key=lambda x: x.get('delta', 0))[:3]:
-                html += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores)
-        
+                html += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores, causas_semanticas_promotores)
+
         # Si no hay mejoras ni deterioros, mostrar top 5 estables
         if not mejoras_prom and not deterioros_prom:
             html += '<div style="margin-bottom: 15px;"><strong style="color: #10b981;">🌟 Top Motivos</strong></div>'
             for m in sorted(estables_prom, key=lambda x: x.get('pct_q2', 0), reverse=True)[:5]:
-                html += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores)
+                html += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores, causas_semanticas_promotores)
     else:
         html += '<p style="color: #888; font-style: italic;">Sin datos de motivos de satisfacción</p>'
     
@@ -2818,7 +2926,7 @@ def _generar_triangulacion_metricas(resultados, noticias, q_ant, q_act):
                                 break
                         if col_motivo:
                             top_motivo = str(motivos_princ.iloc[0][col_motivo])[:25]
-            except:
+            except (KeyError, IndexError, AttributeError, TypeError):
                 pass
             
             # Color según delta
@@ -3093,8 +3201,10 @@ def _generar_seccion_noticias(resultados, TXT, q_ant, q_act):
     
     # Si hay noticias ya encontradas, mostrarlas con detalle
     if noticias:
-        # Header con estadísticas
+        # Header con estadísticas - contar noticias correlacionadas (mapeadas a quejas) o usar triangulaciones
         noticias_con_correlacion = len([n for n in noticias if n.get('tiene_correlacion', False) or n.get('queja_relacionada')])
+        if noticias_con_correlacion == 0:
+            noticias_con_correlacion = len(resultados.get('triangulacion_motivos', []))
         html += f"""
         <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 15px 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #009ee3;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -3604,6 +3714,8 @@ def _generar_noticias_grid(resultados, TXT, q_act):
     
     if noticias:
         noticias_con_correlacion = len([n for n in noticias if n.get('tiene_correlacion', False) or n.get('queja_relacionada')])
+        if noticias_con_correlacion == 0:
+            noticias_con_correlacion = len(resultados.get('triangulacion_motivos', []))
         html += f"""
         <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 15px 20px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #009ee3;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -4119,6 +4231,9 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
     pct_prom = prom_data.get('pct_promotores_q2', 0)
     delta_prom = prom_data.get('delta_promotores', 0)
     
+    # Obtener site desde resultados
+    site = resultados.get('config', {}).get('site', None)
+    
     # Anexo 1: Waterfall + Deep Dive Quejas (unificado con Causas Raíz)
     # Generar el contenido de causas raíz para incluirlo en este tab
     causas_raiz_content = _generar_causas_raiz_content(resultados, q_ant, q_act, player, site)
@@ -4209,6 +4324,7 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
     delta_prom_calc = prom_data.get('delta_prom', delta_prom)
     motivos_lista = prom_data.get('promotores_data', [])
     comentarios_promotores = prom_data.get('comentarios_promotores', {})
+    causas_semanticas_promotores = resultados.get('causas_semanticas_promotores', {})
     
     html_anexo5 = f"""
     <div id="anexo5" class="tab-content" style="display: none;">
@@ -4291,7 +4407,7 @@ def _generar_anexos(resultados, TXT, bandera, player, q_ant, q_act, g_wf, g_quej
         
         # Mostrar TODOS los motivos en el deep dive (no limitar a top 6)
         for m in motivos_ordenados:
-            html_anexo5 += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores)
+            html_anexo5 += _generar_acordeon_promotor(m, q_ant, q_act, comentarios_promotores, causas_semanticas_promotores)
 
         html_anexo5 += '</div>'
 
@@ -4341,35 +4457,23 @@ def _generar_causas_raiz_content(resultados, q_ant, q_act, player, site=None):
     data_dir = Path(__file__).parent.parent / 'data'
     causas_data = None
     
-    # Intentar primero con site (nuevo formato)
+    # CARGA ESTRICTA: solo archivo exacto con site (sin fallbacks a legacy/glob)
     if site:
         json_path = data_dir / f'causas_raiz_semantico_{player}_{site}_{q_act}.json'
         if json_path.exists():
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     causas_data = json.load(f)
+                # Validar metadata
+                metadata = causas_data.get('metadata', {})
+                if metadata.get('quarter') and metadata['quarter'] != q_act:
+                    print(f"[ERROR HTML] causas_raiz JSON quarter mismatch: {metadata['quarter']} vs {q_act}")
+                    causas_data = None
+                if metadata.get('site') and metadata['site'] != site:
+                    print(f"[ERROR HTML] causas_raiz JSON site mismatch: {metadata['site']} vs {site}")
+                    causas_data = None
             except Exception:
                 pass
-    
-    # Fallback: formato legacy sin site
-    if not causas_data:
-        json_path_legacy = data_dir / f'causas_raiz_semantico_{player}_{q_act}.json'
-        if json_path_legacy.exists():
-            try:
-                with open(json_path_legacy, 'r', encoding='utf-8') as f:
-                    causas_data = json.load(f)
-            except Exception:
-                pass
-    
-    if not causas_data:
-        pattern = f'causas_raiz_semantico_{player}_{site}_*.json' if site else f'causas_raiz_semantico_{player}_*.json'
-        for f in sorted(data_dir.glob(pattern), reverse=True):
-            try:
-                with open(f, 'r', encoding='utf-8') as fh:
-                    causas_data = json.load(fh)
-                break
-            except Exception:
-                continue
     
     if not causas_data or not causas_data.get('causas_por_motivo'):
         return '<p style="color:#999;">Análisis de Causas Raíz no disponible</p>'
@@ -4485,35 +4589,23 @@ def _generar_promotores_causas_content(resultados, q_ant, q_act, player, site=No
     data_dir = Path(__file__).parent.parent / 'data'
     promotores_data = None
 
-    # Intentar primero con site (nuevo formato)
+    # CARGA ESTRICTA: solo archivo exacto con site (sin fallbacks a legacy/glob)
     if site:
-        json_path = data_dir / f'promotores_semantico_{player}_{site}_{q_act}.json'
+        json_path = data_dir / f'causas_raiz_semantico_promotores_{player}_{site}_{q_act}.json'
         if json_path.exists():
             try:
                 with open(json_path, 'r', encoding='utf-8') as f:
                     promotores_data = json.load(f)
+                # Validar metadata
+                metadata = promotores_data.get('metadata', {})
+                if metadata.get('quarter') and metadata['quarter'] != q_act:
+                    print(f"[ERROR HTML] promotores JSON quarter mismatch: {metadata['quarter']} vs {q_act}")
+                    promotores_data = None
+                if metadata.get('site') and metadata['site'] != site:
+                    print(f"[ERROR HTML] promotores JSON site mismatch: {metadata['site']} vs {site}")
+                    promotores_data = None
             except Exception:
                 pass
-
-    # Fallback: formato legacy sin site
-    if not promotores_data:
-        json_path_legacy = data_dir / f'promotores_semantico_{player}_{q_act}.json'
-        if json_path_legacy.exists():
-            try:
-                with open(json_path_legacy, 'r', encoding='utf-8') as f:
-                    promotores_data = json.load(f)
-            except Exception:
-                pass
-
-    if not promotores_data:
-        pattern = f'promotores_semantico_{player}_{site}_*.json' if site else f'promotores_semantico_{player}_*.json'
-        for f in sorted(data_dir.glob(pattern), reverse=True):
-            try:
-                with open(f, 'r', encoding='utf-8') as fh:
-                    promotores_data = json.load(fh)
-                break
-            except Exception:
-                continue
 
     if not promotores_data or not promotores_data.get('causas_por_motivo'):
         return '<p style="color:#999; padding: 20px;">Análisis Semántico de Promotores no disponible (pendiente de análisis LLM)</p>'
@@ -4537,7 +4629,7 @@ def _generar_promotores_causas_content(resultados, q_ant, q_act, player, site=No
     for motivo, datos in motivos_ordenados:
         delta = datos.get('delta_pp', 0)
         total_comms = datos.get('total_comentarios_analizados', 0)
-        causas = datos.get('causas_satisfaccion', [])
+        causas = datos.get('causas_raiz', datos.get('causas_satisfaccion', []))
 
         if not causas:
             continue

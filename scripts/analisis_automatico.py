@@ -64,11 +64,15 @@ def cargar_causas_raiz_semanticas(player: str, q_act: str, data_dir: str = None,
     """
     Carga el JSON de causas raíz semánticas generado por el LLM.
     
+    CARGA ESTRICTA: Solo carga el archivo exacto para player+site+quarter.
+    NO hay fallback a archivos legacy ni glob. Esto evita cargar datos
+    de otro quarter o site por error.
+    
     Args:
         player: Nombre del player (ej: 'Nubank')
         q_act: Quarter actual (ej: '25Q2')
         data_dir: Directorio de datos (si None, usa data/ relativo al proyecto)
-        site: Site/país (ej: 'MLA', 'MLB') - incluirlo evita colisiones entre países
+        site: Site/país (ej: 'MLA', 'MLB') - REQUERIDO para evitar colisiones
     
     Returns:
         Dict con estructura {motivo: [causas_raiz]} o {} si no existe
@@ -78,37 +82,94 @@ def cargar_causas_raiz_semanticas(player: str, q_act: str, data_dir: str = None,
     else:
         data_dir = Path(data_dir)
     
-    # Buscar archivo: primero con site (nuevo formato), luego sin site (legacy)
-    archivo = None
+    # CARGA ESTRICTA: solo archivo exacto con site (sin fallbacks)
+    if not site:
+        print(f"[WARN] cargar_causas_raiz_semanticas: site no especificado para {player}/{q_act}")
+        return {}
     
-    if site:
-        archivo_con_site = data_dir / f"causas_raiz_semantico_{player}_{site}_{q_act}.json"
-        if archivo_con_site.exists():
-            archivo = archivo_con_site
-    
-    if archivo is None:
-        archivo_legacy = data_dir / f"causas_raiz_semantico_{player}_{q_act}.json"
-        if archivo_legacy.exists():
-            archivo = archivo_legacy
-    
-    if archivo is None:
-        # Intentar variantes con glob (priorizando con site)
-        if site:
-            candidatos = list(data_dir.glob(f"causas_raiz_semantico_{player}*{site}*{q_act}*.json"))
-            if candidatos:
-                archivo = candidatos[0]
-        if archivo is None:
-            candidatos = list(data_dir.glob(f"causas_raiz_semantico_{player}*{q_act}*.json"))
-            if candidatos:
-                archivo = candidatos[0]
-            else:
-                return {}
+    archivo = data_dir / f"causas_raiz_semantico_{player}_{site}_{q_act}.json"
+    if not archivo.exists():
+        return {}
     
     try:
         with open(archivo, 'r', encoding='utf-8') as f:
             data = json.load(f)
+        
+        # VALIDACIÓN DE METADATA: verificar que el JSON corresponde al player/site/quarter actual
+        metadata = data.get('metadata', {})
+        json_quarter = metadata.get('quarter', '')
+        json_site = metadata.get('site', '')
+        json_player = metadata.get('player', '')
+        
+        if json_quarter and json_quarter != q_act:
+            print(f"[ERROR] causas_raiz JSON tiene quarter '{json_quarter}' pero se esperaba '{q_act}' - IGNORANDO archivo")
+            return {}
+        if json_site and json_site != site:
+            print(f"[ERROR] causas_raiz JSON tiene site '{json_site}' pero se esperaba '{site}' - IGNORANDO archivo")
+            return {}
+        if json_player and json_player != player:
+            print(f"[ERROR] causas_raiz JSON tiene player '{json_player}' pero se esperaba '{player}' - IGNORANDO archivo")
+            return {}
+        
         return data.get('causas_por_motivo', {})
-    except Exception:
+    except Exception as e:
+        print(f"[ERROR] Error al cargar causas_raiz: {e}")
+        return {}
+
+
+def cargar_causas_raiz_semanticas_promotores(player: str, q_act: str, data_dir: str = None, site: str = None) -> Dict:
+    """
+    Carga el JSON de causas raíz semánticas de PROMOTORES generado por el LLM.
+
+    CARGA ESTRICTA: Solo carga el archivo exacto para player+site+quarter.
+    Formato del archivo: causas_raiz_semantico_promotores_{player}_{site}_{q_act}.json
+
+    Args:
+        player: Nombre del player (ej: 'Nubank')
+        q_act: Quarter actual (ej: '25Q2')
+        data_dir: Directorio de datos (si None, usa data/ relativo al proyecto)
+        site: Site/país (ej: 'MLA', 'MLB') - REQUERIDO para evitar colisiones
+
+    Returns:
+        Dict con estructura {motivo: [causas_raiz]} o {} si no existe
+    """
+    if data_dir is None:
+        data_dir = Path(__file__).resolve().parent.parent / 'data'
+    else:
+        data_dir = Path(data_dir)
+
+    # CARGA ESTRICTA: solo archivo exacto con site (sin fallbacks)
+    if not site:
+        print(f"[WARN] cargar_causas_raiz_semanticas_promotores: site no especificado para {player}/{q_act}")
+        return {}
+
+    archivo = data_dir / f"causas_raiz_semantico_promotores_{player}_{site}_{q_act}.json"
+    if not archivo.exists():
+        return {}
+
+    try:
+        with open(archivo, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        # VALIDACIÓN DE METADATA: verificar que el JSON corresponde al player/site/quarter actual
+        metadata = data.get('metadata', {})
+        json_quarter = metadata.get('quarter', '')
+        json_site = metadata.get('site', '')
+        json_player = metadata.get('player', '')
+
+        if json_quarter and json_quarter != q_act:
+            print(f"[ERROR] causas_raiz_promotores JSON tiene quarter '{json_quarter}' pero se esperaba '{q_act}' - IGNORANDO archivo")
+            return {}
+        if json_site and json_site != site:
+            print(f"[ERROR] causas_raiz_promotores JSON tiene site '{json_site}' pero se esperaba '{site}' - IGNORANDO archivo")
+            return {}
+        if json_player and json_player != player:
+            print(f"[ERROR] causas_raiz_promotores JSON tiene player '{json_player}' pero se esperaba '{player}' - IGNORANDO archivo")
+            return {}
+
+        return data.get('causas_por_motivo', {})
+    except Exception as e:
+        print(f"[ERROR] Error al cargar causas_raiz_promotores: {e}")
         return {}
 
 
@@ -3227,11 +3288,29 @@ def agregar_noticia_a_cache(
         # Clasificar tipo automáticamente (Opción B)
         nueva_noticia['tipo_noticia'] = clasificar_tipo_noticia(nueva_noticia)
         
-        # Verificar duplicados
+        # Verificar duplicados (por URL exacta O por título normalizado)
         noticias_existentes = cache[site][player].get('noticias', [])
-        if any(n.get('url') == url for n in noticias_existentes):
-            print(f"⚠️ Noticia ya existe en cache: {titulo[:50]}...")
-            return False
+        
+        def _normalizar_titulo(t):
+            """Normaliza título para comparación: minúsculas, sin acentos, sin puntuación extra."""
+            import unicodedata
+            t = t.lower().strip()
+            t = unicodedata.normalize('NFD', t)
+            t = ''.join(c for c in t if unicodedata.category(c) != 'Mn')  # quitar acentos
+            t = re.sub(r'[^\w\s]', '', t)  # quitar puntuación
+            t = re.sub(r'\s+', ' ', t).strip()
+            return t
+        
+        titulo_norm = _normalizar_titulo(titulo)
+        for n in noticias_existentes:
+            # Duplicado por URL exacta
+            if n.get('url') == url:
+                print(f"⚠️ Noticia ya existe en cache (URL duplicada): {titulo[:50]}...")
+                return False
+            # Duplicado por título muy similar
+            if _normalizar_titulo(n.get('titulo', '')) == titulo_norm:
+                print(f"⚠️ Noticia ya existe en cache (título duplicado): {titulo[:50]}...")
+                return False
         
         # Agregar
         noticias_existentes.append(nueva_noticia)
