@@ -1,0 +1,546 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Ualá** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Ualá",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### 🔥 MOTIVO: Promociones (+3.8pp - EMPEORÓ)
+
+**Impacto:** 9.7% → 13.4% | **Comentarios:** 29 (25Q4) → 53 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Me gusta que tiene buenos rendimientos y buena cotización para compra de dolar, la mayoría de mis pagos de servicios los hago desde aqui ya que me aumenta el % del rendimiento para el mes siguiente."
+
+2. "Porque es una app que me gusta"
+
+3. "Más promociones y rendimiento en cuenta"
+
+4. "No funcionan los beneficios que dice ofrecer"
+
+5. "Antes tenía mas beneficios o promociones. Ahora muy pocos"
+
+6. "No ofrece suficientes beneficios o promociones adecuadas para mí"
+
+7. "Anda bien en general pero ofrece pocos descuentos y promociones. Tenia una muy buena que era en el COTO y ahora la sacó, eso indigna mucho y genera malestar."
+
+8. "Porque le falta tener más promociones y velocidad de uso"
+
+9. "Me parece un buen servicio pero tendría que tener más ofertas"
+
+10. "Falta de promociones atractivas"
+
+11. "Da poco rendimiento y si querés que te dé más tenes que consumir 500 mil pesos y hay otras billeteras que te da más sin tanto problema"
+
+12. "Uala sacó promociones que estaban con tarjeta pre paga y ahora se hacen con la de.crédito. Pedí la tarjeta de credito, y a pesar que isaba mucho la pre paga no me quieren asignar la de crédito y ahora hay muchas promociones que no puedo usar"
+
+13. "Porque tiene muy pocas promociones y descuentos"
+
+14. "en lo que respecta a negocios en los que compro, no suele haber muchos beneficios"
+
+15. "Es una buena plataforma... que mas quieren que diga?"
+
+16. "No tiene buenas promociones"
+
+17. "Faltan descuentos"
+
+18. "Tiene buenas promso pero algunas funcionalidades no andan tan bien"
+
+19. "No tuve un reintegro y no tuve mayor respuesta"
+
+20. "Por la calidad del servicio y lo que ofrece"
+
+21. "Porque es medio complicado de usar la app y no muchos comercios la usan"
+
+22. "Es muy buena en cuanto a inversión pero le falta mejores promociones y que abarque a mas comercios esas promociones"
+
+23. "Ninguna billetera virtual es perfecta, llas promociones son para gente de elite, no hat descuentos en tiendas de cercania solamente para lugares donde ya el viaje implica un costo que supera lo promocionado. Salvo las casasde comida como Mc Donakldo ..."
+
+24. "Es muy buena y útil. Podría mejorar ofreciendo promociones simplemente"
+
+25. " la use mucho por la promocion con transporte, para pagar el colectivo y cuando tenia tambien mc donalds"
+
+26. "faltan promociones y beneficios"
+
+27. "Mala tasa, malos descuentos"
+
+28. "Quitaron descuentos"
+
+29. "Me gustaría poder tener más opciones de descuentos"
+
+30. "Sacaron las promociones"
+
+31. "Saco un beneficio de transporte"
+
+32. "La verdad no me sirvió como necesitaba pocos beneficios"
+
+33. "No tiene buen interés.."
+
+34. "Porque no me generaba tanto interés"
+
+35. "Me gusta,pero hay pocas promos para la compras"
+
+36. "Necesitan más promociones y descuentos"
+
+37. "Siento que tiene margen para mejorar en cuanto a tratos con otras empresas por promociones y descuentos para los usuarios."
+
+38. "Califico de esta manera a la app, ya que debería tener mejores promociones y descuentos en diferentes rubros, cómo ser, 'transporte'"
+
+39. "Muy buena cotización del dólar y sin comisiones"
+
+40. "No es malo 8, pero hay otras con más promociones"
+
+41. "Es buena pero podría tener reintegros mas significativos"
+
+42. "Es necesario que informen sus posibilidades de uso"
+
+43. "Es una buena opción pero da muy pocos rendimientos con el dinero en cuenta"
+
+44. "Es segura y rápida"
+
+45. "Es una app algo compleja"
+
+46. "no hay promociones"
+
+47. "Porque por más que la uso no es mí primera opción al momento de gestionar mí dinero"
+
+48. "Buenis descuentos"
+
+49. "Me gustaría que tenga más promociones o descuentos"
+
+50. "faltan promociones"
+
+51. "Aún la estoy conociendo y no entiendo todas sus funciones"
+
+52. "En muchos lugares no ne lo aceptan"
+
+53. "Porque es poco relevante su uso"
+
+
+================================================================================
+
+### ✅ MOTIVO: Financiamiento (-2.1pp - MEJORÓ)
+
+**Impacto:** 8.9% → 6.8% | **Comentarios:** 29 (25Q4) → 25 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Eso es lo peor que saco de tatras yraeyendo cuimo"
+
+2. "algunos beneficios o rendimientos"
+
+3. "Es una muy buena plataforma, que esta en pleno crecimiento y no descarto que en un futuro no muy lejano nos siga sorprendiendo con mejores y mas actualizaciones . estoy seguro."
+
+4. "Por qué tendría que ser más flexible connlos que gestionamos nuestro dinero para la tarjeta de crédito"
+
+5. "porque tiene limites bajos tarjetas"
+
+6. "Es muy práctica a la hora de ingresar dinero"
+
+7. "Ls tasas de intereses por préstamos son muy elevadas"
+
+8. "Las tasas de interes"
+
+9. "No me resulta cómoda"
+
+10. "Las tasas varían constantemente y no dan la información al cliente. Hay funciones que un mes están y al otro no. Tienen el deber de información al usuario."
+
+11. "Porque dentro de las opciones que hay para elegir, existen beneficios o paquetes mas exclusivos,  ofertas, viajes, millas, puntos acumulados, etc., que  atraen la atención de los usuarios."
+
+12. "Porque está bien pero no tiene tantos beneficios como me gustaría."
+
+13. "Porque no ofrece préstamos o créditos, ni tampoco posibilidades de inversión. Hablo por mi."
+
+14. "Me parece una buena app, pero le faltan cosas para tener un mejor puntaje. Lo que tiene está muy bien"
+
+15. "Intereses muy altos"
+
+16. "Ninguna razón en particular"
+
+17. "Porque es intuitiva y brinda rendimiento"
+
+18. "Es malo la atención al cliente cuando existe inconvenientes en transferencia demora la atención"
+
+19. "Porque muchas veces no tiene buena tasa de interés al tener la plata en la cuenta, no tiene préstamos donde te facilita muchas veces pagos, no tiene descuentos ni promociones ni ofertas"
+
+20. "Porque he usado la cuenta ya hace meses y no me brinda ningún beneficio"
+
+21. "Los intereses en ahorro tendrían que ser un poco mejor"
+
+22. "Estoy abandonando la aplicacion porque los descuentos que me interesan son con tarjeta de credito y pese a mantener una cifra de efectivo no me la otorgan ( La solicite varias veces) y busque otra aplicacion que me los brinda"
+
+23. "Porque no me otorga préstamos adecuados a mis necesidades"
+
+24. "No la uso tanto como quisiera....nompueso sacar la tarjeta de crédito"
+
+25. "Los requisitos para adquirir tarjeta de crédito o préstamo de la app es muy exigente"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Rendimientos (+2.0pp - EMPEORÓ)
+
+**Impacto:** 14.5% → 16.5% | **Comentarios:** 40 (25Q4) → 62 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "porque mi experiencia a sido buena"
+
+2. "Poco rendimiento"
+
+3. "siempre puede mejorar"
+
+4. "No tiene tantas inversiones"
+
+5. "porque el rendimiento es bajo en comparación de otras y limitado"
+
+6. "porque bajó las tasas de su cuenta remunerada,´pone exigencias de gastos para aprovechar las tasas, y les puso un tope bajo a las mismas"
+
+7. "Siempre se puede mejorar"
+
+8. "Me gusta la plataforma y envía transacciones al instante, pero a comparación de otras billeteras genera bajos rendimientos diarios por tener saldo disponible asique eso hace que prefiera otras."
+
+9. "Es una app que anda bien y tiene integradas muchas funciones pero los rendimientos y propuestas de inversión del dinero no son las más óptimas"
+
+10. "La tasa es más baja que otras app"
+
+11. "El rendimiento no es tan alto como en otras billeteras virtuales"
+
+12. "Así rinde más el dinero"
+
+13. "Porque deberían tener los intereses mas altos"
+
+14. "Antes tenía mejor rendimiento que otras cuentas como mercado pago o personal pay, ahora es la más baja incluso utilizando los consumos para mejorar el rendimiento de la cuenta."
+
+15. "Porque es la que más simple me parece"
+
+16. "es facil de usar"
+
+17. "Antes era la que mejor rendimiento daba, ya no"
+
+18. "Solo porque considero que no hay app perfecta"
+
+19. "buena opcion simple y sencilla para generar rendimientos"
+
+20. "Hay otras que dan más intereses, por ejemplo Carrefour"
+
+21. "no ofrece el mejor rendimiento"
+
+22. "Porque el porcentaje por tener dinero en la cuenta es mejor en otras billeteras"
+
+23. "esta contestado en la pregunta anterior"
+
+24. "Que esta por debajo del promedio en el interes del rendimiento diario"
+
+25. "Porque tendrían que ofrecer más descuentos o reintegros"
+
+26. "El rendimiento en cuenta a veces no es atractivo"
+
+27. "Antes daba un buen interés por el dinero que tenía en la cuenta, pero ahora da más Mercado Pago"
+
+28. "Tiene una buena tasa de interés y te premia si usas la billetera"
+
+29. "PORQUE NECESITARIA MAS PROMOCIONES COMO EL CASO DE MODO"
+
+30. "Tiene buenos rendimientos pero no es la que ofrece el mejor rendimiento y solamente los rendimientos se aplican hasta el límite de un millón únicamente, el excedente que uno tenga no genera rendimientos, antes era de 1,5 millones."
+
+31. "Es facil de usar y tiene bastante opciones para invertir"
+
+32. "Solo la utilizo para generar rendimientos"
+
+33. "Porque si y su gran marketing"
+
+34. "Porque no rinde tanto como mercado pago"
+
+35. "Hay otras billeteras que dan mejor rendimiento"
+
+36. "Generar mejores rendimientos para el cliente."
+
+37. "Porque da poco rendimiento"
+
+38. "Últimamente el rendimiento en cuenta es inferior a las demás, tampoco veo tantas promociones y descuentos para comprar."
+
+39. "no tiene buena atencion al cliente, ni buenas tasas para compra de dolares, o inversiones, a veces ni por rendimiento dejo mi dinero ahi por que otras la superan"
+
+40. "Solo lo uso por la renta que da"
+
+41. "Rendimiento bajo y me parece mayor seguridad"
+
+42. "Porque muchas veces otras ofrecen mejor rentabilidad"
+
+43. "Porque no rinde nada la plata"
+
+44. "No es tan cómoda"
+
+45. "por el bajo rendimiento que ofrece y ademas ya sacó la opcion de descuento en subte que tenia que era buena"
+
+46. "No es regular en los rendimientos."
+
+47. "Que sea más facil transferir"
+
+48. "Dar mejores rendimientos."
+
+49. "No da tanto por guardar dinero"
+
+50. "Mejores rendimiento de FIdelidad"
+
+51. "utilizo muchas transferencias para pagar y no tengo beneficios otras cuentas pagan mas rendimiento sin tener que gastar en pagos con tarjeta o QR"
+
+52. "Por qué quiero q me rinda más mi plata"
+
+53. "por q esta buena"
+
+54. "ne gusta tambien pero el rendimiento  es el problema"
+
+55. "A veces tiene buen rendimiento"
+
+56. "Bajo mucho lo que pagan en las cuentas remuneradas"
+
+57. "Debería ofrecer mayor rendimiento y sacar el tope de un millon."
+
+58. "Porque me pareció bien"
+
+59. "porque da poco rendimiento y estaria bueno que de mas"
+
+60. "Debería aumentar la tasa"
+
+61. "Carrefour Banco está dando el 31 % suma que es menor en UALA, además para alcanzar mejor rendimiento debes tener un gasto de un importe determinado, ,en la otra aplicacion esto no te lo piden y el rendimiento es mucho mejor, no puede competir"
+
+62. "Es una plataforma muy interesante"
+
+
+================================================================================
+
+### ✅ MOTIVO: Complejidad (-1.3pp - MEJORÓ)
+
+**Impacto:** 9.2% → 7.9% | **Comentarios:** 25 (25Q4) → 24 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Porque no tienen buena atención al cliente y además se cuelga bastante en momentos importantes y no te dan solución."
+
+2. "no ntiendo de invesiones"
+
+3. "no tiene todas las funcionalidades y promociones que necesito"
+
+4. "Facil y comoda de usar"
+
+5. "Siempre se cierra la sesión y cuesta volver a entrar, no me resulta práctico cuando quiero pagar en un negocio"
+
+6. "Necesita mejorar su servicio al cliente"
+
+7. "Hoy sin ir más lejos,pagué mi tarjeta de crédito Ualá,luego quise pagar un consumo en cuotas y no pude no estaba disponible el pago,solo está la opción de que te lo descuenten cuando llegue la fecha.El mes pasado pagué mi tarjeta, pero olvidé que deb..."
+
+8. "No pone el dinero en el fondo común de inversión hay que hacerlo manualmente"
+
+9. "Falta más alta la tasa de interés"
+
+10. "Porque las veces que quise pagar con QR la app se colgó, lo que provocó demoras en la caja, también pide tomarse una selfie en el local a pesar de que ya entré con mi huella digital, se supone que debería agilizar la operatoria, pero la termina compl..."
+
+11. "uala no tiene buenas promociones"
+
+12. "Buenos rendimientos y servicios pero no es del todo confiable, tuve problemas y no pude acceder a mi dinero por tres semanas con mucha dificultad para comunicarme y poder solucionarlo"
+
+13. "No conozco bien como se usa"
+
+14. "Porque no parece intituitivo, no es fácil de usar"
+
+15. "no me gusta que hayan sacado promociones"
+
+16. "Cuesta realizar algunas funciones como por ejemplo invertir pesos o dólares."
+
+17. "A veces al ejecutar acciones aparecen error sin justificacion o tardar mas de la cuenta"
+
+18. "Tiene muchos requerimientos a la hora de hacer una transferencia, debería ser más rápido y eficaz"
+
+19. "porque es accesible para comprar, pagar y comprar dolares"
+
+20. "Es la más complicada de las billeteras que tengo, teniendo que pasar de un lado a otro el dinero para generar beneficios"
+
+21. "Califique así porq cumple con lo necesario"
+
+22. "Tuve problemas técnicos de larga duración que no me permitieron usar la plata que tenia en la cuenta, me pasó dos veces. Desde ahí no suelo usarla para compras cuando salgo. Solo online"
+
+23. "Cafa ves q entro me pide contraseña siendo que tengo la huella"
+
+24. "Varias veces cuando uso la aplicación, tiene varios errores que me complican su uso. Por ejemplo, la funcionalidad del código QR o cuando intento poner el CVU o Alias, la aplicación se traba."
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+0.8pp - EMPEORÓ)
+
+**Impacto:** 2.9% → 3.7% | **Comentarios:** 9 (25Q4) → 11 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Porque no lo uso mucho"
+
+2. "No es tan buena como las demás, simplemente eso."
+
+3. "Buen interés en dinero en cuenta y también en plazo fijo"
+
+4. "Prefiero usar otras apps"
+
+5. "me permite tranferir de manera mas facil que otras apks"
+
+6. "Variedad de inversión"
+
+7. "Es una cuenta online para que puedas administrar la plata , solo eso ofrese"
+
+8. "Porque podría tener mas promociones"
+
+9. "Es biena pero no tiene respaldo.bamcario"
+
+10. "La uso poco y no tuve mayores inconvenientes. Para lo que la necesito cumple su función"
+
+11. "No le doy mucha bola"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Seguridad (+0.7pp - EMPEORÓ)
+
+**Impacto:** 2.2% → 2.9% | **Comentarios:** 6 (25Q4) → 10 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Me gusta la app, pero a veces no me figura el dinero en la cuenta"
+
+2. "Porque no se hacen cargo frente a inconvenientes"
+
+3. "Desaparecio mi dinero que deposite.  Transferí de mi cuenta naranjax a esta y nunca llego. No posee oficina donde reclamar. Solo redes. Y responden por mail."
+
+4. "No es comodo al ingresar"
+
+5. "Por que no tiene tantas utilidades"
+
+6. "Porque me hicieron una estafa y  uala no  dejo que transfiera el dinero a la cuenta que me estafaba y sin embargo banco nacion si les transfirió el dinero o sea son más confiables las billeteras virtuales que la de los bancos"
+
+7. "Por qué uala es muy funcional de varias maneras ya sea pagar o depositar"
+
+8. "Porque está bastante bien"
+
+9. "Es una billetera virtual, no dependería de ella únicamente para confiarle la totalidad de mis ahorros."
+
+10. "Fui víctima de un jaque o de cuentas entre las que estaba UALA..nunca me reconocieron nada.."
+
+
+================================================================================
+
+### 🔥 MOTIVO: Atención (+0.4pp - EMPEORÓ)
+
+**Impacto:** 4.1% → 4.5% | **Comentarios:** 14 (25Q4) → 13 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Le falta mejorar la atención al cliente, que no sean bots los que resuelvan dudas sino personas. Además, mejorar tasas de los préstamos que son usureros"
+
+2. "Hace más de 3 meses que espero un reintegro, tengo NRO de reclamo"
+
+3. "atencion al cliente complicado"
+
+4. "Hay situaciones que no  podes resolver y tampoco una vía de comunicación confiable"
+
+5. "Xq la uso pero cuando se cae el sistema no te atienden"
+
+6. "Nunca te responden . Tuve varios problemas decidí no invertir más mí dinero"
+
+7. "Es la utilidad que me da"
+
+8. "No me resulta muy simple."
+
+9. "Mala reputación en las redes, se cae seguido"
+
+10. "Es malisima la.atencion, tambien zte cobran mucjo impuesto"
+
+11. "Porque tengo un problema con compras que no hice y no tienen la facilidad de ayudarme"
+
+12. "me cobraron algo que no gasté y nunca devolvieron la plata. Atención al cliente, ni bola"
+
+13. "Muy buena atencion telefónica, solucionan al instantes los problemas"
+
+
+================================================================================
+
+### ✅ MOTIVO: Tarifas (-0.1pp - MEJORÓ)
+
+**Impacto:** 2.2% → 2.1% | **Comentarios:** 4 (25Q4) → 5 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Tiene la tasa de interés muy alta"
+
+2. "en general nunca tuve ningun problema con la aplicacion"
+
+3. "JFDKSEKLFKLSDMFLKSDFKMSDKLFMSKLDMFSDFSDFSDFSDFSDF"
+
+4. "me atrase en el pago de un prestamo y no tienen consideración, reclaman y reclaman. ya pague. solo necesitaba unos dias."
+
+5. "Al momento del depósito de dinero , no ingresa el monto total , osea te descuentan un porcentaje"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Ualá_MLA_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

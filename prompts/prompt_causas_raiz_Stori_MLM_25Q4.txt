@@ -1,0 +1,390 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Stori** en **MLM** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q3 → 25Q4
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (25Q4)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Stori",
+    "site": "MLM",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### ✅ MOTIVO: Rendimientos (-3.2pp - MEJORÓ)
+
+**Impacto:** 9.7% → 6.5% | **Comentarios:** 27 (25Q3) → 20 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Las tasas son bajas"
+
+2. "Tiene pocas opciones de inversión"
+
+3. "Porque aunque considero que es buena, aun no me convence del todo y sus tazas de rendimiento la verdad no son las mejores por lo que en cuanto a eso si prefiero elegir algun otro banco"
+
+4. "Antes daba mejor rendimiento"
+
+5. "Ya no dan el 3% como al principio, eso resulto decepcionante."
+
+6. "por que su tasa de interés es muy alta, incluso más alta que los bancos"
+
+7. "La app se complicaba un poco al inicio . Las fechas de corte no me quedaban claras, no hay productos de inversión"
+
+8. "Tasas bajas y cashback infimo"
+
+9. "Excelente cuenta para hacer movimientos bancarios"
+
+10. "No me agrada mucho"
+
+11. "No es una app mala, pero no tiene facilidades de pago"
+
+12. "Mas bien con las otras que ya uso tengo suficiente, no me aporta nada extra"
+
+13. "La entrega fallo un par de veces, cuando pago a meses no me divide los pagos, solo me aparece la deuda completa en mi cuenta"
+
+14. "Porque no tienen ganancias cuando dejas tu dinero en la tarjeta de débito"
+
+15. "Porque es bueno su ahorro pero lo topa"
+
+16. "Tarjeta de crédito"
+
+17. "ha mantenido mi dinero seguro y genera buenas ganancias a comparacion con los bancos que no dan nada por tu dinero"
+
+18. "PORQUE PODRÍAN OFRECER MEJOR PORCENTAJE EN INVERSIÓN"
+
+19. "La tasa de rendimiento es baja en comparación con otras cuentas"
+
+20. "Es una cuenta con inversiones poco claras"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+1.3pp - EMPEORÓ)
+
+**Impacto:** 2.5% → 3.7% | **Comentarios:** 7 (25Q3) → 8 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Es una banco relativamente nuevo en el mercado, tiene muchas áreas de oportunidad y crecimiento y puede mejorar los servicios que ofrece que son un poco limitados."
+
+2. "Porq no cumplw las condiciones que prometio en su monenti"
+
+3. "Interfaz compleja"
+
+4. "Podría mejorar un poco más con las funcionalidades que ofrece"
+
+5. "No es una tarjeta con la que puedas pagar a meses sin intereses en todas las tiendas posibles, además de que su taza de intereses es muy alta."
+
+6. "La app es difícil de usar"
+
+7. "Es una buena tarjeta además de que permite su uso para crédito y debito"
+
+8. "Por que el límite es muy bajo"
+
+
+================================================================================
+
+### ✅ MOTIVO: Complejidad (-0.7pp - MEJORÓ)
+
+**Impacto:** 4.5% → 3.7% | **Comentarios:** 13 (25Q3) → 12 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Porque es una plataforma donde te dan muchas facilidades para pagar aparte de que te dan buen crédito"
+
+2. "No maneja tarjeta física de débito"
+
+3. "No cumple con lo que promete"
+
+4. "La app no es tan amigable con el usuario y cuesta un poco de trabajo encontrar las herramientas, además de no aparecer la opción de la cuenta plus"
+
+5. "Es fácil de usar"
+
+6. "La aplicación es un poco confusa de utilizar"
+
+7. "Es muy alto el interés"
+
+8. "Por qué sacan promociones fantasma"
+
+9. "Me gustaría que al momento de pagar con la tarjeta se cobrará con el saldo que hay y no cobrará directamente del credito"
+
+10. "Porque sus tasas son muy variables y cambian los contratos cada tres meses"
+
+11. "Tiene muy mala atención al cliente ,los reembolso tardan en reflejarse.. solicita la reposición de mi tarjeta me cobraron pero no han hecho nada por enviarme de nuevo mi tarjeta"
+
+12. "El que no tengan donde ir ya sea a un cajero o un Banco físico si me afecta un poco"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Atención (+0.5pp - EMPEORÓ)
+
+**Impacto:** 3.7% → 4.2% | **Comentarios:** 11 (25Q3) → 11 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Podría mejorar el servicio a cliente y tener mejores promociones."
+
+2. "Para hablar con una operadora es complicado"
+
+3. "Se batalla un poco con la atención al cliente"
+
+4. "Por que no puedes convertir de un pago revolvente a un pago a meses con intereses, osea solo es revolvente la tarjeta, y el aumento del crédito es muy tardado, tengo alrededor de 3 años con la tarjeta y solo la han aumentado una sola ocasión"
+
+5. "Le falta soporte"
+
+6. "Porque quise cancelarla en varias ocasiones y no me dejaron"
+
+7. "La atención al cliente ( no de todos (as) ) muchas veces es deficiente"
+
+8. "es un problema para comunicarse con un ejecutivo...."
+
+9. "No es nada excelente ni tiene tantos beneficios solo me parece sencilla de usar"
+
+10. "Porque nunca he tenido inconvenientes con la app, siempre te resuelven todo"
+
+11. "Cuando se tiene algún problema es imposible que te den soporte. La atención al cliente en general es terrible"
+
+
+================================================================================
+
+### ✅ MOTIVO: Seguridad (-0.5pp - MEJORÓ)
+
+**Impacto:** 2.5% → 2.0% | **Comentarios:** 8 (25Q3) → 4 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Nunca llegó la tarjeta fisica, se la robaron el en traslado"
+
+2. "Aveces se tarda en reflejar el pago"
+
+3. "Porque  se puede usar en muchos lados"
+
+4. "Por qué tuve comprás no reconocidas"
+
+
+================================================================================
+
+### ✅ MOTIVO: Promociones (-0.5pp - MEJORÓ)
+
+**Impacto:** 6.7% → 6.2% | **Comentarios:** 22 (25Q3) → 20 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Le faltan detallitos para que sea una buena app"
+
+2. "La tarjeta es buena pero no excelente"
+
+3. "Porque apenas me dieron la tarjeta de crédito y no le he dado uso"
+
+4. "Está muy bien solo ocupo más promociones para recomendar a mis amigos"
+
+5. "Me gustaría tuviera más promociones en muchos establecimientos a meses sin intereses"
+
+6. "Porque siento que no tiene servicio para guardar dinero"
+
+7. "Es una tarjeta que esta hecha para gente que tiene problemas en buro de credito o es su primera tarjeta por ende, los beneficios o promociones son algo limitados, aunque en ocasiones existen algunos beneficios interesantes. Parece ser que los MSI son..."
+
+8. "Es un poco difícil de manejar la aplicación"
+
+9. "porque cuando uno se atrasa cobran mucho de comisión, de hecho en algún momento pensé en cancelarla"
+
+10. "Me gusta pero no sé qué la haría un 10."
+
+11. "Necesita mejorar sus ofertas y promociones"
+
+12. "Porque ofrece promociones engañosas, indica que puedes comprar a meses sin intereses y al llegar al saldo total, te cobran comisión por los meses de pago."
+
+13. "Porque el tiempo para pagar es algo corto"
+
+14. "La calificó así porque no suelo usarla como se debe, porque estaba pasando por un momento malo económicamente , pero ahora ya estoy un poco mejor y espero usarla más y como es debido"
+
+15. "No twngo tanta experiencia con la aplicación pero tiene muchos apartados y es algo abrumador"
+
+16. "Porque no hay promociones"
+
+17. "Facilidad de crédito, rendimiento; pero falta mayor información o visibilización del respaldo de la entidad"
+
+18. "tiene algunos convenios con algunas empresas, pero lamentablemente en mi zona  no hay la mayoria de esas empresas y no puedo disfrutar de esos beneficios"
+
+19. "Nada en particular"
+
+20. "Porque un día se me bloqueó la tarjeta de crédito y por más que yo quería desbloquearla la reporté y todo todo era con atención a clientes nunca me pasaron con los técnicos de servicio y por lo tanto no lo arreglaron hasta que saqué otra tarjeta de c..."
+
+
+================================================================================
+
+### ✅ MOTIVO: Tarifas (-0.2pp - MEJORÓ)
+
+**Impacto:** 5.2% → 5.0% | **Comentarios:** 14 (25Q3) → 12 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Porqué los intereses son muy altos"
+
+2. "Las fechas de pago son muy próximas de lo que me gustaría"
+
+3. "Es muy cara la tarjeta y no da muchos beneficios como otras tarjetas"
+
+4. "El cat de la tarjeta de crédito considero que es muy alto"
+
+5. "Por sus costos y formas de cobro"
+
+6. "El crédito que ofrecen es minimo"
+
+7. "Te cobran muchos intereses"
+
+8. "Por qué ahora cobran muchos intereses"
+
+9. "Demasiado interés, muy caro pagar un prestamo"
+
+10. "Te prestan muy poquito y no sube el monto del crédito y ya llevo como 3 años con ella"
+
+11. "Me agrada el tipo de sistema que tiene"
+
+12. "ES BUENA EXPERIENCIA USARLO"
+
+
+================================================================================
+
+### ✅ MOTIVO: Financiamiento (-0.2pp - MEJORÓ)
+
+**Impacto:** 12.7% → 12.5% | **Comentarios:** 41 (25Q3) → 38 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Porque podría mejorar al momento de poner las tasas"
+
+2. "El cobro de interés esta alto de lo normal, pero también te la otorgan rápido y eso es bueno"
+
+3. "Te cobra muchos intereses, apenas te retrasas en un pago recibes cientos de llamadas hostigantes."
+
+4. "Ok ntereses muy altos en los créditos, paga uno el doble"
+
+5. "porque es muy acosadora, con demasiadas llamdas y mensajes antes y despues del pago"
+
+6. "Por que mi limite de credito sigue estando igual"
+
+7. "Se me hace mucho al aumento de interés en caso de atraso"
+
+8. "Bajar los intereses en la a préstamos personales"
+
+9. "Por que su sistema de cobranza es muy radical si te atrasas un dia te marcan 100 veces y es molesto"
+
+10. "Necesita un poco más de aumento a crédito"
+
+11. "Porque te mandan muchos mensajes"
+
+12. "Me gusta pero tiene sus complicaciones"
+
+13. "Por que no presenta demasiadas opciones de financiamiento"
+
+14. "Falta de transparencia y pésima atención"
+
+15. "Brindar mayor cantidad de crédito"
+
+16. "No ofrece meses sin intereses con cualquier tienda departamental."
+
+17. "Los intereses son muy altos"
+
+18. "Tengo la cuenta desde hace 4 años y solo me subieron 1000 pesos mi limite de crédito"
+
+19. "Por qué la tasa de interés que maneja por el uso de la tarjeta de crédito es alto y además cuando vas a comprar no me ha tocado ver que entre en promoción como meses sin intereses son muy pocos los lugares que ofrecen esa promoción"
+
+20. "No me ha ofrecido mas allá que una cueva de ahorros"
+
+21. "Pues si lo recomendaría pero aveces no sube el préstamo se mantiene en el minimo"
+
+22. "Porque no es claro cuándo es dinero mío y cuando es crédito"
+
+23. "Porque tengo años usandola y no me ha aumentado mi credito"
+
+24. "Realmente porque no tengo mucho material para explicarlo"
+
+25. "Tasa de interés muy elevada."
+
+26. "No ofrece créditos muy altos solo conforme vas usando la tarjeta"
+
+27. "Son muy altos sus intereses"
+
+28. "La saque para prestamos pero no dieron lo suficiente"
+
+29. "Porque ofrece tarjeta de crédito pero la tienes que activar con un depósito inicial"
+
+30. "Falta más capital de credito disponible"
+
+31. "Porque tiene tasas de interés muy altas para tarjeta de crédito"
+
+32. "Porque los recomendé con 3 personas que se afiliaron y nunca me dieron lo que prometieron"
+
+33. "Pide el pago garantía una vez que pasas de ese y se gradúa la tarjeta no te regresan nada y después de tener bastante tiempo con ella aproximadamente 3 años nunca subieron la linea de crédito"
+
+34. "Por qué aún le falta más historial financiero"
+
+35. "Me gusta mucho su eficiencia"
+
+36. "Es fácil de usar"
+
+37. "La tasa de interés es un verdadero robo imposible de pagar"
+
+38. "Me parece buena app pero si cobran algo de intereses"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Stori_MLM_25Q4.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

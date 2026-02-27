@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLM",
+    "quarter": "25Q3",
+    "fecha_generacion": "2025-02-12",
+    "tipo": "promotores",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Genera ganancias con mi dinero en cuenta": {
+      "total_comentarios_analizados": 87,
+      "delta_pp": -0.6,
+      "porcentaje_promotores": 29.0,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento automático sin esfuerzo ni comisiones de apertura",
+          "descripcion": "Los usuarios valoran enormemente que solo con tener dinero en la cuenta ya generen intereses de forma automática, sin necesidad de contratar productos adicionales ni pagar comisiones de apertura como en los bancos tradicionales.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 37,
+          "ejemplos": [
+            "Me gusta que mi dinero genere intereses automáticamente sin tener que estar haciendo nada extra",
+            "Es muy bueno porque el dinero que uno tiene en la cuenta te va generando rendimientos sin tener que contratar nada adicional",
+            "Lo mejor es que genero ganancias solo por tener mi dinero ahí, sin comisiones de apertura ni mantenimiento como los bancos"
+          ]
+        },
+        {
+          "titulo": "Tasa competitiva superior a cuentas de ahorro tradicionales",
+          "descripcion": "Los clientes reconocen que el rendimiento del 14-15% anual es significativamente mejor que el 0.5-2% que ofrecen los bancos tradicionales, haciendo más atractivo dejar dinero en Mercado Pago.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "Deja mejor rendimiento que mi cuenta de banco tradicional donde casi no me dan nada",
+            "El 15% de rendimiento anual es mucho mejor que lo que me da mi banco que apenas y es el 1%",
+            "Me encanta que el dinero trabaje para mí con un buen porcentaje, mucho mejor que tenerlo sin generar nada en otro banco"
+          ]
+        },
+        {
+          "titulo": "Ganancia visible y tangible que motiva el ahorro",
+          "descripcion": "Los usuarios aprecian poder ver crecer su dinero día a día en la app, lo que les genera satisfacción inmediata y los motiva a ahorrar más en la plataforma.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Me gusta ver cómo cada día me llega mi rendimiento, es motivante ver cómo crece el dinero",
+            "Todos los días veo mis ganancias acumuladas y me motiva a dejar más dinero ahí",
+            "Ver que mi saldo aumenta diario me hace sentir que estoy haciendo algo productivo con mi dinero"
+          ]
+        },
+        {
+          "titulo": "Alternativa accesible de inversión para quien no tiene grandes montos",
+          "descripcion": "Usuarios con poco capital encuentran en Mercado Pago una forma sencilla de hacer rendir su dinero sin necesidad de inversiones mínimas altas o conocimientos financieros complejos.",
+          "frecuencia_pct": 8,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Para los que no tenemos mucho dinero es una excelente opción de hacer que rinda un poco más",
+            "No necesito tener grandes cantidades para empezar a ganar, con lo que tengo ya genero rendimientos",
+            "Es perfecto para alguien como yo que está empezando a ahorrar, no necesito montos altísimos"
+          ]
+        }
+      ]
+    },
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 94,
+      "delta_pp": 0.6,
+      "porcentaje_promotores": 21.7,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz intuitiva que permite hacer operaciones en segundos",
+          "descripcion": "Los usuarios destacan que la app es fácil de navegar y les permite hacer transferencias, pagos y consultas de forma rápida sin complicaciones ni pasos innecesarios.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 36,
+          "ejemplos": [
+            "Es súper fácil de usar, en dos clicks ya hice mi transferencia",
+            "La interfaz es muy intuitiva, no necesité que nadie me explicara cómo usarla",
+            "Todo está muy claro en la app, encuentro rápido lo que necesito sin estar buscando entre mil opciones"
+          ]
+        },
+        {
+          "titulo": "Operaciones 24/7 sin necesidad de ir a sucursal o ventanilla",
+          "descripcion": "La disponibilidad total y la eliminación de traslados físicos es altamente valorada, permitiendo resolver todo desde casa a cualquier hora.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 28,
+          "ejemplos": [
+            "Me encanta que puedo hacer todo desde mi casa sin tener que ir al banco a hacer filas",
+            "Puedo hacer transferencias y pagos a cualquier hora, incluso en domingo, eso no lo consigo en mi banco",
+            "Ya no pierdo tiempo yendo a sucursales, todo lo resuelvo desde mi celular en minutos"
+          ]
+        },
+        {
+          "titulo": "Proceso de registro y activación rápido y sin papeleo",
+          "descripcion": "Los usuarios aprecian que abrir la cuenta toma minutos y no requiere ir a sucursal, llenar formularios físicos ni esperar días por aprobación.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Me di de alta en menos de 10 minutos, todo desde mi celular, nada de ir a sucursal",
+            "Comparado con abrir cuenta de banco que te piden mil papeles, aquí fue rapidísimo",
+            "En un rato ya tenía mi cuenta activa, sin tanto trámite como los bancos tradicionales"
+          ]
+        },
+        {
+          "titulo": "Diseño limpio y moderno que hace agradable la experiencia",
+          "descripcion": "Los clientes disfrutan la estética moderna de la app y la experiencia fluida, comparándola favorablemente con apps bancarias tradicionales consideradas anticuadas.",
+          "frecuencia_pct": 14,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "La app se ve moderna y es agradable de usar, no como las apps de banco que parecen de hace 10 años",
+            "Me gusta el diseño limpio, todo se ve ordenado y profesional",
+            "Es una app bonita y funcional, da gusto usarla a comparación de otras que están horrible diseñadas"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 78,
+      "delta_pp": 1.1,
+      "porcentaje_promotores": 12.9,
+      "causas_raiz": [
+        {
+          "titulo": "Solución todo-en-uno: pagos, transferencias, cobros y servicios en una sola app",
+          "descripcion": "Los usuarios valoran tener múltiples funciones integradas en una sola plataforma, eliminando la necesidad de usar múltiples apps o servicios para sus operaciones diarias.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 31,
+          "ejemplos": [
+            "Tengo todo en una sola app: pago servicios, transfiero, cobro de mis ventas, todo",
+            "Es muy completa, puedo hacer prácticamente cualquier operación que necesite sin salir de la app",
+            "Ya no necesito usar 3 apps diferentes, aquí resuelvo todo lo que necesito para mi día a día"
+          ]
+        },
+        {
+          "titulo": "Código QR universal que facilita cobros y pagos sin efectivo",
+          "descripcion": "La funcionalidad de cobrar y pagar con QR es especialmente valorada por negocios pequeños y usuarios que prefieren transacciones sin efectivo, siendo vista como práctica y segura.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "El QR me ha facilitado mucho cobrar en mi negocio, ya no manejo tanto efectivo",
+            "Me encanta pagar con el código QR, es rapidísimo y no tengo que andar con billetes",
+            "Para mi changarro el QR de Mercado Pago es lo mejor, todos lo conocen y es super fácil cobrar"
+          ]
+        },
+        {
+          "titulo": "Integración perfecta con el ecosistema de Mercado Libre para compras",
+          "descripcion": "Los usuarios que compran en Mercado Libre aprecian la integración fluida que les permite pagar rápido, acceder a MSI y gestionar sus compras desde una misma plataforma.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Como compro mucho en Mercado Libre, tener Mercado Pago hace todo más fácil y rápido",
+            "La integración con ML es perfecta, puedo pagar en un click y ver todas mis compras juntas",
+            "Me conviene porque uso mucho Mercado Libre y con Mercado Pago tengo mejores beneficios y meses sin intereses"
+          ]
+        },
+        {
+          "titulo": "Pago de servicios y recargas desde la app sin comisiones extra",
+          "descripcion": "La capacidad de pagar luz, agua, teléfono y hacer recargas telefónicas sin tener que ir a tiendas o pagar comisiones es altamente apreciada.",
+          "frecuencia_pct": 12,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Pago todos mis servicios desde la app, me ahorro el viaje y las comisiones del Oxxo",
+            "Es muy práctico poder recargar saldo a mi celular o pagar la luz desde donde esté",
+            "Ya no tengo que estar yendo a pagar servicio por servicio, desde aquí lo hago todo"
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 65,
+      "delta_pp": -1.2,
+      "porcentaje_promotores": 8.5,
+      "causas_raiz": [
+        {
+          "titulo": "Autenticación biométrica y códigos de seguridad que protegen el acceso",
+          "descripcion": "Los usuarios confían en las medidas de seguridad como huella digital, reconocimiento facial y códigos de verificación que dificultan el acceso no autorizado.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 27,
+          "ejemplos": [
+            "Me siento seguro porque uso mi huella para entrar, nadie más puede acceder a mi cuenta",
+            "Tiene buenas medidas de seguridad como el reconocimiento facial y los códigos que te envían",
+            "Me gusta que pide verificación con huella o código cada vez que voy a hacer algo importante"
+          ]
+        },
+        {
+          "titulo": "Notificaciones instantáneas de cada movimiento que permiten detectar fraudes",
+          "descripcion": "Las alertas en tiempo real de cada transacción generan tranquilidad al permitir identificar inmediatamente cualquier movimiento sospechoso.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 23,
+          "ejemplos": [
+            "Me llega notificación de cada movimiento al instante, así sé si pasa algo raro",
+            "Las alertas inmediatas me dan tranquilidad, estoy al tanto de todo lo que pasa en mi cuenta",
+            "Si alguien intenta usar mi cuenta me doy cuenta al momento por las notificaciones"
+          ]
+        },
+        {
+          "titulo": "Respaldo de marca reconocida de Mercado Libre genera confianza",
+          "descripción": "Los usuarios confían en Mercado Pago por ser parte del ecosistema de Mercado Libre, una empresa establecida y reconocida en Latinoamérica.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Confío porque es de Mercado Libre, una empresa muy grande y conocida",
+            "Me da seguridad que sea respaldado por una empresa seria como Mercado Libre",
+            "Siento que es confiable por la trayectoria que tiene Mercado Libre"
+          ]
+        },
+        {
+          "titulo": "Bloqueo temporal de cuenta ante actividad sospechosa como medida preventiva",
+          "descripcion": "Aunque a veces genera inconvenientes, algunos usuarios aprecian que el sistema bloquee automáticamente la cuenta ante movimientos inusuales para prevenir fraudes.",
+          "frecuencia_pct": 8,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Una vez detectó algo raro y bloqueó mi cuenta, aunque fue molesto, me gustó que estén pendientes",
+            "Tiene sistemas que detectan movimientos extraños y te protegen bloqueando temporalmente",
+            "Me siento protegido porque sé que si pasa algo sospechoso van a actuar rápido"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 71,
+      "delta_pp": 1.5,
+      "porcentaje_promotores": 7.0,
+      "causas_raiz": [
+        {
+          "titulo": "Meses sin intereses en compras de Mercado Libre y establecimientos afiliados",
+          "descripcion": "Los MSI son uno de los beneficios más valorados, permitiendo a los usuarios hacer compras grandes y pagarlas cómodamente sin intereses.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 32,
+          "ejemplos": [
+            "Los meses sin intereses me han salvado para comprar cosas caras y pagarlas poco a poco",
+            "Me encanta poder comprar en Mercado Libre a MSI, es súper conveniente",
+            "Los 12 meses sin intereses que ofrecen en algunos productos son excelentes, eso no lo consigo en todos lados"
+          ]
+        },
+        {
+          "titulo": "Descuentos y cashback en establecimientos físicos y en línea",
+          "descripcion": "Los usuarios aprovechan ofertas exclusivas y reembolsos en tiendas afiliadas, supermercados, restaurantes y servicios de streaming.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "Cada semana hay descuentos en diferentes tiendas, siempre encuentro algo que me sirve",
+            "He ahorrado bastante con los descuentos en supermercados y restaurantes",
+            "Me gusta que dan cashback en varios lugares, al final del mes se junta una buena cantidad"
+          ]
+        },
+        {
+          "titulo": "Promociones exclusivas para usuarios de Mercado Pago en eventos especiales",
+          "descripcion": "Durante Hot Sale, Buen Fin y otras fechas especiales, los usuarios reciben ofertas adicionales que perciben como un beneficio real de usar la plataforma.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "En el Buen Fin tuve descuentos extras por pagar con Mercado Pago, súper conveniente",
+            "Durante Hot Sale las promos exclusivas para usuarios de MP son muy buenas",
+            "Me gustan las ofertas especiales que dan en fechas importantes, siento que sí valen la pena"
+          ]
+        },
+        {
+          "titulo": "Notificaciones personalizadas de ofertas según historial de compra",
+          "descripcion": "Los usuarios aprecian recibir promociones relevantes basadas en sus intereses y compras anteriores, haciendo las ofertas más útiles y menos invasivas.",
+          "frecuencia_pct": 7,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Me llegan ofertas de cosas que realmente me interesan, no spam de cualquier cosa",
+            "Las notificaciones de descuentos son personalizadas, casi siempre me sirven",
+            "Me gusta que me avisan de promociones en las tiendas donde suelo comprar"
+          ]
+        }
+      ]
+    },
+    "Ofrece préstamos y/o tarjeta de crédito": {
+      "total_comentarios_analizados": 54,
+      "delta_pp": -0.5,
+      "porcentaje_promotores": 8.3,
+      "causas_raiz": [
+        {
+          "titulo": "Acceso a crédito sin historial crediticio previo o con buró negativo",
+          "descripcion": "Usuarios que han sido rechazados por bancos tradicionales valoran enormemente que Mercado Pago les otorgue una tarjeta de crédito o préstamo, dándoles una oportunidad de construir historial.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "Ningún banco me daba tarjeta de crédito y Mercado Pago sí me la dio, estoy muy agradecido",
+            "Me aprobaron la tarjeta aunque tengo mal buró, me dieron una oportunidad",
+            "Es la primera tarjeta de crédito que tengo, los bancos siempre me rechazaban pero aquí sí confían en mí"
+          ]
+        },
+        {
+          "titulo": "Proceso de aprobación rápido y digital sin papeleo ni visitas a sucursal",
+          "descripcion": "La velocidad y simplicidad del proceso de solicitud es altamente valorada comparada con el largo y burocrático proceso bancario tradicional.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Me aprobaron la tarjeta en un día, en los bancos te tardan semanas o meses",
+            "El proceso fue súper rápido, solo tomé foto de mi INE y listo, nada de ir a sucursal",
+            "Solicité el préstamo desde la app y en pocas horas ya tenía respuesta, impresionante"
+          ]
+        },
+        {
+          "titulo": "Flexibilidad en montos y plazos adaptados a necesidades pequeñas",
+          "descripcion": "Usuarios aprecian poder solicitar montos pequeños de crédito para gastos específicos sin comprometerse a grandes deudas, con plazos razonables de pago.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Pedí un préstamo chico para una emergencia y me lo dieron sin problema, justo lo que necesitaba",
+            "Me gusta que puedo usar solo el crédito que necesito, no me obligan a usar todo el límite",
+            "Los plazos de pago son razonables, puedo ir pagando cómodamente cada quincena"
+          ]
+        },
+        {
+          "titulo": "Integración con la app principal facilita el seguimiento de crédito y pagos",
+          "descripcion": "Tener la tarjeta de crédito y préstamos gestionados desde la misma app donde hacen todo lo demás simplifica el control financiero.",
+          "frecuencia_pct": 9,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Me gusta ver mi crédito disponible y mis pagos en la misma app donde tengo todo",
+            "Es muy práctico tener la tarjeta integrada, veo cuánto debo y cuándo pagar sin entrar a otra app",
+            "Desde la misma app puedo usar mi crédito y hacer mis pagos, todo en un solo lugar"
+          ]
+        }
+      ]
+    }
+  }
+}

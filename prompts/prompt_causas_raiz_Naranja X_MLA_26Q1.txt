@@ -1,0 +1,710 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Naranja X** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Naranja X",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### 🔥 MOTIVO: Rendimientos (+2.7pp - EMPEORÓ)
+
+**Impacto:** 10.0% → 12.7% | **Comentarios:** 63 (25Q4) → 91 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Ninguna plataforma merece un 10"
+
+2. "Era una de mi preferida por rendimientos y los plazos fijos o frascos, pero ahora tienen mejor rendimientos uala y mercado pago y los plazo fijos los pase a banco del sol"
+
+3. "No sé cuan segura es"
+
+4. "Ofrecía buenas tasas de interés al dejar dinero pero ahora ofrece lo mismo que otras y otras ya permiten depositar dólares, ahora la uso por costumbre más que por ganancias"
+
+5. "La he recomendado con amigos, solo x sus tasas."
+
+6. "Funciona bien, pero tiene margen a mejorar , si atención en sucursal es pésima"
+
+7. "porque no es atractivo el rendimiento en frascos y en dinero en cuenta"
+
+8. "Antes tenía el mejor rendimiento, ahora no, ademas la mayoría de proociones son para tarjeta de credito, que no poseo"
+
+9. "es como cualquier otra billetera o mismo rendimiento que mi banco"
+
+10. "Falta rendimiento en dolares."
+
+11. "Porque yo tengo dinero que estoy ahorrando para poder comprar algo a futuro y es complicado conseguir la plata"
+
+12. "POR UN MAYOR RENDIMIENTO EN LOS FRASCO A CORTO PLAZO"
+
+13. "no tiene tasa competitiva para remunerar saldos"
+
+14. "Porque no la uso mucho , no es práctica la app"
+
+15. "Está buena pero no ofrece lo suficiente"
+
+16. "Porque me gusta más Mercado pago"
+
+17. "No ofrece la misma seguridad que un banco"
+
+18. "dar mas rendimiento que otras billeteras , sino es una mas del montón"
+
+19. "En lo personal la app no cubre al 100%las expectativas. Ya que podría mejorar en cuanto al rendimiento diario. Tiene algunas funcionalidades que están buenas, como por ej. Los reintegros lo hacen instantáneamente"
+
+20. "Simplemente,recomendaría otras aplicaciones antes q naranja x,pero de igual forma la recomendaría pq cumple bien sus funciones"
+
+21. "Solo porque es práctica, fácil de usar y me rinde bastante."
+
+22. "por que es practica"
+
+23. "Pocas  promos baja rentabilidad"
+
+24. "Porque la uso ocasionalmente"
+
+25. "Por que me gusta"
+
+26. "Siento que los intereses y las inversiones son bajas"
+
+27. "Tiene tope de dinero a rendir y  el rendimiento es tan alto como en otras billeteras"
+
+28. "Que mejore la tasa de rendimiento y amplíe la cantidad de plata que te deje rendir porque solo es hasta ochocientos mil pesos"
+
+29. "Xq funciona bien"
+
+30. "Lo que indiqué anteriormente. Nada más que agregar."
+
+31. "Porque tiene el límite de rendimiento de un millón nada más"
+
+32. "porque le faltan cosas para mas"
+
+33. "La uso seguido y tiene promociones que resultan útiles"
+
+34. "Es igual que todas"
+
+35. "Suele fluctuar mucho el porcentaje diario a pagar por rendimiento"
+
+36. "Tiene buen rendimiento"
+
+37. "Es bueno tener el dinero en cuenta y que genere rendimientos diarios"
+
+38. "Por qué me bajan siempre el tna cuando invierto una gran cantidad de dinero"
+
+39. "es la que mas uso"
+
+40. "Porque es difícil   lograr comunicarse"
+
+41. "Porque aun no lo conozco bien"
+
+42. "Antes daba mejores rendimientos, ahora es como el resto"
+
+43. "SOlo la uso para pagar la tarjeta de crédito"
+
+44. "El rendimiento debería mejorar. Ser los mejores"
+
+45. "Buenas promociones"
+
+46. "El tema de los frascos que quedan cautivos hasta que no se cumple el tiempo para liberarlo y las tasas de interes que muchas veces son más bajas en la diaria que mercado pago"
+
+47. "podria mejorar su aplicación"
+
+48. "Casi no la uso, uso sus tarjetas de crédito"
+
+49. "Tenía mejor rendimiento en cuenta q otras, últimamente no"
+
+50. "Porque tiene buenos rendimientos pero es muy limitada"
+
+51. "Creo que da poco interés y cobran por todo"
+
+52. "Es baja la tasa de de interés"
+
+53. "Puede mejorar en la atención al cliente y los rendimientos de la cuenta."
+
+54. "no ofrece descuentos en comercios"
+
+55. "Necesita ofrecer más rendimiento"
+
+56. "Tendrian que mejorat el rendimiento diario del dinero que tengo en la cuenta"
+
+57. "Porque me gustaría que tenga mejor tasa para hacer rendir el dinero"
+
+58. "porque no tiene la opcion de descuento en subtes"
+
+59. "Estaría bueno más límite,y que sea masaccesibe"
+
+60. "Porque es estándar y a mí me sirve lo que ofrecen"
+
+61. "Solamente la utilizo para pagar y últimamente da poco interés"
+
+62. "Bajo el porcentaje de rendimiento"
+
+63. "los frascos no son tan utiles ya que si necesitas desarmarlos te cobran un interes, por ende no ganas casi nada"
+
+64. "Otras billeteras ofrecen mayor procetaje en inversión"
+
+65. "Por sus funcionalidades"
+
+66. "Me descontaron mi dinero sin ningún motivo"
+
+67. "Una vez hice una transferencia y no llegó a destino y estuve varios días luchando con eso. Hasta tuve que ir presencial que eso es lo que quiero evitar."
+
+68. "Porque si bien me parece de utilidad, no deja de ser de una financiera"
+
+69. "Pocos beneficios pagando con dinero en saldo Bajo rendimiento"
+
+70. "Tiene buena opcion de frasco pero monto bajo para rendimiento"
+
+71. "Es rígido el sistema y o ofrece buenos rendimientos"
+
+72. "Le hace falta mejorar la operatibilidad de la app y los rendimientos no son los deseables, mucho menos el de los frascos."
+
+73. "Poque es muy buena y da rendimientos"
+
+74. "Porque creo que es todo lo que necesita para que sea una mejor app"
+
+75. "Aun le falta mejorar ..quizás promociones en mi ciudad"
+
+76. "Porque me gustaria mas descuentos y mas ganancia al invertir"
+
+77. "La aceptación en comercios y formas de inversión"
+
+78. "Porque tendría que ser el mismo porcentaje de ganancia en los frascos tanto sea 7 días como 14 o mas"
+
+79. "No da mucho rendimiento en la plata"
+
+80. "En general la aplicación es buena y la he recomendado solo que hay aplicaciones que generan más rendimiento"
+
+81. "Me parece de las mejores billeteras virtuales"
+
+82. "para mi es considerable un 8 como app, solo debeeria ser mas eficiente en activos dentro de la cuenta y/o mejorar rendimienot del dinero en la cunta mas halla de los que pagan sus competencias o bancos"
+
+83. "los rendimientos no son buenos, para que te de lo mismo que Carrefour Banco tener que crear un frasco , y tener el dinero cautivo al menos 1 mes, en cambio en Carrefour lo sacar al toque si lo necesitas."
+
+84. "Baja mucho el rendimiento que genera mi dinero"
+
+85. "Que rinda más el dinero"
+
+86. "porque me da menos rendimientos en cuenta que otras billeteras virtuales"
+
+87. "Porque ha bajado mucho el rendimiento del dinero"
+
+88. "Xq tiene rendimientos.volatiñes.y bakos"
+
+89. "Tiene limite a la hora de acreditar el dinero en cuenta"
+
+90. "no lo sé, creo que podría ser mejor pero no tengo quejas"
+
+91. "en realidad los beneficios, son atractivos para mi"
+
+
+================================================================================
+
+### ✅ MOTIVO: Financiamiento (-2.5pp - MEJORÓ)
+
+**Impacto:** 8.6% → 6.1% | **Comentarios:** 49 (25Q4) → 40 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Porque tiene costos altos en la tarjeta además de que siempre hay alguno que otro problema"
+
+2. "Porque con algunas cosas estoy conforme"
+
+3. "Porque supe tener tarjeta naranja de crédito y era muy alto el interés de mantenimiento y la financiación"
+
+4. "Tenia una línea de crédito que me quitaron por no tener actualizada mi información, o sea, me ofrecieron algo sin tener mis datos pero luego me lo quitan por no tenerlos, no me gusto eso. Probé también la función frascos que es para reservar un canti..."
+
+5. "Cobran comisiones muy altas"
+
+6. "Es una de las pocas entidades financieras que es amigable"
+
+7. "que las tasas sean mas bajas"
+
+8. "Es muy elevado el financiamiento de la tarjeta de crédito y te cobran muchos impuestos además en donde yo vivo no tienen sucursales cercanas...la más próxima es a casi 200 kilómetro"
+
+9. "seguridad, tasas usurarias"
+
+10. "no ofrece promociones actractivas en donde compro habitualmente"
+
+11. "Buen servicio y buenos intereses generados pero puede mejorar"
+
+12. "Mucho interés cuando se saca en cuotas, y si te pasas por pocos días por alto el pagar llaman tres veces al día exagerando como si debieras medio palo o mas, y el límite para que te rinda el interés de plata que pones es muy poco. También el de los f..."
+
+13. "El costo de mantenimiento de la tarjeta de crédito es muy alta"
+
+14. "Son elevados los intereses"
+
+15. "Porque la uso bastante"
+
+16. "Otras billeteras tienen mejor rendimiento"
+
+17. "Porque no me da tantas opciones"
+
+18. "Tiene tazas de prestamos muy altas"
+
+19. "porque da facilidades para poder pagar los resumenes"
+
+20. " Porque todo se puede mejorar"
+
+21. "Pq te hacen un financiamiento muy largo y SOS esclavo de sus cuotas sin ningún beneficio"
+
+22. "Mucho interés tiene"
+
+23. "Porque tiene tasas muy altas"
+
+24. "Por mi experiencia"
+
+25. "Ofrecen tarjeta y descuentos útiles"
+
+26. "porque tampoco tengo mucha idea para darle un 10 la app anda bien"
+
+27. "Facilidad de tramites"
+
+28. "me gustaría que tenga menos costo"
+
+29. "Los montos se tarjeta y préstamo jamás suben. Llevo al día más de 1 año pagando siempre adelantado"
+
+30. "Porque una vez que pague el préstamo no me pagaron mas"
+
+31. "Tiene muchas condiciones para las tarjetas de crédito"
+
+32. "Los intereses son muy altos te cobran casi 280% del valor de lo que cuesta un producto"
+
+33. "Considero que es una buena calificación.  Pero podrían mejorar un poco más las tasas de financiacion"
+
+34. "Muchísima taza de interés en los préstamos."
+
+35. "Xq si xq la uso pero ko tanto"
+
+36. "darle la baja a la tarjeta de credito es muy complicado"
+
+37. "Bajaron mucho las tasas"
+
+38. "Las tasas de los préstamo están demasiadas elevadas"
+
+39. "PORQUE MI FAMILIA TIENE MALOS COMENTARIOS A       ESO"
+
+40. "Mejorar condiciones de inversión"
+
+
+================================================================================
+
+### ✅ MOTIVO: Complejidad (-1.8pp - MEJORÓ)
+
+**Impacto:** 5.3% → 3.5% | **Comentarios:** 37 (25Q4) → 24 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "No sé que tan seguro es"
+
+2. "cuesta encontrar lo que buscas en la app"
+
+3. "es muy buena lastima es un poco dificil usarla de la manera correcta"
+
+4. "No la se usar mucho es un poco complicada para mi"
+
+5. "es facil de usar y practica y tiene buenas promociones"
+
+6. "porque es muy comoda para gastos y transferencias"
+
+7. "A veces no funciona la aplicación. Se cierra o no te deja ingresar"
+
+8. "Tiene buenas promociones, pero cada tanto no puedo acceder a ellas porque en el momento de hacerlo la app esta en mantenimiento o debe actualizarse"
+
+9. "El costo de mantenimiento ,es alto ."
+
+10. "No ofrece beneficios que sean convenientes cuando tuviste algún problema con otras entidades"
+
+11. "No se ven ñas aplicaciones en mi celu"
+
+12. "No tiene muchas funciones necesarias"
+
+13. "Más facilidad y entendimiento a la hora d usar la app"
+
+14. "Es buena pero no uso tanto"
+
+15. "Es un poco más complicado que mercado"
+
+16. "Siempre hay un problema en las transferencias"
+
+17. "Es buena y es buenos rendimientos diarios me gusta xq mí dinero está seguro"
+
+18. "Cada vez que queres ver datos de tu tarjeta te pide foto. No podes sacarte foto en la calle, incomprensible esti de Naranja."
+
+19. "La app se cuelga muchas veces y nunca me deja descargar comprobantes del pago de la tarjeta"
+
+20. "Porque casi nunca funciona correctamente... Las veces que necesitaba pagar algo la app no funcionaba"
+
+21. "Me parece una excelente aplicación, me quedaría aprender a usarla mejor"
+
+22. "No me reconoce biometricamente y no me ofrecen solución a eso. Cada cosa que necesito debo llamar por teléfono y a veces no me quieren atener y debo ir a la sucursal"
+
+23. "Práctica pero cobra mucho interés"
+
+24. "Por que ya es la segunda vez en el mes que no me deja operar con mi dinero en cuenta, no me deja transferir ni usar qr."
+
+
+================================================================================
+
+### 🔥 MOTIVO: Promociones (+1.7pp - EMPEORÓ)
+
+**Impacto:** 7.1% → 8.9% | **Comentarios:** 42 (25Q4) → 69 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Las promociones son con tarjeta de crédito y yo no quiero tenerla"
+
+2. "No da ni puntos ni nada por usar la tarjeta de débito"
+
+3. "No hay gran promoción"
+
+4. "siempre hay para mejorar"
+
+5. "La baje hace 1 mes"
+
+6. "No tiene tanto descuento como otras billeteras virtuales"
+
+7. "Ni la utilice con esta finalidad"
+
+8. "Porque hay veces que la promo no se cumple. Me pasó con YPF y coto. Tengo plan turbo"
+
+9. "creo que es buena calificación pero puede mejorar en brindar beneficios, para la población periférica"
+
+10. "Porque sin tener que usar la aplicacion ni gastar mis datos con el plastico tengo las promociones"
+
+11. "Más promociones en p?oductos"
+
+12. "Poque no creo que nada sea un 10 perfecto"
+
+13. "Xq le faltaría más beneficios con tarjeta de debito"
+
+14. "No la utilizo mucho por que no tiene buenos descuentos"
+
+15. "Porque se actualiza cuando la quiero utilizar"
+
+16. "No tiene buen rendimiento diario y no encuentro beneficios que me sirvan el dia dia"
+
+17. "Los descuentos son con tsrjeta de credito no con $ en cuenta como MP"
+
+18. "Con dinero en cuenta no tiene promociones en mi ciudad"
+
+19. "Ofrece buena tasa tna para rendimientos, lástima que limita mucho la cantidad de plata por la que realmente da rendimientos"
+
+20. "Por lo general las ofertas en el pago son con otras aplicaciones"
+
+21. "Me brinda buen servicio"
+
+22. "Tiene escasos beneficios para pagar cok dinero en cuenta"
+
+23. "Que tenga descuentos en compras en supermercados la anónima"
+
+24. "Podrían mejorar promos y rendimientos"
+
+25. "Tengo la tarjeta hace más de 25 años y creo que debería tener más promociones y no pagar más por tenerlas"
+
+26. "para mi le falta"
+
+27. "Falta de comercios adheridos con promosiones"
+
+28. "Le faltaría más promociones c debito"
+
+29. "Me gusta sus promocuones"
+
+30. "empecé utilizando esta plataforma por comodidad y lo práctica q es"
+
+31. "Porque la utilizo  y es útil pero se me hace más fácil de usar otras billeteras virtuales"
+
+32. "las tarjetas de naranja no son bien recibidas y aveces tienen recargo"
+
+33. "Antes había descuento para Uber y con eso la usaba mucho más seguido."
+
+34. "No encuentro muchos descuentos con esta app"
+
+35. "porque si bien ofrece descuentos son en provincia de buenos aires"
+
+36. "Porque es buena pero no la mejor. Lo que uno busca es que genere un buen rendimiento, pero muchas veces es menor que la competencia"
+
+37. "Si bien es la que mayor rendimiento ofrece para el dinero en cuenta, hay muy pocas promociones utilizando la aplicación para pagar en comercios"
+
+38. "No por nada en especial, solo porque no la.usa tan habitualmente como otras"
+
+39. "Es facil, rapido y comodo de usar pero es solo una mas, que tengo para promociones"
+
+40. "Ya existen plataformas con más interés en su cuenta"
+
+41. "buenos rendimientos de dinero"
+
+42. "Porque aún no están al nivel de las competidoras con respecto a las promociones"
+
+43. "Porque la mayoría de las promociones son con la tarjeta de crédito y yo no la tengo, me gustaría que sean con dinero en cuenta"
+
+44. "es mas masivo y aceptado el uso de mercado pago"
+
+45. "Porque los rendimimientos no son los mejores y no hay demasiados descuentos en mi lugar de residencia."
+
+46. "Porque creo que es bajo el rendimiento que dan por la creación de frascos"
+
+47. "Para mayor consumo"
+
+48. "Siempre se puede mejorar"
+
+49. "Porque me parece más cómodo mercado pago"
+
+50. "Considero que le faltan promociones, si bien el plan turbo tiene beneficios, pero muchos de ellos no me interesas, caso mcdonalds"
+
+51. "En su tarjeta de crédito tiene promociones buenas"
+
+52. "no uso mucho la aplicación solo para realizar pagos"
+
+53. "Porque tienen pocos lugares con promos. Antes había combustible u otras cosas que aprovechaba. Ahora ya no"
+
+54. "Es una buena billetera virtual"
+
+55. "me faltan insentivos para que NX sea mi principal app"
+
+56. "Para que aumenten las promociones"
+
+57. "podria tener mas promociones"
+
+58. "Porque es facil de usar y es practica"
+
+59. "Es muy buena pero no tanto, si no que seria mejor que a sus ahorros se pudiera agregar menos dinero del que se requiere, y que el servicio de comprar dolares sea mas rápido"
+
+60. "Las promociones son con tarjeta y es paga"
+
+61. "Por qué es así como yo pienso."
+
+62. "No he tenido problemas con el uso de Naranja X, pero no me resulta demasiado atractiva"
+
+63. "DEBERIAN TENER MAS PROMOS DE COMERCIOS HABITUALES"
+
+64. "descuentos en combustible, en super, en tiendas varios días a la semana"
+
+65. "Me gustaria tener mas descuentos"
+
+66. "Estoy conforme con la aplicación"
+
+67. "Buenas promociones pero algunos problemas o lentitud de servicio"
+
+68. "Tiene muchas tiendas adheridas que ofrecen descuentos"
+
+69. "Utilizo la app para generar rendimientos y utilizo los descuentos, pero estaria bueno que haya mas tope de devolucion"
+
+
+================================================================================
+
+### ✅ MOTIVO: Seguridad (-0.8pp - MEJORÓ)
+
+**Impacto:** 2.2% → 1.4% | **Comentarios:** 13 (25Q4) → 9 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Excelente funcionalidad"
+
+2. "Porque es una muy buena aplicación y empresa ,pero nunca califico con 10"
+
+3. "Se que hay comentarios de filtración de datos de clientes en esta empresa.Por lo tanto tendrían que mejorar la seguridad que ofrecen a sus clientes"
+
+4. "Por que es una tarjeta que me sirve para comprar en cuotas"
+
+5. "Estoy conforme . Solo que estoy acostumbrada a usar mercado pago. La uso más q nada para guardar mi plata x los rendimientos o los frascos"
+
+6. "No me da confianza ni sé a quien reclamar si hay transferencias dudosas"
+
+7. "me parece que esta buena pero no es mi cuenta principal"
+
+8. "Me gusta el rendimiento y la manera simple de operar"
+
+9. "Porque me lo preguntaron."
+
+
+================================================================================
+
+### ✅ MOTIVO: Tarifas (-0.2pp - MEJORÓ)
+
+**Impacto:** 2.9% → 2.7% | **Comentarios:** 16 (25Q4) → 20 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Porque es buena pero no excelente"
+
+2. "Me gusta por la facilidad de la app, pero los costos de mantenimiento de la cuenta son. Altos y no se muestran en la factura con el costo final a pagar"
+
+3. "es caro gestionar creditos"
+
+4. "Bueno, en genarl la app esta muy buena, realmente una de las mejores que conozco."
+
+5. "Es segura y económica"
+
+6. "Los intereses son muy altos"
+
+7. "porque tiene un buen rendimiento y ultilizacion de la app"
+
+8. "No se, no me acuerdo"
+
+9. "Naranja tiene facilidad de uso, pero no tiene muchos beneficios por el uso de la misma, ni siquiera por tener tarjeta de credito"
+
+10. "porque tiene muy alta la tarifa de la cuenta"
+
+11. "Porque cobra mucho el mantenimiento de la cuenta"
+
+12. "Quiero una tarjeta y no me la aceptan nunca"
+
+13. "Falta promocionar"
+
+14. "Suelo utilizar la app con frecuencia, respecto de la tarjeta de crédito cobra intereses más altos que otras que tengo"
+
+15. "La financiacion podria mejorar"
+
+16. "Me gusta más otras"
+
+17. "Podrían disminuir los costos mensuales"
+
+18. "Porque la uso a diario y la verdad soy el propietario"
+
+19. "es buena,pero intereses muy altos"
+
+20. "Por que uso Naranja no solo para comprar sino para pagar servicios todos los meses"
+
+
+================================================================================
+
+### ✅ MOTIVO: Funcionalidades (-0.2pp - MEJORÓ)
+
+**Impacto:** 2.7% → 2.5% | **Comentarios:** 18 (25Q4) → 16 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "porque es lo que siento"
+
+2. "No tiene promociones ni descuentos en mi provincia"
+
+3. "La verdad es que cada vez menos lugares trabajan con naranja, entonces no la uso habitualmente"
+
+4. "le falta más tipos de inversión"
+
+5. "No sirve para compras al exterior"
+
+6. "creo que los rendimintos son muy bajos a comparacion con otras apps"
+
+7. "No es muy intuitiva, no da los mejores rendimientos, y es muy csra en comisiones"
+
+8. "Soy cliente antiguo"
+
+9. "Las promociones son. Solo para equipos de alta gama con nfc"
+
+10. "Porque está muy buena pero no es la mejor"
+
+11. "No tiene QR para pagar transporte, antes ofrecia mejores intereses. Los limites de préstamo son una miseria, no me sirve"
+
+12. "Experiencia personal"
+
+13. "Da buenos rendimientos"
+
+14. "No me resulta muy práctica encontrar algunos datos"
+
+15. "Me parece muy útil y beneficiosa en estos momentos de economía compleja, teniendo en cuenta sobre todo que soy jubilado."
+
+16. "Tiene. Buenas promociones en negocios y demas"
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-0.1pp - MEJORÓ)
+
+**Impacto:** 2.9% → 2.8% | **Comentarios:** 16 (25Q4) → 16 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Atenciin al cliente"
+
+2. "No tengo calificación alguna estoy usando poco"
+
+3. "No tiene buena atención al cliente"
+
+4. "Recomende NAranja X y la persona no pudo realizar el alta porque se cuelga el proceso"
+
+5. "pórque tienen muy mal trato hacia los clientes"
+
+6. "Porque la uso todos los día y nunca me falla, muy confiable"
+
+7. "No soy de usar mucho la tarjeta"
+
+8. "La atención al cliente en persona, no soluciona nada. Vas a un local y te dicen que solo solucionan cuestiones de tarjeta de crédito y no de débito. Se lavan las manos, en lugar de ayudarte,. Ineptos"
+
+9. "Porque una vez quise hablar con una persona y me costó mucho por el Bot... Redundante..."
+
+10. "Es buena, le faltan mejores promociones"
+
+11. "no es segura,la atencion comercial es lenta"
+
+12. "Malísimo que no hayan prácticamente locales. Yo me re manejo pero la gente mayor no."
+
+13. "No hay forma de comunicarse con una asesor"
+
+14. "La atención al cliente"
+
+15. "no quiero que me conteste 1 máquina"
+
+16. "Es malísima su atención al cliente nunca resuelven nada. No hay claridad en los pagos terminas pagando cosas que no tenés ni idea que son pero ellos te lo cobran igual. Quiero darle de baja lo antes posible"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Naranja X_MLA_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

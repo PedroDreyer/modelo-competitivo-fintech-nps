@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "player": "Naranja X",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos": {
+      "total_comentarios_analizados": 99,
+      "delta_pp": 2.7,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimientos percibidos como promedio del mercado sin diferenciación frente a otras billeteras",
+          "descripcion": "La gran mayoría de los usuarios percibe que los rendimientos de Naranja X son iguales al promedio del mercado. Pese a ofrecer 31% TNA en Frascos y 25% TNA en cuenta base, los usuarios no perciben una ventaja clara frente a competidores como Mercado Pago o Ualá, que ofrecen tasas similares.",
+          "frecuencia_pct": 52,
+          "frecuencia_abs": 51,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Caída de tasas del BCRA que redujo el rendimiento de la cuenta remunerada respecto a trimestres anteriores",
+          "descripcion": "La baja de tasas de referencia del BCRA impactó en los rendimientos que Naranja X puede ofrecer. Usuarios que antes percibían el rendimiento como atractivo ahora lo ven como insuficiente, especialmente comparado con la inflación percibida.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Falta de opciones de inversión diversificadas más allá de Frascos y cuenta remunerada básica",
+          "descripcion": "Usuarios más sofisticados consideran que la oferta de inversión de Naranja X es limitada: solo Frascos con tope de $12M y cuenta base. No hay FCI, bonos ni otros instrumentos que permitan obtener mayor rendimiento para montos altos.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 73,
+      "delta_pp": 1.7,
+      "causas_raiz": [
+        {
+          "titulo": "Percepción de insuficientes promociones para el uso cotidiano comparado con bancos y otras billeteras",
+          "descripcion": "Los usuarios sienten que Naranja X ofrece menos descuentos y beneficios que la competencia bancaria (ej: Banco Provincia, Banco Ciudad) y otras fintechs para gastos del día a día como supermercados, combustible y gastronomía.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 33,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Beneficios de planes Turbo y Épico limitados a ciertos rubros y difíciles de aprovechar efectivamente",
+          "descripcion": "Los planes de suscripción de Naranja X (Turbo/Épico) ofrecen descuentos mensuales, pero muchos usuarios no logran aprovecharlos por restricciones geográficas, rubros limitados o porque no alcanzan a usar todos los beneficios antes de que venzan.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Promociones no personalizadas que no se adaptan a los hábitos de consumo individuales del usuario",
+          "descripcion": "Los descuentos disponibles son genéricos y no se ajustan al perfil de consumo de cada usuario. Quienes solo usan la billetera sin tarjeta de crédito quedan excluidos de la mayoría de los beneficios.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 46,
+      "delta_pp": -2.5,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés de tarjeta de crédito y préstamos percibidas como elevadas frente a bancos tradicionales",
+          "descripcion": "Pese a la mejora en la dimensión, los detractores restantes se concentran en que las tasas de financiamiento (TNA de tarjeta y préstamos express) son más altas que las que ofrecen bancos del Grupo Galicia y competidores directos. La brecha entre tasa de rendimiento y tasa de crédito genera frustración.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Límite de crédito bajo que no se incrementa proporcionalmente al uso responsable de la tarjeta",
+          "descripcion": "Usuarios con buen historial de pago y uso frecuente reportan que el límite de crédito se mantiene bajo sin posibilidad de aumento manual. El algoritmo de scoring no parece premiar el comportamiento de pago puntual.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Dificultad para acceder a préstamos pese a tener cuenta activa y movimientos regulares",
+          "descripcion": "Un segmento de usuarios no logra acceder a préstamos o la oferta de crédito no está disponible en su cuenta, sin recibir explicación clara del motivo. La disponibilidad de préstamos express (hasta $9M) no llega a todos los perfiles.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 25,
+      "delta_pp": -1.8,
+      "causas_raiz": [
+        {
+          "titulo": "Percepción de la app como funcional pero sin mejoras significativas en usabilidad ni navegación",
+          "descripcion": "La mayoría de los usuarios percibe la complejidad de la app como promedio: cumple su función básica pero no destaca por innovación en experiencia de usuario. La navegación entre secciones y la búsqueda de funciones podrían ser más intuitivas.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Episodios de caída de la app que generan desconfianza operativa en momentos de pago",
+          "descripcion": "Aunque la dimensión mejoró, persisten reportes de caídas puntuales de la app que impiden realizar pagos o transferencias en momentos críticos. La caída reportada a fines de 2025 dejó marca en la percepción de usuarios.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Proceso de autenticación percibido como engorroso para operaciones frecuentes",
+          "descripcion": "Algunos usuarios encuentran que el proceso de verificación (código, biometría) es demasiado frecuente para operaciones simples como consultar saldo o hacer transferencias de bajo monto.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 10,
+      "delta_pp": -0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Preocupación por campañas de phishing por WhatsApp que suplantan identidad de Naranja X",
+          "descripcion": "Las alertas sobre estafas por WhatsApp donde delincuentes se hacen pasar por empleados de Naranja X generan inquietud entre usuarios, aunque la dimensión mejoró. Las estafas con pretexto de 'renovación de tarjeta' buscan robar credenciales y vaciar saldos y Frascos.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Percepción de seguridad mejorada gracias a biometría y notificaciones pero sin diferenciación clara",
+          "descripcion": "Los usuarios reconocen mejoras en seguridad (biometría, alertas) pero no perciben que Naranja X sea más segura que el promedio del mercado. La seguridad se ve como un básico cumplido, no como un diferencial.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Falta de respuesta satisfactoria ante reclamos por transacciones no reconocidas",
+          "descripcion": "Algunos usuarios que sufrieron movimientos no autorizados reportan que el soporte de Naranja X no resuelve el problema de forma ágil ni restituye el dinero, lo que erosiona la confianza en la seguridad de la plataforma.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 20,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Costos de mantenimiento de tarjeta de crédito percibidos como elevados frente a competidores gratuitos",
+          "descripcion": "El costo mensual de mantenimiento y la renovación anual de la tarjeta de crédito Naranja X se perciben como altos, especialmente cuando bancos y otras fintechs ofrecen tarjetas sin costo de mantenimiento.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Recargos en comercios al pagar con tarjeta Naranja X que encarecen las compras presenciales",
+          "descripcion": "Usuarios reportan que algunos comercios aplican recargos (10-25%) al pagar con Naranja X, percibiendo que este sobrecosto no ocurre con tarjetas bancarias tradicionales, lo que desincentiva su uso.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Cobros sorpresivos en resumen de cuenta por servicios no solicitados",
+          "descripcion": "Algunos usuarios descubren cargos por seguros, suscripciones o servicios que no recuerdan haber contratado, generando desconfianza y la necesidad de revisar cada resumen detalladamente.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 17,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Oferta funcional percibida como promedio: cumple lo básico sin innovación destacada",
+          "descripcion": "La mayoría de los usuarios percibe las funcionalidades como adecuadas pero sin diferenciación. La app permite pagos, transferencias y gestión de tarjeta, pero no innova con funcionalidades que otras apps ya ofrecen (inversiones diversificadas, marketplace integrado).",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Falta de versión web/PC y gestión limitada de tarjetas adicionales",
+          "descripcion": "Usuarios reclaman funcionalidades ausentes como acceso desde computadora, gestión de tarjetas adicionales (pausar, dar de baja) y mayor integración con servicios de terceros.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Experiencia inferior a Mercado Pago en variedad de operaciones y aceptación en comercios",
+          "descripcion": "Usuarios que comparan directamente con Mercado Pago perciben que Naranja X tiene menos operaciones disponibles y menor aceptación de QR en comercios, especialmente fuera de Córdoba.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 19,
+      "delta_pp": -0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Atención al cliente automatizada que no permite escalar a un agente humano para problemas complejos",
+          "descripcion": "La frustración principal sigue siendo el servicio automatizado (chatbot) que no logra resolver consultas complejas y no permite hablar con un representante real. Los usuarios dan vueltas sin encontrar solución.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Demoras en la resolución de reclamos por cobros indebidos y operaciones no reconocidas",
+          "descripcion": "Cuando los usuarios logran contactar al soporte, los tiempos de resolución son largos y no hay seguimiento proactivo. Reclamos por cargos no autorizados pueden tardar semanas sin cierre.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Calidad desigual de atención presencial según la localidad de la sucursal",
+          "descripcion": "Usuarios del interior reportan experiencias dispares en sucursales físicas, con diferencias notorias en la calidad del trato según la ciudad, afectando especialmente a personas mayores.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    }
+  }
+}

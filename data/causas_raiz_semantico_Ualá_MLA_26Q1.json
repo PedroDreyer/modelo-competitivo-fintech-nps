@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "player": "Ualá",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Promociones": {
+      "total_comentarios_analizados": 55,
+      "delta_pp": 3.8,
+      "causas_raiz": [
+        {
+          "titulo": "Percepción de pocas promociones relevantes para el consumo cotidiano frente a bancos y otras billeteras",
+          "descripcion": "La mayoría de los usuarios percibe que las promociones de Ualá son iguales o inferiores al promedio del mercado. Las billeteras bancarias (Banco Provincia, Banco Ciudad) y Mercado Pago ofrecen descuentos más frecuentes en supermercados y rubros de alta demanda.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 25,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Caída del cashback percibido: el 5% de reintegro en Caja de Ahorro no compensa la reducción de promos específicas",
+          "descripcion": "Si bien Ualá lanzó la Caja de Ahorro con 5% de cashback general (tope $50.000), los usuarios perciben que las promociones puntuales con descuentos altos (20-30%) en comercios específicos se redujeron en cantidad y variedad respecto al trimestre anterior.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Beneficios concentrados en rubros de nicho (indumentaria, deportes) que no aplican al usuario promedio",
+          "descripcion": "Las promociones más atractivas (20-25% reintegro) se concentran en rubros como Dexter, Moov y Stock Center, que no son de consumo frecuente. Los usuarios buscan descuentos en supermercados, farmacia y gastronomía con mayor frecuencia.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 67,
+      "delta_pp": 2.0,
+      "causas_raiz": [
+        {
+          "titulo": "Tasa de cuenta remunerada percibida como promedio del mercado pese a ajustes recientes al alza",
+          "descripcion": "Aunque Ualá subió su TNA a 29%, la mayoría de los usuarios percibe el rendimiento como igual al promedio. Competidores como Cocos (40%) y Naranja X (31% en Frascos) ofrecen tasas superiores, y la Tasa Base sin condiciones (22-23%) queda por debajo.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 34,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Condiciones de la Tasa Plus difíciles de alcanzar: requieren $500.000 de consumo mensual",
+          "descripcion": "La tasa más atractiva (26% TNA Tasa Plus) requiere consumos mayores a $500.000 mensuales, lo que excluye a una parte importante de los usuarios que no alcanzan ese umbral y quedan con la tasa base inferior.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Caída generalizada de tasas del BCRA que impacta el rendimiento percibido en todas las billeteras",
+          "descripcion": "La baja de la tasa de referencia del BCRA afectó los rendimientos de todas las billeteras, pero los usuarios de Ualá perciben que la plataforma no logró diferenciarse lo suficiente pese a tener la Tasa Plus más alta que Mercado Pago.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 27,
+      "delta_pp": -2.1,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de préstamos percibidas como iguales al mercado sin ventaja competitiva clara",
+          "descripcion": "Los usuarios que aún se quejan de financiamiento perciben que las tasas de Ualá no son mejores que el promedio. Las tasas son a tasa fija con amortización francesa, pero no se diferencian de bancos tradicionales.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Acceso restringido a préstamos: requisito de 24 meses sin mora excluye a muchos usuarios",
+          "descripcion": "El requisito de no tener mora en los últimos 24 meses para acceder a préstamos deja afuera a usuarios que podrían ser buenos candidatos pero tuvieron algún atraso puntual en el pasado.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Límites de crédito insuficientes que no se ajustan al perfil de uso del cliente",
+          "descripcion": "Usuarios activos con buen historial reportan que los montos ofrecidos son bajos y no se ajustan a su capacidad de pago real, generando la necesidad de recurrir a múltiples fuentes de financiamiento.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 26,
+      "delta_pp": -1.3,
+      "causas_raiz": [
+        {
+          "titulo": "App percibida como funcional y fácil pero sin innovación diferenciadora en experiencia de usuario",
+          "descripcion": "La mayoría de los usuarios considera la complejidad de la app como igual al promedio: funciona correctamente pero no destaca en diseño ni en facilidad de navegación respecto a competidores como Mercado Pago.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Episodios de caída de la app a inicio de enero que afectaron la confianza operativa",
+          "descripcion": "La caída de Ualá reportada a principios de enero 2026 dejó a usuarios sin poder operar temporalmente, pero la rápida resolución contribuyó a que la dimensión mejorara respecto al trimestre anterior.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Mejora percibida en estabilidad y velocidad de la app respecto a trimestres anteriores",
+          "descripcion": "Un segmento de usuarios nota mejoras en la velocidad de carga, estabilidad general y experiencia de uso, lo que explica la caída de -1.3pp en quejas de complejidad.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 15,
+      "delta_pp": 0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia de canal telefónico y dependencia total del chat automatizado para reclamos",
+          "descripcion": "Ualá no ofrece línea telefónica de atención. Los usuarios solo pueden contactar vía chat de la app (con horarios limitados) o redes sociales, lo que genera frustración cuando el chatbot no resuelve problemas complejos.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Peor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Tiempos de respuesta largos y falta de seguimiento proactivo en reclamos abiertos",
+          "descripcion": "Usuarios reportan que los tickets de soporte quedan sin resolución durante días, sin comunicación proactiva sobre el estado del caso. Los reclamos por transferencias pendientes o bloqueos de cuenta son los más críticos.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Horario de atención limitado que no cubre emergencias fuera de horario comercial",
+          "descripcion": "El chat de atención funciona de lunes a viernes 9-21h y sábados 9-18h, dejando sin soporte los domingos y fuera de horario, justo cuando pueden ocurrir problemas de seguridad o bloqueos.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 10,
+      "delta_pp": 0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Desconfianza generada por episodios de cuentas bloqueadas sin motivo claro y fondos retenidos",
+          "descripcion": "Las denuncias de usuarios sobre bloqueos de cuenta sin explicación, transferencias que quedan pendientes sin acreditarse y dificultades para retirar fondos generan una percepción creciente de inseguridad en la plataforma.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Impacto residual del episodio de los USD 8.000 fantasma en la credibilidad del sistema",
+          "descripcion": "El incidente de mayo 2025 donde aparecieron USD 8.277 en cuentas de usuarios sin explicación clara sigue afectando la percepción de seguridad, pese a que Ualá lo atribuyó a 'inestabilidades momentáneas'.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Falta de comunicación oficial transparente ante incidentes de seguridad reportados",
+          "descripcion": "La ausencia de comunicados públicos claros ante fallas de seguridad y la respuesta automatizada del soporte erosionan la confianza de usuarios que esperan transparencia y resolución proactiva.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 12,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Expectativa creciente de funcionalidades que no se cumple al ritmo de la competencia",
+          "descripcion": "Los usuarios perciben que las funcionalidades de Ualá no se expanden al ritmo esperado. Pese al lanzamiento de seguros con Allianz y Caja de Ahorro, la comparación con el ecosistema más amplio de Mercado Pago genera insatisfacción.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Limitaciones en la operatoria con dólares y falta de funcionalidades de inversión avanzadas",
+          "descripcion": "Usuarios demandan mayor operatoria en dólares (compra, venta, transferencias internacionales) y herramientas de inversión más sofisticadas que las actuales, como acceso a bonos o acciones.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Nuevas funcionalidades como seguros y Caja de Ahorro valoradas positivamente por un segmento",
+          "descripcion": "Un grupo de usuarios reconoce avances con el lanzamiento de seguros de vida (Allianz) y la Caja de Ahorro con CBU, percibiendo que Ualá está mejorando su propuesta.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 7,
+      "delta_pp": -0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Comisiones y costos ocultos en operaciones específicas que el usuario no esperaba",
+          "descripcion": "Los usuarios reportan costos inesperados en ciertas operaciones (transferencias, extracciones, conversiones) que no estaban claros al momento de abrir la cuenta, generando percepción de falta de transparencia.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Peor que el promedio",
+            "Peor que el promedio",
+            "Peor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Percepción favorable de gratuidad en cuenta y tarjeta frente a bancos tradicionales",
+          "descripcion": "Un segmento de usuarios valora que la cuenta y tarjeta de Ualá no tienen costo de mantenimiento, lo que explica que esta dimensión se mantenga estable y con bajo impacto.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Peor que el promedio"
+          ]
+        }
+      ]
+    }
+  }
+}

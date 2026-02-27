@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLB",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Funcionalidades": {
+      "total_comentarios_analizados": 42,
+      "delta_pp": 1.1,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de operaciones bancarias completas frente a bancos tradicionales",
+          "descripcion": "Los usuarios perciben a Mercado Pago como un banco incompleto que no ofrece todas las operaciones bancarias de un banco tradicional. Mencionan carencias en funcionalidades avanzadas y lo comparan desfavorablemente con Banco Inter y otros.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Porque não oferece todas as operações bancárias que um banco tradicional oferece e não tem caixas eletrônicos nem agências físicas",
+            "eu não acho ele um banco completo",
+            "Um ótimo banco, mas ainda atrás em funcionalidade como o banco Inter."
+          ]
+        },
+        {
+          "titulo": "Ausencia de depósitos y saques en efectivo sin cajeros propios",
+          "descripcion": "Una queja recurrente es la imposibilidad de hacer depósitos y retiros en efectivo. La falta de cajeros automáticos propios y agencias físicas limita la usabilidad para quienes necesitan operar con dinero físico.",
+          "frecuencia_pct": 19,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Não tem como fazer depósitos, e saques em moeda",
+            "Porque não oferece todas as operações bancárias que um banco tradicional oferece e não tem caixas eletrônicos nem agências físicas",
+            "Por ser um Banco, que oferece alguns servicos um pouco dificil de se adaptar."
+          ]
+        },
+        {
+          "titulo": "Bugs y falhas técnicas en la app",
+          "descripcion": "Varios usuarios reportan problemas técnicos en la aplicación: bugs, falhas y dificultades de uso que afectan la experiencia general.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Tem algumas falhas técnicas",
+            "Bom, mas pode mehorar, apresenta alguns bugs noapp, baixa oferta de limite, jutos um pouco altos",
+            "Precisa melhorar algumas funções tipo querer adiantar parcelas das compras quando quizer"
+          ]
+        },
+        {
+          "titulo": "Falta de programa de puntos y fidelización",
+          "descripcion": "Usuarios piden un sistema de puntuación por uso, programa de fidelidad o acumulación de millas, funcionalidades que otros bancos ya ofrecen.",
+          "frecuencia_pct": 12,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Falta pontuação por uso",
+            "Não há funcionalidade de ajuste do limite do cartão e opção de usar na app pay",
+            "É bom mas não perfeito acho que poderiam ter mais coisa para usar nele"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento bajo e insuficiente comparado con competidores",
+          "descripcion": "La queja dominante es que el rendimiento de Mercado Pago es bajo. Usuarios comparan explícitamente con Nubank y 99Pay, que ofrecen mejores tasas. El rendimiento de los cofrinhos no es competitivo.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 24,
+          "ejemplos": [
+            "Os rendimentos da conta são bem baixos",
+            "o rendimento do mercado pago era melhor, por isso abri a conta mas agora o nubank paga melhor, estou pensando em concentrar lá os investimentos",
+            "Não é uma conta interessante pra mim. A 99 rende muito mais. Só uso para receber o cashback do mercado livre"
+          ]
+        },
+        {
+          "titulo": "Rendimiento premium limitado a montos bajos (tope de R$10.000)",
+          "descripcion": "El rendimiento de 120% CDI solo aplica hasta R$10.000, y por encima cae a 100% CDI. Usuarios con más capital sienten que no vale la pena dejar dinero en Mercado Pago.",
+          "frecuencia_pct": 16,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "O rendimento dos cofrinhos deveria ser igual ao valor normal da conta (Ou seja ao inves de 120% até 10k e o restante 100% CDI, deveria ser 120% do CDI até 10k e o restante 105%)",
+            "o rendimento bom é limitado a um valor muito baixo",
+            "Apesar de ter o seu porquinho, ele não é interessante acima de 10.000,00"
+          ]
+        },
+        {
+          "titulo": "Falta de opciones de inversión diversificadas",
+          "descripcion": "Usuarios demandan más opciones de inversión (acciones, fondos, CDBs variados). Comparan con Itaú y otros que ofrecen un catálogo más amplio.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Precisa melhorar a oferta de investimentos.",
+            "Falta opções de ações",
+            "Gosto do mercado pago, porém as opções de investimentos do Itaú e funcionalidades sao melhores."
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 11,
+      "delta_pp": -0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Taxas e tarifas elevadas comparadas con bancos digitales",
+          "descripcion": "Los usuarios se quejan de que las tasas de servicio y tarifas de Mercado Pago son más altas que las de otros bancos digitales, especialmente para saques y parcelamento.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Sacar dinheiro só caixa eletrônico ainda tem uma taxa alta, outros bancos você pode realizar isso algumas vezes no mês sem pagar taxas",
+            "as tarifas do app são maiores que dos outros bancos digitais",
+            "Taxas menos elevadas"
+          ]
+        },
+        {
+          "titulo": "Cobros indebidos de límite de crédito no autorizados",
+          "descripcion": "Algunos usuarios reportan cobros de taxas de límite de crédito que nunca aprobaron, generando desconfianza en el producto de crédito.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Tenho problemas frequentes com o mercado pago por cobrar uma taxa de limite a mais de crédito que eu nunca aprovei",
+            "Para vender com o mercado livre tem a taxa de serviço fora a taxa de parcelamento do cartão de crédito"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 99,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Pérdida de beneficios históricos: cashback y promoções eliminadas",
+          "descripcion": "Usuarios mencionan que Mercado Pago tenía beneficios atractivos (cashback en recargas, boletos) que fueron eliminados. La percepción es de deterioro progresivo de los beneficios.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "É bom banco, mas deixou de ter benefícios que antes tinha, como promoções/cashback para recarga de celular e pagamentos de boleto",
+            "Não dá cashback e as promoções não funcionam mesmo seguindo todos os requisitos",
+            "Porque eu uso direto e não tenho nenhum benefício"
+          ]
+        },
+        {
+          "titulo": "Falta de programa de fidelidade y acumulación de millas/puntos",
+          "descripcion": "Usuarios demandan un programa de fidelidad con puntos canjeables por millas o beneficios. Comparan con Nubank y bancos tradicionales que ya ofrecen esto.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "nao dá programa de fidelidade",
+            "não só o mercado pago mas todas as instituições bancárias acumulado pontos pra trocar por milhas poderia ser mais fácil e versátil.",
+            "Eu estou satisfeita. Só gostaria que houvesse uma opção de cartão de crédito que gerasse pontos ou acúmulo de milhas."
+          ]
+        },
+        {
+          "titulo": "Beneficios vinculados exclusivamente al Mercado Libre, no al banco",
+          "descripcion": "Los beneficios principales de Mercado Pago están atados al ecosistema Mercado Libre (Meli+, compras en ML). Para quienes no usan ML frecuentemente, el banco no ofrece ventajas propias.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "Acho que só é vantajoso pra quem compra no mercado livre ou quer um cartão de crédito",
+            "Parece mais um banco desenvolvido para vendas e compras do mercado livre",
+            "Gostaria que ativava o Meli+ pelo uso do cartão e não por ter que pagar uma taxa adicional"
+          ]
+        },
+        {
+          "titulo": "Promoções que não funcionam y ofertas com erro",
+          "descripcion": "Usuarios reportan que las promociones ofrecidas en el app dan error al intentar usarlas, generando frustración y desconfianza en la plataforma.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Nas ultimas vezes tive problemas com descontos oferecidos que davam erro e dificilmente funcionavam, precisava entrar em contato com atendimento.",
+            "Não cumprem as ofertas que recebemos no app",
+            "Não dá cashback e as promoções não funcionam mesmo seguindo todos os requisitos"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 35,
+      "delta_pp": -0.6,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia de senha para transações Pix dentro del app",
+          "descripcion": "La principal queja de seguridad es que el app no exige contraseña para realizar Pix u otras transacciones una vez abierto. En caso de robo del celular, cualquiera puede transferir dinero.",
+          "frecuencia_pct": 26,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Para fazer algum pagamento ou pix o app não pede uma senha para as movimentações.",
+            "Eu tive problemas sobre não ter uma senha para autorizar a transação, achei inseguro em caso de roubo",
+            "Porque acho que deveria ter senha pra fazer Pix so tem senha para abrir o app"
+          ]
+        },
+        {
+          "titulo": "Clonação de cartão recurrente sin resolução",
+          "descripcion": "Múltiples usuarios reportan clonación de tarjeta (física y virtual) y que el problema persiste incluso después de bloquear y solicitar nueva tarjeta.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Meu cartão físico e virtual foi clonado e mesmo após bloquear e solicitar outro ainda recebo alertas de uso.",
+            "Tive diversas vezes cartao clonado sem sequer usar ele de forma física",
+            "Vivo recebendo e-mail fraudulento. Vários cartões cadastrados lá já foram hackeados / vazados."
+          ]
+        },
+        {
+          "titulo": "Desconfianza por origen argentino y falta de cobertura FGC",
+          "descripcion": "Usuarios brasileños desconfían de Mercado Pago por ser de origen argentino y porque los saldos no están cubiertos por el Fundo Garantidor de Créditos (FGC), generando percepción de inseguridad patrimonial.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "E Argentina de origem e gera desconfiança.",
+            "É um bom banco digital, porém menos confiável do que um banco tradicional",
+            "Precisaria de segurança fgc"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 41,
+      "delta_pp": 0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de hablar con un ser humano en el atendimiento",
+          "descripcion": "La queja más frecuente es la extrema dificultad de contactar un atendente humano. El sistema de IA/bot no resuelve los problemas y los usuarios sienten que es intencional dificultar el contacto.",
+          "frecuencia_pct": 39,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "O maior problema é a dificuldade para o atendimento com um ser humano, a impressão que tenho é que é proposital",
+            "dificuldade em falar com humanos",
+            "PORQUE TIVE DIFICULDADE EM FALAR COM ATENDIMENTO UMA VEZ QUE PRECISEI"
+          ]
+        },
+        {
+          "titulo": "Ausencia de agencias físicas para resolver problemas presencialmente",
+          "descripcion": "Usuarios demandan agencias físicas para resolver problemas que no se pueden solucionar virtualmente. Personas mayores y situaciones complejas requieren atención presencial.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Não ter agencia física",
+            "Conta sem agência é muito difícil de resolver.",
+            "Estou muito satisfeita mas acho que falta alguém que possa nos atender pessoalmente e não virtualmente. Pessoas idosas tem dificuldade."
+          ]
+        },
+        {
+          "titulo": "Descaso y falta de resolución en casos de fraude y disputas",
+          "descripcion": "Cuando ocurren problemas graves (fraude, cobros indebidos, compras no autorizadas), el atendimiento no resuelve y los usuarios deben recurrir a BACEN o boletim de ocorrência.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Já tive problemas com mercado pago atendentes que não estão nem aí tive que fazer boletim de ocorrência p ter meu dinheiro de volta",
+            "Resolver o problema na hora que a gente pede. Às vezes eles mandaram meu nome para o SPC sendo que eu tinha dinheiro na minha conta",
+            "Não antecipa parcelas do cartão de crédito. Atendimento muito falho e sem educação, abrir BACEN e ainda foi ruim."
+          ]
+        }
+      ]
+    }
+  }
+}

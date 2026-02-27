@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "player": "Banco Santander",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "fecha_generacion": "2026-02-27",
+    "tipo": "promotores",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 217,
+      "delta_pp": 1.2,
+      "porcentaje_promotores": 25.3,
+      "causas_raiz": [
+        {
+          "titulo": "App y home banking funcionales que permiten operar sin necesidad de ir a sucursal",
+          "descripcion": "Los promotores valoran poder realizar transferencias, pagos y consultas desde la app o el home banking sin necesidad de visitar la sucursal física, algo que antes requería presencialidad obligatoria.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 98,
+          "ejemplos": [
+            "Es un banco internacional y tiene una app y pagina muy amigable y facil de usar!",
+            "Es mi Banco de cabecera",
+            "Ofrece muy buenos servicios."
+          ]
+        },
+        {
+          "titulo": "Practicidad en operaciones cotidianas como pagos, transferencias y consultas de saldo",
+          "descripcion": "Los usuarios destacan la comodidad de poder operar de manera rápida para las necesidades del día a día, valorando que el banco cubre la mayoría de sus necesidades operativas.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 76,
+          "ejemplos": [
+            "Es la que más uso y cubre la mayoría de mis necesidades la app es fácil de usar y siempre funciona",
+            "Practico simple np te mata con las tasas y cobros",
+            "Porque me parece confiable y cumple con lo que ofrece"
+          ]
+        },
+        {
+          "titulo": "Confianza y estabilidad como banco internacional con trayectoria consolidada",
+          "descripcion": "La trayectoria de Santander como banco internacional genera confianza en usuarios de larga data que valoran la solidez institucional por sobre las funcionalidades digitales de las fintechs.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 43,
+          "ejemplos": [
+            "Porque soy clienta hace muchos años y nunca tuve inconvenientes",
+            "Hace 20 años tengo la cuenta",
+            "Me gusta el banco"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 207,
+      "delta_pp": -0.7,
+      "porcentaje_promotores": 23.5,
+      "causas_raiz": [
+        {
+          "titulo": "Cobertura completa de servicios bancarios tradicionales en una sola entidad",
+          "descripcion": "Los promotores valoran tener cuenta corriente, caja de ahorro, tarjetas de crédito/débito, préstamos y seguros todo en un mismo lugar, sin necesidad de recurrir a múltiples entidades.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 104,
+          "ejemplos": [
+            "Ofrece muy buenos servicios.",
+            "Porque me parece confiable y cumple con lo que ofrece",
+            "Funciona muy bien, suelen dar respuestas acordes."
+          ]
+        },
+        {
+          "titulo": "Acceso a créditos y tarjetas que satisfacen necesidades de financiamiento personal",
+          "descripcion": "Usuarios que accedieron a préstamos o tarjetas de crédito valoran la disponibilidad de estas herramientas, especialmente los créditos UVA y tarjetas con límites adecuados.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 62,
+          "ejemplos": [
+            "Porque atiende bien y te da la respuesta siempre y créditos",
+            "No tuve facilidades de préstamo, pero de todas maneras siempre tuve muy buena atención",
+            "cobro el sueldo ahi hace 15 años"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 178,
+      "delta_pp": 4.3,
+      "porcentaje_promotores": 20.7,
+      "causas_raiz": [
+        {
+          "titulo": "Descuentos en comercios y consumo diario a través de tarjetas y programa MODO",
+          "descripcion": "Los promotores que valoran las promociones destacan los descuentos disponibles a través de MODO y las tarjetas del banco en gastronomía, supermercados y combustible.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 89,
+          "ejemplos": [
+            "util comoda y buenas promociones",
+            "Los descuentos van acorde a mi espíritu consumista",
+            "Porque me parece un buen banco pero ofrece poco promociones en supermercados"
+          ]
+        },
+        {
+          "titulo": "Programa SuperClub y beneficios del segmento Select como diferencial frente a fintechs",
+          "descripcion": "Usuarios que activan el programa SuperClub o pertenecen al segmento Select rescatan beneficios exclusivos como acumulación de puntos y accesos a salas VIP que las billeteras virtuales no ofrecen.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 53,
+          "ejemplos": [
+            "Porque me parece confiable y cumple con lo que ofrece",
+            "Porque me gusta el banco pero ofrece poco promociones en supermercados",
+            "No es mao, pero no tiene muchas promos a menos que seas del programa Sorpresa"
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 115,
+      "delta_pp": -2.6,
+      "porcentaje_promotores": 13.4,
+      "causas_raiz": [
+        {
+          "titulo": "Confianza en la solidez de un banco internacional con respaldo global",
+          "descripcion": "Los promotores valoran que Santander es un banco internacional con presencia global, lo que les genera sensación de seguridad y respaldo institucional para sus ahorros y operaciones.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 63,
+          "ejemplos": [
+            "Porque soy clienta hace muchos años y nunca tuve inconvenientes",
+            "Hace 20 años tengo la cuenta",
+            "Es un banco internacional y tiene una app y pagina muy amigable y facil de usar!"
+          ]
+        },
+        {
+          "titulo": "Percepción de seguridad por trayectoria personal sin incidentes en muchos años",
+          "descripcion": "Usuarios de larga antigüedad basan su confianza en la experiencia propia de no haber tenido problemas de fraude ni inconvenientes con sus fondos durante años.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 52,
+          "ejemplos": [
+            "Porque soy clienta hace muchos años y nunca tuve inconvenientes",
+            "NUNCA TUVE PROBLEMAS",
+            "no tuve inconvenientes hasta el momento"
+          ]
+        }
+      ]
+    },
+    "Atención al cliente": {
+      "total_comentarios_analizados": 56,
+      "delta_pp": -1.3,
+      "porcentaje_promotores": 6.5,
+      "causas_raiz": [
+        {
+          "titulo": "Atención presencial y telefónica que resuelve consultas cuando se logra acceder",
+          "descripcion": "Los promotores que valoran la atención reconocen que cuando logran contactar a una persona, la respuesta suele ser buena y resolutiva, especialmente en sucursal.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 31,
+          "ejemplos": [
+            "Porque atiende bien y te da la respuesta siempre y créditos",
+            "Porque me conforma a lo que yo necesito",
+            "No he tenido grandes problemas. Esta bien."
+          ]
+        },
+        {
+          "titulo": "Canales múltiples de contacto que ofrecen alternativas ante distintas necesidades",
+          "descripcion": "Los usuarios valoran disponer de sucursal física, teléfono, app y home banking como canales complementarios, aunque reconocen que no todos funcionan con la misma eficiencia.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 25,
+          "ejemplos": [
+            "Funciona muy bien, suelen dar respuestas acordes.",
+            "Lo tengo para cobrar mi jubilación, creo que califique mal, si lo recomiendo",
+            "Porque me parece confiable y cumple con lo que ofrece"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "player": "Stori",
+    "site": "MLM",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos": {
+      "total_comentarios_analizados": 20,
+      "delta_pp": -3.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de rendimiento bajas y poco competitivas frente a otras cuentas del mercado",
+          "descripcion": "Múltiples usuarios perciben que las tasas de rendimiento ofrecidas por Stori son inferiores a las de bancos tradicionales y otras fintech, lo que los lleva a preferir alternativas",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Las tasas son bajas",
+            "La tasa de rendimiento es baja en comparación con otras cuentas",
+            "Porque no tienen ganancias cuando dejas tu dinero en la tarjeta de débito"
+          ]
+        },
+        {
+          "titulo": "Deterioro del rendimiento respecto a lo ofrecido inicialmente: pérdida del 3% original",
+          "descripcion": "Usuarios que ingresaron atraídos por un rendimiento del 3% expresan decepción al constatar que se redujo significativamente con el tiempo o se topa",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Ya no dan el 3% como al principio, eso resulto decepcionante.",
+            "Antes daba mejor rendimiento",
+            "Porque es bueno su ahorro pero lo topa"
+          ]
+        },
+        {
+          "titulo": "Ausencia de productos de inversión y opciones de ahorro confusas o inexistentes",
+          "descripcion": "Stori carece de productos de inversión claros; los usuarios reportan que no hay opciones más allá de la cuenta básica y las existentes resultan poco transparentes",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Tiene pocas opciones de inversión",
+            "La app se complicaba un poco al inicio . Las fechas de corte no me quedaban claras, no hay productos de inversión",
+            "Es una cuenta con inversiones poco claras"
+          ]
+        },
+        {
+          "titulo": "Percepción de falta de valor diferencial: Stori no aporta beneficios extra vs alternativas existentes",
+          "descripcion": "Un grupo significativo de usuarios considera que Stori no ofrece valor adicional respecto a sus otros bancos o apps financieras, resultando prescindible en su portafolio",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Mas bien con las otras que ya uso tengo suficiente, no me aporta nada extra",
+            "No es una app mala, pero no tiene facilidades de pago",
+            "PORQUE PODRÍAN OFRECER MEJOR PORCENTAJE EN INVERSIÓN"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 8,
+      "delta_pp": 1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Servicios y funcionalidades limitadas para un banco digital aún en crecimiento",
+          "descripcion": "Los usuarios perciben que Stori, como banco relativamente nuevo, ofrece servicios insuficientes y no cumple las condiciones prometidas al momento de contratación",
+          "frecuencia_pct": 37,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Es una banco relativamente nuevo en el mercado, tiene muchas áreas de oportunidad y crecimiento y puede mejorar los servicios que ofrece que son un poco limitados.",
+            "Podría mejorar un poco más con las funcionalidades que ofrece",
+            "Porq no cumplw las condiciones que prometio en su monenti"
+          ]
+        },
+        {
+          "titulo": "Interfaz de la aplicación compleja y difícil de navegar para el usuario",
+          "descripcion": "Usuarios reportan que la app de Stori tiene una interfaz poco intuitiva que dificulta su uso cotidiano y genera fricción",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Interfaz compleja",
+            "La app es difícil de usar"
+          ]
+        },
+        {
+          "titulo": "Falta de MSI generalizado, intereses altos y límite de crédito insuficiente",
+          "descripcion": "La tarjeta no permite pagar a MSI en la mayoría de establecimientos, cobra intereses elevados y ofrece un límite de crédito demasiado bajo para las necesidades del usuario",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "No es una tarjeta con la que puedas pagar a meses sin intereses en todas las tiendas posibles, además de que su taza de intereses es muy alta.",
+            "Por que el límite es muy bajo",
+            "Es una buena tarjeta además de que permite su uso para crédito y debito"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 12,
+      "delta_pp": -0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Aplicación confusa y difícil de navegar: funciones escondidas y herramientas poco accesibles",
+          "descripcion": "La interfaz no es amigable y los usuarios reportan que les cuesta encontrar funciones clave como la cuenta plus; la navegación general resulta confusa",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "La app no es tan amigable con el usuario y cuesta un poco de trabajo encontrar las herramientas, además de no aparecer la opción de la cuenta plus",
+            "La aplicación es un poco confusa de utilizar"
+          ]
+        },
+        {
+          "titulo": "Falta de transparencia: cobros automáticos del crédito, tasas variables y promociones fantasma",
+          "descripcion": "Las compras se cobran del crédito sin opción de usar saldo propio, los contratos cambian cada tres meses y existen promociones anunciadas que no se materializan",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Me gustaría que al momento de pagar con la tarjeta se cobrará con el saldo que hay y no cobrará directamente del credito",
+            "Porque sus tasas son muy variables y cambian los contratos cada tres meses",
+            "Por qué sacan promociones fantasma"
+          ]
+        },
+        {
+          "titulo": "Ausencia de infraestructura física: sin tarjeta de débito, sin cajeros ni sucursales",
+          "descripcion": "La falta de tarjeta física de débito y de puntos de atención presenciales limita la operatividad para usuarios que necesitan infraestructura bancaria tradicional",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "No maneja tarjeta física de débito",
+            "El que no tengan donde ir ya sea a un cajero o un Banco físico si me afecta un poco"
+          ]
+        },
+        {
+          "titulo": "Problemas operativos: reembolsos lentos, cobros por reposición incumplida e intereses altos",
+          "descripcion": "Los usuarios reportan reembolsos que tardan en reflejarse, cobro por reposición de tarjeta sin envío efectivo, intereses elevados y promesas generales no cumplidas",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Tiene muy mala atención al cliente ,los reembolso tardan en reflejarse.. solicita la reposición de mi tarjeta me cobraron pero no han hecho nada por enviarme de nuevo mi tarjeta",
+            "Es muy alto el interés",
+            "No cumple con lo que promete"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 11,
+      "delta_pp": 0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de contactar agentes humanos: comunicación con ejecutivos es extremadamente difícil",
+          "descripcion": "Los usuarios reportan que es prácticamente imposible hablar con una persona real; el acceso a operadoras y ejecutivos está bloqueado por sistemas automatizados o simplemente no existe soporte disponible",
+          "frecuencia_pct": 37,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Para hablar con una operadora es complicado",
+            "es un problema para comunicarse con un ejecutivo....",
+            "Cuando se tiene algún problema es imposible que te den soporte. La atención al cliente en general es terrible"
+          ]
+        },
+        {
+          "titulo": "Calidad del servicio deficiente e inconsistente cuando se logra contacto con soporte",
+          "descripcion": "Cuando los usuarios logran comunicarse, la atención recibida es frecuentemente deficiente, con personal que no resuelve problemas de manera efectiva y calidad variable entre agentes",
+          "frecuencia_pct": 36,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Se batalla un poco con la atención al cliente",
+            "La atención al cliente ( no de todos (as) ) muchas veces es deficiente",
+            "Podría mejorar el servicio a cliente y tener mejores promociones."
+          ]
+        },
+        {
+          "titulo": "Rigidez en procesos: imposibilidad de cancelar tarjeta, convertir pagos y lentitud en aumento de crédito",
+          "descripcion": "Los usuarios reportan que no pueden cancelar su tarjeta cuando lo desean, no es posible convertir pagos revolventes a MSI, y el aumento de crédito tras años de uso es mínimo",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Porque quise cancelarla en varias ocasiones y no me dejaron",
+            "Por que no puedes convertir de un pago revolvente a un pago a meses con intereses, osea solo es revolvente la tarjeta, y el aumento del crédito es muy tardado, tengo alrededor de 3 años con la tarjeta y solo la han aumentado una sola ocasión",
+            "Le falta soporte"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 4,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Vulnerabilidad en el envío de tarjetas físicas: robo durante el traslado sin reposición",
+          "descripcion": "Un usuario reporta que su tarjeta física nunca llegó porque fue robada durante el envío, evidenciando fallas en la logística de entrega y seguimiento",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Nunca llegó la tarjeta fisica, se la robaron el en traslado"
+          ]
+        },
+        {
+          "titulo": "Compras no reconocidas sin mecanismos claros de protección ante fraude",
+          "descripcion": "Un usuario reporta haber sufrido compras no reconocidas en su tarjeta, lo que sugiere debilidades en los sistemas de detección y prevención de fraude de Stori",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Por qué tuve comprás no reconocidas"
+          ]
+        },
+        {
+          "titulo": "Demoras en reflejar pagos que generan incertidumbre sobre la seguridad de transacciones",
+          "descripcion": "Los pagos tardan en reflejarse en la cuenta, generando desconfianza sobre si la transacción fue procesada correctamente y sobre la seguridad del sistema",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Aveces se tarda en reflejar el pago",
+            "Porque  se puede usar en muchos lados"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 20,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Escasez generalizada de promociones y MSI en establecimientos de uso cotidiano",
+          "descripcion": "Los usuarios demandan más promociones en tiendas donde compran regularmente y más opciones de meses sin intereses, pero Stori ofrece muy pocas o ninguna",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Me gustaría tuviera más promociones en muchos establecimientos a meses sin intereses",
+            "Porque no hay promociones",
+            "Necesita mejorar sus ofertas y promociones"
+          ]
+        },
+        {
+          "titulo": "Promociones engañosas: MSI con comisiones ocultas y beneficios no disponibles por zona geográfica",
+          "descripcion": "Usuarios reportan que Stori anuncia MSI pero termina cobrando comisión al saldo total, y los convenios con empresas no están disponibles en muchas zonas del país",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Porque ofrece promociones engañosas, indica que puedes comprar a meses sin intereses y al llegar al saldo total, te cobran comisión por los meses de pago.",
+            "tiene algunos convenios con algunas empresas, pero lamentablemente en mi zona  no hay la mayoria de esas empresas y no puedo disfrutar de esos beneficios",
+            "Es una tarjeta que esta hecha para gente que tiene problemas en buro de credito o es su primera tarjeta por ende, los beneficios o promociones son algo limitados, aunque en ocasiones existen algunos beneficios interesantes. Parece ser que los MSI son..."
+          ]
+        },
+        {
+          "titulo": "Percepción de tarjeta básica sin valor diferencial: beneficios insuficientes para recomendar",
+          "descripcion": "Un grupo significativo de usuarios ve a Stori como una tarjeta funcional pero sin elementos que la hagan destacar o que merezcan una recomendación entusiasta",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "La tarjeta es buena pero no excelente",
+            "Me gusta pero no sé qué la haría un 10.",
+            "Está muy bien solo ocupo más promociones para recomendar a mis amigos"
+          ]
+        },
+        {
+          "titulo": "Problemas operativos colaterales: comisiones por atraso, app abrumadora y bloqueos sin resolución",
+          "descripcion": "Usuarios reportan comisiones elevadas por mínimos atrasos, una app con demasiados apartados que resulta confusa, y bloqueos de tarjeta que no se resuelven por falta de soporte técnico",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "porque cuando uno se atrasa cobran mucho de comisión, de hecho en algún momento pensé en cancelarla",
+            "No twngo tanta experiencia con la aplicación pero tiene muchos apartados y es algo abrumador",
+            "Porque un día se me bloqueó la tarjeta de crédito y por más que yo quería desbloquearla la reporté y todo todo era con atención a clientes nunca me pasaron con los técnicos de servicio y por lo tanto no lo arreglaron hasta que saqué otra tarjeta de c..."
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 12,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés y CAT excesivamente altos que encarecen créditos y préstamos personales",
+          "descripcion": "La queja más frecuente es que Stori cobra intereses muy por encima del mercado tanto en tarjeta de crédito como en préstamos, haciendo que el costo total sea prohibitivo",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Porqué los intereses son muy altos",
+            "Demasiado interés, muy caro pagar un prestamo",
+            "El cat de la tarjeta de crédito considero que es muy alto"
+          ]
+        },
+        {
+          "titulo": "Relación costo-beneficio desfavorable: tarjeta cara con pocos beneficios frente a la competencia",
+          "descripcion": "Los usuarios perciben que Stori es más cara que otras tarjetas pero ofrece menos beneficios, con fechas de pago inconvenientes y formas de cobro poco claras",
+          "frecuencia_pct": 41,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Es muy cara la tarjeta y no da muchos beneficios como otras tarjetas",
+            "Por sus costos y formas de cobro",
+            "Las fechas de pago son muy próximas de lo que me gustaría"
+          ]
+        },
+        {
+          "titulo": "Línea de crédito mínima que no aumenta pese a tres o más años de antigüedad",
+          "descripcion": "Usuarios con más de 3 años como clientes reportan que el monto de crédito sigue siendo mínimo y prácticamente no ha crecido, limitando su utilidad",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "El crédito que ofrecen es minimo",
+            "Te prestan muy poquito y no sube el monto del crédito y ya llevo como 3 años con ella"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 38,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés desproporcionadas que duplican el costo real del crédito y préstamos",
+          "descripcion": "La queja principal es que Stori cobra intereses exorbitantes tanto en tarjeta de crédito como en préstamos personales, con usuarios que reportan pagar el doble del monto original",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Ok ntereses muy altos en los créditos, paga uno el doble",
+            "La tasa de interés es un verdadero robo imposible de pagar",
+            "Porque tiene tasas de interés muy altas para tarjeta de crédito"
+          ]
+        },
+        {
+          "titulo": "Límite de crédito estancado que no crece pese a años de uso constante y pagos puntuales",
+          "descripcion": "Usuarios con 3-4 años de antigüedad reportan que su límite apenas subió $1,000 pesos o se mantuvo igual, pese a pagos puntuales y uso regular de la tarjeta",
+          "frecuencia_pct": 26,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Tengo la cuenta desde hace 4 años y solo me subieron 1000 pesos mi limite de crédito",
+            "Porque tengo años usandola y no me ha aumentado mi credito",
+            "Pide el pago garantía una vez que pasas de ese y se gradúa la tarjeta no te regresan nada y después de tener bastante tiempo con ella aproximadamente 3 años nunca subieron la linea de crédito"
+          ]
+        },
+        {
+          "titulo": "Sistema de cobranza agresivo e intimidante: cientos de llamadas y mensajes por mínimos atrasos",
+          "descripcion": "Los usuarios reportan un sistema de cobranza excesivamente agresivo que los contacta cientos de veces por atrasos de un solo día, generando molestia extrema y deseos de cancelación",
+          "frecuencia_pct": 11,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Por que su sistema de cobranza es muy radical si te atrasas un dia te marcan 100 veces y es molesto",
+            "porque es muy acosadora, con demasiadas llamdas y mensajes antes y despues del pago",
+            "Te cobra muchos intereses, apenas te retrasas en un pago recibes cientos de llamadas hostigantes."
+          ]
+        },
+        {
+          "titulo": "Opciones de financiamiento limitadas: pocos MSI, depósito de garantía sin devolución y falta de transparencia",
+          "descripcion": "Los usuarios critican la escasez de opciones: pocos establecimientos con MSI, exigencia de depósito inicial que no se devuelve al graduarse, confusión entre dinero propio y crédito, y promesas de referidos incumplidas",
+          "frecuencia_pct": 34,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "No ofrece meses sin intereses con cualquier tienda departamental.",
+            "Porque ofrece tarjeta de crédito pero la tienes que activar con un depósito inicial",
+            "Porque no es claro cuándo es dinero mío y cuando es crédito"
+          ]
+        }
+      ]
+    }
+  }
+}

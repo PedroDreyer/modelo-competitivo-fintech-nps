@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "player": "Ualá",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Financiamiento": {
+      "total_comentarios_analizados": 29,
+      "delta_pp": 5.0,
+      "causas_raiz": [
+        {
+          "titulo": "No accede a préstamos pese a uso activo y antigüedad en la plataforma",
+          "descripcion": "El motivo más frecuente es la imposibilidad de acceder a préstamos. Usuarios con meses de uso y buen historial reportan que la app no les ofrece crédito, o que requiere acumular puntos. Esto frustra especialmente cuando ven que mueven dinero constantemente.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Llevo meses usando la cuenta y manejo buena suma de dinero y no me ofrece prestamos o tarjetas, ellos se benefician pero el cliente no",
+            "Solo que tenés que sumar puntos para obtener un préstamo",
+            "Es mucho mas conocida mercadopago, pero uala tiene lo suyo, solo necesito poder acceder a prestamos"
+          ]
+        },
+        {
+          "titulo": "Tasas de financiación excesivamente altas comparadas con el mercado",
+          "descripcion": "Usuarios que sí accedieron a préstamos se quejan de costos muy elevados. Perciben que la cuotificación y los préstamos tienen intereses que superan ampliamente la media del mercado.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Préstamo que ofrecen soy MUY CAROS.",
+            "Tiene costos de financiacion demasiados elevados",
+            "Tasas de intereses altas en préstamos y cuotificacion"
+          ]
+        },
+        {
+          "titulo": "No ofrece tarjeta de crédito o límite de crédito insuficiente que no se renueva",
+          "descripcion": "Varios usuarios reportan que no les ofrecen tarjeta de crédito, o que el límite asignado es muy bajo y no se actualiza en función del comportamiento de pago.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "No me ofrecen tarjeta de credito",
+            "Huala es una tarjeta que actualizó su línea de crédito hace poco y tampoco ofrecían préstamo",
+            "Tuve un excelente cumplimiento con ellos y no se tuvo en cuenta al momento de renovar un crédito"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 25,
+      "delta_pp": 3.4,
+      "causas_raiz": [
+        {
+          "titulo": "App se traba, tildes y lentitud al abrir que obligan a reiniciar el teléfono",
+          "descripcion": "Es el problema técnico más citado. La app se congela, tarda en abrir y a veces deja de funcionar completamente. Varios usuarios reportan tener que reiniciar el dispositivo para poder operar.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Cuando quiero hacer transferencias a veces no funciona y tengo que reiniciar mi teléfono, está sucediendo muy amenudo",
+            "Porque muchas veces se me tildo y no la podía usar",
+            "Porque muchas veces la página no anda, no ingresan las transferencias y no se puede usar la página."
+          ]
+        },
+        {
+          "titulo": "Transferencias complicadas con límites diarios estrechos y proceso engorroso para alias nuevos",
+          "descripcion": "Los usuarios reportan que transferir dinero es innecesariamente complejo: límites diarios muy bajos, muchos pasos para transferir a alias no guardados, y problemas específicos con dólares.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Porque da muchas vueltas para transferir",
+            "Transferencias muy estrechas diarias",
+            "Me parece que el formato de la aplicación por momentos es algo engorroso, como cuando tenes que transferirle dinero a un alias que no tenes guardado."
+          ]
+        },
+        {
+          "titulo": "Exceso de pasos de verificación y contraseñas que retrasan cada operación",
+          "descripcion": "Usuarios se frustran con la cantidad de contraseñas y códigos de verificación requeridos para operar. El doble factor retrasa operaciones simples.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Te pide que te gas varias contraseñas para más seguridad y eso es algo molesto",
+            "Porque en algunas oportunidades el doble código retraza la operación",
+            "Me piden muchos datos"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 29,
+      "delta_pp": -3.2,
+      "causas_raiz": [
+        {
+          "titulo": "Escasez de descuentos y promociones relevantes comparado con otras billeteras",
+          "descripcion": "Los usuarios perciben que Ualá tiene menos promociones que competidores como Mercado Pago. Los descuentos existentes no aplican a sus consumos habituales.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Tiene pocos descuentos y promociones",
+            "Me sirve por el porcentaje que tiene ahora en la cuenta remunerada, nada más. No larga ninguna promo...",
+            "Los descuentos que tiene, no me sirven en mi caso particular"
+          ]
+        },
+        {
+          "titulo": "Sin beneficios para quienes no tienen tarjeta de crédito Ualá",
+          "descripcion": "Los beneficios y reintegros de Ualá se concentran en la tarjeta de crédito. Quienes solo usan débito o billetera sienten que no reciben beneficios.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "porque el que no tiene targeta de credito no tiene beneficios",
+            "Es opción muy intuitiva y no tiene muchos errores como las bancarizadas, la de crédito es muy buena falta más promociones para la de crédito",
+            "Yo lo que cambiaria es que tenga mas descuentos y promociones en los diferentes mercados."
+          ]
+        },
+        {
+          "titulo": "Reintegros difíciles de solicitar y con demoras prolongadas",
+          "descripcion": "Usuarios que acceden a reintegros reportan que el proceso es complicado y los plazos para recibirlos son largos.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "porque los reintegros hay que solicitarlos tardan mucho",
+            "Fueron sacando descuentos que eran importantes par mi",
+            "Fallas en la app Promociones"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 9,
+      "delta_pp": 1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Pocas funcionalidades en comparación con otras billeteras del mercado",
+          "descripcion": "Usuarios sienten que la app ofrece menos opciones que competidores, pidiendo mayor variedad de funciones.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Me gustaría que tengas más funciones",
+            "Porque falta más cos",
+            "uso poco esta aplicacion"
+          ]
+        },
+        {
+          "titulo": "Falta de productos complementarios como crédito y beneficios",
+          "descripcion": "Se percibe que la oferta de Ualá es limitada: usuarios quisieran crédito, descuentos y más funciones integradas.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Porque no.me califica para crédito",
+            "También me gustaría que tenga más promos o descuentos",
+            "Nada para agregar"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 4,
+      "delta_pp": 0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Comisiones de cuenta percibidas como más caras que las de bancos tradicionales",
+          "descripcion": "Algunos usuarios comparan las comisiones de Ualá desfavorablemente contra bancos y otras billeteras.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "La comisión de cuenta es más cara que en los bancosn",
+            "Muchas veces no funcionó del todo bien"
+          ]
+        },
+        {
+          "titulo": "Porcentaje de intereses por inversiones percibido como bajo",
+          "descripcion": "Usuarios que invierten dentro de Ualá perciben que el retorno es inferior al esperado.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "porque me da poco porcentaje de intereses cuando realizo inversiones",
+            "Es facil de usar..tiene buen interes... Tiene tarjeta de crédito"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 40,
+      "delta_pp": -0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Tasa de rendimiento en cuenta que descendió y es inferior a la de billeteras competidoras",
+          "descripcion": "La queja principal es que el rendimiento bajó considerablemente y hoy es peor que el de Mercado Pago, Naranja X y otras opciones. Los usuarios monitorean activamente las tasas.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Porque la tasa de rendimiento del dinero es baja a comparación de otras billeteras",
+            "Bajo el rendimiento de la tasa de interés",
+            "Es facil usarla pero el rendimiento no ws bueno"
+          ]
+        },
+        {
+          "titulo": "Rendimiento no es automático: obligación de invertir manualmente para generar intereses",
+          "descripcion": "A diferencia de competidores donde el saldo rinde automáticamente, en Ualá se percibe que hay que invertir activamente para obtener rendimiento, lo cual es una barrera.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "de todas las billeteras era las mas complicada no generaba intereres sobre tu saldo directamente por eso deje de usarlo con mas frecuencia",
+            "Pues no ofrece rendimientos de dinero en la cuenta",
+            "Antes la usaba mucho pero es poco práctico que el rendimiento lo genere solo invirtiendo"
+          ]
+        },
+        {
+          "titulo": "Tope de $1.000.000 para rendimiento que limita ganancias en saldos mayores",
+          "descripcion": "Ualá genera rendimiento solo hasta $1M de saldo, lo cual penaliza a usuarios con mayor capacidad de ahorro.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Genera intereses por mantenimiento de hasta 1M. Osea q en cifras superiores ya no genera rendimiento por tenencia",
+            "te coloca minimos para darte mayor rendimiento en cuenta",
+            "La uso depende del porcentaje de rendimiento"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 6,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Casos de hackeo y robo de dinero sin respuesta ni solución por parte de Ualá",
+          "descripcion": "Usuarios reportan accesos no autorizados a sus cuentas con intentos o concreción de robo. El problema se agrava por la falta de respuesta efectiva de soporte.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "porque un hacker accedió a mi cuenta e intento robarme plata",
+            "porque me robaron plata, y no tuve solución"
+          ]
+        },
+        {
+          "titulo": "Percepción de inseguridad general frente a bancos y otras billeteras",
+          "descripcion": "Algunos usuarios no confían en la seguridad de Ualá comparada con bancos tradicionales u otras billeteras. Temen no poder recuperar su dinero.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "A veces no me da mucha confianza y temo no poder retirar mi dinero",
+            "Porque me da mas seguridad otro tipo de cuenta virtual."
+          ]
+        },
+        {
+          "titulo": "Falta de soporte inmediato cuando se compromete la seguridad de la cuenta",
+          "descripcion": "Ante eventos de seguridad, el soporte tarda demasiado o es inexistente, dejando al usuario expuesto.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "La atención al cliente ante dificultades es muy lenta, si se compromete la seguridad de la cuenta estas expuesto totalmente",
+            "Porque no es segura ni tiene atención personalizada frente a reclamos"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 14,
+      "delta_pp": -0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de contactar atención al cliente por teléfono u otro canal directo",
+          "descripcion": "Los usuarios no encuentran un número de teléfono ni canal directo para hacer reclamos. Esto genera frustración ante cualquier problema.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Un teléfono o algún nro más accesible para reclamos. Y que atiendan en el momento.",
+            "No posee una linea directa de atención al cliente",
+            "No encuentro para atención al cliente"
+          ]
+        },
+        {
+          "titulo": "Demoras prolongadas en resolver reclamos y devolver dinero",
+          "descripcion": "Cuando logran contactar soporte, las respuestas tardan y la resolución de devoluciones de dinero es lenta.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Ante problemas tardan en contestar y resolver la devolución de dinero.",
+            "Tuve problemas de seguridad y no tuve respuesta",
+            "Tuve un inconveniente con la tarjeta que jamas la mandaron al domicilio y no pude gestionar el reclamo."
+          ]
+        },
+        {
+          "titulo": "Gestión agresiva de cobros de préstamos que deteriora la relación con el cliente",
+          "descripcion": "En casos de demora en pagos, Ualá adopta una actitud hostil en lugar de ofrecer alternativas o flexibilidad.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "se pusieron medio violentos al reclamar el pago de una cuota de un préstamo. Tengo cuenta, uso los préstamos hace más de un año, siempre pagando.",
+            "me parece buena pero podria ser mejor la atencion al cliente"
+          ]
+        }
+      ]
+    }
+  }
+}

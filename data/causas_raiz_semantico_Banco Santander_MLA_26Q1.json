@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "player": "Banco Santander",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos": {
+      "total_comentarios_analizados": 32,
+      "delta_pp": -3.3,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia total de rendimiento por dinero en cuenta corriente frente a billeteras que sí remuneran",
+          "descripcion": "El reclamo más frecuente es que Banco Santander no ofrece rendimiento por el dinero en cuenta, a diferencia de billeteras como Mercado Pago, Ualá o Personal Pay que remuneran automáticamente. Los usuarios sienten que su dinero pierde valor contra la inflación al no generar intereses diarios.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Me gustaría que pudieras ganar porcentajes de dinero por solo tener el dinero en la cuenta.",
+            "Le falta generar intereses por tener dinero en cuenta",
+            "No hay rendimiento del dinero en cuenta tanto en pesos como en dólares"
+          ]
+        },
+        {
+          "titulo": "Tasas de plazo fijo percibidas como bajas frente a la competencia y la inflación",
+          "descripcion": "Usuarios que sí invierten en plazo fijo dentro del banco perciben que las tasas son menores que en otras entidades financieras y que no compensan la inflación, especialmente tras la baja de tasas del BCRA.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "me gustaría que dé mas intereses en el plazo fijo",
+            "El porcentaje de rendimiento es bajo en comparación con otras billeteras virtuales.",
+            "Da menos rédito que otras plataformas y no está teniendo buenas promos"
+          ]
+        },
+        {
+          "titulo": "Falta de opciones de inversión diversificadas más allá del plazo fijo tradicional",
+          "descripcion": "Usuarios más sofisticados reclaman que el banco no ofrece alternativas de inversión atractivas como FCI, bonos o instrumentos que sí están disponibles en fintechs, limitando las posibilidades de hacer rendir el dinero.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Pocas opciones de inversion",
+            "Le falta opciones reales de ofertas, descuentos e inversiones",
+            "Tendria que ofrecer rendimiento del dinero en cuenta, mejores promociones para compras, y mecanismos de inversión asesorados"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 15,
+      "delta_pp": -1.8,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés de préstamos y tarjetas percibidas como excesivamente altas",
+          "descripcion": "Los usuarios se quejan de que las tasas de financiamiento son muy elevadas, tanto para préstamos personales como para el uso de tarjeta de crédito y giros en descubierto, generando endeudamiento difícil de manejar.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Los préstamos personales no ofrecen buenas tasas ni plazos adecuados",
+            "tasas altas me generaron deudas dificules",
+            "Las tasas de interes son altísimas"
+          ]
+        },
+        {
+          "titulo": "Condiciones restrictivas para acceder a créditos hipotecarios y personales",
+          "descripcion": "Usuarios que buscan financiamiento se encuentran con requisitos excesivos y burocracia que dificulta el acceso, especialmente para créditos hipotecarios que demandan muchas condiciones pese a ser clientes de larga data.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "porque en lineas generales es un buen banco, pero si yo hoy quiero sacar un credito hipotecario, me ponen muchas condiciones",
+            "Funciona muy bien, suelen dar respuestas acordes. Podría tener mejores créditos.",
+            "Porque cobra la renovación de las tarjetas con un monto un poco alto, a mi entender"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 26,
+      "delta_pp": 1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Costo de mantenimiento de cuenta percibido como excesivo y difícil de bonificar",
+          "descripcion": "La queja predominante es el alto costo de mantenimiento de la cuenta, con condiciones de bonificación cada vez más exigentes. Los usuarios sienten que pagan demasiado por un servicio básico que en fintechs es gratuito.",
+          "frecuencia_pct": 60,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "todo bien pero es caro el mantenimiento de la cuenta",
+            "Las condiciones para bonificar el mantenimiento de cuenta son muy altas",
+            "Hace mucho que el banco dejó de ser lo que era. Hay que estar pendiente de tener la cuenta bonificada porque si no es carísima."
+          ]
+        },
+        {
+          "titulo": "Comisiones y costos de servicios asociados que se acumulan sin valor percibido",
+          "descripcion": "Más allá del mantenimiento, los usuarios mencionan costos elevados de renovación de tarjetas, seguros contratados que son más caros que en el mercado, y comisiones varias que no se justifican con los beneficios recibidos.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "CAROS LOS SERVICIOS",
+            "Comisiones altas",
+            "Porque los paquetes de servicios son muy caros"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 6,
+      "delta_pp": 1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Fraude en tarjeta de débito por compras no reconocidas sin contención inmediata",
+          "descripcion": "Algunos usuarios reportan consumos no autorizados en sus tarjetas de débito, lo que genera desconfianza en la seguridad de los medios de pago del banco.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Hicieron compras con mi tarjeta de débito, que yo no realice",
+            "No tiene mucha seguridad"
+          ]
+        },
+        {
+          "titulo": "Percepción de seguridad basada en confianza histórica más que en tecnología moderna",
+          "descripcion": "Los usuarios que valoran la seguridad lo hacen por la trayectoria del banco como entidad internacional, no por funcionalidades tecnológicas específicas de seguridad digital.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Hace 20 años tengo la cuenta",
+            "Porque soy clienta hace muchos años y nunca tuve inconvenientes"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 39,
+      "delta_pp": 1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Reducción percibida de promociones y descuentos en supermercados y consumo masivo",
+          "descripcion": "Los usuarios notan que el banco dejó de ofrecer descuentos en supermercados y comercios de consumo diario que antes tenía, o que los montos tope no se actualizan, haciendo irrelevantes los porcentajes de reintegro.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Antes tenía más promociones.",
+            "cada vez menos descuentos y promociones",
+            "Me gustaría más promociones y descuentos en tiendas y supermercados"
+          ]
+        },
+        {
+          "titulo": "Brecha competitiva con otros bancos como Macro y billeteras que ofrecen mejores beneficios",
+          "descripcion": "Los usuarios comparan desfavorablemente a Santander con Banco Macro, MODO y billeteras virtuales que ofrecen cuotas, reintegros y programas de fidelidad más atractivos para el consumo cotidiano.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Porque la renovación de tarjeta de crédito es carisima y a su vez no tiene muchas promociones como por ejemplo Banco Macro",
+            "Comparado con billeteras virtuales, tiene pocos beneficios (los más útiles son a través de modo)",
+            "Pocas promos para la cantidad de plata que ganan con nuestro dinero"
+          ]
+        },
+        {
+          "titulo": "Programa SuperClub y beneficios Select percibidos como deteriorados o engañosos",
+          "descripcion": "Clientes del segmento Select y usuarios del programa SuperClub sienten que los beneficios se diluyeron: topes de reintegro congelados hace años, canjes de puntos poco creíbles y pérdida de ejecutivos de cuenta asignados.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "No tiene buenas promociones y descuentos. Ya no asignan oficial de cuentas a clientes select como yo",
+            "Porque debería mejorar las promociones y el programa superclub",
+            "No tienen muchos beneficiosn en muchas marcas, el reintegro es bajo por ej peluqueria que tienen un 50% de reintegro pero el tope es de $ 8.000"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 5,
+      "delta_pp": -1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de beneficios diferenciados para clientes de larga antigüedad",
+          "descripcion": "Usuarios con muchos años en el banco sienten que no reciben beneficios especiales por su lealtad, ni acceso a funcionalidades o productos exclusivos.",
+          "frecuencia_pct": 60,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Pocos beneficios oara clientes antiguos",
+            "No me satisface los beneficios"
+          ]
+        },
+        {
+          "titulo": "Escasez de sucursales físicas y limitación de servicios digitales",
+          "descripcion": "Algunos usuarios mencionan que hay pocas sucursales en sus ciudades y que la app no es suficientemente clara en sus funcionalidades como para compensar la presencialidad.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Muy pocas sucursales en mi ciudad de residencia.",
+            "Le falta claridad en las funcionalidades"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 18,
+      "delta_pp": -1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de hablar con un humano: derivación constante a bots y sistemas automáticos",
+          "descripcion": "La queja más recurrente es la dificultad extrema para contactar a una persona real, tanto por teléfono como por chat. Los usuarios son derivados a sistemas automatizados que no resuelven sus problemas específicos.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "es dificil ser atendido por un ser humano",
+            "es difícil poder comunicarse con alguien por teléfono....muy difícil y he tardado media hora a veces.... todos son teclas y ningún humano.",
+            "Deberian mejorar la ayuda on line"
+          ]
+        },
+        {
+          "titulo": "Deterioro de la atención presencial en sucursales con demoras y mal trato",
+          "descripcion": "La atención en sucursales físicas es calificada como deficiente, con largas esperas, información errónea y falta de proactividad del personal para resolver problemas de los clientes.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "POrque no tiene una buena atencion al cliente. No hay atencion personalizada de calidad",
+            "Floja atencion presencial",
+            "Mala atencion en sucursales"
+          ]
+        },
+        {
+          "titulo": "Desaparición de ejecutivos de cuenta personalizados para clientes con antigüedad",
+          "descripcion": "Clientes de larga data y segmento Select notan que ya no tienen un oficial de cuentas asignado ni atención personalizada, perdiendo el diferencial que los mantenía en el banco.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "No hay buena comunicación entre el banco y el cliente hace más 20 años que abri la cc y no sé quién es mi oficial de cuenta",
+            "Muy difícil poder hablar con un ejecutivo. Responden cuando pueden y a veces es tarde la respuesta."
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 15,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Home banking en proceso de modernización con errores y regresiones que afectan la operación diaria",
+          "descripcion": "La actualización del software del home banking está generando problemas: la plataforma se tilda, tiene caídas frecuentes y funciones que antes funcionaban ahora fallan, impactando en usuarios que dependen del canal digital.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Están modernizando el software del homebank y son un desastre. Todo para atrás!",
+            "Por qué la app tiene problemas para las funciones como que se tilda",
+            "nunca anda el home banking"
+          ]
+        },
+        {
+          "titulo": "App móvil poco intuitiva que dificulta operaciones rápidas y configuraciones básicas",
+          "descripcion": "Los usuarios encuentran la app confusa para operaciones simples como transferencias, pago QR en comercios y configuración de rendimientos, en contraste con la simplicidad de las billeteras virtuales.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Su uso es complicado para momentos de uso rápido",
+            "No es muy claro para poder usar no se como poner para que el dinero rinda diariamente como en personal pay",
+            "Medio complejo para gestionar una tarjeta de credito"
+          ]
+        },
+        {
+          "titulo": "Resolución lenta de problemas sin orientación rápida al cliente cuando surgen inconvenientes",
+          "descripcion": "Cuando surgen problemas, el banco no tiene mecanismos ágiles de resolución, generando frustración y la percepción de que solo funciona bien cuando todo va normal.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Es un buen banco para usar cuando no hay problemas, pero cuando surge uno, es como todos los demás, no tienen solución orientada al cliente que sea rápida",
+            "Porque si bien es un banco que me da seguridad a la hora de resolución de problemas no son expeditivod"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# DEPENDENCIAS - Modelo NPS Competitivo Fintech
+# ══════════════════════════════════════════════════════════════════════════════
+# Instalar con: pip install -r requirements.txt
+
+# Core
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualización
+matplotlib>=3.7.0
+
+# Configuración
+pyyaml>=6.0
+
+# HTTP requests (para noticias)
+requests>=2.28.0
+
+# Para generación de HTML con templates
+jinja2>=3.1.0
+
+# Progreso en terminal
+tqdm>=4.65.0
+
+# PDF parsing (para presentaciones anteriores)
+pdfplumber>=0.10.0
+
+# BigQuery (opcional - solo para MP/Nubank)
+# Si no usás MP/Nubank, podés comentar estas líneas
+google-cloud-bigquery>=3.0.0
+db-dtypes>=1.0.0

@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "player": "BBVA",
+    "site": "MLM",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico",
+    "analizado_por": "Claude Sonnet 4.5",
+    "fecha_analisis": "2026-02-11"
+  },
+  "causas_por_motivo": {
+    "Complejidad": {
+      "total_comentarios_analizados": 33,
+      "delta_pp": 5.1,
+      "direccion": "EMPEORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Actualización de app generó rechazo masivo por UX deficiente",
+          "descripcion": "La nueva versión de la aplicación móvil cambió drásticamente la interfaz y navegación, haciendo que funciones previamente fáciles de encontrar ahora sean confusas. Usuarios reportan que la app 'está horrible', 'asquerosa' y 'espantosa' tras la actualización.",
+          "frecuencia_pct": 70,
+          "frecuencia_abs": 23,
+          "ejemplos": [
+            "porque la actualizacion de la APP es horrible, es tan mala que estoy considerando cambiarme de banco",
+            "Su actualización de la app es malisima, tenia una buena interfaz y manejo. Ahora es horrible y complicada",
+            "Los cambios en la app la hicieron poco amigable y llena de información inútil que solo busca venderte más cosas"
+          ]
+        },
+        {
+          "titulo": "Cambios constantes en UI generan confusión y curva de aprendizaje continua",
+          "descripcion": "BBVA modifica frecuentemente la estructura de la app, forzando a usuarios a reaprender la ubicación de funciones. Esto genera frustración porque deben buscar nuevamente apartados que ya conocían.",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Cambian constantemente la aplicación y eso dificulta su comprensión",
+            "La última versión de la app cambió todo el sistema y no es necesario estar cambiando a cada rato la plataforma ya que genera incomodidad al tener de buscar nuevamente los apartados",
+            "Hacen muchos cambios el la app y descontrola"
+          ]
+        },
+        {
+          "titulo": "Fallas técnicas y lentitud post-actualización",
+          "descripcion": "La nueva versión presenta problemas de rendimiento: no permite hacer transferencias, falla al abrir, tarda en ejecutar funciones. Algunos usuarios reportan que 'de repente ya no funciona bien'.",
+          "frecuencia_pct": 9,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Últimamente ha presentado muchos problemas, la aplicación falla, no permite hacer transferencias ni recibir dinero",
+            "Actualmente la aplicación tarda mucho en realizar alguna función y las opciones no están  a la mano",
+            "Alguna ocasiones la app y los cajeros fallan"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 17,
+      "delta_pp": -2.0,
+      "direccion": "MEJORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Tiempos de espera prolongados en sucursales y call center",
+          "descripcion": "Usuarios reportan largas filas en sucursales y demoras superiores a 1 hora para ser atendidos por ejecutivos. En call center también experimentan tiempos de espera excesivos.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "PORQUE SIEMPRE ESPERO MÁS DE 1 HORA PRA QUE ME ATIENDA ALGÚN EJECUTIVO",
+            "Cuando hago llamadas se tardan mucho",
+            "Porque en sus sucursales tarda mucho la atención y si quieres pasar a ventanilla te mandan al cajero sin importarles si sabes hacer la transacción o no"
+          ]
+        },
+        {
+          "titulo": "Personal poco capacitado o con mala actitud en sucursales",
+          "descripcion": "Ejecutivos atienden sin ganas, se molestan, dan información contradictoria o inconsistente entre visitas. Casos de intentos de venta de productos incorrectos detectados por clientes.",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Principalmente por sus empleados. algunos suelen atender sin ganas, no dan información y hasta se molestan",
+            "Me han engañado en varias ocasiones sobre los beneficios de mi tarjeta, cada vez que voy me dicen cosas diferentes",
+            "Las mismas personas de BBVA intentaron estafarnos vendiendo un producto que no era el correcto, lo detecté al leer los documentos antes de firmar"
+          ]
+        },
+        {
+          "titulo": "Resolución deficiente de problemas y cargos no reconocidos",
+          "descripcion": "Pésima gestión de casos de fraude, cargos no reconocidos y problemas técnicos. Usuarios reportan falta de soluciones efectivas.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Tienen una pésima resolución de cargos no reconocidos y su atención al cliente es mala",
+            "Trámite una linkcard para mi hijo con servicios digitales incluidos.... y ya tiene 2 meses que no puedo usar los servicios digitales porque no me deja instalar y acudí a la sucursal y me dijeron que no se podía hacer nada"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 14,
+      "delta_pp": 1.2,
+      "direccion": "EMPEORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia o reducción de beneficios competitivos (MSI, cashback)",
+          "descripcion": "Usuarios perciben que BBVA no ofrece beneficios atractivos. Solicitan específicamente retomar meses sin intereses (MSI) más allá de 6 meses y más promociones.",
+          "frecuencia_pct": 43,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Porque no ofrecen beneficios",
+            "Deberían retomar las opciones a MSI de más 6 meses",
+            "para tener mayor versatilidad y promociones por su uso"
+          ]
+        },
+        {
+          "titulo": "Costos percibidos como altos vs competencia",
+          "descripcion": "Usuarios consideran que BBVA es 'bueno pero caro', con intereses elevados en préstamos, lo que reduce la propuesta de valor.",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Es bueno pero caro",
+            "Mas bien que no esten tan altos los intereses de los prestamos"
+          ]
+        },
+        {
+          "titulo": "Insatisfacción con cambios en la app afecta percepción de beneficios",
+          "descripcion": "La mala experiencia con la actualización de la app contamina la percepción de valor general, mencionándose incluso al evaluar promociones.",
+          "frecuencia_pct": 14,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "La nueva versión de la aplicación no me gustó mucho",
+            "me gusta la aplicación pero siempre me cambian la app"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 10,
+      "delta_pp": -1.2,
+      "direccion": "MEJORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Costos de financiamiento significativamente superiores a competencia",
+          "descripcion": "CATs y tasas de interés percibidos como los más altos del mercado. Tarifas por disposición de efectivo consideradas excesivas.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "El costo de financiamiento de todos sus productos es muy alto comparado con otros bancos",
+            "La tarifa por disposición de efectivo de la tarjeta de crédito es excesiva"
+          ]
+        },
+        {
+          "titulo": "Acceso restringido a crédito pese a historial positivo",
+          "descripcion": "Clientes con antigüedad y movimentación no reciben ofertas de tarjetas de crédito o reciben límites muy bajos. Demoras de hasta 2 años esperando oferta.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Porque me dieron muy poco crédito y la atención deja mucho que desear",
+            "Por qué ya llevo tiempo ingresando dinero a mi cuenta y no me ofertan tarjeta de crédito llevo como 2 años",
+            "La tarjeta de credito tardo demasiado en ser ofrecida"
+          ]
+        },
+        {
+          "titulo": "Percepción de elitismo y exclusividad excluyente",
+          "descripcion": "BBVA es visto como un 'banco muy elitista' que dificulta el acceso a productos de crédito para segmentos medios.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Es un banco muy elitista"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 8,
+      "delta_pp": 0.8,
+      "direccion": "EMPEORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Noticias virales de fraudes y falta de responsabilización del banco",
+          "descripcion": "BBVA está 'funado en redes sociales' por no responsabilizarse en casos de suplantación de identidad y fraudes. Usuarios han leído múltiples casos de clonación y baja ciberseguridad.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "He leido muchos casos de clonación y baja ciberseguridad",
+            "Porque tiene buenos servicios pero han habido noticias de fraudes con las cuentas",
+            "esta funada en redes sociales por no responsabilizarse cuando hay una suplantacion de identidad"
+          ]
+        },
+        {
+          "titulo": "Experiencias directas de fraude y nula recuperación de dinero",
+          "descripcion": "Clientes reportan retiros no autorizados, préstamos fantasma desde la app, extorsiones haciéndose pasar por el banco, y el banco no hace nada por recuperar el dinero.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Deben de cuidar más los préstamos a través de la app a mi me quitaron dinero y aparecía  que era cuenta de BBVA y no icieton nada por recuperar mi dinero",
+            "Algún par de veces, trataron de extorsionarme haciéndose pasar por el banco y otra ocasión ya no tenía completo mi saldo total en la tarjeta"
+          ]
+        },
+        {
+          "titulo": "Inseguridad percibida en uso de tarjeta en comercios",
+          "descripcion": "Falta de confianza al usar la tarjeta física en establecimientos por temor a clonación.",
+          "frecuencia_pct": 12,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Falta de seguridad al utilizarla en comercios"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 4,
+      "delta_pp": -0.8,
+      "direccion": "MEJORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Cambios constantes en app dificultan familiarización",
+          "descripcion": "La app cambia constantemente su estructura, lo que impide que usuarios se familiaricen completamente con las funcionalidades disponibles.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Por qué su aplicación cambia constantemente y lo hace para mal y el servicio al cliente deja mucho que pensar",
+            "Porque todavia no.me familiarizo con la app"
+          ]
+        },
+        {
+          "titulo": "Falta de funcionalidades atractivas y diferenciadas",
+          "descripcion": "Usuarios solicitan más ofertas de funcionalidad que hagan más atractivo el uso de productos BBVA vs competencia.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Me gustaría tener más ofertas de funcionalidad para hacer más atractivo el uso de la tarjeta"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 7,
+      "delta_pp": -0.4,
+      "direccion": "MEJORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés y CAT más altos del mercado",
+          "descripcion": "BBVA es percibido como el banco con los CAT más altos. Tasas de interés en tarjetas y préstamos son consideradas excesivas, especialmente en caso de atrasos.",
+          "frecuencia_pct": 57,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Tiene los cat más altos del mercado",
+            "Mucha tasa de interés y en la cuando te atrasas te cobran mucho interés"
+          ]
+        },
+        {
+          "titulo": "Comisiones y cuotas de mantenimiento elevadas",
+          "descripcion": "Las cuotas de mantenimiento de cuenta y comisiones por servicios son percibidas como altas en comparación con alternativas digitales.",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Por altas comisiones",
+            "La cuotas de la cuenta son altas y la atención al cliente es pésima"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 23,
+      "delta_pp": -0.2,
+      "direccion": "MEJORÓ",
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia total de rendimientos en cuentas a la vista",
+          "descripcion": "BBVA no ofrece ningún rendimiento por dinero en cuenta corriente, mientras competidores digitales ya lo hacen. Usuarios reportan que 'no ganas nada ahorrando tu dinero'.",
+          "frecuencia_pct": 52,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "No ofrecen rendimientos solo por tener tu dinero ahí",
+            "porque ya muchas cuentas dan rendimiento por dinero a la vista y ellos no",
+            "Porque no obtengo ganancias por tener mi dinero en la cuenta"
+          ]
+        },
+        {
+          "titulo": "Rendimientos en inversiones a plazo fijo muy por debajo de competencia",
+          "descripcion": "Clientes que migraron a otros bancos reportan obtener el DOBLE de rendimiento por las mismas inversiones. Tasas a plazo fijo son 'extremadamente bajas y malas'.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Tenía una inversion durante años y cuando me cambié de banco, me da el doble de rendimiento",
+            "Es muy bajo el rendimiento a plazo fijo",
+            "Sus rendimientos son extremadamente bajos y malos"
+          ]
+        },
+        {
+          "titulo": "Eliminación de beneficios previos sin alternativa",
+          "descripcion": "Cuentas que antes generaban algún rendimiento ahora no ofrecen nada, sin que BBVA haya comunicado alternativas atractivas.",
+          "frecuencia_pct": 9,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Ofrece lo que casi cualquier banco, y si antes mi cuenta me daba algo de rendimiento, actualmente no me da nada",
+            "No recibo ningún beneficio adicional"
+          ]
+        }
+      ]
+    }
+  }
+}

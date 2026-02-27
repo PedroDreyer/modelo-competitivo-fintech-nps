@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+.cursor/
+.claude/
+*.swp
+*.swo
+
+# Datos crudos (sensibles y muy grandes)
+data/*.csv
+compartir_MLA/
+*.zip
+
+# Archivos temporales de debug
+_ddg_*.html
+_*.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mantener estructura de carpetas
+!data/.gitkeep
+!outputs/.gitkeep
+!templates/.gitkeep

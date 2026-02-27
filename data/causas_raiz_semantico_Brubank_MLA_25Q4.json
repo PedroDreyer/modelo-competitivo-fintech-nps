@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "player": "Brubank",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Financiamiento": {
+      "total_comentarios_analizados": 17,
+      "delta_pp": 4.9,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de obtener tarjeta de crédito sin inversión previa en dólares",
+          "descripcion": "Usuarios reclaman que la única vía para acceder a tarjeta de crédito es depositar dólares, excluyendo a quienes no invierten pese a su solvencia y antigüedad",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Por que no tiene tarjeta de crédito",
+            "Me gustaría que me puedan dar una tarjeta de crédito pero la única forma es poniendo dólares",
+            "Solo le faltaría facilitar el poder obtener la tarjeta de credito"
+          ]
+        },
+        {
+          "titulo": "Ausencia de préstamos y créditos personales pese a antigüedad y uso activo de la cuenta",
+          "descripcion": "Usuarios con trayectoria en Brubank no logran acceder a créditos ni préstamos, percibiendo que la app no reconoce su historial ni solvencia",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "falta de financiamento",
+            "Creo que tendrían que dar creditos",
+            "Porque no me dan nada"
+          ]
+        },
+        {
+          "titulo": "Tasas de interés altas y límites restrictivos para compra de dólares y transferencias",
+          "descripcion": "Usuarios perciben tasas elevadas en productos existentes, límites bajos para operaciones en USD y cobros inesperados por la tarjeta de débito",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Tasa de interes altas.",
+            "Tiene poco límite para compra de usd y transferencias en pesos",
+            "Te cobran la tarjeta de débito debería ser gratis para los que usamos la cuenta desde hace mucho tiempo"
+          ]
+        },
+        {
+          "titulo": "Oferta financiera percibida como limitada e insuficiente frente a bancos y billeteras competidoras",
+          "descripcion": "Usuarios sienten que Brubank ofrece poca variedad de productos financieros comparada con otras billeteras y bancos, generando insatisfacción general con la propuesta",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "No hay mucha variedad o accesibilidad en los productos a comparación de otras billeteras o bancos",
+            "Ya lleva tiempo brubank y podría mejorar toda esa parte",
+            "Simplemente no me satisface en su totalidad"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 3,
+      "delta_pp": -4.2,
+      "causas_raiz": [
+        {
+          "titulo": "App percibida como básica con pocos beneficios y promociones engañosas en pago de servicios",
+          "descripcion": "Usuarios consideran que la app es muy elemental comparada con alternativas, con bajo rendimiento en cuenta y promociones de servicios que generan desconfianza por su mecánica confusa",
+          "frecuencia_pct": 67,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "no me gusta mucho",
+            "Es una app muy básica y casi no aporta tantos beneficios siempre comparando con las demás que uso, ni hablar de los intereses del dinero en la cuenta que son muy bajos. Otra cosa el pago de servicios según el día tienen promo pero es re engañoso ese ..."
+          ]
+        },
+        {
+          "titulo": "Ausencia de funcionalidad de pago por QR desde la aplicación",
+          "descripcion": "Usuarios reclaman no poder pagar con QR directamente desde la app de Brubank, funcionalidad estándar presente en todos los competidores del mercado argentino",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "No permite pagar x qr desde la app"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": -3.1,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimientos y TNA inferiores a los ofrecidos por Ualá, Mercado Pago y Naranja X",
+          "descripcion": "Usuarios comparan directamente con competidores y perciben que Brubank paga menos intereses y tiene menor remuneración en inversiones y cuentas",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Mi cuenta de inversión viene dando ganancias mas bajas q otras plataformas",
+            "Porque uala y mercado pago. Dan mejores rendimiento y son más sencillas de usar",
+            "en si es una buena billetera, pero en este momento otras tienen una mejor remuneracion x tener la plata en la billetera, todavia la uso para comprar dolares y pagar servicios"
+          ]
+        },
+        {
+          "titulo": "El saldo en cuenta no genera rendimiento automático como en otras billeteras",
+          "descripcion": "Usuarios esperan que el dinero en cuenta genere interés de forma automática sin necesidad de invertir activamente, funcionalidad presente en Naranja X y otros competidores",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "deberia generar rendimiento directamente la plata",
+            "Solo la uso para comprar dólares y después los transfiero porque no da rendimiento",
+            "Porque mi dinero no genera interés"
+          ]
+        },
+        {
+          "titulo": "Falta de promociones y descuentos atractivos que incentiven el uso frecuente",
+          "descripcion": "Usuarios no encuentran suficientes promociones o beneficios que justifiquen usar Brubank activamente, eligiendo otras billeteras con mejor oferta de descuentos",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Porque la uso poco, y no la veo tan necesaria, ya que tengo otras billeteras que ofrecen mejores promociones.",
+            "No la uso mucho porque no tiene promociones que me interesen",
+            "Xq ya no ofrecen muchos beneficios usandola"
+          ]
+        },
+        {
+          "titulo": "Uso relegado a operaciones puntuales por falta de propuesta de valor diferencial",
+          "descripcion": "Usuarios mantienen la cuenta para operaciones específicas (comprar dólares, transferencias) pero no la consideran su billetera principal por falta de diferenciación y engagement",
+          "frecuencia_pct": 39,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "La uso bastante, pero estoy mucho más acostumbrada a usar mercado pago. La uso básicamente para tener un fondo común de dinero para el trabajo.",
+            "no es lo suficientemente tentador, como otras billeteras",
+            "Es una billetera virtual, que para mi es util cuando la necesito"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 3,
+      "delta_pp": 1.7,
+      "causas_raiz": [
+        {
+          "titulo": "Percepción directa de inseguridad en la plataforma sin incidente concreto",
+          "descripcion": "Usuario expresa abiertamente que Brubank no es percibida como segura, reflejando una sensación difusa de vulnerabilidad",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "porque no es tan segura"
+          ]
+        },
+        {
+          "titulo": "Desconocimiento de la app que genera desconfianza sobre su solidez y respaldo",
+          "descripcion": "Usuarios con poco tiempo o uso en la plataforma no logran generar confianza, asociando el desconocimiento con posible inseguridad",
+          "frecuencia_pct": 67,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "no tengo mucho de conocerla",
+            "Esta buena solo por si necesitas un prestamo urgente"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 4,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de contactar al soporte técnico ante consultas urgentes",
+          "descripcion": "Usuario reporta que al necesitar soporte no pudo acceder a ningún canal de atención efectivo, generando frustración y desconfianza en la plataforma",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "En un momento necesité hacer una consulta al soporte y fue imposible"
+          ]
+        },
+        {
+          "titulo": "Insatisfacción difusa sin queja específica sobre canales de atención",
+          "descripcion": "Usuarios expresan descontento genérico que no apunta a un problema concreto de atención al cliente, sugiriendo baja relevancia del motivo en su experiencia",
+          "frecuencia_pct": 75,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Enlaces cuenta q utilizo más seguido",
+            "Porque está quemando",
+            "Porque es lo que me parece"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 3,
+      "delta_pp": -1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Promociones y beneficios concentrados en CABA sin cobertura para el interior del país",
+          "descripcion": "Usuario del interior percibe que los beneficios y promociones están diseñados exclusivamente para Capital Federal, dejando fuera a ciudades más chicas",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "La mayoría de promociones que ofrece no son relevantes para mí o la zona en que vivo. La mayoría se circunscriben a CABA y no son relevantes para ciudades más chicas del interior del país."
+          ]
+        },
+        {
+          "titulo": "Condiciones e intereses menos competitivos que alternativas del mercado",
+          "descripcion": "Usuarios reconocen que Brubank es buen producto pero perciben que otros bancos y billeteras ofrecen mejores condiciones de interés y relación costo-beneficio",
+          "frecuencia_pct": 67,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Es muy bueno pero no lo supuesto, las hay mejores... en intereses dados",
+            "Es lo que me pareció no hay motivo específico"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 4,
+      "delta_pp": -0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Cobros de impuestos internacionales sin previo aviso ni transparencia",
+          "descripcion": "Usuario fue sorprendido por cargos de impuestos internacionales que no fueron comunicados antes de la operación, generando sensación de falta de transparencia",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "porque te cobran impuestos internacionales sin avisarte."
+          ]
+        },
+        {
+          "titulo": "Operaciones poco intuitivas que dificultan el uso diario de la app",
+          "descripcion": "Usuarios encuentran complicado realizar operaciones diversas dentro de la app, sintiendo que la interfaz no cubre sus expectativas de simplicidad y usabilidad",
+          "frecuencia_pct": 75,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Me gustaría que sea más sencillo a la hora de hacer diferentes operaciones dentro de la apo",
+            "no lleno mis espectativas",
+            "Porque me pareció una buena aplicación estoy conforme con ella, es rapida y ligera"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 24,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Promociones escasas y poco atractivas comparadas con otros bancos y billeteras",
+          "descripcion": "Usuarios perciben que la oferta de promociones de Brubank es inferior a la de competidores directos, resultando poco competitiva para retener usuarios activos",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "No tiene buenas promos",
+            "No tiene promociones interesantes",
+            "Es mi principal cuenta para gestionar mi dinero pero encuentro mejores promociones en otros bancos"
+          ]
+        },
+        {
+          "titulo": "Reintegros eliminados o reducidos y rueda de cashback que nunca funciona",
+          "descripcion": "Usuarios reclaman que Brubank dejó de dar reintegros que antes ofrecía y que la mecánica de la rueda de cashback no genera resultados reales ni significativos",
+          "frecuencia_pct": 13,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Tiene una rueda de reintegros qué no funciona nunca",
+            "Antes  daba reintegro y ya no ll hace,  no da beneficios y es lenta su app",
+            "Los reintegros no son muy significativos"
+          ]
+        },
+        {
+          "titulo": "Ausencia de descuentos en servicios cotidianos como nafta, wifi y comercios del día a día",
+          "descripcion": "Usuarios demandan reintegros por pago de servicios y descuentos en comercios útiles, funcionalidad que encuentran en apps competidoras como Ualá y Mercado Pago",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Es una buena aplicación...siempre se puede mejorar. Tiene promociones pero no en lugares que me sean útiles",
+            "Buenas por que yo uso la aplicación mas para transferir pero estaría bueno que haya un reintegro si pagas un servicio o descuento. Por ejemplo en otras aplicaciones me reintegran hasta 5000 por pagar el wifi o cargar nafta o usar esa app",
+            "Es buena porque tiene promo al pagar servicios pero no tiene promociones con descuento"
+          ]
+        },
+        {
+          "titulo": "Uso limitado a funciones básicas sin encontrar incentivos para mayor engagement",
+          "descripcion": "Usuarios mantienen Brubank para funciones básicas (transferir, cobrar) pero no encuentran razones promocionales para usarla como billetera principal",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Uso la cuenta solo para cobrar un servicio que presto",
+            "por que de todas las que tengo no es la que mas que uso",
+            "Es poco atractiva en comparación a mis otras cuentas"
+          ]
+        }
+      ]
+    }
+  }
+}

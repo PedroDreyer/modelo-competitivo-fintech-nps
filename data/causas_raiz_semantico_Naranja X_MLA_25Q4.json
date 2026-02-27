@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "player": "Naranja X",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos": {
+      "total_comentarios_analizados": 63,
+      "delta_pp": -5.4,
+      "causas_raiz": [
+        {
+          "titulo": "Tasa de rendimiento en cuenta que descendió y se ubica por debajo de otras billeteras virtuales del mercado",
+          "descripcion": "La mayoría de las quejas refieren a que el rendimiento diario de la cuenta remunerada bajó significativamente y hoy es inferior al que ofrecen competidores como Mercado Pago o Ualá. Los usuarios perciben que la tasa no acompaña la inflación.",
+          "frecuencia_pct": 58,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Hay billeteras virtuales que ofrecen más interés diario para el fondo disponible",
+            "Porque ha bajado mucho el porcentaje de interés últimamente",
+            "Los rendimientos del dinero en cuenta son menores a otras billeteras virtuales"
+          ]
+        },
+        {
+          "titulo": "Falta de opciones de inversión atractivas más allá de la cuenta remunerada y Frascos básicos",
+          "descripcion": "Usuarios reclaman que la oferta de inversión es limitada: los Frascos no resultan atractivos para todos, no hay variedad de instrumentos y las restricciones de plazo (máximo 28 días en algunos productos) limitan el rendimiento acumulado.",
+          "frecuencia_pct": 23,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Siento que faltan más opciones de inversión. Estaría bueno que se pueda realizar todo desde la misma cuenta",
+            "Debería dejaras tiempo la plata ahorrada, solo deja 28 días y se reintegra y así no genera mucho rendimiento",
+            "Porque no vi otro tipo de investion en la app"
+          ]
+        },
+        {
+          "titulo": "Producto correcto pero sin diferenciación: cumple lo básico sin destacar en rendimientos",
+          "descripcion": "Un grupo relevante de usuarios califica con nota media porque consideran que Naranja X es una buena herramienta pero no sobresale en rendimientos respecto a la competencia, sin ofrecer un motivo fuerte para recomendarla.",
+          "frecuencia_pct": 19,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "es buena pero no es para tanto",
+            "es buena, pero podría ser mejor",
+            "Si aumentarán la tasa de intereses, sería mas atractiva para el que ya la usa y para recibir nuevos clientes"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 49,
+      "delta_pp": 1.8,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés muy elevadas en tarjeta de crédito y préstamos personales",
+          "descripcion": "El reclamo más frecuente es que las tasas de financiamiento (tanto de tarjeta como de préstamos) son percibidas como muy altas, especialmente en comparación con la tasa de rendimiento que la misma app ofrece en cuenta remunerada. Los recargos en comercios (10-25%) agravan la percepción.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "La brecha entre la tasa de rendimiento por cuenta remunerada o inversiones es muy amplia respecto por su tasa de financiamiento de tarjetas o prestamos",
+            "Solo porque la tasa de interés de los préstamos es muy alta",
+            "Porq es cara la financiación"
+          ]
+        },
+        {
+          "titulo": "Límite de crédito bajo y rechazo de préstamos o tarjeta sin justificación clara",
+          "descripcion": "Usuarios con historial activo en la app reportan que no pueden acceder a préstamos o que el límite de crédito es insuficiente pese a tener buen comportamiento de pago. La falta de explicación del rechazo genera frustración adicional.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Porque tiene bajo el límite de créditos para compra",
+            "Porque cuando necesito dinero no puedo prestarme dinero",
+            "Porque no ofrece un gran limite de crédito"
+          ]
+        },
+        {
+          "titulo": "Costos de mantenimiento de tarjeta y cargos ocultos en el resumen",
+          "descripcion": "Algunos usuarios se quejan del costo de mantenimiento de la tarjeta de crédito, cargos inesperados en el resumen (como seguros no solicitados) y la percepción de que un banco ofrece la misma tarjeta gratis.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Me parece buena Pero la tarjeta de crédito debería ser costo cero x mantenimiento",
+            "Pese a que su funcionamiento es muy cómodo, sus cargos por operar con Tc son bastante altos",
+            "Tendría que tener menos interés.. Que los comercios saque los intereses del 25%"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 42,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Pocas promociones y descuentos comparado con expectativas del usuario y con la competencia",
+          "descripcion": "La queja principal es la percepción de escasez de promociones. Los usuarios sienten que hay pocas ofertas relevantes para su consumo cotidiano, especialmente comparado con lo que ofrecen competidores como Provincia o Ciudad.",
+          "frecuencia_pct": 52,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Tiene pocas promociones",
+            "Porque no ofrece muchas promociones y descuentos",
+            "No he podido experimentar demasiados beneficios y promociones"
+          ]
+        },
+        {
+          "titulo": "Promociones limitadas a días específicos (martes) y a zonas geográficas concentradas en Buenos Aires",
+          "descripcion": "Los beneficios como el Plan Turbo solo aplican los martes y muchos descuentos están concentrados en AMBA, dejando fuera a usuarios del interior que sienten que la propuesta de valor no les alcanza.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Los martes únicamente tiene promociones",
+            "Son muy específicos los descuentos están dirigidos a los gastos en gral y no en específico de cada usuario",
+            "En muchos lugares fuera de la provincia de Buenos Aires no aceptan la de crédito"
+          ]
+        },
+        {
+          "titulo": "Descuentos no personalizados y que no aplican con tarjeta de débito",
+          "descripcion": "Usuarios reclaman que las promociones son genéricas y no se adaptan a sus hábitos de consumo. Además, quienes solo tienen billetera (sin tarjeta de crédito) quedan excluidos de la mayoría de los beneficios.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "No tiene buenos descuentos para tarjeta de débito",
+            "Porque no me gusta tanto la app",
+            "Bastante conforme pero espero más promos y beneficios"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 37,
+      "delta_pp": 1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Caídas frecuentes de la app y fallas por mantenimiento que impiden operar en momentos clave",
+          "descripcion": "La queja dominante es que la app se cae con frecuencia, incluyendo episodios prolongados de mantenimiento. Los usuarios reportan que en momentos críticos (pagos, transferencias) la app no responde, generando inseguridad y frustración.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "PORQUE CUANDO MAS LA NECESITAS SE CAE LA APLICACION O NO FUNCIONA POR X MOTIVO",
+            "Anda bien pero en varias ocasiones la app no funcionó por muchas horas por mantenimiento",
+            "Se cae continuamente"
+          ]
+        },
+        {
+          "titulo": "Interfaz poco intuitiva: dificultad para entender funciones y realizar operaciones básicas como pagos QR",
+          "descripcion": "Un grupo de usuarios encuentra complicado navegar la app, entender las funciones disponibles y realizar pagos (especialmente QR). El proceso de autenticación con código también se percibe como engorroso.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Muy difícil entender las funciones, beneficios muy limitados a la Prov. de Córdoba",
+            "A mí no me deja hacer pagos con qr. Aparte al entrar tenido q poner un código q no lo hago tan automáticamente",
+            "Me gustaría recibir más ofertas y que la app sea más fácil de usar"
+          ]
+        },
+        {
+          "titulo": "Funcionalidades limitadas y restricciones que no cubren necesidades cotidianas completas",
+          "descripcion": "Algunos usuarios perciben que la app solo sirve para funciones básicas (pagar facturas) y que faltan opciones como escaneo de código de barras, gestión completa de tarjetas o mayor aceptación en comercios fuera de Córdoba.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "solo es útil para pagar facturas. Luego de eso no requiero de la aplicación",
+            "Creo que le falta un poco más de funcionalidad",
+            "No se puede utilizar la tarjeta para algunas compras"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 16,
+      "delta_pp": -1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Costos de mantenimiento y renovación de tarjeta percibidos como excesivos",
+          "descripcion": "Los usuarios reportan que el costo mensual de mantenimiento y la renovación anual de la tarjeta son altos respecto a lo que ofrece la competencia bancaria, que en muchos casos no cobra estos cargos.",
+          "frecuencia_pct": 46,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "es cara la emisión de resumen y la renovación",
+            "Es muy caro mantener la cuenta muchos intereses",
+            "MENOS COSTOS DE MANTENIMIENTO"
+          ]
+        },
+        {
+          "titulo": "Cargos sorpresivos en el resumen que el usuario no autorizó ni esperaba",
+          "descripcion": "Usuarios descubren cobros inesperados en sus resúmenes (seguros, revista Convivimos, cargos no identificados) que deben reclamar activamente para dar de baja, generando desconfianza.",
+          "frecuencia_pct": 31,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Muchos años la tengo y cobran cualquier cosa si no reviso el resumen",
+            "Tuve inconvenientes para dar de baja la revista q ellos promocionan (convivimos)",
+            "Porque una vez me descontaron y nunca dijeron de que"
+          ]
+        },
+        {
+          "titulo": "Aranceles y recargos elevados al pagar con tarjeta en comercios",
+          "descripcion": "Los usuarios perciben que los comercios aplican recargos significativos (10-18%) al pagar con Naranja X, algo que no ocurre con tarjetas bancarias tradicionales como Macro o Santander.",
+          "frecuencia_pct": 23,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Alto el recargo de los productos en físico y las tasas de créditos",
+            "Sus aranceles son muy altos",
+            "Es bastante buena y segura pero cobran bastante"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 16,
+      "delta_pp": 0.6,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de hablar con un representante humano: atención 100% automatizada",
+          "descripcion": "La frustración principal es que el servicio al cliente es completamente automatizado (chatbot) y no permite escalar a un agente humano. Los usuarios con problemas complejos sienten que dan vueltas sin solución.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Porque la atencion al cliente es automatica y no se puede hablar con un representante",
+            "Porque es muy dificultoso hablar con un representante por teléfono",
+            "Es muy difícil dar con la atención al cliente"
+          ]
+        },
+        {
+          "titulo": "Demoras excesivas en la resolución de problemas y reclamos sin seguimiento",
+          "descripcion": "Cuando logran contactar al soporte, los usuarios reportan tiempos de resolución largos y falta de seguimiento proactivo. Los reclamos por cobros indebidos o estafas quedan sin cierre satisfactorio.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Cuando tuve un problema tardaron mucho en solucionarlo",
+            "Cada vez que me llaman me agregan algo para pagar (seguros de vida) y tengo que hacer el reclamo",
+            "ME COBRAN MAL O DE MAS Y ES MUY DIFICIL COMUNICARSE PARA RECLAMAR"
+          ]
+        },
+        {
+          "titulo": "Mala experiencia en atención presencial y trato poco empático con adultos mayores",
+          "descripcion": "Usuarios de sucursales reportan atención deficiente en puntos físicos, con trato poco amigable especialmente hacia personas mayores, y diferencias de calidad según la localidad.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "La atención del cliente suele ser poco amigable con las personas mayores",
+            "Porque la atención al cliente en sucursal de san salvador de Jujuy es mala",
+            "Ea buena tarjeta pero a la hora de comunicarme con un representante por alguna duda, dan muchas vueltas"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 13,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Vulnerabilidad a acceso no autorizado y estafas sin respuesta satisfactoria del soporte",
+          "descripcion": "Usuarios reportan haber sufrido estafas donde un tercero accedió a su cuenta desde otro dispositivo sin que brindaran información, y al reclamar no obtuvieron respuesta ni restitución del dinero.",
+          "frecuencia_pct": 43,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Porque ya sufri una estafa porque un extraño ingresó a mi cuenta desde otro dispositivo sin haber brindado yo ningun tipo de informacion sobre mi cuenta",
+            "No me solucionaron una compra que yo no hice",
+            "Porque noes del todo segura"
+          ]
+        },
+        {
+          "titulo": "Percepción de falencias visibles en los mecanismos de seguridad de la cuenta",
+          "descripcion": "Usuarios con experiencia técnica (ej. cajeros) identifican vulnerabilidades concretas en la seguridad de Naranja X, y los límites en transferencias generan percepción de restricción más que de protección.",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Soy cajero y veo muchas falencias en su seguridad",
+            "Por los límites en transferencias"
+          ]
+        },
+        {
+          "titulo": "Débitos inexplicables en cuenta sin detalle ni justificación",
+          "descripcion": "Algunos usuarios reportan que se les debita dinero de la cuenta sin especificación del concepto, generando desconfianza sobre la transparencia de los movimientos.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Se me debita dinero en la cuenta y no especifica de que, y tampoco tengo deudas con ella",
+            "Soy relativamente nuevo y solo uso la billetera virtual"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 18,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de funcionalidades clave: gestión de tarjetas adicionales, versión web y más servicios integrados",
+          "descripcion": "Usuarios reclaman la ausencia de funciones que consideran esenciales: no hay versión web/PC, no se pueden gestionar tarjetas adicionales, y faltan servicios que otras apps ya integran (más medios de pago, más operaciones).",
+          "frecuencia_pct": 43,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "La app ofrece pocas alternativas para controlar la cuenta y poder gestionar la baja o pausar las tarjetas adicionales",
+            "Funciona dentro de todo bien pero no tiene opción para usarla desde la PC y la tasa por tener el dinero en cuenta es baja",
+            "Porque me encanta y me da buenos rendimientos pero necesita cubrir más servicios"
+          ]
+        },
+        {
+          "titulo": "Dificultad para obtener tarjeta de crédito pese a buen historial y pagos al día",
+          "descripcion": "Usuarios activos con préstamos pagados a tiempo y cuenta al día reportan que la app no les habilita la tarjeta de crédito, lo que genera frustración y sensación de que el buen comportamiento no se premia.",
+          "frecuencia_pct": 21,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Si bien es una buena app y el rendimiento que da es bueno, da muchas vueltas para habilitar una tarjeta de crédito a pesar de tener la cuenta al día, aún habiendo sacado préstamos y pagarlos a tiempo",
+            "No le encuentro promoción valga la pena",
+            "Porq no me convence del todo"
+          ]
+        },
+        {
+          "titulo": "Experiencia de uso inferior a competidores como Mercado Pago en funciones e intuitividad",
+          "descripcion": "Algunos usuarios comparan directamente con Mercado Pago y otras apps, percibiendo que Naranja X tiene menos funciones, menos operaciones disponibles y es menos intuitiva para el uso diario.",
+          "frecuencia_pct": 36,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Porque a mi me parece mas facil usar Mercado Pago",
+            "Porque otras aplicaciones quizas tengan mas beneficios y mas operaciones",
+            "Porque es práctica pero no perfecta por ahí no es fácil entender algunas funciones"
+          ]
+        }
+      ]
+    }
+  }
+}

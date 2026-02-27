@@ -1,0 +1,856 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Mercado Pago** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q3 → 25Q4
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (25Q4)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### 🔥 MOTIVO: Financiamiento (+1.2pp - EMPEORÓ)
+
+**Impacto:** 3.5% → 4.6% | **Comentarios:** 36 (25Q3) → 49 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Los intereses son elevados."
+
+2. "Porque me resulta útil"
+
+3. "Me gustaría tener más  crédito y también mis hijos sin tanto requisitos"
+
+4. "Es una buena plataforma, cómoda y ágil para usar"
+
+5. "Estaría bueno que gente que no tiene trabajo en blanco pueda tener una cuenta mínima para poder comprar en la pagina"
+
+6. "Te Dan opciones pero pagas el triple de la compra. O sea no conviene"
+
+7. "Porque no es completamente seguro"
+
+8. "Debería ofrecer mas promociones"
+
+9. "Porque no te dan préstamo fácilmente te dan Miles de vueltas para obtener"
+
+10. "En realidad si es una buena app"
+
+11. "Me parece muy interesante"
+
+12. "Que sea mas seguro"
+
+13. "Por que te cobran mucho interés en los prestamos"
+
+14. "No estoy de acuerdo con sus politicas"
+
+15. "solo la uso para compras o transferencias, carga de celular y transporte"
+
+16. "Diesiocho por qué me gustaría que tengas más promociones, y también mas beneficios para el usuario de mercado pago."
+
+17. "La rentabilidad del dinero es poca y en muchos lugares te cobran recargo por el uso de la plataforma."
+
+18. "La aplicación es facil de usar, es cómoda, pero cuando saco un crédito y tengo algo de plata me lo saca muy rápido y de la nada."
+
+19. "XQ es lo q me parece"
+
+20. "Por qué la uso bastante y mejorando un par de cosas andaría genial"
+
+21. "Mejoria en uso de app"
+
+22. "No da muchos beneficios ios"
+
+23. "es buena la app muchos la usan"
+
+24. "Porque por todo te cobra comisión"
+
+25. "Porque me resulta cómodo para no usar efectivo"
+
+26. "eS LO QUE YO PIENSO"
+
+27. "Porque no me deja tener créditos"
+
+28. "Facilidad y créditos"
+
+29. "Es una excelente calificación la que puse"
+
+30. "Conveniencia y comodidad"
+
+31. "Porque le falta algunas cosas por mejorar !"
+
+32. "Xq me ofrecieron un préstamo el año pasado y lo pague pero luego me sacaron la opción desde hay nunca más pude tener un préstamo me dice y nadie le da una explicación bien xq no hay con quien comunicarse"
+
+33. "Hay aspectos que necesitan pulirse"
+
+34. "Porque si te atrasas por más que pagues después no te dan préstamos"
+
+35. "Es la correcta para mi"
+
+36. "Porque si te atrasas no te da más crédito aún pagando"
+
+37. "Por qué no da mucho financiamiento"
+
+38. "Le hace falta préstamos y tarjeta de crédito"
+
+39. "No lo uso porque no me conviene. No tiene promociones para mis tarjetas y las tazas de financiación son muy caras."
+
+40. "Porqué estoy conforme con ella"
+
+41. "La uso porque estoy acostumbrada pero no ofrece nada nuevo a los que estamos hace años en la app"
+
+42. "Funciona muy bien"
+
+43. "Me gustaría una tarjeta de crédito no solo debitar dinero sino que poder comprar en lugares y que después poder pagar con un resumen"
+
+44. "Mejoraría si se puede usar sin internet. Y los préstamos tienen mucho interés"
+
+45. "Cuando se elige pagar o transferir con tarjeta de crédito asociada los intereses son muy altos"
+
+46. " No tiene tarjeta de crédito"
+
+47. "Porque quiero que me preste más plata y me dé una tarjeta de crédito."
+
+48. "Porque es una plataforma que utilizo hace relativamente poco tiempo"
+
+49. "Porque lo que no me gusta es que si tenés un crédito y te ingresa plata justo cuando el crédito se venció te la sacan no te dan opción de elegir cuánto querés pagar .. deberían dejar que el cliente maneje su plata"
+
+
+================================================================================
+
+### ✅ MOTIVO: Promociones (-0.9pp - MEJORÓ)
+
+**Impacto:** 7.4% → 6.5% | **Comentarios:** 83 (25Q3) → 70 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "porque me parece bien pero se peuden mejorar sus promos"
+
+2. "Porque no da cuotas sin interés"
+
+3. "No son suficientemente atractivos los descuentos/ofertas"
+
+4. "Tiene pocas promociones"
+
+5. "Trabajando con mi plata. Así que estaría bueno que tenga muchos más beneficios"
+
+6. "Por que es buena para lo que la necesito como pagar mis impuestos"
+
+7. "más promociones o descuentos en más tiendas"
+
+8. "No tiene promociones de mi interés, ni para locales que frecuente"
+
+9. "Por ejemplo yo no tengo disponible créditos pra poder adquirir"
+
+10. "Es bueno pero no tiene tanto beneficios como.otras cuentas"
+
+11. "por promociones y descuentos"
+
+12. "Tendría que tener más promociones"
+
+13. "No uso la cuenta demasiado, pero estaría bueno que tenga promociones y beneficios sobre diferentes comercios.-"
+
+14. "Los rendimientos no dan nada"
+
+15. "BASTANTE COMPLETA PERO SIN DESCUENTOS"
+
+16. "Porque es lo q pienso"
+
+17. "Porque no diferencian los usuarios. Para ellos es lo mismo una empresa de 100 personas que un club de 150 socios."
+
+18. "tampoco ofrece dtos ni interes"
+
+19. "Siempre fue fácil de usar, y cuando me robaron el teléfono enseguida me bloquean todo para no perder mi plata, y a los días ya tenia de nuevo mi tarjeta, nunca tuve problemas al usar la app"
+
+20. "Es práctico, y fácil de usar"
+
+21. "Tiene pocas promociones que puedo usar"
+
+22. "Estaría bueno más descuentos y veneficiar"
+
+23. "PORQUE LAS PROMOCIONES QUE TIENE NO SON CONSUMOS QUE ME SIRVAN"
+
+24. "No me interesa las promociónes que tiene"
+
+25. "es muy practica y hasta el momento segura."
+
+26. "No da interés atractivo en mis reservas"
+
+27. "Por que me gustaría que tuviera más promociones"
+
+28. "Es mi manera de ver de cómo funciona para mí esta aplicación, siendo que es muy confiable"
+
+29. "No me garantiza un gran respaldo"
+
+30. "Es una plataforma muy usada y debería de ofrecer más descuentos"
+
+31. "Lo uso  para pagar y transferir"
+
+32. "Porq algunas personas no tuvieron buena experiencia"
+
+33. "Porque es excelente la app, pero tiene muy pocos descuentos, y falta un poco más de seguridad"
+
+34. "otorga pocos descuentos y se utiliza dentro de argentina"
+
+35. "Porque aveces pasas plata y te chupa la tu plata"
+
+36. "Tiene algunas demoras en las transferencias"
+
+37. "No tiene reintegro ni descuento o muy poco"
+
+38. "Tiene buenas promociones, descuentos y beneficios"
+
+39. "Es rápido sencilla"
+
+40. "seguridad y rentabilidad"
+
+41. "no cuenta con descuento atractivos para mi. debería tener descuentos o promociones en comercios pequeños"
+
+42. "me gustaria que ofrezca mas beneficios por usar la cuenta"
+
+43. "Estaría bueno que tengan más promociones"
+
+44. "Porque ofrece pocas promociones pagando con Mercado Pago"
+
+45. "nose es buena la app pero le falta tener un lugar fisico"
+
+46. "Porque nunca esta de más q haya más beneficios para los usuarios"
+
+47. "no hay muchos descuentos y ademas el dinero rinde menos que en otros sitios"
+
+48. "Porque te da muchas promociones"
+
+49. "Porque a veces no anda bien"
+
+50. "presenta escasas pormociones"
+
+51. "Ninguna razón en especial"
+
+52. "Porque creo que merece ese puntaje"
+
+53. "Porque no tiene promoción"
+
+54. "por lo que puse arriba, para mi deberian utilizar mas descuentos por usar la app"
+
+55. "Me parece una buena calificación"
+
+56. "Por que si lo recomiendo, ya que la app ofrece dinero por recomendarlo"
+
+57. "porque no cumple con todas mis expectativas, el porcentaje que da MP es inferior a otras billeteras"
+
+58. "Ofrece promociones descuentos facilidad para hacer las transacciones"
+
+59. "Es la billetera que más uso"
+
+60. "Cumple con las funciones básicas de una app virtual."
+
+61. "Por que no tiene muchas promociones."
+
+62. "Otras aplicaciones tienen mejores promociones"
+
+63. "Al usar mis tarjetas de crédito me gustaria que tuviera cuotas sin recargo"
+
+64. "le faltan propuestas de descuentos y promociones que le sirvan a todos"
+
+65. "Es buena pero aveces tenes que reclamar por alguna equivocación de compra"
+
+66. "Descuentos en algunos casos por pagar con qr"
+
+67. "Porque es la que mas utilizo"
+
+68. "porque tiene costos muy altos para usar el credito"
+
+69. "Xq es más seguro"
+
+70. "Porque ofrece pocos beneficios"
+
+
+================================================================================
+
+### ✅ MOTIVO: Tarifas (-0.9pp - MEJORÓ)
+
+**Impacto:** 2.2% → 1.2% | **Comentarios:** 19 (25Q3) → 11 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "PORQUE COBRAN PARA INGRESAR DINERO"
+
+2. "chantas avivados"
+
+3. "Porque funciona bien, pero si quiero ingresar o extraer dinero en efectivo me cobra un porcentaje. Además no hay descuentos en locales por pagar con mercado pago"
+
+4. "Porque al querer cargar mercado pago te saca plata de la que uno deposita"
+
+5. "Medio aveces me sirve y aveces no"
+
+6. "xq no ofrece una buen préstamo."
+
+7. "Es práctica rápida ágil, pero tiene comisiones altas"
+
+8. "Xq lo uso x obligación"
+
+9. "Porq da poco rendimiento y no utilizo las tarjetas de crédito"
+
+10. "Me cobraron por un prestamo que nunca solicité, solo lo utilizo para pagar servicios, y me figura que tengobloqueada la posibilidadde prestamo por morocidad... nunca entendí que me cobraron"
+
+11. "Estable y aceptado en varios lugares"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Atención (+0.9pp - EMPEORÓ)
+
+**Impacto:** 3.1% → 4.0% | **Comentarios:** 31 (25Q3) → 40 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "no hay forma de comunicarse ante un problema"
+
+2. "Por las comisiones que cobra al extraer efectivo."
+
+3. "Porque no me es muy util"
+
+4. "porque no la considero perfecta"
+
+5. "No sé porque califique asi"
+
+6. "Por que si,  A veces las cosas si funcionan para algunos usuarios y ellos no lo ven"
+
+7. "porque lo considero de esa manera"
+
+8. "  es de uso  habitual .pero muy difícil contactarse  por  algún  error"
+
+9. "No atendieron un reclamo."
+
+10. "Es complicado a la horas hacer un reclamo."
+
+11. "No hay persona física para reclamos ni número de atención al cliente  por eso es malosimo reclamos a un cuenta fantasma malisimo el sistema"
+
+12. "Malas experiencias"
+
+13. "Sería interesante una atención más personal"
+
+14. "Por q antes no te cobraban cuando agregabas a tu cuenta plata...ahora te cobran un 3%"
+
+15. "No tiene buenos comentarios"
+
+16. "No tengo rápidamente soluciones"
+
+17. "No atiende cuando llamas"
+
+18. "Me dan buenos resultados"
+
+19. "Debería tener una oficina física para comunicarnos mejor"
+
+20. "poder llamar a un numero"
+
+21. "No lo utilizo mucho, muy lento en responder"
+
+22. "Por que no responde cuando ai un problema"
+
+23. "La atención al cliente es febil"
+
+24. "Es útil, pero ahora, al haber tantas aplicaciones no ofrece nada distintivo. Estaría bueno que trabajen con empresas para poder cobrar las cuentas sueldos a través de Mercado Pago"
+
+25. "no hay atencion al cliente de forma directa, solo te envian a leer cosas pre establecidas que no son abarcativas ni resolutivas"
+
+26. "Por que es el.mejor"
+
+27. "Cuesta comunicarse con alguien"
+
+28. "Me parece muy práctica y comoda"
+
+29. "Hace poco me enteré que el dinero es muy inseguro en la plataforma, ya que mandabas dinero y no te daban ningún recibo por lo que me genera desconfianza"
+
+30. "Porque no hay un número para poder comunicarme todo es con una máquina en un chat"
+
+31. "No hay atención al cliente por seres humanos"
+
+32. "No tenés un número de teléfono para llamar"
+
+33. "Por no tienen atención al cliente ante cualquier requerimiento o duda"
+
+34. "No hay donde llamar para sacarse dudas o algún error que se cometa al transferir"
+
+35. "Es sistema se cae muy a menudo"
+
+36. "En algunos casos hay que esperar para ver que la transferencia se realice"
+
+37. "Podría haberla clasificado peor, pero es relativamente buena para varias funcionalidades"
+
+38. "La atención al cliente apesta"
+
+39. "No tengo un ejecutivo fácil de ubicar ante un problema con la aplicación."
+
+40. "La stencion al cliente es muy dificil"
+
+
+================================================================================
+
+### ✅ MOTIVO: Rendimientos (-0.7pp - MEJORÓ)
+
+**Impacto:** 9.8% → 9.1% | **Comentarios:** 108 (25Q3) → 87 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Es lo que pienso"
+
+2. "No suelo recomendar aplicaciones a otras personas, menos una billetera virtual"
+
+3. "No uso continuamente la app,es por eso que lo califico de esa manera,no tengo otras opiniones acerca de esto."
+
+4. "Poco rendimiento"
+
+5. "Me gusta la aplicación tiene buenos beneficios de ahorro para los clientes."
+
+6. "me parece  que va muy bien pero hay cosas que podria mejorar"
+
+7. "No tiene buen rendimiento"
+
+8. "Pq no suma todos los días como dice, la taza"
+
+9. "El credito es  complicado"
+
+10. "Porque dentro de las aplicaciones ofrecidas es la que mejor se adapta a mis necesidades."
+
+11. "Porque considero que esos aspectos son su punto debil"
+
+12. "Porque es una,opción que no encuentro"
+
+13. "Conozco de personas que le han sacado el dinero de la cuenta de MP, osea que es inseguro la app"
+
+14. "Por qué no la utilizo tanto entonces no la puedo calificar como diez si no he utilizado todas las funciones que posee"
+
+15. "los rendimientos son bajos, tampoco ofrece opciones de inversion"
+
+16. "lo utilizo como modalidad de pago frecuentemente"
+
+17. "Hasta donde la ocupe y necesite fue satisfactorio."
+
+18. "Es una billetera virtual el cual hay algunas cosas en las q no cumple segun lo q promete"
+
+19. "Es fácil el acceso de tercero para robar tu plata"
+
+20. "es aceptada en muchos lugaRES, FUNCIONA MEJOR QUE mODO Y OTRAS QUE HE PROBADO, PERO SE QUEDÓ CORTO CON LOS RENDIMIENTOS DE SU CUENTA COMITENTE"
+
+21. "Podría mejorar en rendimiento del dinero"
+
+22. "Los rendimientos son bajos. Incluso para aquellos que utilizamos la billetera desde hace nuchísimo tiempo"
+
+23. "Es sencillo manejarlo y poder comprar y recibir plata"
+
+24. "Xq lo uso ..y desde otro teléfono an podido sacarme plata o transferir de de mi cuenta sin yo saber"
+
+25. "Es cómodo y práctico en general como tds ls billeteras virtales"
+
+26. "Hace poco utilizo está cuenta y no es tan sencillo como creí, aunque con el tiempo quizás cambie de opinión"
+
+27. "Te dan intereses"
+
+28. "Así lo considero"
+
+29. "Y regular  no veo como rendir mis pesos"
+
+30. "Porque podrían mejorar sus tasas"
+
+31. "Px aún creó que podría mejor mucho más"
+
+32. "NO TENGO MAS COMENTARIOS PARA REALIZAR"
+
+33. "Porque es muy bajo el rendimiento de dinero en la cuenta."
+
+34. "Xq no me inspira confianza el dinero en cuenta rinde poco cuando dice 'compra en cuotas sin interés ' vas a las cuotas y SON con interés"
+
+35. "No necesito tener más cuentas bancarias, permanentemente ocasionan problemas"
+
+36. "El dinero rinde poco. Tampoco se donde te atienden"
+
+37. "Porque a veces la aplicación es lenta"
+
+38. "Es cómodo usarlo, podes pagar en todos lados, tiene algunas promociones interesantes."
+
+39. "Por que tiene que mejorar"
+
+40. "No es como esperaba"
+
+41. "Te está cobrando mucho interes"
+
+42. "Porque lo uso bastante y me funciona pero podría dar mejor rendimiento al dinero en la cuenta"
+
+43. "Porque nada es perfecto"
+
+44. "No me termina de convencer"
+
+45. "Porque me gustaría que haga más rendimiento"
+
+46. "M7chas veces no fun"
+
+47. "Xq a mi me fjncilna"
+
+48. "me parece una aplicacion segura y confiable"
+
+49. "Por experiencia de uso"
+
+50. "Creo que los rendimientos del FCI derian ser mayores."
+
+51. "me genera más rendimientos naranja x"
+
+52. "por que es facil de uso, pero no tiene tantas ofertas atractivas de acuerdo al rendimiento del dinero de la cuenta."
+
+53. "Me gusta mucho, es fácil de manejar, pero el rendimiento podría mejorar"
+
+54. "Me gustaría poder en el sp500 desdé mercado pago"
+
+55. "Porque es una herramienta útil pero limitada"
+
+56. "Por bajo rendimiento de interés y a veces mal funcionamiento"
+
+57. "Porque creo que siempre hay posibilidad de mejorar"
+
+58. "Es una buena calificación, rstoy conforme"
+
+59. "El uso de dinero en inversión es bajo en comparación a otras aplicaciones"
+
+60. "Porque es lo que pienso con respecto a la app"
+
+61. "No deja buenos rendimientos es una miseria"
+
+62. "Porque no rinde la plata"
+
+63. "Porque es practica y rapida"
+
+64. "tuve dinero un tiempo ahi y el porcentaje comparado con otras billeters es pobre"
+
+65. "Porque quedó estática la app"
+
+66. "Por una cuestión que uso más naranja que mercado pago."
+
+67. "El interés que da ha bajado considerablemente con respecto al interés que ofrecía hace algunos tiempo, ya no conviene tanto tener el dinero en reserva"
+
+68. "hay otras billeteras que dan mayor rendimiento"
+
+69. "Podria ofrecer otros tipos de inversiones como por ejemplo en fondos de inversion con el respaldo de la empresa."
+
+70. "todos exigen bancarizar, sino no usaría nunguno"
+
+71. "Qué repetitivo todo esto por la opción que marqué no ofrece métodos de inversión interesantes"
+
+72. "No tiene buen rendimiento ni buena seguridad"
+
+73. "Porque esperaría un mejor rendimiento."
+
+74. "Porque su taza de rendimientos es muy baja"
+
+75. "Porque desde que empecé a utilizar la app de mercado pago, se fue reduciendo los intereses que me generaban"
+
+76. "Porque es una app q podría ofrecer mejor rendimiento del dinero"
+
+77. "Porque me parece casi perfecta, la usó hace varios años, suele tener ofertas"
+
+78. "Porque es una de las billeteras más conocidas y populares"
+
+79. "Ya no tiene tantos beneficios como otras billeteras y suele ir atrasada con las innovaciones"
+
+80. "no tiene los frascos y el rendimiento de mi sueldo en cuenta no rinde como en naranja"
+
+81. "No lo se. No se que mas agregar"
+
+82. "Porque no tiene tanto rendimiento el dinero en cuenta"
+
+83. "No es mucho rendimiento"
+
+84. "Rendimiento bajo"
+
+85. "Porque da poca inversion a largo plazo."
+
+86. "noto que sus intereses son mas bajos"
+
+87. "baja tasa de rendimiento"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+0.3pp - EMPEORÓ)
+
+**Impacto:** 1.3% → 1.6% | **Comentarios:** 13 (25Q3) → 17 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Porque no tines opción de adelantar cuotas, o no deja pagar algunas cosas"
+
+2. "Es una muy buena calificación."
+
+3. "Me da desconfianza"
+
+4. "Siento que si bien es útil, siento que tiene algunos aspectos que molestan al momento de ser utilizado."
+
+5. "creo que va bien, pero puede ser mejor"
+
+6. "No es mi favorito"
+
+7. "No me dan crédito...solo tengo que comprar"
+
+8. "siempre se actualiza, no es practica la pagina principal, tiene rendimientos mas bajos que naranja x"
+
+9. "Mas promociones ofertas, premios"
+
+10. "Porque considero que podria ofrecer mayores beneficios"
+
+11. "Podría generar mas confianza"
+
+12. "Porque como todo, se puede mejorar. También podrían mejorar los intereses por el uso de mercado crédito."
+
+13. "Porque hay billeteras que me.ofrecen mas cosas"
+
+14. "Aun me parece que tiene funcionalidades que son bastantes engorrosas de usar , por ejemplo el cobro con el código de barras"
+
+15. "deberia pagar mas los intereses"
+
+16. "Le haría mejoras de usabilidad a la app"
+
+17. "Porque le falta mejorar"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Seguridad (+0.2pp - EMPEORÓ)
+
+**Impacto:** 5.9% → 6.1% | **Comentarios:** 58 (25Q3) → 61 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "tuve problemas con la seguridad"
+
+2. "Hay muchas denuncias sobre estafas desde la plataforma. No le ha pasado pero me hace dudar en usarla con mayor libertad"
+
+3. "mercado pago es facil pero deja mucho que desear aveces funciona mal"
+
+4. "El unico defecto es que no está acaptada plr el bqnco central, después es muy práctica y rápida"
+
+5. "Por experiencia propia"
+
+6. "Porque si te roban, nadie se hace cargo"
+
+7. "Nunca hago una calificación de 9/10 dado qué las empresas se piensa que están muy bien y los ladrones van 3 pasos adelante en infiltrar los sistemas"
+
+8. "Porque demore mucho en poder tener acceso a los prestamos"
+
+9. "He tenido problemas con transferencias y compras no hechas por mi"
+
+10. "Quizás no tiene la imagen de un banco tradicional"
+
+11. "Es un app que me gusta y sirve"
+
+12. "Es recomendanle, pero no lo hago..cada uno q vea q es lo mejor para si mismo"
+
+13. "Porque no siempre son fiables las compras ni los pagos"
+
+14. "La uso únicamente para situaciones excepcionales. No me resulta segura"
+
+15. "porque ha habido algunos fraudes con esta cuenta"
+
+16. "No me parece muy segura"
+
+17. "porque hay bastantes estafas"
+
+18. "Hay muchas denuncias de robo de cuenta"
+
+19. "Porque una vez ya utilizaron mi cuenta y compraron cosas que yo desconoci"
+
+20. "Mucho civernetico"
+
+21. "porque no son un banco digital, y siempre sale alguna noticia de que hacen algo por lo que el bcra no los autorizo"
+
+22. "sé de muchos casos de falta de robo de cuentas. No tengo plena seguridad de que sea responsabilidad de MP o del usuario pero genera cierta desconfianza."
+
+23. "Me vaciaron la cta"
+
+24. "Si bien es una buena opcion, ha sido donde la mayoria de gente es estafada, no recomendaria a una persona que no esta al tanto de las estafas virtuales"
+
+25. "Buena, confiable"
+
+26. "No tiene respakdi"
+
+27. "Porque  e tenido inconvenientes con su seguridad"
+
+28. "Por casos de robo"
+
+29. "Es una app que me gusta y uso bastante. Tiene buenas promociones y facilidad de uso. Últimamente se cae bastante el sistema y eso es un problema ya que suelo tener todo mi dinero ahí"
+
+30. "Es lo que yo considero"
+
+31. "Comentarios de conocidos sobre fraudes u estafas con mercado pago"
+
+32. "funciona para hacer todas las gestiones del día a día"
+
+33. "Me da mucha seguridad"
+
+34. "Porque una vez realicé una transferencia de 100 USD desde Mercado Pago a otra cuenta propia del Galicia y desaparecieron por un mes y no me daban respuesta"
+
+35. "No me resulta seguro"
+
+36. "Es buena, solo la uso para realizar compras en M. Libre"
+
+37. "Porque me parece lo correcto"
+
+38. "Porque no me genera mucha confianza"
+
+39. "Porq si te roban no se hacen cargo"
+
+40. "Debido a las estafas"
+
+41. "Porque ,ya me han estafado por esa billetera virtual,y me han descontado dinero"
+
+42. "Por que hay mucho jakeo y por lo general es difícil contactar a alguien que ayude en esa situación y no se hacen cargo de nada"
+
+43. "A veces cae la cuenta"
+
+44. "PORQUE MI HIJA TUVO PROBLEMAS DE SEGURIDAD Y A RAIZ DE ESE PROBLEMA NO ME RESULTA CONFIABLE"
+
+45. "La uso solamente para pagar mercado libre"
+
+46. "Porque es muy fácil acceder desde otro lugar a la aplicación de mercado pago"
+
+47. "Por que me gusta"
+
+48. "Porque hay estafas a través de la cuenta"
+
+49. "Seguridad y variedad en productos .."
+
+50. "Tuve inconvenientes y se lavan las manos. Dicen ser una pasarela de pagos pero no se hacen cargo si el receptor no recibe el dinero. A mi me lo descuentan y ellos no se hacen caego"
+
+51. "Es una cuenta que uso con regularidad pero ha tenido algunos problemas últimamente"
+
+52. "No tengo más para agregar"
+
+53. "Siento que es fácil de vulnerar"
+
+54. "me hackearon la cuenta y perdi lo de mervado pago y tambien las cuentas bancarias.no se hicieron cargo de nada"
+
+55. "Porque hay mucho jaqueo de cuenta es muy insegura últimamente"
+
+56. "Porque en el mes de septiembre fui víctima de una estafa y mercado pago no me resolvió el problema. Tuve que judicializar el caso"
+
+57. "Con su logo estafan a las personas  y si hay q hacer un reclamo falta la atencion e perdona a persona"
+
+58. "Porque es la que mas uso"
+
+59. "No la considero una plataforma segura"
+
+60. "Hubo problemas de estafa"
+
+61. "Porque se que mucha gente fue estafada utilizando al cuenta de mercadopago por lo tanto me cuesta confiar"
+
+
+================================================================================
+
+### ✅ MOTIVO: Complejidad (-0.1pp - MEJORÓ)
+
+**Impacto:** 2.6% → 2.5% | **Comentarios:** 29 (25Q3) → 23 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Es una app muy segura y fácil de usar"
+
+2. "Porque el funcionamiento es aveces muy complicado"
+
+3. "Falla del sistema"
+
+4. "Es completa también"
+
+5. "Es demasiado lenta la cuenta y en mi experiencia me solía pasar muy seguido"
+
+6. "Se colapsa mucho en días festivos"
+
+7. "La aplicación no funciona correctamente"
+
+8. "Porque es una empresa afianzada en el mercado que la verdad que el solo tener dinero en cuenta ofrece rendimientos"
+
+9. "En cierto modo es cuando pasas la plata"
+
+10. "me da lo que necesito"
+
+11. "porque si tenes algun problema con la cuenta no hay atencion al cliente que sea accesible para resolverlo."
+
+12. "Un milll ya que me facilita a la hora de depositar y pagar"
+
+13. "es facil de usar"
+
+14. "Creo q no necesita recomendaciones"
+
+15. "Rápido  Fácil  Comodidad"
+
+16. "Por nada en especial"
+
+17. "Nunca doy todos lo que pienso de la aplicación, pero si está bien su función.."
+
+18. "aveces la app no funciona muy bien"
+
+19. "Facilidad de uso"
+
+20. "Me es cómodo el uso"
+
+21. "es muy util... pero no la aceptan en todas partes"
+
+22. "Muchas veces se cae la plataforma, y no genera muchos rendimientos"
+
+23. "Siempre hay cosas q pueden mejorar mayores descuentos"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Mercado Pago_MLA_25Q4.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

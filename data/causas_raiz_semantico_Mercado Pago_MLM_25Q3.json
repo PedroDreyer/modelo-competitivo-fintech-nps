@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLM",
+    "quarter": "25Q3",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Seguridad": {
+      "total_comentarios_analizados": 63,
+      "delta_pp": 1.9,
+      "causas_raiz": [
+        {
+          "titulo": "Rumores virales en redes sociales sobre vaciado de cuentas sin devolución",
+          "descripcion": "Gran cantidad de usuarios mencionan haber visto en redes sociales historias de personas a quienes les desapareció dinero de la cuenta y Mercado Pago no respondió. Esto genera desconfianza masiva.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 24,
+          "ejemplos": [
+            "He leído reseñas en redes sociales donde el dinero que tenían guardado personas en su cuenta desaparece y al momento de contactarse con soporte no les resuelven nada",
+            "Tenía la cuenta y mayormente era la cuenta principal, pero hace como 3 meses ví que a otro usuario le quitaron dinero de la cuenta y no lo regresaron",
+            "La plataforma tiene muy malas reseñas con respecto a la pérdida de cuentas completas con dinero en ella"
+          ]
+        },
+        {
+          "titulo": "Desconfianza estructural por no ser banco tradicional con sucursales físicas",
+          "descripcion": "Usuarios perciben mayor riesgo al no tener respaldo de banca física ni sucursales donde acudir en caso de problemas. Comparan desfavorablemente con bancos tradicionales.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "Al no tener banca fisica, es mas insegura",
+            "Le falta un lugar físico para tener más confianza",
+            "Mercado pago no se si tenga la misma seguridad que te puede dar un banco físico"
+          ]
+        },
+        {
+          "titulo": "Experiencias directas de hackeo, clonación de tarjeta y cierres arbitrarios de cuenta",
+          "descripcion": "Usuarios reportan experiencias propias o cercanas con hackeo de cuenta, clonación de tarjeta y cierre de cuenta sin justificación, donde no pudieron recuperar su dinero.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 19,
+          "ejemplos": [
+            "Ya me clonaron ya vez la tarjeta",
+            "Por qué te pueden hackear la cuenta como mi me pasó",
+            "Porque si te llegan a cerrar la cuenta por nada es un problema recuperar tu dinero"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 68,
+      "delta_pp": 0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés excesivamente altas en créditos y préstamos",
+          "descripcion": "Queja dominante: los intereses de préstamos y tarjeta de crédito son percibidos como escandalosamente altos comparado con alternativas, haciendo que solo se usen en emergencias.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 34,
+          "ejemplos": [
+            "su CAT es altisimo",
+            "es buena tarjeta, pero sus intereses son demasiados altos",
+            "es una buena opción pero sus tasas de interés son escandalosamente altas, nunca la consideraría para un préstamo"
+          ]
+        },
+        {
+          "titulo": "Límite de crédito bajo que no aumenta pese a uso responsable y prolongado",
+          "descripcion": "Usuarios se frustran porque llevan meses/años usando la tarjeta y el límite no sube, o suben montos insignificantes. Sienten que no se premia la fidelidad.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "EL LIMITE DE CREDITO NO SUBE RAPIDO A PESAR DE USARLO SEGUIDO",
+            "Llevo 2 años con una ldc mínima que no alcanza para hacer compras y me exigen hacer compras para aumentarla",
+            "Suben mucho el interés y ya no suben más el limite de crédito hasta dentro de mucho tiempo"
+          ]
+        },
+        {
+          "titulo": "Dificultad para acceder a crédito o tarjeta de crédito",
+          "descripcion": "Usuarios reportan que no les otorgan préstamos, que el proceso para obtener TDC es excesivamente lento, o que directamente no tienen acceso a productos de crédito.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Resulta ridículo la espera para recibir respuesta sobre el otorgamiento de tdec que ni los bancos tradicionales esperan tantos meses",
+            "No ofrece crédito",
+            "Porque no otorgan un préstamo"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 82,
+      "delta_pp": 0.6,
+      "causas_raiz": [
+        {
+          "titulo": "Tasa de rendimiento en descenso continuo que ya no compite con alternativas",
+          "descripcion": "Usuarios notan que el rendimiento bajó del 15% al 14% y sigue bajando. Sienten que otras opciones del mercado ofrecen mejores tasas y MP ya no conviene para invertir.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 33,
+          "ejemplos": [
+            "Ofrece rendimiento de 15% pero meses después empieza a bajar aunque mantengas el saldo que solicita",
+            "Porque anteriormente ofrecía mejores tasas de rendimiento al tener el dinero con ellos",
+            "Su tasa de rendimiento ha bajado mucho y ya no conviene invertir como lo era antes"
+          ]
+        },
+        {
+          "titulo": "Tope máximo de inversión de 25 mil pesos limita el potencial de ganancia",
+          "descripcion": "El límite de $25,000 para generar rendimientos frustra a usuarios que quieren invertir más. Lo perciben como una barrera artificial que limita las ganancias.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "el monto maximo a invertir son solo 25 mil",
+            "Lo unico que cambiaria es que la cantidad maxima que da intereses por tener dinero en la cuenta es muy bajo, deberian incrementar el limite por mucho",
+            "Tiene rendimiento en la cuenta pero solo es hasta 25 mil pesos"
+          ]
+        },
+        {
+          "titulo": "Condiciones de depósito mínimo mensual para mantener el rendimiento alto",
+          "descripcion": "Usuarios se quejan de que para mantener el porcentaje de rendimiento más alto deben depositar un mínimo mensual obligatorio, lo que sienten como una imposición.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Porque para poder ganar los rendimientos mas altos tienes que ingresar a fuerza mas de 3,000 pesos cada mes",
+            "Porque tienes dinero a favor pero te exige una cantidad para aumentar asi tus beneficios",
+            "La cantidad de aumento de ingresos para mantener el % de interese de ganancia"
+          ]
+        },
+        {
+          "titulo": "Rendimiento percibido como insignificante vs esfuerzo y riesgo",
+          "descripcion": "Usuarios sienten que la ganancia real es mínima, que no vale la pena el esfuerzo o el riesgo de tener dinero en una plataforma digital.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Se gana casi nada",
+            "Porque es poca mi ganancia",
+            "las personas que tienen mercado pago con dinero dentro me han comentado que es poca la ganancia que genera"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 48,
+      "delta_pp": 0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Beneficios iniciales atractivos que se desvanecen con el tiempo de uso",
+          "descripcion": "Usuarios perciben que al inicio ofrecen buenos descuentos y cashback pero luego reducen o eliminan los beneficios, dejando solo publicidad sin ofertas reales.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Por qué un tiempo atrás tenía muy buenos descuentos eran muy atractivos",
+            "Poco a poco le.han ido bajando a los beneficios..un día ya no va a ser la gran cosa",
+            "Porque solo tienen promociones interesantes al iniciar con la cuenta, ya después ya no envían promociones, solo publicidad"
+          ]
+        },
+        {
+          "titulo": "Ausencia de programa de cashback/puntos competitivo frente a otros bancos",
+          "descripcion": "Usuarios demandan cashback real, puntos por compra o MSI que compitan con lo que ofrecen bancos tradicionales y fintechs competidoras.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "les falta cash back para poder usar esta tarjeta para todas mis compras",
+            "Además del cash deben ofrecer descuentos o puntos",
+            "me gustaría que tuviera cash back en puntos"
+          ]
+        },
+        {
+          "titulo": "Promociones engañosas o con problemas técnicos para redimirse",
+          "descripcion": "Usuarios reportan que las promociones publicadas no se aplican correctamente, los MSI no se procesan automáticamente, o las condiciones son confusas.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "las promociones no son aceptadas como eran promocionadas, ademas casi nunca se pueden acreditar los meses sin intereses de forma automatica",
+            "sus promociones son muy truchas",
+            "Las promociones son engañosas"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de contactar soporte en tiempo real para resolver problemas urgentes",
+          "descripcion": "Usuarios no encuentran forma de hablar con una persona en vivo. El soporte es solo por chat automatizado que no resuelve casos complejos ni urgentes.",
+          "frecuencia_pct": 46,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "No hay un servicio de atención al cliente telefónico confiable",
+            "No hay una atención al cliente en tiempo real, que te pueda ayudar a resolver algún problema en el momento",
+            "Es complicado hablar con alguien de servicio al cliente"
+          ]
+        },
+        {
+          "titulo": "Lentitud extrema en resolución de reclamaciones y aclaraciones",
+          "descripcion": "Cuando logran contactar soporte, la resolución tarda semanas o meses. Casos de cargos no reconocidos o acuerdos de pago se prolongan indefinidamente.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Me quedé sin trabajo y quise llegar a un a cuerdo con los pagos y no se pudo hasta casi 10 meses después",
+            "La atención a cliente no es de manera inmediata y tardar mucho en resolver algún problema o cargo sospechoso",
+            "Tiene muy poca resolución a favor de usuario"
+          ]
+        },
+        {
+          "titulo": "Falta de sucursal física para atención presencial en caso de reclamaciones",
+          "descripcion": "Usuarios expresan que necesitan un lugar físico donde ir cuando los canales digitales fallan, especialmente para problemas graves con su dinero.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "No hay físicamente donde puedan atendernos",
+            "Me gustaría que hubiera una sucursal física en caso de reclamaciones",
+            "No hay nadie que te asista si tienes algún problema con la cuenta"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 62,
+      "delta_pp": -0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz confusa con demasiadas opciones que dificultan operaciones básicas",
+          "descripcion": "Usuarios reportan que la app no es intuitiva, tiene demasiados menús, y operaciones como transferir o pagar requieren navegar muchas pantallas.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 24,
+          "ejemplos": [
+            "Porque debería tener un diseño más ordenado, ya que actualmente tienes que leer muy bien para encontrar un apartado",
+            "No es una app muy intuitiva, la interfaz es algo confusa",
+            "Tienes que meterte a muchas opciones al momento de hacer pagos"
+          ]
+        },
+        {
+          "titulo": "Fallas técnicas frecuentes que interrumpen transacciones",
+          "descripcion": "La app se traba, los pagos no se reflejan, el lector no funciona bien. Esto genera frustración en momentos críticos de uso.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 19,
+          "ejemplos": [
+            "es una aplicación muy buena pero aveces batallo para transferir",
+            "Porque es una aplicación muy buena pero tiene defectos como se tarda, se traba o muchas veces no tiene accesibilidad por el lugar",
+            "Los pagos no se reflejan en ninguna forma de pago de manera inmediata"
+          ]
+        },
+        {
+          "titulo": "Dificultad para realizar depósitos y retiros en efectivo por falta de puntos",
+          "descripcion": "Usuarios necesitan efectivo pero no encuentran cajeros ni establecimientos donde depositar o retirar, limitando la utilidad práctica de la cuenta.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Es difícil hacer retiros en efectivo",
+            "Es más complicado el depósito y el retiro de efectivo que el resto de las cuentas bancarias",
+            "No hay suficientes cakeros"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": 0.0,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia de opciones de inversión más allá del rendimiento básico de cuenta",
+          "descripcion": "Usuarios quieren invertir en CETES, fondos u otras opciones pero MP solo ofrece rendimiento básico. Lo comparan con bancos que sí tienen variedad de instrumentos.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "es una buena opción con muchas funcionalidades, pero le falta opciones de inversion",
+            "Intente invertir en cetes con mi cuenta pero no me dejo al no ser un 'banco'",
+            "Porque me gustaría que tuviera más opciones para invertir tu dinero de una forma más sencilla y con ayuda"
+          ]
+        },
+        {
+          "titulo": "Falta de cajeros automáticos propios y baja aceptación en comercios físicos",
+          "descripcion": "Sin cajeros propios los usuarios pagan comisiones por retirar. Además muchos comercios no aceptan MP, limitando su uso como cuenta principal.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Necesitan tener cajeros automaticos",
+            "No cuenta con cajero ni sucursal",
+            "No hay suficientes establecimientos para hacer depósitos y retiros"
+          ]
+        },
+        {
+          "titulo": "Funcionalidades bancarias básicas ausentes como estados de cuenta y pagos diferidos",
+          "descripcion": "Usuarios echan en falta funciones que los bancos tradicionales tienen como estados de cuenta accesibles, pagos domiciliados y diferimiento de compras.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "No emite estados de cuenta",
+            "Le hace falta algunas funciones como por ejemplo lo de diferir las compras",
+            "Por que me quitaron la opcion de pagar mi recibo de gas"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 11,
+      "delta_pp": 0.0,
+      "causas_raiz": [
+        {
+          "titulo": "Comisiones ocultas y cargos inesperados que erosionan la confianza",
+          "descripcion": "Usuarios descubren cargos que no esperaban: comisiones por ingresar dinero, por disposición de efectivo, o por ventas. Sienten que hay costos escondidos.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "No me gusta que cobran cargos escondidos",
+            "Cobra el 5% de mis ventas",
+            "Cobran comisión por ingresar dinero"
+          ]
+        },
+        {
+          "titulo": "Tarifas elevadas comparadas con la competencia para servicios básicos",
+          "descripcion": "Usuarios perciben que las comisiones por retiro, disposición de efectivo y otras operaciones son más altas que en alternativas del mercado.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "La comisión por disposición es muy alta",
+            "Son un poco elevadas las tarifas de la cuenta",
+            "Facill de usar pero altas comisiones"
+          ]
+        }
+      ]
+    }
+  }
+}

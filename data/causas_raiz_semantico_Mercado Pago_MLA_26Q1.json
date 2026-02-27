@@ -1,0 +1,355 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos": {
+      "total_comentarios_analizados": 87,
+      "delta_pp": 0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento inferior al de billeteras competidoras como Naranja X y Cuenta DNI",
+          "descripcion": "Los usuarios comparan el rendimiento de Mercado Pago desfavorablemente contra otras billeteras que ofrecen tasas mas altas, lo que motiva a considerar migrar el dinero hacia la competencia.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "La tasa es mas baja q con otras billeteras",
+            "Ofrece poco rendimientos a comparacion con otras",
+            "Hay muchas billeteras virtuales que dan mas rendimiento diario"
+          ]
+        },
+        {
+          "titulo": "Caida progresiva de la tasa de rendimiento que desincentiva mantener dinero en cuenta",
+          "descripcion": "Usuarios de larga data perciben que la tasa de rendimiento bajo significativamente respecto a lo que ofrecia antes, haciendo que ya no valga la pena mantener dinero en la cuenta.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "El rendimiento del dinero bajo considerablemente",
+            "Cuando empece a utilizar MP era mas atractiva. Tenia mas beneficios, descuentos y mejor rendimiento. Lentamente fueron bajando esas cualidades",
+            "Los rendimientos son bajisimos, ya no rinde nada dejar el dinero quieto ahi"
+          ]
+        },
+        {
+          "titulo": "Ausencia de opciones de inversion diversificadas mas alla del rendimiento basico en cuenta",
+          "descripcion": "Usuarios mas sofisticados reclaman la falta de opciones de inversion como fondos diversificados o herramientas similares a las de plataformas de inversion avanzadas.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "No veo muchas inversiones",
+            "Porque le falta la parte de inversiones",
+            "Si bien cuenta es remunerada, creo deberia brindar mas opciones de inversion"
+          ]
+        },
+        {
+          "titulo": "Rendimiento tan bajo que resulta irrelevante como alternativa real de ahorro",
+          "descripcion": "Un grupo de usuarios considera que el rendimiento actual es tan bajo que resulta irrelevante, calificandolo como insuficiente frente a la inflacion y cuestionando la utilidad de la cuenta para ahorrar.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Da poco rendimiento",
+            "Ahorrar no es conveniente, es una estafa. Te dan miseras migajas",
+            "La tasa es muy baja para ser una de las billeteras mas importante del pais"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 79,
+      "delta_pp": 1.8,
+      "causas_raiz": [
+        {
+          "titulo": "Escasez general de promociones y descuentos percibida para una billetera de este tamanio",
+          "descripcion": "La queja mas frecuente es que Mercado Pago tiene muy pocas promociones. Los usuarios demandan mas descuentos en comercios y mas beneficios por usar la plataforma regularmente.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 32,
+          "ejemplos": [
+            "Pocas promociones",
+            "Es bueno, ofrece promociones. Desearia que ofrezca mas promociones",
+            "Pocas promociones. Nada atractivo"
+          ]
+        },
+        {
+          "titulo": "Promociones irrelevantes para el perfil, zona o comercios frecuentados por el usuario",
+          "descripcion": "Los usuarios se quejan de que las promociones existentes no aplican a los comercios o rubros que frecuentan, especialmente en ciudades del interior donde la cobertura es limitada.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "En mi ciudad tiene pocas promociones",
+            "No tiene descuento atractivos donde necesito",
+            "No tiene muchos beneficios o descuentos en las ciudades del interior"
+          ]
+        },
+        {
+          "titulo": "Eliminacion de beneficios previos como reintegros en transporte y descuentos en supermercados",
+          "descripcion": "Usuarios perciben que beneficios que antes existian fueron eliminados, como los descuentos en transporte publico y las promociones en supermercados, generando frustacion y sensacion de retroceso.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Sacaron el beneficio del transporte",
+            "Antes hacian descuentos en el boleto de transporte",
+            "Ahora sacaron las cuotas en la tarjeta de credito y faltan promociones en los envios ademas de bajar mucho los rendimientos"
+          ]
+        },
+        {
+          "titulo": "Beneficios inferiores a los de billeteras competidoras que ofrecen mejores descuentos",
+          "descripcion": "Los usuarios comparan a Mercado Pago desfavorablemente contra otras billeteras y bancos que ofrecen mejores descuentos, cuotas sin interes y reintegros mas atractivos.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Otras billeteras tienen mejores promociones",
+            "No tiene ningun reintegro que valga la pena como otras billeteras ni descuentos que sirvan",
+            "Tengo mas promociones con la tarjeta de mi banco"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 56,
+      "delta_pp": -0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Alta incidencia de estafas y hackeos reportados tanto por experiencia propia como de conocidos",
+          "descripcion": "La principal preocupacion es la alta frecuencia de estafas y hackeos de cuentas, tanto sufrida personalmente como conocida por familiares, generando una imagen de inseguridad generalizada.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "He escuchado muchos casos de personas que le han hackeado la cuenta",
+            "Hay muchas estafas con mercado pago",
+            "Conozco mucha gente que tuvo problemas con la seguridad de su cuenta, sufriendo robos y extracciones no autorizadas"
+          ]
+        },
+        {
+          "titulo": "Mercado Pago no se hace cargo ante fraudes ni ofrece restitucion del dinero perdido",
+          "descripcion": "Usuarios victimas de estafas o transacciones no reconocidas reportan que Mercado Pago no se responsabiliza del dinero perdido, a diferencia de lo que esperarian de una entidad financiera.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Me han estafado muchisimas veces con mercado pago y mercado libre y la empresa no se hace responsable",
+            "Me falto dinero y nunca pude resolverlo",
+            "A veces la plata se te desaparece o no te toman en cuenta los reclamos al menos que seas millonario"
+          ]
+        },
+        {
+          "titulo": "Vulnerabilidad percibida de la plataforma que facilita accesos no autorizados",
+          "descripcion": "Los usuarios perciben que la app es facil de vulnerar y que permite accesos no autorizados, generando desconfianza para mantener dinero o usarla como cuenta principal.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Es facil de hackear",
+            "Hay mucha estafa y phishing alrededor de la app. Es vulnerable",
+            "Al no ser un banco, no tiene respaldo de seguridad"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 37,
+      "delta_pp": -0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interes excesivas en prestamos que encarecen significativamente el monto a devolver",
+          "descripcion": "Los usuarios perciben que los intereses de prestamos personales son desproporcionadamente altos, haciendo que las cuotas no resulten convenientes y generando una percepcion de usura.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Muy altos los intereses de los prestamos",
+            "Son altisimos los intereses que cobran en los prestamos",
+            "Los prestamos son muy caros, muy usureros"
+          ]
+        },
+        {
+          "titulo": "Perdida del acceso a creditos sin explicacion clara ni posibilidad de recuperarlo",
+          "descripcion": "Usuarios que eran clientes de larga data reportan que les quitaron el acceso a prestamos sin motivo claro, generando frustracion y sensacion de abandono por parte de la plataforma.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Porque me quitaron el credito y soy clienta hace muchos anios",
+            "Porque no permiten prestamos si estas en veraz",
+            "Tendrian que ser mas flexibles en los prestamos"
+          ]
+        },
+        {
+          "titulo": "Comisiones altas en la tarjeta de credito y costos ocultos en financiacion",
+          "descripcion": "Los usuarios se quejan de las altas tasas en la tarjeta de credito de Mercado Pago y de costos de financiacion que consideran excesivos comparados con opciones bancarias tradicionales.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Por la alta tasa que tiene al usar la tarjeta de credito",
+            "Los costos de financiacion de Mercado Pago son muy altos cuando se abona con tarjetas que no tienen promociones",
+            "La app es muy comoda y sencilla de usar, pero es carisima respecto de intereses y prestamos"
+          ]
+        },
+        {
+          "titulo": "Debitos automaticos agresivos sobre el saldo sin opcion de administrar el pago",
+          "descripcion": "Usuarios con prestamos activos se quejan de que Mercado Pago debita automaticamente cuotas de su saldo sin darles opcion de elegir cuando o cuanto pagar.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Tenia dinero reservado y lo utilizaron para cobrarse mi prestamo y me comieron mucha plata de intereses",
+            "Se han debitado anticipadamente algunos cargos, no brinda seguridad en el uso",
+            "Muchos interes en prestamos o para cobrar ventas"
+          ]
+        }
+      ]
+    },
+    "Atencion": {
+      "total_comentarios_analizados": 35,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de hablar con un humano: atencion 100% automatizada sin capacidad resolutiva",
+          "descripcion": "La queja principal es que no existe forma de comunicarse con una persona real. El chatbot automatizado no resuelve problemas complejos y los usuarios se sienten atrapados sin solucion.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Pesima atencion al cliente, no se logra hablar con un humano. Estoy pensando en cambiarme a Uala",
+            "No hay atencion al cliente ninguna, es imposible chatear con un humano",
+            "Es muy dificil comunicarse con un ser humano, siempre responde un bot"
+          ]
+        },
+        {
+          "titulo": "Falta de numero telefonico y oficinas fisicas para resolver problemas presencialmente",
+          "descripcion": "Los usuarios reclaman la inexistencia de un telefono de contacto y de sucursales fisicas donde acudir ante problemas con la cuenta, generando una sensacion de desamparo.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Es muy buena pero no tenes un telefono para hablar con un representante",
+            "No se puede hablar con una persona",
+            "No tiene centro atencion cliente de forma fisica o sea oficinas"
+          ]
+        },
+        {
+          "titulo": "Reclamos ignorados o resueltos con extrema lentitud sin respuesta satisfactoria",
+          "descripcion": "Cuando logran hacer un reclamo, la resolucion es inexistente o demora excesivamente, dejando a los usuarios sin respuesta ante problemas de transferencias, cobros indebidos u otros inconvenientes.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Tuve un problema y no lo resolvieron",
+            "Debe mejorar el tema de la atencion al cliente, porque es medio lento en resolver los problemas",
+            "Al no tener una atencion al cliente eficaz todo lo demas pierde valor, ante cualquier conflicto se vuelve una gran deriva"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 27,
+      "delta_pp": -1.3,
+      "causas_raiz": [
+        {
+          "titulo": "Fallas y problemas tecnicos de la app que impiden operar con normalidad",
+          "descripcion": "Los usuarios experimentan fallas del sistema y problemas tecnicos que les impiden realizar pagos y transferencias, generando desconfianza en la disponibilidad del servicio.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Tiene ultimamente problemas la app",
+            "Aveces no funciona muy bien",
+            "Porque hay veces que no funciona cuando la necesito"
+          ]
+        },
+        {
+          "titulo": "Exceso de informacion en la app que confunde en lugar de simplificar la experiencia",
+          "descripcion": "Algunos usuarios encuentran que la app tiene demasiadas secciones y funcionalidades agrupadas de forma confusa, dificultando encontrar lo que necesitan rapidamente.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Tiene demasiada informacion junta y confunde. Podria mejorar la rentabilidad",
+            "Puede ser mas facil de usar",
+            "El funcionamiento es a veces muy complicado"
+          ]
+        },
+        {
+          "titulo": "Percepcion de que la app funciona bien para lo basico pero no es excepcional en nada",
+          "descripcion": "Usuarios que califican bajo no por un problema puntual sino por una percepcion general de que Mercado Pago es funcional pero no sobresaliente, sin un diferenciador claro.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Hace poco que la tengo, no se que beneficios me da",
+            "La utilizo poco, no conozco tanto",
+            "Me gusta bastante"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 15,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Percepcion de que Mercado Pago podria ofrecer mas funcionalidades y beneficios diferenciadores",
+          "descripcion": "Los usuarios sienten que la plataforma cumple con lo basico pero no innova, y que podria ofrecer mas herramientas y funcionalidades que justifiquen elegirla como billetera principal.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Me parece que puede ofrecer mucho mas",
+            "Siento que me faltan funcionalidades y por eso no llega al 10",
+            "Es un buena app la de mercado, por el momento cumple con lo que necesito"
+          ]
+        },
+        {
+          "titulo": "Falta de regulacion bancaria que genera desconfianza frente a problemas financieros",
+          "descripcion": "Usuarios expresan preocupacion por el hecho de que Mercado Pago no es un banco, lo que implica menor regulacion y menor proteccion ante fraudes o perdida de dinero.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Porque no es un banco, si te afanan la plata no tenes seguro, nada, no tiene la misma regulacion",
+            "Porque me resulta comoda pero no tan segura",
+            "No es tan seguro"
+          ]
+        },
+        {
+          "titulo": "Usabilidad basica que no se destaca frente a la competencia creciente",
+          "descripcion": "Usuarios que reconocen que la app es practica pero no la ven como superior a otras opciones disponibles en el mercado.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Es funcional pero no comparto",
+            "Porque es una plataforma facil de usar",
+            "Facil de usar, practica, clara y simple"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 11,
+      "delta_pp": -0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Comisiones altas en prestamos y operaciones que encarecen el uso cotidiano",
+          "descripcion": "Los usuarios perciben que Mercado Pago cobra comisiones excesivas en prestamos y distintas operaciones financieras, haciendolo menos competitivo frente a alternativas bancarias.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Porque cobra mucho interes por los prestamos",
+            "Porque cobra comisiones muy altas",
+            "Es mucho la tarifa de los prestamos que te dan"
+          ]
+        },
+        {
+          "titulo": "Comisiones de Mercado Libre trasladadas a la percepcion de Mercado Pago como empresa cara",
+          "descripcion": "Los costos de envio y comisiones de venta de Mercado Libre contaminan la imagen de Mercado Pago, ya que los usuarios las perciben como parte del mismo ecosistema.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Los costos de envio son muy altos",
+            "Las comisiones que cobra mercado libre son un robo y como son la misma empresa...",
+            "Me pone un valor para comprar dolares y termina siendo mas caro"
+          ]
+        },
+        {
+          "titulo": "Deterioro percibido de la rentabilidad que antes era un diferenciador clave",
+          "descripcion": "Usuarios recuerdan que antes Mercado Pago ofrecia mejor rentabilidad y menores costos, y perciben un deterioro progresivo del valor recibido.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "ANTES DABA MUCHISIMA RENTABILIDAD Y AHORA BAJO A CASI NADA",
+            "Cada vez generan menos rendimientos",
+            "Porque da poco interes"
+          ]
+        }
+      ]
+    }
+  }
+}

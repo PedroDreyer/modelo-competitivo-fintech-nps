@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "player": "Ualá",
+    "site": "MLA",
+    "quarter": "25Q3",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Tarifas": {
+      "total_comentarios_analizados": 4,
+      "delta_pp": -1.4,
+      "causas_raiz": [
+        {
+          "titulo": "Intereses y comisiones excesivos en operaciones bancarias",
+          "descripcion": "Los usuarios perciben que las tasas de interés y comisiones aplicadas por Ualá son desproporcionadas respecto al servicio ofrecido, especialmente en depósitos externos y créditos.",
+          "frecuencia_pct": 75,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Porque los intereses son muy altos",
+            "Cobra mucha comisión",
+            "Por que cobran demasiado interés por un deposito de cuenta externa y tengo que trasladar ese aumento a mi cliente y me parece muy malo"
+          ]
+        },
+        {
+          "titulo": "Relación costo-beneficio percibida como desfavorable",
+          "descripcion": "Se percibe que el precio del servicio no justifica lo que se recibe a cambio en funcionalidades y beneficios.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Es muy cara para el servicio que ofrece y la contraprestación no es la mejor."
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 77,
+      "delta_pp": 1.0,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de promociones y descuentos atractivos frente a la competencia",
+          "descripcion": "La mayoría de los usuarios neutros mencionan que Ualá carece de promociones, descuentos y reintegros competitivos en comparación con otras billeteras como Mercado Pago o Naranja X.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 32,
+          "ejemplos": [
+            "considero que la app no ofrece tantas ofertas o promociones como las demas billeteras virtuales",
+            "Porque no ofrecen descuento o promociones como otros bancos",
+            "LE FALTAN PROMOCIONES ATRACTIVAS"
+          ]
+        },
+        {
+          "titulo": "Promociones concentradas geográficamente en Buenos Aires",
+          "descripcion": "Usuarios del interior del país se sienten excluidos porque las promociones y beneficios solo aplican a cadenas con presencia en CABA y GBA.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Tiene muchos beneficios, pero con poco porcentaje y la mayoria en BS AS",
+            "Si bien tienen la tasa de cuenta renumerada más alta, las mayorías de las promociones son para cadenas que solo se encuentran en buenos aires.",
+            "Pocas promociones en el área donde vivo"
+          ]
+        },
+        {
+          "titulo": "Reducción percibida de beneficios respecto a períodos anteriores",
+          "descripcion": "Usuarios históricos notan que beneficios que existían previamente (como 'trae tu sueldo', reintegros atractivos) fueron eliminados o degradados sin reemplazo.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Antes tenia mejores promociones por depositar dinero, las sacaron",
+            "Antes tenia más beneficios por ejemplo el 'trae tu sueldo' #desde que lo eliminaron lo uso menos",
+            "La empece a usar por las promociones, pero esta habiendo cada vez menos. Ademas los reintegros están tardando cada vez mas."
+          ]
+        },
+        {
+          "titulo": "Confusión y falta de claridad en mecánicas de descuentos y reintegros",
+          "descripcion": "Las condiciones de los descuentos y reintegros no son transparentes, generando frustración al momento de pagar.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "los descuentos y reintegros no son claros y generan confusión en el usuario a la hora de pagar",
+            "Las promociones son engañosas",
+            "Los descuentos que da tienen poco limite de reembolso"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 6,
+      "delta_pp": -0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Carencia de herramientas de organización financiera personal",
+          "descripcion": "Usuarios demandan funcionalidades para separar fondos por objetivos de ahorro, similar a lo que ofrecen competidores.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Le falta funcionalidad de organización. a la hora de ahorrar, me gusta ahorrar para diferentes cosa y no puedo dividir el monto base para hacerlo",
+            "Hay billeteras virtuales que ofrecen mayor variedad de opciones de inversion"
+          ]
+        },
+        {
+          "titulo": "Interfaz menos intuitiva que competidores directos",
+          "descripcion": "Se percibe que otras apps como Naranja X tienen una experiencia de uso más amigable.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "me gusta pero es mas amigable NX",
+            "Necesitaría que fuera más ágil o yo no la sé manejar bien."
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 79,
+      "delta_pp": -0.6,
+      "causas_raiz": [
+        {
+          "titulo": "Caída drástica de la TNA de cuenta remunerada respecto a períodos anteriores",
+          "descripcion": "El motivo dominante: usuarios que eligieron Ualá por tener la mejor tasa del mercado ahora perciben que bajó significativamente y ya no se diferencia de la competencia.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 32,
+          "ejemplos": [
+            "antes era la de mayor rendimiento, ahorra no",
+            "SIEMPRE SE DESTACO X TENER MAYOR PORCEBTAJE DE INTERESES Y AHORA ESTA CASI IGUAL Q EL RESTO",
+            "La recomendaba por sus altas tazas de rendimiento y plazos fijos y ahora bajo mucho"
+          ]
+        },
+        {
+          "titulo": "Tope máximo de saldo remunerado limita el beneficio para usuarios con mayor capital",
+          "descripcion": "El límite de $1.500.000 para la cuenta remunerada hace que usuarios con más capital no puedan beneficiarse completamente, reduciendo el atractivo.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Rendimientos bajos en base al dinero disponible en la cuenta.",
+            "Por que el rendimiento en cuenta es solo para saldo de hasta $ 1.500.000.",
+            "Es muy baja la tasa de interés q paga con dinero en cuenta. La posibilidad de utilizar las funcionalidades depende de la antiguedad q tengas en la app"
+          ]
+        },
+        {
+          "titulo": "Pérdida de competitividad frente a billeteras con mejores tasas",
+          "descripcion": "Usuarios comparan explícitamente con Naranja X, Mercado Pago y otros competidores que ahora ofrecen mejores rendimientos.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "Hay otras billeteras que ofrecen otros servicios y mejor rentabilidad",
+            "ualá tiene una tasa de rendimiento más baja que naranja x",
+            "mejores rendimientos en otras billeteras"
+          ]
+        },
+        {
+          "titulo": "Desconfianza por promesas de rendimiento no cumplidas",
+          "descripcion": "Algunos usuarios perciben que los porcentajes anunciados no se reflejan en los rendimientos reales que reciben.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Dice que tiene determinado porcentaje de rendimiento y es mentira",
+            "Porque prometen un rendimiento extra que en mi caso no se cumplió.",
+            "No, entiendo,dice un 30 x ciento de interés se suma, pero no. No entiendo eso, como es,xq dice eso y no es asi"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 22,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Inaccesibilidad a créditos y préstamos para usuarios activos",
+          "descripcion": "Usuarios que operan regularmente con Ualá no reciben ofertas de crédito ni pueden acceder a préstamos, a diferencia de competidores bancarios.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "No puedo sacar prestamo",
+            "Pq no da prestamos ni tarjetas de credito",
+            "La use desde sus inicios, pagaba y gestionaba todo desde ahí, nunca me ofrecieron tarjeta, préstamos, adelantos, nada."
+          ]
+        },
+        {
+          "titulo": "Tasas de interés elevadas en los préstamos disponibles",
+          "descripcion": "Quienes acceden a financiamiento perciben que las tasas son muy altas y poco competitivas frente a bancos tradicionales.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Los intereses de préstamo son muy altos.",
+            "Me parecen altos los intereses",
+            "Se me complica con los requisitos de préstamo"
+          ]
+        },
+        {
+          "titulo": "Requisitos restrictivos y falta de flexibilidad crediticia",
+          "descripcion": "Los requisitos para acceder a créditos son percibidos como poco claros o inalcanzables para el perfil del usuario promedio.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Se me complica con los requisitos de préstamo",
+            "Porque aunque tiene un buen rendimiento comparando con otras cuentas no son tan accesibles los créditos",
+            "No te dan muchas opciones"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 22,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Atención robotizada e ineficaz a través de bots sin resolución real",
+          "descripcion": "El soporte se limita a chatbots que no resuelven problemas reales, generando frustración por la imposibilidad de hablar con un humano.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "siempre atiende un bot, bajas tasas",
+            "NO DAN BOLA CUNADO TENES UN PROBLEMA. RESPONDEN CUALQUIER COSA",
+            "Por el bot que tienen para atender, es horrible"
+          ]
+        },
+        {
+          "titulo": "Tiempos de espera excesivos y un solo canal de contacto (chat in-app)",
+          "descripcion": "La única vía de comunicación es el chat dentro de la app, con demoras de hasta 80 minutos, sin alternativas como teléfono o email efectivo.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Se demoran mucho en atenderte,no tienen un canal de comunicación más apto solo por chat en la aplicación y aveces hay demora de 80 minutos",
+            "Cuando abrí la cuenta, tuve un problema y me costó mucho comunicarme con el soporte y que me resolvieran el inconveniente.",
+            "Estaría bueno que se puede comunicar más con los clientes ala hora de tener un problema"
+          ]
+        },
+        {
+          "titulo": "Falta de responsabilidad ante errores operativos de la plataforma",
+          "descripcion": "Cuando Ualá comete errores (cobros incorrectos, reintegros demorados), la resolución es lenta o inexistente, erosionando la confianza.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Financieramente me conviene pero no se hicieron cargo de su error y los errores con migo se pagan asi",
+            "Porque en un par de oportunidades descontaron saldo de mi cuenta sin mi autorización",
+            "Ualá funcionó siempre a la perfección como aplicación. El problema fue que hice uso de un reintegro por consumo en una cafetería (Havanna) y tuve que esperar más de 3 meses para que me impactara el reintegro."
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 13,
+      "delta_pp": 0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Desaparición inexplicable de saldo sin notificación ni resolución inmediata",
+          "descripcion": "Usuarios reportan que dinero depositado desaparece de la cuenta por días sin explicación, y cuando retorna no genera los rendimientos correspondientes.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Me a faltado dinero sin hacer ningún pago ni compra y no me resolvieron el problema",
+            "Me ha desaparecido el dinero depositado por varios días y cuando apareció no genero rendimientos",
+            "Porque en un par de oportunidades descontaron saldo de mi cuenta sin mi autorización"
+          ]
+        },
+        {
+          "titulo": "Ausencia de mecanismos robustos de verificación en transferencias",
+          "descripcion": "Las transferencias se ejecutan sin pasos de verificación adicionales (biometría, segundo factor), generando sensación de vulnerabilidad.",
+          "frecuencia_pct": 31,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Al confirmar una transferencia, se deberia pedir confirmar con control de seguridad ya sea facial, huella, clave etc",
+            "Casi sufro una estafa al hacer una transferencia, me llaman por teléfono y obviamente sabía que me querían estafar",
+            "Tiene poca seguridad una vez intentaron hacer compras con mi tarjeta sin q yo aya dado informacion"
+          ]
+        },
+        {
+          "titulo": "Inestabilidad de la plataforma que genera desconfianza transaccional",
+          "descripcion": "Caídas del servicio, mantenimientos frecuentes y fallos en transferencias erosionan la confianza en la solidez técnica de la plataforma.",
+          "frecuencia_pct": 31,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Una vez tuve problemas con una transferencia porque se desconto pero tardo muchos dias en llegar al destino",
+            "En muchos lugares ya no la reciben como forma de pago por demora o fallo en los pagos.",
+            "Porque muchas veces la cuenta aparece en mantenimiento... sobre todo cuando trato de comprar en Supermercados Dia"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 31,
+      "delta_pp": 0.0,
+      "causas_raiz": [
+        {
+          "titulo": "Proceso de login y recuperación de cuenta excesivamente friccional",
+          "descripcion": "El inicio de sesión requiere demasiados pasos, la validación con cámara falla frecuentemente y recuperar la cuenta es casi imposible.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "No me resulta tan sencilla de usar como las otras, me molesta un poco la forma de iniciar sesión que siempre me anda mal",
+            "Es dificil acceder a la app en simples pasos",
+            "El problema es causa de mí celular qué no sacá buenas fotos y no puedo validar mí cuenta y mandé correo electrónico adjuntando fotos de mí DNI que saque con otro celular"
+          ]
+        },
+        {
+          "titulo": "Experiencia de pago QR y transferencias más lenta que competidores",
+          "descripcion": "Los pagos con QR fallan o tardan demasiado, especialmente con conectividad limitada. Las transferencias demoran más que en apps competidoras.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "No me es tan práctica de usar como otras, a veces falla el QR ó tarda mucho, etc.",
+            "Al transferir dinero a otra cuenta demora en llegar la transferencia",
+            "Si me encuentro con poco alcance de wi-fi,o datos del celular y quisiera transferir o pagar con QR no pudo es demasiado Internet el que necesito para el uso de la app digital."
+          ]
+        },
+        {
+          "titulo": "Navegación confusa y funciones difíciles de encontrar",
+          "descripcion": "La arquitectura de información de la app no es intuitiva: funciones clave están escondidas y la interfaz es menos clara que Mercado Pago.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Algunas funciones me es complicado encontrar, no es del todo cómodo para el usuario",
+            "Porque Mercado Pago es mas intuitiva",
+            "de las billeteras que tengo, es la más complicada de usar, tiene mas pasos"
+          ]
+        }
+      ]
+    }
+  }
+}

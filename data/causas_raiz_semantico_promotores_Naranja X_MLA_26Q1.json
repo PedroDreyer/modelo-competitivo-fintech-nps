@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "player": "Naranja X",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "fecha_generacion": "2026-02-23",
+    "tipo": "promotores",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos con el dinero en cuenta": {
+      "total_comentarios_analizados": 157,
+      "delta_pp": -1.9,
+      "porcentaje_promotores": 26.4,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento automático diario en cuenta sin necesidad de contratar productos ni plazo fijo",
+          "descripcion": "Los promotores valoran que el dinero genera intereses de forma automática solo por tenerlo en la cuenta, sin necesidad de hacer nada. A diferencia del plazo fijo, mantienen liquidez total.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 71,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Tasa competitiva en Frascos (31% TNA) que supera a billeteras como Ualá y Mercado Pago",
+          "descripcion": "Los usuarios que usan el producto Frascos perciben un rendimiento superior al del mercado, posicionando a Naranja X como segunda mejor opción en rendimientos entre las billeteras virtuales argentinas.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 47,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Acreditación diaria visible que genera sensación de ahorro constante y tangible",
+          "descripcion": "Los usuarios valoran ver cada día cómo crece su saldo con los intereses acreditados, lo que genera una sensación de ahorro progresivo y motiva a mantener el dinero en la plataforma.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 39,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 135,
+      "delta_pp": 0.8,
+      "porcentaje_promotores": 22.7,
+      "causas_raiz": [
+        {
+          "titulo": "App intuitiva y sencilla que permite operar sin conocimientos técnicos avanzados",
+          "descripcion": "Los promotores destacan que la app es fácil de navegar, con una interfaz clara que permite realizar pagos, transferencias y consultas de saldo de manera rápida y sin complicaciones.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 54,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Pagos NFC y QR en transporte público y comercios que reemplazan el efectivo",
+          "descripcion": "La funcionalidad de pago sin contacto en colectivos y subte, junto con QR en comercios, es altamente valorada por la practicidad de no necesitar efectivo ni tarjeta física para el día a día.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 41,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Gestión digital completa de tarjetas y cuenta que evita ir al banco o sucursal",
+          "descripcion": "Los usuarios aprecian poder hacer todo desde el celular: ver resumen de tarjeta, pagar servicios, transferir, invertir y gestionar su cuenta sin depender de horarios bancarios ni sucursales físicas.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 40,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 72,
+      "delta_pp": -0.4,
+      "porcentaje_promotores": 12.1,
+      "causas_raiz": [
+        {
+          "titulo": "Plataforma todo-en-uno: tarjeta, billetera, préstamos, inversiones y pagos en una sola app",
+          "descripcion": "Los promotores valoran que Naranja X concentra múltiples servicios financieros (cuenta, tarjeta de crédito, préstamos, Frascos, pago de servicios) sin necesidad de usar apps adicionales.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 32,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Acreditación de ANSES y prestaciones sociales directo en la app desde enero 2026",
+          "descripcion": "La reciente habilitación de cobro de asignaciones de ANSES (AUH, Familiares, Embarazo) generó una funcionalidad diferencial que permite a beneficiarios cobrar 100% digital y generar rendimientos automáticos.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Pago de servicios, impuestos y recargas de celular desde la app sin comisiones adicionales",
+          "descripcion": "Los usuarios valoran poder pagar facturas de luz, gas, teléfono, impuestos y recargar el celular directamente desde la app sin moverse de su casa.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 54,
+      "delta_pp": 2.2,
+      "porcentaje_promotores": 9.1,
+      "causas_raiz": [
+        {
+          "titulo": "Descuentos atractivos en delivery (Rappi) y gastronomía con hasta 30% de reintegro",
+          "descripcion": "La promoción One Shot con Rappi (30% descuento) y los beneficios de los planes Turbo/Épico en gastronomía generan una percepción positiva creciente en la categoría de promociones.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Ahorro significativo en transporte público con NFC (hasta 100% en colectivo y subte)",
+          "descripcion": "Los reintegros en transporte público al pagar con NFC son altamente valorados por el ahorro tangible y diario que generan, posicionando a Naranja X como la mejor opción para este uso.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 19,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Cuotas sin interés en viajes y compras que facilitan planificación financiera",
+          "descripcion": "La oferta de 12 cuotas sin interés en Viajes Naranja X y promociones en comercios adheridos es valorada por promotores que buscan financiar compras grandes sin costo adicional.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 48,
+      "delta_pp": 0.6,
+      "porcentaje_promotores": 8.1,
+      "causas_raiz": [
+        {
+          "titulo": "Autenticación biométrica y verificación en dos pasos que protegen operaciones sensibles",
+          "descripcion": "Los promotores valoran las medidas de seguridad como huella digital, reconocimiento facial y códigos de verificación que brindan tranquilidad al operar con su dinero.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Notificaciones push instantáneas ante cada movimiento que permiten monitoreo en tiempo real",
+          "descripcion": "Las alertas inmediatas por cada transacción generan una sensación de control y la posibilidad de detectar operaciones no autorizadas rápidamente.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Respaldo institucional del Grupo Financiero Galicia que genera confianza bancaria",
+          "descripcion": "El hecho de que Naranja X pertenezca al Grupo Financiero Galicia brinda a los usuarios una sensación de solidez y respaldo institucional superior al de fintechs independientes.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Ofrece préstamos y/o tarjeta de crédito": {
+      "total_comentarios_analizados": 46,
+      "delta_pp": -3.6,
+      "porcentaje_promotores": 7.7,
+      "causas_raiz": [
+        {
+          "titulo": "Acceso ágil a préstamos express de hasta $9M sin burocracia bancaria tradicional",
+          "descripcion": "Los promotores valoran la rapidez del proceso de solicitud de préstamos 100% online, con acreditación inmediata y sin necesidad de documentación excesiva ni visitas a sucursales.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Tarjeta de crédito integrada con la billetera que simplifica la gestión financiera",
+          "descripcion": "Los usuarios que tienen la tarjeta de crédito Naranja valoran la integración nativa con la billetera digital: ven resumen, pagan la tarjeta, financian compras y acceden a cuotas sin interés desde una sola app.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Opción de comprar en cuotas sin tarjeta que amplía el acceso al crédito para no bancarizados",
+          "descripcion": "La funcionalidad de cuotas sin tarjeta permite acceder a financiamiento a usuarios que no tienen tarjeta de crédito, democratizando el acceso al crédito de forma sencilla.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    }
+  }
+}

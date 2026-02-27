@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "player": "Ualá",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "fecha_generacion": "2026-02-23",
+    "tipo": "promotores",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Rendimientos con el dinero en cuenta": {
+      "total_comentarios_analizados": 72,
+      "delta_pp": -0.5,
+      "porcentaje_promotores": 28.5,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento automático diario que genera intereses sin esfuerzo ni bloqueo de fondos",
+          "descripcion": "Los promotores valoran que el dinero en la cuenta remunerada genera rendimientos diarios de forma automática, manteniendo la liquidez total. La posibilidad de retirar en cualquier momento sin perder intereses es clave.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 29,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Reconocimiento como mejor app para invertir: plazos fijos y FCI con tasas líderes del mercado",
+          "descripcion": "Los usuarios valoran la diversidad de opciones de inversión: plazos fijos hasta 34% TNA, FCI Retorno Plus (61,8% anual en 2025) y cuenta remunerada. Ualá fue reconocida como la propuesta más competitiva en inversiones entre bancos y fintechs.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 25,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Accesibilidad para usuarios sin experiencia financiera que encuentran una forma sencilla de ahorrar",
+          "descripcion": "Usuarios sin conocimientos de inversión valoran la simplicidad de generar rendimientos sin tecnicismos, convirtiendo a Ualá en su primera herramienta de ahorro.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 46,
+      "delta_pp": -3.0,
+      "porcentaje_promotores": 18.2,
+      "causas_raiz": [
+        {
+          "titulo": "App simple e intuitiva que permite operar en pocos pasos sin complicaciones",
+          "descripcion": "Los promotores destacan la interfaz limpia y minimalista de Ualá, que permite realizar transferencias, pagos y consultas de saldo de forma rápida y sin necesidad de conocimientos técnicos.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Tarjeta prepaga Mastercard aceptada en comercios físicos y online sin restricciones",
+          "descripcion": "La tarjeta Mastercard de Ualá es valorada por su amplia aceptación en comercios, pagos contactless (NFC) y la posibilidad de comprar online en sitios nacionales e internacionales.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Operatoria 100% digital desde el celular que evita trámites bancarios presenciales",
+          "descripcion": "Los usuarios aprecian poder abrir la cuenta, obtener la tarjeta y operar completamente desde la app sin necesidad de ir a sucursales ni hacer filas.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 40,
+      "delta_pp": 1.5,
+      "porcentaje_promotores": 15.8,
+      "causas_raiz": [
+        {
+          "titulo": "Ecosistema financiero completo: cuenta, tarjeta, préstamos, inversiones y seguros en una app",
+          "descripcion": "Los promotores valoran que Ualá concentra múltiples servicios financieros. La incorporación reciente de seguros de vida con Allianz y la Caja de Ahorro con CBU ampliaron la propuesta de valor.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Pago de servicios, recargas y transferencias instantáneas que cubren necesidades cotidianas",
+          "descripcion": "Los usuarios usan Ualá para pagar facturas, recargar celular, SUBE y transferir dinero de forma inmediata. Estas funcionalidades básicas cubren la operatoria diaria sin necesidad de un banco.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Caja de Ahorro con CBU que otorga status bancario y acceso a operaciones exclusivas de bancos",
+          "descripcion": "La nueva Caja de Ahorro operada por Uilo brinda CBU oficial, lo que permite recibir sueldos, cobrar transferencias institucionales y operar como cuenta bancaria formal.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Ofrece opciones de inversión atractivas": {
+      "total_comentarios_analizados": 32,
+      "delta_pp": 4.0,
+      "porcentaje_promotores": 12.6,
+      "causas_raiz": [
+        {
+          "titulo": "Variedad de instrumentos de inversión: FCI, plazos fijos y cuenta remunerada con tasas competitivas",
+          "descripcion": "Los promotores valoran que Ualá ofrece múltiples opciones de inversión desde la app: FCI con diferentes perfiles de riesgo, plazos fijos escalonados y cuenta remunerada. La variedad la diferencia de billeteras que solo ofrecen rendimiento en cuenta.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Plazos fijos digitales con tasas superiores a bancos tradicionales y sin monto mínimo prohibitivo",
+          "descripcion": "Los plazos fijos de Ualá (hasta 34% TNA a 365 días) con montos accesibles y apertura inmediata desde la app son valorados como superiores a la oferta de muchos bancos tradicionales.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "FCI con rendimientos destacados que permiten diversificar sin salir de la app",
+          "descripcion": "Los fondos como Retorno Plus (61,8% anual) y Cobertura Plus (40,4% anual) permiten a usuarios acceder a inversiones diversificadas con un clic, sin necesidad de abrir cuentas en sociedades de bolsa.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": 1.5,
+      "porcentaje_promotores": 11.1,
+      "causas_raiz": [
+        {
+          "titulo": "Verificación biométrica y autenticación reforzada que brindan sensación de protección",
+          "descripcion": "Los promotores valoran las capas de seguridad de Ualá: verificación facial, huella digital y códigos de verificación para operaciones sensibles, generando confianza en la protección de sus fondos.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        },
+        {
+          "titulo": "Notificaciones instantáneas ante cada movimiento y posibilidad de bloquear tarjeta desde la app",
+          "descripcion": "Las alertas en tiempo real por cada transacción y la funcionalidad de bloqueo/desbloqueo inmediato de tarjeta desde la app brindan a los usuarios control total sobre la seguridad de su cuenta.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Regulación BCRA y respaldo de licencia bancaria (Uilo) que genera confianza institucional",
+          "descripcion": "El hecho de que Ualá opere con licencia bancaria a través de Uilo (ex Wilobank) y esté regulada por el BCRA brinda a los promotores una sensación de respaldo institucional superior a fintechs sin licencia.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Igual que el promedio",
+            "Mejor que el promedio"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 7,
+      "delta_pp": -4.6,
+      "porcentaje_promotores": 2.8,
+      "causas_raiz": [
+        {
+          "titulo": "Cashback del 5% en todas las compras con tarjeta Mastercard que genera ahorro tangible",
+          "descripcion": "Los promotores que aún valoran promociones destacan el 5% de reintegro general de la Caja de Ahorro en todas las compras, un beneficio transversal que aplica sin restricciones de rubro.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Mejor que el promedio",
+            "Igual que el promedio",
+            "Igual que el promedio"
+          ]
+        },
+        {
+          "titulo": "Programa Ualá+ con acumulación de puntos canjeables por beneficios diversos",
+          "descripcion": "El programa de fidelización Ualá+ permite acumular puntos con cada compra que pueden canjearse por diferentes beneficios, generando un incentivo adicional para usar la tarjeta.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Igual que el promedio",
+            "Mejor que el promedio",
+            "Igual que el promedio"
+          ]
+        }
+      ]
+    }
+  }
+}

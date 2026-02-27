@@ -1,0 +1,354 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Financiamiento": {
+      "total_comentarios_analizados": 49,
+      "delta_pp": 1.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interes excesivas en prestamos y cuotas que triplican el valor original de compra",
+          "descripcion": "Los usuarios perciben que los intereses de prestamos personales y financiamiento con tarjeta son desproporcionadamente altos, haciendo que las cuotas no resulten convenientes y el costo total supere ampliamente el valor original.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Los intereses son elevados.",
+            "Te Dan opciones pero pagas el triple de la compra. O sea no conviene",
+            "Por que te cobran mucho interes en los prestamos"
+          ]
+        },
+        {
+          "titulo": "Perdida permanente del acceso a prestamos tras un atraso pese a haber regularizado la deuda",
+          "descripcion": "Usuarios que tuvieron un atraso en el pago de un prestamo y luego regularizaron la situacion reportan que Mercado Pago les quito el acceso a nuevos prestamos de forma permanente, sin explicacion ni canal para apelar la decision.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Xq me ofrecieron un prestamo el anio pasado y lo pague pero luego me sacaron la opcion desde hay nunca mas pude tener un prestamo",
+            "Porque si te atrasas por mas que pagues despues no te dan prestamos",
+            "Porque no te dan prestamo facilmente te dan Miles de vueltas para obtener"
+          ]
+        },
+        {
+          "titulo": "Demanda insatisfecha de tarjeta de credito propia con resumen mensual y financiacion",
+          "descripcion": "Muchos usuarios reclaman una tarjeta de credito propia de Mercado Pago que permita comprar en comercios externos y pagar con un resumen mensual, como un banco tradicional.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Le hace falta prestamos y tarjeta de credito",
+            "Me gustaria una tarjeta de credito no solo debitar dinero sino que poder comprar en lugares y que despues poder pagar con un resumen",
+            "No tiene tarjeta de credito"
+          ]
+        },
+        {
+          "titulo": "Debito automatico agresivo del prestamo sobre el saldo sin opcion de elegir cuanto pagar",
+          "descripcion": "Usuarios con prestamos activos se quejan de que cuando ingresa dinero a la cuenta, Mercado Pago lo debita automaticamente para cubrir la cuota sin darles opcion de administrar su propio dinero.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "cuando saco un credito y tengo algo de plata me lo saca muy rapido y de la nada",
+            "si tenes un credito y te ingresa plata justo cuando el credito se vencio te la sacan no te dan opcion de elegir cuanto queres pagar",
+            "Porque por todo te cobra comision"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 70,
+      "delta_pp": -0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Escasez general de promociones y descuentos percibida para una billetera de este tamanio",
+          "descripcion": "La queja mas frecuente es que Mercado Pago tiene muy pocas promociones en comparacion con lo esperado. Los usuarios demandan mas descuentos en comercios y mas beneficios por usar la plataforma.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 32,
+          "ejemplos": [
+            "Tiene pocas promociones",
+            "Estaria bueno que tengan mas promociones",
+            "presenta escasas pormociones"
+          ]
+        },
+        {
+          "titulo": "Promociones irrelevantes para el perfil, zona o comercios frecuentados por el usuario",
+          "descripcion": "Los usuarios se quejan de que las promociones existentes no aplican a los comercios o rubros que frecuentan, haciendolas inutiles en la practica. Reclaman descuentos en comercios de barrio y negocios locales.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "No tiene promociones de mi interes, ni para locales que frecuente",
+            "PORQUE LAS PROMOCIONES QUE TIENE NO SON CONSUMOS QUE ME SIRVAN",
+            "no cuenta con descuento atractivos para mi. deberia tener descuentos o promociones en comercios pequenios"
+          ]
+        },
+        {
+          "titulo": "Beneficios inferiores a los de billeteras competidoras que ofrecen mejores descuentos",
+          "descripcion": "Los usuarios comparan a Mercado Pago desfavorablemente contra otras billeteras que ofrecen mejores descuentos y mas beneficios, percibiendo que MP se quedo atras en la propuesta de valor.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Otras aplicaciones tienen mejores promociones",
+            "porque no cumple con todas mis expectativas, el porcentaje que da MP es inferior a otras billeteras",
+            "Es bueno pero no tiene tanto beneficios como.otras cuentas"
+          ]
+        },
+        {
+          "titulo": "Falta de cuotas sin interes y reintegros atractivos en pagos con QR y tarjeta",
+          "descripcion": "Los usuarios demandan mas opciones de cuotas sin recargo y mayor reintegro al pagar con QR o tarjeta en comercios, funcionalidades que consideran basicas para una billetera digital.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Porque no da cuotas sin interes",
+            "Al usar mis tarjetas de credito me gustaria que tuviera cuotas sin recargo",
+            "No tiene reintegro ni descuento o muy poco"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 11,
+      "delta_pp": -0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Comision al ingresar o extraer efectivo que reduce el saldo disponible del usuario",
+          "descripcion": "Los usuarios se quejan de que Mercado Pago cobra un porcentaje (alrededor del 3%) al depositar o retirar efectivo, lo cual perciben como injusto cuando el dinero es propio.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "PORQUE COBRAN PARA INGRESAR DINERO",
+            "Porque funciona bien, pero si quiero ingresar o extraer dinero en efectivo me cobra un porcentaje",
+            "Porque al querer cargar mercado pago te saca plata de la que uno deposita"
+          ]
+        },
+        {
+          "titulo": "Comisiones altas en operaciones generales que encarecen el uso cotidiano de la plataforma",
+          "descripcion": "Percepcion de que Mercado Pago cobra comisiones excesivas en distintas operaciones, haciendo que el uso habitual resulte caro comparado con alternativas gratuitas.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Es practica rapida agil, pero tiene comisiones altas",
+            "Por q antes no te cobraban cuando agregabas a tu cuenta plata...ahora te cobran un 3%",
+            "chantas avivados"
+          ]
+        },
+        {
+          "titulo": "Cobros inesperados o no autorizados por servicios que el usuario nunca solicito",
+          "descripcion": "Algunos usuarios reportan que se les cobro por prestamos o servicios que nunca solicitaron, sin posibilidad de reclamar o entender el origen del cargo.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 2,
+          "ejemplos": [
+            "Me cobraron por un prestamo que nunca solicite, solo lo utilizo para pagar servicios",
+            "Xq lo uso x obligacion"
+          ]
+        }
+      ]
+    },
+    "Atencion": {
+      "total_comentarios_analizados": 40,
+      "delta_pp": 0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Imposibilidad de hablar con un humano: atencion 100% automatizada sin capacidad resolutiva",
+          "descripcion": "La queja principal es que no existe forma de comunicarse con una persona real. El chatbot automatizado no resuelve problemas complejos y los usuarios se sienten atrapados en un loop sin solucion.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "No hay atencion al cliente por seres humanos",
+            "Porque no hay un numero para poder comunicarme todo es con una maquina en un chat",
+            "no hay atencion al cliente de forma directa, solo te envian a leer cosas pre establecidas que no son abarcativas ni resolutivas"
+          ]
+        },
+        {
+          "titulo": "Falta de numero telefonico y oficinas fisicas para resolver problemas presencialmente",
+          "descripcion": "Los usuarios reclaman la inexistencia de un telefono de contacto y de sucursales fisicas donde acudir ante problemas con la cuenta, generando una sensacion de desamparo ante inconvenientes.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "poder llamar a un numero",
+            "Deberia tener una oficina fisica para comunicarnos mejor",
+            "No tenes un numero de telefono para llamar"
+          ]
+        },
+        {
+          "titulo": "Reclamos ignorados o resueltos con extrema lentitud sin respuesta satisfactoria",
+          "descripcion": "Cuando logran hacer un reclamo, la resolucion es inexistente o demora excesivamente, dejando a los usuarios sin respuesta ante problemas de transferencias, cobros indebidos u otros inconvenientes.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "No atendieron un reclamo.",
+            "Es complicado a la horas hacer un reclamo.",
+            "No tengo rapidamente soluciones"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 87,
+      "delta_pp": -0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento inferior al de billeteras competidoras como Naranja X y MODO",
+          "descripcion": "Los usuarios comparan el rendimiento de Mercado Pago desfavorablemente contra Naranja X y otras billeteras que ofrecen tasas mas altas, motivando a algunos a migrar su dinero hacia la competencia.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 35,
+          "ejemplos": [
+            "me genera mas rendimientos naranja x",
+            "hay otras billeteras que dan mayor rendimiento",
+            "tuve dinero un tiempo ahi y el porcentaje comparado con otras billeters es pobre"
+          ]
+        },
+        {
+          "titulo": "Caida progresiva de la tasa de rendimiento que desincentiva mantener dinero en cuenta",
+          "descripcion": "Usuarios de larga data perciben que la tasa de rendimiento bajo significativamente respecto a lo que ofrecia antes, haciendo que ya no valga la pena mantener dinero en la cuenta.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "El interes que da ha bajado considerablemente con respecto al interes que ofrecia hace algunos tiempo, ya no conviene tanto tener el dinero en reserva",
+            "Porque desde que empece a utilizar la app de mercado pago, se fue reduciendo los intereses que me generaban",
+            "noto que sus intereses son mas bajos"
+          ]
+        },
+        {
+          "titulo": "Ausencia de opciones de inversion diversificadas mas alla del FCI Money Market",
+          "descripcion": "Usuarios mas sofisticados reclaman la falta de opciones de inversion como fondos diversificados, acceso a S&P 500, o herramientas similares a las de plataformas de inversion avanzadas.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "los rendimientos son bajos, tampoco ofrece opciones de inversion",
+            "Me gustaria poder en el sp500 desde mercado pago",
+            "Podria ofrecer otros tipos de inversiones como por ejemplo en fondos de inversion con el respaldo de la empresa."
+          ]
+        },
+        {
+          "titulo": "Rendimiento tan bajo que resulta irrelevante como alternativa real de ahorro",
+          "descripcion": "Un grupo de usuarios considera que el rendimiento actual es tan bajo que resulta irrelevante, calificandolo como insuficiente y cuestionando si vale la pena usar la cuenta para ahorrar.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "No deja buenos rendimientos es una miseria",
+            "Porque no rinde la plata",
+            "Rendimiento bajo"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 17,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Funcionalidades basicas con usabilidad engorrosa que dificultan operaciones clave",
+          "descripcion": "Usuarios reportan que ciertas funciones como adelantar cuotas, pagos especificos o cobros con codigo de barras son dificiles de usar o directamente inexistentes, generando frustracion.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Porque no tines opcion de adelantar cuotas, o no deja pagar algunas cosas",
+            "Aun me parece que tiene funcionalidades que son bastantes engorrosas de usar , por ejemplo el cobro con el codigo de barras",
+            "Le haria mejoras de usabilidad a la app"
+          ]
+        },
+        {
+          "titulo": "Falta de evolucion e innovacion frente a billeteras competidoras",
+          "descripcion": "Los usuarios perciben que Mercado Pago se estanco en su oferta de funcionalidades mientras que billeteras como Naranja X avanzan, ofreciendo menos razones para elegirla como billetera principal.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "siempre se actualiza, no es practica la pagina principal, tiene rendimientos mas bajos que naranja x",
+            "Porque hay billeteras que me.ofrecen mas cosas",
+            "creo que va bien, pero puede ser mejor"
+          ]
+        },
+        {
+          "titulo": "Ausencia de beneficios diferenciadores para usuarios de larga data",
+          "descripcion": "Usuarios antiguos sienten que no reciben nada especial por su lealtad y que la app no les ofrece herramientas o beneficios nuevos que justifiquen seguir eligiendola.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Porque considero que podria ofrecer mayores beneficios",
+            "No es mi favorito",
+            "Porque le falta mejorar"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 61,
+      "delta_pp": 0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Alta incidencia de estafas y hackeos reportados tanto por experiencia propia como de terceros",
+          "descripcion": "La principal preocupacion de seguridad es la alta frecuencia de estafas y hackeos de cuentas, tanto sufrida personalmente como conocida por familiares y conocidos, generando una imagen de inseguridad generalizada.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 24,
+          "ejemplos": [
+            "Hay muchas denuncias sobre estafas desde la plataforma",
+            "hay bastantes estafas",
+            "me hackearon la cuenta y perdi lo de mervado pago y tambien las cuentas bancarias"
+          ]
+        },
+        {
+          "titulo": "Mercado Pago no asume responsabilidad ante fraudes ni ofrece restitucion del dinero perdido",
+          "descripcion": "Usuarios victimas de estafas o transacciones no reconocidas reportan que Mercado Pago se desentiende y no se hace cargo del dinero perdido, a diferencia de lo que esperarian de una entidad financiera.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Porque si te roban, nadie se hace cargo",
+            "Tuve inconvenientes y se lavan las manos. Dicen ser una pasarela de pagos pero no se hacen cargo si el receptor no recibe el dinero",
+            "Porq si te roban no se hacen cargo"
+          ]
+        },
+        {
+          "titulo": "Vulnerabilidad percibida de la plataforma que permite accesos no autorizados desde otros dispositivos",
+          "descripcion": "Los usuarios perciben que la app es facil de vulnerar, que permite accesos desde otros dispositivos sin suficientes barreras de seguridad, generando desconfianza para mantener dinero en la cuenta.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 19,
+          "ejemplos": [
+            "Siento que es facil de vulnerar",
+            "Porque es muy facil acceder desde otro lugar a la aplicacion de mercado pago",
+            "No me parece muy segura"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 23,
+      "delta_pp": -0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Caidas frecuentes del sistema que impiden operar especialmente en dias de alto trafico",
+          "descripcion": "Los usuarios experimentan caidas del sistema que les impiden realizar pagos y transferencias, particularmente en dias festivos o de alta demanda, generando desconfianza en la disponibilidad del servicio.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Falla del sistema",
+            "Se colapsa mucho en dias festivos",
+            "Muchas veces se cae la plataforma, y no genera muchos rendimientos"
+          ]
+        },
+        {
+          "titulo": "Lentitud de la aplicacion en operaciones cotidianas como transferencias y pagos",
+          "descripcion": "Usuarios reportan que la app es lenta, especialmente al realizar transferencias, lo cual es particularmente frustrante en situaciones de pago presencial con QR.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Es demasiado lenta la cuenta y en mi experiencia me solia pasar muy seguido",
+            "aveces la app no funciona muy bien",
+            "La aplicacion no funciona correctamente"
+          ]
+        },
+        {
+          "titulo": "Interfaz que no simplifica operaciones complejas ni es intuitiva para todos los usuarios",
+          "descripcion": "Algunos usuarios encuentran la app confusa o complicada para ciertas operaciones, especialmente aquellos menos familiarizados con tecnologia digital.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Porque el funcionamiento es aveces muy complicado",
+            "porque si tenes algun problema con la cuenta no hay atencion al cliente que sea accesible para resolverlo.",
+            "es muy util... pero no la aceptan en todas partes"
+          ]
+        }
+      ]
+    }
+  }
+}

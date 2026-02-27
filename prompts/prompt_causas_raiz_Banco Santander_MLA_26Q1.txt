@@ -1,0 +1,452 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Banco Santander** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Banco Santander",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### ✅ MOTIVO: Rendimientos (-3.3pp - MEJORÓ)
+
+**Impacto:** 14.7% → 11.5% | **Comentarios:** 43 (25Q4) → 32 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Pocas opciones de inversion"
+
+2. "Es solo un banco más"
+
+3. "Me gustaría que ofrecen canciones como instrumento financiero"
+
+4. "Porque no da rendimientos, su app es confusa por ejemplo al transferir que es el medio de pago que mas uso"
+
+5. "Tiene muchas cosas por mejorar"
+
+6. "Porque no me gusta"
+
+7. "No son proactivos ,no se esperan por fidelizar a los clientes ,mientras te tienen cautivo todo bien si tienen que competir no compiten"
+
+8. "Me gustaría que pudieras ganar porcentajes de dinero por solo tener el dinero en la cuenta."
+
+9. "Es la que más uso y cubre la mayoría de mis necesidades la app es fácil de usar y siempre funciona"
+
+10. "Siempre se puede mejorar"
+
+11. "No ofrece alternativas de financiamiento ni tarjetas"
+
+12. "me gustaría que dé mas intereses en el plazo fijo"
+
+13. "Porque no lo tiene"
+
+14. "Mejoras en la aplicación en general"
+
+15. "Tiene muchas promociones y es muy práctico operar desde Home Banking Pero no rinde el dinero en cuenta"
+
+16. "la uso solo para cobrar honorarios"
+
+17. "Tendria que ofrecer rendimiento del dinero en cuenta, mejores promociones para compras, y mecanismos de inversión asesorados"
+
+18. "La app es muy lenta"
+
+19. "El porcentaje de rendimiento es bajo en comparación con otras billeteras virtuales. La financiación de tarjetas de crédito y la opción de salud financiera es elevada también."
+
+20. "Porque no me ofrece ningún beneficio"
+
+21. "Da menos rédito que otras plataformas y no está teniendo buenas promos"
+
+22. "Todo funciona correcto, no puedo decir si es mejor o peor que otros."
+
+23. "Porque las mejoras que aplicaron en la pagina para las transacciones no me parecen visualmente atractiva. Por otro lado los intereses por importe en cuenta son minimos."
+
+24. "por que e tenido algunos inconvenientes con la aplicacion"
+
+25. "Le falta generar intereses por tener dinero en cuenta"
+
+26. "Le falta opciones reales de ofertas, descuentos e inversiones"
+
+27. "porque me parece bueno que se puede invertir"
+
+28. "No hay rendimiento del dinero en cuenta tanto en pesos como en dólares"
+
+29. "Es mi Banco de cabecera"
+
+30. "Ofrece muy buenos servicios. Los horarios para operar con fondos es acotado al igual que la compra de dolares"
+
+31. "Porque me parece un buen banco pero podría ofrecer rendimientos por dinero en cuenta"
+
+32. "No soy de recomendar"
+
+
+================================================================================
+
+### ✅ MOTIVO: Financiamiento (-1.8pp - MEJORÓ)
+
+**Impacto:** 6.9% → 5.1% | **Comentarios:** 21 (25Q4) → 15 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Los préstamos personales no ofrecen buenas tasas ni plazos adecuados"
+
+2. "Es el Banco que tengo por herencia y nunca cambie no es un buen banco es muy masivo no es selectivo"
+
+3. "me gusta pero podria tener mas descuentos"
+
+4. "Porque cobra la renovación de las tarjetas con un monto un poco alto, a mi entender"
+
+5. "porque en lineas generales es un buen banco, pero si yo hoy quiero sacar un credito hipotecario, me ponen muchas condiciones"
+
+6. "No lo se. Have bastante que no estoy en contacto regular con el banco."
+
+7. "tasas altas me generaron deudas dificules"
+
+8. "No lo sentía así y lo califique"
+
+9. "Porque es la experiencia que tengo al usarla"
+
+10. "Funciona muy bien, suelen dar respuestas acordes. Podría tener mejores créditos."
+
+11. "No he tenido grandes problemas. Esta bien, pero es complicado acceder a una persona."
+
+12. "Las tasas de interes son altísimas"
+
+13. "Porque pedí que NO me abran una cuenta nueva y lo hicieron igual."
+
+14. "No tengo problema con las promociones del banco"
+
+15. "Porque atiende bien y te da la respuesta siempre y créditos"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Tarifas (+1.3pp - EMPEORÓ)
+
+**Impacto:** 7.6% → 8.9% | **Comentarios:** 21 (25Q4) → 26 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "todo bien pero es caro el mantenimiento de la cuenta"
+
+2. "CAROS LOS SERVICIOS"
+
+3. "Me bloquean la cuenta sin motivo, te hacen ir a la sucursal por cualquier cosa."
+
+4. "Las condiciones para bonificar el mantenimiento de cuenta son muy altas"
+
+5. "Pago bastante de mantenimiento"
+
+6. "Me gustaría que se cobre menos por tener una cuenta y poder disponer de tarjeta de credito sin necesidad de cuenta sueldo"
+
+7. "Tiene altos costos de mantenimiento y descuentos irrisorios."
+
+8. "Jamás califico con más de 8 a cualquier entidad, y el costo de mantenimiento de cuenta es caro, por lo demás tiene buen servicio"
+
+9. "Es muy caro.la atención al cliente en sucursal es pesima"
+
+10. "costo de servicio, rendimiento de dinero en cuenta, beneficios por ser cliente, atención al cliente, disponibilidad de sucursales, funcionamiento de cajeros y terminales autoservicios, etc, etc. TODO PÉSIMO"
+
+11. "porque es caro de mantener"
+
+12. "Es caro, no tiene buenas opciones de inversiones, no tiene buenas promociones o descuentos"
+
+13. "Carisimo el mantenimiento de cuenta"
+
+14. "los costos de mantenimiento son muy altos"
+
+15. "Muy altos los intereses por giro en descubierto.  Nunca se contactan para gestionarme la publicidad de mi libro y los canjes de los puntos por sorteo que canjeo hace tiempo no son creibles. Entre otras cosas"
+
+16. "no lo se, la tengo porque ahi me depositaban el sueldo en el trabajo anterior"
+
+17. "Es muy caro para lo que yo lo utilizo"
+
+18. "Los costos de mantenimiento son muy altos y el rendimiento del dinero en cuenta es nulo"
+
+19. "ugojkñ.gok{pj l{uiñjklh ihluoh{ olh,"
+
+20. "Hace mucho que el banco dejó de ser lo que era. Hay que estar pendiente de tener la cuenta bonificada porque si no es carísima. Para eso te obligan a tener contratado algún servicio. Se quedaron en el tiempo. La el dinero en cuenta no tiene ningún ti..."
+
+21. "Comisiones altas"
+
+22. "Es bueno pero me gustarìa que la atencion sea mas rapida, no solo a traves de un boti"
+
+23. "Porque los paquetes de servicios son muy caros"
+
+24. "No la uso mucho y me cobran bastante por la cuenta."
+
+25. "Lo veo un banco caro y usurero"
+
+26. "Porque es mi Baco principal. Me gustan sus beneficios"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Seguridad (+1.3pp - EMPEORÓ)
+
+**Impacto:** 0.5% → 1.8% | **Comentarios:** 2 (25Q4) → 6 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Hace 20 años tengo la cuenta"
+
+2. "No tiene mucha seguridad"
+
+3. "Qué aumenten la tasa de interés"
+
+4. "Hicieron compras con mi tarjeta de débito, que yo no realice"
+
+5. "Porque soy clienta hace muchos años y nunca tuve inconvenientes"
+
+6. "Es un banco internacional y tiene una app y pagina muy amigable y facil de usar!"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Promociones (+1.0pp - EMPEORÓ)
+
+**Impacto:** 11.2% → 12.2% | **Comentarios:** 31 (25Q4) → 39 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "No he tenido porblemas al operar con el banco pero tampoco ofrece promociones o descuentos/productos atractivos"
+
+2. "No tiene buenas promociones y descuentos. Ya no asignan oficial de cuentas a clientes select como yo"
+
+3. "Faltan instrumentos de inversión atractivos"
+
+4. "Me gustaría poder tener mas descuentos en supermercados."
+
+5. "El banco no está ofreciendo cuotas o descuentos para compras de consumo masivo"
+
+6. "Porque debería mejorar las promociones y el programa superclub"
+
+7. "No tienen muchos beneficiosn en muchas marcas, el reintegro es bajo por ej peluqueria que tienen un 50% de reintegro pero el tope es de $ 8.000 (hace años el mismo importe lo que termina siendo un engaño el 50%"
+
+8. "Porque la renovación de tarjeta de crédito es carisima y a su vez no tiene muchas promociones como por ejemplo Banco Macro"
+
+9. "Sacaron promociones en supermercados para los jubilados que cobramos por en ese banco."
+
+10. "DEBERIA TENR MAS PROMOCIONEE Y DESCUENTOS"
+
+11. "No tiene promociones o descuentos atractivos, además de no poseer una buena cobertura de prrstamos"
+
+12. "Xq tengo American Express y no la agarra nadie. Ademas tengo re pocos descuentos. Nada"
+
+13. "Por qué no me quieren dar una tarjeta de crédito"
+
+14. "- Es difícil encontrar información sobre los consumos realizados anteriormente. - Comparado con billeteras virtuales, tiene pocos beneficios (los más útiles son a través de modo) - No se puede pagar con QR en el colectivo"
+
+15. "No ofrece demasiado beneficios a sus clientes"
+
+16. "Antes tenía más promociones."
+
+17. "Los descuentos van acorde a mi espíritu consumista"
+
+18. "nadie es perfecto"
+
+19. "No hay más motivos"
+
+20. "Porque me parece confiable y cumple con lo que ofrece"
+
+21. "util comoda y buenas promociones"
+
+22. "Me gusta el banco"
+
+23. "No tuve facilidades de préstamo, habiendo solicitado recientemente  Pero de todas maneras siempre tuve muy buena atención ya sea presencial o virtual"
+
+24. "No es mao, pero no tiene muchas promos a menos que seas del programa Sorpresa"
+
+25. "Porque me gusta el banco pero ofrece poco promociones en supermercados"
+
+26. "Cuando hubo que renovar la tarjeta de crédito American Express no la enviaron nunca. Yo no me voy a molestar en ir a buscarla. No sé dónde debería quejarme, ya que en el banco no me prestaron atención. Con respecto a las ofertas y descuentos en negoc..."
+
+27. "Antes tenía promociones que me servían más, ahora no tanto."
+
+28. "Me gustaría que tenga más promociones y descuentos en tiendas y supermercados"
+
+29. "Np tiene buenos beneficios"
+
+30. "Pocas promos para la cantidad de plata que ganan con nuestro dinero"
+
+31. "Promociones en combustible con topes y % bajos vs otras entidades bancarias. Faltan mas descuentos en supermercados."
+
+32. "cada vez menos descuentos y promociones"
+
+33. "Me gustaría más promociones, superen los.montos"
+
+34. "porque sacaron los descuentos con el plástico"
+
+35. "Me gustaría que incremente las promociones de compra con tarjetas"
+
+36. "Me gustaría que tuviera más promociones"
+
+37. "Subieron  las condiciones para bonificar el costo de mantenimiento de la cuenta. Los seguros por ejemplo del auto son mucho más caros que si los contratas directamente en las compañías que ofrecen."
+
+38. "En locales me es difícil que me acepten pagar con QR desde la app del.banco"
+
+39. "deberia tener mas cuotas en las promociones"
+
+
+================================================================================
+
+### ✅ MOTIVO: Funcionalidades (-1.0pp - MEJORÓ)
+
+**Impacto:** 2.8% → 1.8% | **Comentarios:** 7 (25Q4) → 5 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "No me satisface los beneficios"
+
+2. "Pocos beneficios oara clientes antiguos"
+
+3. "Muy pocas sucursales en mi ciudad de residencia."
+
+4. "Le falta claridad en las funcionalidades"
+
+5. "cobro el sueldo ahi hace 15 años"
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-1.0pp - MEJORÓ)
+
+**Impacto:** 6.9% → 5.9% | **Comentarios:** 18 (25Q4) → 18 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Muy difícil poder hablar con un ejecutivo. Responden cuando pueden y a veces es tarde la respuesta."
+
+2. "No hay buena comunicación entre el banco y el cliente hace más 20 años que abri la cc  y no sé quién es mi oficial de cuenta"
+
+3. "POrque no tiene una buena atencion al cliente. No hay atencion personalizada de calidad"
+
+4. "La atención al público dejó de ser óptima en los últimos años."
+
+5. "es dificil ser atendido por un ser humano"
+
+6. "LAS VECES QUE HE PEDIDO ASESORAMIENTO NO HAN SIDO EXACTOS Y ME HAN DADO INFORMACION ERRONEA. EL TRATO EN SUCURSAL NO HA SIDO EL MEJOR. POCAS SUCURSALES FISICAS. BENEFICIOS QUE NO ME SIRVEN"
+
+7. "Porque me conforma a lo que yo necesito"
+
+8. "Las opciones de pago parcial de créditos uva solo se permite de forma presencial y no mediante el home banking"
+
+9. "He tenido malas experiencias con la atención al cliente del Banco Santander"
+
+10. "tiene cosas por mejorar, la atencion es muy mala y los limites de tarjeta bajos"
+
+11. "Tengo hace muchos años la cuenta, ya la uso por costumbre"
+
+12. "Floja atencion presencial"
+
+13. "La atención al cliente en el banco es de regular a baja: mucha demora lo cual es raro ya que son muchas las cosas que se pueden hacer sin necesidad e tener que ir en forma presencial."
+
+14. "Lo tengo para cobrar mi jubilación,  creo que califique mal, si lo recomiendo"
+
+15. "es difícil poder comunicarse con alguien por teléfono....muy difícil y he tardado media hora a veces.... todos son teclas y ningún humano."
+
+16. "Mala atencion en sucursales"
+
+17. "No esta buena la atención al cliente"
+
+18. "La atención telefónica es muy variable ,tenés un inconveniente y no sé soluciona por ese medio"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Complejidad (+0.8pp - EMPEORÓ)
+
+**Impacto:** 4.3% → 5.1% | **Comentarios:** 13 (25Q4) → 15 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Es un buen banco para usar cuando no hay problemas, pero cuando surge uno, es como todos los demás, no tienen solución orientada al cliente que sea rápida, pero aún así es un buen banco"
+
+2. "Creo que podría ofrecer mas promociones para comprar en distintos negocios."
+
+3. "Medio complejo para gestionar una tarjeta de credito"
+
+4. "Están modernizando el software del homebank y son un desastre. Todo para atrás!"
+
+5. "Porque si bien es un banco que me da seguridad a la hora de resolución de problemas no son expeditivod"
+
+6. "no tuve inconvenientes hasta el momento"
+
+7. "Por qué la app tiene problemas para las funciones como que se tilda"
+
+8. "nunca anda el home banking"
+
+9. "Deberian mejorar la ayuda on line"
+
+10. "Practico simple np te mata con las tasas y cobros"
+
+11. "NUNCA TUVE PROBLEMAS"
+
+12. "me parece la mejorcalificaicon"
+
+13. "Me cobran varias veces en la tarjeta de crédito me descuentan cuotas y después me las cobran 2 en un mismo mes at al cliente pésima .solo cobro sueldo"
+
+14. "Su uso es complicado para momentos de uso rápido"
+
+15. "No es muy claro para poder usar  no se como poner para que el dinero rinda diariamente como en personal pay, cuesta  mucho atención al cliente por una persona en la app"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Banco Santander_MLA_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

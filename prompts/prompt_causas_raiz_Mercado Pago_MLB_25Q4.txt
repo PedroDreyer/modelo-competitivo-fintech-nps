@@ -1,0 +1,955 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Mercado Pago** en **MLB** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q3 → 25Q4
+**Motivos a analizar:** 7
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (25Q4)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLB",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### ✅ MOTIVO: Complejidad (-1.8pp - MEJORÓ)
+
+**Impacto:** 5.3% → 3.5% | **Comentarios:** 69 (25Q3) → 45 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Pq prefiro outros bancos, outros bancos são mais fáceis"
+
+2. "Aplicativo um pouco confuso para pessoas mais leigas, algumas funcionalidade dão erro, por exemplo tentei gerar um QRCode para pagar meu cartão MP e deu erro."
+
+3. "As vezes é confuso, usar a conta as coisas mudam."
+
+4. "Nao e uma conta prática para mim."
+
+5. "Poderia ser uma conta mais diní¢mica"
+
+6. "ainda precisa melhorar em seu aplicativo para dar ,mais clareza para quem usa e melhorar as taxas."
+
+7. "As vezes tenho problema com navegação do aplicativo"
+
+8. "Facilidade para usar"
+
+9. "Dificuldade em achar algumas funçíµes."
+
+10. "Acho o app um pouco confuso ainda, nao é muito direcional"
+
+11. "Porque foi minha experiíªncia"
+
+12. "Estou testando para saber como funciona ainda, mais achei mais complicado de usar o aplicativo nao vi muita facilidade em si."
+
+13. "Tenho dificuldade em geri-la"
+
+14. "As vezes o banco da alguns problemas e fica inativo por alguns minutos ou horas,isso é meio desgastante"
+
+15. "algumas funcionalidades do aplicativo são dificeis de achar"
+
+16. "As vezes fico meio perdida no aplicativo para encontrar sobre cartíµes"
+
+17. "nao é uma conta de facil uso"
+
+18. "Por conta de muitas informaçíµes ao mesmo tempo."
+
+19. "Â´Â´e dificil usar para pagamento de pix, uso só para receber pagamento de premio de loteria caixa"
+
+20. "Tá bom então vou ver se"
+
+21. "Difícil de negocio"
+
+22. "Não acho tão acessível, não possui as mesmas facilidades de um banco convencional."
+
+23. "Poderia ser mais intuitivo"
+
+24. "Eu desbloquiei o cartão de crédito pelo celular e ainda sim continuou pedindo pra desbloquear. Resumindo passei vergonha atoa na padaria tentando usar o cartão de crédito físico :P"
+
+25. "Nao consegui compreender a melhor maneira de uso, uso somente pra receber créditos e pagar compras do app"
+
+26. "Meu pai já teve problemas em resgatar dinheiro investido no mesmo."
+
+27. "Bom, preciso melhorar mais no aplicativo"
+
+28. "O aplicativo possui muita informação o que torna a usabilidade pouco funcional. Também há uma certa demora na atualização de algumas informaçíµes as vezes (ex. quando vc paga um valor de empréstimo ele demora a atualizar)."
+
+29. "Apenas facilidade em minhas transaçíµes"
+
+30. "Facilidade de uso"
+
+31. "é um bom app com cashback etc vale a pena"
+
+32. "porque ele é bom"
+
+33. "Acho complexo de usar"
+
+34. "A interface não é amigável. Poderia melhorar"
+
+35. "ís vezes quando procuro a parcela do meu empréstimo pra pagar tenho dificuldade de achar"
+
+36. "Os bancos digitais são todos muito parecidos entre si, mas há algo de que não gosto, que é excessiva oferta de produtos, o que torna a experiíªncia de uso ruim. Gostaria de ter uma interface de usuário limpa e objetiva. Minha avaliação é mais voltada..."
+
+37. "Acho meio confuso algumas funçoes dentro do app"
+
+38. "A plataforma é muito complicada e possui cores nada atrativas"
+
+39. "Eu acho o app um pouco difícil de mexer , demora pra mim achar as coisas"
+
+40. "Ser mais claro em informaçíµes sobre investimentos."
+
+41. "O app deveria ser mais intuitivo"
+
+42. "Pagamento não direto lá"
+
+43. "O APP é meio confuso. Além de quando vocíª precisa fazer um pix, o valor com virgula é extremamente confuso, sempre dar um valor maio pq o app não considera os centavos"
+
+44. "O aplicativo do Mercado Pago contem muita propaganda  Acredito que o Mercado Pago possa melhorar e deixar o aplicativo mais fácil de se usar"
+
+45. "Par receber creditos e pagar contas"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+1.1pp - EMPEORÓ)
+
+**Impacto:** 1.8% → 2.8% | **Comentarios:** 27 (25Q3) → 42 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "rápido e fácil tem pix"
+
+2. "Ele é prático para uso, mas tem algumas limitaçíµes de uso em relação a outros bancos"
+
+3. "vale isso, é bom banco"
+
+4. "Facilitar compras do mercado livre"
+
+5. "Pois ainda é nova e está buscando entender seu cliente"
+
+6. "Tem algumas funçíµes que não atendia as necessidades"
+
+7. "Não tem como fazer depósitos,e saques em moeda"
+
+8. "Tem algumas coisas a melhorar, mas já é muito bom"
+
+9. "Ja tive problemas"
+
+10. "Muito bom mas não é perfeito"
+
+11. "Por ser um Banco, que oferece alguns servicos um pouco dificil de se adaptar."
+
+12. "Falta pontuação por uso"
+
+13. "Não há funcionalidade de ajuste do limite do cartão e opçao de usar na app pay"
+
+14. "Algumas facilidades faltam e a credibilidade por conta do país do banco"
+
+15. "í mais conhecido"
+
+16. "Tem como me passar um contato do"
+
+17. "Por precisa melhoras algumas coisas no aplicativo"
+
+18. "ítimo maravilhoso"
+
+19. "Porque precisa d enais funcionalidades"
+
+20. "Porque não oferece todas as operaçíµes bancárias que um banco tradicional oferece e não tem caixas eletrí´nicos nem agíªncias físicas"
+
+21. "í razoável bom"
+
+22. "Para que tenha mais funcionalidade"
+
+23. "Serviços de qualidade"
+
+24. "Tem bons benefícios e esta em crescimento constante."
+
+25. "O banco deve dar e ter soluçíµes para cada perfil de seus clientes"
+
+26. "í bom mas não perfeito acho que poderiam ter mais coisa para usar nele"
+
+27. "Tem como me passar um contato do seu pai"
+
+28. "Não consegui um extrato do ano passado"
+
+29. "Tem algumas falhas técnicas"
+
+30. "Um ótimo banco, mas ainda atrás em funcionalidade como o banco Inter."
+
+31. "Bom, mas pode mehorar, apresenta alguns bugs noapp, baixa oferta de limite, jutos um pouco altos"
+
+32. "Porque acho que precisa melhorar o aplicativo"
+
+33. "Precisa melhorar algumas funçíµes tipo querer adiantar parcelas das compras quando quizer"
+
+34. "Acho que deveria ter mais opçíµes de pagamentos"
+
+35. "Porque tem poção de rendimento da sem também financiamento empréstimos"
+
+36. ". Maior interação"
+
+37. "Eu adoro o Mercado Pago. Poderia até ter atribuído uma nota maior."
+
+38. "Porque nada é completo"
+
+39. "porque deveria ter mais funcionalidades"
+
+40. "O app ainda é bem simples."
+
+41. "eu não acho ele um banco completo"
+
+42. "Ser mais rápido"
+
+
+================================================================================
+
+### ✅ MOTIVO: Rendimientos (-1.0pp - MEJORÓ)
+
+**Impacto:** 5.0% → 3.9% | **Comentarios:** 70 (25Q3) → 50 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Poderia ter mais opçíµes"
+
+2. "Acho que não  tem um rendimento  que cause interesse."
+
+3. "Tá bom então vou ver se consigo ir"
+
+4. "Garantias sobre investimentos"
+
+5. "Precisa melhorar a oferta de investimentos."
+
+6. "Ruim de rendimento, insegurança e difícil função de empréstimo pessoal"
+
+7. "Falta opçíµes de açíµes"
+
+8. "Poderia ter mais rendimentos!"
+
+9. "Poderia ter um rendimento melhor"
+
+10. "Nunca busquei os serviços do mercado pago"
+
+11. "Os rendimentos da conta são bem baixos"
+
+12. "Descontos muitos altos"
+
+13. "Gosto do mercado pago, porém as opçíµes de investimentos do Itaú e funcionalidades sao melhores."
+
+14. "Acho que no geral ele é muito bom no que se propoe"
+
+15. "E uma boa conta e me ajuda com meu dinheiro."
+
+16. "O rendimento é pouco"
+
+17. "Tem rendimentos bons. Aplicativo fácil de usar."
+
+18. "Poderia haver um maior rendimento no cdb da caixinha"
+
+19. "Não quero falar."
+
+20. "Quase sempre estou com saldo na conta, então seria bom ter um bí´nus ou algo assim por estar sempre movimentado a conta."
+
+21. "O rendimento dos cofrinhos deveria ser igual ao valor normal da conta (Ou seja ao inves de 120% até 10k e o restante 100% CDI, deveria ser 120% do CDI até 10k e o restante 105%)"
+
+22. "Poderia remunerar melhor"
+
+23. "Gostaria de mais retorno"
+
+24. "Acho o rendimento pouco"
+
+25. "Tá bom então vou ver se"
+
+26. "o rendimento bom é limitado a um valor muito baixo"
+
+27. "Tem problema se não me da um"
+
+28. "Não é uma conta interessante pra mim. A 99 rende muito mais. Só uso para receber o cashback do mercado livre"
+
+29. "Eu gosto mas nao é meu banco principal"
+
+30. "Banco digital quase completo.  Falta mais opçíµes de investimentos"
+
+31. "Falta mais ofertas"
+
+32. "Gostaria que a conta rendesse mais o dinheiro que está guardado."
+
+33. "Porque precisa render mais o CDI"
+
+34. "Eu gosto de ver que tem rendimentos,na conta,mesmo pouco"
+
+35. "Pouco rendimento em conta"
+
+36. "Pouco rendimento"
+
+37. "Nada em especial."
+
+38. "Gosto para movimentar meu dinheiro"
+
+39. "Pq quero uma conta para render o dinheiro"
+
+40. "Gosto muito mas ainda não conheço bem"
+
+41. "Não tenho muita experiíªncia com o Mercado Pago"
+
+42. "Poderia ter maior rendimento"
+
+43. "Rendimento automático do saldo ativo"
+
+44. "até que é bom, mais precisa melhorar muito"
+
+45. "a resposta selecionada, responde a essa pergunta"
+
+46. "o rendimento do mercado pago era melhor, por isso abri a conta mas agora o nubank paga melhor, estou pensando em concentrar lá os investimentos"
+
+47. "O app é fluido e a rentabilidade garantida é vantajosa."
+
+48. " Tem serviços atraentes, no entanto falta ser mais transparente e oferecer melhores rendimentos ao cliente, tipo o NU."
+
+49. "Já foi informado na tela anterior"
+
+50. "Gosto da facilidade do uso do app"
+
+
+================================================================================
+
+### ✅ MOTIVO: Financiamiento (-0.9pp - MEJORÓ)
+
+**Impacto:** 11.9% → 11.0% | **Comentarios:** 161 (25Q3) → 100 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Gostaria de pegar um maior valor de empréstimo."
+
+2. "Tem como me passar um contato do seu amigo do"
+
+3. "deveria ter mais promoçíµes para as linhas de créditos"
+
+4. "Rive problema com o  mercado pago e cartão de crédito. Me deram o cartão depois removeram a função credito."
+
+5. "Ainda não tenho uma opinião formada"
+
+6. "Eles oferecem crédito e tiram do nada"
+
+7. "Tarifas elevadas"
+
+8. "Serve bem para o propósito que preciso, porem as taxas são bastante altas"
+
+9. "Pq utilizo poucas funcionalidades"
+
+10. "Aumentar o limite do cartão de crédito"
+
+11. "As taxas e juros são muito abusivos."
+
+12. "A conta é nova ,mas por enquanto está agradando"
+
+13. "Tem rendimentos do dinheiro"
+
+14. "Limite de crédito maior para efetuar compras de maior valor."
+
+15. "A instituição me emprestou um dinheiro e eu tive problema e atrasei o pagamento, mas mesmo depois de pagar a mesma não liberou mais crédito a mim."
+
+16. "Acho ruim no geral"
+
+17. "Deveria ter um pouco mais de crédito disponível"
+
+18. "Liberação de oportunidade pra poder engrena vida financeira"
+
+19. "Libera limite baixo, demora pra subir limite."
+
+20. "Já recebi linha de crédito"
+
+21. "Não me dá credito"
+
+22. "Poderiam oferecer um cartão de crédito, mesmo com limite baixo."
+
+23. "Para vender com o mercado livre tem a taxa de serviço fora a taxa de parcelamento do cartão de crédito"
+
+24. "As taxas são bem altas"
+
+25. "Tá bom então vou ver se consigo"
+
+26. "Um limite de crédito melhor"
+
+27. "Não liberou mais credito"
+
+28. "Tem q melhorar suas taxas."
+
+29. "O juros abusivos"
+
+30. "Pq achei uma boa o rendimento e o parcelamento sem juros"
+
+31. "Difícil conseguir cartão de crédito, mas os confrinhos são bons."
+
+32. "pq poderia ser melhor"
+
+33. "Eu tenho mercado pago a 1 ano mas precisa de alguma melhora"
+
+34. "Taxas de crédito muito altas"
+
+35. "Deveria ter taxas melhores nos empréstimos"
+
+36. "Juros altos e pouca oportunidade de receber valores com desconto."
+
+37. "As taxas um pouco alta comparado alguns bancos."
+
+38. "eles estabelecem uma obrigação para aumentar seus limites"
+
+39. "Pouco financiamento como já havia dito antes."
+
+40. "Alta tarifa para o uso de credito."
+
+41. "Pq não tem um limite alto as taxas achei um pouco altas"
+
+42. "Poderia ter taxas menores"
+
+43. "Ofereceram mais credito"
+
+44. "Se tivesse taxas melhores de empréstimo poderia avaliar com melhor nota."
+
+45. "Porque falta mais acessibilidade a crédito"
+
+46. "as  taxas estão muito altas"
+
+47. "Linha de crédito, descontos nas comprar no aplicativo do mercado livre"
+
+48. "Só as taxas poderiam ser melhoradas, rever formas de credito!"
+
+49. "Minha linha de crédio nunca foi disponível."
+
+50. "Boa experiíªncia"
+
+51. "Para ter um cartão de crédito e muito burocrático, deixando difícil, quando se trata de outros apps de banco"
+
+52. "apesar de funcional é difícil obter crédito"
+
+53. "não tenho muita experiencia no uso da conta, então acredito ser esse o motivo"
+
+54. "Tem como me passar um contato do seu"
+
+55. "Limite no cartao ,nunca aumente"
+
+56. "Eles nunca liberam cartíµes de crédito, pedem para nós fazermos investimentos, movimentaçíµes, mas não liberam igual outros bancos."
+
+57. "Pq é da forma que acho que seja"
+
+58. "Taxas absurdas de caras"
+
+59. "Não obtive crédito para conta"
+
+60. "Já tive produtos dessa instituição, infelizmente fiquei devendo por problemas pessoais, paguei tudo a vista em menos de 6 meses e nunca mais me liberaram nada"
+
+61. "Gosto bastante da conta, do rendimento. Porém as taxas de pagamento parcelado é alta"
+
+62. "A conta é bem funcional e ajuda no mercado livre, mas ainda sabendo que uso o mercado livre, deixo dinheiro rendendo, e tenho outros produtos, as taxas de empréstimos ainda são muito altas."
+
+63. "não é fácil liberar cartão de crédito"
+
+64. "í uma boa conta, nunca tive problemas"
+
+65. "Taxas um pouco alta"
+
+66. "Acredito que se melhorasse as taxas seria mais atrativo"
+
+67. "Eu acho que tem muita melhorar"
+
+68. "é sabido que praticam uma das taxas mais caras do mercado! existem soluçoes com benefícios maiores e com valor bem menor... logo não faz o menor sentido!"
+
+69. "Empréstimo com juros elevados."
+
+70. "A taxa de juros do banco é alta"
+
+71. "Gosto muito do mercado pago por ser fácil"
+
+72. "Empréstimo com data muito próxima a contratada"
+
+73. "Não consegui ter um cartão de crédito"
+
+74. "As taxas ainda estão altas"
+
+75. "Ter menores taxas e linha de crédito mais atrativas."
+
+76. "é uma conta boa, as taxas não são as menores do mercado mas ajuda."
+
+77. "Por nada específico"
+
+78. "Não gosto das opçíµes de parcelamento do cartão de crédito."
+
+79. "Deveria ter mais desconto para os clientes."
+
+80. "Taxas menos elevadas"
+
+81. "Sacar dinheiro só caixa eletrí´nico ainda tem uma taxa alta, outros bancos vocíª pode realizar isso algumas vezes no míªs sem pagar taxas"
+
+82. "í¨ bastante seguro e é aceito em muitas lojas"
+
+83. "As compras parceladas sem cartão de crédito, possuem uma taxa muito elevada."
+
+84. "Não peguei cartão"
+
+85. "as taxas não são tão atrativas"
+
+86. "Taxas de juros a prazo"
+
+87. "Acho as taxas alta"
+
+88. "Cartao de credito com bom limite"
+
+89. "Se o banco oferecer um bom crédito com taxas de juros baixas eu dou um 10"
+
+90. "Nao tenho nada a adisse sobre"
+
+91. "As taxas de juros dos produtoes de crédito deles são altas demais, mas de resto é um excelente banco"
+
+92. "Poderia aumentar meu limite de credito"
+
+93. "Falta de possibilidade de credito"
+
+94. "Precido da função cartão de crédito e débito e eles oferem somente o de débito, e ainda tem scores, que eu nunca consigo alcaçar e já movimentei quase mil reais."
+
+95. "Taxas um pouco altas"
+
+96. "Eu gostaria que o Mecacado pago desse mais opção de emprestimo"
+
+97. "Pq é burocrático conseguir um cartão de crédito"
+
+98. "Tive problemas financeiros e quando precisei negociar o cartão, não consegui porque disseram que não era possível"
+
+99. "Pela dificuldade em conseguir um cartão de crédito"
+
+100. "Não uso muito a conta e pra liberar limite de crédito é bem difícil."
+
+
+================================================================================
+
+### 🔥 MOTIVO: Promociones (+0.8pp - EMPEORÓ)
+
+**Impacto:** 6.6% → 7.4% | **Comentarios:** 93 (25Q3) → 99 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "tem boas funcionalidades"
+
+2. "Não ofereceu serviços vantajosos"
+
+3. "Ainda estou experimentando o cartão,mas já estou gostando"
+
+4. "Não sei o motivo"
+
+5. "Uso muito pouco frequente"
+
+6. "nao dá programa de fidelidade"
+
+7. "Precisa melhorar nos benefícios do cartão de crédito."
+
+8. "Porque eu acho justa a avalia8"
+
+9. "Não sou muito familiarisada com o banco uso pouco"
+
+10. "Não tem vantagens"
+
+11. "Gostaria de ofertas mais atrativas do banco"
+
+12. "Não sei o que fazer"
+
+13. "não só o mercado pago mas todas as instituiçíµes bancárias acumulado pontos pra trocar por milhas poderia ser mais fácil e versátil."
+
+14. "í uma conta como outra qualquer"
+
+15. "Não avalio nenhum serviço financeiro como muito bom"
+
+16. "Só uso a conta pra render meu dinheiro."
+
+17. "Porque acho que por ser um banco digital, poderia oferecer cupons para ser usado no mercado livre."
+
+18. "Por que e bem Quinzinho mesmo."
+
+19. "Oferece promoção de cadastro na conta"
+
+20. "Não tenho costume de usar instituiçíµes financeiras para administrar meu dinheiro, utilizo bancos tradicionais. Acredito que com mais promoçíµes e benefícios, consideraria utilizar."
+
+21. "Não utilizo muito"
+
+22. "Acho ele fácil de usar, mas se tivesse promoçíµes constantes seria mais atrativo."
+
+23. "Acho que só é vantajoso pra quem compra no mercado livre ou quer um cartão de crédito"
+
+24. "E associada ao mercado livre"
+
+25. "Não utilizo no meu dia dia então não recomendo"
+
+26. "Pois precisa a melhorar"
+
+27. "No geral é bom. Porém acho que poderia melhorar."
+
+28. "Acredito que para ser melhor precisa ter mais cachback"
+
+29. "Falta um pouco de desconto e mais promoçíµes."
+
+30. "Tenho a pouco tempo, não consigo avaliar ainda"
+
+31. "tenho o banco mas nao utilizo muito"
+
+32. "Tá bom então vou ver se consigo ir lá"
+
+33. "Igual a muitos bancos já existentes"
+
+34. "Não utilizo essa conta como a principal, tenho utilizado para questíµes específicas ."
+
+35. "Algum programa de fidelidade"
+
+36. "Não utilizo muito. Somente por causa do app do mercado livre"
+
+37. "Pq ele para mim é para comprar coisas."
+
+38. "O mercado pago é bom mas tenho outro banco que já usou há mais tempo que ele que oferecem praticamente os mesmos serviços"
+
+39. "Eu uso apenas para receber dinheiro que ganho na loteria da Caixa, guardo uma parte lá, e retiro outra, mas não costumo movimentar a conta. Apenas por conta disso, eu não tenho conhecimento sobre a conta"
+
+40. "Poderia ter mais promoçíµes vinculadas ao Mercado Livre"
+
+41. "muito bom, mas não conheço"
+
+42. "Não dá cashback e as promoçíµes não funcionam mesmo seguindo todos os requisitos"
+
+43. "Uma plataforma boa para administrar os valores porém poderiam oferecer mais benefícios."
+
+44. "Desconto pagamento"
+
+45. "Pelo fato de ter mais confiança.  Tenho essa conta nova."
+
+46. "í um banco novo, mas até que é bom"
+
+47. "Na verdade é uma conta que não utilizo com muita frequíªncia, então não sei corretamente o catálogo do que eles tem a oferecer."
+
+48. "Ainda falta atender algumas necessidades minhas"
+
+49. "Não recebo por está conta"
+
+50. "Não fornece tanta vantagem ou segurança"
+
+51. "Bom para indicar"
+
+52. "Não tenho muito experiíªncia com a conta, ainda estou conhecendo"
+
+53. "Estou começando agora com o mercado pago"
+
+54. "Eu não costumo usar essa conta"
+
+55. "Falta de conhecimento"
+
+56. "Eu estou satisfeita.Só gostaria que houvesse uma opção de cartão de crédito que gerasse pontos ou acúmulo de milhas."
+
+57. "é um lugar bom para deixar o dinheiro, mas poderia ter mais promoçoes e beneficios"
+
+58. "Tá bom então vou ver se consigo"
+
+59. "Uso pouco mas não tenho nada a reclamar"
+
+60. "Tem poucas promoçíµes"
+
+61. "Nas ultimas vezes tive problemas com descontos oferecidos que davam erro e dificilmente funcionavam, precisava entrar em contato com atendimento."
+
+62. "Comecei a utilizar a conta recentemente e estou formando opiniíµes sobre a mesma."
+
+63. "Não cumprem as ofertas que recebemos no app"
+
+64. "Apesar de ter o seu porquinho, ele não é interessante acima de 10.000,00 e os benefícios principais são baseados no meli+, que não necessariamente são do banco"
+
+65. "Parece mais um banco desenvolvido para vendas e compras do mercado livre"
+
+66. "Ainda não usei o suficiente para indicar"
+
+67. "Por que eu quero"
+
+68. "Não costumo usar"
+
+69. "fiz uma boa avaliação, dei um 8,0, é uma excelente, nota. Dez é perfeição e isso não existe."
+
+70. "esse é mais um banco que surgiu... ja tenho o meu"
+
+71. "Porque eu uso direto e não tenho nenhum benefício"
+
+72. "Só acho interessante ter a conta do Mercado Pago tem que o costume de comprar rotineiramente no Mercado Livre."
+
+73. "í um bom banco, oferece um bom rendimento do saldo na conta"
+
+74. "Eu não uso tanto a conta, é mais pra fazer compras no Mercado Livre. Não conheço muito"
+
+75. "Eu uso mercado pago para fazer compras online especialmente no mercado livre"
+
+76. "Sem nada a declarar"
+
+77. "Poderia ser melhor"
+
+78. "Gosto das funcionalidades da conta"
+
+79. "Me parece uma conta digital que foi criada para compras no mercado livre"
+
+80. "A conta é apenas devido a certas facilidades como p.ex. recebimentos de apostas na Loteria Online da CEF !!!"
+
+81. "é que o Mercado pago não é o Banco de minha preferíªncia"
+
+82. "Pq Só uso ora receber príªmio loteria e pagar jogo nao sei mais nada dele"
+
+83. "Podia ter melhores benefícios"
+
+84. "sbxljbcacvdbjlabcjxbcjaxbcjladbcdbclblxm"
+
+85. "10 nenhum banco é"
+
+86. "Costumo usar apenas para guardar um pouco de dinheiro no qual vou gastar futuramente, então pra mim, ele só funciona como um cofrinho que rende bem."
+
+87. "Porque gostaria que houvesse mais descontos interessantes"
+
+88. "Falta mais promoção"
+
+89. "Poderiam dar mais vantagens e descontos"
+
+90. "í bom banco, mas deixou de ter benefícios que antes tinha, como promoçíµes/cashback  para recarga de celular e pagamentos de boleto"
+
+91. "Gosto do banco, preferia antes que ativava o Meli+ pelo uso do cartão e não por ter que pagar uma taxa adicional"
+
+92. "Acredito que eles precisem dar mais benefícios, ser similar ao nubank"
+
+93. "í interessante ter a conta Mercado Pago para quem sabe conseguir descontos ou melhores valores em compras na plataforma deles, fora isso é basicamente igual a qualquer outro banco digital."
+
+94. "nada é extremamente perfeito."
+
+95. "xxxxxxxxxnoiuhboiuhboiuh"
+
+96. "Não utilizo muito"
+
+97. "Foi o que achei justo"
+
+98. "Porque não percebi vantagem em relação a outros concorrentes."
+
+99. "Pois uso pouco, gosto por conta das vantagens do cartão de crédito."
+
+
+================================================================================
+
+### ✅ MOTIVO: Seguridad (-0.6pp - MEJORÓ)
+
+**Impacto:** 3.3% → 2.7% | **Comentarios:** 49 (25Q3) → 35 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Sjsjehd esse Esteves dnssbs dnssbs sjss dnssbs ss sbsjsddjsbd ddnd es ssns sdd dnssbs sjss dnssbs djdbd sbsjsddjsbd sjdb"
+
+2. "E Argentina de origem e gera desconfiança."
+
+3. "Já presenciei situaçíµes de falta de segurança"
+
+4. "Não me sinto muito segura"
+
+5. "Detesto a segurança do app, pois prende tudo ao celular e em caso de perda ou roubo do mesmo é super complexo e demorado bloquear o app e reabilitar em outro aparelho. Acho totalmente estúpido a maneira como é feito a 'segurança' do app."
+
+6. "Para fazer algum pagamento ou pix o app não pede uma senha para as movimentaçíµes."
+
+7. "Vivo recebendo e-mail fraudulento. Vários cartíµes cadastrados lá já foram hackeados / vazados."
+
+8. "í um bom banco digital, porém menos confiável do que um banco tradicional"
+
+9. "E forma que eu gosto de avaliar ele"
+
+10. "Já tive inúmeros problemas com o cartão do mercado pago"
+
+11. "E um otimo banco e com bons rendimentos porem o fato de ser integrado ao mercado livre me deixa com receio"
+
+12. "Muito frágil a segurança da conta."
+
+13. "Eu tive problemas sobre não ter uma senha para autorizar a transação, achei inseguro em caso de roubo"
+
+14. "Meu cartão físico e virtual foi clonado e mesmo após bloquear e solicitar outro ainda recebo alertas de uso."
+
+15. "Não me sinto muito segura"
+
+16. "Falta um pouco de segurança"
+
+17. "Ja tive Problema"
+
+18. "gosto da opção que oferece rendimentos e vantagens para compras, mas tem preocupaçíµes com a segurança"
+
+19. "prefiro nao responder"
+
+20. "Uma boa ferramenta, mas precisa de mais segurança"
+
+21. "acho que ainda falta um pouco de cuidado no aplicativo"
+
+22. "A ausíªncia de agíªncia"
+
+23. "Mercado pago carece de segurança e os valores den taxas  são elevadas"
+
+24. "Já tive tentativas de compras não autorizadas por duas vezes."
+
+25. "Saldo na conta precisa está coberto pelo FGC; Mais transparíªncia nas informaçíµes na oferta dos produtos (exemplo: Cofrinhos, CDB, etc.); Menos gastos com artistas nas propagandas; melhor administração para melhorar os lucros."
+
+26. "Falta de agíªncias presenciais e ainda não tem credibilidade no mercado"
+
+27. "poderia render mais e poderia bloquear conta do mercado pago de assaltante que tentou roubar minha conta"
+
+28. "Não é tão seguro"
+
+29. "Porque utilizo a conta a pouco tempo"
+
+30. "Porque acho que deveria ter senha pra fazer Pix so tem senha para abrir o app"
+
+31. "Gosto muito do Mercado Pago, só falta me passar um pouco mais de segurança"
+
+32. "Tive diversas vezes cartao clonado sem sequer usar ele de forma física"
+
+33. "Já fui roubada, fizeram um monte de compra no meu nome e a equipe do Mercado Pago simplesmente ignorou. Vi no Tiktok que isso é comum deles... Eu tenho a conta pra guardar um dinheiro, mas não é o principal.. E nem anda compensando guardar lá pq é só..."
+
+34. "As taxas e benfícios são bem atrativos, mas por se tratar de um banco digital tenho ressalvas quanto a segurança"
+
+35. "Precisaria de segurança fgc"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Atención (+0.5pp - EMPEORÓ)
+
+**Impacto:** 2.6% → 3.1% | **Comentarios:** 35 (25Q3) → 41 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "O atendimento é bem complicado"
+
+2. "Estou muito satisfeita mas acho que falta alguém que possa nos atender pessoalmente e não virtualmente. Pessoas idosas tem dificuldade em entender as coisas da Internet."
+
+3. "Precisa melhorar o atendimento ao cliente"
+
+4. "já tive dificuldade de entrar em contato com eles quando precisei antes"
+
+5. "Ele é muito bom"
+
+6. "Não ter agencia física"
+
+7. "falta agencia fisica"
+
+8. "Já tive problemas com mercado pago atendentes que não estão nem aí tive que fazer boletim de ocorríªncia p ter meu dinheiro de volta pelo descaso dos fincionarios"
+
+9. "O maior problema é a dificuldade para o atendimento com um ser humano,  a impressão que tenho é que é proposital,  é um sofrimento para falar com um atendente e aina se corre o risco de quando conseguir vocíª estar no departamento errado e eles não t..."
+
+10. "Não tem agíªncia"
+
+11. "Porque não é uma agíªncia física"
+
+12. "algumas vezes o serviço deixa a desejar"
+
+13. "dificuldade em falar com humanos"
+
+14. "Muito difícil ter um atendimento rápido"
+
+15. "PORQUE TIVE DIFICULDADE EM FALAR COM ATENDIMENTO UMA VEZ QUE PRECISEI"
+
+16. "í atende bem os clientes"
+
+17. "Demora para responder"
+
+18. "acho que falta um atendimento humanizado"
+
+19. "Já foi melhor mais ultimamente está péssimo"
+
+20. "Auxilio nas solução de manutenção maquina"
+
+21. "ja tive problemas com uma venda"
+
+22. "Tá bom então vou ver se consigo"
+
+23. "Problemas com portabilidade, empréstimo e cartão, e sua ia nao ajuda muito"
+
+24. "As vezes da problemas no app e é difícil entrar em contato com o suporte para resolver."
+
+25. "Porq gosto muito das ofertas"
+
+26. "Resolver o problema na hora que a gente pede í s vezes eles mandaram meu nome para o SPC sendo que eu tinha dinheiro na minha conta e eles não resolveram problema e ainda sem mandar o meu nome para SPC e agora eu devo juros altíssimos sendo que eu po..."
+
+27. "í um banco digital bom"
+
+28. "Pq achei o que deveria"
+
+29. "Tem muitos benefícios"
+
+30. "Porque na hora que a gente precisa de algum esclarecimento demora um pouco"
+
+31. "Por não ter agencia física torna o relacionamento mais complicado para resolver determinados assuntos"
+
+32. "Não tenho clareza sobre o atendimento, caso seja necessário."
+
+33. "Acredito que o Relacionamento com cliente pode melhorar, pois temos poucas informaçíµes de segurança"
+
+34. "O aplicativo é muito bom.,  mas as poucas vezes que precisei do atendimento ao cliente foi horrível"
+
+35. "Por que ele me oferece qualidade no serviço."
+
+36. "Conta sem agíªncia é muito difícil de resolver."
+
+37. "Difícil contato"
+
+38. "Agíªncia física"
+
+39. "Limitado e muito difícil entrar em contato"
+
+40. "Fui mal atendido por uma colaboradora e uma comprar que fiz no mercado livre."
+
+41. "Não antecipa parcelas do cartão de crédito. Atendimento muito falho e sem educação, abrir BACEN e ainda foi ruim."
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Mercado Pago_MLB_25Q4.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

@@ -1,0 +1,452 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Ualá** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q3 → 25Q4
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (25Q4)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Ualá",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### 🔥 MOTIVO: Financiamiento (+5.0pp - EMPEORÓ)
+
+**Impacto:** 3.9% → 8.9% | **Comentarios:** 22 (25Q3) → 29 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Es una buena billetera"
+
+2. "Podría tener una taza de interés mayor, además me parece una app un poco insegura al necesitar un número de pin para transferir en lugar de la huella"
+
+3. "Huala es una tarjeta que actualizó su línea de crédito hace poco y tampoco ofrecían préstamo"
+
+4. "Porque,da préstamos,pero hasta una cantidad nomas"
+
+5. "Xq es una billetera q funciona bien pero en ocasiones presenta demoras en las transferencias"
+
+6. "Tuve un excelente cumplimiento con ellos y no se tuvo en cuenta al momento de renovar un crédito"
+
+7. "Porque me gusta su taza de financiamiento"
+
+8. "No me ofrecen tarjeta de credito"
+
+9. "Para poder tener más comodidad con préstamos"
+
+10. "Tasas de intereses altas en préstamos y cuotificacion"
+
+11. "Solo que tenés que sumar puntos para obtener un préstamo"
+
+12. "Es una muy buena aplicación"
+
+13. "Es buena en general, no tengo nada negativo para decir"
+
+14. "Porque recién la empecé a usar"
+
+15. "Pq no tiene tanta funcionalidad como las demás, ya sea ofreciendo prestamos creditos o acceso a otros beneficios"
+
+16. "Tiene costos de financiacion demasiados elevados"
+
+17. "Es una buena billetera virtual.es fácil de usar y cualquiera la puede usar."
+
+18. "Xq no da muchos prestamos"
+
+19. "Simplemente la recomendaría si alguien la necesita."
+
+20. "Las fechas de vencimiento no se puede cambiar y tiene una sola opción de cancelar la cuota de préstamo"
+
+21. "Los prestamos que ofrece son muy onerosos"
+
+22. "Estoy acostumbrada a usar otra billetera virtual"
+
+23. "Es mucho mas conocida mercadopago, pero uala tiene lo suyo, solo necesito poder acceder a prestamos"
+
+24. "Llevo meses usando la cuenta y manejo buena suma de dinero y no me ofrece prestamos o tarjetas, ellos se benefician pero el cliente no"
+
+25. "Porque no la uso mucho"
+
+26. "Porque esa es mi opinion"
+
+27. "No tuve mala experiencia, podrían mejorar tal vez algunas cosas minimas"
+
+28. "Préstamo que ofrecen soy MUY CAROS."
+
+29. "Porque es bueno  el rendimiento pero podría mejorar , siempre hay detalles a mejorar"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Complejidad (+3.4pp - EMPEORÓ)
+
+**Impacto:** 5.8% → 9.2% | **Comentarios:** 31 (25Q3) → 25 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Te pide que te gas varias contraseñas para más seguridad y eso es algo molesto"
+
+2. "es muy fácil usarla"
+
+3. "Porque da muchas vueltas para transferir"
+
+4. "Problemas para transferir dólares"
+
+5. "Porque es mí parecer. Tarda  un poco en procesod"
+
+6. "Cuando quiero hacer transferencias a veces no funciona y tengo que reiniciar mi teléfono, está sucediendo muy amenudo"
+
+7. "Transferencias muy estrechas diarias"
+
+8. "Me descontaron plata de un pago con qr que ya habia sido cancelado"
+
+9. "por el interes que da"
+
+10. "A veces tarda en abrir"
+
+11. "Porque muchas veces la página no anda, no ingresan las transferencias y no se puede usar la página."
+
+12. "No es muy claro el detalle de la plata que hay en la cuenta , con la invenrtida"
+
+13. "Porque a veces se tildaba"
+
+14. "Porque muchas veces se me tildo y no la podía usar"
+
+15. "Aunque ya no tanto, a veces desaparecen funciones."
+
+16. "En ocasiones no se pueden realizar algunos debitos"
+
+17. "Prefiero evitarlo"
+
+18. "La usó muy seguido pero otro billeteras virtuales me ofrecen más beneficios"
+
+19. "Me piden muchos datos"
+
+20. "Porque en algunas oportunidades el doble código retraza la operación"
+
+21. "me gusta pero le faltan comididades"
+
+22. "ES MUY DIFICIL CONTACTAR PARA QUE TE RESULEVAN DUDAS COMERCIALES"
+
+23. "Antes la usaba mucho pero es poco práctico que el rendimiento lo genere solo invirtiendo, más allá de que se pueda utilizar en cualquier momento, suele ser una traba para mí eso."
+
+24. "Me parece que el formato de la aplicación por momentos es algo engorroso, como cuando tenes que transferirle dinero a un alias que no tenes guardado."
+
+25. "He oído que aveces los pagos no se efectúan y que hubo gente que perdió la cuento y la aplicación no los ayudó para recuperar su dinero"
+
+
+================================================================================
+
+### ✅ MOTIVO: Promociones (-3.2pp - MEJORÓ)
+
+**Impacto:** 12.8% → 9.7% | **Comentarios:** 77 (25Q3) → 29 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Fueron sacando descuentos que eran importantes par mi"
+
+2. "Es buena y ofrece opciones"
+
+3. "porque los reintegros hay que solicitarlos tardan mucho"
+
+4. "ES UTIL NO LA ESPLORE TOTALMENTE"
+
+5. "Los rendimientos son muy variados y a veces desalientan dejar el dinero en la cuenta"
+
+6. "Todavia le falta que sea mas confiable para el uso de todos"
+
+7. "Simplemente no es mi favorita"
+
+8. "porque el que no tiene targeta de credito no tiene beneficios"
+
+9. "Porque solo es atractiva para compra de moneda extranjera"
+
+10. "Tiene pocos descuentos y promociones"
+
+11. "No suelo recomendar"
+
+12. "mala atencion al cliente y deficiente gestion y plazos"
+
+13. "Porque me parece."
+
+14. "sería muy benéfico que tuviera mas promociones"
+
+15. "Tiene algunas promos buenas"
+
+16. "Una de mis primeras billeteras virtuales"
+
+17. "Para mí gusto está bien la puntuación"
+
+18. "No hace mucho que lo tengo, todavía no me adqpto"
+
+19. "Me sirve por el porcentaje que tiene ahora en la cuenta remunerada, nada más. No larga ninguna promo..."
+
+20. "Los descuentos que tiene, no me sirven en mi caso particular"
+
+21. "No tiene tanto beneficios como otras billeteras virtuales"
+
+22. "Me resulta muy útil, pero es una app de las que menos uso..."
+
+23. "Es buena herramienta"
+
+24. "Fácil de abrir la cuenta y fácil para operar. Falta opción de stablecoins."
+
+25. "Por qué siento una forma de ahorro seguro"
+
+26. "Fallas en la app Promociones"
+
+27. "Faltaría que los préstamos no tuviesen tan alta intereses"
+
+28. "Yo lo que cambiaria es que tenga mas descuentos y promociones en los diferentes mercados. Tambien que bajen el precio de las tarifas"
+
+29. "Es opción muy intuitiva y no tiene muchos errores como las bancarizadas , la de crédito es muy buena falta más promociones para la de crédito"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+1.3pp - EMPEORÓ)
+
+**Impacto:** 1.6% → 2.9% | **Comentarios:** 6 (25Q3) → 9 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Me parece una aplicacion muy buena para el dia a dia."
+
+2. "Porque falta más cos"
+
+3. "uso poco esta aplicacion"
+
+4. "Porque no la uso mucho"
+
+5. "Nada para agregar"
+
+6. "Es lo q veo desde mi punto de vista"
+
+7. "También me gustaría que tenga más promos o descuentos"
+
+8. "Porque no.me califica para crédito"
+
+9. "Me gustaría que tengas más funciones"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Tarifas (+0.9pp - EMPEORÓ)
+
+**Impacto:** 1.3% → 2.2% | **Comentarios:** 4 (25Q3) → 4 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Es facil de usar..tiene buen interes... Tiene tarjeta de crédito"
+
+2. "Muchas veces no funcionó del todo bien"
+
+3. "La comisión de cuenta es más cara que en los bancosn"
+
+4. "porque me da poco porcentaje de intereses cuando realizo inversiones"
+
+
+================================================================================
+
+### ✅ MOTIVO: Rendimientos (-0.9pp - MEJORÓ)
+
+**Impacto:** 15.4% → 14.5% | **Comentarios:** 79 (25Q3) → 40 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "Mayor porcentaje de inversión"
+
+2. "Es una buena billetera"
+
+3. "Es facil de usarla"
+
+4. "Porque es muy buena"
+
+5. "Porque utilizo más NX"
+
+6. "Para comprar/vender dólares te obliga abrir una cuenta bancaria"
+
+7. "Porque es lo que pienso"
+
+8. "Poco rendimiento del dinero"
+
+9. "Porque ofrece buenos rendimientos"
+
+10. "Por el rendimiento del dinero"
+
+11. "Me gustaría que tenga más descuentos en los comercios"
+
+12. "Porque la tasa fluctúa mucho hacia la baja"
+
+13. "cuabdo está en mantenimiento no se puede usar y juncal tienen tiempo de reposición de servicio"
+
+14. "Es facil usarla pero el rendimiento no ws bueno"
+
+15. "Porque no la uso mucho"
+
+16. "Es una buena app"
+
+17. "Solo la uso para invertir en la bolsa de valores pero después no la uso"
+
+18. "Porque ofrece poco rendimiendo del dinero en cuenta."
+
+19. "Podría rendir mas"
+
+20. "Pues no ofrece rendimientos de dinero en la cuenta"
+
+21. "Porque aun le falta más opciones"
+
+22. "Porque la tasa de rendimiento del dinero es baja a comparación de otras billeteras"
+
+23. "Genera intereses por mantenimiento de hasta 1M. Osea q en cifras superiores ya no genera rendimiento por tenencia"
+
+24. "No la uso constantemente"
+
+25. "El rendimiento de otras cuentas es mayor ."
+
+26. "Me parece una buena opción pero  no es demasiado atractiva"
+
+27. "no es claro el rendimiento de la cuenta"
+
+28. "Para que sea más rentable."
+
+29. "Porque creo que hay mejores billeteras virtuales"
+
+30. "No tiene muchos beneficios para mí por el momento."
+
+31. "Tengo que esperar mucho para pedir un préstamo"
+
+32. "La uso depende del porcentaje de rendimiento"
+
+33. "Bajo el rendimiento de la tasa de interés"
+
+34. "Sus tarifas de inversión son muy bajas para el tiempo que te dan"
+
+35. "Los intereses en inversiones son buenos"
+
+36. "Porque te coloca minimos para darte mayor rendimiento en cuenta"
+
+37. "de todas las billeteras era las mas complicada no generaba intereres sobre tu saldo directamente por eso deje de usarlo con mas frecuencia"
+
+38. "poco rendimiento"
+
+39. "La tasa de rendimiento"
+
+40. "Por nada en especial"
+
+
+================================================================================
+
+### ✅ MOTIVO: Seguridad (-0.5pp - MEJORÓ)
+
+**Impacto:** 2.7% → 2.2% | **Comentarios:** 13 (25Q3) → 6 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "porque un hacker accedió a mi cuenta e intento robarme plata"
+
+2. "Porque no es segura ni tiene atención  personalizada frente a reclamos"
+
+3. "A veces no me da mucha confianza y temo no poder retirar mi dinero"
+
+4. "Porque me da mas seguridad otro tipo de cuenta virtual. O quizás no se la seguridad q tiene uala"
+
+5. "Porque no es la que utilizo habitualmente y no suelo tener saldo en ella nunca tuve inconvenientes aclaro"
+
+6. "La atención al cliente ante dificultades es muy lenta, si se compromete la seguridad de la cuenta estas expuesto totalmente"
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-0.1pp - MEJORÓ)
+
+**Impacto:** 4.2% → 4.1% | **Comentarios:** 22 (25Q3) → 14 (25Q4)
+
+**Comentarios 25Q4:**
+
+1. "se pusieron medio violentos al reclamar el pago de una cuota de un préstamo. Tengo cuenta, uso los préstamos hace más de un año, siempre pagando. Este mes, por la situación del país etc, no pude completar el pago en tiempo y forma. En lugar de ofrece..."
+
+2. "Porque tuve un inconveniente con la tarjeta que jamas la mandaron al domicilio y no pude gestionar el reclamo."
+
+3. "Tuve problemas de seguridad y no tuve respuesta"
+
+4. "Por qué es lo que más o menos y la sensación al uso que le doy"
+
+5. "Tuve un par de problemas a veces, pero por suerte siempre se terminaron resolviendo. No tiene muchas promos/descuentos/reintegros que me sirvan"
+
+6. "Un teléfono o algún nro más accesible para reclamos. Y que atiendan en el momento."
+
+7. "Tiene buen rendimiento."
+
+8. "son todas mas o menos iguales"
+
+9. "No posee una linea directa de atención al cliente"
+
+10. "No encuentro para atención al cliente"
+
+11. "Es una billetera virtual que no es tan fácil de manejar!"
+
+12. "porque me robaron plata, y no tuve solución"
+
+13. "me parece buena pero podria ser mejor la atencion al cliente, tener mejores rendimientos y tener mejores inversiones"
+
+14. "Ante problemas tardan en contestar y resolver la devolución de dinero."
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Ualá_MLA_25Q4.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

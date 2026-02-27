@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLA",
+    "quarter": "25Q4",
+    "fecha_generacion": "2026-02-13",
+    "tipo": "promotores",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 429,
+      "delta_pp": 2.7,
+      "porcentaje_promotores": 43.2,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz intuitiva que permite realizar operaciones en pocos segundos sin complicaciones",
+          "descripcion": "Los usuarios destacan que la app es extremadamente facil de usar, con una interfaz clara que permite pagar, transferir y consultar saldo sin necesidad de conocimientos tecnicos avanzados.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 172,
+          "ejemplos": [
+            "Es facil de usar y muy comoda para hacer todas las operaciones del dia a dia",
+            "La app es muy practica, en dos clicks ya hice lo que necesitaba",
+            "Es sencilla y rapida, no necesitas ser un experto para usarla"
+          ]
+        },
+        {
+          "titulo": "Pago con QR universal aceptado en la mayoria de comercios de Argentina",
+          "descripcion": "El pago con codigo QR es la funcionalidad mas valorada por los promotores, ya que les permite pagar en una amplia red de comercios sin necesidad de efectivo ni tarjeta fisica.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 129,
+          "ejemplos": [
+            "Puedo pagar en todos lados con QR, ya casi no uso efectivo",
+            "Es muy comodo pagar con el celular en cualquier comercio, hasta en el kiosco de la esquina",
+            "Lo mejor es el QR, puedo pagar rapido sin llevar la billetera encima"
+          ]
+        },
+        {
+          "titulo": "Disponibilidad 24/7 que reemplaza la necesidad de ir al banco o cajero",
+          "descripcion": "Los usuarios valoran poder realizar todas sus operaciones financieras desde el celular a cualquier hora, sin depender de horarios bancarios ni hacer filas en sucursales.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 86,
+          "ejemplos": [
+            "Puedo transferir plata a cualquier hora sin ir al banco",
+            "No necesito ir al cajero ni hacer filas, todo lo hago desde la app",
+            "Es genial poder pagar servicios a las 3 de la maniana si quiero"
+          ]
+        },
+        {
+          "titulo": "Transferencias instantaneas entre cuentas que facilitan el manejo cotidiano del dinero",
+          "descripcion": "La velocidad de las transferencias y la posibilidad de enviar dinero a cualquier contacto de forma inmediata es altamente valorada para dividir gastos, pagar deudas y manejar el dinero diario.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 42,
+          "ejemplos": [
+            "Es lo mas rapido para pasarle plata a alguien, llega al instante",
+            "Uso Mercado Pago todos los dias para transferir plata a mis amigos y familia",
+            "Las transferencias son inmediatas, no como los bancos que tardan"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 207,
+      "delta_pp": 0.9,
+      "porcentaje_promotores": 20.9,
+      "causas_raiz": [
+        {
+          "titulo": "Solucion todo-en-uno: pagos, transferencias, servicios y recargas en una sola app",
+          "descripcion": "Los promotores valoran que Mercado Pago centraliza multiples funcionalidades financieras en una unica aplicacion, evitando la necesidad de usar multiples apps o ir a distintos lugares.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 83,
+          "ejemplos": [
+            "Tiene todo lo que necesito: pago servicios, transfiero, recargo el celu, todo en un solo lugar",
+            "Es mi billetera principal porque tiene todas las funciones que uso en el dia a dia",
+            "No necesito otra app, con Mercado Pago hago todo"
+          ]
+        },
+        {
+          "titulo": "Integracion perfecta con Mercado Libre para compras y seguimiento de envios",
+          "descripcion": "La conexion nativa con Mercado Libre es un diferenciador clave que facilita las compras online, el seguimiento de pedidos y las devoluciones de dinero.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 62,
+          "ejemplos": [
+            "Lo uso principalmente para comprar en Mercado Libre, es super comodo",
+            "La integracion con Mercado Libre hace que comprar sea facil y seguro",
+            "Compro mucho por Mercado Libre y tener la plata en MP me facilita todo"
+          ]
+        },
+        {
+          "titulo": "Pago de servicios, impuestos y recargas de celular desde la app sin comisiones",
+          "descripcion": "Los usuarios aprecian poder pagar facturas de luz, gas, telefono, impuestos y recargar el celular directamente desde la app, ahorrando tiempo y evitando filas.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 41,
+          "ejemplos": [
+            "Pago todos mis servicios por Mercado Pago, luz, gas, internet",
+            "Es genial poder recargar el celular y pagar los impuestos desde la app",
+            "solo la uso para compras o transferencias, carga de celular y transporte"
+          ]
+        },
+        {
+          "titulo": "Tarjeta prepaga que permite operar en comercios fisicos como una tarjeta bancaria",
+          "descripcion": "La tarjeta prepaga de Mercado Pago es valorada porque permite realizar compras en comercios fisicos y pagar transporte, brindando funcionalidades similares a las de un banco tradicional.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "La tarjeta prepaga me sirve para pagar en todos los locales",
+            "Uso la tarjeta de MP para el subte y los colectivos, muy practico",
+            "Con la prepaga puedo comprar en cualquier comercio sin problemas"
+          ]
+        }
+      ]
+    },
+    "Rendimientos con el dinero en cuenta": {
+      "total_comentarios_analizados": 138,
+      "delta_pp": -2.9,
+      "porcentaje_promotores": 13.9,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento automatico sin esfuerzo que genera intereses solo por tener dinero en cuenta",
+          "descripcion": "Los usuarios valoran que el dinero genere rendimientos de forma automatica sin necesidad de contratar productos adicionales, simplemente por tenerlo en la cuenta.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 62,
+          "ejemplos": [
+            "Me gusta que mi plata genere rendimientos automaticamente sin hacer nada",
+            "El dinero rinde solo por estar ahi, es mejor que tenerlo en el banco sin ganar nada",
+            "Los rendimientos automaticos son lo que me convenció de dejar mi plata en MP"
+          ]
+        },
+        {
+          "titulo": "Liquidez total: rendimiento con posibilidad de retirar el dinero en cualquier momento",
+          "descripcion": "A diferencia de un plazo fijo, los usuarios aprecian que pueden retirar su dinero cuando lo necesiten sin perder los intereses ya generados.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 41,
+          "ejemplos": [
+            "Lo mejor es que gano intereses y puedo sacar la plata cuando quiera",
+            "No es como un plazo fijo que te ata, aca la plata rinde y la puedo usar cuando necesite",
+            "Te da intereses y tenes liquidez total, no te bloquean la plata"
+          ]
+        },
+        {
+          "titulo": "Alternativa accesible de ahorro para quienes no tienen grandes montos ni conocimientos financieros",
+          "descripcion": "Usuarios con poco capital o sin experiencia en inversiones encuentran en Mercado Pago una forma sencilla de hacer rendir su dinero sin montos minimos ni complejidad.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 35,
+          "ejemplos": [
+            "Para los que no tenemos mucha plata es ideal para que rinda un poquito",
+            "No necesito entender de inversiones, solo dejo la plata y ya gana",
+            "Me gusta la aplicacion tiene buenos beneficios de ahorro para los clientes."
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 89,
+      "delta_pp": 1.4,
+      "porcentaje_promotores": 9.0,
+      "causas_raiz": [
+        {
+          "titulo": "Verificacion biometrica y doble autenticacion que protegen el acceso a la cuenta",
+          "descripcion": "Los usuarios promotores destacan las medidas de seguridad como el reconocimiento facial, huella digital y codigos de verificacion que les dan confianza en la proteccion de su dinero.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 36,
+          "ejemplos": [
+            "Me siento seguro con la verificacion por huella y reconocimiento facial",
+            "La doble verificacion me da tranquilidad de que nadie puede entrar a mi cuenta",
+            "Es segura porque siempre te pide la huella o la cara para operar"
+          ]
+        },
+        {
+          "titulo": "Notificaciones instantaneas de cada movimiento que permiten detectar fraudes rapidamente",
+          "descripcion": "Las alertas en tiempo real ante cada transaccion brindan a los usuarios una sensacion de control y la posibilidad de actuar rapidamente ante movimientos sospechosos.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 27,
+          "ejemplos": [
+            "Me avisa al instante de cada movimiento, asi se si alguien uso mi cuenta",
+            "Las notificaciones son inmediatas, me entero de todo lo que pasa con mi plata",
+            "Me da seguridad que me notifican cada vez que se hace una operacion"
+          ]
+        },
+        {
+          "titulo": "Confianza en el respaldo de la marca Mercado Libre como empresa solida y reconocida",
+          "descripcion": "El respaldo de Mercado Libre como empresa consolidada y de gran tamanio genera confianza en los usuarios que perciben a Mercado Pago como una plataforma segura y confiable.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "Confio en Mercado Pago porque detras esta Mercado Libre, una empresa grande y seria",
+            "Me da seguridad porque es de Mercado Libre, no es una app desconocida",
+            "Es confiable porque tiene el respaldo de una empresa muy grande"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 48,
+      "delta_pp": -2.8,
+      "porcentaje_promotores": 4.8,
+      "causas_raiz": [
+        {
+          "titulo": "Descuentos atractivos en supermercados y comercios al pagar con QR",
+          "descripcion": "Los promotores que valoran las promociones destacan los descuentos en supermercados como Coto, Carrefour y Jumbo al pagar con QR como un beneficio tangible y util en su vida cotidiana.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "Tiene buenas promociones en supermercados, ahorro bastante pagando con QR",
+            "Los descuentos en Coto y Carrefour me convienen mucho para las compras del mes",
+            "Ofrece promociones descuentos facilidad para hacer las transacciones"
+          ]
+        },
+        {
+          "titulo": "Cuotas sin interes que facilitan compras grandes sin endeudarse",
+          "descripcion": "La posibilidad de pagar en cuotas sin interes, tanto en Mercado Libre como en comercios adheridos, es valorada como un diferenciador importante para compras de mayor monto.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Las cuotas sin interes en Mercado Libre son geniales para compras grandes",
+            "Puedo comprar cosas caras en cuotas sin que me cobren de mas",
+            "Porque te da muchas promociones"
+          ]
+        },
+        {
+          "titulo": "Reintegros y cashback que generan ahorro perceptible en el uso diario",
+          "descripcion": "Los reintegros al usar la tarjeta prepaga o pagar con QR son percibidos como un beneficio adicional que motiva a los usuarios a seguir usando Mercado Pago como medio de pago principal.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Me gusta el cashback, siento que ahorro un poco cada vez que pago",
+            "Los reintegros en transporte son muy buenos, ahorro bastante en el mes",
+            "Descuentos en algunos casos por pagar con qr"
+          ]
+        }
+      ]
+    },
+    "Ofrece prestamos y/o tarjeta de credito": {
+      "total_comentarios_analizados": 35,
+      "delta_pp": 1.2,
+      "porcentaje_promotores": 3.5,
+      "causas_raiz": [
+        {
+          "titulo": "Acceso rapido a credito sin requisitos burocraticos ni necesidad de historial crediticio formal",
+          "descripcion": "Los usuarios valoran que Mercado Pago ofrece prestamos de forma agil, sin necesidad de documentacion excesiva ni historial crediticio en el sistema bancario tradicional.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Me dieron un prestamo rapido sin tener que ir a ningun banco ni presentar papeles",
+            "Facilidad y creditos",
+            "Lo bueno es que te ofrecen credito sin tanto tramite como en los bancos"
+          ]
+        },
+        {
+          "titulo": "Prestamos a tasa 0% para vendedores que incentivan el uso de la plataforma",
+          "descripcion": "Los vendedores y emprendedores valoran especialmente los prestamos a tasa 0% del programa DineroPlus, que les permite financiar su negocio sin costo adicional.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Los prestamos a tasa cero me ayudan mucho con mi negocio",
+            "Es una excelente opcion para emprendedores que necesitan capital rapido",
+            "El prestamo a tasa 0 es lo mejor que tiene Mercado Pago para los que vendemos"
+          ]
+        },
+        {
+          "titulo": "Flexibilidad en montos y plazos que se adaptan a necesidades puntuales",
+          "descripcion": "Los usuarios aprecian la variedad de montos disponibles y plazos flexibles que les permiten tomar solo lo que necesitan y devolverlo en tiempos razonables.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Me gusta que puedo elegir cuanto pedir y en cuanto tiempo devolver",
+            "Los montos se adaptan a lo que necesito, no me obligan a pedir de mas",
+            "Es practico porque puedo pedir un prestamo chico para algo puntual"
+          ]
+        }
+      ]
+    }
+  }
+}
