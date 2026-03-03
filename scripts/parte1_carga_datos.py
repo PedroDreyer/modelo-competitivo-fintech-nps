@@ -81,12 +81,11 @@ COLS_NECESARIAS_MLA = [
     19, 20,  # MARCA (PAGO), NPS
     22, 24, 26,  # MOTIVOS (P6=detra, P7=neutro, P8=promo)
     28,  # COMENTARIO (Comentarios)
-    38, 39, 40, 41, 42, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59,  # PRODUCTOS P10 (19 cols)
+    38, 39, 40, 41, 42, 44, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59,  # PRODUCTOS P10 (20 cols)
     78,  # ANTIGUEDAD (P11)
     122,  # MOTIVO_PRINCIPALIDAD (P14A)
     158,  # VALORACION_SEGURIDAD (A2)
     170,  # USO_CREDITOS (¿Has utilizado alguna vez ese crédito y/o préstamo?)
-    178,  # USO_TARJETA_CREDITO (¿Has utilizado alguna vez esa tarjeta de crédito?)
     198,  # MOTIVO_INSEGURIDAD (A20A)
     296,  # USO_MONEDA_EXTRANJ (¿Sueles comprar Dólar en [MARCA]?)
     367  # FLAG_PRINCIPALIDAD
@@ -99,8 +98,8 @@ NOMBRES_COLUMNAS_MLA = {
     22: 'MOTIVO_DETRA', 24: 'MOTIVO_NEUTRO', 26: 'MOTIVO_PROM',
     28: 'COMENTARIO',
     38: 'USO_PAGOS_ONLINE', 39: 'USO_TRANSFERENCIAS', 40: 'USO_PAGO_SERVICIOS',
-    41: 'USO_CRIPTO', 42: 'USO_ACCESO_CREDITOS', 170: 'USO_CREDITOS',
-    178: 'USO_TARJETA_CREDITO', 45: 'USO_EFECTIVO', 46: 'USO_RECARGA_CEL',
+    41: 'USO_CRIPTO', 42: 'USO_ACCESO_CREDITOS', 44: 'USO_TARJETA_CREDITO', 170: 'USO_CREDITOS',
+    45: 'USO_EFECTIVO', 46: 'USO_RECARGA_CEL',
     47: 'USO_RECARGA_TRANSP', 48: 'USO_COBRAR_SUELDO', 49: 'USO_TARJETA_DEBITO',
     50: 'USO_QR', 51: 'USO_AHORRO_INVERSION', 52: 'USO_SEGUROS',
     296: 'USO_MONEDA_EXTRANJ', 54: 'USO_INVERSIONES', 55: 'USO_RENDIMIENTOS',
@@ -146,7 +145,7 @@ NOMBRES_COLUMNAS_MLM = {
 # ==============================================================================
 
 FALLBACK_WORDING_MLA = {
-    'USO_TARJETA_CREDITO': (178, 'Has utilizado alguna vez esa tarjeta de cr'),
+    'USO_TARJETA_CREDITO': (44, 'Tener tarjeta de cr'),
     'USO_CREDITOS':        (170, 'Has utilizado alguna vez ese cr'),
     'USO_MONEDA_EXTRANJ':  (296, 'Sueles comprar D'),
     'USO_PAGOS_ONLINE':    (38, 'Pagar o comprar en tiendas online'),
