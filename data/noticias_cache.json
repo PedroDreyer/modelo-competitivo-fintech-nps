@@ -1688,6 +1688,99 @@
                     "fecha": "2025-10"
                 }
             ]
+        },
+        "Banco Santander": {
+            "ultima_actualizacion": "2026-03",
+            "noticias": [
+                {
+                    "titulo": "Plazo fijo: cuánto pagan los principales bancos por depósitos de $1 millón",
+                    "fuente": "Infobae",
+                    "fecha": "2026-02",
+                    "url": "https://www.infobae.com/economia/2026/02/09/plazo-fijo-cuanto-pagan-los-principales-bancos-por-depositos-de-1-millon/",
+                    "resumen": "Banco Santander ofrece tasas de plazo fijo del 23% TNA para depósitos a 30 días. Además, cuenta con opciones como Plazo Fijo Precancelable y UVA que protegen contra la inflación. La baja generalizada de tasas en el sistema bancario argentino redujo el atractivo de los rendimientos para los ahorristas.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Santander lanza Súper Plazo Fijo UVA con protección contra inflación",
+                    "fuente": "Santander Argentina",
+                    "fecha": "2025-12",
+                    "url": "https://www.santander.com.ar/personas/inversiones/super-plazo-fijo",
+                    "resumen": "Santander ofrece tres modalidades de plazo fijo: Tradicional (desde $500, 30-365 días), Precancelable (desde $5.000, con opción de cancelación desde el día 30) y UVA (protección contra inflación). Estas opciones buscan mejorar los rendimientos de los clientes en un contexto de baja de tasas.",
+                    "categoria_relacionada": "Rendimientos",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Aumentan las comisiones de los bancos: cuánto cuesta extraer dinero y mantener la tarjeta",
+                    "fuente": "La Capital",
+                    "fecha": "2025-11",
+                    "url": "https://www.lacapital.com.ar/informacion-general/aumentan-las-comisiones-los-bancos-cuanto-cuesta-extraer-dinero-y-mantener-la-tarjeta-n10186333.html",
+                    "resumen": "Los bancos en Argentina, incluyendo Santander, aumentaron las comisiones por extracciones en cajeros automáticos ajenos y por mantenimiento de tarjetas de crédito. Las tarifas de renovación anual de tarjetas Gold llegan a $132.011 y Black a $405.108, generando malestar entre los clientes.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Los bancos aumentan las comisiones de sacar plata del cajero: cuánto cuesta una extracción",
+                    "fuente": "Perfil",
+                    "fecha": "2025-12",
+                    "url": "https://www.perfil.com/noticias/economia/los-bancos-aumentan-las-comisiones-de-sacar-plata-del-cajero-cuanto-cuesta-una-extraccion.phtml",
+                    "resumen": "Banco Santander y otros bancos aumentaron las comisiones por retiro en cajeros automáticos de otras redes. El mantenimiento mensual de cuenta es de $7.234 para tarjetas Gold, Platinum y Black, con una TEA de 167,42% para financiación de tarjeta de crédito.",
+                    "categoria_relacionada": "Tarifas",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Cómo detectar una suplantación de identidad digital: claves para combatirla",
+                    "fuente": "Santander Post",
+                    "fecha": "2025-12",
+                    "url": "https://www.santanderpost.com.ar/articulo/como-detectar-una-suplantacion-de-identidad-digital-y-claves-para-combatirla/",
+                    "resumen": "Santander Argentina advierte sobre el aumento de fraudes por suplantación de identidad digital. Los ciberdelincuentes se hacen pasar por empresas para extraer datos personales. El banco recomienda desconfiar, confirmar canales oficiales y nunca compartir datos personales por teléfono.",
+                    "categoria_relacionada": "Seguridad",
+                    "impacto_esperado": "negativo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "Santander ofrece Súper Préstamo con tasa UVA desde 36% y hasta 72 meses",
+                    "fuente": "Santander Argentina",
+                    "fecha": "2026-01",
+                    "url": "https://www.santander.com.ar/personas/prestamos/personales",
+                    "resumen": "Banco Santander ofrece préstamos personales en dos modalidades: tasa fija tradicional (hasta 72 meses) y tasa UVA desde 36% (hasta 60 meses). La solicitud es 100% online con depósito inmediato, con tasas diferenciales para clientes con sueldo o jubilación en Santander.",
+                    "categoria_relacionada": "Financiamiento",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "neutra"
+                },
+                {
+                    "titulo": "App Santander elegida Producto del Año 2026 a nivel global",
+                    "fuente": "Santander Press Room",
+                    "fecha": "2026-02",
+                    "url": "https://www.santander.com/en/press-room/press-releases/2026/02/santander-app-and-onecare-elected-product-of-the-year-2026",
+                    "resumen": "La aplicación móvil de Santander fue premiada como Producto del Año 2026. La app permite abrir cuenta, operar dólar MEP, realizar pagos por QR, transferencias, solicitar préstamos y gestionar inversiones. Esta mejora en la experiencia digital contribuye a una mayor satisfacción general del cliente.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                },
+                {
+                    "titulo": "Santander usará IA y sinergias para reducir un 17% el coste por cliente",
+                    "fuente": "El Confidencial",
+                    "fecha": "2026-02",
+                    "url": "https://www.elconfidencial.com/empresas/2026-02-26/santander-inteligencia-artificial-ia-sinergias-costes_4309947/",
+                    "resumen": "Santander está implementando inteligencia artificial y su plataforma tecnológica Gravity para mejorar eficiencia y reducir costos por cliente. El banco prevé una reducción del 17% en el costo por cliente activo entre 2025 y 2028, con inversiones en IA que generarían beneficios significativos.",
+                    "categoria_relacionada": "Otro",
+                    "impacto_esperado": "positivo",
+                    "relevancia": "alta",
+                    "tipo_noticia": "positiva"
+                }
+            ]
         }
     },
     "MLB": {

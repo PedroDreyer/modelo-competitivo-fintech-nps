@@ -1,0 +1,448 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Cuenta DNI** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Cuenta DNI",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### ✅ MOTIVO: Promociones (-2.7pp - MEJORÓ)
+
+**Impacto:** 17.2% → 14.5% | **Comentarios:** 47 (25Q4) → 48 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "hay cada vez menos ofertas y descuentos , y los comercios ya no ofrecen descuentos"
+
+2. "Reintegros bajos"
+
+3. "Tendría que tener más facilidades de descuento"
+
+4. "Tengo otras aplicaciones"
+
+5. "Ultimamente me cuesta encontrar lugares para aplicar las promociones."
+
+6. "Trabajo para el gobierno de la provincia de Buenos aires y me ofrece muchos descuentos en negocios"
+
+7. "Yo creo que  8. está bien"
+
+8. "las promos y descuento son poco atractivas"
+
+9. "confio mucho en cuenta dni, me parece muy confiable y buenas app que ya de por si tiene varias promociones"
+
+10. "Cada vez ofrecen menos beneficios de descuentos"
+
+11. "Tiene pocas promociones hoy por hoy"
+
+12. "No es muy práctica"
+
+13. "La uso mucho. Es casi la extensión de mi billetera"
+
+14. "Las promociones van disminuyendo"
+
+15. "ahora tiene menos promociones que antes aunque son variadas"
+
+16. "Antes habia más y mejores descuentos, cada día del mes. Ahora es una sola todo el mes y con montos ridiculamente bajos"
+
+17. "Continuamente cambian los días de promociones, y los reintegros son escasos y se demoran"
+
+18. "porque muchos beneficios no son para mí, son para la costa o en comercios lejanos o cuyos rubros no me interpelan"
+
+19. "los descuentos/devoluciones que ofrecen en los comercios son muy limitados"
+
+20. "Si bien tiene descuentos otras billeteras ofrecen rendimientos por tener el dinero depositado mientras que esta no."
+
+21. "falta algunas funciones y generar dinero sin que sea plazo fijo"
+
+22. "Cuando compras con cuenta dni tardan en acreditar la promoción, tendría que ser de inmediato"
+
+23. "Por la facilidad de uso de la app y la seguridad de la cuenta"
+
+24. "Cada vez tiene menos promociones y tu dinero en cuenta no rinde. Las funciones que tiene lo puedo hacer desde mercado pago y mi dinero allí rinde sino lo uso"
+
+25. "los descuentos y promociones ya no son como antes, muy pocos y poca devolucion"
+
+26. "Porque ya no tiene los beneficios que tenía antes"
+
+27. "No posee mucha información acerca del rendimiento que te da por tener la plata en la app. Tampoco ofrece buenas promociones y descuentos como antes. Son cada vez menos en frecuencia y monto de devolución"
+
+28. "Ya no tiene beneficios como antes"
+
+29. "Se han caido promociones"
+
+30. "Me parece buena forma de pagar"
+
+31. "porque saca bastantes promociones"
+
+32. "mejores promociones , atencion en linea en forma personal"
+
+33. "En algunas cuestiones es complicada y requiere recurrir al Banco fisico.-"
+
+34. "no es estable en sus ofertas y descuentos"
+
+35. "No tiene buen rendimiento"
+
+36. "Antes tenia mas promos y descue tos"
+
+37. "no tiene tantos descuentos como antes"
+
+38. "Me parece un servicio aceptable"
+
+39. "Amo la cuenta Dni. Antes había más promociones"
+
+40. "Me sirve pero antes tenía buenos descuentos, promociones y reintegros"
+
+41. "Ya no es tan conveniente los descuentos"
+
+42. "Sacaron muchas promociones"
+
+43. "Porque antes tenían buenas promociones y descuentos pero ya no"
+
+44. "Porque ha reducido mucho sus promociones"
+
+45. "porque las mayorías de los locales trabajan con cuenta de dni"
+
+46. "Las promociones quedaron desactializadas"
+
+47. "Los descuentos son pobres, acotados a pocos dias y montos. Ya ni me molesto en ver cuando estan."
+
+48. "Porque cada vez tiene menso promociones"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Tarifas (+1.5pp - EMPEORÓ)
+
+**Impacto:** 0.2% → 1.8% | **Comentarios:** 1 (25Q4) → 7 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "No la entiendo demasiado"
+
+2. "Me hacen descuentos cuando ingresa plata en mi cuenta"
+
+3. "porque me cobra inr=tereses no se de donde"
+
+4. "A veces no funciona correctamente"
+
+5. "Cuenta DNI en si no tiene costo, pero si quisiera abrir una cuenta con tarjetas de credito en el banco sí. A veces la app de cuenta DNI no funciona correctamente, sobre todo los días en que hay descuentos y promociones."
+
+6. "No hay un motivo"
+
+7. "Solo utilizo cuenta DNI para cobrar mí sueldo y gestionar mí dinero..."
+
+
+================================================================================
+
+### ✅ MOTIVO: Seguridad (-1.0pp - MEJORÓ)
+
+**Impacto:** 2.7% → 1.8% | **Comentarios:** 7 (25Q4) → 6 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "me ah faltado dinero y no me an sabido explicar"
+
+2. "Porque he escuchado que se vaciaron cuentas"
+
+3. "es bastante seguro.nunca tuve problemas y es muy facil de usar"
+
+4. "La huella digital no es 100% segura, debería tener una segunda verificación"
+
+5. "Es la única q uso. No se si es la mejor"
+
+6. "Cuenta con fallas notorias los fines de semana"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Financiamiento (+0.5pp - EMPEORÓ)
+
+**Impacto:** 2.2% → 2.8% | **Comentarios:** 9 (25Q4) → 7 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Porque es lo que creo"
+
+2. "se me complica cuanto se desistala"
+
+3. "No estoy conforme ,con la aplicacion"
+
+4. "Tengo Cuenta dni . A traves de una ex cuenta de trabajo. Y a decir verdad es que no no ofrece muchas ofertas .creditos etc"
+
+5. "Porque tengo hace 4 meses y nunca me llegó la tarjeta"
+
+6. "La devolucion deberia ser mss rapido"
+
+7. "Estaría bueno que el préstamo sea mas y tenga más beneficios para las docentes"
+
+
+================================================================================
+
+### ✅ MOTIVO: Rendimientos (-0.3pp - MEJORÓ)
+
+**Impacto:** 14.5% → 14.2% | **Comentarios:** 40 (25Q4) → 46 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Creo que debería tener más beneficios."
+
+2. "No es una mala calificación,  es buena, pero los intereses al sacar un préstamo deberían ser mas bajos."
+
+3. "No hay rendimientos"
+
+4. "Porque tiene descuentos que sin útiles pero cada vez sirve menos por lo montos bajos, y no da intereses como otras billeteras virtuales"
+
+5. "Es muy buenaaunque le faltamás elementos para invertir"
+
+6. "Tendría que tener mejores promociones, que otras billeteras virtuales y que agreguen más días de la semana para los descuentos."
+
+7. "Porque no da intereses"
+
+8. "Porque es buena pero no excelente."
+
+9. "Por qué no da intereses como otras billeteras y las promociones cada vez son menos"
+
+10. "No califique, dije lo que podría mejorar"
+
+11. "Otras billeteras dan mejor interés por dinero en cuenta"
+
+12. "No es una buena billetera"
+
+13. "No la uso habitualmente"
+
+14. "Porque no genera rendimientos al tener tu cuenta ahí pero sobre todo porque a partir de las 23hs empieza a funcionar mal. Muchas veces vas a pagar algo de urgencia pasado ese horario y no funciona la app y no podés abonar. Ya sea una urgencia o algo ..."
+
+15. "Tiene varios beneficios"
+
+16. "Entiendo que los bancos no hacen rendir la plata como mp, Pero se tendría que hacer alguna reserva como para que esa plata trabaje y poder usar la plata cuando uno quiera y como hace el plazo fijo"
+
+17. "Es una cuenta que suele tener descuentos, fácil de usar"
+
+18. "porque funciona mal y no tiene buenos descuentos como antes"
+
+19. "Faltaría que se genere un rendimiento diario por dejar la Plata en la cuenta"
+
+20. "Por qué es fácil de usar"
+
+21. "Faltan más funcionalidades como que la plata en la cuenta de intereses"
+
+22. "Porque termino migrando el dinero a otras aplicaciones que de dan ganancias por tener el dinero en cuenta."
+
+23. "me gustaria que tuviera mas funciones y que mi saldo tuviera mayor rendimiento"
+
+24. "Es buena, pero no genera ganancias"
+
+25. "Ofrecer comprar dolar mep y mas opciones de inversiln"
+
+26. "Los beneficios actuales no son utiles"
+
+27. "Rendimiento en los reintegros. Tardan los depositos"
+
+28. "Es buena, tiene buenas promociones pero no me permite acceder a otros productos del banco (me los ofrecen por mail) pero si atención no es muy buena"
+
+29. "Necesita dar mejores beneficios"
+
+30. "Porque su tna es de las mas bajas"
+
+31. "Porque tengo otra billetera que me da más rendimientos"
+
+32. "Es por demás complejo transferir"
+
+33. "PORQUE ES SENCILLA DE USAR PUEDO VER MI SUELDO Y PAGAR MIS COMPRAS, ADEMAS PAGO LOS SERVICIOS"
+
+34. "Cada vez tiene menos promociones y no tiene rendimiento en cuenta"
+
+35. "Solía tener cuenta sueldo"
+
+36. "Es una buena billetera, pero podría mejorar"
+
+37. "Porque no es práctica como las apps más comunes"
+
+38. "Es limitada en los beneficios y no da rendimemiento diario"
+
+39. "Porque de las veces que utilice las promos con devolución, solo me devolvieron algunas"
+
+40. "La uso bastante por los descuentos, creo que, la utilizaría mas si tuviera mas promociones"
+
+41. "Yo no tengo grandes problemas con cuenta dni porque se me deposita mi dinero en la cta asociada, pero para uno que no cobra su sueldo en ese banco, puede ser tedioso. A veces se tilda la red (en los dias y horas de mucho consumo). Las promosiones cam..."
+
+42. "No me convencen los beneficios que ofrece"
+
+43. "Las promociobes son con muy poco descuento y en pocos negocios"
+
+44. "A veces anda mal . Y no siempre es simple usarla"
+
+45. "Ya. no ofrece buenos descuentos, ni rendimientos diarios en la cuenta"
+
+46. "No da intereses como una billetera"
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-0.2pp - MEJORÓ)
+
+**Impacto:** 1.5% → 1.2% | **Comentarios:** 4 (25Q4) → 3 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Tiene muy buena atención al cliente"
+
+2. "La atención al cliente los llamados los cobran"
+
+3. "no es facil contactarse con atencion al cliente"
+
+
+================================================================================
+
+### ✅ MOTIVO: Funcionalidades (-0.2pp - MEJORÓ)
+
+**Impacto:** 3.9% → 3.8% | **Comentarios:** 9 (25Q4) → 11 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "solo la utilizo para compras con reintegro"
+
+2. "Porque le falta funcionalidad"
+
+3. "Porque  tiene sus descuentos"
+
+4. "Es una app confiables, muy buena para usar por los descuentos que ofrece."
+
+5. "A caído los porcentajes de descuento...ya no hay casi promociones"
+
+6. "Tiene buenas promos que no son bien comunicadas y son difíciles de hayar en la spp"
+
+7. "Ampliar el límite semanal de descuento"
+
+8. "La tengo como cuenta alternativa y no me ofrece tantos beneficios como la que tengo de principal"
+
+9. "Mas funcionalidades para manejar el dinero, como por ejemplo hacer inversiones"
+
+10. "La maneja kicillof y no da los mismos beneficios que antes"
+
+11. "Es muy mala y casi nunca funciona la app"
+
+
+================================================================================
+
+### ✅ MOTIVO: Complejidad (-0.1pp - MEJORÓ)
+
+**Impacto:** 9.9% → 9.8% | **Comentarios:** 25 (25Q4) → 26 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Nunca aplica descuentos ni promociones o de cae el sistema justo ese dia"
+
+2. "Porque los días de promociones a veces no carga"
+
+3. "falla todo el tiempo"
+
+4. "Xq m resulta difícil para usar"
+
+5. "a veces la aplicación no funciona bien, y no me permite realizar transferencias cuando realizo compras"
+
+6. "Porque muchas veces las promociones no son respetadas en los lugares que señala la web"
+
+7. "La app es lenta y se colapsa muchas veces"
+
+8. "MUY COMLIOCADAENTRAR SE VENCE"
+
+9. "La app no es muy fácil de usar"
+
+10. "Nunca recomendaría un banco porque siempre te pueden sorprender para mal. La aplicación de Cuenta DNI es MUY mala, poco intuitiva, lenta. Es extraña."
+
+11. "no funciona siempre, es lenta"
+
+12. "es dificil de ver los movimientos y tardan un monton en devolver lo de las promociones"
+
+13. "Nada en especial"
+
+14. "Porque es una cuenta confiable pero a veces te pueden entrar a la cuenta los hackers y sacan tu dinero"
+
+15. "Se traba muy seguido, y a veces no se puede ver el saldo en cuenta"
+
+16. "Cuando pagas con clave me parece que lleva muchos pago realizar la transacción"
+
+17. "Cuesta usarlo en los negocios de compla"
+
+18. "No funciona bien cuando hay promociones. Las promo son para ciudades grandes. Una porquería las promo"
+
+19. "Porque es complicada de usar para una persona mayor como mi suegra, por eso no se la recomiendo"
+
+20. "es dificil de manejar cuando necesitas ver transferencias antiguas"
+
+21. "Necesita ser mas detallista en las post transferencias (ej. Comprobantes)"
+
+22. "Descuentos y facil de usar"
+
+23. "Es más difícil de usar"
+
+24. "Muchas veces funcioma mal la aplicación"
+
+25. "se traba constantemente y no ofrece buenos rendimientos"
+
+26. "se cierra la app y para volver a ingresar t pide validación con foto y toooodo otra vez"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Cuenta DNI_MLA_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

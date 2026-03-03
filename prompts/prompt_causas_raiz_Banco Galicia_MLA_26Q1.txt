@@ -1,0 +1,496 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Banco Galicia** en **MLA** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Banco Galicia",
+    "site": "MLA",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### ✅ MOTIVO: Financiamiento (-5.2pp - MEJORÓ)
+
+**Impacto:** 9.2% → 4.0% | **Comentarios:** 26 (25Q4) → 13 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Aun no poseo una tarjeta de credito por lo que aun no se cómo son las tasas y/o tarifas"
+
+2. "Su app es fácil, te dan una tarjeta de crédito, el tema es que es medio complicada la atención al cliente y para financiar la tarjeta"
+
+3. "Es  m i banco principal, donde cobro mi sueldo y donde gestiono mis tarjetas. podria tener mas tarifas preferenciales para clientes"
+
+4. "Las tasas de interes son extremadamente altas y no existe algun programa de incentivos para clientes historicos"
+
+5. "Tiene tasas altas y no permite aumentar el limite de una tarjeta de credito ya contratada, me ofrecen contratar 2 nuevas con mayor limite. No se hacen cargo de la información errónea brindada por el centro de contactos y tampoco ante compras fallidas"
+
+6. "Brindan buen servicio, pero las tasas de financiación son muy alta. Además mejoraría si ofreciera descuentos o promorciones en compras o en algunos rubros"
+
+7. "Pq son mut altos los intereses q ponen"
+
+8. "Porque puede ofrecer mejores tasas"
+
+9. "Bajar un poco la tasas de las tarjetas de crédito"
+
+10. "NO RECIBÍ EL TRATO ESPERADO A LA HORA DE SOLICITAR PRÉSTAMOS"
+
+11. "Es buena, pero antes tenía puntos quiero y más promociones"
+
+12. "Esta muy buena la aplicación pero considero que deberían mejorar las tasas de financiamiento e interés"
+
+13. "Porque podría mejorar el acceso al crédito"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Tarifas (+4.0pp - EMPEORÓ)
+
+**Impacto:** 3.2% → 7.2% | **Comentarios:** 11 (25Q4) → 19 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Al pasar las cuentas de HSBC a Galicia cambiaron las condiciones"
+
+2. "Está muy caro el precio del mantenimiento."
+
+3. "Porque el banco tiene costos muy altos"
+
+4. "Hace mas 20 años soy cliente"
+
+5. "Hay algunas cosas que podrían mejorar, como la atención al cliente de manera personal por ejemplo"
+
+6. "Di de baja la tarjeta de credito con ellos por los costos de la misma"
+
+7. "Galicia es simple y seguro"
+
+8. "Es una cuenta cara comparada con otros bancos"
+
+9. "Porque antes podia bonificar el paquete y ahora te piden requisitos muy altos"
+
+10. "Hace 30 años que estoy con Galicia, es más por costumbre que por beneficios, si bien estoy conforme en general, creo que no son los que más beneficios otorgan en el mercado actualmente, las comisiones que cobran son de las más altas y muchas veces pr..."
+
+11. "EN MI OPINION ES EL BANCO QUE MAS CARO COBRA SUS SERVICIOS"
+
+12. "Cobran comisiones por tener tarjetas de crédito del banco"
+
+13. "Tengo 2 cuentas y siempre resulta engorrosos los trámites para dar de baja productos"
+
+14. "Muy alto el mantenimiento de las taretas de credito"
+
+15. "Atencion al cliente. Promociones muy buenas en un principio y luego cambian las condiciones para que sea imposible acceder (Jumbo y Disco con Modo con mínimo de compra $100 mil) o sea inseguro (pagar trasporte con Google Pay)"
+
+16. "No ofrece nada bueno y cobra muchos impuestos"
+
+17. "Es la que menos promo tiene"
+
+18. "porque no soy de recomendar ningún banco, pero además la mantención de tarjetas es cara o depende de cosas que me cuestan"
+
+19. "Te cobran mucho por tener la cuenat"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Promociones (+3.1pp - EMPEORÓ)
+
+**Impacto:** 11.7% → 14.8% | **Comentarios:** 37 (25Q4) → 51 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Es un buen banco"
+
+2. "Las promociones son escasas y los programas de puntos son inalcanzables. No hay nada acorde a la situación del cliente medio todo apunta a la gran sociedad"
+
+3. "Antes tenía mas descuentos útiles"
+
+4. "Tiene que seguir sumando beneficios que si bien son buenos, seguir sumando mas descuentos"
+
+5. "Ya no tiene un programa de fidelidad"
+
+6. "PORQUE UTILIZA UNA PLATAFORMA DE FACIL ACCESO CON FUNCIONALIDADES MUY ACCESIBLES Y BRINDAN MEET SOBRE SEGURIDAD"
+
+7. "No me gusta recomendar servicios bancarios"
+
+8. "Porque estoy parcialmente conforme"
+
+9. "La mayoría de las promociones no están disponibles en mi lugar"
+
+10. "porque tiene pocas promociones o no están lo suficientemente explicadas"
+
+11. "Faltan promociones para estaciones de servicio"
+
+12. "Tiene pocos descuentos y es difícil comunicarme con alguien humano por teléfono"
+
+13. "tendria queconsiderar sus promociones y comisiones"
+
+14. "Me gustaría que tuviera más descuentos y promociones con visa"
+
+15. "es bueno pero debe mejorar"
+
+16. "me gustaria que como alguna vez existió Quiero exista algo parecido"
+
+17. "No ofrece tantos descuentos como otros bancos"
+
+18. "Es mi banco de siempresiempre"
+
+19. "Porque las promociones que tenía hace un tiempo atrás han desaparecido"
+
+20. "Porque no ofrece rendimientos con el dinero en cuenta como otros bancos"
+
+21. "Porque necesita mas beneficios"
+
+22. "Falta de promoción, cada vez dejan menos promociones"
+
+23. "Podrían mejorar su programas de promociones, descuentos, cuotas"
+
+24. "Tiene muy bien app y online banking pero me gustaría mayores beneficios"
+
+25. "Es una entidad sólida"
+
+26. "Es interesante la propuesta pero es mejor con otras en las que hay más promociones inmediatas o más opciones"
+
+27. "porque no me ofrece prestamos"
+
+28. "no hay mas promos de tiendas de ropas, zapatos, etc, la gente promedio, o como yo, que apenas llegoa finde mes, no viajo, ni voy a teatro o cine, es lo unico de promos interesantes que veo."
+
+29. "Porque siempre se puede mejorar en el servicio"
+
+30. "Me parece que ofrece buen servicio. Hoy por hoy no tengo sucursales cerca por ejemplo (zona norte)"
+
+31. "porque querria mas regalos simples"
+
+32. "Porque está buena pero lo mejor son los beneficios"
+
+33. "Me dio resultado"
+
+34. "Es excesivo el costo de mantenimiento de servicios"
+
+35. "Buena atención, bastante confiable"
+
+36. "Pocas promos y bajos reintegros"
+
+37. "Siempre un problema con galicia. Tengo.un listado de ello"
+
+38. "No es un banco q ofrezca muchos beneficios"
+
+39. "Cada día tiene menos sucursales para atención al cliente"
+
+40. "Porque tiene pocos beneficios, como descuentos asociados a la cuenta de ahorro"
+
+41. "No tiene cuotas sin interés en muchos comercios. Otras tarjeta si"
+
+42. "NO TENGO MAS PARA DECIR"
+
+43. "Faltan más promos"
+
+44. "Otros bancos como el BBVA y el Santander tienen muchas y mejores promociones."
+
+45. "me gusta el banco,simple de utilizar . lo recomiendo."
+
+46. "No da ningún beneficio"
+
+47. "estoy conforme... pero no es un 10"
+
+48. "no tiene grandes beneficios"
+
+49. "Pocos descuentos en restaurantes y entretenimiento para mi edad"
+
+50. "Porque no tiene buenos descuentos y beneficios al usar las tarjetas"
+
+51. "Creo siempre ahí margen en mejora"
+
+
+================================================================================
+
+### ✅ MOTIVO: Complejidad (-2.7pp - MEJORÓ)
+
+**Impacto:** 6.2% → 3.5% | **Comentarios:** 15 (25Q4) → 10 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "El app no tiene un funcionamiento fluido, se traba bastante."
+
+2. "No me gusta por qué no da muchas posibilidades de inversion"
+
+3. "porque en más de una oportunidad ingreso a la app y hay funciones que no están disponibles"
+
+4. "La app es slgo confusa."
+
+5. "Me parece buen banco pero a veces se traba al utilizar la app de gestión"
+
+6. "Me parece muy fácil su uso"
+
+7. "mejorar el detalle de los movimientos"
+
+8. "La app funciona bien, la web no tanto. La parte de inversiones, como todo banco en general, no te permite interactuar al nivel de un broker y con ese nivel de información, así que no la uso. Hay promos que andan y otras que hay que reclamar para que ..."
+
+9. "Porque hay cosas que no te explican hasta que suceden"
+
+10. "La app presenta algunas dificultades en su uso"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Rendimientos (+1.6pp - EMPEORÓ)
+
+**Impacto:** 11.7% → 13.2% | **Comentarios:** 36 (25Q4) → 43 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "No hay cuenta remunerada, por eso elijo pasar el dinero a otra billeteras virtuales."
+
+2. "Comisiones en rendimiento muy bajas"
+
+3. "Muchos malfuncionamientos al querer iniciar en la app"
+
+4. "Porque es lo que pienso"
+
+5. "Las tasas de interés en pesos son realmente bajas"
+
+6. "No tiene rendimientos"
+
+7. "Rendimientos en cuenta"
+
+8. "La app funciona mal, te bloquea las claves a cada rato, el bot es malo para resolver problemas y si mandas mail no te dan bola"
+
+9. "tofo bien , no he tenido inconvenientes"
+
+10. "Para pagar impuestos y servicios no puede leer código de barras. Esto no es una carencia, sino un obstáculo."
+
+11. "Por los beneficios que brinda"
+
+12. "el rendimiento en otras apps es mejor, tambien deberia mejora los tiempos de atencion de asesores."
+
+13. "Porque no da rendimientos suficientes por dejarles mi dinero guardado"
+
+14. "A veces bajo rendimiento Fima"
+
+15. "No tiene tan buenas promociones como otros bancos y las inversiones no se detallan claramente"
+
+16. "es un banco standard"
+
+17. "entiendo que no tiene rendimiento por el dinero que tengo en cuenta"
+
+18. "la calificco con casi 10, pero la pregunta era sobre recomendarla"
+
+19. "no me resulta practico para hacer pagos en negocios"
+
+20. "Porque no te da rendimientos como las villeteras virtuales"
+
+21. "No tiene aun cuenta remunerada en pesos"
+
+22. "porque si. Es la única cuenta que tengo"
+
+23. "No me ofrece la rentabilidad que encuentro en MP"
+
+24. "Muy buena interfaz d uso"
+
+25. "en términos generales estoy conforme con el banco y no considero que tenga que realizar grandes mejoras."
+
+26. "Porque tendría que tener mejor rendimiento con el dinero depositado"
+
+27. "Creo que tiene algunas cosas que mejorar en sus aplicaciones"
+
+28. "Lo uso, pero no es  mi cuenta principal, por ello no puedo juzgar tanto sus funcionalidades"
+
+29. "Porque te da re poco de interés al invertir en fima"
+
+30. "Rendimiento de la cuenta bajo. Obliga a transferir a fondos fima"
+
+31. "Mi dinero quieto no genera cero o prácticamente ningún rendimiento, pesos y dólares menos, y las inversiones posibles dan menos ganancias que otras herramientas."
+
+32. "Hay billeteras virtuales que dan más interés por dinero en cuenta"
+
+33. "es la cuenta sueldo que tengo y no me cobran mantenimiento"
+
+34. "Es util y practica"
+
+35. "Los intereses son menores a las de otras billeteras"
+
+36. "No tengo nignuna critica en general, pero siento que dejar el dinero en esa cuenta es desperdiciarlo, como le faltaría algo que me convenza de dejar el dinero en vez de una cuenta remunerada."
+
+37. "Me gusta la aplicación del banco pero tiene puntos para mejorar por ejemplo los rendimientos del dinero en cuenta"
+
+38. "Mejores intereses para dinero en cuenta"
+
+39. "Sería bueno que el dinero en cuenta rinda algo"
+
+40. "no tiene inversiones atractivas"
+
+41. "no se, es mi calificacion"
+
+42. "Sería excelente si tuviera un mejor rendimiento de dinero en cuenta"
+
+43. "Tengo problemas con sucursales cerca, cerraron las que tenia y ahora si necesito ir tengo que viajar"
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-1.4pp - MEJORÓ)
+
+**Impacto:** 10.2% → 8.8% | **Comentarios:** 26 (25Q4) → 30 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "NO hay forma de hablar con una persona o hacer un reclamo online, los reclamos en la web de Galicia son sobre temas preestablcidos por Galicia, no hay forma de hacer un reclamo 'tema libre'. Si mandas un email te mandan respuesta automática diciendo ..."
+
+2. "porque es dificil que te atienda un ser humano por teléfono y personalmente no siempre tienen buena predisposición"
+
+3. "TIENEN UNA ATENCION POCO PERSONALIZADA"
+
+4. "Jamás recomendaría un banco a nadie, son una de las corporaciones más corruptas del mundo (absolutamente todos los bancos)"
+
+5. "Por falta de opciones para contactarte con alguna persona para la atención al cliente"
+
+6. "la atencion on line es malisima. si no vas a ala sucursal es muy complejo hacer tramites"
+
+7. "si hay algun problema es imposible hablar con algun oficial"
+
+8. "Por que cuesta mucho que te atiendan"
+
+9. "Nunca resuelven nada ."
+
+10. "No recomendaría un banco específico, siempre te pueden sorprender. Siempre pueden mejorar en su atención al público, en la resolución de problemas y estafas virtuales que están hoy muy de moda."
+
+11. "Por que si bien da un buen servicio, aun le falta mejorar bastante para ser mas eficiente."
+
+12. "es muy dificial hablar con alguien"
+
+13. "porque de haber algun problema (no sucede seguido) es dificil tratar con atencion al cliente y que den respuesta en tiempo y forma"
+
+14. "tenía una ejecutivo de cuenta y de un día para el otro me mandaron a hablar con un bot. pésimo. pésimo. era lo mejor que tenía este banco. ahora quiero que me mejoren el paquete que tengo y aunque mis ingresos lo permiten, no tengo cómo gestionarlo. ..."
+
+15. "Me descontaron dinero de la cuenta porque me dijeron que había retirado de un cajero pero yo no saque nada tenía la tarjeta conmigo y estaba fuera del país"
+
+16. "La atención al cliente es pésima como la mayoria de los bancos"
+
+17. "No poseen atención rápida, solo un bot"
+
+18. "no hay un lugar fisico donde te atiendan los reclamos, los deriban todo a la web"
+
+19. "Me parece una calificación acorde al servicio que recibo"
+
+20. "Dificil hacer un reclamo y hablar con una persona"
+
+21. "Tuve un comienzo complicado al empezar a usarlo"
+
+22. "Los montos minimos para utilizacion del cajero en sucursal son altisimos. No responden ni resuelven consultas"
+
+23. "Porque hasta ahora ha funcionado bien."
+
+24. "Me gustaría más asesorías de inversión"
+
+25. "Me gusta xomo opera y las promociones, pero cuando hay un problema o duda, es muy dificil tener atencion al cliente. Hay q llamar al fonobanco y es difixil encontrar la opcion de hablar xon alguien"
+
+26. "53t3t ewy rth h tdyh tdyjty jhwetherthreyhrvh rthreth"
+
+27. "No tuve buena experiencia me explicaron otra cosa"
+
+28. "No atienden por teléfono, cuando hay algún problema hay que ir personalmente"
+
+29. "Pesima atencion al cliente. No resuelven nada."
+
+30. "Tendrían que poner más personal , para que la atención fuese más fluida"
+
+
+================================================================================
+
+### ✅ MOTIVO: Seguridad (-0.7pp - MEJORÓ)
+
+**Impacto:** 2.7% → 2.0% | **Comentarios:** 7 (25Q4) → 6 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "tiene un buen respaldo financiero"
+
+2. "Comparto cuenta con mi mamá y ella fue víctima de varias estafas ingresando a la app de Galicia. También escuché de muchos casos donde están involucrados los empleados del banco"
+
+3. "porque he sufrido robos de mi cuenta y el banco no se hizo cargo sino que tuve que poner un abogado para que el banco em devuelva mi plata por falta de seguridad de su parte."
+
+4. "Porque considera que cualquier app para celular es insegura, hay cosas que desde una PC no se puede hacer directamente sino se pasa primero por la app, pero esas cosas se pueden hacer directamente de la app, y un celular es un dispositivo que se usa ..."
+
+5. "En una oportunidad hace 1 año me robaron el teléfono y sin saber mi clave bancaria pudieron sorpresivamente sacar un préstamo sin mi consentimiento. El banco no se responsabilizó de ese error en su seguridad y tuve que cancelar el prestamo, esperar a..."
+
+6. "Por las estafas y mails que envían"
+
+
+================================================================================
+
+### ✅ MOTIVO: Funcionalidades (-0.5pp - MEJORÓ)
+
+**Impacto:** 3.7% → 3.2% | **Comentarios:** 8 (25Q4) → 6 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Creo que puede mejorar"
+
+2. "No me brinda el rendimiento que necesito"
+
+3. "buen banco, con pocas promociones y descuentos actualmente"
+
+4. "La uso porque cobro mi sueldo y por algunos beneficios que son mejores que otras app que tengo"
+
+5. "Es muy complicado hacer transferencias. Piden token, pero: No sé puede sacar un token al mismo tiempo que se está intentando transferir desde celular"
+
+6. "Porque no genera rendimiento, caros los intereses."
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Banco Galicia_MLA_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

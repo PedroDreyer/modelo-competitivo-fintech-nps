@@ -81,14 +81,14 @@ COLS_NECESARIAS_MLA = [
     19, 20,  # MARCA (PAGO), NPS
     22, 24, 26,  # MOTIVOS (P6=detra, P7=neutro, P8=promo)
     28,  # COMENTARIO (Comentarios)
-    38, 39, 40, 41, 42, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59,  # PRODUCTOS (P10, 19 cols sin TC, Créditos ni Dólar)
-    296,  # USO_MONEDA_EXTRANJ (¿Sueles comprar Dólar en [MARCA]?)
-    170,  # USO_CREDITOS (¿Has utilizado alguna vez ese crédito y/o préstamo?)
-    178,  # USO_TARJETA_CREDITO (¿Has utilizado alguna vez esa tarjeta de crédito de [PAGO_1]?)
+    38, 39, 40, 41, 42, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59,  # PRODUCTOS P10 (19 cols)
     78,  # ANTIGUEDAD (P11)
     122,  # MOTIVO_PRINCIPALIDAD (P14A)
     158,  # VALORACION_SEGURIDAD (A2)
+    170,  # USO_CREDITOS (¿Has utilizado alguna vez ese crédito y/o préstamo?)
+    178,  # USO_TARJETA_CREDITO (¿Has utilizado alguna vez esa tarjeta de crédito?)
     198,  # MOTIVO_INSEGURIDAD (A20A)
+    296,  # USO_MONEDA_EXTRANJ (¿Sueles comprar Dólar en [MARCA]?)
     367  # FLAG_PRINCIPALIDAD
 ]
 

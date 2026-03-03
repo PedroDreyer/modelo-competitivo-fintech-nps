@@ -68,7 +68,7 @@ parametros:
   threshold_cambio_significativo: 0.5
 periodo_1: 25Q4
 periodo_2: 26Q1
-player_analizar: Naranja X
+player_analizar: Cuenta DNI
 rutas:
   data: data/
   outputs: outputs/
@@ -100,6 +100,8 @@ sites:
     - Personal Pay
     - MODO
     - Banco Santander
+    - Banco Galicia
+    - Cuenta DNI
     separador: ;
     skiprows: 1
   MLB:
