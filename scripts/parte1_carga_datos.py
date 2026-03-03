@@ -81,7 +81,10 @@ COLS_NECESARIAS_MLA = [
     19, 20,  # MARCA (PAGO), NPS
     22, 24, 26,  # MOTIVOS (P6=detra, P7=neutro, P8=promo)
     28,  # COMENTARIO (Comentarios)
-    38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,  # PRODUCTOS (P10#1..P10#98, 22 cols)
+    38, 39, 40, 41, 42, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59,  # PRODUCTOS (P10, 19 cols sin TC, Créditos ni Dólar)
+    296,  # USO_MONEDA_EXTRANJ (¿Sueles comprar Dólar en [MARCA]?)
+    170,  # USO_CREDITOS (¿Has utilizado alguna vez ese crédito y/o préstamo?)
+    178,  # USO_TARJETA_CREDITO (¿Has utilizado alguna vez esa tarjeta de crédito de [PAGO_1]?)
     78,  # ANTIGUEDAD (P11)
     122,  # MOTIVO_PRINCIPALIDAD (P14A)
     158,  # VALORACION_SEGURIDAD (A2)
@@ -96,11 +99,11 @@ NOMBRES_COLUMNAS_MLA = {
     22: 'MOTIVO_DETRA', 24: 'MOTIVO_NEUTRO', 26: 'MOTIVO_PROM',
     28: 'COMENTARIO',
     38: 'USO_PAGOS_ONLINE', 39: 'USO_TRANSFERENCIAS', 40: 'USO_PAGO_SERVICIOS',
-    41: 'USO_CRIPTO', 42: 'USO_ACCESO_CREDITOS', 43: 'USO_CREDITOS',
-    44: 'USO_TARJETA_CREDITO', 45: 'USO_EFECTIVO', 46: 'USO_RECARGA_CEL',
+    41: 'USO_CRIPTO', 42: 'USO_ACCESO_CREDITOS', 170: 'USO_CREDITOS',
+    178: 'USO_TARJETA_CREDITO', 45: 'USO_EFECTIVO', 46: 'USO_RECARGA_CEL',
     47: 'USO_RECARGA_TRANSP', 48: 'USO_COBRAR_SUELDO', 49: 'USO_TARJETA_DEBITO',
     50: 'USO_QR', 51: 'USO_AHORRO_INVERSION', 52: 'USO_SEGUROS',
-    53: 'USO_MONEDA_EXTRANJ', 54: 'USO_INVERSIONES', 55: 'USO_RENDIMIENTOS',
+    296: 'USO_MONEDA_EXTRANJ', 54: 'USO_INVERSIONES', 55: 'USO_RENDIMIENTOS',
     56: 'USO_MERCADOLIBRE', 57: 'USO_FRASCOS', 58: 'USO_RESERVAS', 59: 'USO_OTROS',
     78: 'ANTIGUEDAD',
     122: 'MOTIVO_PRINCIPALIDAD',
@@ -135,6 +138,94 @@ NOMBRES_COLUMNAS_MLM = {
     236: 'MOTIVO_INSEGURIDAD',
     264: 'FLAG_PRINCIPALIDAD'
 }
+
+# ==============================================================================
+# FALLBACK POR WORDING - Columnas críticas que pueden cambiar de posición
+# Mapea nombre_interno → (índice_esperado, texto_parcial_en_header)
+# Si el índice no coincide con el wording, se busca la columna por texto.
+# ==============================================================================
+
+FALLBACK_WORDING_MLA = {
+    'USO_TARJETA_CREDITO': (178, 'Has utilizado alguna vez esa tarjeta de cr'),
+    'USO_CREDITOS':        (170, 'Has utilizado alguna vez ese cr'),
+    'USO_MONEDA_EXTRANJ':  (296, 'Sueles comprar D'),
+    'USO_PAGOS_ONLINE':    (38, 'Pagar o comprar en tiendas online'),
+    'USO_TRANSFERENCIAS':  (39, 'Transferir dinero'),
+    'USO_PAGO_SERVICIOS':  (40, 'Pagar servicios o impuestos'),
+    'USO_CRIPTO':          (41, 'Comprar y vender criptomonedas'),
+    'USO_ACCESO_CREDITOS': (42, 'Tener acceso a cr'),
+    'USO_EFECTIVO':        (45, 'Extraer dinero en efectivo'),
+    'USO_RECARGA_CEL':     (46, 'Recargar el celular'),
+    'USO_RECARGA_TRANSP':  (47, 'Recargar mi tarjeta de transporte'),
+    'USO_COBRAR_SUELDO':   (48, 'Cobrar mi sueldo'),
+    'USO_TARJETA_DEBITO':  (49, 'Tener tarjeta prepaga'),
+    'USO_QR':              (50, 'Pagar o comprar con c'),
+    'USO_AHORRO_INVERSION':(51, 'Ahorrar/Invertir'),
+    'USO_SEGUROS':         (52, 'Contratar seguros'),
+    'USO_INVERSIONES':     (54, 'Invertir '),
+    'USO_RENDIMIENTOS':    (55, 'Generar rendimientos'),
+    'USO_MERCADOLIBRE':    (56, 'Hacer compras en Mercado Libre'),
+    'USO_FRASCOS':         (57, 'Usar Frascos'),
+    'USO_RESERVAS':        (58, 'Usar reservas'),
+    'USO_OTROS':           (59, 'Otro(s) uso(s)'),
+}
+
+
+def resolver_indices_por_wording(archivo, encoding, sep, skiprows, fallback_wording,
+                                  cols_necesarias, nombres_columnas, verbose=True):
+    """
+    Lee el header real del CSV y valida que los índices coincidan con el wording esperado.
+    Si algún índice no coincide, busca la columna correcta por texto.
+    Devuelve (cols_necesarias_actualizadas, nombres_columnas_actualizados).
+    """
+    import csv
+    import io
+
+    with open(archivo, encoding=encoding, errors='replace') as f:
+        for _ in range(skiprows):
+            f.readline()
+        header_line = f.readline()
+
+    reader = csv.reader(io.StringIO(header_line), delimiter=sep)
+    header = next(reader)
+
+    nombre_a_idx = {v: k for k, v in nombres_columnas.items()}
+    cols_actualizadas = list(cols_necesarias)
+    nombres_actualizados = dict(nombres_columnas)
+    cambios = 0
+
+    for nombre_interno, (idx_esperado, wording) in fallback_wording.items():
+        if nombre_interno not in nombre_a_idx:
+            continue
+
+        idx_actual = nombre_a_idx[nombre_interno]
+
+        if idx_actual < len(header) and wording in header[idx_actual]:
+            continue
+
+        nuevo_idx = None
+        for i, col_header in enumerate(header):
+            if wording in col_header:
+                nuevo_idx = i
+                break
+
+        if nuevo_idx is not None and nuevo_idx != idx_actual:
+            if verbose:
+                print(f"   🔄 {nombre_interno}: índice {idx_actual} → {nuevo_idx} (por wording)")
+            pos = cols_actualizadas.index(idx_actual)
+            cols_actualizadas[pos] = nuevo_idx
+            del nombres_actualizados[idx_actual]
+            nombres_actualizados[nuevo_idx] = nombre_interno
+            nombre_a_idx[nombre_interno] = nuevo_idx
+            cambios += 1
+        elif nuevo_idx is None and verbose:
+            print(f"   ⚠️ {nombre_interno}: no se encontró wording '{wording}' en header")
+
+    if cambios > 0 and verbose:
+        print(f"   ✅ {cambios} columna(s) reubicada(s) por fallback de wording")
+
+    return cols_actualizadas, nombres_actualizados
+
 
 # ==============================================================================
 # CONFIGURACIÓN DE SITES
@@ -322,6 +413,13 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
     # Cargar columnas
     cols_necesarias = cfg.get('cols_necesarias')
     nombres_columnas = cfg.get('nombres_columnas')
+    
+    # Fallback por wording: validar índices contra el header real del CSV
+    if cols_necesarias is not None and site == 'MLA':
+        cols_necesarias, nombres_columnas = resolver_indices_por_wording(
+            archivo, encoding_to_use, cfg['sep'], cfg.get('skiprows', 0),
+            FALLBACK_WORDING_MLA, cols_necesarias, nombres_columnas, verbose=verbose
+        )
     
     if cols_necesarias is not None:
         # Modo índice: cargar columnas específicas por posición

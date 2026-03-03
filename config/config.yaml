@@ -68,7 +68,7 @@ parametros:
   threshold_cambio_significativo: 0.5
 periodo_1: 25Q4
 periodo_2: 26Q1
-player_analizar: Banco Santander
+player_analizar: Naranja X
 rutas:
   data: data/
   outputs: outputs/
