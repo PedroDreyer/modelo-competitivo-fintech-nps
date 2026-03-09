@@ -117,12 +117,15 @@ El modelo tiene 2 tareas que SIEMPRE requieren al agente:
 
 **Orden de ejecución garantizado:**
 ```
-1ra ejecución → carga datos → waterfall → genera prompt → EXIT 42 (sin causas raíz)
-    ↓ agente genera JSON de causas raíz (PASO 2)
+1ra ejecución → EXIT 42 (sin causas raíz PROMOTORES)
+    ↓ agente genera JSON promotores: data/causas_raiz_semantico_promotores_{PLAYER}_{SITE}_{Q2}.json
+2da ejecución → EXIT 42 (sin causas raíz DETRACTORES)
+    ↓ agente genera JSON detractores: data/causas_raiz_semantico_{PLAYER}_{SITE}_{Q2}.json
     ↓ agente busca noticias con WebSearch + guarda noticias_cache.json (PASO 2B)
-2da ejecución → carga datos → waterfall → CARGA causas raíz ✅ → lee noticias del cache ✅ → triangula → HTML
+3ra ejecución → CARGA ambos JSONs ✅ → lee noticias del cache ✅ → triangula → HTML ✅
 ```
 
+**IMPORTANTE:** El modelo checkea PRIMERO promotores, LUEGO detractores. Cada uno dispara su propio exit 42.
 El modelo NUNCA genera HTML sin causas raíz. El modelo NUNCA hace web scraping de noticias.
 Las noticias SIEMPRE las busca el agente con WebSearch y las guarda en `data/noticias_cache.json`.
 
@@ -135,12 +138,20 @@ python correr_modelo.py
 
 ### PASO 2: Manejar exit code 42 (CAUSAS RAÍZ REQUERIDAS)
 
-**Si el modelo sale con exit code 42**, significa que no existe el JSON de causas raíz semánticas.
-El modelo se detuvo ANTES de buscar noticias (diseño intencional).
+**Si el modelo sale con exit code 42**, significa que falta un JSON de causas raíz semánticas.
+Puede ocurrir DOS VECES: primero para PROMOTORES, luego para DETRACTORES.
 
-**El agente DEBE (todo en silencio, sin mostrar al usuario):**
+**Cómo distinguirlos:**
+- Si la salida menciona `causas_raiz_semantico_promotores_*` → faltan **promotores**
+- Si la salida menciona `causas_raiz_semantico_*` (sin "promotores") → faltan **detractores**
 
-1. **Leer el prompt** indicado en la salida: `prompts/prompt_causas_raiz_{PLAYER}_{SITE}_{Q2}.txt`
+**Para PROMOTORES** (todo en silencio):
+1. Leer comentarios de promotores (NPS=1, con saldo) del CSV
+2. Generar JSON y guardarlo en `data/causas_raiz_semantico_promotores_{PLAYER}_{SITE}_{Q2}.json`
+3. Re-ejecutar `python correr_modelo.py` (no buscar noticias aún)
+
+**Para DETRACTORES** (todo en silencio):
+1. **Leer el prompt**: `prompts/prompt_causas_raiz_{PLAYER}_{SITE}_{Q2}.txt`
 2. **Leer TODOS los comentarios** de cada motivo en el prompt
 3. **Analizar semánticamente** los comentarios identificando patrones reales
 4. **Generar un JSON** con el formato exacto descrito abajo
@@ -232,9 +243,9 @@ python correr_modelo.py
 ### PASO 3: Verificar HTML generado
 
 Si el modelo termina con exit code 0:
-- Verificar que el HTML existe en `outputs/`
-- Abrirlo con `start outputs/Resumen_NPS_*.html` (Windows)
-- Reportar al usuario
+- Los HTMLs se guardan en `outputs/{periodo}/{site}/` (ej: `outputs/26Q1/MLM/`)
+- Abrirlo con `start outputs/{Q}/{SITE}/Resumen_NPS_{PLAYER}_{SITE}_{Q}.html` (Windows)
+- Reportar al usuario con el path relativo (no el absoluto)
 
 ---
 
