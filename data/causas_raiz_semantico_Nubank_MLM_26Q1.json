@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "player": "Nubank",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Seguridad": {
+      "total_comentarios_analizados": 32,
+      "delta_pp": 2.1,
+      "causas_raiz": [
+        {
+          "titulo": "Desconfianza por ausencia de sucursales físicas que respalden el banco",
+          "descripcion": "La mayoría de las quejas de seguridad apuntan directamente a la falta de presencia física: sin sucursales, los usuarios sienten que no tienen a dónde acudir en caso de problemas, lo que genera desconfianza estructural en el banco.",
+          "frecuencia_pct": 47,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Aunque cuenta con un gran servicio de banco sigue sin tener un banco físico lo cual crea desconfianza",
+            "No hay sucursales fisicas",
+            "al no haber un banco fisico no siento tanta seguridad y me siento mas comoda usando otro banco",
+            "Hasta el momento no he tenido problemas pero si estaría bien que hubiera ubicaciones físicas ya que no se cuenta con alguna sucursal"
+          ]
+        },
+        {
+          "titulo": "Percepción de baja confiabilidad como institución financiera por ser SoFiPo y banco digital reciente",
+          "descripcion": "Nubank opera bajo figura de SoFiPo (Sociedad Financiera Popular), lo que genera dudas sobre la solidez institucional y el respaldo regulatorio. Usuarios mencionan explícitamente que al ser reciente en México y no ser un banco convencional, no genera suficiente confianza.",
+          "frecuencia_pct": 34,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Por ser una sofipo, no podría ser tan confiable, si quiero cancelar me entra la incertidumbre",
+            "banco sin respaldo de institucion financiera",
+            "Es una institución reciente en México, aún me falta mucho camino para crear esa confianza en la población, sin embargo su propuesta es buena",
+            "Es un banco buró pero no es tan confiable como otros"
+          ]
+        },
+        {
+          "titulo": "Bloqueos de cuenta y cargos no reconocidos sin resolución efectiva",
+          "descripcion": "Un segmento de usuarios reporta experiencias concretas de bloqueos de cuenta, dinero no devuelto o falta de protección ante fraudes, lo que deteriora la percepción de seguridad operativa.",
+          "frecuencia_pct": 19,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Están bloqueando cuentas y no regresan el dinero",
+            "No te apoyan cuando existe un cargo no reconocido",
+            "No cuenta con seguridad para sus clientes",
+            "CREO QUE ES UNA PLATAFORMA DE FACIL ACCESO PARA LOS HACKERS"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 33,
+      "delta_pp": -1.8,
+      "causas_raiz": [
+        {
+          "titulo": "Oferta de cashback, puntos y beneficios en compras inexistente o inferior a competidores",
+          "descripcion": "El reclamo más frecuente es la ausencia de programas de lealtad (cashback, puntos por consumo) que sí ofrecen otros bancos. Los usuarios lo perciben como un banco básico que no premia el uso de la tarjeta.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Los intereses son muy altos y no tienen promociones como cashback o puntos",
+            "Me gustaría que hubiera puntos en las compras",
+            "Porque ofrecen muy pocas promociones en comparación con otros bancos y en cuestión de descuentos, no ofrecen casi nada",
+            "que tuviera cash back"
+          ]
+        },
+        {
+          "titulo": "Escasas opciones de meses sin intereses y convenios con establecimientos limitados",
+          "descripcion": "Usuarios señalan que las promociones de MSI (meses sin intereses) son limitadas en establecimientos y productos elegibles, y que las restricciones en plataformas como Amazon reducen el valor percibido.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Sus promociones en Amazon a MSI no califican a todos los productos aun cuando su precio es alto.",
+            "Ampliar las ofertas de meses sin intereses y facilidad para aumentar los límites de depósitos",
+            "Me equivoqué de opción pero no ofrece muchas promociones con otros establecimientos como meses sin intereses o no tiene tantos convenios"
+          ]
+        },
+        {
+          "titulo": "Promociones poco transparentes o engañosas que generan frustración al momento de aplicarlas",
+          "descripcion": "Algunos usuarios reportan que las promociones no se cumplen como se comunican o son difíciles de entender, lo que genera desconfianza en las ofertas de Nubank.",
+          "frecuencia_pct": 19,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Que cumplan con las promociones ya que no lo hacen",
+            "no son tan fáciles de entender las promociones y a veces suelen ser engañosas",
+            "Creo que es un buen neobanco pero podrían mejorar sus descuentos y promociones para que sea mas atractiva"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 5,
+      "delta_pp": -1.1,
+      "causas_raiz": [
+        {
+          "titulo": "Comisiones por retiro de efectivo en cajeros altas versus competidores que no cobran o reembolsan",
+          "descripcion": "Todos los comentarios del motivo apuntan al mismo problema: el costo de retirar efectivo es percibido como excesivo, especialmente frente a alternativas que no cobran comisión o devuelven el importe.",
+          "frecuencia_pct": 80,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "El cobro por retiro en efectivo es alto",
+            "Es un bien banco pero las tarifas de comisión por retirar dinero son muy altas",
+            "no me resulta practico utilizar su tarjeta de debito, ya que tengo otras opciones para retiros sin comisiones o con devolución del importe gastado."
+          ]
+        },
+        {
+          "titulo": "Percepción general de comisiones elevadas en comparación con la propuesta de valor del banco",
+          "descripcion": "Usuarios perciben que Nubank cobra comisiones altas de forma genérica, lo que contrasta con su posicionamiento como banco sin anualidad y de bajo costo.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 1,
+          "ejemplos": [
+            "Comisiones caras"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 88,
+      "delta_pp": -0.9,
+      "causas_raiz": [
+        {
+          "titulo": "Reducción continua de la tasa de rendimiento de la Cajita Turbo desde el 15% inicial a niveles menores",
+          "descripcion": "El patrón más dominante: usuarios que abrieron cuenta atraídos por el 15% anual de rendimiento expresan decepción ante las reducciones progresivas. Lo vivencian como una pérdida de la propuesta de valor que los llevó a elegir Nubank.",
+          "frecuencia_pct": 57,
+          "frecuencia_abs": 50,
+          "ejemplos": [
+            "HAN BAJADO LAS TASAS DE INTERES CONTINUAMENTE LOS ULTIMOS MESES",
+            "Porque inicio ofreciendo 15% de rendimiento de inversion y cada vez es menor",
+            "Cuando abri mi cuenta tenian una buena tasa para invertir tu dinero. Pero rapidamente ha bajado este porcentaje",
+            "es un buen banco digital,pero el rendimiento de la taza anual cayó del 15 al 13 por ciento"
+          ]
+        },
+        {
+          "titulo": "Tope de $25,000 para la Cajita Turbo limita el beneficio de rendimiento para saldos mayores",
+          "descripcion": "Usuarios con saldos superiores al límite de la Cajita Turbo señalan que el rendimiento del resto del dinero es muy bajo, haciendo poco atractivo mantener mayores montos en Nubank.",
+          "frecuencia_pct": 20,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Es muy limitado solamente que se generen una tasa de interés del 13% por 25 mil. Me gustaría que ese rendimiento aplicara para un importe mucho mayor.",
+            "Porque bajaron su tasa de rendimiento, aunque lo entiendo por los factores macroeconómicos, solo el limite de 25,000 es el que tiene un rendimiento atractivo",
+            "Por qué no da tanto de interés, una vez que llenas la cajita turbo el interés de las otras cajitas es muy bajo a comparación de la competencia"
+          ]
+        },
+        {
+          "titulo": "Competencia ofrece tasas de rendimiento iguales o superiores combinadas con más beneficios",
+          "descripcion": "Un grupo de usuarios ya no percibe a Nubank como diferenciado en rendimientos, ya que otras fintechs y bancos digitales ahora igualan o superan su tasa, eliminando la razón principal por la que eligieron la plataforma.",
+          "frecuencia_pct": 14,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "pues ya existen otras instituciones financieras que ofrecen más rendimiento",
+            "Al principio era muy atractiva y sencilla de usar, ahora hay otras opciones que ofrecen lo mismo o mas con mejores promos o ganancias",
+            "no acostubro recomendar bancos, lo recomende mientras tenian tasas de interes competitivas, pero eso ya no es verdad"
+          ]
+        },
+        {
+          "titulo": "Requisito de compra mensual para mantener la Cajita Turbo activa genera fricción y confusión",
+          "descripcion": "Usuarios descubren que deben realizar compras mensuales para conservar el acceso a la tasa preferencial de la Cajita Turbo, lo que perciben como una condición engañosa o poco clara al momento de contratar.",
+          "frecuencia_pct": 9,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Por bajar su tasa de rendimiento en la cajita turbo y por exigir una compra mensual.",
+            "En términos generales me funciona, pero hay cosas que no quedan claras como en que fecha tengo que hacer la compra para que me dejen mantener la cajita turbo",
+            "Es difícil encontrar las cajitas para meter el dinero, además la tasa de rendimiento es muy baja, antes era más"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 71,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés de tarjeta de crédito excesivamente altas que hacen impagable la deuda",
+          "descripcion": "Es el reclamo más recurrente y consistente del motivo: usuarios señalan que los intereses son tan elevados que a pesar de pagar, la deuda no disminuye perceptiblemente. Se percibe como una de las tasas más altas del mercado.",
+          "frecuencia_pct": 49,
+          "frecuencia_abs": 35,
+          "ejemplos": [
+            "Porque los intereses son demasiado altos. Pago mucho y mi deuda casi no baja.",
+            "Las tasas de interés son exorbitantes",
+            "Al principio era una tarjeta con un Cat muy bueno, después fue subiendo y actualmente ya es tan cara como muchas otras, espero pronto dejar de utilizarla cobran mucho de intereses, se está volviendo impagable",
+            "La verdad es que han aumentado mucho sus intereses en los últimos meses"
+          ]
+        },
+        {
+          "titulo": "Límite de crédito bajo que no aumenta pese a años de uso responsable y buen historial",
+          "descripcion": "Usuarios con antigüedad de 2 a 3 años en Nubank reportan que su línea de crédito no ha aumentado o ha aumentado muy poco, a pesar de pagar puntualmente y usar la tarjeta activamente. Se percibe falta de reconocimiento a la buena conducta crediticia.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 23,
+          "ejemplos": [
+            "Mi línea de crédito no crece en los últimos dos años",
+            "Por que el crédito de mi tarjeta de credito nunca aumenta",
+            "Por que tengo ya un tiempo usándola y mi credito no ha aumentado",
+            "es poco el credito que dan de inicio, al paso de 3 años se aumento y aun asi es poco, creo que se puede ofrecer un poco mas"
+          ]
+        },
+        {
+          "titulo": "Rechazo de solicitud de tarjeta de crédito sin criterios claros de elegibilidad",
+          "descripcion": "Varios usuarios reportan que solicitaron la tarjeta en múltiples ocasiones y fueron rechazados sin una explicación clara, lo que genera frustración especialmente dado el posicionamiento de Nubank como banco accesible.",
+          "frecuencia_pct": 11,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "No me dieron la tarjeta aunque la pedí múltiple ocasiones",
+            "Porque se batalla mucho para que te acepten",
+            "para el tiempo que tengo con la tarjeta, no he tenido invitaciones de obtener alguna tarjeta adicional o algún prestamo"
+          ]
+        },
+        {
+          "titulo": "Falta de opciones de préstamos personales competitivos más allá de la tarjeta de crédito",
+          "descripcion": "Usuarios señalan que Nubank no ofrece productos de crédito adicionales atractivos (préstamos personales, créditos con mejores condiciones) y que la tarjeta sola no satisface todas sus necesidades financieras.",
+          "frecuencia_pct": 8,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "No ofrece préstamos competitivos tiene tasas de intereses muy altas",
+            "Le falta algunas funciones para desarrollar como tarjeta bancaria o de crédito en su caso es tu mismo dinero que inviertes.",
+            "Porque es una buena opcion para realizar compras por internet y a crédito, pero tarda en procesar los limites de crédito y falla en subir la documentación personal"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": -0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia de sucursales físicas que imposibilita atención presencial para resolver problemas complejos",
+          "descripcion": "La falta de puntos físicos de atención es citada como barrera principal, especialmente para adultos mayores o usuarios que necesitan resolver disputas cara a cara. La digitalidad total es percibida como una limitación de servicio.",
+          "frecuencia_pct": 36,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "SI LLEGARA A TENER ALGUN PROBLEMA, NO SE CON QUIEN ME TENDRIA QUE COMUNICAR AL SER UN BANCO DIGITAL",
+            "ya que no tienen sucursales físicas es más difícil proporcionar ayuda a clientes De mayor edad, por ejemplo",
+            "igual es un fintech y al ser digital no hay lugar para irse a reclamar",
+            "No hay sucursales fisicas para atención al cliente"
+          ]
+        },
+        {
+          "titulo": "Tiempos de resolución muy largos para disputas de cargos no reconocidos y problemas con depósitos",
+          "descripcion": "Usuarios reportan casos concretos donde tardaron semanas en resolver problemas de cargos duplicados o depósitos no acreditados, y en algunos casos nunca recibieron solución. El soporte no logra resolver problemas operativos críticos.",
+          "frecuencia_pct": 36,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Tuve un problema con un depósito y tardaron en resolverme casi un mes",
+            "No me han devuelto el importe de una transacción que hice con un establecimiento",
+            "Se me ha cobrado pagos que no eh hecho y no me an resuelto",
+            "Intente reportar un cobro duplicado pero piden alguna «prueba» pagué en efectivo porque según no funcionaba la terminal y no tenía prueba de eso"
+          ]
+        },
+        {
+          "titulo": "Atención telefónica y chat automatizado lento e ineficiente que no resuelve consultas",
+          "descripcion": "El soporte digital (chatbot y teléfono) es percibido como tardío, robotizado y sin capacidad real de resolver problemas. Usuarios señalan largos tiempos de espera y respuestas que no atienden su situación.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "La atención es muy tardado y no dan solución",
+            "Porque es muy complicado que resuelvan tus dudas, hablas con un robot",
+            "Hay mucho tiempo de espera en la atención del ejecutivo en telefono",
+            "no la uso mucho, ademas para hablar con soporte o atencion al cliente es tardio"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 18,
+      "delta_pp": 0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Red de cajeros y puntos de retiro/depósito de efectivo insuficiente o inexistente",
+          "descripcion": "La queja dominante es la dificultad para retirar o depositar efectivo: Nubank no tiene cajeros propios y los puntos de acceso (como OXXO) son percibidos como limitados o inconvenientes. Esto frena el uso cotidiano del banco.",
+          "frecuencia_pct": 67,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "El no contar con cajeros es una desventaja ante los bancos",
+            "Porque no tiene cajeros físicos",
+            "Pocos lugares para depositar y retirar efectivo",
+            "necesito cajeros automaticos multifuncionales para usar mas esta cuenta"
+          ]
+        },
+        {
+          "titulo": "Funcionalidades de banca limitadas frente a bancos tradicionales para operaciones cotidianas",
+          "descripcion": "Usuarios señalan que Nubank no cubre todas sus necesidades bancarias por falta de funciones disponibles en bancos convencionales, lo que los obliga a mantener otra cuenta adicional.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Muchas limitantes",
+            "No ofrece nada nuevo",
+            "No la he podido usarla para lo que necesito",
+            "Solo esperaba un poco más de opciones"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 45,
+      "delta_pp": 0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Fallas e inestabilidad en la aplicación que dejan al usuario sin acceso a su dinero",
+          "descripcion": "Un grupo relevante reporta caídas o errores en la app que impiden pagar, acceder al saldo o recibir notificaciones, generando situaciones críticas de falta de acceso a fondos propios.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "La app falla a veces y no hay ni como sacar dinero ni pagar nada, te deja a oscuras, muy mal",
+            "En ocasiones tiene problemas la plataforma, tenia dinero en mi cuenta quise pagar con ella y resulta que ya no tenia saldo lo reporte y me comentaron que hasta después de 6 dias recibiría mi dinero y mientras tuve que ver quien me prestaba",
+            "Tarda en recibir el dinero, luego no te avisa",
+            "porque al momento de que te pide actualizar los datos se traba la app"
+          ]
+        },
+        {
+          "titulo": "Proceso de onboarding con reconocimiento facial y alta de cuenta complicado para nuevos usuarios",
+          "descripcion": "Usuarios reportan dificultades durante el proceso de alta de cuenta, especialmente en el reconocimiento facial y la carga de documentos, lo que genera frustración desde el primer contacto con la plataforma.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "porque a pesar de tener todos sus tramites en linea el reconocimiento facial para iniciar con mi cuenta fue muy complicado",
+            "Es difícil entender la plataforma ya que como que esta muy mal hecha y cuando marcas no te saben decir ni orientar pues tampoco conocen la plataforma.",
+            "Al momento de solicitarla mi trámite no avanzaba, tuve que hacerlo dos veces"
+          ]
+        },
+        {
+          "titulo": "Sistema de autenticación con contraseñas múltiples sin opción de acceso biométrico genera fricción diaria",
+          "descripcion": "Usuarios señalan que el acceso a la app requiere ingresar correo y contraseña completos cada vez, sin la posibilidad de usar huella digital, lo que hace lento el acceso cotidiano.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Para entrar a la cuenta se tiene que teclear el correo electrónico completo y la contraseña. Sería mejor entrar directo con huella digital.",
+            "Te pide varias contraseñas",
+            "Es difícil acceder",
+            "Practicidad en entrar más rapido"
+          ]
+        },
+        {
+          "titulo": "Dificultad para realizar depósitos de efectivo desde la app y navegación confusa entre cajitas",
+          "descripcion": "El flujo de depósito de efectivo y la gestión de cajitas (transferir entre cajitas y saldo disponible) es percibido como poco intuitivo, especialmente para usuarios menos familiarizados con fintechs.",
+          "frecuencia_pct": 16,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Me agrada mucho el como funciona, pero para hacer depósitos es un poco complicado",
+            "No me agrada mucho el tener que pasar de cajitas a dinero disponible",
+            "Es muy fácil de usar Pero es normal"
+          ]
+        }
+      ]
+    }
+  }
+}

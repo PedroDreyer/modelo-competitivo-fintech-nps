@@ -3187,7 +3187,7 @@ def _generar_seccion_noticias(resultados, TXT, q_ant, q_act):
                     
                     <!-- Coherencia -->
                     <div style="background: {border_color}20; padding: 6px 12px; border-radius: 20px; border: 1px solid {border_color};">
-                        <span style="font-weight: 600; color: {border_color}; font-size: 11px;">{icon} {coherencia.upper()}</span>
+                        <span style="font-weight: 600; color: {border_color}; font-size: 11px;">{icon} {(coherencia or 'neutro').upper()}</span>
                     </div>
                 </div>
             </div>
@@ -3482,7 +3482,7 @@ def _generar_seccion_triangulacion(resultados, TXT, q_ant, q_act):
             
             html += f"""
                     <div style="background: {border_color}20; padding: 6px 12px; border-radius: 20px; border: 1px solid {border_color};">
-                        <span style="font-weight: 600; color: {border_color}; font-size: 11px;">{icon} {coherencia.upper()}</span>
+                        <span style="font-weight: 600; color: {border_color}; font-size: 11px;">{icon} {(coherencia or 'neutro').upper()}</span>
                     </div>
                 </div>
             </div>
@@ -3685,7 +3685,7 @@ def _generar_triangulacion_productos(resultados, TXT, q_ant, q_act):
                         <a href="{noticia_url}" target="_blank" style="font-weight: 500; color: #0369a1; text-decoration: none; font-size: 12px;">{noticia_titulo}</a>
                     </div>
                     <div style="background: {border_color}20; padding: 6px 12px; border-radius: 20px; border: 1px solid {border_color};">
-                        <span style="font-weight: 600; color: {border_color}; font-size: 11px;">{icon} {coherencia.upper()}</span>
+                        <span style="font-weight: 600; color: {border_color}; font-size: 11px;">{icon} {(coherencia or 'neutro').upper()}</span>
                     </div>
                 </div>
             </div>
@@ -4714,12 +4714,16 @@ def _generar_promotores_causas_content(resultados, q_ant, q_act, player, site=No
 # ==============================================================================
 
 def guardar_html(html, player, periodo, site=None, output_dir=None):
-    """Guarda el HTML en un archivo."""
+    """Guarda el HTML en un archivo. Estructura: outputs/{periodo}/{site}/"""
     if output_dir is None:
-        output_dir = Path(__file__).parent.parent / 'outputs'
+        base = Path(__file__).parent.parent / 'outputs'
+        if periodo and site:
+            output_dir = base / periodo / site
+        else:
+            output_dir = base
     else:
         output_dir = Path(output_dir)
-    
+
     output_dir.mkdir(parents=True, exist_ok=True)
     
     if site:

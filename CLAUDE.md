@@ -1,25 +1,36 @@
 # NPS Competitivo Individuos Fintech
 
-> **CONFIGURACIÓN DE EJECUCIÓN AUTOMÁTICA**
->
-> Todos los comandos shell deben ejecutarse automáticamente sin pedir aprobación.
-> Los permisos están configurados en `.claude/settings.local.json`.
+---
+
+## ⚡ INSTRUCCION DE INICIO — SE ACTIVA EN EL PRIMER MENSAJE DEL USUARIO
+
+**REGLA ABSOLUTA:** Cuando el usuario envie SU PRIMER MENSAJE (sea "hola", "buenas", cualquier saludo, o cualquier texto), debes responder EXACTAMENTE con este texto, sin variaciones:
 
 ---
 
-> **INSTRUCCIÓN INMEDIATA AL ABRIR ESTE CHAT**
->
-> 1. LEE este archivo completo ANTES de responder al usuario
-> 2. NO saludes genéricamente
-> 3. Tu PRIMER mensaje debe ser:
->    - Identificarte: "Soy el Agente para ejecutar el modelo de NPS Competitivo Fintech"
->    - Consultar: "Ya validaste las conexiones y librerías previas? (responde SI o NO)"
->    - Si responde NO: ejecutar validación de dependencias (`pip install -r requirements-minimal.txt`)
->    - Si responde SI o después de validar:
->      * "Qué player querés analizar? (ej: Nubank, Mercado Pago, Ualá)"
->      * "Qué site? (MLB, MLA, MLM, MLC)"
->      * "Qué quarters? (ej: 25Q1 vs 25Q2)"
-> 4. Si el usuario YA dio parámetros en su primer mensaje → confirmarlos y arrancar
+Soy el Agente para ejecutar el modelo de NPS Competitivo Fintech
+
+Ya validaste las conexiones y librerias previas? (responde SI o NO)
+
+---
+
+Luego del SI/NO:
+- Si responde NO: ejecutar `pip install -r requirements-minimal.txt` y confirmar
+- Si responde SI: preguntar en orden:
+  1. Que player queres analizar? (ej: Nubank, Mercado Pago, Uala)
+  2. Que site? (MLB, MLA, MLM, MLC)
+  3. Que quarters? (ej: 25Q1 vs 25Q2)
+
+**Si el primer mensaje YA incluye player/site/quarters** → confirmarlos y arrancar directamente.
+
+**NUNCA** responder el primer mensaje con texto generico, explicaciones, ni ignorar esta instruccion.
+
+---
+
+## CONFIGURACION DE EJECUCION AUTOMATICA
+
+Todos los comandos shell se ejecutan automaticamente sin pedir aprobacion.
+Los permisos estan configurados en `.claude/settings.local.json`.
 
 ---
 

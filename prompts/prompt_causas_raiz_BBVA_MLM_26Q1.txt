@@ -1,0 +1,666 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **BBVA** en **MLM** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "BBVA",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### 🔥 MOTIVO: Financiamiento (+2.3pp - EMPEORÓ)
+
+**Impacto:** 2.9% → 5.2% | **Comentarios:** 10 (25Q4) → 37 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Es un excelente banco el �nico detalle que su tasa de inter�s en pr�stamos personales y tarjeta de cr�dito est� elevado"
+
+2. "Es un banco que cobra comisi�n por manejo de cuenta, en la actualidad muchos otros bancos ya no lo hacen."
+
+3. "Por qu� varias veces intent� tramitar una tarjeta de cr�dito y me la negaron"
+
+4. "Me cobraron una tarjeta de credito que yo ni solicit�"
+
+5. "Es un mal servicio en bancos, cajeros y maquinas"
+
+6. "Porque a veces he tenido algun problema leve"
+
+7. "presta un buen servicio nada fuera de lo comun."
+
+8. "porque es un producto que conozco y uso pero se me hace caro el costo de la anualidad"
+
+9. "Por que ya solo  ven negocio ennlas cuentas"
+
+10. "Me gusta es seguro"
+
+11. "Deber�a ofrecer menos intereses en prestamos"
+
+12. "Es caro y malo, pueden recortar el limite de credito sin avisar"
+
+13. "Me gusta su servicio"
+
+14. "Me gusta la aplicaci�n pero a veces es inestable y en algunos lados dicen que no tiene habilitado el pago sin contact�"
+
+15. "Su app ha estado fallando mucho  Su tasa de inpuesto es alta Es dificil que suban el credito de tu tarjeta de credito"
+
+16. "Su tasa de inter�s en cr�dito hipotecario es alto"
+
+17. "porque es muy accesible no adem�s tiene servicios muy buenos ser�a todo"
+
+18. "Tasa de inter�s demasiado alta"
+
+19. "No me gustan los bancos"
+
+20. "No tengo mucho l�mite de cr�dito"
+
+21. "Los intereses de todos sus productos son muy elevados o muy caros"
+
+22. "Porque es facil y r�pido usar"
+
+23. "Al pagar con TC no pasa aunque hables a la l�nea no solocionan"
+
+24. "porque hay muchas cosas que no me gustan, como las tazas de intereses"
+
+25. "Falta atenci�n en sucursal"
+
+26. "me ha sacado de pauros los prestamos y creditos pero los intereses son muy altos"
+
+27. "Porque tienden a ser muy selectos con sus ofertas de cr�ditos y por lo general no ofrecen grandes beneficios."
+
+28. "No me permiten cancelar una cuenta porque esta ligada a un pr�stamo de nomina; y en dicha cuenta ya no me depositaran la nomina as� que generara comisi�n"
+
+29. "Ya tengo tiempo con el banco y no me da grandes opciones"
+
+30. "por que tengo credito con ellos"
+
+31. "Sus tasas de inter�s son altas"
+
+32. "Cobros por manejo de cuenta"
+
+33. "Es f�cil de usar pero no te garantiza tener la m�xima seguridad de tu dinero"
+
+34. "Creo que BBVA su aplicaci�n es muy confusa y dif�cil de usar, no me gusta mucho"
+
+35. "Cobran anualidad alta en su tarjeta de cr�dito"
+
+36. "Porque enrealidad es buena pero al final no tanto."
+
+37. "Tiene tasas de inter�s muy altas,"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+0.8pp - EMPEORÓ)
+
+**Impacto:** 1.1% → 1.9% | **Comentarios:** 4 (25Q4) → 12 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Son muy lentos en sus revisiones de aprobaci�n de cr�ditos"
+
+2. "Es un buen banco"
+
+3. "Considero que es un banco excelente pero podr�a mejorar en sus beneficios, y otorgar m�s beneficios en compras, promociones y de m�s a sus clientes"
+
+4. "No me ofrece nada, s�lo lo utilizo para que me depositen la n�mina"
+
+5. "Las transferencias son lentas, no ofrece ganancias ni siquiera mensuales y cobra comisi�n por manejo de cuenta"
+
+6. "Muchas sucursales"
+
+7. "Pues el.servicio atenci�n al cliente es bueno . Amenos en mi sucursal son muy amables . Y atentos por mu c ho que les pregu tes o los visites con dudas sie.pre est�n atentos"
+
+8. "Porque siempre para activar la app ocupo ir a la sucursal y eso me quita funcionalidad y tiempo"
+
+9. "La anualidad es muy cara,las tasas de inter�s son alt�simas , los operadores son muy groseros"
+
+10. "cobran anualidad en su tarjeta, estoy pensando en cancelarla"
+
+11. "Por los servicios que ofrecen"
+
+12. "Es buena pero le falta mejorar"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Seguridad (+0.7pp - EMPEORÓ)
+
+**Impacto:** 2.0% → 2.7% | **Comentarios:** 8 (25Q4) → 22 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Las medidas de seguridad de la app me parecen insuficientes."
+
+2. "Recibe transacci�n no autorizado"
+
+3. "Me siento c�moda y segura usando este banco"
+
+4. "es un banco estable"
+
+5. "tiene varios candados de seguridad en mi cuenta"
+
+6. "Es un banco que lleva muchos a�os en el pa�s y es estable"
+
+7. "Porque es un banco con experiencia"
+
+8. "Pues por mi experiencia como usuario y por comentarios de otros usuarios en redes sociales"
+
+9. "La plataforma est� expuesta a hackeo y fraudes"
+
+10. "Porque he tenido conocimiento de que las tarjetas de este banco as� como las cuentas son f�ciles de robar, aparte que no dan soluci�n inmediata al proceso y hacen muy cansados los tramites"
+
+11. "Es un buen banco podr�a mejorar pero es mejor que muchos"
+
+12. "Es un buen banco pero su aplicaci�n no es tan intuitiva"
+
+13. "Me hicieron un fraude y el banco se lav� las manos, no hubo manera de recuperar nada y la atenci�n fue fatal"
+
+14. "Siento que la seguridad pudiese ser mucho mejor, m�s segura."
+
+15. "Como cualquier app no esta 100% segura y han ocurrido muchos fraudes a traves de la app"
+
+16. "he tenido muchos problemas con cargos no reconocidos"
+
+17. "Cuento con un seguro contra robo y clonaci�n de tarjeta y no me mandan la p�liza sin importar cu�ntas veces lo solicite, adem�s llegue hacer pagos con tarjeta que despu�s fueron cancelaciones de servicio y el banco no me regreso el dinero, cuando los..."
+
+18. "La he usado hace mucho y es una buena banca,pero muy dif�cil para solicitar pr�stamo"
+
+19. "�ltimamente he visto que el dinero de la gente desaparece y el banco no hace nada"
+
+20. "Las operaciones realizadas no solicitan seguridad extra para realizarse"
+
+21. "Siento que podr�a implementar una mayor seguridad en la aplicaci�n"
+
+22. "Porque en la actualidad se ha visto mucho que los ejecutivos hacen operaciones sin consentimiento del usuario, proporcionan informaci�n confidencial a otras personas."
+
+
+================================================================================
+
+### 🔥 MOTIVO: Tarifas (+0.7pp - EMPEORÓ)
+
+**Impacto:** 2.3% → 2.9% | **Comentarios:** 7 (25Q4) → 19 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Por que es algo que podr�an mejorar y les ayudar�a a ser mejores"
+
+2. "Cobro de anualidad, mal servicio, falta de claridad en sus contratos"
+
+3. "Debe mejorar el sistema de la app, reducir comisiones y aportar mejores promociones y oportunidades para que el uso de la cuenta sea mas eficiente, ademas en el banco la atencion del personal no es buena."
+
+4. "Por que sube mucho los intereses y la aplicaci�n est� muy dif�cil de usas no me gusta nada"
+
+5. "A veces cobran por retiro de efectivo"
+
+6. "Porque hay otras opciones de tarjetas que no cobran anualidades"
+
+7. "Tiene muy bienos productos"
+
+8. "Cobro por tener saldo bajo"
+
+9. "No te ofrecen la tarjeta de cr�dito y te cobran por el uso de cajeros y el cobro es obligatorio"
+
+10. "es la que considero"
+
+11. "Estoy inconforme sobre un pago de comisi�n que hacen por hacer uso de los cajeros, aun siendo tarjetahabiente."
+
+12. "Mejorar tasas de rendimiento y promociones"
+
+13. "deberian de ofrecer mejores comisiones"
+
+14. "Es un buen banco, sin embargo las anualidades son caras"
+
+15. "Ya no me dieron saldo suficiente"
+
+16. "Est�n bajando su calidad"
+
+17. "Las tarifas son altas"
+
+18. "Por el servicio que ofrecen"
+
+19. "Son muy buenos pero muy caros. Cobran tarifas altas."
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-0.6pp - MEJORÓ)
+
+**Impacto:** 5.2% → 4.5% | **Comentarios:** 17 (25Q4) → 32 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Demasiada espera en los servicios personalizados"
+
+2. "No seguimiento a inter�s de sus productos"
+
+3. "El ejecutivo no da soluci�n"
+
+4. "No resuelven mis problemas, ni por tel�fono ni en sucursal. No ofrece opciones para pagos de deudas y sus tasas son muy altas"
+
+5. "Mala atenci�n al cliente"
+
+6. "No tienen buen servicio am cliente ..les vale perder clientes antiguos"
+
+7. "Es muy buena y agil la APP"
+
+8. "la atenci�n al ciente no es la optima."
+
+9. "Simplemente el trato y tiempo de espera"
+
+10. "Carecen de una atenci�n al cliente exhaustiva en caso de fraude"
+
+11. "Porque tiene problemas con la tarjeta de debito"
+
+12. "Porque, no dejan pasar a cajas, para pagar, a�n cuando los cajeros no sirven.   Que mal servicio..."
+
+13. "tengo razones para creer que bancomer ha vendido mi informaci�n a estafadores y los propios empleados del banco hacen fraude con mis tarjetas"
+
+14. "Es complicado comunicarse y que te resuelvan pronto"
+
+15. "Tuve un tema con un doble pago en un comercio en donde les ped� apoyo para que me realizaron la cancelaci�n del movimiento y no me dieron soluci�n el servicio al cliente es p�simo solo porque tiene mucha presencia en el pa�s y encuentro un cajero de ..."
+
+16. "La atenci�n en sucursal no me gusta es muy tardado y no siempre sin amables"
+
+17. "La aplicaci�n cambi� y ahora es m�s molesto el uso de ella"
+
+18. "Porque en la actualidad nos manda realizar la mayor�a de los tr�mites a los cajeros y multicajas"
+
+19. " no te orientan en procedimiento de seguros"
+
+20. "Creo que la atenci�n al cliente siempre es muy buena en las sucursales"
+
+21. "la app es agradable y f�cil de manejar"
+
+22. "En las sucursales hay mucha gente"
+
+23. "Solo que expliquen bien lo que ofrecen y no enga�arnos con cosas que no son ciertas"
+
+24. "Porque su atenci�n al cliente es un lio, es tardado y no van directo al grano"
+
+25. "la atenci�n al cliente dentro de sucursal es horrible"
+
+26. "Sus cajeros autom�ticos son muy lentos, en la practi caja cuesta trabajo que acepte los billetes, la atenci�n en ventanilla es sumamente tardada."
+
+27. "ES el banco que usado por m�s tiempo, su app se me hace muy f�cil de usar, sin embargo la atenci�n de sus ejecutivos tanto  en sucursal como por telefono es un asco"
+
+28. "Porqu�; estan atentos y son muy cordiales"
+
+29. "Mal servicio al cliente; poco personal e intenta vender productos a la fuerza"
+
+30. "Porque las personas que atienden telef�nicamente no siempre son atentos y r�pidos, hay veces que es mejor ir hasta la sucursal para una atenci�n personal"
+
+31. "Es muy tardada la atenci�n al cliente"
+
+32. "La atenci�n no es la que debe ser,falta mucha con la gente."
+
+
+================================================================================
+
+### 🔥 MOTIVO: Complejidad (+0.3pp - EMPEORÓ)
+
+**Impacto:** 9.2% → 9.5% | **Comentarios:** 33 (25Q4) → 62 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "M�s que nada la aplicaci�n suele ser algo dif�cil de entender y se complica uno que otro movimiento"
+
+2. "En general es buena pero al cambiar la imagen se volvi� un tanto confusa"
+
+3. "Cada actualizaci�n es mala y no carga pronto la app"
+
+4. "Es una buena plataforma, muchos cajeros, y sucursales"
+
+5. "Me choca la aplicaci�n. Es tosca, complicada, tardada, etc."
+
+6. "Porque le hace falta mejorar la aplicaci�n, muchas veces no funciona"
+
+7. "La app actualizada es lenta y complicada de usar."
+
+8. "Nunca pudieron enviarme mensaje de activaci�n para aperturar la aplicaci�n, tuve que cambiarme de compa��a celular"
+
+9. "La app es muy mala"
+
+10. "F�cil de usar la aplicaci�n"
+
+11. "Por la reciente actualizaci�n de la plataforma"
+
+12. "Me rechazaron una compra que necesitaba hacer en l�nea, cuando llame para solicitar la autorizaci�n, me colgaron, 2 veces"
+
+13. "Es poco intuitiva y compleja al usar"
+
+14. "Porque a veces su aplicaci�n no es muy f�cil de usar"
+
+15. "Falla mucho la app cuando mas la necesitas"
+
+16. "la actualizacion de la app quedo muy mal"
+
+17. "La ultima actualizacion de la app no es la mejor"
+
+18. "En general es buen banco, en especial su app y sus puntos de sucursales y cajeros"
+
+19. "Desde que la app se actualizo no funciona de la mejor manera."
+
+20. "Se me llega a dificultar el uso de la aplicaci�n, lo cual se me hace incomodo"
+
+21. "Porque es buen banco, solo que su app es confusa y dif�cil de utilizar"
+
+22. "La aplicaci�n que cuenta BBVA en Playstore para gestionar mi dinero, tiene entre dos errores de sistema y la carga de pantalla es lenta desde su �ltima actualizaci�n"
+
+23. "20 a�os solo teniendo tc y ahora debo de tener tu para la app, no inventen"
+
+24. "La aplicaci�n es muy poco intuitiva, en caso de emergencia que requiera mover r�pido el dinero no es nada factible esa aplicaci�n."
+
+25. "Cambiaron la app y era m�s funcional la otra"
+
+26. "Los servicios son muy accesibles y las sucursales son suficientes"
+
+27. "Cambiaron la app y ahora es m�s complejo aparte de que hay otras opciones que ofrecen mejores ventajas."
+
+28. "La app es muy complicada de utilizar y tiene muchos anuncios"
+
+29. "no me gusta para nada el cambio de app"
+
+30. "Solo por no poner un 10 rotundo"
+
+31. "Es sencillo su manejo"
+
+32. "La app se actualiz� y es m�s dif�cil encontrar los men�s"
+
+33. "ES MUY PRACTICA LA APP"
+
+34. "Su aplicaci�n ha ido en decadencia y hay bancos que ofrecen mejores promos sin tanto inter�s"
+
+35. "La app se traba mucho"
+
+36. "hizo una actualizaci�n en su app que esta horrible aunado a eso esta apostando por la atenci�n virtual y muchas personas necesitamos la seguridad de una atenci�n f�sica"
+
+37. "El cambio en la app fue fatal. Se perdi� tanto funcionalidad como estilo."
+
+38. "Me prometieron una tarjeta sin anualidad de por vida y no cumplieron"
+
+39. "Malas soluciones"
+
+40. "Es muy dif�cil su aplicaci�n"
+
+41. "Porque no tiene facilidad de uso la app"
+
+42. "La actualizaci�n de la App es sumamente dif�cil y poco atractiva visualmente, as� que me desagrada usarla, solo recibo mi n�mina y la transfiero a mis otras cuentas."
+
+43. "Cuenta r�pida y sencilla"
+
+44. "Usar la aplicacion es muy confusa no tiene la opcion de cajitas y se bloquea muy seguido y la atencion al cliente es muy mala"
+
+45. "Ya no me dej� entrar a la aplicaci�n por qu� perd� mi celular"
+
+46. "SU APP ERA MUY BUENA, PERO LAS ULTIMAS ACTUALIZACIONES, NO FUNCIONAN, NI SIQUIERA PUEDO VER LOS SALDOS"
+
+47. "Porque a fuerzas me quieren hacer pagar una mensualidad muy alta para dejarme hacer transferencias"
+
+48. "La aplicaci�n no es tan f�cil de usar, hay opciones 'basicas' que est�n escondidas y no a la mano"
+
+49. "porque cambian la aplicaci�n y se vuelve mas dificil maniobrar con ella"
+
+50. "Porque la nueva actualizaci�n de la app no es muy buena , antes era muy intuitiva y ahora no"
+
+51. "Hay casos de fraudes respecto a las cuentas en BBVA, y me ha costado manejar la aplicaci�n"
+
+52. "Es f�cil de usar, pero ahorita siento que la app es un poco confusa"
+
+53. "Est� muy bien ma aplicaci�n sin embargo te pierdes en todo su esquema ,me refiero a cu�ndo entras a la p�gina de inicio te pierdes muy f�cil"
+
+54. "Con la nueva actualizaci�n de la plataforma, es un poco dif�cil hacer las operaciones"
+
+55. "Por que �ltimamente la aplicaci�n a tenido fallas constantes y no puedo hacer mis movimientos"
+
+56. "Es banco confiable"
+
+57. "Su aplicaci�n es un poco confusa y en ocasiones no funciona, la atenci�n en el banco es muy tardada, con frecuencia te dicen que los ejecutivos est�n ocupados y regreses otro d�a"
+
+58. "POR QUE NO PUEDO USAR LA APLICACION PARA 2 CUENTAS"
+
+59. "Es la tarjeta que m�s r�pido puedes conseguir"
+
+60. "Es buena pero �ltimamente hicieron cambios en la app que complican el usarla, cuesta encontrar funciones"
+
+61. "Porque la aplicaci�n es complicada de entender"
+
+62. "La App se cae frecuentemente y es imposible hacer transacciones.  Es un riesgo ya que a veces necesito pagar un servicio ya recibido  y no puedo esperar 4 hora para salirme despu�s de pagar v"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Rendimientos (+0.1pp - EMPEORÓ)
+
+**Impacto:** 6.8% → 6.8% | **Comentarios:** 23 (25Q4) → 51 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "no tiene un producto que genere rendimientos competitivos o que ponga la diferencia con otros bancos tradicionales"
+
+2. "Es bastante facil de usar, pero en atenci�n al cliente es deficiente. y los costos de tarjeta son elevados"
+
+3. "Por qu� no ofrece generar dinero"
+
+4. "No da nada de rendimiento"
+
+5. "Es un banco normal"
+
+6. "hace falta mas tasas de interes del promedio"
+
+7. "Comisiones altas poco rendimiento"
+
+8. "Servicio muy bueno pero los cajeros para realizar pagos siempre saturados"
+
+9. "No da ganancias en la cuenta"
+
+10. "Porque aunque me gusta la atenci�n que te dan, no te ofrecen ning�n rendimiento por tener tu dinero ah�."
+
+11. "Deber�an mejorar las condiciones de su tdc"
+
+12. "Porque es f�cil de usar la app pero me gustar�a que mi dinero crezca mientras lo estoy ahorrando"
+
+13. "Taza de inter�s en la cuenta muy por debajo que otra q manejo"
+
+14. "No me genera rendimientos sobre los saldos"
+
+15. "Porque sus practicajas no siempre est�n en �ptimas condiciones"
+
+16. "La app a veces tiene problema y el banco a veces se c'� sistema del banco"
+
+17. "Normalmente los bancos ofrecen tasas muy bajas de interees por el dinero que tenemos los clientes"
+
+18. "Sus tasas de inversion son bajas.. ninca vez rendimiento en tu dinero"
+
+19. "La aplicaci�n cada vez esta mas fea"
+
+20. "Los rendimientos del dinero en la cuenta son bajos en comparaci�n con otros bancos"
+
+21. "Comisi�n alta y mal servicio"
+
+22. "Por que no da buenos rendimientos"
+
+23. "Es f�cil de usar, tus transferencias salen r�pido"
+
+24. "Enga�os en sucursal. Perdida de. Tiempo"
+
+25. "con mejores ganancias para sus socios"
+
+26. "No solo bbva, todos los bancos pagan muy pocos intereses por nuestros ahorros"
+
+27. "Porque falta un Po m�s de informaci�n"
+
+28. "No ofrece mejores intereses por inversiones"
+
+29. "Me gusta pero Noe a lo Maxilo�nun"
+
+30. "Falta de promociones m�s atractivas"
+
+31. "Mis ahorros no me dan rendimiento"
+
+32. "Es una buena opci�n de banco, aunque a�n tiene que mejorar sus tiempos de atenci�n en sucursal, en la aplicaci�n deber�a ofrecer aunque sea una ganancia m�nima en su disponibilidad 24/7 del dinero en la cuenta."
+
+33. "Pues el servicio ha mejorado mucho en los �ltimos a�os, tanto del personal en sucursal como en la App"
+
+34. "Porque podr�a acapara m�s clientes si tuviera recompensas"
+
+35. "A mi me funciona pero no me gusta hacer recomendaciones a las otras personas"
+
+36. "Porque considero que debe haber un beneficio para el cliente"
+
+37. "Si ofreciera mejores ganancias x guardar mi dinero y una tarjeta de credito sin anualidad"
+
+38. "Son conocimiento la gente de atenci�n, no me atendieron a un problema , realizaron un mal movimiento en mi cuenta y tuve que pagar sin que reconocieran su culpa"
+
+39. "Porque es un banco con prestigio, ideal para empezar tu historial en bancos"
+
+40. "Porque tiende a ser muy tradicionalista, al parecer cuida mucho el tema de las tasas de inter�s"
+
+41. "la cuenta no da remdimientos"
+
+42. "Otro factor que tome en cuenta fue la interfaz tan mal dise�ada de la app."
+
+43. "La �nica ventaja es que hay muchos cajeros cerca"
+
+44. "Las ganancias por tener dinero en el.bamco son m�nimas"
+
+45. "Porque es el banco que actualmente m�s utilizo para tramitar mis pagos y recibir dinero"
+
+46. "Por que  me es cofiable"
+
+47. "Pues su servicio es eficiente,pero pues son productos de rendimientos, pr�stamos y tarjetas de cr�dito son insuficientes para el banco que es"
+
+48. "Rendimiento de mi dinero"
+
+49. "Porque no da rendimientos al mantener un saldo en la cuenta, al contrario cobra por el manejo de la cuenta si no se mantiene un saldo m�nimo"
+
+50. "Porque lo tengo ahorrado y en ning�n momento dan dinero por tel�fono tenerlo parado sin recibir nada"
+
+51. "A veces es dif�cil entender la aplicaci�n y encontrar m�s funciones"
+
+
+================================================================================
+
+### ✅ MOTIVO: Promociones (-0.0pp - MEJORÓ)
+
+**Impacto:** 3.6% → 3.6% | **Comentarios:** 14 (25Q4) → 28 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Realmente fue error de dedo, la dar�a 8 y �nicamente es q porque no ofrece planes para terminales a peque�as empresas"
+
+2. "A grandes rasgos, es un banco que tiene sucursales en casi todos lados por lo que puedes disponer de tu dinero. Adem�s la aplicaci�n es f�cil de usar, sin embargo, la �ltima actualizaci�n entorpece las cosas"
+
+3. "Por ser un buen babco"
+
+4. "Ya no me siento tan afin a la cuenta"
+
+5. "Por qu� es una appa la cual tarda en darte promociones o no te las da"
+
+6. "Por falta de cajeros autom�ticos"
+
+7. "Porque no ofrece promoci�nes ni descuentos, no hay regalos por ser clientes y usar la tarjeta"
+
+8. "Quisiera que ofrecieran cashback"
+
+9. "Aun puede Mejorar"
+
+10. "No me ofrece promociones en nomina"
+
+11. "Me gusta el Banco solo que ya casi no lo uso m�s que para guardar un poco de dinero"
+
+12. "No me ofrece muchos beneficios como otras tarjetas."
+
+13. "Sus promociones son buenas, pero pueden mejorar en establecimientos y entretenimiento, es un buen banco sin duda."
+
+14. "Se me hace un buen banco para las operaciones que realizo en t�rminos econ�micos"
+
+15. "Es un buen banco pero la atenci�n al cliente les falla bastante"
+
+16. "tienen buena atencion al cliente"
+
+17. "No tengo noticias sobre ppromoci9nes"
+
+18. "Por que es buena la app y funciona bien"
+
+19. "Es buena la cuenta pero, falta m�s promoci�n en donde invertir"
+
+20. "Por la app nos mencione sus promociones."
+
+21. "Menis inter�s, m�s rendimiento en ahorro"
+
+22. "Tiene un buen servicio"
+
+23. "Es muy popular pero es muy x"
+
+24. "Pues porque esta chida la aplicacion y hay varias sucursales cerca de por donde estoy"
+
+25. "Por la simplicidad de utilizar la aplicaci�n"
+
+26. "no tiene tantos convenios con espect�culos"
+
+27. "Hay pocas promociones que valgan la pena"
+
+28. "Porque en ocasiones falla su Red"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_BBVA_MLM_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

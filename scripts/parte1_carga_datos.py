@@ -112,28 +112,44 @@ NOMBRES_COLUMNAS_MLA = {
 }
 
 # MÉXICO (MLM) - Mapeo completo
+# NOTA 26Q1: Se agregaron 12 cols P9C_* (rating Mejor/Igual/Peor) en pos 23-34,
+# desplazando los productos P10#* a posiciones 35-54. Cols 87/94 obsoletas.
 COLS_NECESARIAS_MLM = [
     0, 1, 2, 3, 4, 5, 11, 13, 14, 16, 18, 20, 22,
-    23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,  # Quitado 27 (créditos viejo)
-    43, 63, 68, 72, 87, 94, 236, 264  # 87 = USO_CREDITOS (columna CJ, correcta)
+    35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54,  # P10#1..P10#98
+    55, 63, 68, 72, 112, 236, 264  # 112 = A59 = USO_CREDITOS (crédito/préstamo últimos 30d)
 ]
 
 NOMBRES_COLUMNAS_MLM = {
     0: 'ID', 1: 'OLA', 2: 'GENERO', 3: 'EDAD', 4: 'ESTADO', 5: 'NSE',
     11: 'TIENE_SALDO', 13: 'MARCA', 14: 'NPS', 16: 'MOTIVO_DETRA',
     18: 'MOTIVO_NEUTRO', 20: 'MOTIVO_PROM', 22: 'COMENTARIO',
-    23: 'USO_PAGO_ONLINE', 24: 'USO_TRANSFERENCIAS', 25: 'USO_PAGO_SERVICIOS',
-    26: 'USO_CRIPTO', 28: 'USO_TDC',  # Quitado 27 (créditos viejo), ahora usa 87
-    29: 'USO_EFECTIVO', 30: 'USO_RECARGA_CEL', 31: 'USO_RECARGA_TRANSP',
-    32: 'USO_COBRAR_SUELDO', 33: 'USO_TARJETA_DEBITO', 34: 'USO_QR',
-    35: 'USO_AHORRO_INVERSION', 36: 'USO_SEGUROS', 37: 'USO_MONEDA_EXTRANJ',
-    38: 'USO_REMESAS', 39: 'USO_MERCADOLIBRE', 40: 'USO_RENDIMIENTOS',
-    41: 'USO_INVERSIONES', 42: 'USO_OTROS', 43: 'ANTIGUEDAD',
+    # Productos P10 (26Q1: shifted +12 vs olas anteriores por inserción de P9C)
+    35: 'USO_PAGO_ONLINE',        # P10#1:  Pagar/comprar en tiendas online
+    36: 'USO_TRANSFERENCIAS',     # P10#2:  Transferir dinero
+    37: 'USO_PAGO_SERVICIOS',     # P10#3:  Pagar servicios o impuestos
+    38: 'USO_CRIPTO',             # P10#4:  Comprar y vender criptomonedas
+    39: 'USO_ACCESO_CREDITOS',    # P10#5:  Tener acceso a créditos
+    40: 'USO_TDC',                # P10#6:  Tener tarjeta de crédito
+    41: 'USO_EFECTIVO',           # P10#7:  Extraer dinero en efectivo
+    42: 'USO_RECARGA_CEL',        # P10#8:  Recargar el celular
+    43: 'USO_RECARGA_TRANSP',     # P10#9:  Recargar tarjeta de transporte
+    44: 'USO_COBRAR_SUELDO',      # P10#10: Cobrar nómina u honorarios
+    45: 'USO_TARJETA_DEBITO',     # P10#11: Tener tarjeta prepaga/débito
+    46: 'USO_QR',                 # P10#12: Pagar con código QR
+    47: 'USO_AHORRO_INVERSION',   # P10#13: Ahorrar/Invertir
+    48: 'USO_SEGUROS',            # P10#14: Contratar seguros
+    49: 'USO_MONEDA_EXTRANJ',     # P10#15: Comprar moneda extranjera
+    50: 'USO_REMESAS',            # P10#16: Enviar/Recibir remesas
+    51: 'USO_MERCADOLIBRE',       # P10#18: Hacer compras en Mercado Libre
+    52: 'USO_RENDIMIENTOS',       # P10#20: Generar rendimientos
+    53: 'USO_INVERSIONES',        # P10#21: Invertir mi dinero
+    54: 'USO_OTROS',              # P10#98: Otro(s) uso(s)
+    55: 'ANTIGUEDAD',
     63: 'MOTIVO_PRINCIPALIDAD',
-    68: 'MOTIVO_CREACION', 
+    68: 'MOTIVO_CREACION',
     72: 'VALORACION_SEGURIDAD',
-    87: 'USO_CREDITOS', 
-    94: 'USO_TDC_30D',
+    112: 'USO_CREDITOS',           # A59: ¿Usaste crédito/préstamo últimos 30d? (excl. TDC)
     236: 'MOTIVO_INSEGURIDAD',
     264: 'FLAG_PRINCIPALIDAD'
 }
@@ -482,6 +498,11 @@ def cargar_datos(site=None, player=None, periodo_1=None, periodo_2=None, verbose
     
     del df_raw
     gc.collect()
+
+    # Normalizar valores con encoding corrupto (ej: 'Sí' leído como latin-1 en CSV utf-8)
+    # 'S\ufffd' es 'Sí' con el carácter í corrompido por mismatch de encoding
+    if 'USO_CREDITOS' in df_completo.columns:
+        df_completo['USO_CREDITOS'] = df_completo['USO_CREDITOS'].replace({'S\ufffd': 'Sí'})
 
     # Validar que el DataFrame no esté vacío
     validate_dataframe_not_empty(df_completo, f"BASE COMPLETA {site}")

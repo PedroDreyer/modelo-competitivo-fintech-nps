@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "player": "Nubank",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico",
+    "tipo": "promotores"
+  },
+  "causas_por_motivo": {
+    "Genera ganancias con mi dinero en cuenta": {
+      "total_comentarios_analizados": 280,
+      "causas_raiz": [
+        {
+          "titulo": "Cajita Turbo como producto diferencial: rendimiento diario disponible sin plazos fijos",
+          "descripcion": "Los promotores valoran especialmente que el dinero genera rendimientos todos los días sin necesidad de inmovilizarlo a plazo fijo. La liquidez inmediata combinada con rendimiento es percibida como un beneficio único frente a la banca tradicional.",
+          "frecuencia_pct": 52,
+          "frecuencia_abs": 146,
+          "ejemplos": [
+            "mi dinero guardado genera ganancias todos los días, y lo puedo ocupar cuando quiera",
+            "Paga el 13 % en tu cajita nu y tu dinero está siempre disponible",
+            "Porque mi dinero crece un 13% y puedo controlar la cantidad de dinero que entra y sale de mi caja de ahorro sin ningun problema"
+          ]
+        },
+        {
+          "titulo": "Rendimientos superiores a la banca tradicional incluso con montos bajos",
+          "descripcion": "Los usuarios valoran que Nubank ofrece tasas de rendimiento claramente mejores que bancos tradicionales, accesibles desde el primer peso depositado, democratizando el acceso al ahorro con intereses.",
+          "frecuencia_pct": 31,
+          "frecuencia_abs": 87,
+          "ejemplos": [
+            "Da mucho mejores intereses que los otros bancos, aun con montos bajos de inversión, es facil de usar",
+            "Es la única cuenta que conozco que genera ganancias con tener dinero en mi cuenta",
+            "Porque le permite ahorrar y generar ingresos más altos que otros bancos"
+          ]
+        },
+        {
+          "titulo": "Combinación de tarjeta de crédito sin anualidad y rendimientos sobre saldo en la misma app",
+          "descripcion": "Un segmento valora la propuesta integral: poder tener rendimientos en cajitas y al mismo tiempo usar tarjeta de crédito sin anualidad, todo desde una sola aplicación sin comisiones ocultas.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 47,
+          "ejemplos": [
+            "es una excelente opción, la tarjeta de crédito no tiene anualidad, no cobran comisiones 'fantasmas' es una opción segura",
+            "Manejo por igual TDD y TDC y deposito dinero en una cuenta especial que da magníficos rendimientos e igual manejo mi TDC",
+            "Porque mi dinero genera ganancias además que tiene opciones para inversión y préstamos con la tasa de interés muy baja"
+          ]
+        }
+      ]
+    },
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 164,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz intuitiva y proceso 100% digital sin necesidad de trámites presenciales",
+          "descripcion": "El aspecto más valorado es la facilidad de uso de la app y la posibilidad de gestionar todo digitalmente: apertura de cuenta, solicitud de tarjeta, pagos y transferencias sin visitar una sucursal.",
+          "frecuencia_pct": 48,
+          "frecuencia_abs": 79,
+          "ejemplos": [
+            "Es muy fácil y rápido de usar sin necesidad de trámites presenciales",
+            "La entrega y el trámite. Son muy fáciles de obtener",
+            "Es muy sencilla a la hora de usarse",
+            "F�cil de adquirir, tarjeta, personalizada, llega a la puerta de tu casa"
+          ]
+        },
+        {
+          "titulo": "Sin anualidad ni comisiones ocultas como principal diferenciador frente a bancos tradicionales",
+          "descripcion": "La ausencia de anualidad es mencionada repetidamente como razón clave para elegir y recomendar Nubank. Los usuarios lo perciben como un modelo de negocio más transparente y justo.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 49,
+          "ejemplos": [
+            "Por el hecho de ser una tarjeta la cual no tiene anualidades, algo que me gusta demasiado",
+            "No tiene anualidad",
+            "porque genera buen rendimiento mientras tengo mi dinero en mi cuenta u las compras y aclaraciones son muy sencillas"
+          ]
+        },
+        {
+          "titulo": "Notificaciones en tiempo real y transparencia en el estado de cuenta que generan control y confianza",
+          "descripcion": "Los usuarios valoran recibir alertas inmediatas de movimientos y tener visibilidad clara de sus finanzas, lo que les da sensación de control sobre su dinero.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 36,
+          "ejemplos": [
+            "Es práctica, está siempre al pendiente y mantiene informados a los usuarios de los cambios que realizan",
+            "Es fácil obtener la tarjeta (ambas) tiene sistema de recordatorios",
+            "porque las transferencias y el ahorro son fáciles de hacer"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 103,
+      "causas_raiz": [
+        {
+          "titulo": "Organización de dinero en cajitas temáticas para ahorro por objetivos específicos",
+          "descripcion": "Los usuarios promotores valoran la funcionalidad de cajitas que permite separar y organizar el dinero por propósitos (emergencias, vacaciones, gastos fijos), algo que los bancos tradicionales no ofrecen de forma nativa.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 41,
+          "ejemplos": [
+            "Por que me permite tener varias cajitas donde guardar mi dinero y con las mejoras tasas de rendimiento a plazo fijo.",
+            "F�cil de usar para abonos de cuenta en otros bancos, para recibir transferencia y realizar pagos de servicios sin necesidad de sucursal"
+          ]
+        },
+        {
+          "titulo": "Acceso a crédito para personas sin historial o con historial crediticio limitado",
+          "descripcion": "Un grupo importante destaca que Nubank les otorgó su primera tarjeta de crédito cuando otros bancos no lo hicieron. Esto genera una lealtad emocional fuerte entre usuarios que comenzaron su vida crediticia con Nubank.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 36,
+          "ejemplos": [
+            "Es un banco que me a dado la confianza de otorgarme un crédito",
+            "Porque tenía tiempo de no usar una tarjeta y pedían demasiado dinero para abrir una",
+            "Despu�s de varios años de no contar con una tarjeta de crédito, esta compañía me dio una, a pesar de mi historial"
+          ]
+        },
+        {
+          "titulo": "App completa que reemplaza funciones de banca tradicional en un solo lugar",
+          "descripcion": "Usuarios valoran poder hacer pagos, transferencias, inversiones y gestión de tarjeta de crédito desde una sola aplicación sin tener que usar múltiples apps o ir a sucursales.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "Es un banco digital bastante completo y entendible",
+            "Me da rendimiento y otros beneficios que los bancos convencionales no dan",
+            "Porque me ofrece lo que necesito en una tarjeta, de forma fácil y segura."
+          ]
+        }
+      ]
+    },
+    "Ofrece opciones de inversión atractivas / suficientes": {
+      "total_comentarios_analizados": 86,
+      "causas_raiz": [
+        {
+          "titulo": "Cajitas de inversión con tasa competitiva y sin montos mínimos como puerta de entrada a invertir",
+          "descripcion": "Los promotores destacan las cajitas como un producto de inversión accesible que permite a cualquier usuario comenzar a invertir sin mínimos ni conocimientos financieros avanzados.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 47,
+          "ejemplos": [
+            "La app es muy simple y práctica, me encanta su modalidad de cajas de inversión.",
+            "Es sencillo invertir Y siempre te indica el % sobre el que está tu dinero",
+            "Me gustan las cajitas y los rendimientos que ofrece y en general el manejo de sus cuentas que es 100% digital y sin comisiones"
+          ]
+        },
+        {
+          "titulo": "Transparencia en la comunicación de tasas y rendimientos actuales en tiempo real",
+          "descripcion": "Los usuarios valoran que Nubank muestra claramente cuánto está rindiendo su dinero en cada momento, sin letra chica, lo que genera confianza y sensación de control sobre sus inversiones.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 23,
+          "ejemplos": [
+            "Nu ofrece diferentes planes de inversión y dependiendo de la disponibilidad es la tasa de interés que paga.",
+            "Los rendimiento de las inversiones son superiores al promedio",
+            "Son muy transparentes en los servicios que ofrecen"
+          ]
+        },
+        {
+          "titulo": "Versatilidad para invertir a distintos plazos según necesidades del usuario",
+          "descripcion": "Un segmento valora poder elegir entre dinero disponible en cualquier momento o cajitas a plazo con mayor rendimiento, adaptándose a distintos perfiles y necesidades de liquidez.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Me gusta el rendimiento, además me facilita organizar mi dinero al mes",
+            "Por que me permite tener varias cajitas donde guardar mi dinero y con las mejoras tasas de rendimiento a plazo fijo."
+          ]
+        }
+      ]
+    },
+    "Ofrece préstamos y/o tarjeta de crédito": {
+      "total_comentarios_analizados": 78,
+      "causas_raiz": [
+        {
+          "titulo": "Aprobación rápida de tarjeta de crédito con línea razonable y sin papeleo presencial",
+          "descripcion": "Los promotores destacan la facilidad y rapidez del proceso de solicitud de tarjeta de crédito, completamente digital, sin necesidad de comprobantes de ingresos o visitas a sucursal.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 35,
+          "ejemplos": [
+            "Fue fácil obtener mi tarjeta de crédito y un crédito alto",
+            "Fue fácil acceder a su tarjeta de crédito",
+            "Porque ofrece una tarjeta con un buen limite de crédito, la app es de fácil manejo y no hay anualidad"
+          ]
+        },
+        {
+          "titulo": "Opciones de pago flexibles a meses sin intereses en compras en línea y establecimientos",
+          "descripcion": "La posibilidad de diferir compras a meses sin intereses, especialmente en tiendas de e-commerce, es un beneficio concreto y frecuentemente mencionado por quienes recomiendan la tarjeta de crédito.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "Me permite comprar a meses sin intereses en las tiendas en línea que me gustan",
+            "Porqué maneja tarjetas de crédito con 0 anualidad y pagos accesibles con un interés muy bajo.",
+            "Me gusta mucha y sus plazos para pagar son muy buenos"
+          ]
+        },
+        {
+          "titulo": "Préstamos personales accesibles con tasas competitivas para usuarios sin historial",
+          "descripcion": "Usuarios valoran que Nubank ofrece préstamos personales con condiciones más accesibles que la banca tradicional, especialmente para perfiles que normalmente son rechazados.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "A mi medio un buena tasa de interés muy bajo en prestamos",
+            "Porque dan la oportunidad de prestar dinero con intereses bajos",
+            "Me gusta todo de nu aunque todavía no tenga un banco en físico siempre me resuelven me dan bien crédito y préstamos"
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 73,
+      "causas_raiz": [
+        {
+          "titulo": "Notificaciones automáticas y bloqueo proactivo ante transacciones sospechosas",
+          "descripcion": "Los promotores valoran que Nubank detecta y bloquea automáticamente cargos fraudulentos antes de que el usuario lo sepa, generando una percepción de banco que 'cuida' activamente al cliente.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 31,
+          "ejemplos": [
+            "notifica compras de posible fraude",
+            "tuve un incidente donde me clonaron la tarjeta de credito y se bloqueo automaticamente las cuentas para evitar que siguieran los cargos",
+            "Porque es muy segura y puedo usarla hasta en la tienda de la esquina"
+          ]
+        },
+        {
+          "titulo": "Transparencia y comunicación proactiva sobre cambios en políticas y servicios",
+          "descripcion": "Los usuarios confían en Nubank porque perciben que la comunicación es honesta y anticipada: notifican cambios en tasas, términos y condiciones antes de que ocurran, lo que genera confianza institucional.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "Es un servicio seguro y con buen servicio a cliente, son transparentes y constantes con la información",
+            "porque nu es mi favorita ya esta a un paso de ser un banco y siempre me informa de cambios en sus politicas",
+            "Da confianza y es fácil de usar aparte se acomoda a mi forma de pagos"
+          ]
+        },
+        {
+          "titulo": "Experiencia sin incidentes de seguridad que construye confianza acumulada",
+          "descripcion": "Un segmento de promotores justifica su recomendación en la ausencia de problemas de seguridad a lo largo de su uso. La no-ocurrencia de fraudes o problemas se convierte en argumento positivo.",
+          "frecuencia_pct": 23,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "Nunca he tenido un problema de seguridad",
+            "Porque me da seguridad",
+            "Es buena y accesible para todo y también hace crecer tu dinero es confiable"
+          ]
+        }
+      ]
+    },
+    "Atención al cliente": {
+      "total_comentarios_analizados": 25,
+      "causas_raiz": [
+        {
+          "titulo": "Respuesta rápida y efectiva a través de chat digital sin necesidad de llamadas",
+          "descripcion": "Los promotores que destacan la atención valoran especialmente la velocidad de respuesta por canales digitales y la capacidad de resolver problemas sin tener que llamar o visitar una sucursal.",
+          "frecuencia_pct": 56,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Tienen un servicio al cliente excelente y el tiempo de espera es muy corto al comunicarse su app muy amigable",
+            "Ofrece préstamos y es muy rápido la atención a clientes",
+            "Porque es un banco que responde bien"
+          ]
+        },
+        {
+          "titulo": "Resolución efectiva de disputas y aclaraciones de cargos con seguimiento transparente",
+          "descripcion": "Usuarios que tuvieron problemas y los vieron resueltos se convierten en promotores. La experiencia positiva al resolver una queja tiene mayor impacto en la recomendación que la ausencia de problemas.",
+          "frecuencia_pct": 44,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Me gusta todo de nu aunque todavía no tenga un banco en físico siempre me resuelven",
+            "Mejora sus métodos de operación y que me permite usar en cualquier lugar",
+            "Fue mi primera tarjeta de crédito. Y me hace sentir asesorada en todo momento"
+          ]
+        }
+      ]
+    },
+    "Tasas de financiamiento y/o de la tarjeta de crédito": {
+      "total_comentarios_analizados": 25,
+      "causas_raiz": [
+        {
+          "titulo": "Tasa de interés de tarjeta de crédito dentro de rango aceptable para uso responsable",
+          "descripcion": "Los promotores de este motivo no necesariamente creen que las tasas son bajas, sino que las consideran razonables para su perfil de uso (pago puntual, meses sin intereses), lo que hace que la relación costo-beneficio sea positiva.",
+          "frecuencia_pct": 60,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "porque los intereses que cobra por las compras que hago con la tarjeta de credito esta dentro de los limites que quiero",
+            "Porqué maneja tarjetas de crédito con 0 anualidad y pagos accesibles con un interés muy bajo.",
+            "Tiene altos intereses, pero es fácil adquirir créditos."
+          ]
+        },
+        {
+          "titulo": "Sin comisiones ocultas ni cargos por anualidad que mejoran el costo total efectivo",
+          "descripcion": "La ausencia de anualidad y comisiones de mantenimiento hace que el costo total del crédito sea percibido como competitivo, incluso si la tasa de interés no es la más baja del mercado.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "No cobra comisión cuenta con bajas tasas de interés",
+            "F�cil de usar, facil de gestionar mi dinero y buen trato al cliente sin ir a sucursal.",
+            "Me ha parecido un banco y una app muy confiada e intuitiva, me ha permitido ahorrar y hace crecer mi dinero"
+          ]
+        }
+      ]
+    },
+    "Tarifas de la cuenta": {
+      "total_comentarios_analizados": 15,
+      "causas_raiz": [
+        {
+          "titulo": "Cuenta sin costo de mantenimiento ni comisiones por operaciones básicas digitales",
+          "descripcion": "Los promotores valoran que las operaciones cotidianas (transferencias, pagos de servicios, consultas de saldo) no tienen costo, lo que hace a Nubank más económico para uso diario que los bancos tradicionales.",
+          "frecuencia_pct": 73,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "En general el servicio ha sido estupendo, además de no cobrar comisiones ni cargos ocultos en los cobros",
+            "muy seguro",
+            "No cobra comisión"
+          ]
+        },
+        {
+          "titulo": "Costo-beneficio positivo versus bancos tradicionales con anuales elevadas",
+          "descripcion": "Algunos promotores fundamentan su recomendación comparando el costo total de Nubank versus bancos que cobran anualidades de cientos de pesos, haciendo el ahorro tangible y cuantificable.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "por sus servicios que no cobran anualidad",
+            "Es facil de usar y tiene mejores opciones"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 16,
+      "causas_raiz": [
+        {
+          "titulo": "Meses sin intereses y ofertas específicas en plataformas de e-commerce clave",
+          "descripcion": "Los promotores de este motivo valoran las promociones puntuales con establecimientos online y la posibilidad de diferir compras sin costo, aunque reconocen que el programa es más limitado que otros bancos.",
+          "frecuencia_pct": 63,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "rendimientos mas altos que otras y meses sin intereses en las compras",
+            "Por sus excelentes servicio"
+          ]
+        },
+        {
+          "titulo": "Rendimientos en cajitas percibidos como el principal beneficio o 'promoción' de la cuenta",
+          "descripcion": "Algunos usuarios que seleccionaron este motivo en realidad refieren a los rendimientos como el principal incentivo, mostrando que la línea entre 'promociones' y 'rendimientos' se difumina para el usuario promedio.",
+          "frecuencia_pct": 37,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Cuando requiero préstamos me los proporciona",
+            "Por su excelente servicio"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "player": "BBVA",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico_promotores"
+  },
+  "causas_por_motivo": {
+    "Facilidad de uso y app": {
+      "total_comentarios_analizados": 616,
+      "causas_raiz": [
+        {
+          "titulo": "App percibida como fácil de usar y práctica para operaciones cotidianas",
+          "descripcion": "Promotores valoran que la app de BBVA permite realizar pagos, transferencias y consultas de forma sencilla desde el celular.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 197,
+          "ejemplos": [
+            "Fácil acceso de su app, atención personalizada o por call, siempre respuesta ante dudas",
+            "Es una App muy fácil de usar y muy completa",
+            "Es muy fácil hacer pagos en línea con la tarjeta virtual, puedo mantener vigilados los movimientos"
+          ]
+        },
+        {
+          "titulo": "Acceso fácil y gestión digital desde cualquier lugar",
+          "descripcion": "La posibilidad de hacer trámites bancarios sin ir a sucursal es valorada positivamente por los promotores.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 111,
+          "ejemplos": [
+            "Tiene un app muy fácil de usar y puedes realizar casi cualquier trámite desde ahí",
+            "Es muy fácil de utilizar y tiene cajeros por casi todos lados",
+            "Es una app ya fácil de usar y por eso la califiqué como muy buena"
+          ]
+        }
+      ]
+    },
+    "Red de cajeros y sucursales": {
+      "total_comentarios_analizados": 616,
+      "causas_raiz": [
+        {
+          "titulo": "Amplia red de cajeros y sucursales en toda la ciudad",
+          "descripcion": "La disponibilidad de cajeros y sucursales en múltiples puntos del país es uno de los principales diferenciadores de BBVA para sus promotores.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 135,
+          "ejemplos": [
+            "TIENE CAJEROS Y SUCURSALES",
+            "Es un banco con muchas sucursales",
+            "Por que me ha dado la confianza suficiente para permanecer aquí, además que hay cajeros automáticos",
+            "Es el banco más cercano a mi domicilio"
+          ]
+        }
+      ]
+    },
+    "Seguridad y confiabilidad": {
+      "total_comentarios_analizados": 616,
+      "causas_raiz": [
+        {
+          "titulo": "Reputación y trayectoria como banco tradicional y confiable",
+          "descripcion": "La solidez institucional de BBVA genera confianza entre los promotores, que destacan su estabilidad y respaldo frente a opciones más nuevas.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 92,
+          "ejemplos": [
+            "me gusta como tiene seguridad esta cuenta",
+            "Es una institución seria muy segura y con respaldo de lo mejor",
+            "Es una institución muy confiable y con excelente reputación.",
+            "Es un banco con experiencia"
+          ]
+        }
+      ]
+    },
+    "Atención al cliente": {
+      "total_comentarios_analizados": 616,
+      "causas_raiz": [
+        {
+          "titulo": "Buen servicio al cliente en sucursal y por teléfono",
+          "descripcion": "Promotores destacan la calidad de atención de los ejecutivos tanto presencialmente como en call center.",
+          "frecuencia_pct": 13,
+          "frecuencia_abs": 80,
+          "ejemplos": [
+            "tienen muy buen servicio al cliente, tanto en la aplicación como por llamada",
+            "Me resulta cómoda práctica y buen servicio",
+            "Fácil acceso de su app, atención personalizada o por call, siempre respuesta ante dudas"
+          ]
+        }
+      ]
+    }
+  }
+}

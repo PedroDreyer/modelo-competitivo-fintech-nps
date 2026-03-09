@@ -1,0 +1,369 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "fecha_generacion": "2026-03-09",
+    "tipo": "promotores",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Genera ganancias con mi dinero en cuenta": {
+      "total_comentarios_analizados": 337,
+      "delta_pp": -0.6,
+      "porcentaje_promotores": 28.4,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento automático sin esfuerzo: dinero que crece solo por estar depositado",
+          "descripcion": "El beneficio más valorado es que el saldo genera intereses de forma pasiva sin necesidad de realizar ninguna acción adicional ni contratar productos especiales, lo que lo diferencia claramente de los bancos tradicionales.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 152,
+          "ejemplos": [
+            "Me gusta que mi dinero crece con solo tenerlo guardado",
+            "Es sencillo acceder al dinero, una app estable y genera dinero sin necesidad de hacer nada mas que ingresar saldo",
+            "Porque ofrece buenos rendimientos por tener tu dinero ahi"
+          ]
+        },
+        {
+          "titulo": "Porcentaje de rendimiento superior a otros bancos y fintech del mercado",
+          "descripcion": "Los usuarios reconocen que el porcentaje de rendimiento de Mercado Pago es competitivo y mayor al de bancos tradicionales o cuentas de ahorro convencionales, constituyendo una ventaja concreta y tangible.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 101,
+          "ejemplos": [
+            "porque tiene buen porcentaje de rendimiento y es de facil acceso y uso",
+            "Porque da rendimientos mas alto que otras entidades bancarias y me es mas facil comprar en linea",
+            "Alto rendimiento, disponibilidad de transacciones, inversiones faciles, estupenda para compras en linea"
+          ]
+        },
+        {
+          "titulo": "Liquidez inmediata: rendimiento acumulado disponible en cualquier momento sin penalizaciones",
+          "descripcion": "A diferencia de otros instrumentos de inversión, el dinero acumulado en rendimientos puede retirarse o usarse en cualquier momento, combinando rentabilidad con accesibilidad total.",
+          "frecuencia_pct": 17,
+          "frecuencia_abs": 57,
+          "ejemplos": [
+            "Me gusta que tengo un rendimiento claro, que es acumulable y lo utilizo para compras pequenas",
+            "Da rendimiento diario y puedes disponer del saldo en cualquier momento",
+            "Es facil de usar mi dinero disponible cuando lo necesito y ademas genera ganancias"
+          ]
+        },
+        {
+          "titulo": "Combinación de rendimiento con facilidad de uso cotidiano de la cuenta",
+          "descripcion": "Los promotores valoran que la cuenta sirve tanto para generar rendimientos como para operaciones del día a día (transferencias, pagos, compras), sin tener que separar el dinero en distintos productos.",
+          "frecuencia_pct": 8,
+          "frecuencia_abs": 27,
+          "ejemplos": [
+            "Es muy versatil, y genera buen rendimiento",
+            "Por facilidad de uso, genera intereses, facil para transferir, facil de comprar",
+            "Da rendimiento y promociones en el cine de 2x1, etc"
+          ]
+        }
+      ]
+    },
+    "Comodidad/ Facilidad de uso": {
+      "total_comentarios_analizados": 294,
+      "delta_pp": 0.3,
+      "porcentaje_promotores": 24.7,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz intuitiva que no requiere capacitación previa para operar",
+          "descripcion": "La mayoría de usuarios destaca que la aplicación es fácil de usar desde el primer día, sin necesidad de tutoriales ni soporte externo, lo que reduce la fricción de adopción.",
+          "frecuencia_pct": 50,
+          "frecuencia_abs": 147,
+          "ejemplos": [
+            "ES MUY FACIL DE USAR Y HASTA EL DIA DE HOY, NUNCA HE TENIDO PROBLEMAS CON SU USO",
+            "Me gusta la forma de utilizar la plataforma",
+            "Porque es facil de utilizarlos sin tantos rollos"
+          ]
+        },
+        {
+          "titulo": "Multifuncionalidad en una sola app: crédito, rendimientos, pagos y compras",
+          "descripcion": "Los usuarios aprecian que Mercado Pago consolida múltiples servicios financieros en un solo lugar, eliminando la necesidad de usar varias aplicaciones o ir a sucursales bancarias.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 82,
+          "ejemplos": [
+            "ME A SIDO MUY FACIL USAR LA APP, Y OFRECES GRANDES BENEFICIOS A LA HORA DE USA CREDITOS, AL IGUAL QUE INVIRTIENDO TU DINERO GENERA BUENAS GANANCIAS",
+            "Aparte de poder gestionar mi dinero, puedo hacer muchas cosas, como recargar el numero de celular, recargar la tarjeta",
+            "es una aplicacion en donde puedo hacer compras en mercado libre"
+          ]
+        },
+        {
+          "titulo": "Rapidez en operaciones y sin trámites burocráticos comparado con banca tradicional",
+          "descripcion": "La agilidad para realizar transferencias, pagos y gestiones sin filas ni papeleos es uno de los atributos más valorados frente a los bancos tradicionales.",
+          "frecuencia_pct": 14,
+          "frecuencia_abs": 41,
+          "ejemplos": [
+            "Es un medio muy facil de usar y todos los tramites funcionan",
+            "Por la forma rapida de pagar los productos",
+            "Me resulta facil pagar la tarjeta y me da descuentos"
+          ]
+        },
+        {
+          "titulo": "Experiencia sin problemas técnicos ni caídas: estabilidad de la plataforma",
+          "descripcion": "Una parte de los usuarios destaca específicamente que la app no falla, no se satura y funciona de forma confiable en el día a día.",
+          "frecuencia_pct": 8,
+          "frecuencia_abs": 24,
+          "ejemplos": [
+            "la app no se satura",
+            "Hasta el dia de hoy nunca he tenido ningun problema con la tarjeta",
+            "Es un medio muy facil de usar y todos los tramites funcionan"
+          ]
+        }
+      ]
+    },
+    "Ofrece la funcionalidad que necesito": {
+      "total_comentarios_analizados": 169,
+      "delta_pp": 0.8,
+      "porcentaje_promotores": 14.2,
+      "causas_raiz": [
+        {
+          "titulo": "Solución completa para necesidades financieras diarias: pagos, rendimientos y crédito",
+          "descripcion": "Los usuarios valoran que con una sola cuenta y aplicación pueden cubrir todas sus necesidades financieras básicas, desde pagar servicios hasta acceder a crédito y generar rendimientos.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 76,
+          "ejemplos": [
+            "me da ganancias, productos diversos, credito, rendimientos",
+            "me permite ahorrar dinero con intereses y asi hacer crecer mi dinero, ademas de que me permite comprar directo en la aplicacion de mercado libre",
+            "tiene diversas opciones de pago y compra de muchos articulos, promociones, recargas tanto de celular como de movilidad"
+          ]
+        },
+        {
+          "titulo": "Integración con Mercado Libre para compras y pagos sin fricciones",
+          "descripcion": "La funcionalidad de pagar directamente en Mercado Libre y aprovechar meses sin intereses dentro del ecosistema es un diferenciador clave para los compradores frecuentes del marketplace.",
+          "frecuencia_pct": 28,
+          "frecuencia_abs": 47,
+          "ejemplos": [
+            "me permite comprar directo en la aplicacion de mercado libre",
+            "esta bien para lo que la uso que es pagar en internet",
+            "Porque da rendimiento y puedo pagar directamente mis compras con ese dinero"
+          ]
+        },
+        {
+          "titulo": "Pago de servicios y recargas de forma centralizada sin ir a establecimientos físicos",
+          "descripcion": "La capacidad de pagar luz, agua, teléfono y recargas desde la app es muy apreciada por eliminar desplazamientos y comisiones en tiendas físicas.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "Es una buena app, sobre todo para pagar servicios",
+            "esta bien para lo que la uso que es pagar en internet",
+            "Porque tiene diversas opciones de pago"
+          ]
+        },
+        {
+          "titulo": "Cuenta que evoluciona y suma funciones con el tiempo",
+          "descripcion": "Algunos usuarios destacan la innovación continua de la plataforma, señalando que se agregan nuevas funciones que la mantienen relevante y útil.",
+          "frecuencia_pct": 9,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Es realmente novedosa la aplicacion para mi",
+            "Porque me ofrece lo que necesito",
+            "Facil manejo de cuenta, sin mayor complicaciones"
+          ]
+        }
+      ]
+    },
+    "Promociones y descuentos": {
+      "total_comentarios_analizados": 93,
+      "delta_pp": -1.2,
+      "porcentaje_promotores": 7.8,
+      "causas_raiz": [
+        {
+          "titulo": "Meses sin intereses en compras de Mercado Libre y establecimientos afiliados",
+          "descripcion": "Los MSI siguen siendo el beneficio más citado en este motivo, permitiendo diferir compras grandes sin costo adicional, especialmente en el ecosistema Mercado Libre.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 37,
+          "ejemplos": [
+            "Porque es una cuenta que me da meses sin intereses en mercado libre me permite diferir mis pagos",
+            "Porque en mi caso al hacer compras en linea ofrece meses sin intereses, ademas de otras promociones que la hacen atractiva",
+            "me da meses sin intereses en mercado libre"
+          ]
+        },
+        {
+          "titulo": "Descuentos activos y cashback disponibles en tiendas físicas y en línea",
+          "descripcion": "Los usuarios que recomiendan por este motivo encuentran valor en las ofertas semanales, reembolsos y descuentos en comercios afiliados, supermercados y servicios de entretenimiento.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "Ofrece buenas promociones, regalos y acceso a mejores ofertas",
+            "Siempre tiene promociones que son convenientes para mi, en algunas ocasiones me han regalado dinero por depositar a mi cuenta",
+            "los pagos que realizas con la aplicacion de mercado pago se reflejan rapido, te da promociones y con el manejo te pueden dar creditos"
+          ]
+        },
+        {
+          "titulo": "Promociones en entretenimiento y streaming accesibles con la cuenta",
+          "descripcion": "Las promociones en cine (2x1), streaming y otros servicios de entretenimiento son mencionadas como un diferenciador percibido como beneficio adicional real.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "he encontrado buenas ofertas, mas barato que en otras aplicaciones y ahora tambien cuentan con peliculas y series",
+            "Da rendimiento y promociones en el cine de 2x1, etc",
+            "Hay varias promociones por usar la tarjeta"
+          ]
+        },
+        {
+          "titulo": "Diversidad de categorías con oferta activa en comercios cotidianos",
+          "descripcion": "Los usuarios aprecian que las promociones cubren categorías variadas y están disponibles en comercios que frecuentan habitualmente, haciéndolas prácticas y relevantes.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "muy buenos productos, envios gratis y descuentos",
+            "Descuentos en compras y buen manejo de sistema",
+            "Porque hay varias promociones por usar la tarjeta"
+          ]
+        }
+      ]
+    },
+    "Seguridad de la cuenta": {
+      "total_comentarios_analizados": 89,
+      "delta_pp": 0.2,
+      "porcentaje_promotores": 7.5,
+      "causas_raiz": [
+        {
+          "titulo": "Percepción general de confiabilidad y seguridad respaldada por trayectoria de la marca",
+          "descripcion": "La mayoría de los promotores de este motivo expresan una confianza general en la plataforma, asociada al respaldo de Mercado Libre como empresa establecida y reconocida en Latinoamérica.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 40,
+          "ejemplos": [
+            "Muy confiable",
+            "Porque es una opcion confiable para realizar pagos",
+            "me he sentido comodo usandolo"
+          ]
+        },
+        {
+          "titulo": "Ausencia de incidentes de seguridad en la experiencia personal del usuario",
+          "descripcion": "Muchos promotores basan su recomendación en que nunca han tenido problemas de seguridad, fraudes o accesos no autorizados en su cuenta.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 27,
+          "ejemplos": [
+            "Hasta el dia de hoy nunca he tenido ningun problema con la tarjeta",
+            "es facil y segura de usar",
+            "Es segura y atractiva al momento de utilizarla"
+          ]
+        },
+        {
+          "titulo": "Facilidades de seguridad activa como verificación y alertas ante movimientos",
+          "descripcion": "Algunos usuarios mencionan explícitamente las medidas de seguridad de la app como factor de recomendación: notificaciones en tiempo real, verificación biométrica y protecciones adicionales.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "A pesar de que no tengo dinero en la cuenta que es accesible tiene buena compatibilidad tiene muy buena seguridad",
+            "es muy seguro y muy practico de usar para realizar pagos",
+            "Me siento seguro con las medidas que tienen para proteger mi cuenta"
+          ]
+        },
+        {
+          "titulo": "Combinación de seguridad y rendimiento: dinero seguro que además crece",
+          "descripcion": "Un segmento de promotores valora específicamente que el dinero no solo está seguro sino que también genera rendimientos, percibiendo una ventaja doble respecto a guardar efectivo.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Porque puedo hacer crecer mi dinero",
+            "Buena app y generas ganancias",
+            "Es muy facil de usar y da buenos rendimiento"
+          ]
+        }
+      ]
+    },
+    "Ofrece préstamos y/o tarjeta de crédito": {
+      "total_comentarios_analizados": 81,
+      "delta_pp": -0.4,
+      "porcentaje_promotores": 6.8,
+      "causas_raiz": [
+        {
+          "titulo": "Acceso a crédito de forma rápida y digital sin los requisitos de la banca tradicional",
+          "descripcion": "Los promotores de este motivo valoran especialmente la facilidad con la que obtuvieron su tarjeta de crédito o préstamo, destacando la rapidez y los mínimos requisitos comparado con los bancos tradicionales.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 34,
+          "ejemplos": [
+            "Facilidad de adquirir un credito",
+            "Facilmente me dieron el prestamo y fueron aumentando",
+            "Porque me facilita prestamos y compras en linea, facilidades de pago y la puedo usar en muchos lugares"
+          ]
+        },
+        {
+          "titulo": "Tarjeta de crédito integrada que facilita compras en Mercado Libre y con cashback",
+          "descripcion": "La sinergia entre la tarjeta de crédito Mercado Pago y el marketplace Mercado Libre, junto con los beneficios de cashback por uso, es altamente valorada por quienes compran frecuentemente en línea.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 24,
+          "ejemplos": [
+            "porque puedo comprar en mercado libre, ademas de q me dan prestamos y tarjetas de credito",
+            "Es la app que mas uso, por cada compra que realice, ya sea fisica o virtual, me regala cashback",
+            "Ayuda a que sea mas facil las compras teniendo el credito disponible"
+          ]
+        },
+        {
+          "titulo": "Tasas y condiciones competitivas respecto a la banca tradicional",
+          "descripcion": "Algunos usuarios aprecian que las tasas de interés y condiciones del crédito son más favorables que en la banca tradicional, especialmente en combinación con los meses sin intereses.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Porque ofrece tasas competitivas, tarjetas de credito y prestamos personales",
+            "Bajos intereses y promociones de compras",
+            "Su app es muy clara, me da una buena cantidad de credito, genera ganancias atractivas, me ofrecieron varios creditos y promociones"
+          ]
+        },
+        {
+          "titulo": "Utilidad del crédito para pequeñas empresas y emprendedores",
+          "descripcion": "Un segmento específico de promotores destaca el valor del crédito Mercado Pago para negocios pequeños y emprendimientos, donde la facilidad de acceso al financiamiento es crítica.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Es una muy buena Banca para el uso de negocios y emprendimientos",
+            "Ofrece prestamos, inversiones",
+            "tengo la tarjeta de credito y me funciona bien y si necesito un capital extra puedo recurrir a un prestamo"
+          ]
+        }
+      ]
+    },
+    "Ofrece opciones de inversión atractivas / suficientes (plazos fijos, fondos de inversión, acciones, etc.)": {
+      "total_comentarios_analizados": 78,
+      "delta_pp": -1.0,
+      "porcentaje_promotores": 6.6,
+      "causas_raiz": [
+        {
+          "titulo": "Rendimiento diario disponible como forma accesible de inversión para cualquier perfil",
+          "descripcion": "Los usuarios que recomiendan por opciones de inversión valoran principalmente la cuenta de rendimientos diarios, percibida como la entrada más accesible al mundo de las inversiones sin necesitar conocimientos especializados.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 35,
+          "ejemplos": [
+            "Por el manejo de tu dinero. Te genera ganancias por solo tener tu dinero en la cuenta",
+            "Da rendimiento diario y puedes disponer del saldo en cualquier momento",
+            "Es facil hacer crecer mi dinero en esta cuenta"
+          ]
+        },
+        {
+          "titulo": "Porcentaje de rendimiento competitivo respecto a otras opciones de inversión del mercado",
+          "descripcion": "Varios usuarios mencionan explícitamente que el porcentaje de ganancia es alto comparado con otras opciones disponibles, incluyendo bancos y otras fintech.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 25,
+          "ejemplos": [
+            "Tiene buen porcentaje en inversiones",
+            "Tiene % de rendimiento en inversiones mayor a la competencia",
+            "La app es amigable, muy util, altos rendimientos"
+          ]
+        },
+        {
+          "titulo": "Confiabilidad de la plataforma para depositar y hacer crecer ahorros",
+          "descripcion": "La reputación y trayectoria de Mercado Pago como empresa fintech establecida genera confianza para dejar dinero invertido en la plataforma.",
+          "frecuencia_pct": 15,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Es una fintech muy confiable con grandes inversiones y productos",
+            "Mercado pago es confiable y rapido de usar",
+            "Es bueno y te da rendimientos"
+          ]
+        },
+        {
+          "titulo": "Facilidad operativa para invertir sin procesos complejos ni montos mínimos elevados",
+          "descripcion": "La simplicidad para invertir sin necesitar ir a una sucursal, llenar formularios o tener montos mínimos altos hace que Mercado Pago sea percibido como democratizador de las inversiones.",
+          "frecuencia_pct": 8,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Facil de usar",
+            "Me gusta es muy practico y facil de usar para servicios transferencias",
+            "Me ha gustado su facilidad de uso para transferencias, las ganancias diarias y la aplicacion es intuitiva"
+          ]
+        }
+      ]
+    }
+  }
+}

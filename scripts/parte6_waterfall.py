@@ -45,10 +45,11 @@ def mapear_motivo(motivo):
     
     # === TARIFAS (cobros, comisiones, mensualidades - NO tasas de interés) ===
     # IMPORTANTE: Evaluar ANTES de Financiamiento para que no se confunda con "tasa"
+    # FIX: "Tarifas y tasas" → Tarifas (tarifa siempre gana sobre tasa cuando coexisten)
     if any(x in m_lower for x in [
         'tarifa', 'cobrança', 'cobranza', 'comisión', 'comision', 'comissão',
         'mensualidad', 'mensalidade', 'costo de', 'custo de', 'cobro'
-    ]) and 'tasa' not in m_lower and 'taxa' not in m_lower:
+    ]) and 'tasa de' not in m_lower and 'taxa de' not in m_lower:
         return 'Tarifas'
     
     # === FINANCIAMIENTO (incluye crédito, tarjeta, límites, tasas de interés) ===

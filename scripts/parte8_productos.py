@@ -478,13 +478,23 @@ def analizar_productos(df_completo, df_player, config, verbose=True):
     
     # Filtrar productos válidos
     mask_valido = (
-        (summary[f'Share {q2}'] >= 2.0) & 
+        (summary[f'Share {q2}'] >= 1.0) &
         (summary[f'Share {q2}'] < 95.0) &
         (~summary[lbl_producto].str.lower().str.contains('|'.join(NOMBRES_INVALIDOS), na=False, regex=True))
     )
-    
+
     summary_filtrado = summary[mask_valido].copy()
     summary_filtrado = summary_filtrado.sort_values(f'Share {q2}', ascending=False).reset_index(drop=True)
+
+    # Si sigue vacío con 1%, usar summary completo sin filtro de share (evitar HTML sin productos)
+    if summary_filtrado.empty:
+        mask_minimo = (
+            (summary[f'Share {q2}'] > 0) &
+            (summary[f'Share {q2}'] < 95.0) &
+            (~summary[lbl_producto].str.lower().str.contains('|'.join(NOMBRES_INVALIDOS), na=False, regex=True))
+        )
+        summary_filtrado = summary[mask_minimo].copy()
+        summary_filtrado = summary_filtrado.sort_values(f'Share {q2}', ascending=False).reset_index(drop=True)
     
     # ═══════════════════════════════════════════════════════════════════════════
     # VALIDACIÓN NPS GLOBAL
@@ -564,7 +574,31 @@ def analizar_productos(df_completo, df_player, config, verbose=True):
                     'total_effect': row['Total Effect']
                 }
                 break
-    
+
+    # Fallback: si ningun keyword matcheo, tomar top 3 productos por share
+    if not productos_clave_encontrados and not summary_filtrado.empty:
+        tipos_fallback = ['ahorro', 'credito', 'ahorro']
+        for i, (_, row) in enumerate(summary_filtrado.head(3).iterrows()):
+            clave_fb = f'producto_{i+1}'
+            nombre = row[lbl_producto]
+            productos_clave_encontrados[clave_fb] = {
+                'nombre_original': nombre,
+                'nombre_display': nombre,
+                'tipo': tipos_fallback[i % 2],
+                'share_q1': row.get(f'Share {q1}', 0),
+                'share_q2': row.get(f'Share {q2}', 0),
+                'delta_share': row.get('Δ Share', 0),
+                'nps_usuario_q1': row.get(f'{lbl_nps_usuario} {q1}', 0),
+                'nps_usuario_q2': row.get(f'{lbl_nps_usuario} {q2}', 0),
+                'delta_nps_usuario': row.get(f'Δ {lbl_nps_usuario}', 0),
+                'lift_q1': row.get(f'Lift {q1}', 0),
+                'lift_q2': row.get(f'Lift {q2}', 0),
+                'delta_lift': row.get('Δ Lift', 0),
+                'mix_effect': row.get('Mix Effect', 0),
+                'nps_effect': row.get('NPS Effect', 0),
+                'total_effect': row.get('Total Effect', 0),
+            }
+
     # ═══════════════════════════════════════════════════════════════════════════
     # HISTÓRICO DE PRODUCTOS CLAVE (últimos 5 quarters)
     # ═══════════════════════════════════════════════════════════════════════════

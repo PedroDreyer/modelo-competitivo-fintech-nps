@@ -1,0 +1,354 @@
+{
+  "metadata": {
+    "player": "Mercado Pago",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Complejidad": {
+      "total_comentarios_analizados": 44,
+      "delta_pp": -2.4,
+      "causas_raiz": [
+        {
+          "titulo": "Interfaz confusa: no queda claro qué es la cuenta de ahorro vs la tarjeta de crédito",
+          "descripcion": "Usuarios no entienden la arquitectura de productos dentro de la app; los nombres de los menús no coinciden con los de la app real y las secciones de cuenta y tarjeta se superponen visualmente.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 20,
+          "ejemplos": [
+            "EN LA APP NO ES CLARO DONDE ESTA LA DIFERENCIA ENTRE MI CUENTA DE AHORRO Y MI TARJETA DE CREDITO. SIN CONTAR TAMBIEN LOS PAGOS SIN TARJETA",
+            "la información no es clara respecto al manejo de cuentas, incluso buscando una guía, los nombres de los comandos no son los mismos a los de la app",
+            "El estado de cuenta es un poco confuso, y la app en general no es muy intuitiva"
+          ]
+        },
+        {
+          "titulo": "Falta de tutoriales y onboarding para usuarios nuevos o poco familiarizados",
+          "descripcion": "Usuarios reconocen que aún no dominan la app y sienten que no hay guías claras para aprovechar todas las funciones disponibles.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Pues la tengo pero apenas estoy perdiendo el miedo a usarla",
+            "Aun no la domino bien, me resulta un poco complicada comparandola con las app de otros bancos",
+            "No sé pero estaría bien que tuvieran Tutoriales para poder sacar al maximo los beneficios que la aplicación brinda"
+          ]
+        },
+        {
+          "titulo": "Aceptación limitada en comercios genera fricción en el uso cotidiano",
+          "descripcion": "Usuarios reportan que no todos los establecimientos aceptan el pago con Mercado Pago, lo que genera una experiencia inconsistente.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "No aceptan en algunos establecimientos la tarjeta",
+            "aveces tengo preoblemas en hacer pago prque no entodos lados reciben el pago"
+          ]
+        },
+        {
+          "titulo": "Condiciones del cashback y promociones poco claras dentro de la app",
+          "descripcion": "Usuarios no entienden cómo acceder ni canjear el cashback generado, ni las condiciones para activar ciertas funciones como la simulación de ganancias.",
+          "frecuencia_pct": 12,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "No son claras las condiciones para utilizar el cashback generado por las compras.",
+            "Se supone que hay una función de simulación donde ingresas la cantidad a dejar en la tarjeta y te muestra cuánta es la ganancia que vas a tener por mes, sin embargo, por más que he buscado la función no me aparece"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 26,
+      "delta_pp": 2.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés en créditos y tarjeta percibidas como las más altas del mercado",
+          "descripcion": "La queja más frecuente y homogénea: los intereses de créditos personales y tarjeta de crédito son considerados excesivos, siendo una razón directa para no recomendar o reducir el uso.",
+          "frecuencia_pct": 52,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Su tasa de interes es muy alta... En caso de que no pague una mensualidad",
+            "Los intereses son altos, al solicitar préstamos y los de la tdc",
+            "Sus intereses son demasiado altos",
+            "Es buena opción en descuentos y uso de crédito,pero también sus intereses son muy altos"
+          ]
+        },
+        {
+          "titulo": "Comisiones altas en operaciones cotidianas: pagos a meses, pin dinámico y transferencias",
+          "descripcion": "Usuarios perciben cobros inesperados o excesivos en operaciones que esperarían gratuitas o de bajo costo.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Cobró por el uso del pin dinámica",
+            "Tiene comisiones altas y muy variadas",
+            "porque cobran mucho al aplicar a meses",
+            "Funciona bien pero las comisiones te comen, no te deja ganancia"
+          ]
+        },
+        {
+          "titulo": "Desbalance entre comisiones altas y rendimientos bajos: costo-beneficio negativo",
+          "descripcion": "Usuarios comparan lo que pagan en comisiones vs lo que reciben en rendimientos y sienten que la relación no les conviene.",
+          "frecuencia_pct": 13,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Las comisiones son demasiado caras y aparte ellos pagan muy poco rendimiento sobre tu dinero",
+            "es una buena aplicación de banco pero creo que las tarifas son un poco altas comparadas con otras"
+          ]
+        }
+      ]
+    },
+    "Financiamiento": {
+      "total_comentarios_analizados": 59,
+      "delta_pp": -1.6,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés en créditos y préstamos excesivamente altas vs alternativas del mercado",
+          "descripcion": "El costo del financiamiento es la barrera principal; usuarios que necesitan crédito lo evalúan pero desisten por los intereses, o lo usan con insatisfacción.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 27,
+          "ejemplos": [
+            "las tasas de interes son altas la he ocupado muy poco por lo mismo",
+            "Las tasas de financiamiento son muy elevadas y cancelan los créditos antes de llegar al límite superior autorizado por decisión del algoritmo de la aplicación",
+            "Sus tasas de interes son muy altas, le gusta cobrarse a lo chino, no se pueden adelantar pagos ya que los toma a cuenta de la ultima mensualidad",
+            "el crédito es muy caro y los intereses muy altos"
+          ]
+        },
+        {
+          "titulo": "Criterios de aprobación de crédito restrictivos y poco transparentes",
+          "descripcion": "Usuarios con buen historial de uso o pagos puntuales no logran acceder al crédito o aumentar su límite, y el algoritmo no les explica el motivo del rechazo.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 19,
+          "ejemplos": [
+            "No dan el crédito tan fácil",
+            "No me otorga la tarjeta de crédito",
+            "Tarda mucho en aumentar el crédito",
+            "Llevo más de un año en mercado pago y mi límite de crédito no lo puedo aumentar por no tener nómina pero tengo como comprobar mis ingresos de mi emprendimiento y me dice q no lo acepta"
+          ]
+        },
+        {
+          "titulo": "Cancelación automática de crédito por el algoritmo sin aviso ni criterio comprensible",
+          "descripcion": "Usuarios que pagaron puntualmente ven cancelados sus créditos de forma inesperada, generando frustración y pérdida de confianza.",
+          "frecuencia_pct": 13,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Porque son muy cuadrados y no perdonan a la gente aun cuando ya se liquido se sigue teniendo dinero en la cuenta y utilizando",
+            "Antes era mi favorita y me daba buenos rendimientos, también tenía acceso a préstamos pero a pesar de que siempre he pagado puntualmente me quitó la opción de préstamos"
+          ]
+        },
+        {
+          "titulo": "Imposibilidad de adelantar pagos sin generar doble cobro",
+          "descripcion": "El sistema aplica los pagos adelantados a la última mensualidad, por lo que la mensualidad vigente sigue acumulando, generando un doble pago efectivo.",
+          "frecuencia_pct": 10,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Sus tasas de interes son muy altas, le gusta cobrarse a lo chino, no se pueden adelantar pagos ya que los toma a cuenta de la ultima mensualidad y la que toca aun sigue vigente, es decir si se adelanta en realidad hay que pagar doble"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 54,
+      "delta_pp": 0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Eliminación del cashback universal: antes se aplicaba en todas las compras, ahora desapareció",
+          "descripcion": "Usuarios que recuerdan beneficios pasados (cashback en todas las compras, descuentos en servicios) comparan negativamente con la oferta actual, mucho más limitada.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 21,
+          "ejemplos": [
+            "Anteriormente recibía más descuentos en pago de servicios. Actualmente, rara vez los hacen",
+            "Antes ofrecian cashback en todas mis compras, ahora ya no, ojala volvieran",
+            "hace falta mas promociones y mejores intereses en inversiones"
+          ]
+        },
+        {
+          "titulo": "Meses sin intereses y beneficios de tarjeta concentrados exclusivamente en Mercado Libre",
+          "descripcion": "La propuesta de valor de la tarjeta (MSI, recompensas) se percibe atada al ecosistema de ML, con muy poca aplicación en comercios externos.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Por que es muy buena pero a veces no encuentro tanta oferta con su tarjeta de crédito, es decir, que a veces no hay meses sin intereses o algunas recompensas que tiene son muy poco",
+            "tiene beneficios de MSI en su aplicación de compras en MercadoLibre, por lo cual lo hace atractivo, pero estaría genial que promocionaran otros lados y no solo por que sea por MasterCard o Visa.",
+            "Porque aveces cuando uso la tarjeta de crédito me cobran mucho por hacer una compra"
+          ]
+        },
+        {
+          "titulo": "Portafolio de beneficios insuficiente vs fintechs competidoras",
+          "descripcion": "Usuarios comparan con otras fintechs y perciben que Mercado Pago ofrece menos recompensas, descuentos y beneficios por uso.",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 15,
+          "ejemplos": [
+            "Considero que pueden dar más y mejores beneficios",
+            "Solo me parece que puede ofrecer más descuentos",
+            "La app es muy buena pero faltan promociones atractivas y ofertas.",
+            "Me encantar ía que me dieran más beneficios"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 23,
+      "delta_pp": -0.5,
+      "causas_raiz": [
+        {
+          "titulo": "Red de puntos de retiro y depósito de efectivo insuficiente sin costo",
+          "descripcion": "Usuarios necesitan retirar o depositar efectivo pero los puntos disponibles son pocos o cobran comisión, a diferencia de bancos tradicionales.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "no hay cajeros para retirar dinero",
+            "Es una cuenta sencilla pero no hay muchos lugares de pago y depósito sin comisiones como otros bancos, y funcionalidades de la app",
+            "es buena solo que no puedo depositar en la cuenta"
+          ]
+        },
+        {
+          "titulo": "Ecosistema cerrado: funcionalidades y descuentos limitados fuera de Mercado Libre",
+          "descripcion": "La app se percibe como obligatoria para usar Mercado Libre pero poco útil en el día a día fuera de ese ecosistema.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "Es obligatoria si deseas usar mercado libre como plataforma de compra.",
+            "no hay mucho descuento fuera de mercado libre",
+            "Me gusta mucho sin embargo considero que le falta mas colaboracion con tiendas o proveedores para mejorar la presencia"
+          ]
+        },
+        {
+          "titulo": "Eliminación de integraciones con servicios externos (ej: recarga tarjeta multimodal CDMX)",
+          "descripcion": "Actualizaciones de la app o de apps de terceros eliminaron integraciones que los usuarios usaban regularmente.",
+          "frecuencia_pct": 22,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Antes en la app de CDMX podía recargar mi tarjeta multimodal con MercadoPago pero después de la actualización de app CDMX ya no me dejó hacerlo"
+          ]
+        },
+        {
+          "titulo": "Devoluciones lentas y rechazo de pagos en comercios físicos",
+          "descripcion": "Usuarios reportan que las devoluciones son deficientes y que muchos comercios no aceptan el método de pago.",
+          "frecuencia_pct": 13,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "porque las devoluciones son deficientes, muchos comercios no aceptan este método de pago.",
+            "Siento que no es lider en pagar con tarjeta, puede mejorar la rapidez de actualicacion de datos en la app"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 34,
+      "delta_pp": 0.4,
+      "causas_raiz": [
+        {
+          "titulo": "Casos virales de cierre de cuenta con pérdida de saldo sin respuesta del soporte",
+          "descripcion": "Aunque los usuarios no lo vivieron directamente, comentarios en redes y conocidos que perdieron dinero tras un cierre de cuenta inesperado generan desconfianza masiva.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Hay muchas quejas de personas que de la nada les cerraron la cuenta con su dinero en ella y al contactar a la empresa nunca les hicieron caso, se quedaron con su dinero",
+            "He escuchado de que quitan el dinero o te bloquean la cuenta",
+            "No he tenido problemas en lo personal, pero he visto casos de comentarios en internet donde tienen casos en los que su dinero desaparece y no les dan respuesta en soporte al cliente"
+          ]
+        },
+        {
+          "titulo": "Percepción de menor seguridad vs bancos tradicionales por falta de respaldo regulatorio (CNBV)",
+          "descripcion": "La ausencia de una sucursal física y de cobertura del seguro de depósitos bancarios genera una sensación de mayor vulnerabilidad.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "Ofrece una cuenta simple y facil de administrar pero no es tan segura como un banco tradicional",
+            "No tiene el respaldo de la Comisión Bancaria y cualquier error no tendría protección de mi dinero",
+            "La falta de una sucursal física no permite tenerle la confianza suficiente"
+          ]
+        },
+        {
+          "titulo": "Cargos no reconocidos y movimientos sin notificación en tiempo real",
+          "descripcion": "Usuarios reportan cobros que no autorizaron o que no recibieron notificación de movimientos en su cuenta.",
+          "frecuencia_pct": 23,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "la aplicacion no es muy funcional, hacen cobros indebidos",
+            "se han aplicado algunos pagos mínimos sin siquiera notificarme aunque sea yo quien este utilizando la tarjeta física en la aplicación no me avisa mis movimientos financieros.",
+            "he visto que algunas cuentas tiene problemas que les quitan su dinero por una deuda que no es de ellos deberian mejorar su seguridad y privacidad"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 31,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Atención al cliente 100% automatizada: bots que no resuelven y sin acceso a agente humano",
+          "descripcion": "La causa más crítica y homogénea: usuarios con problemas reales no pueden hablar con un humano, el chatbot no resuelve y quedan sin solución.",
+          "frecuencia_pct": 52,
+          "frecuencia_abs": 16,
+          "ejemplos": [
+            "NUNCA ENLAZA A PERSONAS REALES, LOS CHATBOTS NO RESUELVEN PROBLEMAS",
+            "Nunca puede haber contacto en vivo ya sea por chat o llamada.",
+            "Mercado pago y mercado libre necesitan mejorar su atención al cliente con personal y no con bots, es necesaria la interacción persona - persona para un mejor entendimiento y seguridad.",
+            "Me gusta la aplicación, lo que no me gusta es estar chateando con una maquina"
+          ]
+        },
+        {
+          "titulo": "Ausencia de sucursales físicas que genera desconfianza y falta de resolución presencial",
+          "descripcion": "Usuarios que tienen problemas complejos no tienen dónde acudir presencialmente y esto amplifica la sensación de desprotección.",
+          "frecuencia_pct": 29,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Al no tener un lugar fisico, no inspira confianza como un banco establecido",
+            "No tienen una oficina física para aclarar y tarda en responder",
+            "No cuentan con sucursales físicas y por teléfono nunca resuelven nada"
+          ]
+        },
+        {
+          "titulo": "Resolución tardía o nula de problemas escalados: casos que no se cierran",
+          "descripcion": "Usuarios que logran contactar soporte reportan que la resolución tarda días o simplemente no llega, aunque aporten todas las pruebas.",
+          "frecuencia_pct": 19,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "Tuve 1 problema con una transferencia que quería cancelar y me tardaron 2 dias",
+            "Nunca resuelven aunque des todos los datos y pruebas",
+            "PESIMO SERVICIO AL CLIENTE PARA ACLARAR DUDAS Y PAGOS PENDIENTES"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 74,
+      "delta_pp": -0.2,
+      "causas_raiz": [
+        {
+          "titulo": "Tope de $25,000 para generar rendimientos limita la propuesta de valor vs Nubank y otros",
+          "descripcion": "El límite máximo de saldo que genera intereses es percibido como arbitrario y muy bajo; quienes tienen más saldo no ven incentivo en dejar el dinero en Mercado Pago.",
+          "frecuencia_pct": 40,
+          "frecuencia_abs": 30,
+          "ejemplos": [
+            "Limitan el monto de dinero que genera rendimientos y condicionan estos rendimientos al ingreso de dinero.",
+            "solo se puede ahorrar 25000 pesos para recibir rendimientos después de esa cantidad no conviene ahorrar mas",
+            "Otras app como NU tiene la caja turbo de 13% más opciones de cajas con 7% libre de limite y con MP estoy limitada a $25,000",
+            "Ser ía bueno que la tasa de rendimientos aplicara no sólo a los primeros 25,000 pesos depositados"
+          ]
+        },
+        {
+          "titulo": "Tasa de rendimiento en descenso sostenido y condicionada a depósito mensual mínimo",
+          "descripcion": "La tasa bajó de 15% a 13% (y sigue bajando) y además exige un depósito mensual de $3,000 para mantener el máximo; las condiciones no son transparentes.",
+          "frecuencia_pct": 35,
+          "frecuencia_abs": 26,
+          "ejemplos": [
+            "Al principio me daba 15 % en ganancias ... Pero después bajo a 13 %",
+            "No es claro lo que ofrecen, piden que estés metiendo $3,000 cada mes para ofrecer el 13% de rendimiento pero el dinero no 'crece' tanto como en Nubank",
+            "antes ofrecían un mayor porcentaje de ganancias, el cual ha ido bajando",
+            "Xq te dicen un porcentaje y luego no es como tal éso"
+          ]
+        },
+        {
+          "titulo": "Rendimiento percibido como inferior a Nubank y otras alternativas disponibles en México",
+          "descripcion": "Usuarios hacen comparaciones directas con Nubank (Caja Turbo al 13% sin límite) y posicionan a MP como segunda opción en rendimientos.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 18,
+          "ejemplos": [
+            "Porque me parece menos atractiva que nu entonces pues eso es una contra para usarla como uso nu",
+            "La tasa de ganancias es mayor en otros bancos",
+            "Porque es una buena tasa de rendimiento pero con condiciones lo cual empeora en comparación con otras opciones"
+          ]
+        }
+      ]
+    }
+  }
+}

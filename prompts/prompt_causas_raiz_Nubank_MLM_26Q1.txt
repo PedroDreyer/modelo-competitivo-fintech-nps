@@ -1,0 +1,780 @@
+
+# 🔍 ANÁLISIS SEMÁNTICO DE CAUSAS RAÍZ - NPS COMPETITIVO
+
+## Contexto
+Analiza los comentarios de usuarios de **Nubank** en **MLM** para identificar
+las **causas raíz** específicas de cada motivo de queja.
+
+**Quarters comparados:** 25Q4 → 26Q1
+**Motivos a analizar:** 8
+
+## Instrucciones
+
+Para cada motivo:
+1. **Leer TODOS los comentarios** del quarter actual (26Q1)
+2. **Identificar patrones semánticos** (no solo palabras, sino problemas subyacentes)
+3. **Agrupar por causa raíz** (mínimo 2, máximo 4 causas por motivo)
+4. **Generar título descriptivo** (específico y accionable, no genérico)
+5. **Calcular frecuencia** de cada causa (% y cantidad)
+6. **Seleccionar 2-3 ejemplos** representativos
+
+## Formato de salida REQUERIDO
+
+Responde ÚNICAMENTE con un JSON válido:
+
+```json
+{
+  "metadata": {
+    "player": "Nubank",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "NombreMotivo": {
+      "total_comentarios_analizados": 50,
+      "delta_pp": -1.5,
+      "causas_raiz": [
+        {
+          "titulo": "Título descriptivo y específico",
+          "descripcion": "Explicación breve del problema identificado",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 22,
+          "ejemplos": [
+            "comentario real del usuario...",
+            "otro comentario real..."
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+---
+
+## 📋 COMENTARIOS POR MOTIVO
+
+
+### 🔥 MOTIVO: Seguridad (+2.1pp - EMPEORÓ)
+
+**Impacto:** 1.4% → 3.5% | **Comentarios:** 15 (25Q4) → 32 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "No me genera mucha confianza como para que manejen mi dinero esa cuenta"
+
+2. "El problema con todos las billeteras y bancos virtuales es que no tienen sucursales"
+
+3. "No hay sucursales f�sicas"
+
+4. "Es un banco bur� pero no es tan confiable como ptros"
+
+5. "Por qu� siento que son buenas impresiones para usarlo por primera vez"
+
+6. "por que tiene buena reputacion y a mi me ha funcionado"
+
+7. "Porque la utilizo para hacer crecer mi dinero pero no como mi banco formal, me ayuda porque da una cierta cantidad pero no est� consolidado en M�xico y no tendr�a a d�nde ir a reclamar si pasa algo as� que solo lo ocupo como mi banco backup."
+
+8. "No tiene sucursales fisicas"
+
+9. "banco sin respaldo de institucion financiera"
+
+10. "Por no tener sucursales fisicas"
+
+11. "CREO QUE ES UNA PLATAFORMA DE FACIL ACCESO PARA LOS HACKERS"
+
+12. "Porque es segura para m�"
+
+13. "Porque me gusta, solo que la manera m�s sencilla de utilizarla es en oxxo"
+
+14. "Hasta el momento no he tenido problemas pero si estar�a bien que hubiera ubicaciones f�sicas ya que no se cuenta con alguna sucursal"
+
+15. "Por ser una sofipo, no podr�a ser tan confiable, si quiero cancelar me entra la incertidumbre"
+
+16. "Est�n bloqueando cuentas y no regresan el dinero"
+
+17. "Por q es una experiencia personal, la recomiendo pero es decicionde cada quien tomar su desicion para contratarla"
+
+18. "por no tener sucursales"
+
+19. "Porque aveces se bloquea en mi cuenta"
+
+20. "Es buena aplicaci�n. Solo que no conf�o lo suficiente"
+
+21. "Creo que a�n no hay mucha confianza en los Nubank"
+
+22. "Aunque cuenta con un gran servicio de banco sigue sin tener un banco f�sico lo cual crea desconfianza"
+
+23. "Una entidad demasiado segura"
+
+24. "Es una instituci�n reciente en M�xico, a�n me falta mucho camino para crear esa confianza en la poblaci�n, sin embargo su propuesta es buena"
+
+25. "al no haber un banco fisico no siento tanta seguridad y me siento mas comoda usando otro banco"
+
+26. "Es buena app, pero al no tener sucursal f�sica no es muy confiable"
+
+27. "su falta de sucursales y de productos financieros que me son necesarios"
+
+28. "A veces no me da tanta confianza"
+
+29. "No te apoyan cuando existe un cargo no reconocido"
+
+30. "No me gusta ese banco no me genera confianza"
+
+31. "No me genera confianza por eso casi no la uso"
+
+32. "No cuenta con seguridad para sus clientes"
+
+
+================================================================================
+
+### ✅ MOTIVO: Promociones (-1.8pp - MEJORÓ)
+
+**Impacto:** 4.8% → 3.0% | **Comentarios:** 45 (25Q4) → 33 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Porque es de las entidades financieras que ofrece poco porcentaje de bonificaci�n cuando hay promociones bancarias."
+
+2. "Buen producto, aunque algo b�sico"
+
+3. "Por qu� no la conozco muy bien"
+
+4. "Si que si es la opci�n"
+
+5. "buena y confiable"
+
+6. "Me gustar�a que hubiera puntos en las compras"
+
+7. "No tiene anualidad"
+
+8. "Algunas tarjetas dan caskback por cada pago de servicios o compras"
+
+9. "Los inter�ses son muy altos y no tienen promociones como cashback o puntos"
+
+10. "No tiene  muchas  ofertas"
+
+11. "Me parece una buena oportunidad para pagar"
+
+12. "En general mi experiencia ha sido buena, pero llevo demasiado poco con ella para poderla recomendar m�s ampliamente."
+
+13. "Que cumplan con las promociones ya que no lo hacen"
+
+14. "no tiene una banca muy atractiva y no s� en que tantas aplicaciones o beneficios puedo obtener"
+
+15. "Pues se me a echo bien"
+
+16. "La he utilizado poco"
+
+17. "Le falta m�s promoci�n"
+
+18. "no son tan f�ciles de entender las promociones y a veces suelen ser enga�osas"
+
+19. "Que tenga m�s promociones"
+
+20. "Ampliar las ofertas de meses sin intereses y facilidad para aumentar los l�mites de dep�sitos"
+
+21. "Nomas , por que ellos investiguen sus beneficios"
+
+22. "Porque ofrecen muy pocas promociones en comparaci�n con otros bancos y en cuesti�n de descuentos, no ofrecen casi nada"
+
+23. "Me equivoqu� de opci�n pero no ofrece muchas promociones con otros establecimientos como meses sin intereses o no tiene tantos convenios"
+
+24. "Que tenga mas promociones o podamos acceder a veneficios"
+
+25. "Siento que hay reca�do mucho"
+
+26. "Le faltan m�s promociones"
+
+27. "Prefiero no contestar"
+
+28. "Creo que es un buen neobanco pero podr�an mejorar sus descuentos y promociones para que sea mas actractiva"
+
+29. "Sus promociones en Amazon a MSI no califican a todos los productos aun cuando su precio es alto."
+
+30. "Me gusta mucho pero aun no es unaco formal, no?"
+
+31. "Quiero ofertas y promociones."
+
+32. "que tuviera cash back"
+
+33. "por sus ofertas que da y maneja"
+
+
+================================================================================
+
+### ✅ MOTIVO: Tarifas (-1.1pp - MEJORÓ)
+
+**Impacto:** 1.5% → 0.4% | **Comentarios:** 0 (25Q4) → 5 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "El cobro por retiro fn efectivo es alto"
+
+2. "Comisiones caras"
+
+3. "Dep�sito y retiro de efectivo por las altas comisiones"
+
+4. "Es un bien banco pero las tarifas de comisi�n por retirar dinero son muy altas"
+
+5. "no me resulta practico utilizar su tarjeta de debito, ya que tengo otras opciones para retiros sin comisiones o con devoluci�n del importe gastado."
+
+
+================================================================================
+
+### ✅ MOTIVO: Rendimientos (-0.9pp - MEJORÓ)
+
+**Impacto:** 9.3% → 8.5% | **Comentarios:** 95 (25Q4) → 88 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "HAN BAJADO LAS TASAS DE INTERES CONTINUAMENTE LOS ULTIMOS MESES"
+
+2. "Porque no suelo utilizarla tanto"
+
+3. "Empiezo como una excelente opci�n para ahorrar"
+
+4. "Porque inicio ofreciendo 15% de rendimiento de inversion y cada vez es menor"
+
+5. "ya no es atractivos los intereses"
+
+6. "no acostubro recomendar bancos, lo recomende mientras tenian tasas de interes competitivas, pero eso ya no es verdad"
+
+7. "Al principio era muy atractiva y sencilla de usar, ahora hay otras opciones que ofrecen lo mismo o mas con mejores promos o ganancias"
+
+8. "Ha sido una banca relativamente f�cil de usar y c�moda pero creo que en temas de inversi�n ha fallado un poco en el �ltimo tiempo"
+
+9. "Su taza de rendimiento es muy baja"
+
+10. "Porque bajo el rendimiento de la cajita turb"
+
+11. "Es que siento que cambian demasiado las tasas para mi gusto."
+
+12. "Por el servicio que brinda y ojal� regresen a las tasas de inter�s previas"
+
+13. "Grandes rendimientos"
+
+14. "Me gust� para piedrecita muy buenos rendimientos en el dinero que tengo guardado, pero despu�s fue bajando. Y ya no es tan atractiva"
+
+15. "Cuando abri mi cuenta tenian una buema tasa para invertir tu dinero. Pero rapidamente ha bajado este porcentaje"
+
+16. "Los intereses que genera mi dinero son m�nimos, antes elninteres era m�s alto"
+
+17. "pues ya existen otras instituciones financieras que ofrecen m�s rendimiento"
+
+18. "Es cumplida buenos rendimientos"
+
+19. "Es un buen banco pero los rendimientos son un poco bajos"
+
+20. "es un banco digital que da muy buen rendimiento a mi dinero"
+
+21. "Tiene una buena aplicacion y antes daba buenos rendimientos"
+
+22. "ofrecia buenos intereses pero los bajaron demasiado tienen un limite que otros banco estan mejorando"
+
+23. "deberian mejorar los plazos de ahorro"
+
+24. "La tasa de crecimiento ha disminuido"
+
+25. "Porque bajaron el porcentaje de rendi"
+
+26. "Porque antes ofrec�a tasas atractivas pero ya no es as�, solo el limite de 25,000 es el que tiene un rendimiento atractivo"
+
+27. "Lj ckmenze a utilizar unicamente para ganacias"
+
+28. "Es muy poco la ganancia"
+
+29. "En t�rminos generales me funciona, pero hay cosas que no quedan claras como en que fecha tengo que hacer la compra para que me dejen mantener la cajita turbo"
+
+30. "al principio ten�a mejores tasas de inter�s"
+
+31. "Por bajar su tasa de rendimiento en la cajita turbo y por exigir una compra mensual."
+
+32. "Creo deben subir sus rendimientos, dividir ganancias"
+
+33. "Acaban de bajar el rendimiento y yo la utilizaba por eso"
+
+34. "tenia mejor tasa de rendimiento pero bajo"
+
+35. "los rendimientos bajaron mucho"
+
+36. "Es muy bueno pero si rendimiento ha bajado"
+
+37. "No utilizo su tarjeta de cr�dito solo es para ahorros antes era mejor pq daban mayor rendimiento sin plazos"
+
+38. "Ofrece menos que la competencia"
+
+39. "Bajaron las tasas de inter�s"
+
+40. "constantemente estan en cambio las tasas que ofrecen"
+
+41. "con mas opciones para inversiones"
+
+42. "el l�mite de dinero que puedes ingresar es muy poco"
+
+43. "es un buen banco digital,pero el rendimiento de la taza anual cay� del 15 al 13 por ciento"
+
+44. "lo atarctivo de la cuenta era el interes que pagaban, pero hay ya mejores opciones"
+
+45. "Porque bajaron su tasa de rendimiento, aunque lo entiendo por los factores macroeconomicos"
+
+46. "Es muy limitado solamente que se generen una tasa de inter�s del 13% por 25 mil. Me gustar�a que ese rendimiento aplicara para un importe mucho mayor."
+
+47. "Nubank es una nueva opci�n en el mercado, si bien el rendimiento que ofrece es atractivo aun le falta afianzarse en el mercado para generar mayor confiabilidad, una manera de hacerlo es ofertando mayor rendimiento para atraer clientes"
+
+48. "tiene un limite bajo para los rendimientos por mi dinero"
+
+49. "Da pocos rendimientos es lo que no me gusta"
+
+50. "Su tasa de inversi�n ha ido reduciendo mucho en poco tiempo."
+
+51. "Las ganancias por tener mi dinero en su cuenta han bajado, eso me hace pensar en otra opci�n"
+
+52. "Porque bajo mucho a comparaci�n de cuando inici�"
+
+53. "No me agrada mucho el tener que pasar de cajitas a dinero disponible"
+
+54. "Porqu� me parece una buena aplicacion y banco digital pero siento que le falta m�s formas de ahorro"
+
+55. "los porcentajes de ganancia en las cajitas bajaron considerablemente"
+
+56. "Por q tiene muy bajo el inter�s de inversi�n"
+
+57. "Al inicio como gancho fue el rendimiento por tener tu dinero en la aplicaci�n"
+
+58. "La TDC no da beneficios, el rendimiento ya es muy bajo"
+
+59. "aunque tiene tarifa competitiva, ahora las cajitas rinden mucho menos"
+
+60. "Porque no ofrece tasas de rendimiento suficientemente buenas."
+
+61. "Si tuviera mayor rendimiento y dejara incrementar la cantidad de 25k estar�a perfecta"
+
+62. "Es muy buen banco, f�cil de usar la app, y tiene bien rendimiento, sin embargo creo que puede tener m�s funciones con otras empresas o p�ginas para promociones"
+
+63. "Porque le da ganancia a mi dinero"
+
+64. "Es una buena app para movimientos y generar rendimientos"
+
+65. "Porque realmente es muy buena y me da muy buenos rendimientos por mi dinero durante el tiempo que est�"
+
+66. "Por que antes tenia mejores n�meros en cuanto a inversi�n, ahora es menor que otros bancos"
+
+67. "Los rendimientos no son mejores que la competencia"
+
+68. "�nicamente la utilizo por la cajita turbo que maneja"
+
+69. "antes se ganaba 15% con lo ahorrado, ahora es menor el porcentaje"
+
+70. "Deb�is de dar m�s rendimiento"
+
+71. "podrian mejorar la forma de invertir"
+
+72. "Me parece pr�ctico, pero al mismo tiempo un poco limitante para las opciones que tienen un banco"
+
+73. "Es dif�cil encontrar las cajitas para meter el dinero, adem�s la tasa de rendimiento es muy baja, antes era m�s"
+
+74. "Porque creo que aporta un beneficio al generar rendimientos al ahorrar dinero, pero para mi punto de vista no la recomendar�a tanto porque sus porcentajes han bajado mucho."
+
+75. "Por que la uso solo por las cajitas que me dan rendimientos"
+
+76. "Es muy buena app para crecimiento"
+
+77. "Porque bajo mucho el % de ganancias"
+
+78. "Se supone que tu dinero crece un 7% anual pero no veo que crezca todos los d�as"
+
+79. "En las cajitas antes daban el 15% anual de ganancias"
+
+80. "Antes daba mayor rendimiento, y de repente lo bajo mucho y no hay cajeros de dicho banco"
+
+81. "Es una buena cuenta para que tu dinero crezca"
+
+82. "Porque ya no da buenos rendimientos como antes, por lo dem�s las app es muy buena"
+
+83. "El inter�s a disminuido mucho en el �ltimo a�o"
+
+84. "Pues no la uso mi ho hay mejores opciones"
+
+85. "Abri la cuenta por su buena tasa de rendimiento pero esta cambia a cada rato"
+
+86. "Porque me gusta pero para que t� dinero gane lo tienes que poner a plazo"
+
+87. "Por que con la tarjeta de cr�dito podr�an dar puntos o dinero electr�nico por cada compra, el llamado 'cada back' Y tambi�n por el porcentaje de la capital de ahorro que bajo de un 15 a un 13"
+
+88. "Por qu� no da tanto de inter�s, una vez que llenas la cajita turbo el inter�s de las otras cajitas es muy bajo a compoarscion de la competencia"
+
+
+================================================================================
+
+### ✅ MOTIVO: Financiamiento (-0.5pp - MEJORÓ)
+
+**Impacto:** 8.3% → 7.8% | **Comentarios:** 85 (25Q4) → 71 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "tiene tarifas muy caras"
+
+2. "Tasa de inter�s alta"
+
+3. "Apenas empec� a usarlo y me gusta como funciona"
+
+4. "Ni me convence por completo"
+
+5. "Porque el saldo inicial es muy bajo quisiera mayor cr�dito,con un buen historial"
+
+6. "Es buena en que no te cobra anualidad, pero sus tasas son muy altas. Adem�s era atractiva por su rendimiento pero bajo tanto que ya no es recomendable para nada."
+
+7. "Tasa alta de inter�s"
+
+8. "es f�cil de usar"
+
+9. "Tienen muchas facilidades de pago pero Sus intereses suelen ser muy altos, es f�cil endeudarse"
+
+10. "En tarjeta de cr�dito. El cobro es demasiado. No permiten transferencia"
+
+11. "Mi l�nea de cr�dito no crece en los �ltimos dos a�os"
+
+12. "Por que el cr�dito de mi tarjeta de credito nunca aumenta"
+
+13. "el interes de la tarjeta es muy alto"
+
+14. "Porque se batalla mucho para que te acepten"
+
+15. "Porque es una app que me facilita todo, pagos, transferencias, y el modo a 12 meses sin intereses,.aparte no cobra anualidad"
+
+16. "Porque los intereses son demasiado altos. Pago mucho y mi deuda casi no baja."
+
+17. "Por que era demasiado interes"
+
+18. "Por que tengo ya un tiempo us�ndola y mi credito no ha aumentado"
+
+19. "Las tasas de inter�s son exorbitantes"
+
+20. "cobra intereses muy altos en la tarjeta de cr�dito"
+
+21. "Se podrian mejorar las tarifas de los intereses"
+
+22. "las l�neas de cr�dito que otorgan no son tan altas"
+
+23. "Es una buena tarjeta y me da confianza"
+
+24. "No me ha dado buen cr�dito"
+
+25. "su servicio es muy bueno"
+
+26. "es una tarjeta para empezar a hacer historial crediticio, pero solo para eso"
+
+27. "Sus costos anuales y comisiones al digerir son algo altas,"
+
+28. "muy alta los motos de intreser de la tarjeta"
+
+29. "Al principio era una tarjeta con un Cat muy bueno, despu�s fue subiendo y actualmente ya es tan cara como muchas otras, espero pronto dejar de utilizarla cobran mucho de intereses, se est� volviendo inpagable"
+
+30. "No he tenido problema con el banco o uso de tarjeta de cr�dito"
+
+31. "Los cr�ditos tienen un porcentaje muy alto de cobro."
+
+32. "No me dieron la tarjeta aunque la ped� m�ltiple ocasiones"
+
+33. "Es una buena opci�n para personas que no tienen un historial crediticio sin embargo sin tazas son muy altas"
+
+34. "Es buena tarjeta puedo aser compras internacionales de otros pa�ses"
+
+35. "Porque su taza de inter�s es muy alta"
+
+36. "El tiempo de cr�dito es muy corto"
+
+37. "No ofrece pr�stamos competitivos tiene tasas de intereses muy altas"
+
+38. "Porque es una buena tarjeta, pero las tasas de inter�s son muy altas"
+
+39. "Los intereses por el uso de cr�dito son excesivos"
+
+40. "Sus tasa de interese es algo elevada"
+
+41. "La tasa de inter�s es muy alta."
+
+42. "Por que deber�a de ofrecer el doble de credito"
+
+43. "Maneja tarifas de interes altas"
+
+44. "Se me hace un cr�dito muy caro, la termino de pagar y la cancelo , definitivamente"
+
+45. "La verdad es que han aumentado mucho sus intereses en los �ltimos meses"
+
+46. "Por que es una buena opcion para realizar compras por internet y a cr�dito, pero tarda en procesar los limites de cr�dito y falla en subir la documentaci�n personal"
+
+47. "Por tasas y mejor credito"
+
+48. "El inter�s es muy caro"
+
+49. "Me agrada es amigable"
+
+50. "Las comisiones son muy altas, as� como las comisiones, por m�s pagos que se hacen parece 'desaparecer' todo el dinero que se abona."
+
+51. "Porque es f�cil de usar y tiene buen crecimiento"
+
+52. "No me gusta recomendar tarjetas de cr�dito"
+
+53. "Por qu� es muy elevada de tasa de inter�s"
+
+54. "Si solicitamos una tarjeta de cr�dito es porque no tenemos dinero, por lo tanto no podemos pagar mensualidades extras"
+
+55. "solo la uso para tarjeta de cr�dito y realizar algunos pago que nos mas f�ciles desde su aplicaci�n"
+
+56. "Porque no es tan atractivo su programa de servicios, no tiene nada de diferencia a otra tarjeta de cr�dito convencional"
+
+57. "es poco el credito que dan de inicio, al paso de 3 a�os se aumento y aun asi es poco, creo que se puede ofrecer un poco mas y aunque no se use, es bueno contar con mas credito."
+
+58. "Las tasas de inter�s son demasiado altas, y podr�an tener m�s opciones de meses sin intereses"
+
+59. "Es f�cil de usar y de gran ayuda ya que no te piden historial acreditativo"
+
+60. "Muy altos intereses"
+
+61. "Porque llevo m�s de un a�o con mi cuenta en constante movimiento y no e tenido aumento en mi credito ni e obtenido ofertas o alg�n tipo de beneficios por usarla y ser cliente"
+
+62. "Me gustar�a que bajar� un poco el.interes al solicitar un pr�stamo, que permita realizar retiros de efectivo en los cajeros por una cantidad mayor a la actual"
+
+63. "Me da buenos intereses pero es muy alto el inter�s que cobra en tarjeta de credito"
+
+64. "Le falta algunas funciones para desarrollar como tarjeta bancaria o de cr�dito en su caso es tu mismo dinero que inviertes."
+
+65. "para el tiempo que tengo con la tarjeta, no he tenido invitaciones de obtener alguna tarjeta adicional o alg�n prestamo"
+
+66. "no venia pero sus tasas en caso de no pagar son demaciado altas"
+
+67. "me gusta que me den tarjetas de credito con facilidad"
+
+68. "No me atrae como otras tarjetas, puedo decir que es como las del mont�n"
+
+69. "Tiene plazos para pagar muy buenos a meses y los intereses no son tantos c�mo en otras plataformas"
+
+70. "Las tazas de NU son altas y te cobran comisi�n aun y cuando la cuenta este liquidada."
+
+71. "Porque es muy buena opci�n como tarjeta de cr�dito secundaria"
+
+
+================================================================================
+
+### ✅ MOTIVO: Atención (-0.4pp - MEJORÓ)
+
+**Impacto:** 3.4% → 3.0% | **Comentarios:** 29 (25Q4) → 28 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "SI LLEGARA A TENER ALGUN PROBLEMA, NO SE CON QUIEN ME TENDRIA QUE COMUNICAR AL SER UN BANCO DIGITAL"
+
+2. "No tiene sucursales y no es f�cil confiar"
+
+3. "Puede mejorar en la atenci�n"
+
+4. "Intente reportar un cobro duplicado pero piden alguna �prueba�� pague en efectivo porque seg�n no funcionaba la terminal y no ten�a prueba de eso"
+
+5. "Porque no existe en f�sico"
+
+6. "Me ha Sido buena cuenta y eficiente"
+
+7. "La atenci�n es muy tardado y no dan soluci�n"
+
+8. "Es buena, solo falta algo m�s que llame la atenci�n de la audiencia para adquirir Nu"
+
+9. "MALA ATENCION PERSONAL"
+
+10. "No me han devuelto el importe de una transacci�n que hice con un establecimiento"
+
+11. "No me resolvieron un problema"
+
+12. "No la tengo y me bas� en las que si"
+
+13. "Tuve un problema con un dep�sito y tardaron en resolverme casi un mes"
+
+14. "N�meros telef�nicos mas accesibles"
+
+15. "Porque es buena pero deber�a existir un banco fisico"
+
+16. "ya que no tienen sucursales f�sicas es m�s doficil proporcionae ayuda a clientes  De mayor edad, por ejemplo"
+
+17. "Casi no tienen atenci�n"
+
+18. "Al momento de solicitarla mi tr�mite no avanzaba, tuve que hacerlo dos veces"
+
+19. "No hay sucursales fisicas para atenci�n al cliente"
+
+20. "Atenci�n deber�a ser m�s r�pida"
+
+21. "Porque me gusta menos que antes"
+
+22. "No es muy conocida y es real"
+
+23. "igual es un fintech y al ser digital no hay lugar para irs a reclamar"
+
+24. "Porque es muy complicado que resuelvan tus dudas, hablas con un robot"
+
+25. "Hay mucho tiempo de espera en la atenci�n del ejecutivo en telefono"
+
+26. "no la uso mucho, ademas para hablar con soporte o atencion al cliente es tardio"
+
+27. "Se me ha cobrado pagos que no eh hecho y no me an resuelto"
+
+28. "Porque ah pesar de ser un muy buen banco que genera intereses a favor, no tiene sucursales f�sicas"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Funcionalidades (+0.1pp - EMPEORÓ)
+
+**Impacto:** 2.1% → 2.2% | **Comentarios:** 19 (25Q4) → 18 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "Muchas limitantes"
+
+2. "opciones de otras funciones de banca electronica"
+
+3. "No hay donde depositar"
+
+4. "No la he podido usarla para lo que necesito"
+
+5. "El no contar con cajeros es una desventaja ante los bancos"
+
+6. "Porqu� es de cr�dito es decir no puedo obtengo la facilidad de retirar"
+
+7. "Porque es un buen banco pero relativamente es nuevo para mi"
+
+8. "Creo que no es muy flexible"
+
+9. "Porque no tiene cajeros f�sicos"
+
+10. "No ofrece nada nuevo"
+
+11. "No tiene banco ni tiene cajeros f�sicos"
+
+12. "Pocos lugares para depositar y retirar efectivo"
+
+13. "Por la falta de lugares donde retirar o depositar dinero"
+
+14. "Es una buena cuenta, manejan buenos intereses solo les faltan cajeros para retiro"
+
+15. "La utilizo �nicamente para guardar mi dinero, desconozco las dem�s funciones"
+
+16. "necesito cajeros automaticos multifuncionales para usar mas esta cuenta"
+
+17. "No tiene todas las funciones que necesito"
+
+18. "Solo esperaba un poco m�s de opciones"
+
+
+================================================================================
+
+### 🔥 MOTIVO: Complejidad (+0.1pp - EMPEORÓ)
+
+**Impacto:** 5.2% → 5.3% | **Comentarios:** 51 (25Q4) → 45 (26Q1)
+
+**Comentarios 26Q1:**
+
+1. "porque a pesar de tener todos sus tramites en linea el reconocimiento facial para iniciar con mi cuenta fue muy complicado"
+
+2. "Por las experiencias q he tenido con la app"
+
+3. "La app muy f�cil de usar"
+
+4. "Porque lo pobre y los intereses y forma de uso fueron confusos"
+
+5. "La app falla a veces y no hay ni como sacar dinero ni pagar nada, te deja a oscuras, muy mal"
+
+6. "Es dif�cil entender la plataforma ya que como que esta muy mal hecha y cuando marcas no te saben decir ni orientar pues tampoco conocen la plataforma.  Es muy complejo la quisieron hacer tan segura que ellos mismos no saben c�mo salir de las p�ginas ..."
+
+7. "Me parece buena app"
+
+8. "Porque es plactica"
+
+9. "Su aplicaciones muy eficiente tanto como su forma de pagos como su forma de transacciones transferencias y pagos al servicio es muy pr�ctica y muy f�cil de usar"
+
+10. "Es una buena aplicaci�n pero siento que le falta mejorar y constantemente tiene actualizaciones la app"
+
+11. "Me agrada mucho el como funciona, pero para hacer dep�sitos es un poco complicado"
+
+12. "F�cil y sencilla de usar"
+
+13. "La tarjeta de cr�dito no funciona de acuerdo a lo que suele ser necesario al buscar una"
+
+14. "F�cil y amigable"
+
+15. "Para entrar a la cuenta se tiene que teclear el correo electr�nico completo y la contrase�a. Ser�a mejor entrar directo con huella digital."
+
+16. "Es un app muy din�mica y atractiva para gestionar tu dinero"
+
+17. "Es dif�cil sacar dinero en efdctivo"
+
+18. "Porque es una plataforma amigable y f�cil de usar"
+
+19. "Se me hace comodo tener mi dinero"
+
+20. "Es un buen banco y plataforma"
+
+21. "Bueno es ma sfacil utilizarla"
+
+22. "Es muy f�cil de usar"
+
+23. "Tarda en recibir el dinero, luego no te avisa"
+
+24. "En ocasiones tiene problemas la plataforma, tenia dinero en mi cuenta quise pagar con ella y resulta que ya no tenia saldo lo reporte y me comentaron que hasta despu�s de 6 dias recibir�a mi dinero y mientras tuve que ver quien me prestaba"
+
+25. "Pues es f�cil de usar Pero es normal"
+
+26. "En general funciona muy bien"
+
+27. "Aun falta que sea m�s f�cil su app"
+
+28. "Tuve malas experiencias"
+
+29. "Me gusta mucho solo que la app es algo lenta"
+
+30. "porque apenas inicio a usarla"
+
+31. "Es eficiente para lo que le necesito, es f�cil realizar pagos y movimientos"
+
+32. "Te pide varias contrase�as"
+
+33. "Porque es una aplicaci�n facil de usar y sin banalidad"
+
+34. "Es dif�cil acceder"
+
+35. "Funciona muy bien"
+
+36. "Practicidad en entrar m�s rapido"
+
+37. "Me parece una buena opci�n para organizarce y considero que el tramite es facil y r�pido"
+
+38. "porque al momento de que te pide actualizar los datos se traba la app"
+
+39. "Porque aun le hace falta algunas cosas que pulir dentro de la aplicaci�n"
+
+40. "Hasta el momento no he tenido ning�n tipo de inconveniente con esta tarjeta"
+
+41. "Est� muy facil la app"
+
+42. "Porque es f�cil y accesible"
+
+43. "Su app es eficaz"
+
+44. "He tenido varios problemas a veces"
+
+45. "Porque me gustar�a que hubiera una manera de retirar el dinero que fuera de nu no en cajeros de otros bancos"
+
+
+================================================================================
+
+## 📝 INSTRUCCIONES FINALES
+
+1. **Guardar el archivo** usando Write tool:
+   - **Path:** `data/causas_raiz_semantico_Nubank_MLM_26Q1.json`
+2. **Confirmar** que se guardó correctamente
+
+IMPORTANTE:
+- Los títulos deben ser ESPECÍFICOS (no "Problemas con crédito" sino "Rechazo de crédito pese a alta movimentación")
+- Cada causa raíz debe ser DIFERENTE a las demás (no solapar)
+- Los ejemplos deben ser TEXTUALES de los comentarios arriba

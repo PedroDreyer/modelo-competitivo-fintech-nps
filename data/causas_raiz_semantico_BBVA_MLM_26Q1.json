@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "player": "BBVA",
+    "site": "MLM",
+    "quarter": "26Q1",
+    "metodo": "analisis_semantico"
+  },
+  "causas_por_motivo": {
+    "Financiamiento": {
+      "total_comentarios_analizados": 37,
+      "delta_pp": 2.3,
+      "causas_raiz": [
+        {
+          "titulo": "Tasas de interés excesivamente altas en préstamos y tarjeta de crédito",
+          "descripcion": "Los usuarios señalan que los intereses en créditos personales, hipotecarios y TDC son los más altos del mercado, sin mejorar con el tiempo.",
+          "frecuencia_pct": 46,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Tasa de interés demasiado alta",
+            "Sus tasas de interés son altas",
+            "me ha sacado de apuros los prestamos y creditos pero los intereses son muy altos",
+            "Los intereses de todos sus productos son muy elevados o muy caros"
+          ]
+        },
+        {
+          "titulo": "Cobro de anualidad alta y comisiones por manejo de cuenta",
+          "descripcion": "La anualidad de la tarjeta de crédito y las comisiones por saldo bajo o manejo de cuenta son percibidas como injustas frente a competidores que no cobran.",
+          "frecuencia_pct": 30,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "Cobro de anualidad, mal servicio, falta de claridad en sus contratos",
+            "porque es muy accesible no además tiene servicios muy buenos sería todo, la anualidad es muy cara",
+            "Cobros por manejo de cuenta",
+            "Cobran anualidad alta en su tarjeta de crédito"
+          ]
+        },
+        {
+          "titulo": "Rechazo o reducción de límite de crédito sin previo aviso",
+          "descripcion": "Clientes reportan que BBVA niega o recorta límites de crédito de forma unilateral, incluso con buen historial de uso.",
+          "frecuencia_pct": 24,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Es caro y malo, pueden recortar el limite de credito sin avisar",
+            "Por qué varias veces intenté tramitar una tarjeta de crédito y me la negaron",
+            "No tengo mucho límite de crédito",
+            "Ya tengo tiempo con el banco y no me da grandes opciones"
+          ]
+        }
+      ]
+    },
+    "Funcionalidades": {
+      "total_comentarios_analizados": 12,
+      "delta_pp": 0.8,
+      "causas_raiz": [
+        {
+          "titulo": "Falta de rendimientos automáticos y beneficios competitivos en cuenta",
+          "descripcion": "Usuarios sienten que BBVA no ofrece ganancias sobre el saldo ni ventajas diferenciadas frente a fintechs y otros bancos.",
+          "frecuencia_pct": 42,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "No me ofrece nada, sólo lo utilizo para que me depositen la nómina",
+            "Las transferencias son lentas, no ofrece ganancias ni siquiera mensuales y cobra comisión por manejo de cuenta",
+            "cobran anualidad en su tarjeta, estoy pensando en cancelarla"
+          ]
+        },
+        {
+          "titulo": "App requiere visita a sucursal para activaciones y trámites básicos",
+          "descripcion": "Procesos como la activación o reactivación de la app obligan al cliente a ir físicamente a sucursal, limitando la autogestión digital.",
+          "frecuencia_pct": 33,
+          "frecuencia_abs": 4,
+          "ejemplos": [
+            "Porque siempre para activar la app ocupo ir a la sucursal y eso me quita funcionalidad y tiempo",
+            "Son muy lentos en sus revisiones de aprobación de créditos"
+          ]
+        },
+        {
+          "titulo": "Beneficios y promociones insuficientes para fidelizar",
+          "descripcion": "El banco no ofrece recompensas, cashback ni beneficios atractivos que justifiquen el costo de sus productos.",
+          "frecuencia_pct": 25,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Considero que es un banco excelente pero podría mejorar en sus beneficios, y otorgar más beneficios en compras, promociones",
+            "La anualidad es muy cara, las tasas de interés son altísimas, los operadores son muy groseros"
+          ]
+        }
+      ]
+    },
+    "Seguridad": {
+      "total_comentarios_analizados": 22,
+      "delta_pp": 0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Fraudes y cargos no reconocidos sin resolución efectiva del banco",
+          "descripcion": "Clientes reportan cargos no autorizados, fraudes y clonación de tarjeta donde BBVA no da solución, dejando al cliente sin recuperar su dinero.",
+          "frecuencia_pct": 45,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "Me hicieron un fraude y el banco se lavó las manos, no hubo manera de recuperar nada y la atención fue fatal",
+            "he tenido muchos problemas con cargos no reconocidos",
+            "últimamente he visto que el dinero de la gente desaparece y el banco no hace nada",
+            "Cuento con un seguro contra robo y clonación de tarjeta y no me mandan la póliza sin importar cuántas veces lo solicite"
+          ]
+        },
+        {
+          "titulo": "Empleados internos realizan operaciones y fraudes sin consentimiento del cliente",
+          "descripcion": "Usuarios sospechan o han verificado que ejecutivos de BBVA comparten datos y realizan operaciones fraudulentas usando información del cliente.",
+          "frecuencia_pct": 32,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "tengo razones para creer que bancomer ha vendido mi información a estafadores y los propios empleados del banco hacen fraude con mis tarjetas",
+            "Porque en la actualidad se ha visto mucho que los ejecutivos hacen operaciones sin consentimiento del usuario, proporcionan información confidencial"
+          ]
+        },
+        {
+          "titulo": "Medidas de seguridad en app insuficientes para operaciones digitales",
+          "descripcion": "La aplicación no solicita verificación adicional para transacciones sensibles, generando percepción de vulnerabilidad.",
+          "frecuencia_pct": 23,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "Las medidas de seguridad de la app me parecen insuficientes.",
+            "Las operaciones realizadas no solicitan seguridad extra para realizarse",
+            "La plataforma está expuesta a hackeo y fraudes"
+          ]
+        }
+      ]
+    },
+    "Tarifas": {
+      "total_comentarios_analizados": 19,
+      "delta_pp": 0.7,
+      "causas_raiz": [
+        {
+          "titulo": "Anualidad de tarjeta de crédito cara frente a competidores sin costo",
+          "descripcion": "La anualidad de BBVA es percibida como injustificada cuando existen alternativas sin ese costo, siendo el principal motivo de insatisfacción tarifaria.",
+          "frecuencia_pct": 47,
+          "frecuencia_abs": 9,
+          "ejemplos": [
+            "Cobro de anualidad, mal servicio, falta de claridad en sus contratos",
+            "Porque hay otras opciones de tarjetas que no cobran anualidades",
+            "Es un buen banco, sin embargo las anualidades son caras",
+            "Son muy buenos pero muy caros. Cobran tarifas altas."
+          ]
+        },
+        {
+          "titulo": "Comisiones por uso de cajeros y cobro por saldo mínimo",
+          "descripcion": "El cobro por retiro en cajeros propios y la penalización por no mantener saldo mínimo son comisiones que los clientes consideran abusivas.",
+          "frecuencia_pct": 37,
+          "frecuencia_abs": 7,
+          "ejemplos": [
+            "A veces cobran por retiro de efectivo",
+            "Cobro por tener saldo bajo",
+            "Estoy inconforme sobre un pago de comisión que hacen por hacer uso de los cajeros, aun siendo tarjetahabiente."
+          ]
+        },
+        {
+          "titulo": "Falta de rendimientos y promociones que justifiquen las tarifas",
+          "descripcion": "Los usuarios sienten que pagan caro sin recibir beneficios equivalentes, especialmente frente a fintechs que ofrecen rendimientos sin comisiones.",
+          "frecuencia_pct": 16,
+          "frecuencia_abs": 3,
+          "ejemplos": [
+            "Mejorar tasas de rendimiento y promociones",
+            "deberian de ofrecer mejores comisiones",
+            "Las tarifas son altas"
+          ]
+        }
+      ]
+    },
+    "Atención": {
+      "total_comentarios_analizados": 32,
+      "delta_pp": -0.6,
+      "causas_raiz": [
+        {
+          "titulo": "Tiempos de espera excesivos y atención lenta en sucursal y por teléfono",
+          "descripcion": "El tiempo de atención tanto en sucursal como en línea es consistentemente señalado como demasiado largo, sin resolución eficiente.",
+          "frecuencia_pct": 44,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "Demasiada espera en los servicios personalizados",
+            "Es muy tardada la atención al cliente",
+            "Es complicado comunicarse y que te resuelvan pronto",
+            "Sus cajeros automáticos son muy lentos, la atención en ventanilla es sumamente tardada."
+          ]
+        },
+        {
+          "titulo": "Ejecutivos no resuelven problemas ni dan seguimiento a reclamaciones",
+          "descripcion": "Los clientes reportan que los agentes no ofrecen soluciones concretas a quejas, incluyendo fraudes, cobros indebidos y problemas con la cuenta.",
+          "frecuencia_pct": 38,
+          "frecuencia_abs": 12,
+          "ejemplos": [
+            "El ejecutivo no da solución",
+            "No resuelven mis problemas, ni por teléfono ni en sucursal",
+            "Carecen de una atención al cliente exhaustiva en caso de fraude",
+            "Tuve un tema con un doble pago y no me dieron solución el servicio al cliente es pésimo"
+          ]
+        },
+        {
+          "titulo": "Trato descortés y actitud de venta forzada en sucursal",
+          "descripcion": "Clientes perciben que el personal es grosero, poco amable y busca vender productos sin atender las necesidades reales del usuario.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 6,
+          "ejemplos": [
+            "la atención al cliente dentro de sucursal es horrible",
+            "Mal servicio al cliente; poco personal e intenta vender productos a la fuerza",
+            "Solo que expliquen bien lo que ofrecen y no engañarnos con cosas que no son ciertas"
+          ]
+        }
+      ]
+    },
+    "Complejidad": {
+      "total_comentarios_analizados": 62,
+      "delta_pp": 0.3,
+      "causas_raiz": [
+        {
+          "titulo": "Nueva actualización de la app es confusa, lenta y poco intuitiva",
+          "descripcion": "La reciente actualización del app de BBVA es el principal driver de quejas: usuarios encuentran los menús más difíciles, la app más lenta y peor diseñada que la versión anterior.",
+          "frecuencia_pct": 55,
+          "frecuencia_abs": 34,
+          "ejemplos": [
+            "Cambiaron la app y era más funcional la otra",
+            "La app actualizada es lenta y complicada de usar.",
+            "Desde que la app se actualizó no funciona de la mejor manera.",
+            "El cambio en la app fue fatal. Se perdió tanto funcionalidad como estilo.",
+            "Con la nueva actualización de la plataforma, es un poco difícil hacer las operaciones"
+          ]
+        },
+        {
+          "titulo": "Fallas y caídas frecuentes del app que impiden operar en momentos críticos",
+          "descripcion": "El app de BBVA cae o se congela con regularidad, imposibilitando pagos y transferencias cuando el cliente más los necesita.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 17,
+          "ejemplos": [
+            "Falla mucho la app cuando mas la necesitas",
+            "La App se cae frecuentemente y es imposible hacer transacciones.",
+            "Por qué últimamente la aplicación a tenido fallas constantes y no puedo hacer mis movimientos",
+            "SU APP ERA MUY BUENA, PERO LAS ULTIMAS ACTUALIZACIONES, NO FUNCIONAN, NI SIQUIERA PUEDO VER LOS SALDOS"
+          ]
+        },
+        {
+          "titulo": "Restricciones de acceso multi-cuenta y requerimientos de activación presencial",
+          "descripcion": "El app no permite gestionar múltiples cuentas y exige visitas a sucursal para activaciones, bloqueando la experiencia digital.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 11,
+          "ejemplos": [
+            "POR QUE NO PUEDO USAR LA APLICACION PARA 2 CUENTAS",
+            "Nunca pudieron enviarme mensaje de activación para aperturar la aplicación, tuve que cambiarme de compañía celular",
+            "20 años solo teniendo tc y ahora debo de tener tu para la app, no inventen"
+          ]
+        }
+      ]
+    },
+    "Rendimientos": {
+      "total_comentarios_analizados": 51,
+      "delta_pp": 0.1,
+      "causas_raiz": [
+        {
+          "titulo": "Cuenta sin rendimientos automáticos sobre el saldo disponible",
+          "descripcion": "El principal reclamo es que BBVA no genera ninguna ganancia sobre el dinero depositado en cuenta, a diferencia de fintechs como Mercado Pago o Nubank.",
+          "frecuencia_pct": 57,
+          "frecuencia_abs": 29,
+          "ejemplos": [
+            "No da nada de rendimiento",
+            "No da ganancias en la cuenta",
+            "Porque aunque me gusta la atención que te dan, no te ofrecen ningún rendimiento por tener tu dinero ahí.",
+            "Mis ahorros no me dan rendimiento",
+            "no tiene un producto que genere rendimientos competitivos o que ponga la diferencia con otros bancos tradicionales"
+          ]
+        },
+        {
+          "titulo": "Tasas de inversión y ahorro muy bajas frente al mercado",
+          "descripcion": "Los pocos productos de inversión que BBVA ofrece tienen tasas muy inferiores a las de la competencia fintech y digital, sin justificar mantener el dinero ahí.",
+          "frecuencia_pct": 27,
+          "frecuencia_abs": 14,
+          "ejemplos": [
+            "hace falta mas tasas de interes del promedio",
+            "Sus tasas de inversion son bajas.. nunca vez rendimiento en tu dinero",
+            "Los rendimientos del dinero en la cuenta son bajos en comparación con otros bancos",
+            "No solo bbva, todos los bancos pagan muy pocos intereses por nuestros ahorros"
+          ]
+        },
+        {
+          "titulo": "Cobra comisión por manejo de cuenta mientras no genera rendimientos",
+          "descripcion": "La paradoja de cobrar comisión de mantenimiento mientras no ofrece ninguna ganancia sobre el saldo es señalada como inaceptable.",
+          "frecuencia_pct": 16,
+          "frecuencia_abs": 8,
+          "ejemplos": [
+            "Porque no da buenos rendimientos",
+            "Porque no da rendimientos al mantener un saldo en la cuenta, al contrario cobra por el manejo de la cuenta si no se mantiene un saldo mínimo",
+            "Comisiones altas poco rendimiento"
+          ]
+        }
+      ]
+    },
+    "Promociones": {
+      "total_comentarios_analizados": 28,
+      "delta_pp": 0.0,
+      "causas_raiz": [
+        {
+          "titulo": "Ausencia de cashback, puntos o beneficios por uso de la tarjeta",
+          "descripcion": "Los clientes no perciben recompensas ni descuentos significativos por el uso frecuente de la tarjeta, comparado con competidores que sí ofrecen estos beneficios.",
+          "frecuencia_pct": 46,
+          "frecuencia_abs": 13,
+          "ejemplos": [
+            "Quisiera que ofrecieran cashback",
+            "Porque no ofrece promociones ni descuentos, no hay regalos por ser clientes y usar la tarjeta",
+            "No me ofrece muchos beneficios como otras tarjetas.",
+            "Hay pocas promociones que valgan la pena"
+          ]
+        },
+        {
+          "titulo": "Falta de promociones para nómina y convenios con entretenimiento",
+          "descripcion": "Los usuarios de cuenta nómina no reciben beneficios diferenciados, y los convenios con establecimientos de entretenimiento son escasos.",
+          "frecuencia_pct": 36,
+          "frecuencia_abs": 10,
+          "ejemplos": [
+            "No me ofrece promociones en nomina",
+            "no tiene tantos convenios con espectáculos",
+            "Por qué es una app la cual tarda en darte promociones o no te las da"
+          ]
+        },
+        {
+          "titulo": "Comunicación deficiente de las promociones existentes",
+          "descripcion": "Algunos clientes no se enteran de las promociones disponibles porque el banco no las comunica de forma clara y oportuna.",
+          "frecuencia_pct": 18,
+          "frecuencia_abs": 5,
+          "ejemplos": [
+            "No tengo noticias sobre promociones",
+            "Por la app nos mencione sus promociones.",
+            "Sus promociones son buenas, pero pueden mejorar en establecimientos y entretenimiento"
+          ]
+        }
+      ]
+    }
+  }
+}
